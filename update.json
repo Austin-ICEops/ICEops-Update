@@ -1,9 +1,54 @@
 {
   "schemaVersion": 1,
-  "enabled": false,
-  "version": "0.0.0",
-  "required": false,
-  "downloadUrl": "",
-  "sha256": "",
-  "releaseNotes": "Update channel initialized. No release is currently available."
+  "channel": "stable",
+  "version": "1.0.0.541",
+  "downloadUrl": "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.541/ICEops_Setup_1.0.0.541.exe",
+  "sha256": "77cc86e654388fc354736708fcb22441c8525cf7b2d2192023ad17c33c845afc",
+  "fileName": "ICEops_Setup_1.0.0.541.exe",
+  "mandatory": false,
+  "publishedAtUtc": "2026-07-24T13:05:23.1285765+00:00",
+  "releaseNotes": [
+    "Automatic update foundation added",
+    "GitHub Release installer download and SHA-256 verification added",
+    "Automatic ICEops restart flow added after update installation",
+    "Update service failures are isolated from monitoring startup"
+  ],
+  "releaseNotesByLanguage": {
+    "ko": [
+      "자동 업데이트 기반 기능 추가",
+      "GitHub Release 설치 파일 다운로드 및 SHA-256 무결성 검증 추가",
+      "업데이트 설치 후 ICEops 자동 재실행 흐름 추가",
+      "업데이트 서버 오류가 기존 모니터링 시작에 영향을 주지 않도록 격리"
+    ],
+    "en": [
+      "Automatic update foundation added",
+      "GitHub Release installer download and SHA-256 verification added",
+      "Automatic ICEops restart flow added after update installation",
+      "Update service failures are isolated from monitoring startup"
+    ],
+    "ja": [
+      "自動アップデート基盤を追加",
+      "GitHub Release インストーラーのダウンロードと SHA-256 検証を追加",
+      "アップデート後の ICEops 自動再起動フローを追加",
+      "更新サーバーの障害を監視起動処理から分離"
+    ],
+    "zh-cn": [
+      "新增自动更新基础功能",
+      "新增 GitHub Release 安装程序下载和 SHA-256 验证",
+      "新增更新安装后的 ICEops 自动重启流程",
+      "更新服务器故障不会影响监控启动"
+    ],
+    "de": [
+      "Grundlage für automatische Updates hinzugefügt",
+      "Download des GitHub-Release-Installers mit SHA-256-Prüfung hinzugefügt",
+      "Automatischer ICEops-Neustart nach der Update-Installation hinzugefügt",
+      "Fehler des Update-Servers sind vom Monitoring-Start isoliert"
+    ],
+    "es": [
+      "Se añadió la base de actualización automática",
+      "Se añadió la descarga del instalador desde GitHub Release con verificación SHA-256",
+      "Se añadió el reinicio automático de ICEops después de instalar la actualización",
+      "Los fallos del servidor de actualizaciones quedan aislados del inicio de la supervisión"
+    ]
+  }
 }
