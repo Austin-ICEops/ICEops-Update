@@ -20,6 +20,15 @@ This is the official download and automatic update repository for ICEops.
 - 자동 업데이트는 설치 전에 SHA-256 무결성 검증을 수행합니다.
 - 이 저장소에는 배포 파일만 포함되며 소스 코드는 제공되지 않습니다.
 
+## Deutsch
+
+Dieses Repository ist das offizielle Download- und automatische Update-Repository für ICEops.
+
+- Laden Sie das neueste Installationsprogramm unter **Releases** herunter.
+- Verwenden Sie ausschließlich Installationsprogramme, die in diesem Repository veröffentlicht wurden.
+- Automatische Updates überprüfen das Installationsprogramm vor der Installation mit SHA-256.
+- Dieses Repository enthält ausschließlich Bereitstellungsdateien. Der Quellcode wird hier nicht veröffentlicht.
+
 ## 日本語
 
 このリポジトリは、ICEops の公式インストーラーおよび自動アップデート配布用リポジトリです。
@@ -37,15 +46,6 @@ This is the official download and automatic update repository for ICEops.
 - 请仅使用本仓库发布的官方安装程序。
 - 自动更新会在安装前通过 SHA-256 验证文件完整性。
 - 本仓库仅包含发布文件，不提供源代码。
-
-## Deutsch
-
-Dieses Repository ist das offizielle Download- und automatische Update-Repository für ICEops.
-
-- Laden Sie das neueste Installationsprogramm unter **Releases** herunter.
-- Verwenden Sie ausschließlich Installationsprogramme, die in diesem Repository veröffentlicht wurden.
-- Automatische Updates überprüfen das Installationsprogramm vor der Installation mit SHA-256.
-- Dieses Repository enthält ausschließlich Bereitstellungsdateien. Der Quellcode wird hier nicht veröffentlicht.
 
 ## Español
 
