@@ -2,6 +2,15 @@
 
 > Official ICEops installer, release package, and automatic update repository.
 
+## 한국어
+
+이 저장소는 ICEops 공식 설치 파일 및 자동 업데이트 배포 저장소입니다.
+
+- 최신 설치 파일은 **Releases**에서 다운로드해 주세요.
+- 이 저장소에 게시된 공식 설치 파일만 사용해 주세요.
+- 자동 업데이트는 설치 전에 SHA-256 무결성 검증을 수행합니다.
+- 이 저장소에는 배포 파일만 포함되며 소스 코드는 제공되지 않습니다.
+
 ## English
 
 This is the official download and automatic update repository for ICEops.
@@ -11,14 +20,6 @@ This is the official download and automatic update repository for ICEops.
 - Automatic updates verify the installer with SHA-256 before installation.
 - This repository contains deployment files only. Source code is not distributed here.
 
-## 한국어
-
-이 저장소는 ICEops 공식 설치 파일 및 자동 업데이트 배포 저장소입니다.
-
-- 최신 설치 파일은 **Releases**에서 다운로드해 주세요.
-- 이 저장소에 게시된 공식 설치 파일만 사용해 주세요.
-- 자동 업데이트는 설치 전에 SHA-256 무결성 검증을 수행합니다.
-- 이 저장소에는 배포 파일만 포함되며 소스 코드는 제공되지 않습니다.
 
 ## Deutsch
 
