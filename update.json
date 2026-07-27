@@ -1,24 +1,54 @@
 {
-    "schemaVersion":  1,
-    "channel":  "stable",
-    "version":  "1.0.0.542",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.542/ICEops_Setup_1.0.0.542.exe",
-    "sha256":  "5472c6e789ca23d7054c3c5bb014f46c1669233a5bd5d4f3ef7e5fafa781b967",
-    "fileName":  "ICEops_Setup_1.0.0.542.exe",
-    "mandatory":  false,
-    "publishedAtUtc":  "2026-07-24T13:52:38.1271422+00:00",
-    "releaseNotes":  [
-                         "Automatic update end-to-end test release",
-                         "Verified GitHub manifest detection and installer download",
-                         "Verified SHA-256 integrity validation",
-                         "Verified automatic installation and ICEops restart"
-                     ],
-    "releaseNotesByLanguage":  {
-                                   "en":  [
-                                              "Automatic update end-to-end test release",
-                                              "Verified GitHub manifest detection and installer download",
-                                              "Verified SHA-256 integrity validation",
-                                              "Verified automatic installation and ICEops restart"
-                                          ]
-                               }
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "1.0.0.543",
+  "downloadUrl": "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.543/ICEops_Setup_1.0.0.543.exe",
+  "sha256": "7bf271efa13e41334d40539d1ff5bf257d41b0879ff3aef1670a0f8b5815424d",
+  "fileName": "ICEops_Setup_1.0.0.543.exe",
+  "mandatory": false,
+  "publishedAtUtc": "2026-07-27T09:20:26Z",
+  "releaseNotes": [
+    "Improved tablet Web Dashboard address selection for dual-network PCs",
+    "Preferred the router-facing LAN/Wi-Fi adapter while keeping IO-Link master communication independent",
+    "Added automatic dashboard address refresh when Windows network connections change",
+    "Added real API host status reporting and hardened the Windows Firewall rule"
+  ],
+  "releaseNotesByLanguage": {
+    "ko": [
+      "듀얼 네트워크 PC에서 태블릿 Web Dashboard 접속 주소 선택 개선",
+      "IO-Link 마스터 통신망과 분리하여 라우터 연결 LAN/Wi-Fi 주소를 우선 안내",
+      "Windows 네트워크 연결 변경 시 Dashboard 주소 자동 갱신 추가",
+      "실제 API 서버 상태 표시 및 Windows 방화벽 규칙 보강"
+    ],
+    "en": [
+      "Improved tablet Web Dashboard address selection for dual-network PCs",
+      "Preferred the router-facing LAN/Wi-Fi adapter while keeping IO-Link master communication independent",
+      "Added automatic dashboard address refresh when Windows network connections change",
+      "Added real API host status reporting and hardened the Windows Firewall rule"
+    ],
+    "ja": [
+      "デュアルネットワーク PC でのタブレット Web Dashboard 接続アドレス選択を改善",
+      "IO-Link マスター通信とは独立してルーター側の LAN/Wi-Fi アドレスを優先表示",
+      "Windows のネットワーク接続変更時に Dashboard アドレスを自動更新",
+      "実際の API サーバー状態表示と Windows ファイアウォール規則を強化"
+    ],
+    "zh-cn": [
+      "改进双网络 PC 的平板 Web Dashboard 访问地址选择",
+      "在保持 IO-Link 主站通信独立的同时优先显示路由器侧 LAN/Wi-Fi 地址",
+      "Windows 网络连接变化时自动刷新 Dashboard 地址",
+      "新增真实 API 服务器状态显示并强化 Windows 防火墙规则"
+    ],
+    "de": [
+      "Auswahl der Tablet-Web-Dashboard-Adresse für PCs mit zwei Netzwerken verbessert",
+      "Routerseitige LAN/Wi-Fi-Adresse wird unabhängig von der IO-Link-Master-Kommunikation bevorzugt",
+      "Automatische Aktualisierung der Dashboard-Adresse bei Windows-Netzwerkänderungen hinzugefügt",
+      "Echte API-Host-Statusanzeige und gehärtete Windows-Firewallregel hinzugefügt"
+    ],
+    "es": [
+      "Se mejoró la selección de la dirección del Web Dashboard para PC con dos redes",
+      "Se prioriza la dirección LAN/Wi-Fi del router manteniendo independiente la comunicación con el maestro IO-Link",
+      "Se añadió la actualización automática de la dirección cuando cambia la red de Windows",
+      "Se añadió el estado real del servidor API y se reforzó la regla del Firewall de Windows"
+    ]
+  }
 }
