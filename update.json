@@ -1,54 +1,54 @@
 {
-  "schemaVersion": 1,
-  "channel": "stable",
-  "version": "1.0.0.543",
-  "downloadUrl": "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.543/ICEops_Setup_1.0.0.543.exe",
-  "sha256": "7bf271efa13e41334d40539d1ff5bf257d41b0879ff3aef1670a0f8b5815424d",
-  "fileName": "ICEops_Setup_1.0.0.543.exe",
-  "mandatory": false,
-  "publishedAtUtc": "2026-07-27T09:20:26Z",
-  "releaseNotes": [
-    "Improved tablet Web Dashboard address selection for dual-network PCs",
-    "Preferred the router-facing LAN/Wi-Fi adapter while keeping IO-Link master communication independent",
-    "Added automatic dashboard address refresh when Windows network connections change",
-    "Added real API host status reporting and hardened the Windows Firewall rule"
-  ],
-  "releaseNotesByLanguage": {
-    "ko": [
-      "듀얼 네트워크 PC에서 태블릿 Web Dashboard 접속 주소 선택 개선",
-      "IO-Link 마스터 통신망과 분리하여 라우터 연결 LAN/Wi-Fi 주소를 우선 안내",
-      "Windows 네트워크 연결 변경 시 Dashboard 주소 자동 갱신 추가",
-      "실제 API 서버 상태 표시 및 Windows 방화벽 규칙 보강"
-    ],
-    "en": [
-      "Improved tablet Web Dashboard address selection for dual-network PCs",
-      "Preferred the router-facing LAN/Wi-Fi adapter while keeping IO-Link master communication independent",
-      "Added automatic dashboard address refresh when Windows network connections change",
-      "Added real API host status reporting and hardened the Windows Firewall rule"
-    ],
-    "ja": [
-      "デュアルネットワーク PC でのタブレット Web Dashboard 接続アドレス選択を改善",
-      "IO-Link マスター通信とは独立してルーター側の LAN/Wi-Fi アドレスを優先表示",
-      "Windows のネットワーク接続変更時に Dashboard アドレスを自動更新",
-      "実際の API サーバー状態表示と Windows ファイアウォール規則を強化"
-    ],
-    "zh-cn": [
-      "改进双网络 PC 的平板 Web Dashboard 访问地址选择",
-      "在保持 IO-Link 主站通信独立的同时优先显示路由器侧 LAN/Wi-Fi 地址",
-      "Windows 网络连接变化时自动刷新 Dashboard 地址",
-      "新增真实 API 服务器状态显示并强化 Windows 防火墙规则"
-    ],
-    "de": [
-      "Auswahl der Tablet-Web-Dashboard-Adresse für PCs mit zwei Netzwerken verbessert",
-      "Routerseitige LAN/Wi-Fi-Adresse wird unabhängig von der IO-Link-Master-Kommunikation bevorzugt",
-      "Automatische Aktualisierung der Dashboard-Adresse bei Windows-Netzwerkänderungen hinzugefügt",
-      "Echte API-Host-Statusanzeige und gehärtete Windows-Firewallregel hinzugefügt"
-    ],
-    "es": [
-      "Se mejoró la selección de la dirección del Web Dashboard para PC con dos redes",
-      "Se prioriza la dirección LAN/Wi-Fi del router manteniendo independiente la comunicación con el maestro IO-Link",
-      "Se añadió la actualización automática de la dirección cuando cambia la red de Windows",
-      "Se añadió el estado real del servidor API y se reforzó la regla del Firewall de Windows"
-    ]
-  }
+    "schemaVersion":  1,
+    "channel":  "stable",
+    "version":  "1.0.0.544",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.544/ICEops_Setup_1.0.0.544.exe",
+    "sha256":  "fd6618edac0122b3e31e64a0305d270334ed8865532c42655feb23fbec3a1b63",
+    "fileName":  "ICEops_Setup_1.0.0.544.exe",
+    "mandatory":  false,
+    "publishedAtUtc":  "2026-07-28T10:01:12.1671371+00:00",
+    "releaseNotes":  [
+                         "Synchronized Web Dashboard device classification with the Windows Home UI",
+                         "Fixed SMC PF2/PF3 flow meters being shown as generic IO-Link devices",
+                         "Applied the same IODD catalog product-name normalization to the Web API",
+                         "Added server-provided device kind codes with browser-localized labels"
+                     ],
+    "releaseNotesByLanguage":  {
+                                   "en":  [
+                                              "Synchronized Web Dashboard device classification with the Windows Home UI",
+                                              "Fixed SMC PF2/PF3 flow meters being shown as generic IO-Link devices",
+                                              "Applied the same IODD catalog product-name normalization to the Web API",
+                                              "Added server-provided device kind codes with browser-localized labels"
+                                          ],
+                                   "ko":  [
+                                              "Web Dashboard 장치 분류를 Windows 메인 UI와 동일한 기준으로 통합",
+                                              "SMC PF2/PF3 유량계가 일반 IO-Link 장치로 표시되던 문제 수정",
+                                              "Web API에도 동일한 IODD 카탈로그 제품명 보정 적용",
+                                              "서버 장치 종류 코드와 브라우저 다국어 표시 연동"
+                                          ],
+                                   "ja":  [
+                                              "Web Dashboard のデバイス分類を Windows メイン UI と同期",
+                                              "SMC PF2/PF3 流量計が汎用 IO-Link デバイスとして表示される問題を修正",
+                                              "Web API に同じ IODD カタログ製品名補正を適用",
+                                              "サーバーのデバイス種別コードとブラウザーの多言語表示を連携"
+                                          ],
+                                   "zh":  [
+                                              "将 Web Dashboard 设备分类与 Windows 主界面统一",
+                                              "修复 SMC PF2/PF3 流量计显示为通用 IO-Link 设备的问题",
+                                              "Web API 使用相同的 IODD 目录产品名称校正",
+                                              "服务器设备类型代码与浏览器多语言标签联动"
+                                          ],
+                                   "de":  [
+                                              "Geräteklassifizierung des Web Dashboards mit der Windows-Hauptoberfläche synchronisiert",
+                                              "SMC-PF2/PF3-Durchflussmesser wurden nicht mehr als generische IO-Link-Geräte angezeigt",
+                                              "Dieselbe IODD-Katalog-Namensnormalisierung auf die Web-API angewendet",
+                                              "Serverseitige Geräteart-Codes mit lokalisierten Browserbezeichnungen ergänzt"
+                                          ],
+                                   "es":  [
+                                              "Se sincronizó la clasificación de dispositivos del Web Dashboard con la interfaz principal de Windows",
+                                              "Se corrigió que los caudalímetros SMC PF2/PF3 aparecieran como dispositivos IO-Link genéricos",
+                                              "Se aplicó la misma normalización del nombre de producto IODD a la API web",
+                                              "Se añadieron códigos de tipo de dispositivo del servidor con etiquetas localizadas en el navegador"
+                                          ]
+                               }
 }
