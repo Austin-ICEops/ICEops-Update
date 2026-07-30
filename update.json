@@ -1,68 +1,68 @@
-{
-  "schemaVersion": 1,
-  "channel": "stable",
-  "version": "1.0.0.545",
-  "downloadUrl": "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.545/ICEops_Setup_1.0.0.545.exe",
-  "sha256": "b91cf870ba87f662eb7b2188582685730530dd75b2ec557b75854da47a9d4168",
-  "fileName": "ICEops_Setup_1.0.0.545.exe",
-  "mandatory": false,
-  "publishedAtUtc": "2026-07-30T07:20:00Z",
-  "releaseNotes": [
-    "Added a protected tablet Device Parameters workspace backed by certified local IODDs",
-    "Added PC-only password unlock, rotating six-digit pairing, IP-bound short-lived sessions, and immediate revoke",
-    "Added safe ISDU read/write with exact device identity checks, non-queued execution, stale-value protection, and automatic read-back verification",
-    "Added SQLite parameter-change audit logging with fail-closed database preflight",
-    "Hardened datatype validation for enums, bit lengths, integer widths, Float32/Float64, strings, and octet data",
-    "Added guarded GitHub Release publishing that uploads the Release before updating update.json"
-  ],
-  "releaseNotesByLanguage": {
-    "en": [
-      "Added a protected tablet Device Parameters workspace backed by certified local IODDs",
-      "Added PC-only password unlock, rotating six-digit pairing, IP-bound short-lived sessions, and immediate revoke",
-      "Added safe ISDU read/write with exact device identity checks, non-queued execution, stale-value protection, and automatic read-back verification",
-      "Added SQLite parameter-change audit logging with fail-closed database preflight",
-      "Hardened datatype validation for enums, bit lengths, integer widths, Float32/Float64, strings, and octet data",
-      "Added guarded GitHub Release publishing that uploads the Release before updating update.json"
-    ],
-    "ko": [
-      "인증된 로컬 IODD 기반 태블릿 장치 파라미터 작업 화면 추가",
-      "PC 전용 암호 해제, 회전형 6자리 페어링, IP 바인딩 단기 세션 및 즉시 폐기 기능 추가",
-      "정확한 장치 ID 검증, 비대기열 실행, 값 변경 충돌 방지, 쓰기 후 자동 재읽기를 포함한 안전 ISDU 읽기/쓰기 추가",
-      "감사 DB 사전 점검을 포함한 SQLite 파라미터 변경 이력 저장 추가",
-      "Enum, 비트 길이, 정수 폭, Float32/Float64, 문자열 및 Octet 데이터 검증 강화",
-      "GitHub Release를 먼저 업로드한 뒤 update.json을 갱신하는 보호 배포 스크립트 추가"
-    ],
-    "ja": [
-      "認証済みローカルIODDに基づくタブレット用デバイスパラメータ画面を追加",
-      "PC専用パスワード解除、更新式6桁ペアリング、IP固定の短期セッション、即時失効を追加",
-      "厳密なデバイスID確認、非キュー実行、古い値の競合防止、書込み後の自動再読出しを備えた安全なISDU読書きを追加",
-      "監査DBの事前確認を含むSQLiteパラメータ変更履歴を追加",
-      "Enum、ビット長、整数幅、Float32/Float64、文字列、Octetデータの検証を強化",
-      "GitHub Releaseを先に公開し、その後update.jsonを更新する保護公開スクリプトを追加"
-    ],
-    "zh": [
-      "新增基于已认证本地IODD的平板设备参数工作区",
-      "新增仅PC输入密码解锁、轮换6位配对码、IP绑定短期会话和立即撤销",
-      "新增安全ISDU读写：精确设备身份校验、非排队执行、旧值冲突保护及写入后自动回读验证",
-      "新增SQLite参数变更审计日志，并在写入前进行数据库可用性检查",
-      "加强Enum、位长度、整数宽度、Float32/Float64、字符串和Octet数据验证",
-      "新增受保护的GitHub发布脚本：先发布Release，再更新update.json"
-    ],
-    "de": [
-      "Geschützten Tablet-Arbeitsbereich für Geräteparameter auf Basis zertifizierter lokaler IODDs ergänzt",
-      "PC-exklusive Passwortfreigabe, rotierenden sechsstelligen Kopplungscode, IP-gebundene Kurzzeitsitzungen und sofortigen Widerruf ergänzt",
-      "Sicheres ISDU-Lesen/Schreiben mit exakter Geräteidentität, nicht wartender Ausführung, Schutz vor veralteten Werten und automatischer Rückleseprüfung ergänzt",
-      "SQLite-Auditprotokoll für Parameteränderungen mit vorgeschalteter Datenbankprüfung ergänzt",
-      "Validierung für Enums, Bitlängen, Integerbreiten, Float32/Float64, Strings und Octet-Daten gehärtet",
-      "Geschützte GitHub-Veröffentlichung ergänzt: zuerst Release hochladen, danach update.json aktualisieren"
-    ],
-    "es": [
-      "Se añadió un espacio protegido de parámetros de dispositivo para tablet basado en IODD locales certificados",
-      "Se añadió desbloqueo con contraseña solo en el PC, código rotativo de seis dígitos, sesiones breves ligadas a la IP y revocación inmediata",
-      "Se añadió lectura/escritura ISDU segura con identidad exacta, ejecución sin cola, protección contra valores obsoletos y verificación automática por relectura",
-      "Se añadió auditoría SQLite de cambios de parámetros con comprobación previa y bloqueo seguro si la base de datos no está disponible",
-      "Se reforzó la validación de Enum, longitud de bits, ancho de enteros, Float32/Float64, cadenas y datos Octet",
-      "Se añadió publicación protegida en GitHub: primero el Release y después la actualización de update.json"
-    ]
-  }
+﻿{
+    "schemaVersion":  1,
+    "channel":  "stable",
+    "version":  "1.0.0.546",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.546/ICEops_Setup_1.0.0.546.exe",
+    "sha256":  "1ea80883ab721410e781a6353f6f573197d776974be7c53adf5295ede961dd79",
+    "fileName":  "ICEops_Setup_1.0.0.546.exe",
+    "mandatory":  false,
+    "publishedAtUtc":  "2026-07-30T08:10:56.0780528+00:00",
+    "releaseNotes":  [
+                         "Added a live Device Parameters workspace directly inside the Windows IODD Manager",
+                         "Reused the same certified-IODD catalog, datatype codec, ISDU transaction, audit, stale-value, and read-back verification engine as the tablet Web Dashboard",
+                         "Added live port selection, parameter search, selected read, sequential read-all, datatype-aware editors, and apply-and-verify actions",
+                         "Added click-select editors for IODD enums and booleans so users no longer enter Index, SubIndex, or byte length manually",
+                         "Unified IODD Expert Write password management with the shared security service so password changes revoke active tablet sessions",
+                         "Kept the existing raw ISDU window as an expert fallback and serialized Web/WPF parameter operations through one shared non-queued gate"
+                     ],
+    "releaseNotesByLanguage":  {
+                                   "en":  [
+                                              "Added a live Device Parameters workspace directly inside the Windows IODD Manager",
+                                              "Reused the same certified-IODD catalog, datatype codec, ISDU transaction, audit, stale-value, and read-back verification engine as the tablet Web Dashboard",
+                                              "Added live port selection, parameter search, selected read, sequential read-all, datatype-aware editors, and apply-and-verify actions",
+                                              "Added click-select editors for IODD enums and booleans so users no longer enter Index, SubIndex, or byte length manually",
+                                              "Unified IODD Expert Write password management with the shared security service so password changes revoke active tablet sessions",
+                                              "Kept the existing raw ISDU window as an expert fallback and serialized Web/WPF parameter operations through one shared non-queued gate"
+                                          ],
+                                   "ko":  [
+                                              "Windows IODD Manager 내부에 실시간 장치 파라미터 작업 화면 추가",
+                                              "태블릿 Web Dashboard와 동일한 인증 IODD 카탈로그, 데이터 타입 코덱, ISDU 트랜잭션, 감사 로그, 값 변경 충돌 방지 및 자동 재읽기 검증 엔진 재사용",
+                                              "실시간 포트 선택, 파라미터 검색, 선택 읽기, 순차 전체 읽기, 데이터 타입별 편집기 및 적용·검증 기능 추가",
+                                              "IODD Enum과 Boolean을 클릭 선택 방식으로 제공하여 Index, SubIndex, 바이트 길이를 직접 입력할 필요 제거",
+                                              "IODD Expert Write 암호 관리를 공통 보안 서비스로 통합하여 암호 변경 시 활성 태블릿 세션도 즉시 폐기",
+                                              "기존 Raw ISDU 창은 전문가용으로 유지하고 Web/WPF 파라미터 작업은 하나의 비대기열 게이트로 직렬화"
+                                          ],
+                                   "ja":  [
+                                              "Windows IODD Manager内にライブデバイスパラメータ画面を追加",
+                                              "タブレットWeb Dashboardと同じ認証IODDカタログ、データ型コーデック、ISDU処理、監査、競合防止、自動再読取検証エンジンを再利用",
+                                              "ライブポート選択、検索、選択読取、順次全読取、データ型別エディタ、適用・検証を追加",
+                                              "IODD EnumとBooleanをクリック選択でき、Index、SubIndex、バイト長の手入力を不要化",
+                                              "IODD Expert Writeのパスワード管理を共通セキュリティサービスに統合し、変更時にタブレットセッションも失効",
+                                              "既存Raw ISDU画面はエキスパート用に維持し、Web/WPF操作を共通の非キューゲートで直列化"
+                                          ],
+                                   "zh":  [
+                                              "在 Windows IODD Manager 中新增实时设备参数工作区",
+                                              "复用平板 Web Dashboard 相同的认证 IODD 目录、数据类型编解码、ISDU、审计、旧值冲突保护和自动回读验证引擎",
+                                              "新增实时端口选择、参数搜索、所选读取、顺序全部读取、按数据类型编辑以及应用并验证",
+                                              "IODD Enum 和 Boolean 支持点击选择，无需手工输入 Index、SubIndex 或字节长度",
+                                              "将 IODD Expert Write 密码管理统一到共享安全服务，密码变化时立即撤销平板会话",
+                                              "保留原始 ISDU 窗口作为专家模式，并通过共享非排队门串行化 Web/WPF 参数操作"
+                                          ],
+                                   "de":  [
+                                              "Live-Geräteparameter direkt im Windows-IODD-Manager ergänzt",
+                                              "Dieselbe zertifizierte IODD-, Datentyp-, ISDU-, Audit-, Konflikt- und Rücklese-Engine wie im Tablet-Web-Dashboard wiederverwendet",
+                                              "Live-Portwahl, Parametersuche, Einzellesen, sequenzielles Alles-Lesen, typgerechte Editoren sowie Anwenden und Prüfen ergänzt",
+                                              "IODD-Enums und Boolesche Werte per Auswahl, ohne manuelle Eingabe von Index, SubIndex oder Bytelänge",
+                                              "IODD-Expert-Write-Passwortverwaltung mit dem gemeinsamen Sicherheitsdienst vereinheitlicht; Passwortänderungen widerrufen Tablet-Sitzungen",
+                                              "Raw-ISDU-Fenster als Expertenmodus beibehalten und Web/WPF-Operationen über ein gemeinsames nicht wartendes Gate serialisiert"
+                                          ],
+                                   "es":  [
+                                              "Se añadió un espacio de parámetros activos dentro del IODD Manager de Windows",
+                                              "Se reutilizó el mismo motor certificado de IODD, códec, ISDU, auditoría, protección contra valores obsoletos y relectura del Web Dashboard",
+                                              "Se añadieron selección de puerto, búsqueda, lectura seleccionada, lectura secuencial completa, editores por tipo y aplicar con verificación",
+                                              "Los Enum y Boolean IODD se seleccionan con clic, sin introducir Index, SubIndex ni longitud en bytes",
+                                              "La contraseña IODD Expert Write se unificó con el servicio de seguridad compartido y revoca sesiones de tablet al cambiar",
+                                              "La ventana Raw ISDU se mantiene como modo experto y las operaciones Web/WPF se serializan con una puerta compartida sin cola"
+                                          ]
+                               }
 }
