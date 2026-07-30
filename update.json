@@ -1,68 +1,68 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.546",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.546/ICEops_Setup_1.0.0.546.exe",
-    "sha256":  "1ea80883ab721410e781a6353f6f573197d776974be7c53adf5295ede961dd79",
-    "fileName":  "ICEops_Setup_1.0.0.546.exe",
+    "version":  "1.0.0.547",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.547/ICEops_Setup_1.0.0.547.exe",
+    "sha256":  "c705c7f19cd37ce2c8a2bf2f77659773cbdbbc2eadf8f9fed6f5fa7b0e957e6d",
+    "fileName":  "ICEops_Setup_1.0.0.547.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-30T08:10:56.0780528+00:00",
+    "publishedAtUtc":  "2026-07-30T08:41:15.3194751+00:00",
     "releaseNotes":  [
-                         "Added a live Device Parameters workspace directly inside the Windows IODD Manager",
-                         "Reused the same certified-IODD catalog, datatype codec, ISDU transaction, audit, stale-value, and read-back verification engine as the tablet Web Dashboard",
-                         "Added live port selection, parameter search, selected read, sequential read-all, datatype-aware editors, and apply-and-verify actions",
-                         "Added click-select editors for IODD enums and booleans so users no longer enter Index, SubIndex, or byte length manually",
-                         "Unified IODD Expert Write password management with the shared security service so password changes revoke active tablet sessions",
-                         "Kept the existing raw ISDU window as an expert fallback and serialized Web/WPF parameter operations through one shared non-queued gate"
+                         "Added automatic parent-Record fallback when a device rejects direct ISDU RecordItem subindex reads",
+                         "Uses certified IODD bitOffset and bitLength metadata to extract the requested child value from subindex 0 in big-endian record order",
+                         "Applied the same fallback to the shared Web/WPF parameter engine with an explicit fallback status instead of a generic read failure",
+                         "Raised the IODD catalog schema to 15 so cached parameter metadata is re-indexed with RecordItem bit offsets",
+                         "Improved the IODD Expert Write password dialog for DPI and localized text so password fields and action buttons are no longer clipped",
+                         "Kept parameter writes on direct certified subindexes; no parent-Record read-modify-write fallback is performed"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added a live Device Parameters workspace directly inside the Windows IODD Manager",
-                                              "Reused the same certified-IODD catalog, datatype codec, ISDU transaction, audit, stale-value, and read-back verification engine as the tablet Web Dashboard",
-                                              "Added live port selection, parameter search, selected read, sequential read-all, datatype-aware editors, and apply-and-verify actions",
-                                              "Added click-select editors for IODD enums and booleans so users no longer enter Index, SubIndex, or byte length manually",
-                                              "Unified IODD Expert Write password management with the shared security service so password changes revoke active tablet sessions",
-                                              "Kept the existing raw ISDU window as an expert fallback and serialized Web/WPF parameter operations through one shared non-queued gate"
+                                              "Added automatic parent-Record fallback when a device rejects direct ISDU RecordItem subindex reads",
+                                              "Uses certified IODD bitOffset and bitLength metadata to extract the requested child value from subindex 0 in big-endian record order",
+                                              "Applied the same fallback to the shared Web/WPF parameter engine with an explicit fallback status instead of a generic read failure",
+                                              "Raised the IODD catalog schema to 15 so cached parameter metadata is re-indexed with RecordItem bit offsets",
+                                              "Improved the IODD Expert Write password dialog for DPI and localized text so password fields and action buttons are no longer clipped",
+                                              "Kept parameter writes on direct certified subindexes; no parent-Record read-modify-write fallback is performed"
                                           ],
                                    "ko":  [
-                                              "Windows IODD Manager 내부에 실시간 장치 파라미터 작업 화면 추가",
-                                              "태블릿 Web Dashboard와 동일한 인증 IODD 카탈로그, 데이터 타입 코덱, ISDU 트랜잭션, 감사 로그, 값 변경 충돌 방지 및 자동 재읽기 검증 엔진 재사용",
-                                              "실시간 포트 선택, 파라미터 검색, 선택 읽기, 순차 전체 읽기, 데이터 타입별 편집기 및 적용·검증 기능 추가",
-                                              "IODD Enum과 Boolean을 클릭 선택 방식으로 제공하여 Index, SubIndex, 바이트 길이를 직접 입력할 필요 제거",
-                                              "IODD Expert Write 암호 관리를 공통 보안 서비스로 통합하여 암호 변경 시 활성 태블릿 세션도 즉시 폐기",
-                                              "기존 Raw ISDU 창은 전문가용으로 유지하고 Web/WPF 파라미터 작업은 하나의 비대기열 게이트로 직렬화"
+                                              "장치가 ISDU RecordItem 개별 SubIndex 읽기를 거부하면 상위 Record(SubIndex 0)를 자동으로 읽는 대체 경로 추가",
+                                              "인증 IODD의 bitOffset과 bitLength를 사용해 Big-Endian Record에서 요청한 하위 파라미터 값만 정확히 추출",
+                                              "Web/WPF 공통 파라미터 엔진에 동일하게 적용하고 일반 읽기 실패 대신 상위 Record 대체 읽기 상태를 명확히 표시",
+                                              "IODD 카탈로그 스키마를 15로 올려 기존 캐시도 RecordItem 비트 오프셋을 포함하도록 자동 재색인",
+                                              "IODD Expert Write 암호 창을 DPI와 다국어 문구에 맞게 자동 높이 조정하여 입력 박스와 버튼 잘림 수정",
+                                              "쓰기 작업은 인증된 개별 SubIndex 방식만 유지하며 상위 Record 읽기-수정-쓰기는 수행하지 않도록 안전성 유지"
                                           ],
                                    "ja":  [
-                                              "Windows IODD Manager内にライブデバイスパラメータ画面を追加",
-                                              "タブレットWeb Dashboardと同じ認証IODDカタログ、データ型コーデック、ISDU処理、監査、競合防止、自動再読取検証エンジンを再利用",
-                                              "ライブポート選択、検索、選択読取、順次全読取、データ型別エディタ、適用・検証を追加",
-                                              "IODD EnumとBooleanをクリック選択でき、Index、SubIndex、バイト長の手入力を不要化",
-                                              "IODD Expert Writeのパスワード管理を共通セキュリティサービスに統合し、変更時にタブレットセッションも失効",
-                                              "既存Raw ISDU画面はエキスパート用に維持し、Web/WPF操作を共通の非キューゲートで直列化"
+                                              "デバイスがISDU RecordItemの個別SubIndex読取を拒否した場合、親RecordのSubIndex 0を自動読取するフォールバックを追加",
+                                              "認証IODDのbitOffsetとbitLengthを使用し、Big-Endian Recordから対象フィールドだけを抽出",
+                                              "Web/WPF共通パラメータエンジンに適用し、通常の読取失敗ではなくRecordフォールバック状態を表示",
+                                              "IODDカタログスキーマを15へ更新し、既存キャッシュもRecordItemビットオフセット付きで再索引",
+                                              "IODD Expert Writeパスワード画面をDPIと多言語表示に対応させ、入力欄とボタンの欠けを修正",
+                                              "書込みは認証済み個別SubIndexのみを使用し、親RecordのRead-Modify-Writeは実行しない安全設計を維持"
                                           ],
                                    "zh":  [
-                                              "在 Windows IODD Manager 中新增实时设备参数工作区",
-                                              "复用平板 Web Dashboard 相同的认证 IODD 目录、数据类型编解码、ISDU、审计、旧值冲突保护和自动回读验证引擎",
-                                              "新增实时端口选择、参数搜索、所选读取、顺序全部读取、按数据类型编辑以及应用并验证",
-                                              "IODD Enum 和 Boolean 支持点击选择，无需手工输入 Index、SubIndex 或字节长度",
-                                              "将 IODD Expert Write 密码管理统一到共享安全服务，密码变化时立即撤销平板会话",
-                                              "保留原始 ISDU 窗口作为专家模式，并通过共享非排队门串行化 Web/WPF 参数操作"
+                                              "当设备拒绝直接读取 ISDU RecordItem 子索引时，自动回退读取父 Record 的 SubIndex 0",
+                                              "使用认证 IODD 的 bitOffset 和 bitLength，从大端 Record 中精确提取目标子字段",
+                                              "Web/WPF 共用参数引擎采用相同回退逻辑，并明确显示父 Record 回退状态",
+                                              "IODD 目录架构升级到 15，使现有缓存重新索引并保存 RecordItem 位偏移",
+                                              "优化 IODD Expert Write 密码窗口的 DPI 和多语言布局，修复输入框及按钮被裁切",
+                                              "写入仍只使用认证的直接 SubIndex，不执行父 Record 的读改写回退"
                                           ],
                                    "de":  [
-                                              "Live-Geräteparameter direkt im Windows-IODD-Manager ergänzt",
-                                              "Dieselbe zertifizierte IODD-, Datentyp-, ISDU-, Audit-, Konflikt- und Rücklese-Engine wie im Tablet-Web-Dashboard wiederverwendet",
-                                              "Live-Portwahl, Parametersuche, Einzellesen, sequenzielles Alles-Lesen, typgerechte Editoren sowie Anwenden und Prüfen ergänzt",
-                                              "IODD-Enums und Boolesche Werte per Auswahl, ohne manuelle Eingabe von Index, SubIndex oder Bytelänge",
-                                              "IODD-Expert-Write-Passwortverwaltung mit dem gemeinsamen Sicherheitsdienst vereinheitlicht; Passwortänderungen widerrufen Tablet-Sitzungen",
-                                              "Raw-ISDU-Fenster als Expertenmodus beibehalten und Web/WPF-Operationen über ein gemeinsames nicht wartendes Gate serialisiert"
+                                              "Automatischer Parent-Record-Fallback, wenn ein Gerät direkte ISDU-RecordItem-Subindex-Lesezugriffe ablehnt",
+                                              "Extraktion des gewünschten Feldes aus Subindex 0 anhand der zertifizierten IODD-Angaben bitOffset und bitLength in Big-Endian-Reihenfolge",
+                                              "Derselbe Fallback im gemeinsamen Web/WPF-Parameterdienst mit eindeutigem Status statt generischem Lesefehler",
+                                              "IODD-Katalogschema auf 15 erhöht, damit vorhandene Caches mit RecordItem-Bitoffsets neu indiziert werden",
+                                              "IODD-Expert-Write-Passwortdialog für DPI und lokalisierte Texte angepasst; Eingabefelder und Schaltflächen werden nicht mehr abgeschnitten",
+                                              "Schreibzugriffe bleiben auf zertifizierte direkte Subindizes beschränkt; kein Parent-Record-Read-Modify-Write"
                                           ],
                                    "es":  [
-                                              "Se añadió un espacio de parámetros activos dentro del IODD Manager de Windows",
-                                              "Se reutilizó el mismo motor certificado de IODD, códec, ISDU, auditoría, protección contra valores obsoletos y relectura del Web Dashboard",
-                                              "Se añadieron selección de puerto, búsqueda, lectura seleccionada, lectura secuencial completa, editores por tipo y aplicar con verificación",
-                                              "Los Enum y Boolean IODD se seleccionan con clic, sin introducir Index, SubIndex ni longitud en bytes",
-                                              "La contraseña IODD Expert Write se unificó con el servicio de seguridad compartido y revoca sesiones de tablet al cambiar",
-                                              "La ventana Raw ISDU se mantiene como modo experto y las operaciones Web/WPF se serializan con una puerta compartida sin cola"
+                                              "Se añadió una lectura alternativa automática del Record padre cuando el dispositivo rechaza la lectura directa de un SubIndex RecordItem",
+                                              "Se usan bitOffset y bitLength del IODD certificado para extraer el campo solicitado del Record en orden Big-Endian",
+                                              "El mismo mecanismo se aplica al motor compartido Web/WPF y muestra un estado explícito de lectura alternativa",
+                                              "El esquema del catálogo IODD sube a 15 para reindexar las cachés con los desplazamientos de bits RecordItem",
+                                              "Se mejoró el cuadro de contraseña IODD Expert Write para DPI y textos localizados, evitando recortes de campos y botones",
+                                              "Las escrituras siguen usando únicamente SubIndex directos certificados; no se realiza Read-Modify-Write del Record padre"
                                           ]
                                }
 }
