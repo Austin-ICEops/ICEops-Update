@@ -1,54 +1,68 @@
 {
-    "schemaVersion":  1,
-    "channel":  "stable",
-    "version":  "1.0.0.544",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.544/ICEops_Setup_1.0.0.544.exe",
-    "sha256":  "fd6618edac0122b3e31e64a0305d270334ed8865532c42655feb23fbec3a1b63",
-    "fileName":  "ICEops_Setup_1.0.0.544.exe",
-    "mandatory":  false,
-    "publishedAtUtc":  "2026-07-28T10:01:12.1671371+00:00",
-    "releaseNotes":  [
-                         "Synchronized Web Dashboard device classification with the Windows Home UI",
-                         "Fixed SMC PF2/PF3 flow meters being shown as generic IO-Link devices",
-                         "Applied the same IODD catalog product-name normalization to the Web API",
-                         "Added server-provided device kind codes with browser-localized labels"
-                     ],
-    "releaseNotesByLanguage":  {
-                                   "en":  [
-                                              "Synchronized Web Dashboard device classification with the Windows Home UI",
-                                              "Fixed SMC PF2/PF3 flow meters being shown as generic IO-Link devices",
-                                              "Applied the same IODD catalog product-name normalization to the Web API",
-                                              "Added server-provided device kind codes with browser-localized labels"
-                                          ],
-                                   "ko":  [
-                                              "Web Dashboard 장치 분류를 Windows 메인 UI와 동일한 기준으로 통합",
-                                              "SMC PF2/PF3 유량계가 일반 IO-Link 장치로 표시되던 문제 수정",
-                                              "Web API에도 동일한 IODD 카탈로그 제품명 보정 적용",
-                                              "서버 장치 종류 코드와 브라우저 다국어 표시 연동"
-                                          ],
-                                   "ja":  [
-                                              "Web Dashboard のデバイス分類を Windows メイン UI と同期",
-                                              "SMC PF2/PF3 流量計が汎用 IO-Link デバイスとして表示される問題を修正",
-                                              "Web API に同じ IODD カタログ製品名補正を適用",
-                                              "サーバーのデバイス種別コードとブラウザーの多言語表示を連携"
-                                          ],
-                                   "zh":  [
-                                              "将 Web Dashboard 设备分类与 Windows 主界面统一",
-                                              "修复 SMC PF2/PF3 流量计显示为通用 IO-Link 设备的问题",
-                                              "Web API 使用相同的 IODD 目录产品名称校正",
-                                              "服务器设备类型代码与浏览器多语言标签联动"
-                                          ],
-                                   "de":  [
-                                              "Geräteklassifizierung des Web Dashboards mit der Windows-Hauptoberfläche synchronisiert",
-                                              "SMC-PF2/PF3-Durchflussmesser wurden nicht mehr als generische IO-Link-Geräte angezeigt",
-                                              "Dieselbe IODD-Katalog-Namensnormalisierung auf die Web-API angewendet",
-                                              "Serverseitige Geräteart-Codes mit lokalisierten Browserbezeichnungen ergänzt"
-                                          ],
-                                   "es":  [
-                                              "Se sincronizó la clasificación de dispositivos del Web Dashboard con la interfaz principal de Windows",
-                                              "Se corrigió que los caudalímetros SMC PF2/PF3 aparecieran como dispositivos IO-Link genéricos",
-                                              "Se aplicó la misma normalización del nombre de producto IODD a la API web",
-                                              "Se añadieron códigos de tipo de dispositivo del servidor con etiquetas localizadas en el navegador"
-                                          ]
-                               }
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "1.0.0.545",
+  "downloadUrl": "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.545/ICEops_Setup_1.0.0.545.exe",
+  "sha256": "b91cf870ba87f662eb7b2188582685730530dd75b2ec557b75854da47a9d4168",
+  "fileName": "ICEops_Setup_1.0.0.545.exe",
+  "mandatory": false,
+  "publishedAtUtc": "2026-07-30T07:20:00Z",
+  "releaseNotes": [
+    "Added a protected tablet Device Parameters workspace backed by certified local IODDs",
+    "Added PC-only password unlock, rotating six-digit pairing, IP-bound short-lived sessions, and immediate revoke",
+    "Added safe ISDU read/write with exact device identity checks, non-queued execution, stale-value protection, and automatic read-back verification",
+    "Added SQLite parameter-change audit logging with fail-closed database preflight",
+    "Hardened datatype validation for enums, bit lengths, integer widths, Float32/Float64, strings, and octet data",
+    "Added guarded GitHub Release publishing that uploads the Release before updating update.json"
+  ],
+  "releaseNotesByLanguage": {
+    "en": [
+      "Added a protected tablet Device Parameters workspace backed by certified local IODDs",
+      "Added PC-only password unlock, rotating six-digit pairing, IP-bound short-lived sessions, and immediate revoke",
+      "Added safe ISDU read/write with exact device identity checks, non-queued execution, stale-value protection, and automatic read-back verification",
+      "Added SQLite parameter-change audit logging with fail-closed database preflight",
+      "Hardened datatype validation for enums, bit lengths, integer widths, Float32/Float64, strings, and octet data",
+      "Added guarded GitHub Release publishing that uploads the Release before updating update.json"
+    ],
+    "ko": [
+      "인증된 로컬 IODD 기반 태블릿 장치 파라미터 작업 화면 추가",
+      "PC 전용 암호 해제, 회전형 6자리 페어링, IP 바인딩 단기 세션 및 즉시 폐기 기능 추가",
+      "정확한 장치 ID 검증, 비대기열 실행, 값 변경 충돌 방지, 쓰기 후 자동 재읽기를 포함한 안전 ISDU 읽기/쓰기 추가",
+      "감사 DB 사전 점검을 포함한 SQLite 파라미터 변경 이력 저장 추가",
+      "Enum, 비트 길이, 정수 폭, Float32/Float64, 문자열 및 Octet 데이터 검증 강화",
+      "GitHub Release를 먼저 업로드한 뒤 update.json을 갱신하는 보호 배포 스크립트 추가"
+    ],
+    "ja": [
+      "認証済みローカルIODDに基づくタブレット用デバイスパラメータ画面を追加",
+      "PC専用パスワード解除、更新式6桁ペアリング、IP固定の短期セッション、即時失効を追加",
+      "厳密なデバイスID確認、非キュー実行、古い値の競合防止、書込み後の自動再読出しを備えた安全なISDU読書きを追加",
+      "監査DBの事前確認を含むSQLiteパラメータ変更履歴を追加",
+      "Enum、ビット長、整数幅、Float32/Float64、文字列、Octetデータの検証を強化",
+      "GitHub Releaseを先に公開し、その後update.jsonを更新する保護公開スクリプトを追加"
+    ],
+    "zh": [
+      "新增基于已认证本地IODD的平板设备参数工作区",
+      "新增仅PC输入密码解锁、轮换6位配对码、IP绑定短期会话和立即撤销",
+      "新增安全ISDU读写：精确设备身份校验、非排队执行、旧值冲突保护及写入后自动回读验证",
+      "新增SQLite参数变更审计日志，并在写入前进行数据库可用性检查",
+      "加强Enum、位长度、整数宽度、Float32/Float64、字符串和Octet数据验证",
+      "新增受保护的GitHub发布脚本：先发布Release，再更新update.json"
+    ],
+    "de": [
+      "Geschützten Tablet-Arbeitsbereich für Geräteparameter auf Basis zertifizierter lokaler IODDs ergänzt",
+      "PC-exklusive Passwortfreigabe, rotierenden sechsstelligen Kopplungscode, IP-gebundene Kurzzeitsitzungen und sofortigen Widerruf ergänzt",
+      "Sicheres ISDU-Lesen/Schreiben mit exakter Geräteidentität, nicht wartender Ausführung, Schutz vor veralteten Werten und automatischer Rückleseprüfung ergänzt",
+      "SQLite-Auditprotokoll für Parameteränderungen mit vorgeschalteter Datenbankprüfung ergänzt",
+      "Validierung für Enums, Bitlängen, Integerbreiten, Float32/Float64, Strings und Octet-Daten gehärtet",
+      "Geschützte GitHub-Veröffentlichung ergänzt: zuerst Release hochladen, danach update.json aktualisieren"
+    ],
+    "es": [
+      "Se añadió un espacio protegido de parámetros de dispositivo para tablet basado en IODD locales certificados",
+      "Se añadió desbloqueo con contraseña solo en el PC, código rotativo de seis dígitos, sesiones breves ligadas a la IP y revocación inmediata",
+      "Se añadió lectura/escritura ISDU segura con identidad exacta, ejecución sin cola, protección contra valores obsoletos y verificación automática por relectura",
+      "Se añadió auditoría SQLite de cambios de parámetros con comprobación previa y bloqueo seguro si la base de datos no está disponible",
+      "Se reforzó la validación de Enum, longitud de bits, ancho de enteros, Float32/Float64, cadenas y datos Octet",
+      "Se añadió publicación protegida en GitHub: primero el Release y después la actualización de update.json"
+    ]
+  }
 }
