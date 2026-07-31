@@ -1,103 +1,13 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.602",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.602/ICEops_Setup_1.0.0.602.exe",
-    "sha256":  "45db68d2c813f1ef33287caaf1342da65e611b41e1b719f0927e0a023ecb3ba9",
-    "fileName":  "ICEops_Setup_1.0.0.602.exe",
+    "version":  "1.0.0.603",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.603/ICEops_Setup_1.0.0.603.exe",
+    "sha256":  "031dcca58820de9a52a4de4ce3dcf80df146f471d853927958ca1c6d2a93a2f3",
+    "fileName":  "ICEops_Setup_1.0.0.603.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T15:29:46.3071483+00:00",
+    "publishedAtUtc":  "2026-07-31T15:59:03.7319774+00:00",
     "releaseNotes":  [
-                         "Aligned DB Monitor with the current alarm database timestamp column.",
-                         "Aligned configured and applied polling interval reporting in diagnostics.",
-                         "Prevented duplicate shutdown requests during updates and normal exit.",
-                         "Hardened and localized IODD selector controls for protected builds.",
-                         "Kept connection, automatic recovery, PDI/PDO, ISDU, and output-control behavior unchanged.",
-                         "Removed the IODD product-name auto-search cancellation race during repeated refresh/disconnect operations.",
-                         "Finished the Technical Support card bottom spacing and rounded border rendering.",
-                         "Removed the duplicate Expert Write unlock action and kept one editor-side lock/unlock control.",
-                         "Automatically reads the selected live IODD parameter and loads the current value into the editor.",
-                         "Allows parameter write through exact VID/DID verification, or through one uniquely matched certified IODD with an exact product identity when an ID is unavailable.",
-                         "Requires direct SubIndex pre-read and direct read-back for every write; parent Record fallback remains read-only."
-                     ],
-    "releaseNotesByLanguage":  {
-                                   "en":  [
-                                              "Aligned DB Monitor with the current alarm database timestamp column.",
-                                              "Aligned configured and applied polling interval reporting in diagnostics.",
-                                              "Prevented duplicate shutdown requests during updates and normal exit.",
-                                              "Hardened and localized IODD selector controls for protected builds.",
-                                              "Kept connection, automatic recovery, PDI/PDO, ISDU, and output-control behavior unchanged.",
-                                              "Removed the IODD product-name auto-search cancellation race during repeated refresh/disconnect operations.",
-                                              "Finished the Technical Support card bottom spacing and rounded border rendering.",
-                                              "Removed the duplicate Expert Write unlock action and kept one editor-side lock/unlock control.",
-                                              "Automatically reads the selected live IODD parameter and loads the current value into the editor.",
-                                              "Allows parameter write through exact VID/DID verification, or through one uniquely matched certified IODD with an exact product identity when an ID is unavailable.",
-                                              "Requires direct SubIndex pre-read and direct read-back for every write; parent Record fallback remains read-only."
-                                          ],
-                                   "ko":  [
-                                              "DB Monitor가 현재 알람 DB의 시간 컬럼을 사용하도록 수정했습니다.",
-                                              "진단 자료의 설정 Polling 주기와 실제 적용 주기 표시 기준을 일치시켰습니다.",
-                                              "업데이트 및 일반 종료 중 중복 종료 요청을 차단했습니다.",
-                                              "보호 빌드의 IODD 선택창 표시와 6개 언어 전환 및 텍스트 영역을 개선했습니다.",
-                                              "연결, 자동 복구, PDI/PDO, ISDU 및 출력 제어 동작은 변경하지 않았습니다.",
-                                              "반복 새로고침·연결 해제 중 IODD 제품명 자동검색의 CTS 취소 경쟁 조건을 제거했습니다.",
-                                              "기술지원 카드의 하단 여백과 둥근 테두리 표시를 마감했습니다.",
-                                              "중복 Expert Write 잠금 해제 버튼을 제거하고 편집기 하단의 잠금/해제 버튼 하나로 정리했습니다.",
-                                              "라이브 IODD 파라미터를 선택하면 현재값을 자동으로 읽어 편집기에 표시합니다.",
-                                              "VID/DID 정확 검증을 우선하며, ID가 제공되지 않을 때는 인증 IODD와 제품명 정확 일치가 하나로 확정된 경우에만 제한적으로 쓰기를 허용합니다.",
-                                              "모든 쓰기는 직접 SubIndex 사전 읽기와 직접 Read-back을 요구하며, 상위 Record 대체 읽기는 계속 읽기 전용입니다."
-                                          ],
-                                   "ja":  [
-                                              "DB Monitorを現在のアラームDBの時刻列に合わせました。",
-                                              "診断情報の設定ポーリング周期と適用周期表示を整合させました。",
-                                              "更新時および通常終了時の重複終了要求を防止しました。",
-                                              "保護ビルドのIODD選択欄表示、6言語切替、表示幅を改善しました。",
-                                              "接続、自動復旧、PDI/PDO、ISDU、出力制御の動作は変更していません。",
-                                              "更新・切断を繰り返した際のIODD製品名自動検索のCTSキャンセル競合を解消しました。",
-                                              "テクニカルサポートカード下部の余白と角丸枠表示を仕上げました。",
-                                              "重複していた Expert Write 解除操作を削除し、エディタ側のロック／解除ボタン1つに統合しました。",
-                                              "ライブ IODD パラメータ選択時に現在値を自動読取りしてエディタへ表示します。",
-                                              "VID/DID 完全一致を優先し、ID未提供時は認証 IODD と製品名の完全一致が1つに確定した場合のみ限定的に書込みを許可します。",
-                                              "すべての書込みで直接 SubIndex の事前読取りと直接 Read-back を必須とし、親 Record フォールバックは読取り専用のままです。"
-                                          ],
-                                   "zh":  [
-                                              "DB Monitor 已与当前报警数据库的时间字段保持一致。",
-                                              "统一了诊断中配置轮询周期与实际应用周期的显示标准。",
-                                              "防止更新和正常退出期间重复发出关闭请求。",
-                                              "改进了受保护版本中的 IODD 选择器显示、六语言切换和文本空间。",
-                                              "连接、自动恢复、PDI/PDO、ISDU 和输出控制行为保持不变。",
-                                              "消除了重复刷新和断开连接时 IODD 产品名称自动搜索的 CTS 取消竞争。",
-                                              "完成了技术支持卡片底部留白和圆角边框显示。",
-                                              "移除重复的 Expert Write 解锁操作，仅保留编辑区的一个写入锁定／解锁按钮。",
-                                              "选择实时 IODD 参数时自动读取当前值并加载到编辑器。",
-                                              "优先使用 VID/DID 精确验证；当 ID 不可用时，仅在认证 IODD 与产品名精确匹配且唯一确定时有限开放写入。",
-                                              "所有写入都必须进行直接 SubIndex 预读取和直接回读；父 Record 回退仍为只读。"
-                                          ],
-                                   "de":  [
-                                              "DB Monitor wurde an die aktuelle Zeitspalte der Alarmdatenbank angepasst.",
-                                              "Die Diagnoseanzeige für konfiguriertes und angewendetes Polling-Intervall wurde vereinheitlicht.",
-                                              "Doppelte Shutdown-Anforderungen bei Updates und normalem Beenden werden verhindert.",
-                                              "IODD-Auswahlelemente wurden für geschützte Builds, sechs Sprachen und längere Texte verbessert.",
-                                              "Verbindung, automatische Wiederherstellung, PDI/PDO, ISDU und Ausgangssteuerung bleiben unverändert.",
-                                              "Die CTS-Abbruch-Race-Condition der automatischen IODD-Produktsuche bei wiederholtem Aktualisieren und Trennen wurde entfernt.",
-                                              "Unterer Abstand und abgerundeter Rahmen der Technischer-Support-Karte wurden finalisiert.",
-                                              "Die doppelte Expert-Write-Entsperrung wurde entfernt; es bleibt eine Sperren/Entsperren-Schaltfläche im Editor.",
-                                              "Der ausgewählte Live-IODD-Parameter wird automatisch gelesen und mit seinem aktuellen Wert in den Editor geladen.",
-                                              "Exakte VID/DID-Prüfung hat Vorrang; fehlt eine ID, ist Schreiben nur bei genau einer zertifizierten IODD mit exakter Produktidentität zulässig.",
-                                              "Jeder Schreibvorgang erfordert direktes SubIndex-Vorlesen und direktes Read-back; Parent-Record-Fallback bleibt schreibgeschützt."
-                                          ],
-                                   "es":  [
-                                              "DB Monitor se alineó con la columna de tiempo actual de la base de datos de alarmas.",
-                                              "Se unificó la visualización del intervalo configurado y aplicado en el diagnóstico.",
-                                              "Se evitan solicitudes de cierre duplicadas durante actualizaciones y cierres normales.",
-                                              "Se mejoraron los selectores IODD para compilaciones protegidas, seis idiomas y textos largos.",
-                                              "La conexión, recuperación automática, PDI/PDO, ISDU y control de salidas no cambian.",
-                                              "Se eliminó la condición de carrera de cancelación CTS de la búsqueda automática IODD al repetir actualizaciones y desconexiones.",
-                                              "Se finalizó el margen inferior y el borde redondeado de la tarjeta de Soporte técnico.",
-                                              "Se eliminó la acción duplicada de desbloqueo Expert Write y se dejó un único control de bloqueo/desbloqueo en el editor.",
-                                              "Al seleccionar un parámetro IODD en vivo, se lee automáticamente su valor actual y se carga en el editor.",
-                                              "Se prioriza la verificación exacta VID/DID; si falta un ID, solo se permite escribir cuando un único IODD certificado coincide exactamente con la identidad del producto.",
-                                              "Toda escritura requiere lectura previa directa del SubIndex y Read-back directo; el fallback del Record padre sigue siendo solo lectura."
-                                          ]
-                               }
+                         "ICEops stability and maintenance update"
+                     ]
 }
