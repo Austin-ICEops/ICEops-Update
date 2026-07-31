@@ -1,61 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.551",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.551/ICEops_Setup_1.0.0.551.exe",
-    "sha256":  "38ee0d6ae0847a711b8c48c258c43af0a6e8fcac0bff9d67d89e5d18ad384b6a",
-    "fileName":  "ICEops_Setup_1.0.0.551.exe",
+    "version":  "1.0.0.552",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.552/ICEops_Setup_1.0.0.552.exe",
+    "sha256":  "56f6b3d8f7de5024eba8a080a046c609beffb8242ee8c91697377a7f163ddfdb",
+    "fileName":  "ICEops_Setup_1.0.0.552.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T11:06:16.7461575+00:00",
+    "publishedAtUtc":  "2026-07-31T11:27:06.3750168+00:00",
     "releaseNotes":  [
-                         "Fixed an issue where the screen could appear connected while live device values were not updating.",
-                         "Connection is now completed only after live data collection starts successfully.",
-                         "Disconnect now stops data collection and closes the communication session even when the displayed connection state is inconsistent.",
-                         "Restored the proven realtime timing settings used by previous stable versions for reliable fast polling.",
-                         "The separate Favorites tab in device settings remains available."
+                         "Restored the stable device connection and live data collection behavior used by the previous proven version.",
+                         "Fixed an issue where device cards could reappear while polling remained stopped and values did not update.",
+                         "Fixed connection and disconnection status refresh so the screen follows the actual communication state.",
+                         "Kept the improved device parameter workspace and the separate Favorites tab.",
+                         "Improved overall startup and communication stability."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed an issue where the screen could appear connected while live device values were not updating.",
-                                              "Connection is now completed only after live data collection starts successfully.",
-                                              "Disconnect now stops data collection and closes the communication session even when the displayed connection state is inconsistent.",
-                                              "Restored the proven realtime timing settings used by previous stable versions for reliable fast polling.",
-                                              "The separate Favorites tab in device settings remains available."
+                                              "Restored the stable device connection and live data collection behavior used by the previous proven version.",
+                                              "Fixed an issue where device cards could reappear while polling remained stopped and values did not update.",
+                                              "Fixed connection and disconnection status refresh so the screen follows the actual communication state.",
+                                              "Kept the improved device parameter workspace and the separate Favorites tab.",
+                                              "Improved overall startup and communication stability."
                                           ],
                                    "ko":  [
-                                              "화면에는 연결된 것으로 보이지만 실제 장치 값이 갱신되지 않을 수 있던 문제를 수정했습니다.",
-                                              "실시간 데이터 수집이 정상적으로 시작된 이후에만 연결 완료로 표시하도록 개선했습니다.",
-                                              "화면의 연결 상태가 일치하지 않는 상황에서도 연결 해제가 데이터 수집을 중지하고 통신 세션을 확실하게 종료하도록 개선했습니다.",
-                                              "빠른 주기의 데이터 수집이 안정적으로 시작되도록 이전 안정 버전에서 검증된 실시간 동작 설정을 복원했습니다.",
-                                              "장치 설정 화면의 별도 즐겨찾기 탭은 그대로 사용할 수 있습니다."
+                                              "이전 안정 버전에서 검증된 장치 연결 및 실시간 데이터 수집 동작을 복원했습니다.",
+                                              "장치 카드가 다시 표시되지만 데이터 수집은 정지되어 값이 갱신되지 않던 문제를 수정했습니다.",
+                                              "연결 및 연결 해제 상태가 실제 통신 상태에 맞게 화면에 반영되도록 개선했습니다.",
+                                              "개선된 장치 파라미터 화면과 별도 즐겨찾기 탭은 그대로 유지했습니다.",
+                                              "프로그램 시작과 통신 동작의 전반적인 안정성을 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "画面上は接続済みでも、実際のデバイス値が更新されない場合がある問題を修正しました。",
-                                              "リアルタイムデータ収集が正常に開始された後にのみ、接続完了として表示されるよう改善しました。",
-                                              "画面の接続状態が一致しない場合でも、切断操作でデータ収集を停止し通信セッションを確実に終了できるよう改善しました。",
-                                              "高速データ収集を安定して開始できるよう、以前の安定版で実績のあるリアルタイム設定を復元しました。",
-                                              "デバイス設定の専用お気に入りタブは引き続き利用できます。"
+                                              "以前の安定版で実績のあるデバイス接続とリアルタイムデータ収集の動作を復元しました。",
+                                              "デバイスカードが再表示されても収集が停止したままで、値が更新されない問題を修正しました。",
+                                              "接続および切断状態が実際の通信状態に合わせて画面へ反映されるよう改善しました。",
+                                              "改善されたデバイスパラメータ画面と専用のお気に入りタブはそのまま維持しています。",
+                                              "起動時および通信動作の全体的な安定性を改善しました。"
                                           ],
                                    "zh":  [
-                                              "修复了界面显示已连接但设备实时数值可能不再更新的问题。",
-                                              "现在仅在实时数据采集正常启动后才显示连接完成。",
-                                              "即使界面连接状态不一致，断开连接也会停止数据采集并可靠关闭通信会话。",
-                                              "恢复了此前稳定版本中经过验证的实时运行设置，以确保高速采集可靠启动。",
-                                              "设备设置中的独立收藏选项卡仍可继续使用。"
+                                              "恢复了此前稳定版本中经过验证的设备连接和实时数据采集方式。",
+                                              "修复了设备卡片重新显示但采集仍处于停止状态、数值不更新的问题。",
+                                              "改进了连接和断开状态显示，使界面与实际通信状态保持一致。",
+                                              "保留了改进后的设备参数界面和独立收藏选项卡。",
+                                              "提升了程序启动和通信运行的整体稳定性。"
                                           ],
                                    "de":  [
-                                              "Ein Problem wurde behoben, bei dem die Oberfläche eine Verbindung anzeigte, obwohl sich die Live-Gerätewerte nicht aktualisierten.",
-                                              "Die Verbindung wird jetzt erst als abgeschlossen angezeigt, nachdem die Live-Datenerfassung erfolgreich gestartet wurde.",
-                                              "Trennen beendet nun die Datenerfassung und schließt die Kommunikationssitzung auch dann zuverlässig, wenn die angezeigten Zustände nicht übereinstimmen.",
-                                              "Die bewährten Echtzeit-Einstellungen früherer stabiler Versionen wurden für zuverlässiges schnelles Polling wiederhergestellt.",
-                                              "Die separate Favoriten-Registerkarte in den Geräteeinstellungen bleibt verfügbar."
+                                              "Das bewährte Verbindungs- und Live-Datenerfassungsverhalten der vorherigen stabilen Version wurde wiederhergestellt.",
+                                              "Ein Problem wurde behoben, bei dem Gerätekarten erneut angezeigt wurden, obwohl das Polling gestoppt blieb und Werte nicht aktualisiert wurden.",
+                                              "Die Anzeige für Verbindung und Trennung folgt jetzt zuverlässig dem tatsächlichen Kommunikationsstatus.",
+                                              "Der verbesserte Geräteparameterbereich und die separate Favoriten-Registerkarte bleiben erhalten.",
+                                              "Die allgemeine Stabilität beim Start und während der Kommunikation wurde verbessert."
                                           ],
                                    "es":  [
-                                              "Se corrigió un problema por el que la pantalla podía aparecer conectada aunque los valores en vivo del dispositivo no se actualizaran.",
-                                              "La conexión ahora se muestra como completada solo después de que la recopilación de datos en vivo se inicia correctamente.",
-                                              "La desconexión ahora detiene la recopilación de datos y cierra la sesión de comunicación incluso si el estado mostrado no es coherente.",
-                                              "Se restauraron los ajustes de tiempo real comprobados de versiones estables anteriores para un sondeo rápido y fiable.",
-                                              "La pestaña independiente de Favoritos en la configuración del dispositivo sigue disponible."
+                                              "Se restauró el comportamiento estable de conexión y adquisición de datos en vivo utilizado en la versión estable anterior.",
+                                              "Se corrigió un problema por el que las tarjetas de dispositivo reaparecían aunque el sondeo permaneciera detenido y los valores no se actualizaran.",
+                                              "Se mejoró la actualización del estado de conexión y desconexión para que la pantalla siga el estado real de comunicación.",
+                                              "Se mantienen el área mejorada de parámetros del dispositivo y la pestaña independiente de Favoritos.",
+                                              "Se mejoró la estabilidad general del inicio y de la comunicación."
                                           ]
                                }
 }
