@@ -1,54 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.550",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.550/ICEops_Setup_1.0.0.550.exe",
-    "sha256":  "66c5a89e3555ac4d07fd9e17d16870b8d0d835f0011e536127c335dc89698678",
-    "fileName":  "ICEops_Setup_1.0.0.550.exe",
+    "version":  "1.0.0.551",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.551/ICEops_Setup_1.0.0.551.exe",
+    "sha256":  "38ee0d6ae0847a711b8c48c258c43af0a6e8fcac0bff9d67d89e5d18ad384b6a",
+    "fileName":  "ICEops_Setup_1.0.0.551.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T10:37:33.2625786+00:00",
+    "publishedAtUtc":  "2026-07-31T11:06:16.7461575+00:00",
     "releaseNotes":  [
-                         "Fixed an issue where a connection-failed message could appear even after the master connection had succeeded.",
-                         "The connection sound now plays as soon as the master session is ready, without waiting for the device-port scan to finish.",
-                         "Disconnect remains available as a recovery action and now closes the session reliably even when the displayed port count has not updated.",
-                         "Favorites in the device settings screen are now shown in a separate Favorites tab for quicker access."
+                         "Fixed an issue where the screen could appear connected while live device values were not updating.",
+                         "Connection is now completed only after live data collection starts successfully.",
+                         "Disconnect now stops data collection and closes the communication session even when the displayed connection state is inconsistent.",
+                         "Restored the proven realtime timing settings used by previous stable versions for reliable fast polling.",
+                         "The separate Favorites tab in device settings remains available."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed an issue where a connection-failed message could appear even after the master connection had succeeded.",
-                                              "The connection sound now plays as soon as the master session is ready, without waiting for the device-port scan to finish.",
-                                              "Disconnect remains available as a recovery action and now closes the session reliably even when the displayed port count has not updated.",
-                                              "Favorites in the device settings screen are now shown in a separate Favorites tab for quicker access."
+                                              "Fixed an issue where the screen could appear connected while live device values were not updating.",
+                                              "Connection is now completed only after live data collection starts successfully.",
+                                              "Disconnect now stops data collection and closes the communication session even when the displayed connection state is inconsistent.",
+                                              "Restored the proven realtime timing settings used by previous stable versions for reliable fast polling.",
+                                              "The separate Favorites tab in device settings remains available."
                                           ],
                                    "ko":  [
-                                              "마스터 연결이 정상적으로 완료된 뒤에도 연결 실패 안내가 표시될 수 있던 문제를 수정했습니다.",
-                                              "장치 포트 확인이 끝나기 전이라도 마스터 연결이 완료되면 연결 사운드가 정상적으로 재생됩니다.",
-                                              "포트 수 표시가 갱신되지 않은 상황에서도 연결 해제 버튼을 사용할 수 있으며 통신 세션이 안정적으로 종료됩니다.",
-                                              "장치 설정 화면의 즐겨찾기를 별도 즐겨찾기 탭에서 빠르게 확인할 수 있도록 개선했습니다."
+                                              "화면에는 연결된 것으로 보이지만 실제 장치 값이 갱신되지 않을 수 있던 문제를 수정했습니다.",
+                                              "실시간 데이터 수집이 정상적으로 시작된 이후에만 연결 완료로 표시하도록 개선했습니다.",
+                                              "화면의 연결 상태가 일치하지 않는 상황에서도 연결 해제가 데이터 수집을 중지하고 통신 세션을 확실하게 종료하도록 개선했습니다.",
+                                              "빠른 주기의 데이터 수집이 안정적으로 시작되도록 이전 안정 버전에서 검증된 실시간 동작 설정을 복원했습니다.",
+                                              "장치 설정 화면의 별도 즐겨찾기 탭은 그대로 사용할 수 있습니다."
                                           ],
                                    "ja":  [
-                                              "マスター接続が正常に完了した後でも接続失敗メッセージが表示されることがある問題を修正しました。",
-                                              "デバイスポートの確認完了を待たず、マスター接続が完了した時点で接続音が再生されます。",
-                                              "ポート数の表示が更新されていない場合でも切断操作を使用でき、通信セッションを確実に終了できます。",
-                                              "デバイス設定のお気に入りを専用のお気に入りタブで確認できるよう改善しました。"
+                                              "画面上は接続済みでも、実際のデバイス値が更新されない場合がある問題を修正しました。",
+                                              "リアルタイムデータ収集が正常に開始された後にのみ、接続完了として表示されるよう改善しました。",
+                                              "画面の接続状態が一致しない場合でも、切断操作でデータ収集を停止し通信セッションを確実に終了できるよう改善しました。",
+                                              "高速データ収集を安定して開始できるよう、以前の安定版で実績のあるリアルタイム設定を復元しました。",
+                                              "デバイス設定の専用お気に入りタブは引き続き利用できます。"
                                           ],
                                    "zh":  [
-                                              "修复了主站连接已成功但仍可能显示连接失败提示的问题。",
-                                              "主站会话建立后即可播放连接提示音，无需等待设备端口扫描完成。",
-                                              "即使端口数量尚未更新，也可使用断开连接操作并可靠关闭通信会话。",
-                                              "设备设置中的收藏项目现在可在独立的“收藏”选项卡中快速查看。"
+                                              "修复了界面显示已连接但设备实时数值可能不再更新的问题。",
+                                              "现在仅在实时数据采集正常启动后才显示连接完成。",
+                                              "即使界面连接状态不一致，断开连接也会停止数据采集并可靠关闭通信会话。",
+                                              "恢复了此前稳定版本中经过验证的实时运行设置，以确保高速采集可靠启动。",
+                                              "设备设置中的独立收藏选项卡仍可继续使用。"
                                           ],
                                    "de":  [
-                                              "Ein Problem wurde behoben, bei dem trotz erfolgreicher Master-Verbindung eine Fehlermeldung erscheinen konnte.",
-                                              "Der Verbindungston wird jetzt abgespielt, sobald die Master-Sitzung bereit ist, ohne auf die Portprüfung zu warten.",
-                                              "Trennen bleibt als Wiederherstellungsfunktion verfügbar und beendet die Sitzung auch dann zuverlässig, wenn die Portanzeige noch nicht aktualisiert wurde.",
-                                              "Favoriten in den Geräteeinstellungen werden jetzt in einer eigenen Favoriten-Registerkarte angezeigt."
+                                              "Ein Problem wurde behoben, bei dem die Oberfläche eine Verbindung anzeigte, obwohl sich die Live-Gerätewerte nicht aktualisierten.",
+                                              "Die Verbindung wird jetzt erst als abgeschlossen angezeigt, nachdem die Live-Datenerfassung erfolgreich gestartet wurde.",
+                                              "Trennen beendet nun die Datenerfassung und schließt die Kommunikationssitzung auch dann zuverlässig, wenn die angezeigten Zustände nicht übereinstimmen.",
+                                              "Die bewährten Echtzeit-Einstellungen früherer stabiler Versionen wurden für zuverlässiges schnelles Polling wiederhergestellt.",
+                                              "Die separate Favoriten-Registerkarte in den Geräteeinstellungen bleibt verfügbar."
                                           ],
                                    "es":  [
-                                              "Se corrigió un problema que podía mostrar un aviso de conexión fallida aunque la conexión con el maestro ya se hubiera completado.",
-                                              "El sonido de conexión se reproduce en cuanto la sesión del maestro está lista, sin esperar a que finalice la revisión de puertos.",
-                                              "La desconexión permanece disponible como acción de recuperación y cierra la sesión de forma fiable aunque el número de puertos aún no se haya actualizado.",
-                                              "Los favoritos de la pantalla de configuración del dispositivo ahora se muestran en una pestaña independiente."
+                                              "Se corrigió un problema por el que la pantalla podía aparecer conectada aunque los valores en vivo del dispositivo no se actualizaran.",
+                                              "La conexión ahora se muestra como completada solo después de que la recopilación de datos en vivo se inicia correctamente.",
+                                              "La desconexión ahora detiene la recopilación de datos y cierra la sesión de comunicación incluso si el estado mostrado no es coherente.",
+                                              "Se restauraron los ajustes de tiempo real comprobados de versiones estables anteriores para un sondeo rápido y fiable.",
+                                              "La pestaña independiente de Favoritos en la configuración del dispositivo sigue disponible."
                                           ]
                                }
 }
