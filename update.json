@@ -3,10 +3,10 @@
     "channel":  "stable",
     "version":  "1.0.0.552",
     "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.552/ICEops_Setup_1.0.0.552.exe",
-    "sha256":  "56f6b3d8f7de5024eba8a080a046c609beffb8242ee8c91697377a7f163ddfdb",
+    "sha256":  "a272074c01230685a45096ec0a25b00acd0addab04f01bcbeff811eb7d2cde9d",
     "fileName":  "ICEops_Setup_1.0.0.552.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T11:27:06.3750168+00:00",
+    "publishedAtUtc":  "2026-07-31T11:40:22.6415062+00:00",
     "releaseNotes":  [
                          "Restored the stable device connection and live data collection behavior used by the previous proven version.",
                          "Fixed an issue where device cards could reappear while polling remained stopped and values did not update.",
