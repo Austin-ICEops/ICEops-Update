@@ -1,61 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.556",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.556/ICEops_Setup_1.0.0.556.exe",
-    "sha256":  "f8a6f1ba63924b6f7852730c4ed4ea593605c2f8ba7dc6d7c8157f762c2346b2",
-    "fileName":  "ICEops_Setup_1.0.0.556.exe",
+    "version":  "1.0.0.600",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.600/ICEops_Setup_1.0.0.600.exe",
+    "sha256":  "563d041e76837f9941dda9d5b58d62a50a3ada9e937ea469c79167ddf369f6ce",
+    "fileName":  "ICEops_Setup_1.0.0.600.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T13:13:34.8719603+00:00",
+    "publishedAtUtc":  "2026-07-31T14:33:34.5021302+00:00",
     "releaseNotes":  [
-                         "Moved the diagnostic package function from the IODD screen to the Technical Support section of the License screen.",
-                         "Fixed an issue that could prevent diagnostic ZIP files from being created in protected builds.",
-                         "Added a button to open the application log folder directly.",
-                         "Diagnostic packages continue to exclude passwords, license keys, original databases, and process-value history.",
-                         "Kept the existing connection, live data collection, automatic recovery, IODD, and output-control behavior unchanged."
+                         "Aligned DB Monitor with the current alarm database timestamp column.",
+                         "Aligned configured and applied polling interval reporting in diagnostics.",
+                         "Prevented duplicate shutdown requests during updates and normal exit.",
+                         "Hardened and localized IODD selector controls for protected builds.",
+                         "Kept connection, automatic recovery, PDI/PDO, ISDU, and output-control behavior unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Moved the diagnostic package function from the IODD screen to the Technical Support section of the License screen.",
-                                              "Fixed an issue that could prevent diagnostic ZIP files from being created in protected builds.",
-                                              "Added a button to open the application log folder directly.",
-                                              "Diagnostic packages continue to exclude passwords, license keys, original databases, and process-value history.",
-                                              "Kept the existing connection, live data collection, automatic recovery, IODD, and output-control behavior unchanged."
+                                              "Aligned DB Monitor with the current alarm database timestamp column.",
+                                              "Aligned configured and applied polling interval reporting in diagnostics.",
+                                              "Prevented duplicate shutdown requests during updates and normal exit.",
+                                              "Hardened and localized IODD selector controls for protected builds.",
+                                              "Kept connection, automatic recovery, PDI/PDO, ISDU, and output-control behavior unchanged."
                                           ],
                                    "ko":  [
-                                              "진단 자료 저장 기능을 IODD 화면에서 라이선스 화면의 기술지원 영역으로 이동했습니다.",
-                                              "보호된 배포 버전에서 진단 ZIP 파일이 생성되지 않을 수 있던 문제를 수정했습니다.",
-                                              "프로그램 로그 폴더를 바로 열 수 있는 버튼을 추가했습니다.",
-                                              "진단 자료에는 비밀번호, 라이선스 키, 데이터베이스 원본 및 프로세스 값 이력이 포함되지 않습니다.",
-                                              "기존 연결, 실시간 데이터 수집, 자동 복구, IODD 및 출력 제어 동작은 변경하지 않았습니다."
+                                              "DB Monitor가 현재 알람 DB의 시간 컬럼을 사용하도록 수정했습니다.",
+                                              "진단 자료의 설정 Polling 주기와 실제 적용 주기 표시 기준을 일치시켰습니다.",
+                                              "업데이트 및 일반 종료 중 중복 종료 요청을 차단했습니다.",
+                                              "보호 빌드의 IODD 선택창 표시와 6개 언어 전환 및 텍스트 영역을 개선했습니다.",
+                                              "연결, 자동 복구, PDI/PDO, ISDU 및 출력 제어 동작은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "診断資料の保存機能をIODD画面からライセンス画面のテクニカルサポート領域へ移動しました。",
-                                              "保護された配布版で診断ZIPファイルを作成できない場合がある問題を修正しました。",
-                                              "アプリケーションのログフォルダーを直接開くボタンを追加しました。",
-                                              "診断資料にはパスワード、ライセンスキー、データベース原本、プロセス値履歴は含まれません。",
-                                              "既存の接続、リアルタイム収集、自動復旧、IODD、出力制御の動作は変更していません。"
+                                              "DB Monitorを現在のアラームDBの時刻列に合わせました。",
+                                              "診断情報の設定ポーリング周期と適用周期表示を整合させました。",
+                                              "更新時および通常終了時の重複終了要求を防止しました。",
+                                              "保護ビルドのIODD選択欄表示、6言語切替、表示幅を改善しました。",
+                                              "接続、自動復旧、PDI/PDO、ISDU、出力制御の動作は変更していません。"
                                           ],
                                    "zh":  [
-                                              "将诊断资料保存功能从 IODD 页面移至许可证页面的技术支持区域。",
-                                              "修复了受保护的发布版本中可能无法生成诊断 ZIP 文件的问题。",
-                                              "新增了直接打开程序日志文件夹的按钮。",
-                                              "诊断资料不包含密码、许可证密钥、原始数据库或过程值历史记录。",
-                                              "现有连接、实时数据采集、自动恢复、IODD 和输出控制行为保持不变。"
+                                              "DB Monitor 已与当前报警数据库的时间字段保持一致。",
+                                              "统一了诊断中配置轮询周期与实际应用周期的显示标准。",
+                                              "防止更新和正常退出期间重复发出关闭请求。",
+                                              "改进了受保护版本中的 IODD 选择器显示、六语言切换和文本空间。",
+                                              "连接、自动恢复、PDI/PDO、ISDU 和输出控制行为保持不变。"
                                           ],
                                    "de":  [
-                                              "Die Funktion zum Speichern des Diagnosepakets wurde vom IODD-Bildschirm in den Bereich Technischer Support der Lizenzseite verschoben.",
-                                              "Ein Problem wurde behoben, durch das Diagnose-ZIP-Dateien in geschützten Builds möglicherweise nicht erstellt wurden.",
-                                              "Eine Schaltfläche zum direkten Öffnen des Programm-Logordners wurde hinzugefügt.",
-                                              "Diagnosepakete enthalten weiterhin keine Passwörter, Lizenzschlüssel, Originaldatenbanken oder Prozesswertverläufe.",
-                                              "Verbindung, Live-Datenerfassung, automatische Wiederherstellung, IODD und Ausgangssteuerung bleiben unverändert."
+                                              "DB Monitor wurde an die aktuelle Zeitspalte der Alarmdatenbank angepasst.",
+                                              "Die Diagnoseanzeige für konfiguriertes und angewendetes Polling-Intervall wurde vereinheitlicht.",
+                                              "Doppelte Shutdown-Anforderungen bei Updates und normalem Beenden werden verhindert.",
+                                              "IODD-Auswahlelemente wurden für geschützte Builds, sechs Sprachen und längere Texte verbessert.",
+                                              "Verbindung, automatische Wiederherstellung, PDI/PDO, ISDU und Ausgangssteuerung bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "La función para guardar el paquete de diagnóstico se trasladó de la pantalla IODD al área de Soporte técnico de la pantalla de licencia.",
-                                              "Se corrigió un problema que podía impedir la creación del archivo ZIP de diagnóstico en versiones protegidas.",
-                                              "Se añadió un botón para abrir directamente la carpeta de registros del programa.",
-                                              "Los paquetes de diagnóstico siguen excluyendo contraseñas, claves de licencia, bases de datos originales e historial de valores de proceso.",
-                                              "Se mantienen sin cambios la conexión, la recopilación en tiempo real, la recuperación automática, IODD y el control de salidas."
+                                              "DB Monitor se alineó con la columna de tiempo actual de la base de datos de alarmas.",
+                                              "Se unificó la visualización del intervalo configurado y aplicado en el diagnóstico.",
+                                              "Se evitan solicitudes de cierre duplicadas durante actualizaciones y cierres normales.",
+                                              "Se mejoraron los selectores IODD para compilaciones protegidas, seis idiomas y textos largos.",
+                                              "La conexión, recuperación automática, PDI/PDO, ISDU y control de salidas no cambian."
                                           ]
                                }
 }
