@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.608",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.608/ICEops_Setup_1.0.0.608.exe",
-    "sha256":  "95395e0c6c3bcbb4b5e2b2bfe292e9dbe4c589acc9aef098a088f947c08be353",
-    "fileName":  "ICEops_Setup_1.0.0.608.exe",
+    "version":  "1.0.0.609",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.609/ICEops_Setup_1.0.0.609.exe",
+    "sha256":  "f5935a82db75c3fb143dd68cf00b7924cc882e1630ffcaa2c723f8233f53a0a3",
+    "fileName":  "ICEops_Setup_1.0.0.609.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T17:48:51.4828290+00:00",
+    "publishedAtUtc":  "2026-07-31T18:15:52.7038372+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ]
