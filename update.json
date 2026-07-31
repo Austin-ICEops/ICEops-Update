@@ -1,61 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.552",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.552/ICEops_Setup_1.0.0.552.exe",
-    "sha256":  "a272074c01230685a45096ec0a25b00acd0addab04f01bcbeff811eb7d2cde9d",
-    "fileName":  "ICEops_Setup_1.0.0.552.exe",
+    "version":  "1.0.0.553",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.553/ICEops_Setup_1.0.0.553.exe",
+    "sha256":  "a99498600860a5cdc88e28c5e99b0ff55947d7f638b3998a08f3f78dd20ab586",
+    "fileName":  "ICEops_Setup_1.0.0.553.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T11:40:22.6415062+00:00",
+    "publishedAtUtc":  "2026-07-31T11:55:21.0841048+00:00",
     "releaseNotes":  [
-                         "Restored the stable device connection and live data collection behavior used by the previous proven version.",
-                         "Fixed an issue where device cards could reappear while polling remained stopped and values did not update.",
-                         "Fixed connection and disconnection status refresh so the screen follows the actual communication state.",
-                         "Kept the improved device parameter workspace and the separate Favorites tab.",
-                         "Improved overall startup and communication stability."
+                         "Improved device parameter reading so unsupported individual SubIndex values are clearly distinguished from communication failures.",
+                         "When available, ICEops now reads the parent Record and safely extracts the requested value without guessing field positions.",
+                         "Parameters not provided by the device are shown as unavailable instead of a general read failure.",
+                         "Read summaries now separate successful reads, values not provided by the device, and actual failures.",
+                         "Kept the proven connection, polling, automatic recovery, and Favorites behavior from the previous stable build."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Restored the stable device connection and live data collection behavior used by the previous proven version.",
-                                              "Fixed an issue where device cards could reappear while polling remained stopped and values did not update.",
-                                              "Fixed connection and disconnection status refresh so the screen follows the actual communication state.",
-                                              "Kept the improved device parameter workspace and the separate Favorites tab.",
-                                              "Improved overall startup and communication stability."
+                                              "Improved device parameter reading so unsupported individual SubIndex values are clearly distinguished from communication failures.",
+                                              "When available, ICEops now reads the parent Record and safely extracts the requested value without guessing field positions.",
+                                              "Parameters not provided by the device are shown as unavailable instead of a general read failure.",
+                                              "Read summaries now separate successful reads, values not provided by the device, and actual failures.",
+                                              "Kept the proven connection, polling, automatic recovery, and Favorites behavior from the previous stable build."
                                           ],
                                    "ko":  [
-                                              "이전 안정 버전에서 검증된 장치 연결 및 실시간 데이터 수집 동작을 복원했습니다.",
-                                              "장치 카드가 다시 표시되지만 데이터 수집은 정지되어 값이 갱신되지 않던 문제를 수정했습니다.",
-                                              "연결 및 연결 해제 상태가 실제 통신 상태에 맞게 화면에 반영되도록 개선했습니다.",
-                                              "개선된 장치 파라미터 화면과 별도 즐겨찾기 탭은 그대로 유지했습니다.",
-                                              "프로그램 시작과 통신 동작의 전반적인 안정성을 개선했습니다."
+                                              "장치가 개별 SubIndex 읽기를 지원하지 않는 경우를 일반 통신 실패와 구분하도록 개선했습니다.",
+                                              "가능한 경우 상위 Record를 읽고, 확인된 위치 정보만 사용해 요청한 값을 안전하게 표시합니다.",
+                                              "장치에서 제공하지 않는 파라미터는 일반 읽기 실패 대신 장치 미제공 상태로 안내합니다.",
+                                              "전체 읽기 결과에서 정상 읽기, 장치 미제공, 실제 실패 항목을 구분해 표시합니다.",
+                                              "기존 안정 빌드의 연결, 폴링, 자동 복구 및 즐겨찾기 동작은 그대로 유지했습니다."
                                           ],
                                    "ja":  [
-                                              "以前の安定版で実績のあるデバイス接続とリアルタイムデータ収集の動作を復元しました。",
-                                              "デバイスカードが再表示されても収集が停止したままで、値が更新されない問題を修正しました。",
-                                              "接続および切断状態が実際の通信状態に合わせて画面へ反映されるよう改善しました。",
-                                              "改善されたデバイスパラメータ画面と専用のお気に入りタブはそのまま維持しています。",
-                                              "起動時および通信動作の全体的な安定性を改善しました。"
+                                              "個別SubIndex読取に対応しないデバイス項目を、一般的な通信障害と区別して表示するよう改善しました。",
+                                              "利用可能な場合は親Recordを読み、確認済みの位置情報だけで要求値を安全に抽出します。",
+                                              "デバイスが提供しないパラメータは、一般的な読取失敗ではなく未提供状態として表示します。",
+                                              "一括読取結果で、正常読取、デバイス未提供、実際の失敗を分けて表示します。",
+                                              "前の安定ビルドの接続、ポーリング、自動復旧、お気に入り動作は維持しています。"
                                           ],
                                    "zh":  [
-                                              "恢复了此前稳定版本中经过验证的设备连接和实时数据采集方式。",
-                                              "修复了设备卡片重新显示但采集仍处于停止状态、数值不更新的问题。",
-                                              "改进了连接和断开状态显示，使界面与实际通信状态保持一致。",
-                                              "保留了改进后的设备参数界面和独立收藏选项卡。",
-                                              "提升了程序启动和通信运行的整体稳定性。"
+                                              "改进了设备参数读取，可将不支持单独SubIndex读取的项目与一般通信故障区分显示。",
+                                              "在可用时读取父Record，并仅使用已确认的位置安全提取所需数值。",
+                                              "设备未提供的参数将显示为未提供，而不是一般读取失败。",
+                                              "批量读取结果会分别显示读取成功、设备未提供和实际失败。",
+                                              "保留上一稳定版本的连接、轮询、自动恢复和收藏功能。"
                                           ],
                                    "de":  [
-                                              "Das bewährte Verbindungs- und Live-Datenerfassungsverhalten der vorherigen stabilen Version wurde wiederhergestellt.",
-                                              "Ein Problem wurde behoben, bei dem Gerätekarten erneut angezeigt wurden, obwohl das Polling gestoppt blieb und Werte nicht aktualisiert wurden.",
-                                              "Die Anzeige für Verbindung und Trennung folgt jetzt zuverlässig dem tatsächlichen Kommunikationsstatus.",
-                                              "Der verbesserte Geräteparameterbereich und die separate Favoriten-Registerkarte bleiben erhalten.",
-                                              "Die allgemeine Stabilität beim Start und während der Kommunikation wurde verbessert."
+                                              "Die Parameteranzeige unterscheidet jetzt nicht unterstützte einzelne SubIndex-Lesezugriffe klar von Kommunikationsfehlern.",
+                                              "Wenn möglich, liest ICEops den Parent Record und extrahiert den Wert nur anhand bestätigter Feldpositionen.",
+                                              "Vom Gerät nicht bereitgestellte Parameter werden als nicht verfügbar statt als allgemeiner Lesefehler angezeigt.",
+                                              "Zusammenfassungen trennen erfolgreiche Lesevorgänge, nicht bereitgestellte Werte und tatsächliche Fehler.",
+                                              "Das bewährte Verbindungs-, Polling-, Wiederherstellungs- und Favoritenverhalten bleibt erhalten."
                                           ],
                                    "es":  [
-                                              "Se restauró el comportamiento estable de conexión y adquisición de datos en vivo utilizado en la versión estable anterior.",
-                                              "Se corrigió un problema por el que las tarjetas de dispositivo reaparecían aunque el sondeo permaneciera detenido y los valores no se actualizaran.",
-                                              "Se mejoró la actualización del estado de conexión y desconexión para que la pantalla siga el estado real de comunicación.",
-                                              "Se mantienen el área mejorada de parámetros del dispositivo y la pestaña independiente de Favoritos.",
-                                              "Se mejoró la estabilidad general del inicio y de la comunicación."
+                                              "La lectura de parámetros ahora distingue los SubIndex individuales no admitidos de los errores de comunicación.",
+                                              "Cuando es posible, ICEops lee el Record padre y extrae el valor usando solo posiciones de campo verificadas.",
+                                              "Los parámetros no proporcionados por el dispositivo se muestran como no disponibles en lugar de un error general.",
+                                              "Los resúmenes separan lecturas correctas, valores no proporcionados y fallos reales.",
+                                              "Se mantiene el comportamiento estable de conexión, sondeo, recuperación automática y Favoritos."
                                           ]
                                }
 }
