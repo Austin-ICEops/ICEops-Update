@@ -1,68 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.555",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.555/ICEops_Setup_1.0.0.555.exe",
-    "sha256":  "fc159501d03d4d8361ac4aa53938413aaaef989aa43c04991e7f67fd5795d063",
-    "fileName":  "ICEops_Setup_1.0.0.555.exe",
+    "version":  "1.0.0.556",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.556/ICEops_Setup_1.0.0.556.exe",
+    "sha256":  "f8a6f1ba63924b6f7852730c4ed4ea593605c2f8ba7dc6d7c8157f762c2346b2",
+    "fileName":  "ICEops_Setup_1.0.0.556.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T12:46:14.2156063+00:00",
+    "publishedAtUtc":  "2026-07-31T13:13:34.8719603+00:00",
     "releaseNotes":  [
-                         "The Output Control button is now hidden for sensors that do not provide output data.",
-                         "Added an Online IODD tab for IODDs matched to currently connected devices.",
-                         "Online IODDs are automatically ordered by port number.",
-                         "IODD matching now prioritizes verified VID/DID identity when available.",
-                         "Improved multilingual catalog search and guidance text.",
-                         "Kept the existing connection, live data collection, automatic recovery, and parameter safety behavior."
+                         "Moved the diagnostic package function from the IODD screen to the Technical Support section of the License screen.",
+                         "Fixed an issue that could prevent diagnostic ZIP files from being created in protected builds.",
+                         "Added a button to open the application log folder directly.",
+                         "Diagnostic packages continue to exclude passwords, license keys, original databases, and process-value history.",
+                         "Kept the existing connection, live data collection, automatic recovery, IODD, and output-control behavior unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "The Output Control button is now hidden for sensors that do not provide output data.",
-                                              "Added an Online IODD tab for IODDs matched to currently connected devices.",
-                                              "Online IODDs are automatically ordered by port number.",
-                                              "IODD matching now prioritizes verified VID/DID identity when available.",
-                                              "Improved multilingual catalog search and guidance text.",
-                                              "Kept the existing connection, live data collection, automatic recovery, and parameter safety behavior."
+                                              "Moved the diagnostic package function from the IODD screen to the Technical Support section of the License screen.",
+                                              "Fixed an issue that could prevent diagnostic ZIP files from being created in protected builds.",
+                                              "Added a button to open the application log folder directly.",
+                                              "Diagnostic packages continue to exclude passwords, license keys, original databases, and process-value history.",
+                                              "Kept the existing connection, live data collection, automatic recovery, IODD, and output-control behavior unchanged."
                                           ],
                                    "ko":  [
-                                              "출력 기능이 없는 센서에는 출력 제어 버튼이 표시되지 않도록 개선했습니다.",
-                                              "현재 연결된 장치와 일치하는 IODD만 확인할 수 있는 온라인 IODD 탭을 추가했습니다.",
-                                              "온라인 IODD를 포트 번호 순서로 자동 정렬합니다.",
-                                              "확인된 VID/DID 정보가 있을 때 이를 우선 사용해 IODD 매칭 정확도를 높였습니다.",
-                                              "IODD 검색과 안내 문구의 다국어 표시를 정리했습니다.",
-                                              "기존 연결, 실시간 데이터 수집, 자동 복구 및 파라미터 안전 동작은 그대로 유지했습니다."
+                                              "진단 자료 저장 기능을 IODD 화면에서 라이선스 화면의 기술지원 영역으로 이동했습니다.",
+                                              "보호된 배포 버전에서 진단 ZIP 파일이 생성되지 않을 수 있던 문제를 수정했습니다.",
+                                              "프로그램 로그 폴더를 바로 열 수 있는 버튼을 추가했습니다.",
+                                              "진단 자료에는 비밀번호, 라이선스 키, 데이터베이스 원본 및 프로세스 값 이력이 포함되지 않습니다.",
+                                              "기존 연결, 실시간 데이터 수집, 자동 복구, IODD 및 출력 제어 동작은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "出力データを持たないセンサーでは出力制御ボタンを表示しないよう改善しました。",
-                                              "現在接続中のデバイスに一致するIODDだけを表示するオンラインIODDタブを追加しました。",
-                                              "オンラインIODDはポート番号順に自動整列されます。",
-                                              "確認済みのVID/DIDがある場合は、それを優先してIODD照合精度を高めます。",
-                                              "IODD検索と案内文の多言語表示を改善しました。",
-                                              "既存の接続、リアルタイム収集、自動復旧、パラメータ安全動作は維持しています。"
+                                              "診断資料の保存機能をIODD画面からライセンス画面のテクニカルサポート領域へ移動しました。",
+                                              "保護された配布版で診断ZIPファイルを作成できない場合がある問題を修正しました。",
+                                              "アプリケーションのログフォルダーを直接開くボタンを追加しました。",
+                                              "診断資料にはパスワード、ライセンスキー、データベース原本、プロセス値履歴は含まれません。",
+                                              "既存の接続、リアルタイム収集、自動復旧、IODD、出力制御の動作は変更していません。"
                                           ],
                                    "zh":  [
-                                              "对于不提供输出数据的传感器，不再显示输出控制按钮。",
-                                              "新增在线 IODD 选项卡，仅显示与当前连接设备匹配的 IODD。",
-                                              "在线 IODD 会按端口号自动排序。",
-                                              "在可用时优先使用已确认的 VID/DID，提高 IODD 匹配准确性。",
-                                              "改进了 IODD 搜索和提示文字的多语言显示。",
-                                              "保留现有连接、实时数据采集、自动恢复和参数安全行为。"
+                                              "将诊断资料保存功能从 IODD 页面移至许可证页面的技术支持区域。",
+                                              "修复了受保护的发布版本中可能无法生成诊断 ZIP 文件的问题。",
+                                              "新增了直接打开程序日志文件夹的按钮。",
+                                              "诊断资料不包含密码、许可证密钥、原始数据库或过程值历史记录。",
+                                              "现有连接、实时数据采集、自动恢复、IODD 和输出控制行为保持不变。"
                                           ],
                                    "de":  [
-                                              "Bei Sensoren ohne Ausgangsdaten wird die Schaltfläche Ausgangssteuerung nicht mehr angezeigt.",
-                                              "Eine Registerkarte Online-IODDs zeigt nur IODDs für aktuell verbundene Geräte.",
-                                              "Online-IODDs werden automatisch nach Portnummer sortiert.",
-                                              "Verifizierte VID/DID-Identitäten werden bevorzugt, um die IODD-Zuordnung zu verbessern.",
-                                              "Die mehrsprachige Katalogsuche und Hinweistexte wurden verbessert.",
-                                              "Verbindung, Live-Datenerfassung, automatische Wiederherstellung und Parametersicherheit bleiben unverändert."
+                                              "Die Funktion zum Speichern des Diagnosepakets wurde vom IODD-Bildschirm in den Bereich Technischer Support der Lizenzseite verschoben.",
+                                              "Ein Problem wurde behoben, durch das Diagnose-ZIP-Dateien in geschützten Builds möglicherweise nicht erstellt wurden.",
+                                              "Eine Schaltfläche zum direkten Öffnen des Programm-Logordners wurde hinzugefügt.",
+                                              "Diagnosepakete enthalten weiterhin keine Passwörter, Lizenzschlüssel, Originaldatenbanken oder Prozesswertverläufe.",
+                                              "Verbindung, Live-Datenerfassung, automatische Wiederherstellung, IODD und Ausgangssteuerung bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "El botón de control de salida se oculta en sensores que no proporcionan datos de salida.",
-                                              "Se añadió una pestaña IODD en línea para los IODD que coinciden con los dispositivos conectados.",
-                                              "Los IODD en línea se ordenan automáticamente por número de puerto.",
-                                              "Cuando está disponible, se prioriza la identidad VID/DID verificada para mejorar la coincidencia IODD.",
-                                              "Se mejoraron la búsqueda del catálogo y los textos de ayuda multilingües.",
-                                              "Se mantienen la conexión, la recopilación en tiempo real, la recuperación automática y la seguridad de parámetros."
+                                              "La función para guardar el paquete de diagnóstico se trasladó de la pantalla IODD al área de Soporte técnico de la pantalla de licencia.",
+                                              "Se corrigió un problema que podía impedir la creación del archivo ZIP de diagnóstico en versiones protegidas.",
+                                              "Se añadió un botón para abrir directamente la carpeta de registros del programa.",
+                                              "Los paquetes de diagnóstico siguen excluyendo contraseñas, claves de licencia, bases de datos originales e historial de valores de proceso.",
+                                              "Se mantienen sin cambios la conexión, la recopilación en tiempo real, la recuperación automática, IODD y el control de salidas."
                                           ]
                                }
 }
