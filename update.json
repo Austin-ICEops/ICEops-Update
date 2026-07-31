@@ -1,75 +1,54 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.549",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.549/ICEops_Setup_1.0.0.549.exe",
-    "sha256":  "60bf1c8625709c63b6ba8720794f786386ab068e41fe37aefe6c5db279f7c10c",
-    "fileName":  "ICEops_Setup_1.0.0.549.exe",
+    "version":  "1.0.0.550",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.550/ICEops_Setup_1.0.0.550.exe",
+    "sha256":  "66c5a89e3555ac4d07fd9e17d16870b8d0d835f0011e536127c335dc89698678",
+    "fileName":  "ICEops_Setup_1.0.0.550.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T10:17:20.5122861+00:00",
+    "publishedAtUtc":  "2026-07-31T10:37:33.2625786+00:00",
     "releaseNotes":  [
-                         "Made device parameter reading faster and smoother, especially when many settings are shown at once",
-                         "Added progress information, a cancel button, and an option to read only the settings currently shown on screen",
-                         "Added Favorites and Recently Used filters so commonly used settings are easier to find",
-                         "Improved write confirmation and automatic locking to help prevent unintended setting changes",
-                         "Added a one-click support package that collects safe diagnostic information without including passwords, license files, databases, or process history",
-                         "Improved long-running stability monitoring and automatically uses high-performance mode only during high-speed data collection",
-                         "Improved wording and table labels in the device settings screen across Korean, English, Japanese, Chinese, German, and Spanish"
+                         "Fixed an issue where a connection-failed message could appear even after the master connection had succeeded.",
+                         "The connection sound now plays as soon as the master session is ready, without waiting for the device-port scan to finish.",
+                         "Disconnect remains available as a recovery action and now closes the session reliably even when the displayed port count has not updated.",
+                         "Favorites in the device settings screen are now shown in a separate Favorites tab for quicker access."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Made device parameter reading faster and smoother, especially when many settings are shown at once",
-                                              "Added progress information, a cancel button, and an option to read only the settings currently shown on screen",
-                                              "Added Favorites and Recently Used filters so commonly used settings are easier to find",
-                                              "Improved write confirmation and automatic locking to help prevent unintended setting changes",
-                                              "Added a one-click support package that collects safe diagnostic information without including passwords, license files, databases, or process history",
-                                              "Improved long-running stability monitoring and automatically uses high-performance mode only during high-speed data collection",
-                                              "Improved wording and table labels in the device settings screen across Korean, English, Japanese, Chinese, German, and Spanish"
+                                              "Fixed an issue where a connection-failed message could appear even after the master connection had succeeded.",
+                                              "The connection sound now plays as soon as the master session is ready, without waiting for the device-port scan to finish.",
+                                              "Disconnect remains available as a recovery action and now closes the session reliably even when the displayed port count has not updated.",
+                                              "Favorites in the device settings screen are now shown in a separate Favorites tab for quicker access."
                                           ],
                                    "ko":  [
-                                              "여러 장치 설정값을 한 번에 확인할 때 더 빠르고 부드럽게 읽도록 개선했습니다.",
-                                              "읽기 진행 상황, 작업 취소, 현재 화면에 표시된 항목만 읽는 기능을 추가했습니다.",
-                                              "자주 사용하는 설정을 쉽게 찾을 수 있도록 즐겨찾기와 최근 사용 필터를 추가했습니다.",
-                                              "설정 변경 전 확인 정보와 자동 잠금 기능을 강화해 의도하지 않은 변경을 방지했습니다.",
-                                              "암호, 라이선스 파일, 데이터베이스, 공정 이력을 제외한 안전한 지원 자료를 한 번에 만들 수 있습니다.",
-                                              "장시간 실행 상태 감시를 강화하고 빠른 데이터 수집 중에만 고성능 모드를 사용하도록 개선했습니다.",
-                                              "장치 설정 화면의 안내 문구와 표 제목을 한국어, 영어, 일본어, 중국어, 독일어, 스페인어에서 더 일관되게 개선했습니다."
+                                              "마스터 연결이 정상적으로 완료된 뒤에도 연결 실패 안내가 표시될 수 있던 문제를 수정했습니다.",
+                                              "장치 포트 확인이 끝나기 전이라도 마스터 연결이 완료되면 연결 사운드가 정상적으로 재생됩니다.",
+                                              "포트 수 표시가 갱신되지 않은 상황에서도 연결 해제 버튼을 사용할 수 있으며 통신 세션이 안정적으로 종료됩니다.",
+                                              "장치 설정 화면의 즐겨찾기를 별도 즐겨찾기 탭에서 빠르게 확인할 수 있도록 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "多数のデバイス設定を一度に確認する場合でも、より速く滑らかに読み取れるよう改善しました。",
-                                              "読取の進行状況、キャンセル、画面に表示中の項目だけを読む機能を追加しました。",
-                                              "よく使う設定を見つけやすくするため、お気に入りと最近使用した項目のフィルターを追加しました。",
-                                              "設定変更前の確認内容と自動ロックを強化し、意図しない変更を防ぎます。",
-                                              "パスワード、ライセンスファイル、データベース、プロセス履歴を含まない安全なサポート資料をワンクリックで作成できます。",
-                                              "長時間運転の状態監視を強化し、高速データ収集中のみ高性能モードを使用するよう改善しました。",
-                                              "デバイス設定画面の案内と表記を韓国語、英語、日本語、中国語、ドイツ語、スペイン語で統一しました。"
+                                              "マスター接続が正常に完了した後でも接続失敗メッセージが表示されることがある問題を修正しました。",
+                                              "デバイスポートの確認完了を待たず、マスター接続が完了した時点で接続音が再生されます。",
+                                              "ポート数の表示が更新されていない場合でも切断操作を使用でき、通信セッションを確実に終了できます。",
+                                              "デバイス設定のお気に入りを専用のお気に入りタブで確認できるよう改善しました。"
                                           ],
                                    "zh":  [
-                                              "在一次查看大量设备设置时，读取速度更快、操作更流畅。",
-                                              "新增读取进度、取消操作以及只读取当前显示项目的功能。",
-                                              "新增收藏和最近使用筛选，常用设置更容易查找。",
-                                              "加强更改前确认信息和自动锁定，降低误操作风险。",
-                                              "可一键创建安全的支持资料，不包含密码、许可证文件、数据库或过程历史。",
-                                              "加强长时间运行状态监控，并仅在高速数据采集时启用高性能模式。",
-                                              "统一改进设备设置画面在韩语、英语、日语、中文、德语和西班牙语中的提示和表格名称。"
+                                              "修复了主站连接已成功但仍可能显示连接失败提示的问题。",
+                                              "主站会话建立后即可播放连接提示音，无需等待设备端口扫描完成。",
+                                              "即使端口数量尚未更新，也可使用断开连接操作并可靠关闭通信会话。",
+                                              "设备设置中的收藏项目现在可在独立的“收藏”选项卡中快速查看。"
                                           ],
                                    "de":  [
-                                              "Das Lesen vieler Geräteeinstellungen wurde schneller und flüssiger gestaltet.",
-                                              "Fortschrittsanzeige, Abbrechen und das Lesen nur der aktuell sichtbaren Einstellungen wurden ergänzt.",
-                                              "Favoriten und zuletzt verwendete Einstellungen erleichtern das Auffinden häufig genutzter Parameter.",
-                                              "Die Bestätigung vor Änderungen und die automatische Sperre wurden verbessert, um unbeabsichtigte Änderungen zu vermeiden.",
-                                              "Ein sicheres Supportpaket kann mit einem Klick erstellt werden; Passwörter, Lizenzdateien, Datenbanken und Prozessverläufe werden nicht aufgenommen.",
-                                              "Die Überwachung im Dauerbetrieb wurde erweitert; der Hochleistungsmodus ist nur bei schneller Datenerfassung eingeschaltet.",
-                                              "Hinweise und Tabellenbezeichnungen in der Geräteeinstellung wurden für Koreanisch, Englisch, Japanisch, Chinesisch, Deutsch und Spanisch vereinheitlicht."
+                                              "Ein Problem wurde behoben, bei dem trotz erfolgreicher Master-Verbindung eine Fehlermeldung erscheinen konnte.",
+                                              "Der Verbindungston wird jetzt abgespielt, sobald die Master-Sitzung bereit ist, ohne auf die Portprüfung zu warten.",
+                                              "Trennen bleibt als Wiederherstellungsfunktion verfügbar und beendet die Sitzung auch dann zuverlässig, wenn die Portanzeige noch nicht aktualisiert wurde.",
+                                              "Favoriten in den Geräteeinstellungen werden jetzt in einer eigenen Favoriten-Registerkarte angezeigt."
                                           ],
                                    "es":  [
-                                              "La lectura de muchas configuraciones del dispositivo ahora es más rápida y fluida.",
-                                              "Se añadieron progreso de lectura, cancelación y lectura solo de los elementos visibles en pantalla.",
-                                              "Los filtros Favoritos y Usados recientemente facilitan encontrar las configuraciones habituales.",
-                                              "Se mejoraron la confirmación antes de cambiar valores y el bloqueo automático para evitar cambios involuntarios.",
-                                              "Ahora se puede crear con un clic un paquete de soporte seguro, sin contraseñas, archivos de licencia, bases de datos ni historial del proceso.",
-                                              "Se reforzó la supervisión para funcionamiento continuo y el modo de alto rendimiento solo se activa durante la adquisición rápida de datos.",
-                                              "Se mejoraron y unificaron los textos y encabezados de la pantalla de configuración del dispositivo en coreano, inglés, japonés, chino, alemán y español."
+                                              "Se corrigió un problema que podía mostrar un aviso de conexión fallida aunque la conexión con el maestro ya se hubiera completado.",
+                                              "El sonido de conexión se reproduce en cuanto la sesión del maestro está lista, sin esperar a que finalice la revisión de puertos.",
+                                              "La desconexión permanece disponible como acción de recuperación y cierra la sesión de forma fiable aunque el número de puertos aún no se haya actualizado.",
+                                              "Los favoritos de la pantalla de configuración del dispositivo ahora se muestran en una pestaña independiente."
                                           ]
                                }
 }
