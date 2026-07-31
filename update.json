@@ -1,68 +1,75 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.547",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.547/ICEops_Setup_1.0.0.547.exe",
-    "sha256":  "c705c7f19cd37ce2c8a2bf2f77659773cbdbbc2eadf8f9fed6f5fa7b0e957e6d",
-    "fileName":  "ICEops_Setup_1.0.0.547.exe",
+    "version":  "1.0.0.549",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.549/ICEops_Setup_1.0.0.549.exe",
+    "sha256":  "60bf1c8625709c63b6ba8720794f786386ab068e41fe37aefe6c5db279f7c10c",
+    "fileName":  "ICEops_Setup_1.0.0.549.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-30T08:41:15.3194751+00:00",
+    "publishedAtUtc":  "2026-07-31T10:17:20.5122861+00:00",
     "releaseNotes":  [
-                         "Added automatic parent-Record fallback when a device rejects direct ISDU RecordItem subindex reads",
-                         "Uses certified IODD bitOffset and bitLength metadata to extract the requested child value from subindex 0 in big-endian record order",
-                         "Applied the same fallback to the shared Web/WPF parameter engine with an explicit fallback status instead of a generic read failure",
-                         "Raised the IODD catalog schema to 15 so cached parameter metadata is re-indexed with RecordItem bit offsets",
-                         "Improved the IODD Expert Write password dialog for DPI and localized text so password fields and action buttons are no longer clipped",
-                         "Kept parameter writes on direct certified subindexes; no parent-Record read-modify-write fallback is performed"
+                         "Made device parameter reading faster and smoother, especially when many settings are shown at once",
+                         "Added progress information, a cancel button, and an option to read only the settings currently shown on screen",
+                         "Added Favorites and Recently Used filters so commonly used settings are easier to find",
+                         "Improved write confirmation and automatic locking to help prevent unintended setting changes",
+                         "Added a one-click support package that collects safe diagnostic information without including passwords, license files, databases, or process history",
+                         "Improved long-running stability monitoring and automatically uses high-performance mode only during high-speed data collection",
+                         "Improved wording and table labels in the device settings screen across Korean, English, Japanese, Chinese, German, and Spanish"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added automatic parent-Record fallback when a device rejects direct ISDU RecordItem subindex reads",
-                                              "Uses certified IODD bitOffset and bitLength metadata to extract the requested child value from subindex 0 in big-endian record order",
-                                              "Applied the same fallback to the shared Web/WPF parameter engine with an explicit fallback status instead of a generic read failure",
-                                              "Raised the IODD catalog schema to 15 so cached parameter metadata is re-indexed with RecordItem bit offsets",
-                                              "Improved the IODD Expert Write password dialog for DPI and localized text so password fields and action buttons are no longer clipped",
-                                              "Kept parameter writes on direct certified subindexes; no parent-Record read-modify-write fallback is performed"
+                                              "Made device parameter reading faster and smoother, especially when many settings are shown at once",
+                                              "Added progress information, a cancel button, and an option to read only the settings currently shown on screen",
+                                              "Added Favorites and Recently Used filters so commonly used settings are easier to find",
+                                              "Improved write confirmation and automatic locking to help prevent unintended setting changes",
+                                              "Added a one-click support package that collects safe diagnostic information without including passwords, license files, databases, or process history",
+                                              "Improved long-running stability monitoring and automatically uses high-performance mode only during high-speed data collection",
+                                              "Improved wording and table labels in the device settings screen across Korean, English, Japanese, Chinese, German, and Spanish"
                                           ],
                                    "ko":  [
-                                              "장치가 ISDU RecordItem 개별 SubIndex 읽기를 거부하면 상위 Record(SubIndex 0)를 자동으로 읽는 대체 경로 추가",
-                                              "인증 IODD의 bitOffset과 bitLength를 사용해 Big-Endian Record에서 요청한 하위 파라미터 값만 정확히 추출",
-                                              "Web/WPF 공통 파라미터 엔진에 동일하게 적용하고 일반 읽기 실패 대신 상위 Record 대체 읽기 상태를 명확히 표시",
-                                              "IODD 카탈로그 스키마를 15로 올려 기존 캐시도 RecordItem 비트 오프셋을 포함하도록 자동 재색인",
-                                              "IODD Expert Write 암호 창을 DPI와 다국어 문구에 맞게 자동 높이 조정하여 입력 박스와 버튼 잘림 수정",
-                                              "쓰기 작업은 인증된 개별 SubIndex 방식만 유지하며 상위 Record 읽기-수정-쓰기는 수행하지 않도록 안전성 유지"
+                                              "여러 장치 설정값을 한 번에 확인할 때 더 빠르고 부드럽게 읽도록 개선했습니다.",
+                                              "읽기 진행 상황, 작업 취소, 현재 화면에 표시된 항목만 읽는 기능을 추가했습니다.",
+                                              "자주 사용하는 설정을 쉽게 찾을 수 있도록 즐겨찾기와 최근 사용 필터를 추가했습니다.",
+                                              "설정 변경 전 확인 정보와 자동 잠금 기능을 강화해 의도하지 않은 변경을 방지했습니다.",
+                                              "암호, 라이선스 파일, 데이터베이스, 공정 이력을 제외한 안전한 지원 자료를 한 번에 만들 수 있습니다.",
+                                              "장시간 실행 상태 감시를 강화하고 빠른 데이터 수집 중에만 고성능 모드를 사용하도록 개선했습니다.",
+                                              "장치 설정 화면의 안내 문구와 표 제목을 한국어, 영어, 일본어, 중국어, 독일어, 스페인어에서 더 일관되게 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "デバイスがISDU RecordItemの個別SubIndex読取を拒否した場合、親RecordのSubIndex 0を自動読取するフォールバックを追加",
-                                              "認証IODDのbitOffsetとbitLengthを使用し、Big-Endian Recordから対象フィールドだけを抽出",
-                                              "Web/WPF共通パラメータエンジンに適用し、通常の読取失敗ではなくRecordフォールバック状態を表示",
-                                              "IODDカタログスキーマを15へ更新し、既存キャッシュもRecordItemビットオフセット付きで再索引",
-                                              "IODD Expert Writeパスワード画面をDPIと多言語表示に対応させ、入力欄とボタンの欠けを修正",
-                                              "書込みは認証済み個別SubIndexのみを使用し、親RecordのRead-Modify-Writeは実行しない安全設計を維持"
+                                              "多数のデバイス設定を一度に確認する場合でも、より速く滑らかに読み取れるよう改善しました。",
+                                              "読取の進行状況、キャンセル、画面に表示中の項目だけを読む機能を追加しました。",
+                                              "よく使う設定を見つけやすくするため、お気に入りと最近使用した項目のフィルターを追加しました。",
+                                              "設定変更前の確認内容と自動ロックを強化し、意図しない変更を防ぎます。",
+                                              "パスワード、ライセンスファイル、データベース、プロセス履歴を含まない安全なサポート資料をワンクリックで作成できます。",
+                                              "長時間運転の状態監視を強化し、高速データ収集中のみ高性能モードを使用するよう改善しました。",
+                                              "デバイス設定画面の案内と表記を韓国語、英語、日本語、中国語、ドイツ語、スペイン語で統一しました。"
                                           ],
                                    "zh":  [
-                                              "当设备拒绝直接读取 ISDU RecordItem 子索引时，自动回退读取父 Record 的 SubIndex 0",
-                                              "使用认证 IODD 的 bitOffset 和 bitLength，从大端 Record 中精确提取目标子字段",
-                                              "Web/WPF 共用参数引擎采用相同回退逻辑，并明确显示父 Record 回退状态",
-                                              "IODD 目录架构升级到 15，使现有缓存重新索引并保存 RecordItem 位偏移",
-                                              "优化 IODD Expert Write 密码窗口的 DPI 和多语言布局，修复输入框及按钮被裁切",
-                                              "写入仍只使用认证的直接 SubIndex，不执行父 Record 的读改写回退"
+                                              "在一次查看大量设备设置时，读取速度更快、操作更流畅。",
+                                              "新增读取进度、取消操作以及只读取当前显示项目的功能。",
+                                              "新增收藏和最近使用筛选，常用设置更容易查找。",
+                                              "加强更改前确认信息和自动锁定，降低误操作风险。",
+                                              "可一键创建安全的支持资料，不包含密码、许可证文件、数据库或过程历史。",
+                                              "加强长时间运行状态监控，并仅在高速数据采集时启用高性能模式。",
+                                              "统一改进设备设置画面在韩语、英语、日语、中文、德语和西班牙语中的提示和表格名称。"
                                           ],
                                    "de":  [
-                                              "Automatischer Parent-Record-Fallback, wenn ein Gerät direkte ISDU-RecordItem-Subindex-Lesezugriffe ablehnt",
-                                              "Extraktion des gewünschten Feldes aus Subindex 0 anhand der zertifizierten IODD-Angaben bitOffset und bitLength in Big-Endian-Reihenfolge",
-                                              "Derselbe Fallback im gemeinsamen Web/WPF-Parameterdienst mit eindeutigem Status statt generischem Lesefehler",
-                                              "IODD-Katalogschema auf 15 erhöht, damit vorhandene Caches mit RecordItem-Bitoffsets neu indiziert werden",
-                                              "IODD-Expert-Write-Passwortdialog für DPI und lokalisierte Texte angepasst; Eingabefelder und Schaltflächen werden nicht mehr abgeschnitten",
-                                              "Schreibzugriffe bleiben auf zertifizierte direkte Subindizes beschränkt; kein Parent-Record-Read-Modify-Write"
+                                              "Das Lesen vieler Geräteeinstellungen wurde schneller und flüssiger gestaltet.",
+                                              "Fortschrittsanzeige, Abbrechen und das Lesen nur der aktuell sichtbaren Einstellungen wurden ergänzt.",
+                                              "Favoriten und zuletzt verwendete Einstellungen erleichtern das Auffinden häufig genutzter Parameter.",
+                                              "Die Bestätigung vor Änderungen und die automatische Sperre wurden verbessert, um unbeabsichtigte Änderungen zu vermeiden.",
+                                              "Ein sicheres Supportpaket kann mit einem Klick erstellt werden; Passwörter, Lizenzdateien, Datenbanken und Prozessverläufe werden nicht aufgenommen.",
+                                              "Die Überwachung im Dauerbetrieb wurde erweitert; der Hochleistungsmodus ist nur bei schneller Datenerfassung eingeschaltet.",
+                                              "Hinweise und Tabellenbezeichnungen in der Geräteeinstellung wurden für Koreanisch, Englisch, Japanisch, Chinesisch, Deutsch und Spanisch vereinheitlicht."
                                           ],
                                    "es":  [
-                                              "Se añadió una lectura alternativa automática del Record padre cuando el dispositivo rechaza la lectura directa de un SubIndex RecordItem",
-                                              "Se usan bitOffset y bitLength del IODD certificado para extraer el campo solicitado del Record en orden Big-Endian",
-                                              "El mismo mecanismo se aplica al motor compartido Web/WPF y muestra un estado explícito de lectura alternativa",
-                                              "El esquema del catálogo IODD sube a 15 para reindexar las cachés con los desplazamientos de bits RecordItem",
-                                              "Se mejoró el cuadro de contraseña IODD Expert Write para DPI y textos localizados, evitando recortes de campos y botones",
-                                              "Las escrituras siguen usando únicamente SubIndex directos certificados; no se realiza Read-Modify-Write del Record padre"
+                                              "La lectura de muchas configuraciones del dispositivo ahora es más rápida y fluida.",
+                                              "Se añadieron progreso de lectura, cancelación y lectura solo de los elementos visibles en pantalla.",
+                                              "Los filtros Favoritos y Usados recientemente facilitan encontrar las configuraciones habituales.",
+                                              "Se mejoraron la confirmación antes de cambiar valores y el bloqueo automático para evitar cambios involuntarios.",
+                                              "Ahora se puede crear con un clic un paquete de soporte seguro, sin contraseñas, archivos de licencia, bases de datos ni historial del proceso.",
+                                              "Se reforzó la supervisión para funcionamiento continuo y el modo de alto rendimiento solo se activa durante la adquisición rápida de datos.",
+                                              "Se mejoraron y unificaron los textos y encabezados de la pantalla de configuración del dispositivo en coreano, inglés, japonés, chino, alemán y español."
                                           ]
                                }
 }
