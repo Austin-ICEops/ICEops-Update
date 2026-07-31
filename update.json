@@ -1,61 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.553",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.553/ICEops_Setup_1.0.0.553.exe",
-    "sha256":  "a99498600860a5cdc88e28c5e99b0ff55947d7f638b3998a08f3f78dd20ab586",
-    "fileName":  "ICEops_Setup_1.0.0.553.exe",
+    "version":  "1.0.0.554",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.554/ICEops_Setup_1.0.0.554.exe",
+    "sha256":  "07179e886a0d9602cbb0b5c30b746130d798ef8555dc690a734bde41021421c1",
+    "fileName":  "ICEops_Setup_1.0.0.554.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-07-31T11:55:21.0841048+00:00",
+    "publishedAtUtc":  "2026-07-31T12:10:20.5125097+00:00",
     "releaseNotes":  [
-                         "Improved device parameter reading so unsupported individual SubIndex values are clearly distinguished from communication failures.",
-                         "When available, ICEops now reads the parent Record and safely extracts the requested value without guessing field positions.",
-                         "Parameters not provided by the device are shown as unavailable instead of a general read failure.",
-                         "Read summaries now separate successful reads, values not provided by the device, and actual failures.",
-                         "Kept the proven connection, polling, automatic recovery, and Favorites behavior from the previous stable build."
+                         "Improved parameter status handling when a device does not support reading an individual setting item.",
+                         "Reduces misleading failure messages when the device provides only the complete parent Record.",
+                         "Widened the status column so parameter guidance is easier to read.",
+                         "More clearly separates successful reads, device limitations, and actual communication errors.",
+                         "Kept the existing connection, live data collection, automatic recovery, and Favorites behavior."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Improved device parameter reading so unsupported individual SubIndex values are clearly distinguished from communication failures.",
-                                              "When available, ICEops now reads the parent Record and safely extracts the requested value without guessing field positions.",
-                                              "Parameters not provided by the device are shown as unavailable instead of a general read failure.",
-                                              "Read summaries now separate successful reads, values not provided by the device, and actual failures.",
-                                              "Kept the proven connection, polling, automatic recovery, and Favorites behavior from the previous stable build."
+                                              "Improved parameter status handling when a device does not support reading an individual setting item.",
+                                              "Reduces misleading failure messages when the device provides only the complete parent Record.",
+                                              "Widened the status column so parameter guidance is easier to read.",
+                                              "More clearly separates successful reads, device limitations, and actual communication errors.",
+                                              "Kept the existing connection, live data collection, automatic recovery, and Favorites behavior."
                                           ],
                                    "ko":  [
-                                              "장치가 개별 SubIndex 읽기를 지원하지 않는 경우를 일반 통신 실패와 구분하도록 개선했습니다.",
-                                              "가능한 경우 상위 Record를 읽고, 확인된 위치 정보만 사용해 요청한 값을 안전하게 표시합니다.",
-                                              "장치에서 제공하지 않는 파라미터는 일반 읽기 실패 대신 장치 미제공 상태로 안내합니다.",
-                                              "전체 읽기 결과에서 정상 읽기, 장치 미제공, 실제 실패 항목을 구분해 표시합니다.",
-                                              "기존 안정 빌드의 연결, 폴링, 자동 복구 및 즐겨찾기 동작은 그대로 유지했습니다."
+                                              "일부 장치에서 개별 설정 항목을 읽을 수 없을 때 프로그램 오류가 아닌 장치 지원 범위로 구분해 안내하도록 개선했습니다.",
+                                              "장치가 전체 설정 묶음만 제공하는 경우 이를 확인해 불필요한 실패 표시를 줄였습니다.",
+                                              "장치 설정 화면의 상태 열을 넓혀 안내 문구를 더 쉽게 확인할 수 있습니다.",
+                                              "정상 읽기, 장치에서 제공하지 않는 항목, 실제 통신 오류를 더욱 명확하게 구분합니다.",
+                                              "기존 연결, 실시간 데이터 수집, 자동 복구 및 즐겨찾기 기능은 그대로 유지했습니다."
                                           ],
                                    "ja":  [
-                                              "個別SubIndex読取に対応しないデバイス項目を、一般的な通信障害と区別して表示するよう改善しました。",
-                                              "利用可能な場合は親Recordを読み、確認済みの位置情報だけで要求値を安全に抽出します。",
-                                              "デバイスが提供しないパラメータは、一般的な読取失敗ではなく未提供状態として表示します。",
-                                              "一括読取結果で、正常読取、デバイス未提供、実際の失敗を分けて表示します。",
-                                              "前の安定ビルドの接続、ポーリング、自動復旧、お気に入り動作は維持しています。"
+                                              "デバイスが個別設定項目の読取りに対応していない場合、プログラムエラーではなくデバイス仕様として案内するよう改善しました。",
+                                              "デバイスが親Record全体のみを提供する場合を確認し、不要な失敗表示を減らしました。",
+                                              "パラメータ画面のステータス列を広げ、案内文を読みやすくしました。",
+                                              "正常読取り、デバイス未提供、実際の通信エラーをより明確に区別します。",
+                                              "既存の接続、リアルタイム収集、自動復旧、お気に入り機能は維持しています。"
                                           ],
                                    "zh":  [
-                                              "改进了设备参数读取，可将不支持单独SubIndex读取的项目与一般通信故障区分显示。",
-                                              "在可用时读取父Record，并仅使用已确认的位置安全提取所需数值。",
-                                              "设备未提供的参数将显示为未提供，而不是一般读取失败。",
-                                              "批量读取结果会分别显示读取成功、设备未提供和实际失败。",
-                                              "保留上一稳定版本的连接、轮询、自动恢复和收藏功能。"
+                                              "当设备不支持读取单个设置项时，改进为按设备支持范围提示，而不是显示为程序错误。",
+                                              "当设备仅提供完整父Record时进行确认，减少误导性的失败提示。",
+                                              "加宽了参数界面的状态列，使提示信息更易阅读。",
+                                              "更清晰地区分读取成功、设备未提供和实际通信错误。",
+                                              "保留现有的连接、实时数据采集、自动恢复和收藏功能。"
                                           ],
                                    "de":  [
-                                              "Die Parameteranzeige unterscheidet jetzt nicht unterstützte einzelne SubIndex-Lesezugriffe klar von Kommunikationsfehlern.",
-                                              "Wenn möglich, liest ICEops den Parent Record und extrahiert den Wert nur anhand bestätigter Feldpositionen.",
-                                              "Vom Gerät nicht bereitgestellte Parameter werden als nicht verfügbar statt als allgemeiner Lesefehler angezeigt.",
-                                              "Zusammenfassungen trennen erfolgreiche Lesevorgänge, nicht bereitgestellte Werte und tatsächliche Fehler.",
-                                              "Das bewährte Verbindungs-, Polling-, Wiederherstellungs- und Favoritenverhalten bleibt erhalten."
+                                              "Die Statusanzeige wurde verbessert, wenn ein Gerät einzelne Einstellparameter nicht separat lesen kann.",
+                                              "Irreführende Fehlermeldungen werden reduziert, wenn das Gerät nur den vollständigen Parent Record bereitstellt.",
+                                              "Die Statusspalte wurde verbreitert, damit Hinweise leichter lesbar sind.",
+                                              "Erfolgreiche Lesevorgänge, Geräteeinschränkungen und echte Kommunikationsfehler werden klarer unterschieden.",
+                                              "Verbindung, Live-Datenerfassung, automatische Wiederherstellung und Favoriten bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "La lectura de parámetros ahora distingue los SubIndex individuales no admitidos de los errores de comunicación.",
-                                              "Cuando es posible, ICEops lee el Record padre y extrae el valor usando solo posiciones de campo verificadas.",
-                                              "Los parámetros no proporcionados por el dispositivo se muestran como no disponibles en lugar de un error general.",
-                                              "Los resúmenes separan lecturas correctas, valores no proporcionados y fallos reales.",
-                                              "Se mantiene el comportamiento estable de conexión, sondeo, recuperación automática y Favoritos."
+                                              "Se mejoró el estado de los parámetros cuando un dispositivo no permite leer un ajuste individual.",
+                                              "Se reducen los mensajes de fallo engañosos cuando el dispositivo solo proporciona el Record padre completo.",
+                                              "Se amplió la columna de estado para facilitar la lectura de las indicaciones.",
+                                              "Se distinguen con mayor claridad las lecturas correctas, las limitaciones del dispositivo y los errores reales de comunicación.",
+                                              "Se mantienen la conexión, la recopilación en tiempo real, la recuperación automática y Favoritos."
                                           ]
                                }
 }
