@@ -1,13 +1,61 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.613",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.613/ICEops_Setup_1.0.0.613.exe",
-    "sha256":  "e84a3f9e46ce60f8db65a4fa41024b1e9f2ce515c05ea4471f73e16bc808fa23",
-    "fileName":  "ICEops_Setup_1.0.0.613.exe",
+    "version":  "1.0.0.614",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.614/ICEops_Setup_1.0.0.614.exe",
+    "sha256":  "bd1280135b2464196148da235ecd8dcca8a7d39b6b232e16ff973776f9e1ba36",
+    "fileName":  "ICEops_Setup_1.0.0.614.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-01T01:15:57.0226107+00:00",
+    "publishedAtUtc":  "2026-08-01T06:21:04.7935307+00:00",
     "releaseNotes":  [
-                         "ICEops stability and maintenance update"
-                     ]
+                         "Enlarged the Pepperl+Fuchs and SMC co-brand lockup and its collaboration caption in the desktop footer.",
+                         "Added the same theme-aware co-brand lockup to the Web dashboard header.",
+                         "SMC corporate blue is used in the light theme and a white transparent logo is used in the dark theme.",
+                         "The label is \u0027IO-Link Integration Collaboration\u0027 and does not claim official partnership, certification, or endorsement.",
+                         "No monitoring, communication, IODD, database, licensing, alarm, or control behavior was changed."
+                     ],
+    "releaseNotesByLanguage":  {
+                                   "en":  [
+                                              "Enlarged the Pepperl+Fuchs and SMC co-brand lockup and its collaboration caption in the desktop footer.",
+                                              "Added the same theme-aware co-brand lockup to the Web dashboard header.",
+                                              "SMC corporate blue is used in the light theme and a white transparent logo is used in the dark theme.",
+                                              "The label is \u0027IO-Link Integration Collaboration\u0027 and does not claim official partnership, certification, or endorsement.",
+                                              "No monitoring, communication, IODD, database, licensing, alarm, or control behavior was changed."
+                                          ],
+                                   "ko":  [
+                                              "데스크톱 하단의 Pepperl+Fuchs·SMC 공동 브랜드 로고와 협업 문구를 확대했습니다.",
+                                              "Web 대시보드 헤더에도 동일한 테마 연동 공동 브랜드 로고를 반영했습니다.",
+                                              "라이트 테마는 SMC 블루, 다크 테마는 투명 배경 화이트 로고로 자동 전환됩니다.",
+                                              "문구는 \u0027IO-Link Integration Collaboration\u0027이며 공식 파트너십·인증·보증을 의미하는 표현은 사용하지 않았습니다.",
+                                              "모니터링, 통신, IODD, DB, 라이선스, 알람 및 제어 동작 변경은 없습니다."
+                                          ],
+                                   "ja":  [
+                                              "デスクトップのフッターにあるPepperl+Fuchs・SMC共同ブランド表示と協業表記を拡大しました。",
+                                              "Webダッシュボードのヘッダーにも同じテーマ連動の共同ブランド表示を追加しました。",
+                                              "ライトテーマではSMCブルー、ダークテーマでは透明背景のホワイトロゴに自動切替します。",
+                                              "表記は「IO-Link Integration Collaboration」であり、公式パートナーシップ、認証、推奨を示すものではありません。",
+                                              "監視、通信、IODD、データベース、ライセンス、アラーム、制御動作の変更はありません。"
+                                          ],
+                                   "zh-CN":  [
+                                                 "放大了桌面页脚中的 Pepperl+Fuchs 与 SMC 联合品牌标识及协作说明。",
+                                                 "Web 仪表板页眉也添加了相同的主题联动联合品牌标识。",
+                                                 "浅色主题使用 SMC 蓝色标志，深色主题自动切换为透明背景白色标志。",
+                                                 "显示文字为“IO-Link Integration Collaboration”，不表示官方合作伙伴关系、认证或背书。",
+                                                 "监控、通信、IODD、数据库、许可、报警及控制行为均未更改。"
+                                             ],
+                                   "de":  [
+                                              "Die gemeinsame Pepperl+Fuchs-/SMC-Kennzeichnung und der Kollaborationstext im Desktop-Footer wurden vergrößert.",
+                                              "Dieselbe themeabhängige Co-Brand-Kennzeichnung wurde im Header des Web-Dashboards ergänzt.",
+                                              "Im hellen Design wird SMC-Blau, im dunklen Design automatisch eine weiße transparente Variante verwendet.",
+                                              "Die Bezeichnung lautet „IO-Link Integration Collaboration“ und stellt keine offizielle Partnerschaft, Zertifizierung oder Empfehlung dar.",
+                                              "Monitoring-, Kommunikations-, IODD-, Datenbank-, Lizenz-, Alarm- und Steuerungsfunktionen wurden nicht geändert."
+                                          ],
+                                   "es":  [
+                                              "Se ampliaron los logotipos conjuntos de Pepperl+Fuchs y SMC y el texto de colaboración en el pie de la aplicación de escritorio.",
+                                              "El mismo conjunto de marca sensible al tema se añadió al encabezado del panel Web.",
+                                              "El tema claro usa el azul corporativo de SMC y el tema oscuro cambia automáticamente a una variante blanca con fondo transparente.",
+                                              "La etiqueta es «IO-Link Integration Collaboration» y no implica asociación oficial, certificación ni respaldo.",
+                                              "No se modificó el comportamiento de supervisión, comunicación, IODD, base de datos, licencias, alarmas ni control."
+                                          ]
+                               }
 }
