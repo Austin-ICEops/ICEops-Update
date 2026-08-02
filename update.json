@@ -1,61 +1,54 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.616",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.616/ICEops_Setup_1.0.0.616.exe",
-    "sha256":  "ebe26bef429f3a9b147e147ce4161aa9b6749369bf0b6c028840dbc5be9b11d5",
-    "fileName":  "ICEops_Setup_1.0.0.616.exe",
+    "version":  "1.0.0.617",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.617/ICEops_Setup_1.0.0.617.exe",
+    "sha256":  "52fbb13bdca247faa5bdbc5bebe71c239a790840c8e523c200a50a51ed947f2b",
+    "fileName":  "ICEops_Setup_1.0.0.617.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-02T00:40:27.7713298+00:00",
+    "publishedAtUtc":  "2026-08-02T00:57:08.8615187+00:00",
     "releaseNotes":  [
-                         "Reset each port\u0027s alarm transition cache when the port enters a disconnected or no-device state.",
-                         "A still-active alarm after reconnect is emitted as a new alarm episode with a fresh event ID, so it remains above prior ACK and Clear watermarks.",
-                         "The ACK button and count badge now also consider live active alarms that have not been acknowledged, even when no visible event row is available.",
-                         "ACK continues to acknowledge the live alarm level as well as persisted event-watermark history.",
-                         "The fix is limited to alarm episode tracking and ACK affordance; communication, polling, IODD, Web, DB, licensing, and control behavior are unchanged."
+                         "Removed the rigid 26 px height from the Alarm Log, ACK, and Clear action-button style.",
+                         "Added DPI-safe minimum height and asymmetric vertical padding so glyph descenders are fully visible.",
+                         "The three action buttons retain the same alignment, width behavior, commands, and visual states.",
+                         "No alarm logic, ACK behavior, communication, polling, IODD, Web, DB, licensing, or output-control behavior was changed."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Reset each port\u0027s alarm transition cache when the port enters a disconnected or no-device state.",
-                                              "A still-active alarm after reconnect is emitted as a new alarm episode with a fresh event ID, so it remains above prior ACK and Clear watermarks.",
-                                              "The ACK button and count badge now also consider live active alarms that have not been acknowledged, even when no visible event row is available.",
-                                              "ACK continues to acknowledge the live alarm level as well as persisted event-watermark history.",
-                                              "The fix is limited to alarm episode tracking and ACK affordance; communication, polling, IODD, Web, DB, licensing, and control behavior are unchanged."
+                                              "Removed the rigid 26 px height from the Alarm Log, ACK, and Clear action-button style.",
+                                              "Added DPI-safe minimum height and asymmetric vertical padding so glyph descenders are fully visible.",
+                                              "The three action buttons retain the same alignment, width behavior, commands, and visual states.",
+                                              "No alarm logic, ACK behavior, communication, polling, IODD, Web, DB, licensing, or output-control behavior was changed."
                                           ],
                                    "ko":  [
-                                              "포트가 연결 끊김 또는 장치 없음 상태로 진입할 때 해당 포트의 알람 전이 캐시를 초기화합니다.",
-                                              "재연결 후에도 알람 조건이 유지되면 새 이벤트 ID를 가진 새로운 알람 에피소드로 기록되어 기존 ACK·Clear 워터마크에 묻히지 않습니다.",
-                                              "표시 가능한 이벤트 행이 없어도 현재 활성 상태이며 미확인인 포트가 있으면 ACK 버튼과 카운트 배지가 활성화됩니다.",
-                                              "ACK는 기존 이벤트 워터마크뿐 아니라 현재 활성 알람 레벨도 함께 확인 처리합니다.",
-                                              "변경 범위는 알람 에피소드 추적과 ACK 표시 로직으로 제한되며 통신, 폴링, IODD, Web, DB, 라이선스 및 제어 동작은 변경하지 않았습니다."
+                                              "Alarm Log, ACK, Clear 공통 버튼 스타일의 고정 26px 높이를 제거했습니다.",
+                                              "DPI 환경에서도 g와 같은 영문 하강부가 잘리지 않도록 최소 높이와 상·하 비대칭 패딩을 적용했습니다.",
+                                              "세 버튼의 정렬, 폭 동작, 명령 및 시각 상태는 기존과 동일하게 유지됩니다.",
+                                              "알람 로직, ACK 동작, 통신, 폴링, IODD, Web, DB, 라이선스 및 출력 제어는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "ポートが切断またはデバイスなし状態に入った時、そのポートのアラーム遷移キャッシュをリセットします。",
-                                              "再接続後もアラーム条件が継続している場合、新しいイベントIDを持つ新規アラームエピソードとして記録され、以前のACK/Clearウォーターマークに埋もれません。",
-                                              "表示可能なイベント行がなくても、現在アクティブで未確認のポートがあればACKボタンと件数バッジを有効にします。",
-                                              "ACKは永続化されたイベントウォーターマークに加え、現在のアクティブアラームレベルも確認済みにします。",
-                                              "変更範囲はアラームエピソード追跡とACK表示ロジックに限定され、通信、ポーリング、IODD、Web、DB、ライセンス、制御動作は変更していません。"
+                                              "Alarm Log、ACK、Clear の共通ボタンスタイルから固定 26px 高さを削除しました。",
+                                              "DPI 環境でも g などのディセンダーが切れないよう、最小高さと上下非対称パディングを適用しました。",
+                                              "3つのボタンの配置、幅、コマンド、表示状態は従来どおりです。",
+                                              "アラームロジック、ACK 動作、通信、ポーリング、IODD、Web、DB、ライセンス、出力制御は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "当端口进入断开连接或无设备状态时，重置该端口的报警状态转换缓存。",
-                                                 "重新连接后若报警条件仍然存在，将使用新的事件 ID 记录为新的报警过程，不会被之前的 ACK 或 Clear 水位线覆盖。",
-                                                 "即使没有可显示的事件记录，只要存在当前活动且未确认的端口，ACK 按钮和计数徽章仍会启用。",
-                                                 "ACK 会同时确认当前活动报警级别和已持久化的事件水位线历史。",
-                                                 "本次修改仅限于报警过程跟踪和 ACK 操作入口；通信、轮询、IODD、Web、数据库、许可及控制行为均未更改。"
+                                                 "移除了 Alarm Log、ACK 和 Clear 共用按钮样式中固定的 26px 高度。",
+                                                 "增加了适配 DPI 的最小高度和上下非对称内边距，避免 g 等带下伸部的字符被裁切。",
+                                                 "三个按钮的对齐、宽度行为、命令和视觉状态保持不变。",
+                                                 "未修改报警逻辑、ACK 行为、通信、轮询、IODD、Web、数据库、许可或输出控制。"
                                              ],
                                    "de":  [
-                                              "Beim Wechsel eines Ports in den Status getrennt oder kein Gerät wird der Alarm-Übergangscache dieses Ports zurückgesetzt.",
-                                              "Bleibt die Alarmbedingung nach dem Wiederverbinden bestehen, wird sie als neue Alarmepisode mit neuer Ereignis-ID erfasst und liegt damit oberhalb früherer ACK-/Clear-Watermarks.",
-                                              "ACK-Schaltfläche und Zähler berücksichtigen nun auch aktive, nicht bestätigte Live-Alarme, selbst wenn keine sichtbare Ereigniszeile vorhanden ist.",
-                                              "ACK bestätigt weiterhin sowohl den aktuellen Live-Alarmzustand als auch die persistierte Ereignis-Watermark-Historie.",
-                                              "Die Änderung ist auf Alarmepisoden-Tracking und ACK-Bedienbarkeit beschränkt; Kommunikation, Polling, IODD, Web, Datenbank, Lizenzierung und Steuerung bleiben unverändert."
+                                              "Die feste Höhe von 26 px wurde aus dem gemeinsamen Stil der Schaltflächen Alarm Log, ACK und Clear entfernt.",
+                                              "Eine DPI-sichere Mindesthöhe und asymmetrische vertikale Innenabstände verhindern das Abschneiden von Unterlängen wie beim Buchstaben g.",
+                                              "Ausrichtung, Breitenverhalten, Befehle und visuelle Zustände der drei Schaltflächen bleiben unverändert.",
+                                              "Alarmlogik, ACK-Verhalten, Kommunikation, Polling, IODD, Web, Datenbank, Lizenzierung und Ausgangssteuerung wurden nicht geändert."
                                           ],
                                    "es":  [
-                                              "Al entrar un puerto en estado desconectado o sin dispositivo, se reinicia la caché de transiciones de alarma de ese puerto.",
-                                              "Si la condición de alarma continúa después de reconectar, se registra como un nuevo episodio con un ID de evento nuevo, por encima de las marcas ACK y Clear anteriores.",
-                                              "El botón ACK y el contador ahora también consideran alarmas activas en vivo que aún no se han reconocido, aunque no exista una fila de evento visible.",
-                                              "ACK sigue reconociendo tanto el nivel de alarma activo como el historial persistente de marcas de evento.",
-                                              "El cambio se limita al seguimiento de episodios de alarma y a la disponibilidad de ACK; no se modifican comunicación, sondeo, IODD, Web, base de datos, licencias ni control."
+                                              "Se eliminó la altura fija de 26 px del estilo compartido por los botones Alarm Log, ACK y Clear.",
+                                              "Se añadió una altura mínima segura para DPI y un relleno vertical asimétrico para evitar el recorte de descendentes como la letra g.",
+                                              "La alineación, el comportamiento de ancho, los comandos y los estados visuales de los tres botones permanecen sin cambios.",
+                                              "No se modificaron la lógica de alarmas, el comportamiento ACK, la comunicación, el sondeo, IODD, Web, la base de datos, las licencias ni el control de salidas."
                                           ]
                                }
 }
