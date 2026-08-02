@@ -1,30 +1,23 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.617",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.617/ICEops_Setup_1.0.0.617.exe",
-    "sha256":  "52fbb13bdca247faa5bdbc5bebe71c239a790840c8e523c200a50a51ed947f2b",
-    "fileName":  "ICEops_Setup_1.0.0.617.exe",
+    "version":  "1.0.0.618",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.618/ICEops_Setup_1.0.0.618.exe",
+    "sha256":  "1f25e85cc09552909066f0187b2ac94750569e43c2c45060960d10f925135246",
+    "fileName":  "ICEops_Setup_1.0.0.618.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-02T00:57:08.8615187+00:00",
+    "publishedAtUtc":  "2026-08-02T06:02:33.1022857+00:00",
     "releaseNotes":  [
-                         "Removed the rigid 26 px height from the Alarm Log, ACK, and Clear action-button style.",
-                         "Added DPI-safe minimum height and asymmetric vertical padding so glyph descenders are fully visible.",
-                         "The three action buttons retain the same alignment, width behavior, commands, and visual states.",
-                         "No alarm logic, ACK behavior, communication, polling, IODD, Web, DB, licensing, or output-control behavior was changed."
+                         "Web vendor branding and mobile co-brand logo visibility fix."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Removed the rigid 26 px height from the Alarm Log, ACK, and Clear action-button style.",
-                                              "Added DPI-safe minimum height and asymmetric vertical padding so glyph descenders are fully visible.",
-                                              "The three action buttons retain the same alignment, width behavior, commands, and visual states.",
-                                              "No alarm logic, ACK behavior, communication, polling, IODD, Web, DB, licensing, or output-control behavior was changed."
+                                              "Web vendor branding: SMC device port badges now use the SMC blue theme while active alarm colors retain priority.",
+                                              "Pepperl+Fuchs and SMC logos now remain visible in desktop, tablet, and mobile web layouts."
                                           ],
                                    "ko":  [
-                                              "Alarm Log, ACK, Clear 공통 버튼 스타일의 고정 26px 높이를 제거했습니다.",
-                                              "DPI 환경에서도 g와 같은 영문 하강부가 잘리지 않도록 최소 높이와 상·하 비대칭 패딩을 적용했습니다.",
-                                              "세 버튼의 정렬, 폭 동작, 명령 및 시각 상태는 기존과 동일하게 유지됩니다.",
-                                              "알람 로직, ACK 동작, 통신, 폴링, IODD, Web, DB, 라이선스 및 출력 제어는 변경하지 않았습니다."
+                                              "Web 제조사 브랜딩: SMC 장치 포트 배지는 SMC 블루 테마를 사용하며 활성 알람 색상이 우선 적용됩니다.",
+                                              "Pepperl+Fuchs 및 SMC 로고가 데스크톱·태블릿·모바일 Web 레이아웃에서 유지됩니다."
                                           ],
                                    "ja":  [
                                               "Alarm Log、ACK、Clear の共通ボタンスタイルから固定 26px 高さを削除しました。",
