@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.622",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.622/ICEops_Setup_1.0.0.622.exe",
-    "sha256":  "3e3e09685292789410475839df1421b2e19010630674c3050c7d46ec1a8557a0",
-    "fileName":  "ICEops_Setup_1.0.0.622.exe",
+    "version":  "1.0.0.623",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.623/ICEops_Setup_1.0.0.623.exe",
+    "sha256":  "2a3c29dd3a5c7b2fdd52758daaac9826a4f34932450a6a7774c7018e5b998dfc",
+    "fileName":  "ICEops_Setup_1.0.0.623.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-02T07:26:43.7785827+00:00",
+    "publishedAtUtc":  "2026-08-02T08:10:27.7515755+00:00",
     "releaseNotes":  [
                          "Tablet portrait mode now fills the available screen with the alarm/event panel, and the supplied settings icon is served and sized correctly."
                      ],
