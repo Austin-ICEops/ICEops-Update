@@ -1,47 +1,51 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.618",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.618/ICEops_Setup_1.0.0.618.exe",
-    "sha256":  "1f25e85cc09552909066f0187b2ac94750569e43c2c45060960d10f925135246",
-    "fileName":  "ICEops_Setup_1.0.0.618.exe",
+    "version":  "1.0.0.619",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.619/ICEops_Setup_1.0.0.619.exe",
+    "sha256":  "110b2ef5dc819e335bd86a227c0c6d2a297181bc3b1c34a8fdb5fdaf1883ee45",
+    "fileName":  "ICEops_Setup_1.0.0.619.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-02T06:02:33.1022857+00:00",
+    "publishedAtUtc":  "2026-08-02T06:46:51.2125025+00:00",
     "releaseNotes":  [
-                         "Web vendor branding and mobile co-brand logo visibility fix."
+                         "Web port cards now show vendor logos, and the tablet dashboard includes a user-activated full-screen control."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Web vendor branding: SMC device port badges now use the SMC blue theme while active alarm colors retain priority.",
-                                              "Pepperl+Fuchs and SMC logos now remain visible in desktop, tablet, and mobile web layouts."
+                                              "Web port cards now display a Pepperl+Fuchs or SMC vendor logo before the device model name.",
+                                              "SMC blue port badge theming remains active in normal state, while alarm colors retain priority.",
+                                              "Vendor logos remain visible in light, dark, desktop, tablet, and mobile layouts.",
+                                              "A user-activated full-screen button is now available beside Dashboard Settings, with automatic exit-state synchronization and WebKit fallback."
                                           ],
                                    "ko":  [
-                                              "Web 제조사 브랜딩: SMC 장치 포트 배지는 SMC 블루 테마를 사용하며 활성 알람 색상이 우선 적용됩니다.",
-                                              "Pepperl+Fuchs 및 SMC 로고가 데스크톱·태블릿·모바일 Web 레이아웃에서 유지됩니다."
+                                              "Web 포트 카드의 장치 모델명 앞에 Pepperl+Fuchs 또는 SMC 제조사 로고가 표시됩니다.",
+                                              "SMC 장치의 정상 상태 블루 포트 배지 테마는 유지되며 알람 색상이 우선 적용됩니다.",
+                                              "라이트·다크·데스크톱·태블릿·모바일 레이아웃에서 제조사 로고가 유지됩니다.",
+                                              "대시보드 설정 옆에 사용자 조작 방식의 전체화면 버튼을 추가했으며, 전체화면 종료 상태 동기화와 WebKit 대체 경로를 지원합니다."
                                           ],
                                    "ja":  [
-                                              "Alarm Log、ACK、Clear の共通ボタンスタイルから固定 26px 高さを削除しました。",
-                                              "DPI 環境でも g などのディセンダーが切れないよう、最小高さと上下非対称パディングを適用しました。",
-                                              "3つのボタンの配置、幅、コマンド、表示状態は従来どおりです。",
-                                              "アラームロジック、ACK 動作、通信、ポーリング、IODD、Web、DB、ライセンス、出力制御は変更していません。"
+                                              "Webポートカードのデバイス型式名の前に、Pepperl+FuchsまたはSMCのメーカー・ロゴを表示します。",
+                                              "SMCデバイスの通常時ブルー・ポートバッジは維持し、アラーム色を優先します。",
+                                              "ライト／ダーク、デスクトップ／タブレット／モバイルでロゴ表示を維持します。",
+                                              "ダッシュボード設定の横にユーザー操作式の全画面ボタンを追加し、終了状態の同期とWebKitフォールバックに対応しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "移除了 Alarm Log、ACK 和 Clear 共用按钮样式中固定的 26px 高度。",
-                                                 "增加了适配 DPI 的最小高度和上下非对称内边距，避免 g 等带下伸部的字符被裁切。",
-                                                 "三个按钮的对齐、宽度行为、命令和视觉状态保持不变。",
-                                                 "未修改报警逻辑、ACK 行为、通信、轮询、IODD、Web、数据库、许可或输出控制。"
+                                                 "Web端口卡片会在设备型号前显示Pepperl+Fuchs或SMC厂商标志。",
+                                                 "SMC设备正常状态下继续使用蓝色端口徽章，报警颜色优先。",
+                                                 "厂商标志在浅色、深色、桌面、平板和移动布局中均保持可见。",
+                                                 "在仪表板设置旁新增用户触发的全屏按钮，并支持退出状态同步和WebKit回退。"
                                              ],
                                    "de":  [
-                                              "Die feste Höhe von 26 px wurde aus dem gemeinsamen Stil der Schaltflächen Alarm Log, ACK und Clear entfernt.",
-                                              "Eine DPI-sichere Mindesthöhe und asymmetrische vertikale Innenabstände verhindern das Abschneiden von Unterlängen wie beim Buchstaben g.",
-                                              "Ausrichtung, Breitenverhalten, Befehle und visuelle Zustände der drei Schaltflächen bleiben unverändert.",
-                                              "Alarmlogik, ACK-Verhalten, Kommunikation, Polling, IODD, Web, Datenbank, Lizenzierung und Ausgangssteuerung wurden nicht geändert."
+                                              "Web-Portkarten zeigen jetzt vor dem Gerätemodell das Herstellerlogo von Pepperl+Fuchs oder SMC.",
+                                              "Die blaue SMC-Portmarkierung bleibt im Normalzustand aktiv; Alarmfarben haben weiterhin Vorrang.",
+                                              "Die Herstellerlogos bleiben in Hell-/Dunkelmodus sowie auf Desktop, Tablet und Mobilgeräten sichtbar.",
+                                              "Neben den Dashboard-Einstellungen steht jetzt eine benutzeraktivierte Vollbild-Schaltfläche mit Statussynchronisierung und WebKit-Fallback zur Verfügung."
                                           ],
                                    "es":  [
-                                              "Se eliminó la altura fija de 26 px del estilo compartido por los botones Alarm Log, ACK y Clear.",
-                                              "Se añadió una altura mínima segura para DPI y un relleno vertical asimétrico para evitar el recorte de descendentes como la letra g.",
-                                              "La alineación, el comportamiento de ancho, los comandos y los estados visuales de los tres botones permanecen sin cambios.",
-                                              "No se modificaron la lógica de alarmas, el comportamiento ACK, la comunicación, el sondeo, IODD, Web, la base de datos, las licencias ni el control de salidas."
+                                              "Las tarjetas de puerto Web muestran ahora el logotipo de Pepperl+Fuchs o SMC antes del modelo del dispositivo.",
+                                              "El distintivo azul de puerto SMC se mantiene en estado normal y los colores de alarma conservan prioridad.",
+                                              "Los logotipos permanecen visibles en temas claro/oscuro y diseños de escritorio, tableta y móvil.",
+                                              "Se añadió junto a la configuración del panel un botón de pantalla completa activado por el usuario, con sincronización del estado de salida y compatibilidad WebKit."
                                           ]
                                }
 }
