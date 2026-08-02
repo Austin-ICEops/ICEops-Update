@@ -1,14 +1,14 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.620",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.620/ICEops_Setup_1.0.0.620.exe",
-    "sha256":  "ac49efcf6378c1e16612f0c88636ac7b5fb145c73cca281d91b6fee8b29b0c56",
-    "fileName":  "ICEops_Setup_1.0.0.620.exe",
+    "version":  "1.0.0.621",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.621/ICEops_Setup_1.0.0.621.exe",
+    "sha256":  "a96fb9102c976a80105e8ea87d04aae24746952348228a3cedc31b8675c509c4",
+    "fileName":  "ICEops_Setup_1.0.0.621.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-02T07:02:37.9130128+00:00",
+    "publishedAtUtc":  "2026-08-02T07:16:22.9200663+00:00",
     "releaseNotes":  [
-                         "Web port cards now show vendor logos, and the tablet dashboard includes a user-activated full-screen control."
+                         "Tablet portrait mode now fills the available screen with the alarm/event panel, and the supplied settings icon is served and sized correctly."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
