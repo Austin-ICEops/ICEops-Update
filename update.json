@@ -1,29 +1,51 @@
-{
-  "schemaVersion": 1,
-  "channel": "stable",
-  "version": "1.0.0.621",
-  "downloadUrl": "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.621/ICEops_Setup_1.0.0.621.exe",
-  "sha256": "a96fb9102c976a80105e8ea87d04aae24746952348228a3cedc31b8675c509c4",
-  "fileName": "ICEops_Setup_1.0.0.621.exe",
-  "mandatory": false,
-  "publishedAtUtc": "2026-08-02T07:16:22.9200663+00:00",
-  "releaseNotes": [
-    "Tablet portrait mode now fills the available screen with the alarm/event panel, and the supplied settings icon is served and sized correctly."
-  ],
-  "releaseNotesByLanguage": {
-    "en": [
-      "Web port cards now display a Pepperl+Fuchs or SMC vendor logo before the device model name.",
-      "SMC blue port badge theming remains active in normal state, while alarm colors retain priority.",
-      "Vendor logos remain visible in light, dark, desktop, tablet, and mobile layouts.",
-      "A user-activated full-screen button is now available beside Dashboard Settings, with automatic exit-state synchronization and WebKit fallback.",
-      "Tablet portrait mode now fills the available screen with the alarm/event panel, and the supplied settings icon is served and sized correctly."
-    ],
-    "ko": [
-      "Web 포트 카드의 장치 모델명 앞에 Pepperl+Fuchs 또는 SMC 제조사 로고가 표시됩니다.",
-      "SMC 장치의 정상 상태 블루 포트 배지 테마는 유지되며 알람 색상이 우선 적용됩니다.",
-      "라이트·다크·데스크톱·태블릿·모바일 레이아웃에서 제조사 로고가 유지됩니다.",
-      "대시보드 설정 옆에 사용자 조작 방식의 전체화면 버튼을 추가했으며, 전체화면 종료 상태 동기화와 WebKit 대체 경로를 지원합니다.",
-      "태블릿 세로 모드에서 알람/이벤트 영역이 남는 화면을 채우도록 조정했으며, 첨부 설정 아이콘의 표시 경로와 크기를 보정했습니다."
-    ]
-  }
+﻿{
+    "schemaVersion":  1,
+    "channel":  "stable",
+    "version":  "1.0.0.622",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.622/ICEops_Setup_1.0.0.622.exe",
+    "sha256":  "3e3e09685292789410475839df1421b2e19010630674c3050c7d46ec1a8557a0",
+    "fileName":  "ICEops_Setup_1.0.0.622.exe",
+    "mandatory":  false,
+    "publishedAtUtc":  "2026-08-02T07:26:43.7785827+00:00",
+    "releaseNotes":  [
+                         "Tablet portrait mode now fills the available screen with the alarm/event panel, and the supplied settings icon is served and sized correctly."
+                     ],
+    "releaseNotesByLanguage":  {
+                                   "en":  [
+                                              "Web port cards now display a Pepperl+Fuchs or SMC vendor logo before the device model name.",
+                                              "SMC blue port badge theming remains active in normal state, while alarm colors retain priority.",
+                                              "Vendor logos remain visible in light, dark, desktop, tablet, and mobile layouts.",
+                                              "A user-activated full-screen button is now available beside Dashboard Settings, with automatic exit-state synchronization and WebKit fallback."
+                                          ],
+                                   "ko":  [
+                                              "Web 포트 카드의 장치 모델명 앞에 Pepperl+Fuchs 또는 SMC 제조사 로고가 표시됩니다.",
+                                              "SMC 장치의 정상 상태 블루 포트 배지 테마는 유지되며 알람 색상이 우선 적용됩니다.",
+                                              "라이트·다크·데스크톱·태블릿·모바일 레이아웃에서 제조사 로고가 유지됩니다.",
+                                              "대시보드 설정 옆에 사용자 조작 방식의 전체화면 버튼을 추가했으며, 전체화면 종료 상태 동기화와 WebKit 대체 경로를 지원합니다."
+                                          ],
+                                   "ja":  [
+                                              "Webポートカードのデバイス型式名の前に、Pepperl+FuchsまたはSMCのメーカー・ロゴを表示します。",
+                                              "SMCデバイスの通常時ブルー・ポートバッジは維持し、アラーム色を優先します。",
+                                              "ライト／ダーク、デスクトップ／タブレット／モバイルでロゴ表示を維持します。",
+                                              "ダッシュボード設定の横にユーザー操作式の全画面ボタンを追加し、終了状態の同期とWebKitフォールバックに対応しました。"
+                                          ],
+                                   "zh-CN":  [
+                                                 "Web端口卡片会在设备型号前显示Pepperl+Fuchs或SMC厂商标志。",
+                                                 "SMC设备正常状态下继续使用蓝色端口徽章，报警颜色优先。",
+                                                 "厂商标志在浅色、深色、桌面、平板和移动布局中均保持可见。",
+                                                 "在仪表板设置旁新增用户触发的全屏按钮，并支持退出状态同步和WebKit回退。"
+                                             ],
+                                   "de":  [
+                                              "Web-Portkarten zeigen jetzt vor dem Gerätemodell das Herstellerlogo von Pepperl+Fuchs oder SMC.",
+                                              "Die blaue SMC-Portmarkierung bleibt im Normalzustand aktiv; Alarmfarben haben weiterhin Vorrang.",
+                                              "Die Herstellerlogos bleiben in Hell-/Dunkelmodus sowie auf Desktop, Tablet und Mobilgeräten sichtbar.",
+                                              "Neben den Dashboard-Einstellungen steht jetzt eine benutzeraktivierte Vollbild-Schaltfläche mit Statussynchronisierung und WebKit-Fallback zur Verfügung."
+                                          ],
+                                   "es":  [
+                                              "Las tarjetas de puerto Web muestran ahora el logotipo de Pepperl+Fuchs o SMC antes del modelo del dispositivo.",
+                                              "El distintivo azul de puerto SMC se mantiene en estado normal y los colores de alarma conservan prioridad.",
+                                              "Los logotipos permanecen visibles en temas claro/oscuro y diseños de escritorio, tableta y móvil.",
+                                              "Se añadió junto a la configuración del panel un botón de pantalla completa activado por el usuario, con sincronización del estado de salida y compatibilidad WebKit."
+                                          ]
+                               }
 }
