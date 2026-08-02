@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.614",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.614/ICEops_Setup_1.0.0.614.exe",
-    "sha256":  "bd1280135b2464196148da235ecd8dcca8a7d39b6b232e16ff973776f9e1ba36",
-    "fileName":  "ICEops_Setup_1.0.0.614.exe",
+    "version":  "1.0.0.615",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.615/ICEops_Setup_1.0.0.615.exe",
+    "sha256":  "31f108cff668e57dc5d526ef9db0d24ac0295a7857ec31ea8fb71b3727f66206",
+    "fileName":  "ICEops_Setup_1.0.0.615.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-01T06:21:04.7935307+00:00",
+    "publishedAtUtc":  "2026-08-02T00:06:02.9523862+00:00",
     "releaseNotes":  [
                          "Enlarged the Pepperl+Fuchs and SMC co-brand lockup and its collaboration caption in the desktop footer.",
                          "Added the same theme-aware co-brand lockup to the Web dashboard header.",
