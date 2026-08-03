@@ -1,51 +1,57 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.626",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.626/ICEops_Setup_1.0.0.626.exe",
-    "sha256":  "3ccf0441f41f179a7f72b539f98a09ae446bfe68a679413fbfe47316666979d2",
-    "fileName":  "ICEops_Setup_1.0.0.626.exe",
+    "version":  "1.0.0.627",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.627/ICEops_Setup_1.0.0.627.exe",
+    "sha256":  "861691327f947b41d6a5cc096379646ba111aeede34d68a0d1208ad93d133972",
+    "fileName":  "ICEops_Setup_1.0.0.627.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-03T00:48:43.8042151+00:00",
+    "publishedAtUtc":  "2026-08-03T02:20:33.2616560+00:00",
     "releaseNotes":  [
-                         "Tablet portrait mode now fills the available screen with the alarm/event panel, and the supplied settings icon is served and sized correctly."
+                         "MAX mode now filters transient socket/sample stalls so direct-connected masters no longer produce false 8-to-0-to-8 link events."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Web port cards now display a Pepperl+Fuchs or SMC vendor logo before the device model name.",
-                                              "SMC blue port badge theming remains active in normal state, while alarm colors retain priority.",
-                                              "Vendor logos remain visible in light, dark, desktop, tablet, and mobile layouts.",
-                                              "A user-activated full-screen button is now available beside Dashboard Settings, with automatic exit-state synchronization and WebKit fallback."
+                                              "MAX mode now treats the eight dedicated probe sockets as the authoritative PD link source instead of the legacy main TCP socket.",
+                                              "Transient probe failures are debounced for 2.5 seconds, preventing short master or Windows scheduling stalls from appearing as a disconnect.",
+                                              "The sample-stale fallback now requires more than 4 seconds of stale data plus a second confirmation tick before forcing all ports offline.",
+                                              "Web/API communication state uses the same hysteresis, preventing false 8-to-0-to-8 Recent Event entries.",
+                                              "MAX pause/resume, primary-TCP drop, stale candidate, offline, and recovery transitions are recorded in the field diagnostic log."
                                           ],
                                    "ko":  [
-                                              "Web 포트 카드의 장치 모델명 앞에 Pepperl+Fuchs 또는 SMC 제조사 로고가 표시됩니다.",
-                                              "SMC 장치의 정상 상태 블루 포트 배지 테마는 유지되며 알람 색상이 우선 적용됩니다.",
-                                              "라이트·다크·데스크톱·태블릿·모바일 레이아웃에서 제조사 로고가 유지됩니다.",
-                                              "대시보드 설정 옆에 사용자 조작 방식의 전체화면 버튼을 추가했으며, 전체화면 종료 상태 동기화와 WebKit 대체 경로를 지원합니다."
+                                              "MAX 모드는 기존 메인 TCP 소켓이 아니라 8개의 전용 프로브 소켓을 PD 링크 상태의 기준으로 사용합니다.",
+                                              "전용 프로브의 연속 실패를 2.5초 동안 디바운스하여 마스터 또는 Windows의 짧은 스케줄링 지연을 연결 해제로 오판하지 않습니다.",
+                                              "샘플 정체 보조 판정은 4초 초과 상태가 두 번 연속 확인된 경우에만 전체 포트를 오프라인 처리합니다.",
+                                              "Web/API 통신 상태에도 동일한 히스테리시스를 적용하여 최근 이벤트의 잘못된 8→0→8 기록을 방지합니다.",
+                                              "MAX 일시정지·재개, 메인 TCP 저하, 정체 후보, 오프라인 및 복구 전환을 현장 진단 로그에 기록합니다."
                                           ],
                                    "ja":  [
-                                              "Webポートカードのデバイス型式名の前に、Pepperl+FuchsまたはSMCのメーカー・ロゴを表示します。",
-                                              "SMCデバイスの通常時ブルー・ポートバッジは維持し、アラーム色を優先します。",
-                                              "ライト／ダーク、デスクトップ／タブレット／モバイルでロゴ表示を維持します。",
-                                              "ダッシュボード設定の横にユーザー操作式の全画面ボタンを追加し、終了状態の同期とWebKitフォールバックに対応しました。"
+                                              "MAXモードでは、従来のメインTCPソケットではなく8本の専用プローブソケットをPDリンク状態の基準として使用します。",
+                                              "専用プローブの連続失敗を2.5秒間デバウンスし、マスターやWindowsの短いスケジューリング遅延を切断と誤判定しません。",
+                                              "サンプル停滞のフォールバックは、4秒超の停滞を2回連続で確認した場合にのみ全ポートをオフラインにします。",
+                                              "Web/APIの通信状態にも同じヒステリシスを適用し、最近のイベントに誤った8→0→8が記録されるのを防ぎます。",
+                                              "MAXの一時停止・再開、メインTCP低下、停滞候補、オフライン、復旧をフィールド診断ログに記録します。"
                                           ],
                                    "zh-CN":  [
-                                                 "Web端口卡片会在设备型号前显示Pepperl+Fuchs或SMC厂商标志。",
-                                                 "SMC设备正常状态下继续使用蓝色端口徽章，报警颜色优先。",
-                                                 "厂商标志在浅色、深色、桌面、平板和移动布局中均保持可见。",
-                                                 "在仪表板设置旁新增用户触发的全屏按钮，并支持退出状态同步和WebKit回退。"
+                                                 "MAX模式现在以8个专用探测套接字作为PD链路状态依据，而不是旧的主TCP套接字。",
+                                                 "专用探测连续失败采用2.5秒防抖，避免将主站或Windows的短暂调度延迟误判为断线。",
+                                                 "样本停滞回退仅在停滞超过4秒并连续两次确认后才将全部端口置为离线。",
+                                                 "Web/API通信状态采用相同的迟滞逻辑，避免最近事件中出现错误的8→0→8记录。",
+                                                 "MAX暂停/恢复、主TCP下降、停滞候选、离线及恢复转换会写入现场诊断日志。"
                                              ],
                                    "de":  [
-                                              "Web-Portkarten zeigen jetzt vor dem Gerätemodell das Herstellerlogo von Pepperl+Fuchs oder SMC.",
-                                              "Die blaue SMC-Portmarkierung bleibt im Normalzustand aktiv; Alarmfarben haben weiterhin Vorrang.",
-                                              "Die Herstellerlogos bleiben in Hell-/Dunkelmodus sowie auf Desktop, Tablet und Mobilgeräten sichtbar.",
-                                              "Neben den Dashboard-Einstellungen steht jetzt eine benutzeraktivierte Vollbild-Schaltfläche mit Statussynchronisierung und WebKit-Fallback zur Verfügung."
+                                              "Im MAX-Modus sind nun die acht dedizierten Probe-Sockets die maßgebliche PD-Linkquelle und nicht mehr der ältere Haupt-TCP-Socket.",
+                                              "Kurzzeitige Probe-Fehler werden 2,5 Sekunden entprellt, damit kurze Master- oder Windows-Scheduling-Pausen nicht als Trennung erscheinen.",
+                                              "Der Sample-Stale-Fallback setzt alle Ports erst nach mehr als 4 Sekunden und einer zweiten Bestätigung offline.",
+                                              "Der Web/API-Kommunikationsstatus verwendet dieselbe Hysterese und verhindert falsche 8→0→8-Einträge in den letzten Ereignissen.",
+                                              "MAX-Pause/Fortsetzung, Haupt-TCP-Abfall, Stale-Kandidat, Offline und Wiederherstellung werden im Felddiagnoseprotokoll erfasst."
                                           ],
                                    "es":  [
-                                              "Las tarjetas de puerto Web muestran ahora el logotipo de Pepperl+Fuchs o SMC antes del modelo del dispositivo.",
-                                              "El distintivo azul de puerto SMC se mantiene en estado normal y los colores de alarma conservan prioridad.",
-                                              "Los logotipos permanecen visibles en temas claro/oscuro y diseños de escritorio, tableta y móvil.",
-                                              "Se añadió junto a la configuración del panel un botón de pantalla completa activado por el usuario, con sincronización del estado de salida y compatibilidad WebKit."
+                                              "El modo MAX usa ahora los ocho sockets de sondeo dedicados como fuente autoritativa del enlace PD, en lugar del socket TCP principal heredado.",
+                                              "Los fallos transitorios de las sondas se filtran durante 2,5 segundos para evitar que pausas breves del maestro o de Windows aparezcan como desconexiones.",
+                                              "La detección auxiliar de muestras obsoletas solo fuerza todos los puertos a OFFLINE tras más de 4 segundos y una segunda confirmación.",
+                                              "El estado de comunicación Web/API aplica la misma histéresis y evita eventos falsos de 8→0→8.",
+                                              "Las transiciones de pausa/reanudación MAX, caída TCP principal, candidato obsoleto, desconexión y recuperación quedan registradas en el diagnóstico de campo."
                                           ]
                                }
 }
