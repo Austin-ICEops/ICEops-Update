@@ -1,57 +1,57 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.628",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.628/ICEops_Setup_1.0.0.628.exe",
-    "sha256":  "4c0b6a2797f489ac25bd60cc8fdd386440563af37d0eaac40e6d17773a7fa1a3",
-    "fileName":  "ICEops_Setup_1.0.0.628.exe",
+    "version":  "1.0.0.629",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.629/ICEops_Setup_1.0.0.629.exe",
+    "sha256":  "93d956363f1f3bc0c794b1e0803ba632945a562cdf5652d97742b2319eb2100c",
+    "fileName":  "ICEops_Setup_1.0.0.629.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-03T05:37:56.5229182+00:00",
+    "publishedAtUtc":  "2026-08-03T06:48:27.5865359+00:00",
     "releaseNotes":  [
-                         "IODD full reads now use bounded protected ISDU windows, greatly reducing MAX socket restart load while periodically restoring fresh PD monitoring."
+                         "The IODD Manager header now switches to a responsive two-row layout when the window is narrowed, preventing the title/status area from expanding vertically and hiding the workspace."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "IODD Read All now executes in bounded protected ISDU windows instead of stopping and restarting MAX for every parameter.",
-                                              "Each window is limited to 12 parameters or about 2 seconds, then MAX is restored briefly so long reads do not create an unbounded PD blind period.",
-                                              "Parent Record fallback remains cached per Index across the complete read, avoiding duplicate SubIndex 0 reads.",
-                                              "The legacy poll gate is blocked before the MAX source handover, preventing an intentional ISDU pause from being mistaken for a reconnect and retriggering device identification.",
-                                              "Full-read progress rendering is throttled to reduce WPF dispatcher load, and existing values remain visible until a successful result replaces them."
+                                              "The IODD Manager header automatically moves its action toolbar to a separate row when the window becomes narrower.",
+                                              "The title and status text no longer collapse into a near-zero-width wrapped column that can consume the full window height.",
+                                              "Toolbar buttons wrap within the available width while the device catalog, metadata, process data, and live parameter workspace remain visible.",
+                                              "Wide or maximized windows retain the original single-row header layout, and minimize/close controls remain fixed at the upper right.",
+                                              "The v627 MAX link stability and v628 ISDU batch-read performance behavior are unchanged."
                                           ],
                                    "ko":  [
-                                              "IODD 전체 읽기는 파라미터마다 MAX를 정지·재시작하지 않고 제한된 보호 ISDU 배치 구간으로 처리합니다.",
-                                              "각 구간은 최대 12개 파라미터 또는 약 2초로 제한하고 구간 사이에 MAX를 복구하여 장시간 전체 읽기에서도 PD 블라인드 구간이 무제한으로 길어지지 않습니다.",
-                                              "Parent Record 대체 읽기는 전체 작업 동안 Index별로 캐시되어 동일한 SubIndex 0 중복 읽기를 방지합니다.",
-                                              "MAX 소스 전환 전에 기존 폴링 게이트를 먼저 차단하여 의도적인 ISDU 일시정지가 재연결로 오인되고 장치 자동 식별이 다시 실행되는 현상을 방지합니다.",
-                                              "전체 읽기 진행 표시를 제한된 주기로 갱신해 WPF Dispatcher 부하를 줄이고 기존 값은 성공 결과가 들어올 때까지 유지합니다."
+                                              "IODD Manager 창 폭이 줄어들면 상단 작업 버튼 영역이 자동으로 별도 행으로 이동합니다.",
+                                              "제목과 상태 영역이 거의 0 폭으로 눌린 뒤 글자가 세로로 감기면서 창 전체 높이를 차지하던 현상을 차단했습니다.",
+                                              "버튼은 사용 가능한 폭 안에서 자연스럽게 줄바꿈되며 디바이스 카탈로그·메타데이터·프로세스 데이터·실시간 파라미터 작업영역은 계속 표시됩니다.",
+                                              "최대화 또는 넓은 창에서는 기존 한 줄 헤더를 유지하고 최소화·닫기 버튼은 우측 상단에 고정됩니다.",
+                                              "V627 MAX 링크 안정화와 V628 ISDU 배치 읽기 성능 로직은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "IODDの全読み取りは、パラメータごとのMAX停止・再起動ではなく、時間と件数を制限した保護ISDUバッチ区間で実行されます。",
-                                              "各区間は最大12パラメータまたは約2秒に制限され、区間の間にMAXを復帰させるため、長い全読み取りでもPDのブラインド時間が無制限に延びません。",
-                                              "Parent Recordのフォールバックは全処理を通してIndex単位でキャッシュされ、同じSubIndex 0の重複読み取りを防ぎます。",
-                                              "MAXソース切り替え前に従来のポーリングゲートを遮断し、意図的なISDU停止が再接続と誤認されて自動識別が再実行されるのを防ぎます。",
-                                              "進捗表示を制限された周期で更新してWPF Dispatcher負荷を低減し、既存値は成功結果が届くまで保持します。"
+                                              "IODD Managerのウィンドウ幅が狭くなると、上部の操作ツールバーが自動的に別の行へ移動します。",
+                                              "タイトルと状態表示がほぼゼロ幅に縮み、文字が縦方向に折り返されてウィンドウ全体の高さを占有する問題を防止しました。",
+                                              "ボタンは利用可能な幅で自然に折り返され、デバイスカタログ、メタデータ、プロセスデータ、ライブパラメータ領域は表示を維持します。",
+                                              "最大化または十分に広いウィンドウでは従来の1行ヘッダーを維持し、最小化・閉じるボタンは右上に固定されます。",
+                                              "v627のMAXリンク安定化とv628のISDUバッチ読み取り性能ロジックは変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "IODD全部读取现在采用有数量和时间上限的受保护ISDU批处理窗口，不再为每个参数反复停止和重启MAX。",
-                                                 "每个窗口最多12个参数或约2秒，窗口之间短暂恢复MAX，因此长时间全部读取不会形成无限延长的PD盲区。",
-                                                 "Parent Record回退在整个任务中按Index缓存，避免重复读取相同的SubIndex 0。",
-                                                 "在切换MAX数据源之前先阻止旧轮询门，避免将有意的ISDU暂停误判为重连并重新触发设备识别。",
-                                                 "全部读取进度采用限频刷新以降低WPF Dispatcher负载，并保留已有值直到成功结果返回。"
+                                                 "当IODD Manager窗口变窄时，顶部操作工具栏会自动移动到独立的一行。",
+                                                 "修复了标题和状态区域被压缩到接近零宽度后逐字换行并占满整个窗口高度的问题。",
+                                                 "按钮会在可用宽度内自然换行，同时设备目录、元数据、过程数据和实时参数工作区保持可见。",
+                                                 "在最大化或较宽窗口中仍保留原来的单行标题栏，最小化和关闭按钮固定在右上角。",
+                                                 "v627 MAX链路稳定性和v628 ISDU批量读取性能逻辑保持不变。"
                                              ],
                                    "de":  [
-                                              "IODD \u0027Alle lesen\u0027 verwendet nun begrenzte geschützte ISDU-Batch-Fenster, statt MAX für jeden Parameter anzuhalten und neu zu starten.",
-                                              "Jedes Fenster ist auf 12 Parameter oder etwa 2 Sekunden begrenzt; dazwischen wird MAX kurz wiederhergestellt, damit lange Lesevorgänge keine unbegrenzte PD-Blindzeit erzeugen.",
-                                              "Der Parent-Record-Fallback wird über den gesamten Vorgang je Index zwischengespeichert und vermeidet doppelte SubIndex-0-Lesevorgänge.",
-                                              "Das Legacy-Polling-Gate wird vor dem MAX-Quellenwechsel gesperrt, damit eine beabsichtigte ISDU-Pause nicht als Wiederverbindung erkannt und die Geräteidentifikation erneut ausgelöst wird.",
-                                              "Die Fortschrittsanzeige wird gedrosselt, um die WPF-Dispatcher-Last zu senken; vorhandene Werte bleiben bis zu einem erfolgreichen Ergebnis sichtbar."
+                                              "Wenn das IODD-Manager-Fenster schmaler wird, wechselt die Aktionsleiste automatisch in eine eigene Zeile.",
+                                              "Der Titel- und Statusbereich kann nicht mehr auf nahezu null Breite zusammengedrückt werden und durch zeichenweisen Umbruch die gesamte Fensterhöhe belegen.",
+                                              "Die Schaltflächen umbrechen innerhalb der verfügbaren Breite, während Gerätekatalog, Metadaten, Prozessdaten und Live-Parameterbereich sichtbar bleiben.",
+                                              "Bei maximierten oder breiten Fenstern bleibt die ursprüngliche einzeilige Kopfzeile erhalten; Minimieren und Schließen bleiben oben rechts fixiert.",
+                                              "Die MAX-Link-Stabilität aus v627 und die ISDU-Batch-Leseleistung aus v628 bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "La lectura completa de IODD usa ahora ventanas ISDU protegidas y limitadas, sin detener y reiniciar MAX para cada parámetro.",
-                                              "Cada ventana se limita a 12 parámetros o unos 2 segundos; entre ventanas se restaura brevemente MAX para evitar un periodo ciego de PD sin límite durante lecturas largas.",
-                                              "El fallback del Parent Record se almacena en caché por Index durante toda la operación, evitando lecturas duplicadas del mismo SubIndex 0.",
-                                              "La compuerta de sondeo heredada se bloquea antes del cambio de fuente MAX para evitar que una pausa ISDU intencionada se interprete como una reconexión y reactive la identificación del dispositivo.",
-                                              "El progreso se actualiza con frecuencia limitada para reducir la carga del Dispatcher de WPF y los valores existentes permanecen visibles hasta recibir un resultado correcto."
+                                              "Cuando la ventana de IODD Manager se estrecha, la barra de acciones superior pasa automáticamente a una fila independiente.",
+                                              "Se evita que el área de título y estado se comprima casi a ancho cero y ocupe toda la altura al envolver el texto carácter por carácter.",
+                                              "Los botones se ajustan dentro del ancho disponible mientras permanecen visibles el catálogo, los metadatos, los datos de proceso y los parámetros en vivo.",
+                                              "En ventanas amplias o maximizadas se conserva el encabezado original de una sola fila y los controles de minimizar y cerrar permanecen fijos arriba a la derecha.",
+                                              "No se modifican la estabilidad del enlace MAX de v627 ni el rendimiento de lectura ISDU por lotes de v628."
                                           ]
                                }
 }
