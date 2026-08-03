@@ -1,63 +1,57 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.630",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.630/ICEops_Setup_1.0.0.630.exe",
-    "sha256":  "994ebdcefbace91242ea903c8c17e823350f1e3ed72a2f354590e86b09aa88e2",
-    "fileName":  "ICEops_Setup_1.0.0.630.exe",
+    "version":  "1.0.0.631",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.631/ICEops_Setup_1.0.0.631.exe",
+    "sha256":  "6329d3b4807a8cf7d2322ce93d0bec831ed50b49d6129b96cede297998ae9433",
+    "fileName":  "ICEops_Setup_1.0.0.631.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-03T09:01:59.3121424+00:00",
+    "publishedAtUtc":  "2026-08-03T12:11:09.3872595+00:00",
     "releaseNotes":  [
-                         "UI effect sounds now remain responsive after long idle periods by keeping a silent shared-mode audio stream active and preloading all short desktop cues."
+                         "IODD Manager minimize and close controls now remain immediately clickable after the window is restored or narrowed into the responsive header layout."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "A mathematically silent PCM keep-alive stream now prevents the Windows shared audio endpoint from entering an idle state while ICEops is running.",
-                                              "Popup, menu, action, success, failure, notification, connection, and disconnection cues are prepared during startup instead of opening files on the first click after a long idle period.",
-                                              "Desktop playback now prefers bundled WAV assets for all cues, with MP3 retained as a fallback and for the Web Dashboard.",
-                                              "Connected and disconnected sounds reuse preloaded SoundPlayer instances instead of creating and loading a new player for each event.",
-                                              "The keep-alive watchdog rearms the silent stream after audio-device or power-state interruptions and is fully stopped during application shutdown.",
-                                              "MAX polling, ISDU batch reads, IODD Manager responsive layout, alarm evaluation, and communication behavior are unchanged."
+                                              "IODD Manager minimize and close controls now remain clickable after the window is restored or resized into the compact two-row header layout.",
+                                              "Header dragging now ignores clicks originating from toolbar controls, the automatic-IODD selector, and the window-control panel, preventing DragMove from consuming Button.Click events.",
+                                              "The window-control panel has an explicit top hit-test layer so responsive toolbar wrapping cannot cover the minimize or close controls.",
+                                              "Title-bar background dragging and double-click maximize/restore behavior remain available.",
+                                              "The v627 MAX stability, v628 ISDU batch reads, v629 responsive layout, v630 low-latency sound behavior, and communication logic are unchanged."
                                           ],
                                    "ko":  [
-                                              "ICEops 실행 중 Windows 공유 오디오 장치가 유휴 상태로 들어가지 않도록 실제 출력값이 0인 무음 PCM 유지 스트림을 추가했습니다.",
-                                              "팝업·메뉴·작업·성공·실패·알림·연결·해제 효과음을 시작 시 미리 준비하여 장시간 미사용 후 첫 클릭에서 파일을 다시 열지 않도록 했습니다.",
-                                              "데스크톱 효과음은 모든 항목에서 WAV를 우선 사용하고 MP3는 대체 경로와 Web Dashboard용으로 유지합니다.",
-                                              "연결 및 연결 해제 효과음은 매번 새 재생기를 생성하지 않고 미리 로드된 SoundPlayer 인스턴스를 재사용합니다.",
-                                              "오디오 장치 또는 전원 상태 변경 후 무음 스트림을 다시 활성화하는 감시 로직을 추가했으며 프로그램 종료 시 완전히 정리됩니다.",
-                                              "MAX 폴링, ISDU 배치 읽기, IODD Manager 반응형 레이아웃, 알람 판정 및 통신 로직은 변경하지 않았습니다."
+                                              "IODD Manager 창을 복원하거나 폭을 줄여 2행 반응형 헤더로 전환한 뒤에도 최소화와 닫기 버튼이 정상적으로 클릭되도록 수정했습니다.",
+                                              "헤더 드래그가 작업 버튼, 자동 IODD 선택기 및 창 제어 버튼에서 발생한 클릭을 무시하도록 하여 DragMove가 Button.Click 이벤트를 가로채지 않게 했습니다.",
+                                              "반응형 작업 버튼 줄바꿈 영역이 최소화·닫기 버튼을 덮지 않도록 창 제어 패널의 입력 계층을 최상위로 고정했습니다.",
+                                              "헤더 배경 드래그와 더블클릭 최대화·복원 동작은 그대로 유지합니다.",
+                                              "V627 MAX 안정화, V628 ISDU 배치 읽기, V629 반응형 레이아웃, V630 효과음 지연 개선 및 통신 로직은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "ICEopsの実行中にWindowsの共有オーディオ・エンドポイントがアイドル状態へ入らないよう、完全な無音PCMキープアライブ・ストリームを追加しました。",
-                                              "ポップアップ、メニュー、操作、成功、失敗、通知、接続、切断の効果音を起動時に準備し、長時間未使用後の最初のクリックでファイルを再度開かないようにしました。",
-                                              "デスクトップ再生はすべての効果音でWAVを優先し、MP3はフォールバックおよびWeb Dashboard用として維持します。",
-                                              "接続・切断音はイベントごとにプレーヤーを作成せず、事前ロード済みのSoundPlayerを再利用します。",
-                                              "オーディオ機器または電源状態の変化後に無音ストリームを再起動する監視処理を追加し、終了時には完全に停止します。",
-                                              "MAXポーリング、ISDUバッチ読み取り、IODD Managerのレスポンシブ配置、アラーム判定、通信処理は変更していません。"
+                                              "IODD Managerを復元または縮小して2段のレスポンシブ・ヘッダーへ切り替えた後も、最小化ボタンと閉じるボタンを確実にクリックできるよう修正しました。",
+                                              "ツールバー、Auto IODDセレクター、ウィンドウ操作パネルからのクリックをヘッダーのドラッグ処理が無視し、DragMoveがButton.Clickを消費しないようにしました。",
+                                              "レスポンシブ・ツールバーの折り返しがウィンドウ操作ボタンを覆わないよう、操作パネルを最上位のヒットテスト層に固定しました。",
+                                              "ヘッダー背景のドラッグとダブルクリックによる最大化／復元は維持されます。",
+                                              "v627 MAX安定化、v628 ISDUバッチ読み取り、v629レスポンシブ配置、v630効果音遅延改善、通信処理は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "新增全零采样的静音PCM保活流，防止ICEops运行期间Windows共享音频端点进入休眠状态。",
-                                                 "弹窗、菜单、操作、成功、失败、通知、连接和断开音效会在启动时预加载，长时间未操作后的首次点击不再重新打开音频文件。",
-                                                 "桌面端所有音效优先使用WAV，MP3继续作为回退路径并供Web Dashboard使用。",
-                                                 "连接和断开音效复用已预加载的SoundPlayer实例，不再为每个事件重新创建和加载播放器。",
-                                                 "新增看门狗，在音频设备或电源状态变化后重新激活静音流，并在程序退出时完整停止。",
-                                                 "MAX轮询、ISDU批量读取、IODD Manager响应式布局、报警判定和通信逻辑均未修改。"
+                                                 "修复IODD Manager在还原或缩小为双行响应式标题栏后，最小化和关闭按钮无法点击的问题。",
+                                                 "标题栏拖动现在会忽略来自工具按钮、自动IODD选择器和窗口控制区的点击，避免DragMove吞掉Button.Click事件。",
+                                                 "窗口控制区被固定在最高命中测试层，响应式工具栏换行不会再覆盖最小化或关闭按钮。",
+                                                 "标题栏背景拖动以及双击最大化／还原功能保持不变。",
+                                                 "v627 MAX稳定性、v628 ISDU批量读取、v629响应式布局、v630音效低延迟以及通信逻辑均未修改。"
                                              ],
                                    "de":  [
-                                              "Ein vollständig stummer PCM-Keep-Alive-Stream verhindert jetzt, dass der gemeinsam genutzte Windows-Audioendpunkt während des ICEops-Betriebs in den Leerlauf wechselt.",
-                                              "Popup-, Menü-, Aktions-, Erfolgs-, Fehler-, Benachrichtigungs-, Verbindungs- und Trennsignale werden beim Start vorbereitet und nach langer Inaktivität nicht erst beim ersten Klick von der Datei geladen.",
-                                              "Die Desktop-Wiedergabe bevorzugt für alle Signale WAV-Dateien; MP3 bleibt als Fallback und für das Web Dashboard erhalten.",
-                                              "Verbindungs- und Trennsignale verwenden vorab geladene SoundPlayer-Instanzen wieder, anstatt pro Ereignis einen neuen Player zu erzeugen.",
-                                              "Ein Watchdog aktiviert den stummen Stream nach Audio-Geräte- oder Energiezustandsänderungen erneut und beendet ihn beim Herunterfahren vollständig.",
-                                              "MAX-Polling, ISDU-Batch-Lesen, das responsive IODD-Manager-Layout, Alarmbewertung und Kommunikation bleiben unverändert."
+                                              "Die Schaltflächen zum Minimieren und Schließen des IODD Managers bleiben nach dem Wiederherstellen oder Verkleinern in das zweizeilige responsive Kopfzeilenlayout anklickbar.",
+                                              "Die Kopfzeilen-Ziehfunktion ignoriert Klicks aus der Aktionsleiste, dem Auto-IODD-Auswahlfeld und dem Fenstersteuerungsbereich, sodass DragMove keine Button.Click-Ereignisse mehr abfängt.",
+                                              "Der Fenstersteuerungsbereich besitzt nun eine explizite oberste Hit-Test-Ebene, damit umgebrochene Aktionsschaltflächen ihn nicht überdecken.",
+                                              "Ziehen am Kopfzeilenhintergrund sowie Doppelklick zum Maximieren/Wiederherstellen bleiben erhalten.",
+                                              "MAX-Stabilität aus v627, ISDU-Batch-Lesen aus v628, responsives Layout aus v629, Audio-Latenzkorrektur aus v630 und Kommunikationslogik bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Se añadió un flujo PCM de mantenimiento completamente silencioso para evitar que el dispositivo de audio compartido de Windows entre en reposo mientras ICEops está activo.",
-                                              "Los sonidos de ventanas, menús, acciones, éxito, fallo, notificación, conexión y desconexión se preparan al iniciar y ya no abren archivos en el primer clic después de un periodo largo de inactividad.",
-                                              "La reproducción de escritorio prioriza WAV para todos los sonidos; MP3 se conserva como alternativa y para el Web Dashboard.",
-                                              "Los sonidos de conexión y desconexión reutilizan instancias SoundPlayer precargadas en lugar de crear y cargar un reproductor en cada evento.",
-                                              "Un watchdog reactiva el flujo silencioso después de cambios del dispositivo de audio o del estado de energía y lo detiene por completo al cerrar la aplicación.",
-                                              "El sondeo MAX, las lecturas ISDU por lotes, el diseño adaptable de IODD Manager, la evaluación de alarmas y la comunicación no se modificaron."
+                                              "Los botones de minimizar y cerrar de IODD Manager permanecen operativos después de restaurar o reducir la ventana al encabezado adaptable de dos filas.",
+                                              "El arrastre del encabezado ignora los clics procedentes de la barra de acciones, el selector de IODD automático y el panel de controles de ventana, evitando que DragMove consuma los eventos Button.Click.",
+                                              "El panel de controles de ventana queda en la capa superior de detección para que el ajuste de la barra de acciones no cubra los botones de minimizar o cerrar.",
+                                              "Se conservan el arrastre del fondo del encabezado y el doble clic para maximizar o restaurar.",
+                                              "La estabilidad MAX de v627, las lecturas ISDU por lotes de v628, el diseño adaptable de v629, la mejora de audio de v630 y la comunicación no se modificaron."
                                           ]
                                }
 }
