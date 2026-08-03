@@ -1,57 +1,57 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.627",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.627/ICEops_Setup_1.0.0.627.exe",
-    "sha256":  "861691327f947b41d6a5cc096379646ba111aeede34d68a0d1208ad93d133972",
-    "fileName":  "ICEops_Setup_1.0.0.627.exe",
+    "version":  "1.0.0.628",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.628/ICEops_Setup_1.0.0.628.exe",
+    "sha256":  "4c0b6a2797f489ac25bd60cc8fdd386440563af37d0eaac40e6d17773a7fa1a3",
+    "fileName":  "ICEops_Setup_1.0.0.628.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-03T02:20:33.2616560+00:00",
+    "publishedAtUtc":  "2026-08-03T05:37:56.5229182+00:00",
     "releaseNotes":  [
-                         "MAX mode now filters transient socket/sample stalls so direct-connected masters no longer produce false 8-to-0-to-8 link events."
+                         "IODD full reads now use bounded protected ISDU windows, greatly reducing MAX socket restart load while periodically restoring fresh PD monitoring."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "MAX mode now treats the eight dedicated probe sockets as the authoritative PD link source instead of the legacy main TCP socket.",
-                                              "Transient probe failures are debounced for 2.5 seconds, preventing short master or Windows scheduling stalls from appearing as a disconnect.",
-                                              "The sample-stale fallback now requires more than 4 seconds of stale data plus a second confirmation tick before forcing all ports offline.",
-                                              "Web/API communication state uses the same hysteresis, preventing false 8-to-0-to-8 Recent Event entries.",
-                                              "MAX pause/resume, primary-TCP drop, stale candidate, offline, and recovery transitions are recorded in the field diagnostic log."
+                                              "IODD Read All now executes in bounded protected ISDU windows instead of stopping and restarting MAX for every parameter.",
+                                              "Each window is limited to 12 parameters or about 2 seconds, then MAX is restored briefly so long reads do not create an unbounded PD blind period.",
+                                              "Parent Record fallback remains cached per Index across the complete read, avoiding duplicate SubIndex 0 reads.",
+                                              "The legacy poll gate is blocked before the MAX source handover, preventing an intentional ISDU pause from being mistaken for a reconnect and retriggering device identification.",
+                                              "Full-read progress rendering is throttled to reduce WPF dispatcher load, and existing values remain visible until a successful result replaces them."
                                           ],
                                    "ko":  [
-                                              "MAX 모드는 기존 메인 TCP 소켓이 아니라 8개의 전용 프로브 소켓을 PD 링크 상태의 기준으로 사용합니다.",
-                                              "전용 프로브의 연속 실패를 2.5초 동안 디바운스하여 마스터 또는 Windows의 짧은 스케줄링 지연을 연결 해제로 오판하지 않습니다.",
-                                              "샘플 정체 보조 판정은 4초 초과 상태가 두 번 연속 확인된 경우에만 전체 포트를 오프라인 처리합니다.",
-                                              "Web/API 통신 상태에도 동일한 히스테리시스를 적용하여 최근 이벤트의 잘못된 8→0→8 기록을 방지합니다.",
-                                              "MAX 일시정지·재개, 메인 TCP 저하, 정체 후보, 오프라인 및 복구 전환을 현장 진단 로그에 기록합니다."
+                                              "IODD 전체 읽기는 파라미터마다 MAX를 정지·재시작하지 않고 제한된 보호 ISDU 배치 구간으로 처리합니다.",
+                                              "각 구간은 최대 12개 파라미터 또는 약 2초로 제한하고 구간 사이에 MAX를 복구하여 장시간 전체 읽기에서도 PD 블라인드 구간이 무제한으로 길어지지 않습니다.",
+                                              "Parent Record 대체 읽기는 전체 작업 동안 Index별로 캐시되어 동일한 SubIndex 0 중복 읽기를 방지합니다.",
+                                              "MAX 소스 전환 전에 기존 폴링 게이트를 먼저 차단하여 의도적인 ISDU 일시정지가 재연결로 오인되고 장치 자동 식별이 다시 실행되는 현상을 방지합니다.",
+                                              "전체 읽기 진행 표시를 제한된 주기로 갱신해 WPF Dispatcher 부하를 줄이고 기존 값은 성공 결과가 들어올 때까지 유지합니다."
                                           ],
                                    "ja":  [
-                                              "MAXモードでは、従来のメインTCPソケットではなく8本の専用プローブソケットをPDリンク状態の基準として使用します。",
-                                              "専用プローブの連続失敗を2.5秒間デバウンスし、マスターやWindowsの短いスケジューリング遅延を切断と誤判定しません。",
-                                              "サンプル停滞のフォールバックは、4秒超の停滞を2回連続で確認した場合にのみ全ポートをオフラインにします。",
-                                              "Web/APIの通信状態にも同じヒステリシスを適用し、最近のイベントに誤った8→0→8が記録されるのを防ぎます。",
-                                              "MAXの一時停止・再開、メインTCP低下、停滞候補、オフライン、復旧をフィールド診断ログに記録します。"
+                                              "IODDの全読み取りは、パラメータごとのMAX停止・再起動ではなく、時間と件数を制限した保護ISDUバッチ区間で実行されます。",
+                                              "各区間は最大12パラメータまたは約2秒に制限され、区間の間にMAXを復帰させるため、長い全読み取りでもPDのブラインド時間が無制限に延びません。",
+                                              "Parent Recordのフォールバックは全処理を通してIndex単位でキャッシュされ、同じSubIndex 0の重複読み取りを防ぎます。",
+                                              "MAXソース切り替え前に従来のポーリングゲートを遮断し、意図的なISDU停止が再接続と誤認されて自動識別が再実行されるのを防ぎます。",
+                                              "進捗表示を制限された周期で更新してWPF Dispatcher負荷を低減し、既存値は成功結果が届くまで保持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "MAX模式现在以8个专用探测套接字作为PD链路状态依据，而不是旧的主TCP套接字。",
-                                                 "专用探测连续失败采用2.5秒防抖，避免将主站或Windows的短暂调度延迟误判为断线。",
-                                                 "样本停滞回退仅在停滞超过4秒并连续两次确认后才将全部端口置为离线。",
-                                                 "Web/API通信状态采用相同的迟滞逻辑，避免最近事件中出现错误的8→0→8记录。",
-                                                 "MAX暂停/恢复、主TCP下降、停滞候选、离线及恢复转换会写入现场诊断日志。"
+                                                 "IODD全部读取现在采用有数量和时间上限的受保护ISDU批处理窗口，不再为每个参数反复停止和重启MAX。",
+                                                 "每个窗口最多12个参数或约2秒，窗口之间短暂恢复MAX，因此长时间全部读取不会形成无限延长的PD盲区。",
+                                                 "Parent Record回退在整个任务中按Index缓存，避免重复读取相同的SubIndex 0。",
+                                                 "在切换MAX数据源之前先阻止旧轮询门，避免将有意的ISDU暂停误判为重连并重新触发设备识别。",
+                                                 "全部读取进度采用限频刷新以降低WPF Dispatcher负载，并保留已有值直到成功结果返回。"
                                              ],
                                    "de":  [
-                                              "Im MAX-Modus sind nun die acht dedizierten Probe-Sockets die maßgebliche PD-Linkquelle und nicht mehr der ältere Haupt-TCP-Socket.",
-                                              "Kurzzeitige Probe-Fehler werden 2,5 Sekunden entprellt, damit kurze Master- oder Windows-Scheduling-Pausen nicht als Trennung erscheinen.",
-                                              "Der Sample-Stale-Fallback setzt alle Ports erst nach mehr als 4 Sekunden und einer zweiten Bestätigung offline.",
-                                              "Der Web/API-Kommunikationsstatus verwendet dieselbe Hysterese und verhindert falsche 8→0→8-Einträge in den letzten Ereignissen.",
-                                              "MAX-Pause/Fortsetzung, Haupt-TCP-Abfall, Stale-Kandidat, Offline und Wiederherstellung werden im Felddiagnoseprotokoll erfasst."
+                                              "IODD \u0027Alle lesen\u0027 verwendet nun begrenzte geschützte ISDU-Batch-Fenster, statt MAX für jeden Parameter anzuhalten und neu zu starten.",
+                                              "Jedes Fenster ist auf 12 Parameter oder etwa 2 Sekunden begrenzt; dazwischen wird MAX kurz wiederhergestellt, damit lange Lesevorgänge keine unbegrenzte PD-Blindzeit erzeugen.",
+                                              "Der Parent-Record-Fallback wird über den gesamten Vorgang je Index zwischengespeichert und vermeidet doppelte SubIndex-0-Lesevorgänge.",
+                                              "Das Legacy-Polling-Gate wird vor dem MAX-Quellenwechsel gesperrt, damit eine beabsichtigte ISDU-Pause nicht als Wiederverbindung erkannt und die Geräteidentifikation erneut ausgelöst wird.",
+                                              "Die Fortschrittsanzeige wird gedrosselt, um die WPF-Dispatcher-Last zu senken; vorhandene Werte bleiben bis zu einem erfolgreichen Ergebnis sichtbar."
                                           ],
                                    "es":  [
-                                              "El modo MAX usa ahora los ocho sockets de sondeo dedicados como fuente autoritativa del enlace PD, en lugar del socket TCP principal heredado.",
-                                              "Los fallos transitorios de las sondas se filtran durante 2,5 segundos para evitar que pausas breves del maestro o de Windows aparezcan como desconexiones.",
-                                              "La detección auxiliar de muestras obsoletas solo fuerza todos los puertos a OFFLINE tras más de 4 segundos y una segunda confirmación.",
-                                              "El estado de comunicación Web/API aplica la misma histéresis y evita eventos falsos de 8→0→8.",
-                                              "Las transiciones de pausa/reanudación MAX, caída TCP principal, candidato obsoleto, desconexión y recuperación quedan registradas en el diagnóstico de campo."
+                                              "La lectura completa de IODD usa ahora ventanas ISDU protegidas y limitadas, sin detener y reiniciar MAX para cada parámetro.",
+                                              "Cada ventana se limita a 12 parámetros o unos 2 segundos; entre ventanas se restaura brevemente MAX para evitar un periodo ciego de PD sin límite durante lecturas largas.",
+                                              "El fallback del Parent Record se almacena en caché por Index durante toda la operación, evitando lecturas duplicadas del mismo SubIndex 0.",
+                                              "La compuerta de sondeo heredada se bloquea antes del cambio de fuente MAX para evitar que una pausa ISDU intencionada se interprete como una reconexión y reactive la identificación del dispositivo.",
+                                              "El progreso se actualiza con frecuencia limitada para reducir la carga del Dispatcher de WPF y los valores existentes permanecen visibles hasta recibir un resultado correcto."
                                           ]
                                }
 }
