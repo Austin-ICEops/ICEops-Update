@@ -1,57 +1,63 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.629",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.629/ICEops_Setup_1.0.0.629.exe",
-    "sha256":  "93d956363f1f3bc0c794b1e0803ba632945a562cdf5652d97742b2319eb2100c",
-    "fileName":  "ICEops_Setup_1.0.0.629.exe",
+    "version":  "1.0.0.630",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.630/ICEops_Setup_1.0.0.630.exe",
+    "sha256":  "994ebdcefbace91242ea903c8c17e823350f1e3ed72a2f354590e86b09aa88e2",
+    "fileName":  "ICEops_Setup_1.0.0.630.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-03T06:48:27.5865359+00:00",
+    "publishedAtUtc":  "2026-08-03T09:01:59.3121424+00:00",
     "releaseNotes":  [
-                         "The IODD Manager header now switches to a responsive two-row layout when the window is narrowed, preventing the title/status area from expanding vertically and hiding the workspace."
+                         "UI effect sounds now remain responsive after long idle periods by keeping a silent shared-mode audio stream active and preloading all short desktop cues."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "The IODD Manager header automatically moves its action toolbar to a separate row when the window becomes narrower.",
-                                              "The title and status text no longer collapse into a near-zero-width wrapped column that can consume the full window height.",
-                                              "Toolbar buttons wrap within the available width while the device catalog, metadata, process data, and live parameter workspace remain visible.",
-                                              "Wide or maximized windows retain the original single-row header layout, and minimize/close controls remain fixed at the upper right.",
-                                              "The v627 MAX link stability and v628 ISDU batch-read performance behavior are unchanged."
+                                              "A mathematically silent PCM keep-alive stream now prevents the Windows shared audio endpoint from entering an idle state while ICEops is running.",
+                                              "Popup, menu, action, success, failure, notification, connection, and disconnection cues are prepared during startup instead of opening files on the first click after a long idle period.",
+                                              "Desktop playback now prefers bundled WAV assets for all cues, with MP3 retained as a fallback and for the Web Dashboard.",
+                                              "Connected and disconnected sounds reuse preloaded SoundPlayer instances instead of creating and loading a new player for each event.",
+                                              "The keep-alive watchdog rearms the silent stream after audio-device or power-state interruptions and is fully stopped during application shutdown.",
+                                              "MAX polling, ISDU batch reads, IODD Manager responsive layout, alarm evaluation, and communication behavior are unchanged."
                                           ],
                                    "ko":  [
-                                              "IODD Manager 창 폭이 줄어들면 상단 작업 버튼 영역이 자동으로 별도 행으로 이동합니다.",
-                                              "제목과 상태 영역이 거의 0 폭으로 눌린 뒤 글자가 세로로 감기면서 창 전체 높이를 차지하던 현상을 차단했습니다.",
-                                              "버튼은 사용 가능한 폭 안에서 자연스럽게 줄바꿈되며 디바이스 카탈로그·메타데이터·프로세스 데이터·실시간 파라미터 작업영역은 계속 표시됩니다.",
-                                              "최대화 또는 넓은 창에서는 기존 한 줄 헤더를 유지하고 최소화·닫기 버튼은 우측 상단에 고정됩니다.",
-                                              "V627 MAX 링크 안정화와 V628 ISDU 배치 읽기 성능 로직은 변경하지 않았습니다."
+                                              "ICEops 실행 중 Windows 공유 오디오 장치가 유휴 상태로 들어가지 않도록 실제 출력값이 0인 무음 PCM 유지 스트림을 추가했습니다.",
+                                              "팝업·메뉴·작업·성공·실패·알림·연결·해제 효과음을 시작 시 미리 준비하여 장시간 미사용 후 첫 클릭에서 파일을 다시 열지 않도록 했습니다.",
+                                              "데스크톱 효과음은 모든 항목에서 WAV를 우선 사용하고 MP3는 대체 경로와 Web Dashboard용으로 유지합니다.",
+                                              "연결 및 연결 해제 효과음은 매번 새 재생기를 생성하지 않고 미리 로드된 SoundPlayer 인스턴스를 재사용합니다.",
+                                              "오디오 장치 또는 전원 상태 변경 후 무음 스트림을 다시 활성화하는 감시 로직을 추가했으며 프로그램 종료 시 완전히 정리됩니다.",
+                                              "MAX 폴링, ISDU 배치 읽기, IODD Manager 반응형 레이아웃, 알람 판정 및 통신 로직은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "IODD Managerのウィンドウ幅が狭くなると、上部の操作ツールバーが自動的に別の行へ移動します。",
-                                              "タイトルと状態表示がほぼゼロ幅に縮み、文字が縦方向に折り返されてウィンドウ全体の高さを占有する問題を防止しました。",
-                                              "ボタンは利用可能な幅で自然に折り返され、デバイスカタログ、メタデータ、プロセスデータ、ライブパラメータ領域は表示を維持します。",
-                                              "最大化または十分に広いウィンドウでは従来の1行ヘッダーを維持し、最小化・閉じるボタンは右上に固定されます。",
-                                              "v627のMAXリンク安定化とv628のISDUバッチ読み取り性能ロジックは変更していません。"
+                                              "ICEopsの実行中にWindowsの共有オーディオ・エンドポイントがアイドル状態へ入らないよう、完全な無音PCMキープアライブ・ストリームを追加しました。",
+                                              "ポップアップ、メニュー、操作、成功、失敗、通知、接続、切断の効果音を起動時に準備し、長時間未使用後の最初のクリックでファイルを再度開かないようにしました。",
+                                              "デスクトップ再生はすべての効果音でWAVを優先し、MP3はフォールバックおよびWeb Dashboard用として維持します。",
+                                              "接続・切断音はイベントごとにプレーヤーを作成せず、事前ロード済みのSoundPlayerを再利用します。",
+                                              "オーディオ機器または電源状態の変化後に無音ストリームを再起動する監視処理を追加し、終了時には完全に停止します。",
+                                              "MAXポーリング、ISDUバッチ読み取り、IODD Managerのレスポンシブ配置、アラーム判定、通信処理は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "当IODD Manager窗口变窄时，顶部操作工具栏会自动移动到独立的一行。",
-                                                 "修复了标题和状态区域被压缩到接近零宽度后逐字换行并占满整个窗口高度的问题。",
-                                                 "按钮会在可用宽度内自然换行，同时设备目录、元数据、过程数据和实时参数工作区保持可见。",
-                                                 "在最大化或较宽窗口中仍保留原来的单行标题栏，最小化和关闭按钮固定在右上角。",
-                                                 "v627 MAX链路稳定性和v628 ISDU批量读取性能逻辑保持不变。"
+                                                 "新增全零采样的静音PCM保活流，防止ICEops运行期间Windows共享音频端点进入休眠状态。",
+                                                 "弹窗、菜单、操作、成功、失败、通知、连接和断开音效会在启动时预加载，长时间未操作后的首次点击不再重新打开音频文件。",
+                                                 "桌面端所有音效优先使用WAV，MP3继续作为回退路径并供Web Dashboard使用。",
+                                                 "连接和断开音效复用已预加载的SoundPlayer实例，不再为每个事件重新创建和加载播放器。",
+                                                 "新增看门狗，在音频设备或电源状态变化后重新激活静音流，并在程序退出时完整停止。",
+                                                 "MAX轮询、ISDU批量读取、IODD Manager响应式布局、报警判定和通信逻辑均未修改。"
                                              ],
                                    "de":  [
-                                              "Wenn das IODD-Manager-Fenster schmaler wird, wechselt die Aktionsleiste automatisch in eine eigene Zeile.",
-                                              "Der Titel- und Statusbereich kann nicht mehr auf nahezu null Breite zusammengedrückt werden und durch zeichenweisen Umbruch die gesamte Fensterhöhe belegen.",
-                                              "Die Schaltflächen umbrechen innerhalb der verfügbaren Breite, während Gerätekatalog, Metadaten, Prozessdaten und Live-Parameterbereich sichtbar bleiben.",
-                                              "Bei maximierten oder breiten Fenstern bleibt die ursprüngliche einzeilige Kopfzeile erhalten; Minimieren und Schließen bleiben oben rechts fixiert.",
-                                              "Die MAX-Link-Stabilität aus v627 und die ISDU-Batch-Leseleistung aus v628 bleiben unverändert."
+                                              "Ein vollständig stummer PCM-Keep-Alive-Stream verhindert jetzt, dass der gemeinsam genutzte Windows-Audioendpunkt während des ICEops-Betriebs in den Leerlauf wechselt.",
+                                              "Popup-, Menü-, Aktions-, Erfolgs-, Fehler-, Benachrichtigungs-, Verbindungs- und Trennsignale werden beim Start vorbereitet und nach langer Inaktivität nicht erst beim ersten Klick von der Datei geladen.",
+                                              "Die Desktop-Wiedergabe bevorzugt für alle Signale WAV-Dateien; MP3 bleibt als Fallback und für das Web Dashboard erhalten.",
+                                              "Verbindungs- und Trennsignale verwenden vorab geladene SoundPlayer-Instanzen wieder, anstatt pro Ereignis einen neuen Player zu erzeugen.",
+                                              "Ein Watchdog aktiviert den stummen Stream nach Audio-Geräte- oder Energiezustandsänderungen erneut und beendet ihn beim Herunterfahren vollständig.",
+                                              "MAX-Polling, ISDU-Batch-Lesen, das responsive IODD-Manager-Layout, Alarmbewertung und Kommunikation bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Cuando la ventana de IODD Manager se estrecha, la barra de acciones superior pasa automáticamente a una fila independiente.",
-                                              "Se evita que el área de título y estado se comprima casi a ancho cero y ocupe toda la altura al envolver el texto carácter por carácter.",
-                                              "Los botones se ajustan dentro del ancho disponible mientras permanecen visibles el catálogo, los metadatos, los datos de proceso y los parámetros en vivo.",
-                                              "En ventanas amplias o maximizadas se conserva el encabezado original de una sola fila y los controles de minimizar y cerrar permanecen fijos arriba a la derecha.",
-                                              "No se modifican la estabilidad del enlace MAX de v627 ni el rendimiento de lectura ISDU por lotes de v628."
+                                              "Se añadió un flujo PCM de mantenimiento completamente silencioso para evitar que el dispositivo de audio compartido de Windows entre en reposo mientras ICEops está activo.",
+                                              "Los sonidos de ventanas, menús, acciones, éxito, fallo, notificación, conexión y desconexión se preparan al iniciar y ya no abren archivos en el primer clic después de un periodo largo de inactividad.",
+                                              "La reproducción de escritorio prioriza WAV para todos los sonidos; MP3 se conserva como alternativa y para el Web Dashboard.",
+                                              "Los sonidos de conexión y desconexión reutilizan instancias SoundPlayer precargadas en lugar de crear y cargar un reproductor en cada evento.",
+                                              "Un watchdog reactiva el flujo silencioso después de cambios del dispositivo de audio o del estado de energía y lo detiene por completo al cerrar la aplicación.",
+                                              "El sondeo MAX, las lecturas ISDU por lotes, el diseño adaptable de IODD Manager, la evaluación de alarmas y la comunicación no se modificaron."
                                           ]
                                }
 }
