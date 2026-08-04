@@ -1,55 +1,51 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.638",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.638/ICEops_Setup_1.0.0.638.exe",
-    "sha256":  "fe692e92823b61e8d507df57755f45e538265296d0b13c8b315d393c6096f8df",
-    "fileName":  "ICEops_Setup_1.0.0.638.exe",
+    "version":  "1.0.0.639",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.639/ICEops_Setup_1.0.0.639.exe",
+    "sha256":  "9f4e7ad15d80410e3341f9a7f749dfdccd14aac5780155aff6e23fc471059a8c",
+    "fileName":  "ICEops_Setup_1.0.0.639.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T11:03:29.0078743+00:00",
+    "publishedAtUtc":  "2026-08-04T11:24:01.8607882+00:00",
     "releaseNotes":  [
-                         "Stabilizes live port-card value rendering across mixed-refresh multi-display setups without changing communication, polling, database, alarm, or visualization pipelines."
+                         "Serializes disconnect teardown and reconnect startup so repeated Connect/Disconnect operations restore polling, device identification, and mappings on the first reconnect."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed a cold-start UI freeze that could occur on the first connection after Windows boot.",
-                                              "Connection startup now runs outside the WPF UI dispatcher with single-flight protection.",
-                                              "IODD product identification is delayed until TCP polling is confirmed running.",
-                                              "Existing mixed-refresh rendering, multi-display workspaces, polling, alarms, and database behavior are preserved."
+                                              "Fixed a reconnect regression where repeated Disconnect/Connect operations could leave polling stopped and device identification pending.",
+                                              "A new connection now waits for the previous polling, ISDU, transport, and runtime teardown to finish.",
+                                              "Delayed identity warmup is cancelled at disconnect and cannot update a newer session.",
+                                              "V638 cold-start protection, V637 card rendering, and multi-display workspaces are preserved."
                                           ],
                                    "ko":  [
-                                              "Windows 부팅 후 첫 연결에서 발생할 수 있던 콜드 스타트 UI 프리징을 수정했습니다.",
-                                              "연결 초기화를 WPF UI Dispatcher 밖에서 실행하고 중복 연결을 차단했습니다.",
-                                              "TCP 폴링 실행이 확인된 후 IODD 장치 식별을 지연 시작하도록 순서를 안정화했습니다.",
-                                              "기존 혼합 주사율 렌더링, 멀티 디스플레이, 폴링, 알람, DB 동작은 유지됩니다."
+                                              "연결 해제 후 재연결할 때 폴링이 중지되고 장치 식별·매핑이 대기 상태로 남을 수 있던 회귀를 수정했습니다.",
+                                              "새 연결은 이전 폴링·ISDU·전송·런타임 종료가 완전히 끝난 뒤 시작됩니다.",
+                                              "연결 해제 시 지연 장치 식별 작업을 즉시 무효화하여 이전 세션 콜백이 새 세션에 반영되지 않도록 했습니다.",
+                                              "V638 콜드 스타트 보호, V637 카드 렌더링 및 멀티 디스플레이 기능은 유지됩니다."
                                           ],
                                    "ja":  [
-                                              "ポートごとにライブ値トークンのコレクションを維持し、RegsText更新時にItemsControlを再生成せず各トークンのプロパティだけを更新します。",
-                                              "コンバーター側のHealthHub生スナップショット再確認を削除し、一時的なタイミング差で有効なカード値が消えないようにしました。",
-                                              "通常の値変更フィードバックを面の点滅から低輝度の枠線パルスへ変更し、発生頻度も低減しました。",
-                                              "混在DPI・混在リフレッシュレート環境向けにデバイスピクセルスナップ、レイアウト丸め、Displayテキスト書式を適用しました。",
-                                              "通信、ポーリング、アラーム、DB、IODD、可視化、Inspector、Oscilloscope、マルチディスプレイ処理は変更していません。"
+                                              "切断後の再接続でポーリング停止やデバイス識別・マッピング待機が残る回帰を修正しました。",
+                                              "新しい接続は、以前のポーリング、ISDU、通信、ランタイム終了が完全に完了してから開始されます。",
+                                              "切断時に遅延識別ウォームアップを無効化し、旧セッションのコールバックが新しいセッションへ反映されないようにしました。",
+                                              "V638のコールドスタート対策、V637のカード描画、マルチディスプレイ機能を維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "为每个端口保持稳定的实时值令牌集合，RegsText变化时只更新令牌属性，不再重建ItemsControl容器。",
-                                                 "移除转换器中对HealthHub原始快照的二次检查，避免瞬时时序差导致有效卡片数值被清空。",
-                                                 "将普通数值变化反馈从整块填充闪烁改为低强度边框脉冲，并降低触发频率。",
-                                                 "为混合DPI和混合刷新率显示器增加设备像素对齐、布局取整和Display文本格式。",
-                                                 "通信、轮询、报警、数据库、IODD、可视化、Inspector、Oscilloscope及多显示器工作区逻辑保持不变。"
+                                                 "修复了断开后重新连接时轮询停止、设备识别和映射可能一直等待的回归问题。",
+                                                 "新连接会等待上一会话的轮询、ISDU、传输和运行时清理全部完成后再启动。",
+                                                 "断开时立即使延迟设备识别任务失效，避免旧会话回调影响新会话。",
+                                                 "保留V638冷启动保护、V637卡片渲染和多显示器工作区功能。"
                                              ],
                                    "de":  [
-                                              "Pro Port bleibt eine stabile Sammlung der Live-Wert-Tokens bestehen; bei RegsText-Änderungen werden nur die Eigenschaften aktualisiert, statt ItemsControl-Container neu aufzubauen.",
-                                              "Die erneute Prüfung des rohen HealthHub-Snapshots im Konverter wurde entfernt, damit kurzzeitige Timing-Abweichungen gültige Kartenwerte nicht leeren.",
-                                              "Die normale Wertänderungsanzeige wurde von einer Flächenaufhellung auf einen schwächeren Rahmenimpuls umgestellt und seltener ausgelöst.",
-                                              "Für gemischte DPI- und Bildwiederholraten wurden Pixel-Snapping, Layout-Rundung und Display-Textformatierung ergänzt.",
-                                              "Kommunikation, Polling, Alarme, DB, IODD, Visualisierung, Inspector, Oscilloscope und Multi-Display-Logik bleiben unverändert."
+                                              "Eine Regression wurde behoben, bei der nach Trennen und erneutem Verbinden Polling gestoppt sowie Geräteerkennung und Mapping ausstehend bleiben konnten.",
+                                              "Eine neue Verbindung startet erst, nachdem Polling, ISDU, Transport und Runtime der vorherigen Sitzung vollständig beendet wurden.",
+                                              "Verzögerte Identitäts-Warmups werden beim Trennen ungültig, sodass alte Rückmeldungen keine neue Sitzung verändern.",
+                                              "V638-Kaltstartschutz, V637-Kartenrendering und Multi-Display-Arbeitsbereiche bleiben erhalten."
                                           ],
                                    "es":  [
-                                              "Mantiene una colección estable de tokens de valor por puerto y actualiza sus propiedades sin reconstruir los contenedores de ItemsControl en cada cambio de RegsText.",
-                                              "Elimina la segunda consulta del snapshot bruto de HealthHub en el convertidor para evitar que una diferencia momentánea de temporización vacíe un valor válido.",
-                                              "Cambia la indicación normal de cambio de valor de un relleno intermitente a un pulso de borde de menor intensidad y frecuencia.",
-                                              "Añade ajuste a píxel, redondeo de diseño y formato de texto Display para monitores con DPI y frecuencias de actualización mixtas.",
-                                              "No cambia la comunicación, el sondeo, las alarmas, la DB, IODD, Visualización, Inspector, Oscilloscope ni el espacio de trabajo multipantalla."
+                                              "Corrige una regresión en la que, tras desconectar y volver a conectar, el sondeo podía quedar detenido y la identificación o el mapeo pendientes.",
+                                              "Una nueva conexión espera a que finalicen por completo el sondeo, ISDU, transporte y limpieza de la sesión anterior.",
+                                              "La desconexión invalida inmediatamente la identificación diferida para impedir que callbacks de una sesión anterior afecten a la nueva.",
+                                              "Se conservan la protección de arranque en frío de V638, el renderizado de tarjetas de V637 y el espacio de trabajo multipantalla."
                                           ]
                                }
 }
