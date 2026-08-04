@@ -1,57 +1,63 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.632",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.632/ICEops_Setup_1.0.0.632.exe",
-    "sha256":  "b61841e5179d99369f7ea6704f1966564dcc09d7fe65e4fc7359dc7c77ea412b",
-    "fileName":  "ICEops_Setup_1.0.0.632.exe",
+    "version":  "1.0.0.633",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.633/ICEops_Setup_1.0.0.633.exe",
+    "sha256":  "f5cd13d612adfaef1839cad078ca2258b1c3f90c125b3b4c82cd63e7706c00e7",
+    "fileName":  "ICEops_Setup_1.0.0.633.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T00:36:51.5135592+00:00",
+    "publishedAtUtc":  "2026-08-04T01:07:36.6757519+00:00",
     "releaseNotes":  [
-                         "The silent audio keep-alive no longer uses WPF MediaPlayer or a DispatcherTimer, removing periodic UI/MAX latency spikes while preserving immediate sound response after long idle periods."
+                         "MAX polling itself is unchanged. The displayed latency is now the cross-port median for each 500 ms window, and recent-event warnings require sustained median degradation or simultaneous delay on at least three ports."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Replaced the WPF MediaPlayer-based silent keep-alive and its 15-second DispatcherTimer with a persistent WinMM waveOut PCM stream running outside the WPF dispatcher.",
-                                              "Removed the 8-second MediaEnded replay cycle and periodic Play calls that could coincide with 70-280 ms latency spikes during MAX operation.",
-                                              "The new keep-alive continuously recycles two zero-sample buffers on the multimedia callback thread without UI dispatching, file I/O, logging, or per-cycle allocation.",
-                                              "Preloaded WAV UI effects remain active, preserving fast first-click sound response after long idle periods.",
-                                              "MAX polling, ISDU batch reads, IODD Manager behavior, alarms, and communication state logic are unchanged."
+                                              "MAX probe cadence, dedicated sockets, PD polling, and disconnect detection are unchanged.",
+                                              "The MAX latency displayed in the status bar is now the median of each active port\u0027s latest RTT in the 500 ms telemetry window, instead of the last queue sample processed.",
+                                              "A single-port RTT spike is retained as the window maximum for diagnostics but no longer becomes a whole-session recent-event warning.",
+                                              "A MAX latency event is raised only when the median is at least 50 ms for two consecutive reports, or at least three ports are simultaneously at or above 50 ms.",
+                                              "Incident latching and two healthy recovery reports prevent repeated duplicate warnings during one continuous degradation period.",
+                                              "The V632 waveOut audio keep-alive, V628 ISDU batching, and V627 MAX link-stability behavior are preserved."
                                           ],
                                    "ko":  [
-                                              "WPF MediaPlayer 기반 무음 Keep-Alive와 15초 DispatcherTimer를 제거하고, WPF Dispatcher 외부에서 동작하는 지속형 WinMM waveOut PCM 스트림으로 교체했습니다.",
-                                              "MAX 운전 중 70~280ms 순간 지연과 겹칠 수 있던 8초 MediaEnded 반복 재생 및 주기적 Play 호출을 제거했습니다.",
-                                              "새 Keep-Alive는 멀티미디어 콜백 스레드에서 0 샘플 버퍼 2개를 연속 재사용하며 UI Dispatcher, 파일 I/O, 로그 및 주기적 메모리 할당을 사용하지 않습니다.",
-                                              "사전 로드된 WAV 효과음 경로는 유지하여 장시간 유휴 후 첫 클릭 효과음도 즉시 재생됩니다.",
-                                              "MAX 폴링, ISDU 배치 읽기, IODD Manager, 알람 및 통신 상태 로직은 변경하지 않았습니다."
+                                              "MAX 프로브 주기, 전용 소켓, PD 폴링 및 단선 감지 로직은 변경하지 않았습니다.",
+                                              "상태 표시줄의 MAX 지연값을 큐에서 마지막으로 처리된 단일 샘플이 아니라, 500ms 텔레메트리 구간 내 활성 포트별 최신 RTT의 중앙값으로 표시합니다.",
+                                              "단일 포트의 순간 RTT 튐은 진단용 구간 최대값으로 보존하지만 전체 세션의 최근 이벤트 경고로 승격하지 않습니다.",
+                                              "MAX 지연 이벤트는 중앙값이 50ms 이상으로 2회 연속 확인되거나, 같은 구간에서 3개 이상 포트가 동시에 50ms 이상일 때만 생성합니다.",
+                                              "하나의 지속 지연 구간에서 경고가 반복 생성되지 않도록 사건 래치와 정상 구간 2회 연속 복구 판정을 적용했습니다.",
+                                              "V632 waveOut 오디오 Keep-Alive, V628 ISDU 배치 처리 및 V627 MAX 링크 안정화 동작은 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "WPF MediaPlayer方式の無音Keep-Aliveと15秒DispatcherTimerを廃止し、WPF Dispatcher外で動作する継続的なWinMM waveOut PCMストリームへ置き換えました。",
-                                              "MAX運転中の70～280ms遅延と重なる可能性があった8秒MediaEnded再生と周期的なPlay呼び出しを削除しました。",
-                                              "新しいKeep-Aliveはマルチメディア・コールバック・スレッドでゼロサンプルの2バッファを再利用し、UI Dispatcher、ファイルI/O、ログ、周期的な割り当てを行いません。",
-                                              "事前ロード済みWAV効果音は維持され、長時間アイドル後の最初のクリック音も素早く再生されます。",
-                                              "MAXポーリング、ISDUバッチ読み取り、IODD Manager、アラーム、通信状態ロジックは変更していません。"
+                                              "MAXプローブ周期、専用ソケット、PDポーリング、切断検出ロジックは変更していません。",
+                                              "ステータスバーのMAX遅延値は、最後に処理された単一サンプルではなく、500msテレメトリ区間における各アクティブポートの最新RTTの中央値になりました。",
+                                              "単一ポートの瞬間的なRTTスパイクは診断用の区間最大値として保持されますが、セッション全体の最近イベント警告には昇格しません。",
+                                              "MAX遅延イベントは、中央値が50ms以上で2回連続確認された場合、または同一区間で3ポート以上が同時に50ms以上の場合のみ発生します。",
+                                              "継続する1回の遅延期間で重複警告が発生しないよう、インシデントラッチと2回連続の正常復帰判定を追加しました。",
+                                              "V632 waveOutオーディオKeep-Alive、V628 ISDUバッチ処理、V627 MAXリンク安定化は維持されています。"
                                           ],
                                    "zh-CN":  [
-                                                 "移除基于WPF MediaPlayer的静音保活和15秒DispatcherTimer，改为在WPF Dispatcher之外持续运行的WinMM waveOut PCM流。",
-                                                 "删除可能与MAX运行期间70～280ms瞬时延迟重合的8秒MediaEnded循环和周期性Play调用。",
-                                                 "新的保活在多媒体回调线程上循环复用两个全零采样缓冲区，不使用UI Dispatcher、文件I/O、日志或周期性内存分配。",
-                                                 "保留预加载WAV界面音效，长时间空闲后的首次点击声音仍可快速播放。",
-                                                 "MAX轮询、ISDU批量读取、IODD Manager、报警和通信状态逻辑均未修改。"
+                                                 "MAX探测周期、独立套接字、PD轮询和断线检测逻辑均未修改。",
+                                                 "状态栏中的MAX延迟值现在采用500ms遥测窗口内各活动端口最新RTT的中位数，而不是队列中最后处理的单个样本。",
+                                                 "单端口瞬时RTT尖峰仍作为窗口最大值保留用于诊断，但不会再升级为整个会话的最近事件告警。",
+                                                 "仅当中位数连续两次达到或超过50ms，或同一窗口内至少三个端口同时达到或超过50ms时，才生成MAX延迟事件。",
+                                                 "通过事件锁存和连续两个健康窗口的恢复判定，避免同一持续延迟期间重复产生告警。",
+                                                 "保留V632 waveOut音频保活、V628 ISDU批量处理和V627 MAX链路稳定功能。"
                                              ],
                                    "de":  [
-                                              "Der stille WPF-MediaPlayer-Keep-Alive und sein 15-Sekunden-DispatcherTimer wurden durch einen kontinuierlichen WinMM-waveOut-PCM-Stream außerhalb des WPF-Dispatchers ersetzt.",
-                                              "Der 8-Sekunden-MediaEnded-Neustart und periodische Play-Aufrufe, die mit 70-280-ms-Latenzspitzen im MAX-Betrieb zusammenfallen konnten, wurden entfernt.",
-                                              "Der neue Keep-Alive recycelt zwei Null-Sample-Puffer auf dem Multimedia-Callback-Thread ohne UI-Dispatcher, Datei-I/O, Logging oder zyklische Allokationen.",
-                                              "Vorgeladene WAV-UI-Sounds bleiben erhalten, sodass der erste Sound nach langer Inaktivität weiterhin sofort reagiert.",
-                                              "MAX-Polling, ISDU-Batch-Lesen, IODD Manager, Alarme und Kommunikationsstatuslogik bleiben unverändert."
+                                              "MAX-Probezyklus, dedizierte Sockets, PD-Polling und Trennungserkennung bleiben unverändert.",
+                                              "Die MAX-Latenz in der Statusleiste ist nun der Median der jeweils neuesten RTT aller aktiven Ports im 500-ms-Telemetriefenster und nicht mehr das zuletzt verarbeitete Queue-Sample.",
+                                              "Ein einzelner RTT-Ausreißer eines Ports bleibt als Fenstermaximum für die Diagnose erhalten, erzeugt jedoch keine Warnung für die gesamte Sitzung.",
+                                              "Ein MAX-Latenzereignis wird nur ausgelöst, wenn der Median in zwei aufeinanderfolgenden Meldungen mindestens 50 ms beträgt oder mindestens drei Ports gleichzeitig 50 ms oder mehr erreichen.",
+                                              "Eine Ereignisverriegelung und zwei aufeinanderfolgende gesunde Wiederherstellungsfenster verhindern doppelte Warnungen während einer zusammenhängenden Störung.",
+                                              "V632-waveOut-Audio-Keep-Alive, V628-ISDU-Batchverarbeitung und V627-MAX-Linkstabilität bleiben erhalten."
                                           ],
                                    "es":  [
-                                              "Se reemplazó el keep-alive silencioso basado en WPF MediaPlayer y su DispatcherTimer de 15 segundos por un flujo PCM WinMM waveOut persistente fuera del Dispatcher de WPF.",
-                                              "Se eliminaron el reinicio MediaEnded cada 8 segundos y las llamadas Play periódicas que podían coincidir con picos de latencia de 70-280 ms durante MAX.",
-                                              "El nuevo keep-alive recicla dos búferes de muestras cero en el hilo de callback multimedia, sin Dispatcher de UI, E/S de archivos, registros ni asignaciones periódicas.",
-                                              "Los efectos WAV precargados se mantienen para conservar una respuesta inmediata tras largos periodos de inactividad.",
-                                              "El sondeo MAX, las lecturas ISDU por lotes, IODD Manager, las alarmas y la lógica de estado de comunicación no se modificaron."
+                                              "La cadencia de las sondas MAX, los sockets dedicados, el sondeo PD y la detección de desconexión no se modificaron.",
+                                              "La latencia MAX mostrada ahora es la mediana del RTT más reciente de cada puerto activo dentro de la ventana de telemetría de 500 ms, en lugar de la última muestra procesada de la cola.",
+                                              "Un pico aislado de RTT en un solo puerto se conserva como máximo de ventana para diagnóstico, pero ya no genera una advertencia para toda la sesión.",
+                                              "El evento de latencia MAX solo se genera cuando la mediana alcanza 50 ms durante dos informes consecutivos, o cuando al menos tres puertos alcanzan simultáneamente 50 ms o más.",
+                                              "El enclavamiento del incidente y dos ventanas saludables consecutivas evitan advertencias duplicadas durante una misma degradación continua.",
+                                              "Se conservan el keep-alive de audio waveOut de V632, el procesamiento ISDU por lotes de V628 y la estabilidad de enlace MAX de V627."
                                           ]
                                }
 }
