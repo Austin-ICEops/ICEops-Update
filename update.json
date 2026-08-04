@@ -1,63 +1,63 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.634",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.634/ICEops_Setup_1.0.0.634.exe",
-    "sha256":  "24b6a41e27f035d105063a0deced1633cb9ee13c957fa6899086a3498663f7b0",
-    "fileName":  "ICEops_Setup_1.0.0.634.exe",
+    "version":  "1.0.0.635",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.635/ICEops_Setup_1.0.0.635.exe",
+    "sha256":  "bae815827f417a35414dba4f5e055603753956ddc04ca05c7a6354f3de747965",
+    "fileName":  "ICEops_Setup_1.0.0.635.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T02:00:53.1400925+00:00",
+    "publishedAtUtc":  "2026-08-04T06:05:33.1308442+00:00",
     "releaseNotes":  [
-                         "The dark theme and all runtime logic are unchanged. The light theme now uses a cleaner neutral workspace, stronger small-text and border contrast, clearer connected-port outlines, accessible monitoring badges, and consistent teal header treatment."
+                         "DB Monitor, Visualization Inspector, and Oscilloscope can now open as synchronized modeless windows on secondary displays. IODD Manager keeps its existing independent-window workflow and remembered monitor placement."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "The dark theme palette and all communication, polling, alarm, IODD, Web, database, and update logic are unchanged.",
-                                              "The light workspace and top chrome use a cleaner neutral surface while preserving white-card hierarchy.",
-                                              "Soft text, disabled text, controls, grids, cards, and popup borders have stronger contrast for small labels and long-duration monitoring.",
-                                              "Connected-port and connected-status borders are more distinct without increasing visual noise.",
-                                              "Dashboard and license accent headers use a deeper teal with white text, and monitoring badges use dark text for improved readability.",
-                                              "The light-only port-card elevation shadow was softened for a cleaner industrial dashboard finish."
+                                              "DB Monitor now includes an Open in new window action for a dedicated secondary-display workspace.",
+                                              "Visualization Inspector and Oscilloscope use one context-aware pop-out button and can remain open while MainWindow changes tabs.",
+                                              "Detached Inspector and Oscilloscope windows share the original Animation Gauge ViewModel, selected ports, signal settings, and live buffers instead of creating a second communication pipeline.",
+                                              "External workspace activity is reference-counted so live updates continue only while the main page or at least one pop-out is active.",
+                                              "Each workspace is single-instance, modeless, resizable, taskbar-visible, theme-aware, and remembers its monitor position and size.",
+                                              "IODD Manager already operates as an independent window and continues to use its existing single-instance and placement persistence behavior."
                                           ],
                                    "ko":  [
-                                              "다크 테마 팔레트와 통신, 폴링, 알람, IODD, Web, DB 및 업데이트 로직은 변경하지 않았습니다.",
-                                              "라이트 테마의 작업 영역과 상단 크롬을 더 깨끗한 중성 톤으로 조정하면서 흰색 카드 계층은 유지했습니다.",
-                                              "작은 보조 글자, 비활성 글자, 컨트롤, 그리드, 카드 및 팝업 테두리의 대비를 강화했습니다.",
-                                              "연결 포트와 온라인 상태 배지의 테두리를 조금 더 선명하게 조정하되 시각적 과장은 피했습니다.",
-                                              "대시보드·라이선스 강조 헤더는 더 깊은 청록색과 흰색 글자로 통일하고, 모니터링 배지는 어두운 글자를 적용했습니다.",
-                                              "라이트 테마 전용 포트 카드 그림자를 부드럽게 정리해 산업용 대시보드 마감을 개선했습니다."
+                                              "DB 모니터에 별도 화면 버튼을 추가해 보조 디스플레이 전용 작업 창으로 열 수 있습니다.",
+                                              "시각화 인스펙터와 오실로스코프는 현재 선택된 탭에 따라 하나의 별도 화면 버튼으로 각각 독립 창을 엽니다.",
+                                              "별도 인스펙터와 오실로스코프는 기존 Animation Gauge ViewModel, 포트 선택, 신호 설정 및 실시간 버퍼를 공유하며 통신 파이프라인을 중복 생성하지 않습니다.",
+                                              "외부 작업 창 활동을 참조 카운트로 관리해 메인 페이지 또는 하나 이상의 별도 창이 활성인 동안에만 실시간 갱신을 유지합니다.",
+                                              "각 작업 창은 단일 인스턴스, 모델리스, 크기 조절, 작업 표시줄 표시, 테마 연동 및 디스플레이 위치 기억을 지원합니다.",
+                                              "IODD Manager는 기존에도 독립 창으로 동작하며 단일 인스턴스와 창 위치 저장 구조를 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "ダークテーマのパレットおよび通信、ポーリング、アラーム、IODD、Web、DB、更新ロジックは変更していません。",
-                                              "ライトテーマのワークスペースと上部クロームをよりクリーンなニュートラル色に調整し、白いカードの階層は維持しました。",
-                                              "小さい補助文字、無効文字、コントロール、グリッド、カード、ポップアップ枠線のコントラストを強化しました。",
-                                              "接続ポートとオンライン状態バッジの枠線を、過度に強調せず明確にしました。",
-                                              "ダッシュボードとライセンスのアクセントヘッダーを濃いティールと白文字に統一し、監視バッジには濃色文字を採用しました。",
-                                              "ライトテーマ専用のポートカード影を柔らかくし、産業用ダッシュボードの仕上がりを改善しました。"
+                                              "DBモニターに別ウィンドウボタンを追加し、サブディスプレイ専用の作業ウィンドウとして開けます。",
+                                              "Visualization InspectorとOscilloscopeは、現在選択中のタブに応じて1つのポップアウトボタンから独立ウィンドウを開きます。",
+                                              "独立したInspectorとOscilloscopeは既存のAnimation Gauge ViewModel、ポート選択、信号設定、ライブバッファを共有し、通信パイプラインを重複生成しません。",
+                                              "外部ワークスペースの稼働を参照カウントで管理し、メインページまたは1つ以上のポップアウトが有効な間だけライブ更新を維持します。",
+                                              "各ワークスペースは単一インスタンス、モデルレス、サイズ変更、タスクバー表示、テーマ連動、画面位置記憶に対応します。",
+                                              "IODD Managerは従来どおり独立ウィンドウで動作し、単一インスタンスと配置保存を維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "深色主题调色板以及通信、轮询、告警、IODD、Web、数据库和更新逻辑均未修改。",
-                                                 "浅色主题的工作区和顶部区域改为更干净的中性色，同时保留白色卡片的层级。",
-                                                 "增强了小号辅助文字、禁用文字、控件、表格、卡片和弹窗边框的对比度。",
-                                                 "连接端口和在线状态徽章的边框更清晰，但不过度突出。",
-                                                 "仪表板和许可证强调标题统一为更深的青绿色配白字，监控徽章改用深色文字。",
-                                                 "柔化了仅用于浅色主题的端口卡片阴影，提升工业仪表板的整体完成度。"
+                                                 "DB监视器新增独立窗口按钮，可作为副显示器专用工作区打开。",
+                                                 "可视化检查器和示波器根据当前选中的标签页，通过同一个独立窗口按钮分别打开。",
+                                                 "独立的检查器和示波器共享原有Animation Gauge ViewModel、端口选择、信号设置和实时缓冲区，不会创建重复的通信管线。",
+                                                 "外部工作区采用引用计数管理，仅在主页面或至少一个独立窗口处于活动状态时保持实时更新。",
+                                                 "每个工作区支持单实例、非模态、可调整大小、任务栏显示、主题同步以及显示器位置和尺寸记忆。",
+                                                 "IODD Manager原本就是独立窗口，并继续保留单实例和窗口位置保存机制。"
                                              ],
                                    "de":  [
-                                              "Die Dark-Theme-Palette sowie Kommunikations-, Polling-, Alarm-, IODD-, Web-, Datenbank- und Update-Logik bleiben unverändert.",
-                                              "Arbeitsbereich und obere Fensterleiste des Light Themes verwenden eine sauberere neutrale Fläche, während die Hierarchie der weißen Karten erhalten bleibt.",
-                                              "Kontrast von kleinem Sekundärtext, deaktiviertem Text, Steuerelementen, Rastern, Karten und Popup-Rahmen wurde verbessert.",
-                                              "Rahmen verbundener Ports und Online-Status-Badges sind klarer, ohne visuell zu dominieren.",
-                                              "Dashboard- und Lizenz-Akzentköpfe verwenden ein tieferes Türkis mit weißem Text; Monitoring-Badges verwenden dunklen Text.",
-                                              "Der ausschließlich im Light Theme verwendete Kartenschatten wurde für ein saubereres industrielles Finish weicher abgestimmt."
+                                              "Der DB Monitor besitzt jetzt eine Aktion zum Öffnen als separates Arbeitsfenster auf einem zweiten Bildschirm.",
+                                              "Visualization Inspector und Oscilloscope öffnen über eine kontextabhängige Schaltfläche jeweils ein unabhängiges Fenster.",
+                                              "Die separaten Fenster teilen das vorhandene Animation-Gauge-ViewModel, die Portauswahl, Signaleinstellungen und Live-Puffer, ohne eine zweite Kommunikationspipeline zu erzeugen.",
+                                              "Externe Workspace-Aktivität wird referenzgezählt, sodass Live-Updates nur bei aktiver Hauptseite oder mindestens einem geöffneten Pop-out laufen.",
+                                              "Jeder Workspace ist eine einzelne modeless Instanz, größenveränderbar, in der Taskleiste sichtbar, themensynchron und speichert Monitorposition und Größe.",
+                                              "Der IODD Manager bleibt das bereits vorhandene unabhängige Fenster mit Single-Instance- und Platzierungsspeicherung."
                                           ],
                                    "es":  [
-                                              "La paleta del tema oscuro y toda la lógica de comunicación, sondeo, alarmas, IODD, Web, base de datos y actualización permanecen sin cambios.",
-                                              "El espacio de trabajo y la franja superior del tema claro usan una superficie neutra más limpia, manteniendo la jerarquía de tarjetas blancas.",
-                                              "Se reforzó el contraste de textos auxiliares pequeños, estados deshabilitados, controles, tablas, tarjetas y bordes de ventanas emergentes.",
-                                              "Los bordes de puertos conectados y distintivos en línea son más claros sin aumentar el ruido visual.",
-                                              "Los encabezados destacados del panel y licencia usan un verde azulado más profundo con texto blanco; los distintivos de monitoreo usan texto oscuro.",
-                                              "La sombra exclusiva de las tarjetas del tema claro se suavizó para un acabado industrial más limpio."
+                                              "DB Monitor incorpora una acción para abrirse como ventana independiente en una pantalla secundaria.",
+                                              "Visualization Inspector y Oscilloscope usan un botón contextual para abrir cada espacio de trabajo en una ventana independiente.",
+                                              "Las ventanas independientes comparten el ViewModel de Animation Gauge, la selección de puertos, la configuración de señales y los búferes en vivo sin crear otra canalización de comunicación.",
+                                              "La actividad externa usa conteo de referencias para mantener las actualizaciones solo mientras la página principal o al menos una ventana emergente esté activa.",
+                                              "Cada espacio de trabajo es de instancia única, no modal, redimensionable, visible en la barra de tareas, sincronizado con el tema y recuerda posición y tamaño.",
+                                              "IODD Manager conserva su flujo existente como ventana independiente con instancia única y persistencia de ubicación."
                                           ]
                                }
 }
