@@ -1,57 +1,57 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.636",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.636/ICEops_Setup_1.0.0.636.exe",
-    "sha256":  "e758d3520ae29f5e005e142c26b517f3e10766f915c281aab98c21c39de15355",
-    "fileName":  "ICEops_Setup_1.0.0.636.exe",
+    "version":  "1.0.0.637",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.637/ICEops_Setup_1.0.0.637.exe",
+    "sha256":  "9ad69d665dfae19833a665c052c376519270ecb7c67cac0797f90d268db40950",
+    "fileName":  "ICEops_Setup_1.0.0.637.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T06:19:01.4049933+00:00",
+    "publishedAtUtc":  "2026-08-04T07:06:49.1923142+00:00",
     "releaseNotes":  [
-                         "Adds the missing pop-out action to the main Visualization workspace and keeps its shared live producer active while the detached window remains open."
+                         "Stabilizes live port-card value rendering across mixed-refresh multi-display setups without changing communication, polling, database, alarm, or visualization pipelines."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Adds the missing Open in new window button to the main Visualization tab.",
-                                              "The detached Visualization window shares the existing Visualization ViewModel, selected port, signal, alarm range, trend, Hold state, and live buffers.",
-                                              "No additional communication or polling pipeline is created.",
-                                              "Visualization activity is reference-counted so the detached display continues updating after MainWindow changes tabs and stops after the last active view closes.",
-                                              "DB Monitor, Inspector, Oscilloscope, and IODD Manager multi-display behavior from v635 is retained."
+                                              "Keeps one stable live-value token collection per port and updates token properties in place instead of rebuilding ItemsControl containers on every RegsText change.",
+                                              "Removes the converter-side raw HealthHub snapshot recheck so a transient snapshot timing difference cannot blank an otherwise valid card value.",
+                                              "Changes normal value feedback from a filled overlay to a lower-intensity border pulse and reduces its frequency.",
+                                              "Adds device-pixel snapping, layout rounding, and display text formatting to the Home value surface for mixed-DPI and mixed-refresh monitors.",
+                                              "Communication, polling rate, alarms, DB logging, IODD, Visualization, Inspector, Oscilloscope, and multi-display workspace logic are unchanged."
                                           ],
                                    "ko":  [
-                                              "메인 시각화 탭에서 누락됐던 별도 화면 버튼을 추가했습니다.",
-                                              "별도 시각화 창은 기존 Visualization ViewModel, 선택 포트, 신호, 알람 범위, 트렌드, Hold 상태 및 실시간 버퍼를 그대로 공유합니다.",
-                                              "추가 통신 또는 폴링 파이프라인을 생성하지 않습니다.",
-                                              "시각화 활동을 참조 카운트로 관리해 메인 탭을 변경해도 별도 창의 갱신이 유지되고 마지막 활성 화면이 닫히면 정지합니다.",
-                                              "v635의 DB 모니터, 인스펙터, 오실로스코프 및 IODD Manager 멀티 디스플레이 동작은 그대로 유지합니다."
+                                              "포트별 실시간 값 토큰 컬렉션을 유지하고 RegsText가 바뀔 때 ItemsControl을 재생성하지 않고 토큰 속성만 갱신하도록 변경했습니다.",
+                                              "컨버터에서 HealthHub 원시 스냅샷을 다시 조회하던 경로를 제거해 순간적인 스냅샷 타이밍 차이로 정상 카드 값이 비워지지 않도록 했습니다.",
+                                              "일반 값 변경 피드백을 면 채움 플래시에서 저강도 테두리 펄스로 변경하고 발생 빈도를 낮췄습니다.",
+                                              "혼합 DPI·혼합 주사율 모니터를 위해 홈 값 영역에 디바이스 픽셀 스냅, 레이아웃 라운딩 및 Display 텍스트 포맷을 적용했습니다.",
+                                              "통신, 폴링 주기, 알람, DB 저장, IODD, 시각화, 인스펙터, 오실로스코프 및 멀티 디스플레이 워크스페이스 로직은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "メインの可視化タブに不足していた別ウィンドウボタンを追加しました。",
-                                              "独立した可視化ウィンドウは既存のVisualization ViewModel、選択ポート、信号、アラーム範囲、トレンド、Hold状態、ライブバッファを共有します。",
-                                              "追加の通信またはポーリングパイプラインは作成しません。",
-                                              "可視化の稼働を参照カウントで管理し、メインタブ変更後も独立ウィンドウの更新を維持し、最後の有効画面を閉じると停止します。",
-                                              "v635のDB Monitor、Inspector、Oscilloscope、IODD Managerのマルチディスプレイ動作を維持します。"
+                                              "ポートごとにライブ値トークンのコレクションを維持し、RegsText更新時にItemsControlを再生成せず各トークンのプロパティだけを更新します。",
+                                              "コンバーター側のHealthHub生スナップショット再確認を削除し、一時的なタイミング差で有効なカード値が消えないようにしました。",
+                                              "通常の値変更フィードバックを面の点滅から低輝度の枠線パルスへ変更し、発生頻度も低減しました。",
+                                              "混在DPI・混在リフレッシュレート環境向けにデバイスピクセルスナップ、レイアウト丸め、Displayテキスト書式を適用しました。",
+                                              "通信、ポーリング、アラーム、DB、IODD、可視化、Inspector、Oscilloscope、マルチディスプレイ処理は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "在主可视化标签页中补充了缺失的独立窗口按钮。",
-                                                 "独立可视化窗口共享现有Visualization ViewModel、所选端口、信号、报警范围、趋势、Hold状态和实时缓冲区。",
-                                                 "不会创建额外的通信或轮询管线。",
-                                                 "可视化活动采用引用计数管理，切换主窗口标签后独立窗口仍持续更新，最后一个活动视图关闭后停止。",
-                                                 "保留v635中的DB Monitor、Inspector、Oscilloscope和IODD Manager多显示器行为。"
+                                                 "为每个端口保持稳定的实时值令牌集合，RegsText变化时只更新令牌属性，不再重建ItemsControl容器。",
+                                                 "移除转换器中对HealthHub原始快照的二次检查，避免瞬时时序差导致有效卡片数值被清空。",
+                                                 "将普通数值变化反馈从整块填充闪烁改为低强度边框脉冲，并降低触发频率。",
+                                                 "为混合DPI和混合刷新率显示器增加设备像素对齐、布局取整和Display文本格式。",
+                                                 "通信、轮询、报警、数据库、IODD、可视化、Inspector、Oscilloscope及多显示器工作区逻辑保持不变。"
                                              ],
                                    "de":  [
-                                              "Die fehlende Schaltfläche zum Öffnen in einem separaten Fenster wurde im Haupt-Visualisierungstab ergänzt.",
-                                              "Das separate Visualisierungsfenster teilt das vorhandene Visualization ViewModel, den gewählten Port, das Signal, den Alarmbereich, den Trend, den Hold-Status und die Live-Puffer.",
-                                              "Es wird keine zusätzliche Kommunikations- oder Polling-Pipeline erzeugt.",
-                                              "Die Visualisierungsaktivität wird referenzgezählt, sodass das separate Fenster nach einem Tabwechsel weiterläuft und nach dem Schließen der letzten aktiven Ansicht stoppt.",
-                                              "Das Multi-Display-Verhalten von DB Monitor, Inspector, Oscilloscope und IODD Manager aus v635 bleibt erhalten."
+                                              "Pro Port bleibt eine stabile Sammlung der Live-Wert-Tokens bestehen; bei RegsText-Änderungen werden nur die Eigenschaften aktualisiert, statt ItemsControl-Container neu aufzubauen.",
+                                              "Die erneute Prüfung des rohen HealthHub-Snapshots im Konverter wurde entfernt, damit kurzzeitige Timing-Abweichungen gültige Kartenwerte nicht leeren.",
+                                              "Die normale Wertänderungsanzeige wurde von einer Flächenaufhellung auf einen schwächeren Rahmenimpuls umgestellt und seltener ausgelöst.",
+                                              "Für gemischte DPI- und Bildwiederholraten wurden Pixel-Snapping, Layout-Rundung und Display-Textformatierung ergänzt.",
+                                              "Kommunikation, Polling, Alarme, DB, IODD, Visualisierung, Inspector, Oscilloscope und Multi-Display-Logik bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Se añadió al panel principal de Visualización el botón que faltaba para abrirlo en una ventana independiente.",
-                                              "La ventana de Visualización separada comparte el ViewModel existente, el puerto y la señal seleccionados, el rango de alarma, la tendencia, el estado Hold y los búferes en vivo.",
-                                              "No se crea otra canalización de comunicación ni de sondeo.",
-                                              "La actividad de Visualización usa conteo de referencias para continuar tras cambiar de pestaña y detenerse al cerrar la última vista activa.",
-                                              "Se conserva el comportamiento multipantalla de DB Monitor, Inspector, Oscilloscope e IODD Manager de v635."
+                                              "Mantiene una colección estable de tokens de valor por puerto y actualiza sus propiedades sin reconstruir los contenedores de ItemsControl en cada cambio de RegsText.",
+                                              "Elimina la segunda consulta del snapshot bruto de HealthHub en el convertidor para evitar que una diferencia momentánea de temporización vacíe un valor válido.",
+                                              "Cambia la indicación normal de cambio de valor de un relleno intermitente a un pulso de borde de menor intensidad y frecuencia.",
+                                              "Añade ajuste a píxel, redondeo de diseño y formato de texto Display para monitores con DPI y frecuencias de actualización mixtas.",
+                                              "No cambia la comunicación, el sondeo, las alarmas, la DB, IODD, Visualización, Inspector, Oscilloscope ni el espacio de trabajo multipantalla."
                                           ]
                                }
 }
