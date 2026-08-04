@@ -1,45 +1,45 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.644",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.644/ICEops_Setup_1.0.0.644.exe",
-    "sha256":  "6253796f5a55811c994b1122470dc1fa84bcb8378253c63539b8a8081bad43ed",
-    "fileName":  "ICEops_Setup_1.0.0.644.exe",
+    "version":  "1.0.0.645",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.645/ICEops_Setup_1.0.0.645.exe",
+    "sha256":  "fb86c060ab36c4180c7c4bb90239879f0800fef5f93652adf16c5926781bff55",
+    "fileName":  "ICEops_Setup_1.0.0.645.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T12:37:42.2970602+00:00",
+    "publishedAtUtc":  "2026-08-04T12:56:30.8704012+00:00",
     "releaseNotes":  [
-                         "Re-releases the verified v636 codebase as v644 without functional code changes."
+                         "Re-releases the user-verified original v636 project as v645 with no functional source-code changes."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Re-releases the verified v636 codebase as v644.",
+                                              "Re-releases the user-verified original v636 project as v645.",
                                               "No functional source-code changes were applied.",
-                                              "The v636 connection, polling, device identification, mapping, and multi-display behavior are preserved exactly."
+                                              "Connection, polling, device identification, mapping, visualization pop-out, and multi-display behavior remain identical to the uploaded v636 project."
                                           ],
                                    "ko":  [
-                                              "검증된 v636 코드베이스를 v644로 다시 배포합니다.",
+                                              "사용자가 정상 동작을 확인한 원본 v636 프로젝트를 v645로 다시 배포합니다.",
                                               "기능 소스 코드는 변경하지 않았습니다.",
-                                              "v636의 연결, 폴링, 장치 식별, 매핑 및 멀티 디스플레이 동작을 그대로 유지합니다."
+                                              "연결, 폴링, 장치 식별, 매핑, 시각화 별도 화면 및 멀티 디스플레이 동작은 첨부 v636 프로젝트와 동일합니다."
                                           ],
                                    "ja":  [
-                                              "検証済みのv636コードベースをv644として再リリースします。",
+                                              "正常動作が確認された元のv636プロジェクトをv645として再リリースします。",
                                               "機能ソースコードの変更はありません。",
-                                              "v636の接続、ポーリング、デバイス識別、マッピング、マルチディスプレイ動作をそのまま維持します。"
+                                              "接続、ポーリング、デバイス識別、マッピング、可視化ポップアウト、マルチディスプレイ動作は元のv636と同一です。"
                                           ],
                                    "zh-CN":  [
-                                                 "将已验证的v636代码库重新发布为v644。",
+                                                 "将已确认正常运行的原始v636项目重新发布为v645。",
                                                  "未修改功能源代码。",
-                                                 "完整保留v636的连接、轮询、设备识别、映射和多显示器行为。"
+                                                 "连接、轮询、设备识别、映射、可视化独立窗口和多显示器行为与原始v636完全相同。"
                                              ],
                                    "de":  [
-                                              "Die verifizierte v636-Codebasis wird als v644 erneut veröffentlicht.",
+                                              "Das als stabil bestätigte ursprüngliche v636-Projekt wird als v645 erneut veröffentlicht.",
                                               "Es wurden keine funktionalen Quellcodeänderungen vorgenommen.",
-                                              "Verbindung, Polling, Geräteidentifikation, Mapping und Multi-Display-Verhalten von v636 bleiben unverändert."
+                                              "Verbindung, Polling, Geräteidentifikation, Mapping, Visualisierungs-Pop-out und Multi-Display-Verhalten bleiben identisch mit v636."
                                           ],
                                    "es":  [
-                                              "Se vuelve a publicar la base de código verificada de v636 como v644.",
+                                              "Se vuelve a publicar como v645 el proyecto v636 original confirmado como estable.",
                                               "No se realizaron cambios funcionales en el código fuente.",
-                                              "Se conservan exactamente la conexión, el sondeo, la identificación de dispositivos, el mapeo y el comportamiento multipantalla de v636."
+                                              "La conexión, el sondeo, la identificación de dispositivos, el mapeo, la ventana independiente de visualización y el comportamiento multipantalla permanecen idénticos a v636."
                                           ]
                                }
 }
