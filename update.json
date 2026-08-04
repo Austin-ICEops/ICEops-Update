@@ -1,63 +1,43 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.648",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.648/ICEops_Setup_1.0.0.648.exe",
-    "sha256":  "8a27bfb5bfe5e45a200493ab0e95a3f6b2b70c53c10c14870b37e90bd5b59056",
-    "fileName":  "ICEops_Setup_1.0.0.648.exe",
+    "version":  "1.0.0.649",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.649/ICEops_Setup_1.0.0.649.exe",
+    "sha256":  "19200aa3bebc1a516be5670772b38d8ba552894c7c93ccf7311065a1ca4a331e",
+    "fileName":  "ICEops_Setup_1.0.0.649.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T14:12:11.1971617+00:00",
+    "publishedAtUtc":  "2026-08-04T14:28:03.4503718+00:00",
     "releaseNotes":  [
-                         "Fast card mapping render: reuse stable per-port token collections and update token values in place. Connection, polling, device identification, mapping, refresh, popout, and latency telemetry logic are unchanged."
+                         "Publishes restored or auto-generated port mappings to the live runtime immediately, then serializes SQLite/profile persistence in the background. ProductName ISDU identity verification remains fail-closed because the current master runtime does not yet populate a trusted numeric Vendor ID/Device ID identity source."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Speeds up card mapping display by reusing stable per-port token collections and updating values in place; communication, polling, identification, mapping, pop-out, and heartbeat behavior are unchanged.",
-                                              "Adds the missing Open in new window button to the main Visualization tab.",
-                                              "The detached Visualization window shares the existing Visualization ViewModel, selected port, signal, alarm range, trend, Hold state, and live buffers.",
-                                              "No additional communication or polling pipeline is created.",
-                                              "Visualization activity is reference-counted so the detached display continues updating after MainWindow changes tabs and stops after the last active view closes.",
-                                              "DB Monitor, Inspector, Oscilloscope, and IODD Manager multi-display behavior from v635 is retained."
+                                              "Publishes restored or auto-generated mappings to Home, Trend, Web, and alarm consumers before SQLite/profile persistence completes.",
+                                              "Serializes mapping persistence on a dedicated background gate so one port’s disk write does not block the next port’s mapping sequence.",
+                                              "Retains ProductName ISDU identity verification and fail-closed device-change protection; the current runtime does not yet provide a populated trusted Vendor ID/Device ID source for safe removal.",
+                                              "Reverts the ineffective v648 token-collection optimization and preserves the v647 visualization pop-out baseline."
                                           ],
                                    "ko":  [
-                                              "포트별 카드 토큰 컬렉션을 재사용하고 값을 제자리 갱신해 매핑 카드 표시 속도를 개선했습니다. 통신·폴링·식별·매핑·새창 팝업·하트비트 동작은 변경하지 않았습니다.",
-                                              "메인 시각화 탭에서 누락됐던 별도 화면 버튼을 추가했습니다.",
-                                              "별도 시각화 창은 기존 Visualization ViewModel, 선택 포트, 신호, 알람 범위, 트렌드, Hold 상태 및 실시간 버퍼를 그대로 공유합니다.",
-                                              "추가 통신 또는 폴링 파이프라인을 생성하지 않습니다.",
-                                              "시각화 활동을 참조 카운트로 관리해 메인 탭을 변경해도 별도 창의 갱신이 유지되고 마지막 활성 화면이 닫히면 정지합니다.",
-                                              "v635의 DB 모니터, 인스펙터, 오실로스코프 및 IODD Manager 멀티 디스플레이 동작은 그대로 유지합니다."
+                                              "복원 또는 자동 생성된 매핑을 SQLite·프로파일 저장 완료 전에 Home, Trend, Web 및 알람 런타임에 즉시 반영합니다.",
+                                              "매핑 영속화를 전용 백그라운드 게이트에서 순차 처리해 한 포트의 디스크 저장이 다음 포트 매핑 시퀀스를 막지 않도록 했습니다.",
+                                              "ProductName ISDU 식별 및 장치 변경 시 Fail-Closed 보호는 유지합니다. 현재 런타임에는 이를 안전하게 대체할 신뢰 가능한 Vendor ID/Device ID 실시간 소스가 아직 채워지지 않습니다.",
+                                              "효과가 확인되지 않은 v648 카드 토큰 최적화는 제거하고 v647 시각화 팝업 기준 동작을 유지합니다."
                                           ],
                                    "ja":  [
-                                              "ポートごとのカードトークンコレクションを再利用し、値をその場で更新してマッピングカード表示を高速化しました。通信、ポーリング、識別、マッピング、別ウィンドウ、ハートビート動作は変更していません。",
-                                              "メインの可視化タブに不足していた別ウィンドウボタンを追加しました。",
-                                              "独立した可視化ウィンドウは既存のVisualization ViewModel、選択ポート、信号、アラーム範囲、トレンド、Hold状態、ライブバッファを共有します。",
-                                              "追加の通信またはポーリングパイプラインは作成しません。",
-                                              "可視化の稼働を参照カウントで管理し、メインタブ変更後も独立ウィンドウの更新を維持し、最後の有効画面を閉じると停止します。",
-                                              "v635のDB Monitor、Inspector、Oscilloscope、IODD Managerのマルチディスプレイ動作を維持します。"
+                                              "マッピングを保存完了前にライブ画面へ反映し、永続化はバックグラウンドで直列処理します。",
+                                              "ProductName ISDUによる安全な識別は維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "通过复用每个端口的卡片令牌集合并就地更新数值，加快映射卡片显示。通信、轮询、识别、映射、独立窗口和心跳效果均未更改。",
-                                                 "在主可视化标签页中补充了缺失的独立窗口按钮。",
-                                                 "独立可视化窗口共享现有Visualization ViewModel、所选端口、信号、报警范围、趋势、Hold状态和实时缓冲区。",
-                                                 "不会创建额外的通信或轮询管线。",
-                                                 "可视化活动采用引用计数管理，切换主窗口标签后独立窗口仍持续更新，最后一个活动视图关闭后停止。",
-                                                 "保留v635中的DB Monitor、Inspector、Oscilloscope和IODD Manager多显示器行为。"
+                                                 "映射先立即发布到实时界面，SQLite和配置文件持久化在后台串行完成。",
+                                                 "保留ProductName ISDU身份验证和设备变更的Fail-Closed保护。"
                                              ],
                                    "de":  [
-                                              "Die Kartenanzeige beim Mapping wurde beschleunigt, indem stabile Token-Sammlungen pro Port wiederverwendet und Werte direkt aktualisiert werden. Kommunikation, Polling, Identifikation, Mapping, Pop-out und Heartbeat bleiben unverändert.",
-                                              "Die fehlende Schaltfläche zum Öffnen in einem separaten Fenster wurde im Haupt-Visualisierungstab ergänzt.",
-                                              "Das separate Visualisierungsfenster teilt das vorhandene Visualization ViewModel, den gewählten Port, das Signal, den Alarmbereich, den Trend, den Hold-Status und die Live-Puffer.",
-                                              "Es wird keine zusätzliche Kommunikations- oder Polling-Pipeline erzeugt.",
-                                              "Die Visualisierungsaktivität wird referenzgezählt, sodass das separate Fenster nach einem Tabwechsel weiterläuft und nach dem Schließen der letzten aktiven Ansicht stoppt.",
-                                              "Das Multi-Display-Verhalten von DB Monitor, Inspector, Oscilloscope und IODD Manager aus v635 bleibt erhalten."
+                                              "Wiederhergestellte oder automatisch erzeugte Zuordnungen werden sofort live veröffentlicht; die Persistierung erfolgt seriell im Hintergrund.",
+                                              "Die ProductName-ISDU-Identitätsprüfung und der Fail-Closed-Gerätewechsel-Schutz bleiben erhalten."
                                           ],
                                    "es":  [
-                                              "Se acelera la visualización de las tarjetas de mapeo reutilizando colecciones de tokens estables por puerto y actualizando los valores in situ. No cambian la comunicación, el sondeo, la identificación, el mapeo, la ventana independiente ni el heartbeat.",
-                                              "Se añadió al panel principal de Visualización el botón que faltaba para abrirlo en una ventana independiente.",
-                                              "La ventana de Visualización separada comparte el ViewModel existente, el puerto y la señal seleccionados, el rango de alarma, la tendencia, el estado Hold y los búferes en vivo.",
-                                              "No se crea otra canalización de comunicación ni de sondeo.",
-                                              "La actividad de Visualización usa conteo de referencias para continuar tras cambiar de pestaña y detenerse al cerrar la última vista activa.",
-                                              "Se conserva el comportamiento multipantalla de DB Monitor, Inspector, Oscilloscope e IODD Manager de v635."
+                                              "Las asignaciones restauradas o generadas automáticamente se publican de inmediato; la persistencia se serializa en segundo plano.",
+                                              "Se mantienen la verificación de identidad ProductName por ISDU y la protección fail-closed ante cambio de dispositivo."
                                           ]
                                }
 }
