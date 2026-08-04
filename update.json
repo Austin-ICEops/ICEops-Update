@@ -1,63 +1,63 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.633",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.633/ICEops_Setup_1.0.0.633.exe",
-    "sha256":  "f5cd13d612adfaef1839cad078ca2258b1c3f90c125b3b4c82cd63e7706c00e7",
-    "fileName":  "ICEops_Setup_1.0.0.633.exe",
+    "version":  "1.0.0.634",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.634/ICEops_Setup_1.0.0.634.exe",
+    "sha256":  "24b6a41e27f035d105063a0deced1633cb9ee13c957fa6899086a3498663f7b0",
+    "fileName":  "ICEops_Setup_1.0.0.634.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T01:07:36.6757519+00:00",
+    "publishedAtUtc":  "2026-08-04T02:00:53.1400925+00:00",
     "releaseNotes":  [
-                         "MAX polling itself is unchanged. The displayed latency is now the cross-port median for each 500 ms window, and recent-event warnings require sustained median degradation or simultaneous delay on at least three ports."
+                         "The dark theme and all runtime logic are unchanged. The light theme now uses a cleaner neutral workspace, stronger small-text and border contrast, clearer connected-port outlines, accessible monitoring badges, and consistent teal header treatment."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "MAX probe cadence, dedicated sockets, PD polling, and disconnect detection are unchanged.",
-                                              "The MAX latency displayed in the status bar is now the median of each active port\u0027s latest RTT in the 500 ms telemetry window, instead of the last queue sample processed.",
-                                              "A single-port RTT spike is retained as the window maximum for diagnostics but no longer becomes a whole-session recent-event warning.",
-                                              "A MAX latency event is raised only when the median is at least 50 ms for two consecutive reports, or at least three ports are simultaneously at or above 50 ms.",
-                                              "Incident latching and two healthy recovery reports prevent repeated duplicate warnings during one continuous degradation period.",
-                                              "The V632 waveOut audio keep-alive, V628 ISDU batching, and V627 MAX link-stability behavior are preserved."
+                                              "The dark theme palette and all communication, polling, alarm, IODD, Web, database, and update logic are unchanged.",
+                                              "The light workspace and top chrome use a cleaner neutral surface while preserving white-card hierarchy.",
+                                              "Soft text, disabled text, controls, grids, cards, and popup borders have stronger contrast for small labels and long-duration monitoring.",
+                                              "Connected-port and connected-status borders are more distinct without increasing visual noise.",
+                                              "Dashboard and license accent headers use a deeper teal with white text, and monitoring badges use dark text for improved readability.",
+                                              "The light-only port-card elevation shadow was softened for a cleaner industrial dashboard finish."
                                           ],
                                    "ko":  [
-                                              "MAX 프로브 주기, 전용 소켓, PD 폴링 및 단선 감지 로직은 변경하지 않았습니다.",
-                                              "상태 표시줄의 MAX 지연값을 큐에서 마지막으로 처리된 단일 샘플이 아니라, 500ms 텔레메트리 구간 내 활성 포트별 최신 RTT의 중앙값으로 표시합니다.",
-                                              "단일 포트의 순간 RTT 튐은 진단용 구간 최대값으로 보존하지만 전체 세션의 최근 이벤트 경고로 승격하지 않습니다.",
-                                              "MAX 지연 이벤트는 중앙값이 50ms 이상으로 2회 연속 확인되거나, 같은 구간에서 3개 이상 포트가 동시에 50ms 이상일 때만 생성합니다.",
-                                              "하나의 지속 지연 구간에서 경고가 반복 생성되지 않도록 사건 래치와 정상 구간 2회 연속 복구 판정을 적용했습니다.",
-                                              "V632 waveOut 오디오 Keep-Alive, V628 ISDU 배치 처리 및 V627 MAX 링크 안정화 동작은 그대로 유지합니다."
+                                              "다크 테마 팔레트와 통신, 폴링, 알람, IODD, Web, DB 및 업데이트 로직은 변경하지 않았습니다.",
+                                              "라이트 테마의 작업 영역과 상단 크롬을 더 깨끗한 중성 톤으로 조정하면서 흰색 카드 계층은 유지했습니다.",
+                                              "작은 보조 글자, 비활성 글자, 컨트롤, 그리드, 카드 및 팝업 테두리의 대비를 강화했습니다.",
+                                              "연결 포트와 온라인 상태 배지의 테두리를 조금 더 선명하게 조정하되 시각적 과장은 피했습니다.",
+                                              "대시보드·라이선스 강조 헤더는 더 깊은 청록색과 흰색 글자로 통일하고, 모니터링 배지는 어두운 글자를 적용했습니다.",
+                                              "라이트 테마 전용 포트 카드 그림자를 부드럽게 정리해 산업용 대시보드 마감을 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "MAXプローブ周期、専用ソケット、PDポーリング、切断検出ロジックは変更していません。",
-                                              "ステータスバーのMAX遅延値は、最後に処理された単一サンプルではなく、500msテレメトリ区間における各アクティブポートの最新RTTの中央値になりました。",
-                                              "単一ポートの瞬間的なRTTスパイクは診断用の区間最大値として保持されますが、セッション全体の最近イベント警告には昇格しません。",
-                                              "MAX遅延イベントは、中央値が50ms以上で2回連続確認された場合、または同一区間で3ポート以上が同時に50ms以上の場合のみ発生します。",
-                                              "継続する1回の遅延期間で重複警告が発生しないよう、インシデントラッチと2回連続の正常復帰判定を追加しました。",
-                                              "V632 waveOutオーディオKeep-Alive、V628 ISDUバッチ処理、V627 MAXリンク安定化は維持されています。"
+                                              "ダークテーマのパレットおよび通信、ポーリング、アラーム、IODD、Web、DB、更新ロジックは変更していません。",
+                                              "ライトテーマのワークスペースと上部クロームをよりクリーンなニュートラル色に調整し、白いカードの階層は維持しました。",
+                                              "小さい補助文字、無効文字、コントロール、グリッド、カード、ポップアップ枠線のコントラストを強化しました。",
+                                              "接続ポートとオンライン状態バッジの枠線を、過度に強調せず明確にしました。",
+                                              "ダッシュボードとライセンスのアクセントヘッダーを濃いティールと白文字に統一し、監視バッジには濃色文字を採用しました。",
+                                              "ライトテーマ専用のポートカード影を柔らかくし、産業用ダッシュボードの仕上がりを改善しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "MAX探测周期、独立套接字、PD轮询和断线检测逻辑均未修改。",
-                                                 "状态栏中的MAX延迟值现在采用500ms遥测窗口内各活动端口最新RTT的中位数，而不是队列中最后处理的单个样本。",
-                                                 "单端口瞬时RTT尖峰仍作为窗口最大值保留用于诊断，但不会再升级为整个会话的最近事件告警。",
-                                                 "仅当中位数连续两次达到或超过50ms，或同一窗口内至少三个端口同时达到或超过50ms时，才生成MAX延迟事件。",
-                                                 "通过事件锁存和连续两个健康窗口的恢复判定，避免同一持续延迟期间重复产生告警。",
-                                                 "保留V632 waveOut音频保活、V628 ISDU批量处理和V627 MAX链路稳定功能。"
+                                                 "深色主题调色板以及通信、轮询、告警、IODD、Web、数据库和更新逻辑均未修改。",
+                                                 "浅色主题的工作区和顶部区域改为更干净的中性色，同时保留白色卡片的层级。",
+                                                 "增强了小号辅助文字、禁用文字、控件、表格、卡片和弹窗边框的对比度。",
+                                                 "连接端口和在线状态徽章的边框更清晰，但不过度突出。",
+                                                 "仪表板和许可证强调标题统一为更深的青绿色配白字，监控徽章改用深色文字。",
+                                                 "柔化了仅用于浅色主题的端口卡片阴影，提升工业仪表板的整体完成度。"
                                              ],
                                    "de":  [
-                                              "MAX-Probezyklus, dedizierte Sockets, PD-Polling und Trennungserkennung bleiben unverändert.",
-                                              "Die MAX-Latenz in der Statusleiste ist nun der Median der jeweils neuesten RTT aller aktiven Ports im 500-ms-Telemetriefenster und nicht mehr das zuletzt verarbeitete Queue-Sample.",
-                                              "Ein einzelner RTT-Ausreißer eines Ports bleibt als Fenstermaximum für die Diagnose erhalten, erzeugt jedoch keine Warnung für die gesamte Sitzung.",
-                                              "Ein MAX-Latenzereignis wird nur ausgelöst, wenn der Median in zwei aufeinanderfolgenden Meldungen mindestens 50 ms beträgt oder mindestens drei Ports gleichzeitig 50 ms oder mehr erreichen.",
-                                              "Eine Ereignisverriegelung und zwei aufeinanderfolgende gesunde Wiederherstellungsfenster verhindern doppelte Warnungen während einer zusammenhängenden Störung.",
-                                              "V632-waveOut-Audio-Keep-Alive, V628-ISDU-Batchverarbeitung und V627-MAX-Linkstabilität bleiben erhalten."
+                                              "Die Dark-Theme-Palette sowie Kommunikations-, Polling-, Alarm-, IODD-, Web-, Datenbank- und Update-Logik bleiben unverändert.",
+                                              "Arbeitsbereich und obere Fensterleiste des Light Themes verwenden eine sauberere neutrale Fläche, während die Hierarchie der weißen Karten erhalten bleibt.",
+                                              "Kontrast von kleinem Sekundärtext, deaktiviertem Text, Steuerelementen, Rastern, Karten und Popup-Rahmen wurde verbessert.",
+                                              "Rahmen verbundener Ports und Online-Status-Badges sind klarer, ohne visuell zu dominieren.",
+                                              "Dashboard- und Lizenz-Akzentköpfe verwenden ein tieferes Türkis mit weißem Text; Monitoring-Badges verwenden dunklen Text.",
+                                              "Der ausschließlich im Light Theme verwendete Kartenschatten wurde für ein saubereres industrielles Finish weicher abgestimmt."
                                           ],
                                    "es":  [
-                                              "La cadencia de las sondas MAX, los sockets dedicados, el sondeo PD y la detección de desconexión no se modificaron.",
-                                              "La latencia MAX mostrada ahora es la mediana del RTT más reciente de cada puerto activo dentro de la ventana de telemetría de 500 ms, en lugar de la última muestra procesada de la cola.",
-                                              "Un pico aislado de RTT en un solo puerto se conserva como máximo de ventana para diagnóstico, pero ya no genera una advertencia para toda la sesión.",
-                                              "El evento de latencia MAX solo se genera cuando la mediana alcanza 50 ms durante dos informes consecutivos, o cuando al menos tres puertos alcanzan simultáneamente 50 ms o más.",
-                                              "El enclavamiento del incidente y dos ventanas saludables consecutivas evitan advertencias duplicadas durante una misma degradación continua.",
-                                              "Se conservan el keep-alive de audio waveOut de V632, el procesamiento ISDU por lotes de V628 y la estabilidad de enlace MAX de V627."
+                                              "La paleta del tema oscuro y toda la lógica de comunicación, sondeo, alarmas, IODD, Web, base de datos y actualización permanecen sin cambios.",
+                                              "El espacio de trabajo y la franja superior del tema claro usan una superficie neutra más limpia, manteniendo la jerarquía de tarjetas blancas.",
+                                              "Se reforzó el contraste de textos auxiliares pequeños, estados deshabilitados, controles, tablas, tarjetas y bordes de ventanas emergentes.",
+                                              "Los bordes de puertos conectados y distintivos en línea son más claros sin aumentar el ruido visual.",
+                                              "Los encabezados destacados del panel y licencia usan un verde azulado más profundo con texto blanco; los distintivos de monitoreo usan texto oscuro.",
+                                              "La sombra exclusiva de las tarjetas del tema claro se suavizó para un acabado industrial más limpio."
                                           ]
                                }
 }
