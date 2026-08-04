@@ -1,17 +1,18 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.647",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.647/ICEops_Setup_1.0.0.647.exe",
-    "sha256":  "fd193bf7fb2cb19f5541c4d080f59c2e6c50a85f83b57486dffe6e90328eb013",
-    "fileName":  "ICEops_Setup_1.0.0.647.exe",
+    "version":  "1.0.0.648",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.648/ICEops_Setup_1.0.0.648.exe",
+    "sha256":  "8a27bfb5bfe5e45a200493ab0e95a3f6b2b70c53c10c14870b37e90bd5b59056",
+    "fileName":  "ICEops_Setup_1.0.0.648.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T13:58:46.8103926+00:00",
+    "publishedAtUtc":  "2026-08-04T14:12:11.1971617+00:00",
     "releaseNotes":  [
-                         "Adds the missing pop-out action to the main Visualization workspace and keeps its shared live producer active while the detached window remains open."
+                         "Fast card mapping render: reuse stable per-port token collections and update token values in place. Connection, polling, device identification, mapping, refresh, popout, and latency telemetry logic are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
+                                              "Speeds up card mapping display by reusing stable per-port token collections and updating values in place; communication, polling, identification, mapping, pop-out, and heartbeat behavior are unchanged.",
                                               "Adds the missing Open in new window button to the main Visualization tab.",
                                               "The detached Visualization window shares the existing Visualization ViewModel, selected port, signal, alarm range, trend, Hold state, and live buffers.",
                                               "No additional communication or polling pipeline is created.",
@@ -19,6 +20,7 @@
                                               "DB Monitor, Inspector, Oscilloscope, and IODD Manager multi-display behavior from v635 is retained."
                                           ],
                                    "ko":  [
+                                              "포트별 카드 토큰 컬렉션을 재사용하고 값을 제자리 갱신해 매핑 카드 표시 속도를 개선했습니다. 통신·폴링·식별·매핑·새창 팝업·하트비트 동작은 변경하지 않았습니다.",
                                               "메인 시각화 탭에서 누락됐던 별도 화면 버튼을 추가했습니다.",
                                               "별도 시각화 창은 기존 Visualization ViewModel, 선택 포트, 신호, 알람 범위, 트렌드, Hold 상태 및 실시간 버퍼를 그대로 공유합니다.",
                                               "추가 통신 또는 폴링 파이프라인을 생성하지 않습니다.",
@@ -26,6 +28,7 @@
                                               "v635의 DB 모니터, 인스펙터, 오실로스코프 및 IODD Manager 멀티 디스플레이 동작은 그대로 유지합니다."
                                           ],
                                    "ja":  [
+                                              "ポートごとのカードトークンコレクションを再利用し、値をその場で更新してマッピングカード表示を高速化しました。通信、ポーリング、識別、マッピング、別ウィンドウ、ハートビート動作は変更していません。",
                                               "メインの可視化タブに不足していた別ウィンドウボタンを追加しました。",
                                               "独立した可視化ウィンドウは既存のVisualization ViewModel、選択ポート、信号、アラーム範囲、トレンド、Hold状態、ライブバッファを共有します。",
                                               "追加の通信またはポーリングパイプラインは作成しません。",
@@ -33,6 +36,7 @@
                                               "v635のDB Monitor、Inspector、Oscilloscope、IODD Managerのマルチディスプレイ動作を維持します。"
                                           ],
                                    "zh-CN":  [
+                                                 "通过复用每个端口的卡片令牌集合并就地更新数值，加快映射卡片显示。通信、轮询、识别、映射、独立窗口和心跳效果均未更改。",
                                                  "在主可视化标签页中补充了缺失的独立窗口按钮。",
                                                  "独立可视化窗口共享现有Visualization ViewModel、所选端口、信号、报警范围、趋势、Hold状态和实时缓冲区。",
                                                  "不会创建额外的通信或轮询管线。",
@@ -40,6 +44,7 @@
                                                  "保留v635中的DB Monitor、Inspector、Oscilloscope和IODD Manager多显示器行为。"
                                              ],
                                    "de":  [
+                                              "Die Kartenanzeige beim Mapping wurde beschleunigt, indem stabile Token-Sammlungen pro Port wiederverwendet und Werte direkt aktualisiert werden. Kommunikation, Polling, Identifikation, Mapping, Pop-out und Heartbeat bleiben unverändert.",
                                               "Die fehlende Schaltfläche zum Öffnen in einem separaten Fenster wurde im Haupt-Visualisierungstab ergänzt.",
                                               "Das separate Visualisierungsfenster teilt das vorhandene Visualization ViewModel, den gewählten Port, das Signal, den Alarmbereich, den Trend, den Hold-Status und die Live-Puffer.",
                                               "Es wird keine zusätzliche Kommunikations- oder Polling-Pipeline erzeugt.",
@@ -47,6 +52,7 @@
                                               "Das Multi-Display-Verhalten von DB Monitor, Inspector, Oscilloscope und IODD Manager aus v635 bleibt erhalten."
                                           ],
                                    "es":  [
+                                              "Se acelera la visualización de las tarjetas de mapeo reutilizando colecciones de tokens estables por puerto y actualizando los valores in situ. No cambian la comunicación, el sondeo, la identificación, el mapeo, la ventana independiente ni el heartbeat.",
                                               "Se añadió al panel principal de Visualización el botón que faltaba para abrirlo en una ventana independiente.",
                                               "La ventana de Visualización separada comparte el ViewModel existente, el puerto y la señal seleccionados, el rango de alarma, la tendencia, el estado Hold y los búferes en vivo.",
                                               "No se crea otra canalización de comunicación ni de sondeo.",
