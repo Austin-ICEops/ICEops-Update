@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.640",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.640/ICEops_Setup_1.0.0.640.exe",
-    "sha256":  "f43055184b2091b4181fb34bfba65b7d8a9b809e686242776c7b352bbeb2a7a7",
-    "fileName":  "ICEops_Setup_1.0.0.640.exe",
+    "version":  "1.0.0.641",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.641/ICEops_Setup_1.0.0.641.exe",
+    "sha256":  "fd8d4eb670f41919e2448be3cc9c7711590868dca9c726d3bd1d38a4993a17ec",
+    "fileName":  "ICEops_Setup_1.0.0.641.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T11:34:38.5260441+00:00",
+    "publishedAtUtc":  "2026-08-04T11:45:27.6256346+00:00",
     "releaseNotes":  [
                          "Hotfixes repeated reconnect mapping stalls and stale multi-display pop-out window state while preserving V638 cold-start protection."
                      ],
