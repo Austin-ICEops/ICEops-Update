@@ -1,63 +1,57 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.635",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.635/ICEops_Setup_1.0.0.635.exe",
-    "sha256":  "bae815827f417a35414dba4f5e055603753956ddc04ca05c7a6354f3de747965",
-    "fileName":  "ICEops_Setup_1.0.0.635.exe",
+    "version":  "1.0.0.636",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.636/ICEops_Setup_1.0.0.636.exe",
+    "sha256":  "e758d3520ae29f5e005e142c26b517f3e10766f915c281aab98c21c39de15355",
+    "fileName":  "ICEops_Setup_1.0.0.636.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T06:05:33.1308442+00:00",
+    "publishedAtUtc":  "2026-08-04T06:19:01.4049933+00:00",
     "releaseNotes":  [
-                         "DB Monitor, Visualization Inspector, and Oscilloscope can now open as synchronized modeless windows on secondary displays. IODD Manager keeps its existing independent-window workflow and remembered monitor placement."
+                         "Adds the missing pop-out action to the main Visualization workspace and keeps its shared live producer active while the detached window remains open."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "DB Monitor now includes an Open in new window action for a dedicated secondary-display workspace.",
-                                              "Visualization Inspector and Oscilloscope use one context-aware pop-out button and can remain open while MainWindow changes tabs.",
-                                              "Detached Inspector and Oscilloscope windows share the original Animation Gauge ViewModel, selected ports, signal settings, and live buffers instead of creating a second communication pipeline.",
-                                              "External workspace activity is reference-counted so live updates continue only while the main page or at least one pop-out is active.",
-                                              "Each workspace is single-instance, modeless, resizable, taskbar-visible, theme-aware, and remembers its monitor position and size.",
-                                              "IODD Manager already operates as an independent window and continues to use its existing single-instance and placement persistence behavior."
+                                              "Adds the missing Open in new window button to the main Visualization tab.",
+                                              "The detached Visualization window shares the existing Visualization ViewModel, selected port, signal, alarm range, trend, Hold state, and live buffers.",
+                                              "No additional communication or polling pipeline is created.",
+                                              "Visualization activity is reference-counted so the detached display continues updating after MainWindow changes tabs and stops after the last active view closes.",
+                                              "DB Monitor, Inspector, Oscilloscope, and IODD Manager multi-display behavior from v635 is retained."
                                           ],
                                    "ko":  [
-                                              "DB 모니터에 별도 화면 버튼을 추가해 보조 디스플레이 전용 작업 창으로 열 수 있습니다.",
-                                              "시각화 인스펙터와 오실로스코프는 현재 선택된 탭에 따라 하나의 별도 화면 버튼으로 각각 독립 창을 엽니다.",
-                                              "별도 인스펙터와 오실로스코프는 기존 Animation Gauge ViewModel, 포트 선택, 신호 설정 및 실시간 버퍼를 공유하며 통신 파이프라인을 중복 생성하지 않습니다.",
-                                              "외부 작업 창 활동을 참조 카운트로 관리해 메인 페이지 또는 하나 이상의 별도 창이 활성인 동안에만 실시간 갱신을 유지합니다.",
-                                              "각 작업 창은 단일 인스턴스, 모델리스, 크기 조절, 작업 표시줄 표시, 테마 연동 및 디스플레이 위치 기억을 지원합니다.",
-                                              "IODD Manager는 기존에도 독립 창으로 동작하며 단일 인스턴스와 창 위치 저장 구조를 그대로 유지합니다."
+                                              "메인 시각화 탭에서 누락됐던 별도 화면 버튼을 추가했습니다.",
+                                              "별도 시각화 창은 기존 Visualization ViewModel, 선택 포트, 신호, 알람 범위, 트렌드, Hold 상태 및 실시간 버퍼를 그대로 공유합니다.",
+                                              "추가 통신 또는 폴링 파이프라인을 생성하지 않습니다.",
+                                              "시각화 활동을 참조 카운트로 관리해 메인 탭을 변경해도 별도 창의 갱신이 유지되고 마지막 활성 화면이 닫히면 정지합니다.",
+                                              "v635의 DB 모니터, 인스펙터, 오실로스코프 및 IODD Manager 멀티 디스플레이 동작은 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "DBモニターに別ウィンドウボタンを追加し、サブディスプレイ専用の作業ウィンドウとして開けます。",
-                                              "Visualization InspectorとOscilloscopeは、現在選択中のタブに応じて1つのポップアウトボタンから独立ウィンドウを開きます。",
-                                              "独立したInspectorとOscilloscopeは既存のAnimation Gauge ViewModel、ポート選択、信号設定、ライブバッファを共有し、通信パイプラインを重複生成しません。",
-                                              "外部ワークスペースの稼働を参照カウントで管理し、メインページまたは1つ以上のポップアウトが有効な間だけライブ更新を維持します。",
-                                              "各ワークスペースは単一インスタンス、モデルレス、サイズ変更、タスクバー表示、テーマ連動、画面位置記憶に対応します。",
-                                              "IODD Managerは従来どおり独立ウィンドウで動作し、単一インスタンスと配置保存を維持します。"
+                                              "メインの可視化タブに不足していた別ウィンドウボタンを追加しました。",
+                                              "独立した可視化ウィンドウは既存のVisualization ViewModel、選択ポート、信号、アラーム範囲、トレンド、Hold状態、ライブバッファを共有します。",
+                                              "追加の通信またはポーリングパイプラインは作成しません。",
+                                              "可視化の稼働を参照カウントで管理し、メインタブ変更後も独立ウィンドウの更新を維持し、最後の有効画面を閉じると停止します。",
+                                              "v635のDB Monitor、Inspector、Oscilloscope、IODD Managerのマルチディスプレイ動作を維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "DB监视器新增独立窗口按钮，可作为副显示器专用工作区打开。",
-                                                 "可视化检查器和示波器根据当前选中的标签页，通过同一个独立窗口按钮分别打开。",
-                                                 "独立的检查器和示波器共享原有Animation Gauge ViewModel、端口选择、信号设置和实时缓冲区，不会创建重复的通信管线。",
-                                                 "外部工作区采用引用计数管理，仅在主页面或至少一个独立窗口处于活动状态时保持实时更新。",
-                                                 "每个工作区支持单实例、非模态、可调整大小、任务栏显示、主题同步以及显示器位置和尺寸记忆。",
-                                                 "IODD Manager原本就是独立窗口，并继续保留单实例和窗口位置保存机制。"
+                                                 "在主可视化标签页中补充了缺失的独立窗口按钮。",
+                                                 "独立可视化窗口共享现有Visualization ViewModel、所选端口、信号、报警范围、趋势、Hold状态和实时缓冲区。",
+                                                 "不会创建额外的通信或轮询管线。",
+                                                 "可视化活动采用引用计数管理，切换主窗口标签后独立窗口仍持续更新，最后一个活动视图关闭后停止。",
+                                                 "保留v635中的DB Monitor、Inspector、Oscilloscope和IODD Manager多显示器行为。"
                                              ],
                                    "de":  [
-                                              "Der DB Monitor besitzt jetzt eine Aktion zum Öffnen als separates Arbeitsfenster auf einem zweiten Bildschirm.",
-                                              "Visualization Inspector und Oscilloscope öffnen über eine kontextabhängige Schaltfläche jeweils ein unabhängiges Fenster.",
-                                              "Die separaten Fenster teilen das vorhandene Animation-Gauge-ViewModel, die Portauswahl, Signaleinstellungen und Live-Puffer, ohne eine zweite Kommunikationspipeline zu erzeugen.",
-                                              "Externe Workspace-Aktivität wird referenzgezählt, sodass Live-Updates nur bei aktiver Hauptseite oder mindestens einem geöffneten Pop-out laufen.",
-                                              "Jeder Workspace ist eine einzelne modeless Instanz, größenveränderbar, in der Taskleiste sichtbar, themensynchron und speichert Monitorposition und Größe.",
-                                              "Der IODD Manager bleibt das bereits vorhandene unabhängige Fenster mit Single-Instance- und Platzierungsspeicherung."
+                                              "Die fehlende Schaltfläche zum Öffnen in einem separaten Fenster wurde im Haupt-Visualisierungstab ergänzt.",
+                                              "Das separate Visualisierungsfenster teilt das vorhandene Visualization ViewModel, den gewählten Port, das Signal, den Alarmbereich, den Trend, den Hold-Status und die Live-Puffer.",
+                                              "Es wird keine zusätzliche Kommunikations- oder Polling-Pipeline erzeugt.",
+                                              "Die Visualisierungsaktivität wird referenzgezählt, sodass das separate Fenster nach einem Tabwechsel weiterläuft und nach dem Schließen der letzten aktiven Ansicht stoppt.",
+                                              "Das Multi-Display-Verhalten von DB Monitor, Inspector, Oscilloscope und IODD Manager aus v635 bleibt erhalten."
                                           ],
                                    "es":  [
-                                              "DB Monitor incorpora una acción para abrirse como ventana independiente en una pantalla secundaria.",
-                                              "Visualization Inspector y Oscilloscope usan un botón contextual para abrir cada espacio de trabajo en una ventana independiente.",
-                                              "Las ventanas independientes comparten el ViewModel de Animation Gauge, la selección de puertos, la configuración de señales y los búferes en vivo sin crear otra canalización de comunicación.",
-                                              "La actividad externa usa conteo de referencias para mantener las actualizaciones solo mientras la página principal o al menos una ventana emergente esté activa.",
-                                              "Cada espacio de trabajo es de instancia única, no modal, redimensionable, visible en la barra de tareas, sincronizado con el tema y recuerda posición y tamaño.",
-                                              "IODD Manager conserva su flujo existente como ventana independiente con instancia única y persistencia de ubicación."
+                                              "Se añadió al panel principal de Visualización el botón que faltaba para abrirlo en una ventana independiente.",
+                                              "La ventana de Visualización separada comparte el ViewModel existente, el puerto y la señal seleccionados, el rango de alarma, la tendencia, el estado Hold y los búferes en vivo.",
+                                              "No se crea otra canalización de comunicación ni de sondeo.",
+                                              "La actividad de Visualización usa conteo de referencias para continuar tras cambiar de pestaña y detenerse al cerrar la última vista activa.",
+                                              "Se conserva el comportamiento multipantalla de DB Monitor, Inspector, Oscilloscope e IODD Manager de v635."
                                           ]
                                }
 }
