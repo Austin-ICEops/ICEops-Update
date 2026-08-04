@@ -1,43 +1,13 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.649",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.649/ICEops_Setup_1.0.0.649.exe",
-    "sha256":  "19200aa3bebc1a516be5670772b38d8ba552894c7c93ccf7311065a1ca4a331e",
-    "fileName":  "ICEops_Setup_1.0.0.649.exe",
+    "version":  "1.0.0.650",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.650/ICEops_Setup_1.0.0.650.exe",
+    "sha256":  "3b147633a871376f38d644760a94941eeaccc72c11cb3f28ad41be598c096510",
+    "fileName":  "ICEops_Setup_1.0.0.650.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-04T14:28:03.4503718+00:00",
+    "publishedAtUtc":  "2026-08-04T14:40:17.6383346+00:00",
     "releaseNotes":  [
-                         "Publishes restored or auto-generated port mappings to the live runtime immediately, then serializes SQLite/profile persistence in the background. ProductName ISDU identity verification remains fail-closed because the current master runtime does not yet populate a trusted numeric Vendor ID/Device ID identity source."
-                     ],
-    "releaseNotesByLanguage":  {
-                                   "en":  [
-                                              "Publishes restored or auto-generated mappings to Home, Trend, Web, and alarm consumers before SQLite/profile persistence completes.",
-                                              "Serializes mapping persistence on a dedicated background gate so one port’s disk write does not block the next port’s mapping sequence.",
-                                              "Retains ProductName ISDU identity verification and fail-closed device-change protection; the current runtime does not yet provide a populated trusted Vendor ID/Device ID source for safe removal.",
-                                              "Reverts the ineffective v648 token-collection optimization and preserves the v647 visualization pop-out baseline."
-                                          ],
-                                   "ko":  [
-                                              "복원 또는 자동 생성된 매핑을 SQLite·프로파일 저장 완료 전에 Home, Trend, Web 및 알람 런타임에 즉시 반영합니다.",
-                                              "매핑 영속화를 전용 백그라운드 게이트에서 순차 처리해 한 포트의 디스크 저장이 다음 포트 매핑 시퀀스를 막지 않도록 했습니다.",
-                                              "ProductName ISDU 식별 및 장치 변경 시 Fail-Closed 보호는 유지합니다. 현재 런타임에는 이를 안전하게 대체할 신뢰 가능한 Vendor ID/Device ID 실시간 소스가 아직 채워지지 않습니다.",
-                                              "효과가 확인되지 않은 v648 카드 토큰 최적화는 제거하고 v647 시각화 팝업 기준 동작을 유지합니다."
-                                          ],
-                                   "ja":  [
-                                              "マッピングを保存完了前にライブ画面へ反映し、永続化はバックグラウンドで直列処理します。",
-                                              "ProductName ISDUによる安全な識別は維持します。"
-                                          ],
-                                   "zh-CN":  [
-                                                 "映射先立即发布到实时界面，SQLite和配置文件持久化在后台串行完成。",
-                                                 "保留ProductName ISDU身份验证和设备变更的Fail-Closed保护。"
-                                             ],
-                                   "de":  [
-                                              "Wiederhergestellte oder automatisch erzeugte Zuordnungen werden sofort live veröffentlicht; die Persistierung erfolgt seriell im Hintergrund.",
-                                              "Die ProductName-ISDU-Identitätsprüfung und der Fail-Closed-Gerätewechsel-Schutz bleiben erhalten."
-                                          ],
-                                   "es":  [
-                                              "Las asignaciones restauradas o generadas automáticamente se publican de inmediato; la persistencia se serializa en segundo plano.",
-                                              "Se mantienen la verificación de identidad ProductName por ISDU y la protección fail-closed ante cambio de dispositivo."
-                                          ]
-                               }
+                         "Adds an SMC-specific safe identity probe order. Ports with an already verified persisted SMC IODD mapping read Index 19 ProductID/order code first, then fall back to the configured ProductName index. Unknown or changed devices retain the conservative standard path."
+                     ]
 }
