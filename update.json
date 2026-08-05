@@ -1,43 +1,41 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.662",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.662/ICEops_Setup_1.0.0.662.exe",
-    "sha256":  "779de7a6330619cf0c59b29a50e1127a18fddb017e5e967e571868fa46ae7e27",
-    "fileName":  "ICEops_Setup_1.0.0.662.exe",
+    "version":  "1.0.0.663",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.663/ICEops_Setup_1.0.0.663.exe",
+    "sha256":  "bcb1dd3eeb1b53509e192709c2f96462c9c810f9325698003279900deaaa4331",
+    "fileName":  "ICEops_Setup_1.0.0.663.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T06:54:21.9212596+00:00",
+    "publishedAtUtc":  "2026-08-05T07:14:58.3958165+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixes the IODD indexer incorrectly labelling scalar cyclic values such as VDM28 16-bit Distance as Total process data.",
-                                              "Adds a Process Data Condition column so selector branches such as V_CtrlPD[2] = 0/1/2/3 are visible instead of appearing as duplicate rows.",
-                                              "Excludes legacy aggregate/raw container aliases from automatic card-slot allocation and forces a one-time IODD catalog re-index with schema 17.",
-                                              "Restores the previously working VDM28-8-L1-IO/73c/136 14-bit Distance plus Switching Signal 1/2 layout when the live Index 99 selector is temporarily unavailable.",
-                                              "Keeps a coherent existing VDM28 mapping visible across ProductName formatting changes while the background selector refresh remains active.",
-                                              "Retains v658 startup smoothing, SMC conditional engineering conversion, selector retries, and manual mapping protection."
+                                              "Restores the field-proven v657 VDM28-8-L1-IO/73c/136 mapping path instead of waiting for Index 99 live layout selectors.",
+                                              "Maps the exact VDM28 variant deterministically as 14-bit Distance plus Switching Signal 1 and Switching Signal 2, matching the previously working installation.",
+                                              "Removes VDM28 fail-closed card blocking and allows IODD Rebuild to use the same compatibility layout immediately.",
+                                              "Keeps v658 background startup smoothing, the corrected IODD Process Data table, SMC conditional engineering conversion, and manual mapping protection.",
+                                              "No core transport, polling, PDO write, alarm interlock, DB, Web, MQTT, or AI pipeline changes."
                                           ],
                                    "ko":  [
-                                              "VDM28 16비트 Distance 같은 실제 scalar 순환값을 Total process data로 잘못 표기하던 IODD 인덱서 오류를 수정했습니다.",
-                                              "Process Data 구조 표에 Condition 열을 추가해 V_CtrlPD[2] = 0/1/2/3 조건 분기를 중복 행처럼 보이지 않게 명확히 표시합니다.",
-                                              "기존 Total/raw aggregate 별칭은 카드 자동 슬롯에서 완전히 제외하고 IODD Index Schema 17로 1회 재색인합니다.",
-                                              "VDM28-8-L1-IO/73c/136에서 Index 99 selector를 일시적으로 읽지 못하면 기존 정상 동작하던 14비트 Distance + Switching Signal 1/2 레이아웃을 안전한 호환 fallback으로 사용합니다.",
-                                              "ProductName 하이픈/슬래시 표기 차이로 fingerprint가 달라져도 일관된 기존 VDM28 매핑은 selector 갱신 중 계속 표시합니다.",
-                                              "v658 초기 로딩 개선, SMC 조건부 환산, selector 재시도 및 수동 매핑 보호는 유지합니다."
+                                              "VDM28-8-L1-IO/73c/136에서 Index 99 live selector를 기다리지 않고 현장에서 정상 동작했던 v657 매핑 경로를 그대로 복원했습니다.",
+                                              "해당 VDM28 모델은 기존 정상 구성과 동일하게 Distance 14bit + Switching Signal 1 + Switching Signal 2로 결정적으로 매핑합니다.",
+                                              "VDM28 fail-closed 카드 차단을 제거하고 IODD 재구성도 같은 호환 레이아웃을 즉시 사용하도록 수정했습니다.",
+                                              "v658 초기 백그라운드 로딩 개선, 수정된 IODD Process Data 표, SMC 조건부 환산, 수동 매핑 보호는 유지합니다.",
+                                              "Core 통신, 폴링, PDO 쓰기, 알람 인터락, DB, Web, MQTT, AI 경로는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "VDM28のスカラー値をTotal process dataと誤認する索引不具合を修正し、既存の14bit距離レイアウトを安全に復元します。"
+                                              "VDM28-8-L1-IO/73c/136について、正常動作していたv657の14bit距離＋2つのスイッチ信号マッピング経路を復元しました。"
                                           ],
                                    "zh":  [
-                                              "修复将VDM28标量周期值错误标记为Total process data的问题，并安全恢复原有14位距离布局。"
+                                              "为VDM28-8-L1-IO/73c/136恢复了已验证的v657映射路径：14位距离值加两个开关信号。"
                                           ],
                                    "de":  [
-                                              "Die falsche Kennzeichnung skalarer VDM28-Prozesswerte als Total process data wurde behoben; das bewährte 14-Bit-Distanzlayout wird sicher wiederhergestellt."
+                                              "Für VDM28-8-L1-IO/73c/136 wurde der bewährte v657-Pfad mit 14-Bit-Distanz und zwei Schaltsignalen wiederhergestellt."
                                           ],
                                    "es":  [
-                                              "Se corrige la identificación errónea de valores cíclicos escalares VDM28 como Total process data y se restaura de forma segura el diseño de distancia de 14 bits."
+                                              "Se restaura para VDM28-8-L1-IO/73c/136 la ruta validada de v657: distancia de 14 bits y dos señales de conmutación."
                                           ]
                                }
 }
