@@ -1,39 +1,39 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.667",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.667/ICEops_Setup_1.0.0.667.exe",
-    "sha256":  "86ec462123c8b1d24065547795eb66f971d135fb29d1e12225c890d9cfd6458a",
-    "fileName":  "ICEops_Setup_1.0.0.667.exe",
+    "version":  "1.0.0.668",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.668/ICEops_Setup_1.0.0.668.exe",
+    "sha256":  "24c692816a91fc51b46afafc317b6e5b7fd7ea641fae276596c72f89369a9bb4",
+    "fileName":  "ICEops_Setup_1.0.0.668.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T10:20:29.1087438+00:00",
+    "publishedAtUtc":  "2026-08-05T12:50:41.5082032+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Adds a process-wide live render arbiter so the main window, detached Oscilloscope, and detached Visualization can remain open together without competing in the same WPF composition frame.",
-                                              "Oscilloscope Skia redraws and Visualization Geometry rebuilds are phase-separated globally while all polling, sample buffers, alarms, DB, Web, MQTT, CSV, and live values continue unchanged.",
-                                              "Visualization keeps its low-cost per-frame TranslateTransform scrolling, while only expensive Geometry rebuilds are coalesced and distributed across available composition frames.",
-                                              "The v666 fullscreen fill/blur reductions, v663 VDM28 mapping path, SMC engineering conversion, PDO/ISDU, licensing, and safety interlocks are preserved."
+                                              "Uses fixed-reference rendering for fullscreen Oscilloscope and Visualization surfaces so fullscreen cost stays close to the proven windowed path.",
+                                              "Multiple Oscilloscope surfaces now use an independent round-robin render lane instead of dividing one global grant with Visualization; two scopes receive approximately refresh/2 each.",
+                                              "Visualization renders its waveform at a fixed 1280x520 logical surface, caches the complete waveform layer, and scales the finished bitmap through WPF/DWM while the scan beam remains a separate low-cost overlay.",
+                                              "Polling, samples, Trend buffers, alarms, DB, Web, MQTT, CSV, VDM28/SMC mappings, PDO/ISDU, licensing, and safety interlocks are unchanged."
                                           ],
                                    "ko":  [
-                                              "메인 창, 별도 Oscilloscope, 별도 Visualization을 항상 동시에 열어도 같은 WPF 합성 프레임에서 무거운 렌더링이 겹치지 않도록 프로세스 전역 Live Render Arbiter를 추가했습니다.",
-                                              "Oscilloscope Skia 전체 렌더링과 Visualization Geometry 재생성을 전역 프레임 단위로 분리하며, 폴링·샘플 버퍼·알람·DB·Web·MQTT·CSV·실시간 값은 그대로 유지합니다.",
-                                              "Visualization은 저비용 TranslateTransform 연속 스크롤을 매 프레임 유지하고, 비용이 큰 Geometry 재생성만 코얼레싱하여 분산합니다.",
-                                              "v666 전체창 Fill/Blur 최적화, v663 VDM28 매핑, SMC 공학값 환산, PDO/ISDU, 라이선스와 안전 인터락을 그대로 유지합니다."
+                                              "전체창 Oscilloscope와 Visualization을 창 모드에서 검증된 고정 기준 해상도로 렌더링한 뒤 WPF/DWM이 확대하도록 변경하여 전체창 비용을 창 모드 수준에 가깝게 유지합니다.",
+                                              "여러 Oscilloscope가 Visualization과 하나의 전역 슬롯을 나누지 않도록 독립 렌더링 Lane을 적용했습니다. 100Hz에서 오실로스코프 2개는 각각 약 50FPS로 교대합니다.",
+                                              "Visualization 파형은 1280x520 기준 Surface에서 한 개의 BitmapCache 레이어로 렌더링하며, Scan Beam은 캐시를 무효화하지 않는 별도 저비용 오버레이로 유지합니다.",
+                                              "폴링, 샘플, Trend 버퍼, 알람, DB, Web, MQTT, CSV, VDM28/SMC 매핑, PDO/ISDU, 라이선스와 안전 인터락은 변경하지 않습니다."
                                           ],
                                    "ja":  [
-                                              "メイン画面、独立Oscilloscope、独立Visualizationを常時同時表示できるよう、重い描画をWPF合成フレーム単位で全体調停します。"
+                                              "全画面でもウィンドウ表示と同じ基準解像度で描画し、複数オシロスコープ用の独立レンダリングレーンを追加しました。"
                                           ],
                                    "zh":  [
-                                              "新增全局实时渲染仲裁器，使主窗口、独立示波器和独立可视化窗口可同时持续运行，并避免重绘任务落在同一合成帧。"
+                                              "全屏模式使用与窗口模式相同的固定参考分辨率进行绘制，并为多个示波器增加独立渲染通道。"
                                           ],
                                    "de":  [
-                                              "Ein globaler Live-Render-Arbiter verteilt die schweren Zeichenoperationen von Hauptfenster, Oszilloskop und Visualisierung auf getrennte WPF-Kompositionsframes."
+                                              "Vollbildflächen verwenden eine feste Referenzauflösung; mehrere Oszilloskope erhalten eine unabhängige Render-Lane."
                                           ],
                                    "es":  [
-                                              "Un árbitro global de renderizado en vivo distribuye el trabajo pesado del panel principal, el osciloscopio y la visualización entre distintos fotogramas de composición WPF."
+                                              "Las superficies a pantalla completa usan una resolución de referencia fija y los osciloscopios múltiples disponen de un carril de renderizado independiente."
                                           ]
                                }
 }
