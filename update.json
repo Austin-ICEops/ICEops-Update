@@ -1,37 +1,37 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.659",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.659/ICEops_Setup_1.0.0.659.exe",
-    "sha256":  "7af6b58823ca95ffa47abbd7e6ea664d946441b7c918eb5d9ec0ae4b5ae4c12d",
-    "fileName":  "ICEops_Setup_1.0.0.659.exe",
+    "version":  "1.0.0.660",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.660/ICEops_Setup_1.0.0.660.exe",
+    "sha256":  "573e4dd1ea3c086bd58eef709e3e52f9fdfa0d2dd711a99a2b8a2b3d71dccfdf",
+    "fileName":  "ICEops_Setup_1.0.0.660.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T05:50:04.9193272+00:00",
+    "publishedAtUtc":  "2026-08-05T06:11:47.3796926+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Selects the live IODD ProcessData layout before creating card channels, preventing mutually exclusive VDM28 distance formats from being mixed.",
-                                              "Reads VDM28 Index 99/SubIndex 2 and 3 atomically to apply the active 16/14/12-bit image and 1/2/5/10 mm distance resolution.",
-                                              "Keeps conditional cyclic fields fail-closed until selector metadata is available and preserves the v658 background startup smoothing architecture."
+                                              "Scopes live ProcessData layout gating to IODDs whose conditional branches actually change field geometry, preventing ordinary fixed-layout devices from remaining in Mapping paused state.",
+                                              "Keeps existing schema-13 mappings visible during the schema-14 background refresh for non-VDM28 devices while preserving fail-closed behavior for VDM28 conditional 16/14/12-bit layouts.",
+                                              "Retains VDM28 Index 99/SubIndex 2 and 3 selection, distance resolution handling, and the v658 background startup smoothing architecture."
                                           ],
                                    "ko":  [
-                                              "카드 채널 생성 전에 IODD의 실제 ProcessData 레이아웃을 선택하여 VDM28의 16/14/12비트 거리 형식이 혼합되는 회귀를 수정했습니다.",
-                                              "VDM28 Index 99/SubIndex 2와 3을 원자적으로 읽어 현재 PD Image와 1/2/5/10 mm 거리 해상도를 자동 적용합니다.",
-                                              "selector 확인 전 조건부 주기 데이터는 fail-closed로 유지하며 v658의 백그라운드 초기 로딩 개선은 그대로 보존합니다."
+                                              "조건 분기가 실제 필드 좌표·비트 길이를 변경하는 IODD에만 ProcessData 레이아웃 대기를 적용하여 일반 고정 레이아웃 장치가 매핑 일시 중지 상태에 고착되는 회귀를 수정했습니다.",
+                                              "VDM28 이외 장치는 Schema 14 백그라운드 갱신 중에도 기존 Schema 13 매핑을 계속 표시하고, VDM28의 16/14/12비트 조건부 레이아웃만 fail-closed를 유지합니다.",
+                                              "VDM28 Index 99/SubIndex 2·3 선택, 거리 해상도 처리와 v658 백그라운드 초기 로딩 개선은 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "VDM28の実際のProcessDataレイアウトと距離分解能をISDUから確認してから自動マッピングします。"
+                                              "条件分岐で実際にフィールド構造が変わるIODDだけをライブレイアウト待機の対象にし、通常デバイスのマッピング停止を修正しました。"
                                           ],
                                    "zh":  [
-                                              "从ISDU确认VDM28的实际ProcessData布局和距离分辨率后再执行自动映射。"
+                                              "仅对条件分支实际改变字段结构的IODD启用实时布局等待，修复普通设备一直停留在映射暂停状态的问题。"
                                           ],
                                    "de":  [
-                                              "Das aktive VDM28-ProcessData-Layout und die Distanzauflösung werden vor dem Automapping per ISDU ermittelt."
+                                              "Die Live-Layout-Sperre gilt nur noch für IODDs mit tatsächlich unterschiedlicher Feldgeometrie; normale Geräte bleiben nicht mehr im pausierten Mapping hängen."
                                           ],
                                    "es":  [
-                                              "El diseño ProcessData activo y la resolución de distancia del VDM28 se leen por ISDU antes del mapeo automático."
+                                              "La espera de diseño en vivo se limita a IODD cuyas ramas cambian realmente la geometría de campos, evitando que los dispositivos normales queden con el mapeo pausado."
                                           ]
                                }
 }
