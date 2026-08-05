@@ -1,43 +1,39 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.671",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.671/ICEops_Setup_1.0.0.671.exe",
-    "sha256":  "4fd9919ec52e0bf31061056faca1afba33da0d87aa3660d1f2dad0e3d6df8e93",
-    "fileName":  "ICEops_Setup_1.0.0.671.exe",
+    "version":  "1.0.0.672",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.672/ICEops_Setup_1.0.0.672.exe",
+    "sha256":  "41961ef932046bd037f08f3301be8180b8c3295fe7aaf129c60eb1fe5ce97ac7",
+    "fileName":  "ICEops_Setup_1.0.0.672.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T14:27:26.3372149+00:00",
+    "publishedAtUtc":  "2026-08-05T14:41:32.1591701+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Prevents fresh-PC UI freezing during the first IODD catalog migration by sharing one background preparation task across all ports and returning immediately from the WPF dispatcher while preparation is in progress.",
-                                              "Fixes fresh-PC IODD onboarding so SMC PF2M721x resolves to the certified PF2M701x IODD family (VID 131 / DID 365) and applies its PDI mapping without a previously saved profile.",
-                                              "Online IODD port badges now use the resolved ISDU ProductName instead of localized device-category text, preventing unrelated UC/OBE/OMD catalog rows from being marked on the wrong port.",
-                                              "Adds bounded startup identity sweeps and periodic full connected-device scans so late ProductName events still trigger automatic IODD download and mapping on clean installations.",
-                                              "After a bundled or downloaded IODD becomes available, pending PDI mappings and PDO capabilities are re-evaluated for all connected ports while manual mappings remain protected.",
-                                              "v668 fixed-reference multi-surface rendering, polling, samples, alarms, DB, Web, MQTT, CSV, safety interlocks, VDM28 mapping, and SMC engineering conversion are preserved."
+                                              "Restores automatic IODD mapping that was unintentionally disabled by the v671 emergency freeze rollback.",
+                                              "Cold-start catalog preparation runs on one shared background task, and connected ports are applied one at a time through a single gate.",
+                                              "Each port/product identity is applied only once per session after a successful mapping, preventing runtime remapping loops and UI freezing.",
+                                              "Restores SMC PDI mapping and OBE/OMD PDO output capability detection while preserving manual mappings."
                                           ],
                                    "ko":  [
-                                              "신규 PC 최초 IODD 카탈로그 재구성 중 모든 포트가 같은 백그라운드 준비 작업을 공유하고 UI 스레드는 즉시 반환하도록 변경하여 연결 직후 프리징을 제거했습니다.",
-                                              "신규 PC에서 SMC PF2M721x를 인증 IODD인 PF2M701x 계열(VID 131 / DID 365)로 정확히 연결하여 기존 저장 매핑 없이도 PDI 자동매핑이 적용되도록 수정했습니다.",
-                                              "온라인 IODD 포트 표시는 현지화된 장치 분류명 대신 실제 ISDU ProductName을 사용하여 UC/OBE/OMD 등 무관한 IODD가 같은 포트로 표시되는 문제를 제거했습니다.",
-                                              "시작 시 장치 식별 재탐색과 주기적 전체 연결장치 스캔을 추가하여 ProductName이 늦게 들어와도 신규 PC에서 온라인 IODD 다운로드와 매핑이 누락되지 않습니다.",
-                                              "번들 또는 온라인 IODD가 준비되면 연결된 모든 포트의 대기 중 PDI 매핑과 PDO 출력 기능을 즉시 재평가하며, 사용자가 만든 수동 매핑은 덮어쓰지 않습니다.",
-                                              "v668 다중창 렌더링, 폴링, 샘플, 알람, DB, Web, MQTT, CSV, 안전 인터락, VDM28 매핑과 SMC 공학값 환산은 유지합니다."
+                                              "v671 긴급 프리징 롤백에서 함께 차단된 IODD 자동매핑 실행 경로를 복구했습니다.",
+                                              "콜드 스타트 카탈로그 준비는 하나의 공유 백그라운드 작업으로 실행하고, 연결 포트는 단일 게이트에서 한 포트씩 순차 적용합니다.",
+                                              "성공한 포트와 제품 조합은 세션 중 한 번만 적용하여 운전 중 반복 재매핑과 UI 프리징을 방지합니다.",
+                                              "수동 매핑을 보호하면서 SMC PDI 자동매핑과 OBE/OMD PDO 출력 기능 인식을 복구했습니다."
                                           ],
                                    "ja":  [
-                                              "新規PCでのIODD自動登録、PF2M721xの認証ファミリーマッチ、オンラインポート表示、遅延ProductName再スキャンを修正しました。"
+                                              "v671で無効化されたIODD自動マッピングを、ポート単位の順次バックグラウンド処理で復元しました。"
                                           ],
                                    "zh":  [
-                                              "修复全新电脑上的IODD自动注册、PF2M721x认证族匹配、在线端口标记和延迟ProductName重新扫描。"
+                                              "恢复了v671中被禁用的IODD自动映射，并通过逐端口后台串行处理防止界面冻结。"
                                           ],
                                    "de":  [
-                                              "Behebt das IODD-Onboarding auf neuen PCs, die PF2M721x-Familienzuordnung, Online-Portmarkierungen und verspätete ProductName-Erkennung."
+                                              "Stellt die in v671 deaktivierte automatische IODD-Zuordnung mit serieller Hintergrundverarbeitung pro Port wieder her."
                                           ],
                                    "es":  [
-                                              "Corrige el registro IODD en equipos nuevos, la familia PF2M721x, las marcas de puerto online y la detección tardía de ProductName."
+                                              "Restaura el mapeo IODD automático deshabilitado en v671 mediante procesamiento secuencial en segundo plano por puerto."
                                           ]
                                }
 }
