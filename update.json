@@ -1,41 +1,39 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.663",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.663/ICEops_Setup_1.0.0.663.exe",
-    "sha256":  "bcb1dd3eeb1b53509e192709c2f96462c9c810f9325698003279900deaaa4331",
-    "fileName":  "ICEops_Setup_1.0.0.663.exe",
+    "version":  "1.0.0.664",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.664/ICEops_Setup_1.0.0.664.exe",
+    "sha256":  "d061452d1512c6d3a3d129bb122bad5a8eba130a56078cd46c58ed83ffea0a63",
+    "fileName":  "ICEops_Setup_1.0.0.664.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T07:14:58.3958165+00:00",
+    "publishedAtUtc":  "2026-08-05T09:22:22.2193703+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Restores the field-proven v657 VDM28-8-L1-IO/73c/136 mapping path instead of waiting for Index 99 live layout selectors.",
-                                              "Maps the exact VDM28 variant deterministically as 14-bit Distance plus Switching Signal 1 and Switching Signal 2, matching the previously working installation.",
-                                              "Removes VDM28 fail-closed card blocking and allows IODD Rebuild to use the same compatibility layout immediately.",
-                                              "Keeps v658 background startup smoothing, the corrected IODD Process Data table, SMC conditional engineering conversion, and manual mapping protection.",
-                                              "No core transport, polling, PDO write, alarm interlock, DB, Web, MQTT, or AI pipeline changes."
+                                              "Makes the detached Visualization window the sole real-time trend renderer while it is open, eliminating duplicate full-size waveform rendering on the shared WPF UI thread.",
+                                              "Pauses only the embedded main-page trend geometry, glow, markers, labels, scan beam, and CompositionTarget frame hook; IO-Link polling, the shared trend buffer, alarms, DB, Web, MQTT, and current-value data remain active.",
+                                              "Rebuilds the embedded main trend once from the latest shared snapshot and resumes its animation immediately after the detached window closes.",
+                                              "Preserves v663 VDM28 mapping, v658 startup smoothing, SMC conditional engineering conversion, and all communication/interlock behavior."
                                           ],
                                    "ko":  [
-                                              "VDM28-8-L1-IO/73c/136에서 Index 99 live selector를 기다리지 않고 현장에서 정상 동작했던 v657 매핑 경로를 그대로 복원했습니다.",
-                                              "해당 VDM28 모델은 기존 정상 구성과 동일하게 Distance 14bit + Switching Signal 1 + Switching Signal 2로 결정적으로 매핑합니다.",
-                                              "VDM28 fail-closed 카드 차단을 제거하고 IODD 재구성도 같은 호환 레이아웃을 즉시 사용하도록 수정했습니다.",
-                                              "v658 초기 백그라운드 로딩 개선, 수정된 IODD Process Data 표, SMC 조건부 환산, 수동 매핑 보호는 유지합니다.",
-                                              "Core 통신, 폴링, PDO 쓰기, 알람 인터락, DB, Web, MQTT, AI 경로는 변경하지 않았습니다."
+                                              "별도 Visualization 창이 열려 있는 동안 해당 창만 실시간 파형을 렌더링하도록 변경하여 동일 파형의 대형 Visual Tree 이중 렌더링을 제거했습니다.",
+                                              "메인 화면에서는 Trend Geometry·Glow·마커·라벨·Scan Beam·CompositionTarget 프레임 처리만 일시 중지하며, IO-Link 폴링·공유 Trend 버퍼·알람·DB·Web·MQTT·현재값 데이터는 계속 동작합니다.",
+                                              "별도 창을 닫으면 최신 공유 Snapshot으로 메인 Trend를 한 번 재구성하고 즉시 애니메이션을 복구합니다.",
+                                              "v663 VDM28 매핑, v658 초기 로딩 개선, SMC 조건부 환산 및 모든 통신/인터락 동작은 유지합니다."
                                           ],
                                    "ja":  [
-                                              "VDM28-8-L1-IO/73c/136について、正常動作していたv657の14bit距離＋2つのスイッチ信号マッピング経路を復元しました。"
+                                              "別ウィンドウ表示中はそのウィンドウだけがリアルタイム波形を描画し、メイン画面側の重複レンダリングを停止します。"
                                           ],
                                    "zh":  [
-                                              "为VDM28-8-L1-IO/73c/136恢复了已验证的v657映射路径：14位距离值加两个开关信号。"
+                                              "分离的可视化窗口打开时，仅该窗口执行实时波形渲染，停止主界面的重复图形渲染。"
                                           ],
                                    "de":  [
-                                              "Für VDM28-8-L1-IO/73c/136 wurde der bewährte v657-Pfad mit 14-Bit-Distanz und zwei Schaltsignalen wiederhergestellt."
+                                              "Während das separate Visualisierungsfenster geöffnet ist, rendert nur dieses Fenster den Live-Trend; die doppelte Darstellung im Hauptfenster wird pausiert."
                                           ],
                                    "es":  [
-                                              "Se restaura para VDM28-8-L1-IO/73c/136 la ruta validada de v657: distancia de 14 bits y dos señales de conmutación."
+                                              "Mientras la ventana de visualización separada está abierta, solo esa ventana renderiza la tendencia en tiempo real y se pausa el renderizado duplicado de la pantalla principal."
                                           ]
                                }
 }
