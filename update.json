@@ -1,39 +1,41 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.668",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.668/ICEops_Setup_1.0.0.668.exe",
-    "sha256":  "24c692816a91fc51b46afafc317b6e5b7fd7ea641fae276596c72f89369a9bb4",
-    "fileName":  "ICEops_Setup_1.0.0.668.exe",
+    "version":  "1.0.0.669",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.669/ICEops_Setup_1.0.0.669.exe",
+    "sha256":  "75607a5f7e5704267ceb419c5b9e5623c6cb71f62083fb088cb9d4985dec27b0",
+    "fileName":  "ICEops_Setup_1.0.0.669.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T12:50:41.5082032+00:00",
+    "publishedAtUtc":  "2026-08-05T13:53:08.7733011+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Uses fixed-reference rendering for fullscreen Oscilloscope and Visualization surfaces so fullscreen cost stays close to the proven windowed path.",
-                                              "Multiple Oscilloscope surfaces now use an independent round-robin render lane instead of dividing one global grant with Visualization; two scopes receive approximately refresh/2 each.",
-                                              "Visualization renders its waveform at a fixed 1280x520 logical surface, caches the complete waveform layer, and scales the finished bitmap through WPF/DWM while the scan beam remains a separate low-cost overlay.",
-                                              "Polling, samples, Trend buffers, alarms, DB, Web, MQTT, CSV, VDM28/SMC mappings, PDO/ISDU, licensing, and safety interlocks are unchanged."
+                                              "Fixes fresh-PC IODD onboarding so SMC PF2M721x resolves to the certified PF2M701x IODD family (VID 131 / DID 365) and applies its PDI mapping without a previously saved profile.",
+                                              "Online IODD port badges now use the resolved ISDU ProductName instead of localized device-category text, preventing unrelated UC/OBE/OMD catalog rows from being marked on the wrong port.",
+                                              "Adds bounded startup identity sweeps and periodic full connected-device scans so late ProductName events still trigger automatic IODD download and mapping on clean installations.",
+                                              "After a bundled or downloaded IODD becomes available, pending PDI mappings and PDO capabilities are re-evaluated for all connected ports while manual mappings remain protected.",
+                                              "v668 fixed-reference multi-surface rendering, polling, samples, alarms, DB, Web, MQTT, CSV, safety interlocks, VDM28 mapping, and SMC engineering conversion are preserved."
                                           ],
                                    "ko":  [
-                                              "전체창 Oscilloscope와 Visualization을 창 모드에서 검증된 고정 기준 해상도로 렌더링한 뒤 WPF/DWM이 확대하도록 변경하여 전체창 비용을 창 모드 수준에 가깝게 유지합니다.",
-                                              "여러 Oscilloscope가 Visualization과 하나의 전역 슬롯을 나누지 않도록 독립 렌더링 Lane을 적용했습니다. 100Hz에서 오실로스코프 2개는 각각 약 50FPS로 교대합니다.",
-                                              "Visualization 파형은 1280x520 기준 Surface에서 한 개의 BitmapCache 레이어로 렌더링하며, Scan Beam은 캐시를 무효화하지 않는 별도 저비용 오버레이로 유지합니다.",
-                                              "폴링, 샘플, Trend 버퍼, 알람, DB, Web, MQTT, CSV, VDM28/SMC 매핑, PDO/ISDU, 라이선스와 안전 인터락은 변경하지 않습니다."
+                                              "신규 PC에서 SMC PF2M721x를 인증 IODD인 PF2M701x 계열(VID 131 / DID 365)로 정확히 연결하여 기존 저장 매핑 없이도 PDI 자동매핑이 적용되도록 수정했습니다.",
+                                              "온라인 IODD 포트 표시는 현지화된 장치 분류명 대신 실제 ISDU ProductName을 사용하여 UC/OBE/OMD 등 무관한 IODD가 같은 포트로 표시되는 문제를 제거했습니다.",
+                                              "시작 시 장치 식별 재탐색과 주기적 전체 연결장치 스캔을 추가하여 ProductName이 늦게 들어와도 신규 PC에서 온라인 IODD 다운로드와 매핑이 누락되지 않습니다.",
+                                              "번들 또는 온라인 IODD가 준비되면 연결된 모든 포트의 대기 중 PDI 매핑과 PDO 출력 기능을 즉시 재평가하며, 사용자가 만든 수동 매핑은 덮어쓰지 않습니다.",
+                                              "v668 다중창 렌더링, 폴링, 샘플, 알람, DB, Web, MQTT, CSV, 안전 인터락, VDM28 매핑과 SMC 공학값 환산은 유지합니다."
                                           ],
                                    "ja":  [
-                                              "全画面でもウィンドウ表示と同じ基準解像度で描画し、複数オシロスコープ用の独立レンダリングレーンを追加しました。"
+                                              "新規PCでのIODD自動登録、PF2M721xの認証ファミリーマッチ、オンラインポート表示、遅延ProductName再スキャンを修正しました。"
                                           ],
                                    "zh":  [
-                                              "全屏模式使用与窗口模式相同的固定参考分辨率进行绘制，并为多个示波器增加独立渲染通道。"
+                                              "修复全新电脑上的IODD自动注册、PF2M721x认证族匹配、在线端口标记和延迟ProductName重新扫描。"
                                           ],
                                    "de":  [
-                                              "Vollbildflächen verwenden eine feste Referenzauflösung; mehrere Oszilloskope erhalten eine unabhängige Render-Lane."
+                                              "Behebt das IODD-Onboarding auf neuen PCs, die PF2M721x-Familienzuordnung, Online-Portmarkierungen und verspätete ProductName-Erkennung."
                                           ],
                                    "es":  [
-                                              "Las superficies a pantalla completa usan una resolución de referencia fija y los osciloscopios múltiples disponen de un carril de renderizado independiente."
+                                              "Corrige el registro IODD en equipos nuevos, la familia PF2M721x, las marcas de puerto online y la detección tardía de ProductName."
                                           ]
                                }
 }
