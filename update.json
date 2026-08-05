@@ -1,37 +1,37 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.657",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.657/ICEops_Setup_1.0.0.657.exe",
-    "sha256":  "b2f1767853a36b4a307918ad168c6051dd00c09e80adc721f3fb77573d9cc8e4",
-    "fileName":  "ICEops_Setup_1.0.0.657.exe",
+    "version":  "1.0.0.658",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.658/ICEops_Setup_1.0.0.658.exe",
+    "sha256":  "c30c3571587dc6107a728eb4cdd4c980dbe875a344522cc619662ac5c48bf317",
+    "fileName":  "ICEops_Setup_1.0.0.658.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T04:38:58.5203255+00:00",
+    "publishedAtUtc":  "2026-08-05T05:13:39.3176576+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Adds condition-aware engineering conversion from IODD gradient, offset, unit, and menu conditions.",
-                                              "Reads unit, fluid, and range selectors and applies coherent PDI/PDO mappings.",
-                                              "Adds eight verified SMC IODD packages and preserves manual mappings."
+                                              "Moves ProductName-triggered IODD catalog analysis and automatic mapping off the WPF UI thread.",
+                                              "Preloads and parses the IODD catalog after the first render, then reuses an in-memory ProcessData snapshot.",
+                                              "Debounces duplicate identity events, serializes mapping work, rejects stale results, and keeps new-device mappings fail-closed until committed."
                                           ],
                                    "ko":  [
-                                              "IODD gradient, offset, unit 및 메뉴 조건 기반 공학값 자동 환산을 추가했습니다.",
-                                              "단위, 유체, 범위 selector를 읽어 PDI/PDO에 일관된 매핑을 적용합니다.",
-                                              "SMC IODD 8개를 추가하고 수동 매핑을 보존합니다."
+                                              "제품명 수신 시 실행되던 IODD 카탈로그 분석과 자동매핑을 WPF UI 스레드에서 분리했습니다.",
+                                              "첫 화면 렌더링 후 IODD 카탈로그와 ProcessData를 백그라운드에서 미리 파싱하고 메모리 Snapshot을 재사용합니다.",
+                                              "중복 제품명 이벤트 병합, 매핑 직렬화, 이전 장치 결과 폐기 및 신규 장치 fail-closed 정책을 적용했습니다."
                                           ],
                                    "ja":  [
-                                              "SMC IODDの条件付き工学値変換とPDI/PDO自動マッピングを追加しました。"
+                                              "製品名受信時のIODD解析と自動マッピングをUIスレッドから分離し、起動時の一時停止を低減しました。"
                                           ],
                                    "zh":  [
-                                              "新增基于SMC IODD条件的工程值换算和PDI/PDO自动映射。"
+                                              "将产品名触发的IODD解析和自动映射移出UI线程，以减少启动阶段的短暂停顿。"
                                           ],
                                    "de":  [
-                                              "Bedingungsabhängige SMC-IODD-Umrechnung und PDI/PDO-Automapping hinzugefügt."
+                                              "IODD-Analyse und Automapping nach Produkterkennung wurden vom UI-Thread getrennt, um Startpausen zu reduzieren."
                                           ],
                                    "es":  [
-                                              "Se añadió conversión condicional SMC IODD y mapeo automático PDI/PDO."
+                                              "El análisis IODD y el mapeo automático tras detectar el producto se movieron fuera del hilo de interfaz para reducir pausas iniciales."
                                           ]
                                }
 }
