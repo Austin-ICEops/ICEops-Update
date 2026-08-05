@@ -1,13 +1,37 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.656",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.656/ICEops_Setup_1.0.0.656.exe",
-    "sha256":  "7532c589640e2282c8df2d62787debc4a0c9117bf834ac1b319574ea00bd3e03",
-    "fileName":  "ICEops_Setup_1.0.0.656.exe",
+    "version":  "1.0.0.657",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.657/ICEops_Setup_1.0.0.657.exe",
+    "sha256":  "b2f1767853a36b4a307918ad168c6051dd00c09e80adc721f3fb77573d9cc8e4",
+    "fileName":  "ICEops_Setup_1.0.0.657.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T03:27:46.8905136+00:00",
+    "publishedAtUtc":  "2026-08-05T04:38:58.5203255+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
-                     ]
+                     ],
+    "releaseNotesByLanguage":  {
+                                   "en":  [
+                                              "Adds condition-aware engineering conversion from IODD gradient, offset, unit, and menu conditions.",
+                                              "Reads unit, fluid, and range selectors and applies coherent PDI/PDO mappings.",
+                                              "Adds eight verified SMC IODD packages and preserves manual mappings."
+                                          ],
+                                   "ko":  [
+                                              "IODD gradient, offset, unit 및 메뉴 조건 기반 공학값 자동 환산을 추가했습니다.",
+                                              "단위, 유체, 범위 selector를 읽어 PDI/PDO에 일관된 매핑을 적용합니다.",
+                                              "SMC IODD 8개를 추가하고 수동 매핑을 보존합니다."
+                                          ],
+                                   "ja":  [
+                                              "SMC IODDの条件付き工学値変換とPDI/PDO自動マッピングを追加しました。"
+                                          ],
+                                   "zh":  [
+                                              "新增基于SMC IODD条件的工程值换算和PDI/PDO自动映射。"
+                                          ],
+                                   "de":  [
+                                              "Bedingungsabhängige SMC-IODD-Umrechnung und PDI/PDO-Automapping hinzugefügt."
+                                          ],
+                                   "es":  [
+                                              "Se añadió conversión condicional SMC IODD y mapeo automático PDI/PDO."
+                                          ]
+                               }
 }
