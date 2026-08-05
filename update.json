@@ -1,39 +1,39 @@
 ﻿{
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.666",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.666/ICEops_Setup_1.0.0.666.exe",
-    "sha256":  "2b3d744a45864da0b7f82713061ac6ff57e2fec2a7c1426f4e4192564efc7fdb",
-    "fileName":  "ICEops_Setup_1.0.0.666.exe",
+    "version":  "1.0.0.667",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.667/ICEops_Setup_1.0.0.667.exe",
+    "sha256":  "86ec462123c8b1d24065547795eb66f971d135fb29d1e12225c890d9cfd6458a",
+    "fileName":  "ICEops_Setup_1.0.0.667.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T09:54:58.3665748+00:00",
+    "publishedAtUtc":  "2026-08-05T10:20:29.1087438+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Adds an adaptive fullscreen fill-budget path for dual Visualization and Oscilloscope windows while keeping both windows fully live.",
-                                              "Large Visualization surfaces retain the primary waveform, inner halo, scan beam, and continuous scrolling while removing only the redundant outer glow pass and stabilizing geometry rebuilds at a consistent 50 FPS budget.",
-                                              "Large Oscilloscope surfaces replace expensive blurred waveform and live-dot glow passes with lightweight non-blurred halos and reduce scan-beam and envelope fill work without changing polling, samples, or waveform values.",
-                                              "Windowed rendering retains the v665 quality path, and v663 VDM28 mapping, SMC engineering conversion, alarms, DB, Web, MQTT, CSV, PDO/ISDU, and safety interlocks remain unchanged."
+                                              "Adds a process-wide live render arbiter so the main window, detached Oscilloscope, and detached Visualization can remain open together without competing in the same WPF composition frame.",
+                                              "Oscilloscope Skia redraws and Visualization Geometry rebuilds are phase-separated globally while all polling, sample buffers, alarms, DB, Web, MQTT, CSV, and live values continue unchanged.",
+                                              "Visualization keeps its low-cost per-frame TranslateTransform scrolling, while only expensive Geometry rebuilds are coalesced and distributed across available composition frames.",
+                                              "The v666 fullscreen fill/blur reductions, v663 VDM28 mapping path, SMC engineering conversion, PDO/ISDU, licensing, and safety interlocks are preserved."
                                           ],
                                    "ko":  [
-                                              "메인·별도 Visualization 및 Oscilloscope를 모두 실시간으로 유지하면서 전체창에서만 동작하는 적응형 Fill Budget 경로를 추가했습니다.",
-                                              "대형 Visualization 화면에서는 주 파형, 내부 글로우, 스캔 빔과 연속 스크롤은 유지하고 중복 외곽 글로우만 제거하며 Geometry 재생성을 안정적인 50FPS 예산으로 맞춥니다.",
-                                              "대형 Oscilloscope 화면에서는 전체 표면 Blur를 사용하는 파형·라이브 도트 글로우를 가벼운 비블러 Halo로 교체하고 스캔 빔과 Envelope Fill 부하를 줄였습니다. 폴링, 샘플 및 파형 값은 변경하지 않습니다.",
-                                              "창 모드에서는 v665 화질 경로를 그대로 유지하며 v663 VDM28 매핑, SMC 공학값 환산, 알람, DB, Web, MQTT, CSV, PDO/ISDU 및 안전 인터락도 유지합니다."
+                                              "메인 창, 별도 Oscilloscope, 별도 Visualization을 항상 동시에 열어도 같은 WPF 합성 프레임에서 무거운 렌더링이 겹치지 않도록 프로세스 전역 Live Render Arbiter를 추가했습니다.",
+                                              "Oscilloscope Skia 전체 렌더링과 Visualization Geometry 재생성을 전역 프레임 단위로 분리하며, 폴링·샘플 버퍼·알람·DB·Web·MQTT·CSV·실시간 값은 그대로 유지합니다.",
+                                              "Visualization은 저비용 TranslateTransform 연속 스크롤을 매 프레임 유지하고, 비용이 큰 Geometry 재생성만 코얼레싱하여 분산합니다.",
+                                              "v666 전체창 Fill/Blur 최적화, v663 VDM28 매핑, SMC 공학값 환산, PDO/ISDU, 라이선스와 안전 인터락을 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "メイン画面と別ウィンドウを同時にライブ表示したまま、最大化された大画面でのみ描画フィル負荷を自動的に軽減します。"
+                                              "メイン画面、独立Oscilloscope、独立Visualizationを常時同時表示できるよう、重い描画をWPF合成フレーム単位で全体調停します。"
                                           ],
                                    "zh":  [
-                                              "主界面和独立窗口保持同时实时运行，仅在最大化大画面时自动降低填充与模糊特效负载。"
+                                              "新增全局实时渲染仲裁器，使主窗口、独立示波器和独立可视化窗口可同时持续运行，并避免重绘任务落在同一合成帧。"
                                           ],
                                    "de":  [
-                                              "Hauptansicht und separates Fenster bleiben gleichzeitig live; nur bei maximierten großen Flächen wird die Fill- und Blur-Last adaptiv reduziert."
+                                              "Ein globaler Live-Render-Arbiter verteilt die schweren Zeichenoperationen von Hauptfenster, Oszilloskop und Visualisierung auf getrennte WPF-Kompositionsframes."
                                           ],
                                    "es":  [
-                                              "La vista principal y la ventana separada permanecen activas; solo en superficies grandes maximizadas se reduce de forma adaptativa la carga de relleno y desenfoque."
+                                              "Un árbitro global de renderizado en vivo distribuye el trabajo pesado del panel principal, el osciloscopio y la visualización entre distintos fotogramas de composición WPF."
                                           ]
                                }
 }
