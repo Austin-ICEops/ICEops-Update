@@ -1,51 +1,49 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.697",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.697/ICEops_Setup_1.0.0.697.exe",
-    "sha256":  "f2f56d8b585da409ec8893a5c9ba1a25b50e87d22b547c54140cb6249493d12b",
-    "fileName":  "ICEops_Setup_1.0.0.697.exe",
+    "version":  "1.0.0.698",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.698/ICEops_Setup_1.0.0.698.exe",
+    "sha256":  "6ebf2bc687fc6289377c995a5d67174873aafa6df46556fe4a160274c547db0d",
+    "fileName":  "ICEops_Setup_1.0.0.698.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T14:06:25.2665065+00:00",
+    "publishedAtUtc":  "2026-08-06T14:52:01.1520193+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Prevents startup and reconnect mapping from stopping after Port 1 by restoring the proven v687 serial identity/reconnect path and removing the later queue-handoff experiment.",
-                                              "Completes IODD schema and product-image backfill synchronously before TCP, polling, and automatic identity mapping start, so catalog writes and PDI/PDO cache invalidation cannot overlap live mapping.",
-                                              "Makes runtime catalog matching read-only while a master session is active; stale legacy catalog rows are deferred to the next pre-connection startup migration.",
-                                              "Keeps automatic IODD PNG extraction and product-image display on Home cards, IODD Manager, and the tablet dashboard.",
-                                              "Keeps the VDM28 scalar Distance-to-mm fallback, Accumulator Usage header theme fix, positive digit grouping, and previous mapping safety behavior.",
-                                              "Manual mappings remain protected and new or downloaded IODDs are still indexed with graphics at registration time."
+                                              "Fixes the reconnect mapping regression where Port 1 was repeatedly re-identified while Ports 2-8 remained in the identity-pending state.",
+                                              "Keeps the last verified ProductName, PDI/PDO mapping, and cached IODD product image across transport reconnects instead of clearing all eight port identities.",
+                                              "Prevents a transient empty ProductName during reconnect from cancelling an in-flight concrete identity request and resetting the per-port deduplication token.",
+                                              "Treats reconnect as a transport event; only a confirmed no-device state or a concrete different ProductName replaces the saved mapping for that port.",
+                                              "Retains all v697 features, including Home/IODD Manager/tablet PNG display, VDM28 Distance-to-mm fallback, positive digit grouping, and catalog startup isolation."
                                           ],
                                    "ko":  [
-                                              "시작 및 재연결 시 Port 1 이후 매핑이 멈추는 문제를 막기 위해 검증된 v687 직렬 장치 식별·재연결 경로를 복원하고 이후 추가된 큐 강제 전달 실험을 제거했습니다.",
-                                              "IODD 스키마 및 제품 PNG 백필을 TCP·폴링·자동 식별 시작 전에 완료하여 카탈로그 저장과 PDI/PDO 캐시 무효화가 실시간 매핑과 겹치지 않도록 수정했습니다.",
-                                              "마스터 연결 세션 중 카탈로그 매칭은 읽기 전용으로 동작하며, 오래된 카탈로그 재색인은 다음 실행의 연결 전 단계로 미룹니다.",
-                                              "Home 카드, IODD Manager 및 태블릿 대시보드의 IODD 제품 PNG 자동 추출·표시는 그대로 유지합니다.",
-                                              "VDM28 스칼라 Distance→mm 단위 보정, 기간별 집계 헤더 테마 수정, 양수 3자리 구분 및 기존 매핑 안전 동작을 유지합니다.",
-                                              "수동 매핑은 덮어쓰지 않으며 신규·자동 다운로드 IODD는 등록 시점에 이미지와 함께 정상 색인됩니다."
+                                              "재연결 시 Port 1이 반복 식별되고 Port 2~8이 장치 식별 대기 상태에 남는 자동 매핑 회귀를 수정했습니다.",
+                                              "전송 재연결 시 8개 포트 제품명을 전부 지우지 않고 마지막으로 검증된 ProductName, PDI/PDO 매핑 및 IODD 제품 PNG 캐시를 유지합니다.",
+                                              "재연결 중 일시적으로 ProductName이 비어도 진행 중인 실제 장치 식별 요청을 취소하거나 포트별 중복 방지 토큰을 초기화하지 않습니다.",
+                                              "재연결은 통신 이벤트로만 처리하며, 실제 No-device 또는 다른 ProductName이 확인된 포트만 기존 매핑을 교체합니다.",
+                                              "V697의 Home/IODD Manager/태블릿 PNG 표시, VDM28 Distance→mm 보정, 양수 3자리 구분 및 시작 전 카탈로그 격리 기능은 모두 유지합니다."
                                           ],
                                    "ja":  [
-                                              "Port 1以降で停止する起動・再接続マッピングを防ぐため、検証済みのv687シリアル識別経路を復元しました。",
-                                              "IODDスキーマと製品画像のバックフィルを接続前に完了し、ライブマッピング中のカタログ保存とキャッシュ無効化を禁止します。",
-                                              "製品PNG表示、VDM28 Distance→mm補正、既存の手動マッピング保護を維持します。"
+                                              "再接続時にPort 1が繰り返し識別され、Port 2～8が識別待ちに残る回帰を修正しました。",
+                                              "再接続では検証済みのProductName、PDI/PDOマッピング、IODD製品画像キャッシュを維持します。",
+                                              "一時的な空ProductNameで進行中の識別要求をキャンセルせず、実際の未接続または別製品確認時のみ該当ポートを更新します。"
                                           ],
                                    "zh":  [
-                                              "恢复已验证的v687串行设备识别路径，防止启动或重连时映射停在端口1。",
-                                              "在TCP、轮询和自动识别启动前完成IODD架构与产品图片回填，避免实时映射期间写目录或失效缓存。",
-                                              "保留产品PNG显示、VDM28 Distance→mm单位修正和手动映射保护。"
+                                              "修复重连时端口1被重复识别、端口2至8一直停留在等待识别状态的问题。",
+                                              "重连时保留已验证的ProductName、PDI/PDO映射和IODD产品图片缓存，不再清空全部端口身份。",
+                                              "临时空ProductName不会取消正在进行的身份请求；仅在确认无设备或产品不同后替换对应端口映射。"
                                           ],
                                    "de":  [
-                                              "Stellt den bewährten seriellen Identitäts-/Reconnect-Pfad aus v687 wieder her, damit die Zuordnung beim Start oder Reconnect nicht nach Port 1 stoppt.",
-                                              "IODD-Schema- und Produktbild-Backfill werden vor TCP, Polling und Auto-Mapping abgeschlossen; während einer aktiven Sitzung bleibt der Katalogpfad schreibgeschützt.",
-                                              "PNG-Anzeige, VDM28-Distance-zu-mm-Fallback und Schutz manueller Zuordnungen bleiben erhalten."
+                                              "Behebt die Reconnect-Regression, bei der Port 1 wiederholt identifiziert wurde und Ports 2-8 im Identitätsstatus hängen blieben.",
+                                              "Behält den verifizierten ProductName, die PDI/PDO-Zuordnung und das IODD-Produktbild über Transport-Reconnects bei.",
+                                              "Ein kurzzeitig leerer ProductName bricht keine laufende Identitätsprüfung mehr ab; nur ein bestätigtes No-Device oder ein anderes Produkt ersetzt die Port-Zuordnung."
                                           ],
                                    "es":  [
-                                              "Restaura la ruta serial de identidad/reconexión validada de v687 para evitar que el mapeo se detenga después del puerto 1.",
-                                              "Completa el esquema IODD y las imágenes antes de iniciar TCP, sondeo y mapeo automático; durante una sesión activa el catálogo queda en modo de solo lectura.",
-                                              "Mantiene las imágenes PNG, la corrección VDM28 Distance→mm y la protección de mapeos manuales."
+                                              "Corrige la regresión de reconexión que repetía la identificación del puerto 1 y dejaba los puertos 2-8 pendientes.",
+                                              "Conserva ProductName, el mapeo PDI/PDO y la imagen IODD verificados durante una reconexión de transporte.",
+                                              "Un ProductName vacío transitorio ya no cancela la identificación en curso; solo un estado sin dispositivo o un producto diferente reemplaza el mapeo del puerto."
                                           ]
                                }
 }
