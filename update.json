@@ -1,41 +1,51 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.696",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.696/ICEops_Setup_1.0.0.696.exe",
-    "sha256":  "de653a9e3a7c37ff7acb760a1ff40ec3ed290aaea21134c96d69407a5861dd71",
-    "fileName":  "ICEops_Setup_1.0.0.696.exe",
+    "version":  "1.0.0.697",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.697/ICEops_Setup_1.0.0.697.exe",
+    "sha256":  "f2f56d8b585da409ec8893a5c9ba1a25b50e87d22b547c54140cb6249493d12b",
+    "fileName":  "ICEops_Setup_1.0.0.697.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T13:53:59.5384672+00:00",
+    "publishedAtUtc":  "2026-08-06T14:06:25.2665065+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixes build error CS8209 in the runtime product-refresh adapter.",
-                                              "Restores the verified v684 method-group binding for the void-returning EnqueueAuto_ProductName callback instead of assigning its result to a discard.",
-                                              "Keeps the v695 startup identity queue rollback and all v693 VDM/IODD changes unchanged."
+                                              "Prevents startup and reconnect mapping from stopping after Port 1 by restoring the proven v687 serial identity/reconnect path and removing the later queue-handoff experiment.",
+                                              "Completes IODD schema and product-image backfill synchronously before TCP, polling, and automatic identity mapping start, so catalog writes and PDI/PDO cache invalidation cannot overlap live mapping.",
+                                              "Makes runtime catalog matching read-only while a master session is active; stale legacy catalog rows are deferred to the next pre-connection startup migration.",
+                                              "Keeps automatic IODD PNG extraction and product-image display on Home cards, IODD Manager, and the tablet dashboard.",
+                                              "Keeps the VDM28 scalar Distance-to-mm fallback, Accumulator Usage header theme fix, positive digit grouping, and previous mapping safety behavior.",
+                                              "Manual mappings remain protected and new or downloaded IODDs are still indexed with graphics at registration time."
                                           ],
                                    "ko":  [
-                                              "런타임 제품명 갱신 어댑터의 빌드 오류 CS8209를 수정했습니다.",
-                                              "void 반환 EnqueueAuto_ProductName 호출 결과를 discard에 대입하던 코드를 제거하고 검증된 v684 방식의 메서드 그룹 연결로 복원했습니다.",
-                                              "v695 시작 식별 큐 롤백과 v693 VDM/IODD 변경은 그대로 유지합니다."
+                                              "시작 및 재연결 시 Port 1 이후 매핑이 멈추는 문제를 막기 위해 검증된 v687 직렬 장치 식별·재연결 경로를 복원하고 이후 추가된 큐 강제 전달 실험을 제거했습니다.",
+                                              "IODD 스키마 및 제품 PNG 백필을 TCP·폴링·자동 식별 시작 전에 완료하여 카탈로그 저장과 PDI/PDO 캐시 무효화가 실시간 매핑과 겹치지 않도록 수정했습니다.",
+                                              "마스터 연결 세션 중 카탈로그 매칭은 읽기 전용으로 동작하며, 오래된 카탈로그 재색인은 다음 실행의 연결 전 단계로 미룹니다.",
+                                              "Home 카드, IODD Manager 및 태블릿 대시보드의 IODD 제품 PNG 자동 추출·표시는 그대로 유지합니다.",
+                                              "VDM28 스칼라 Distance→mm 단위 보정, 기간별 집계 헤더 테마 수정, 양수 3자리 구분 및 기존 매핑 안전 동작을 유지합니다.",
+                                              "수동 매핑은 덮어쓰지 않으며 신규·자동 다운로드 IODD는 등록 시점에 이미지와 함께 정상 색인됩니다."
                                           ],
                                    "ja":  [
-                                              "ランタイム製品名更新アダプターのビルドエラーCS8209を修正しました。",
-                                              "void戻り値をdiscardへ代入せず、検証済みv684のメソッドグループ接続へ復元しました。"
+                                              "Port 1以降で停止する起動・再接続マッピングを防ぐため、検証済みのv687シリアル識別経路を復元しました。",
+                                              "IODDスキーマと製品画像のバックフィルを接続前に完了し、ライブマッピング中のカタログ保存とキャッシュ無効化を禁止します。",
+                                              "製品PNG表示、VDM28 Distance→mm補正、既存の手動マッピング保護を維持します。"
                                           ],
                                    "zh":  [
-                                              "修复运行时产品名称刷新适配器中的构建错误CS8209。",
-                                              "移除对void返回值的discard赋值，并恢复已验证的v684方法组绑定。"
+                                              "恢复已验证的v687串行设备识别路径，防止启动或重连时映射停在端口1。",
+                                              "在TCP、轮询和自动识别启动前完成IODD架构与产品图片回填，避免实时映射期间写目录或失效缓存。",
+                                              "保留产品PNG显示、VDM28 Distance→mm单位修正和手动映射保护。"
                                           ],
                                    "de":  [
-                                              "Behebt den Buildfehler CS8209 im Runtime-Adapter für die Produktnamen-Aktualisierung.",
-                                              "Stellt die verifizierte v684-Methodengruppenbindung für den void-Callback wieder her."
+                                              "Stellt den bewährten seriellen Identitäts-/Reconnect-Pfad aus v687 wieder her, damit die Zuordnung beim Start oder Reconnect nicht nach Port 1 stoppt.",
+                                              "IODD-Schema- und Produktbild-Backfill werden vor TCP, Polling und Auto-Mapping abgeschlossen; während einer aktiven Sitzung bleibt der Katalogpfad schreibgeschützt.",
+                                              "PNG-Anzeige, VDM28-Distance-zu-mm-Fallback und Schutz manueller Zuordnungen bleiben erhalten."
                                           ],
                                    "es":  [
-                                              "Corrige el error de compilación CS8209 en el adaptador de actualización del nombre de producto.",
-                                              "Restaura la vinculación de grupo de método verificada de v684 para el callback void."
+                                              "Restaura la ruta serial de identidad/reconexión validada de v687 para evitar que el mapeo se detenga después del puerto 1.",
+                                              "Completa el esquema IODD y las imágenes antes de iniciar TCP, sondeo y mapeo automático; durante una sesión activa el catálogo queda en modo de solo lectura.",
+                                              "Mantiene las imágenes PNG, la corrección VDM28 Distance→mm y la protección de mapeos manuales."
                                           ]
                                }
 }
