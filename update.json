@@ -1,103 +1,41 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.694",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.694/ICEops_Setup_1.0.0.694.exe",
-    "sha256":  "0b16f24f43445a5f399f5e14b89561ea2a59651a569590a4c5f5e1beded654dc",
-    "fileName":  "ICEops_Setup_1.0.0.694.exe",
+    "version":  "1.0.0.696",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.696/ICEops_Setup_1.0.0.696.exe",
+    "sha256":  "de653a9e3a7c37ff7acb760a1ff40ec3ed290aaea21134c96d69407a5861dd71",
+    "fileName":  "ICEops_Setup_1.0.0.696.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T13:34:34.4030949+00:00",
+    "publishedAtUtc":  "2026-08-06T13:53:59.5384672+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixes cold-start and reconnect identity mapping becoming stuck after a PC reboot by using the ISDU manager registered-work set as the single source of truth for queued and active automatic identity work.",
-                                              "Invalidates requests already removed into the ISDU worker priority buffer when CancelAll runs, preventing canceled startup work from surviving and creating stale handoffs.",
-                                              "Runs an independent one-second identity queue watchdog that immediately rebuilds missing work for connected unresolved ports without depending on the polling callback or a 20-second UI pending timeout.",
-                                              "Logs identity handoff only after the next request is actually accepted and suppresses handoff from canceled or timed-out requests.",
-                                              "Keeps the Modbus state lock free during VPN-sensitive transport waits and releases the semaphore only when it was actually acquired.",
-                                              "Fixes the VDM28 scalar ProcessDataIn distance channel showing a blank unit by routing scalar cyclic rows through the existing conservative Distance-to-mm IODD unit resolver.",
-                                              "Reindexes cached IODD process-data summaries with catalog schema 19 and reapplies connected automatic card mappings after migration without overwriting manual mappings.",
-                                              "Fixes unreadable Accumulator Usage table column-header text by binding its foreground and background to the active theme.",
-                                              "Fixes startup/reconnect identity mapping stopping after Port 1 by explicitly handing the serial ISDU queue to the next connected unresolved port.",
-                                              "Recovers orphaned identity-pending latches after canceled or lost queue work so ports cannot remain indefinitely in Identifying device state.",
-                                              "Automatically extracts IODD deviceSymbol, deviceIcon, and VendorLogo graphics for Pepperl+Fuchs, SMC, and other standards-compliant IODDs.",
-                                              "Shows the cached product image beside the manufacturer logo on Home cards, in IODD Manager, and on the tablet dashboard without opening ZIP files during polling.",
-                                              "Backfills images for already-registered IODDs once at startup and clears the image while a fresh device identity is pending.",
-                                              "Formats positive engineering values with invariant three-digit separators across live cards, Trend History values and tooltips, and Accumulator Usage summaries.",
-                                              "Keeps raw values, engineering calculations, database storage, alarms, MQTT/API numeric fields, and CSV numeric exports unchanged.",
-                                              "Adds an Accumulator Usage window to Trend History with today, yesterday, last 7 days, current week, current month, and custom ranges.",
-                                              "Aggregates the selected device accumulator PDI by day, week, or month using the same IODD decode, scale, offset, and unit as the live card.",
-                                              "Compensates verified unsigned counter rollovers and device resets by summing positive increments instead of subtracting only the first and last values.",
-                                              "Shows total, start/end accumulator values, reset/rollover counts, relative usage bars, and exports the aggregated table to UTF-8 CSV.",
-                                              "Retains the v685 first-connect identity gate and the v684 reconnect mapping stability fixes."
+                                              "Fixes build error CS8209 in the runtime product-refresh adapter.",
+                                              "Restores the verified v684 method-group binding for the void-returning EnqueueAuto_ProductName callback instead of assigning its result to a discard.",
+                                              "Keeps the v695 startup identity queue rollback and all v693 VDM/IODD changes unchanged."
                                           ],
                                    "ko":  [
-                                              "PC 재부팅 후 콜드 스타트 또는 재연결에서 장치 식별 매핑이 멈추는 문제를 수정하고, ISDU Manager의 실제 등록 작업 집합을 자동 식별 큐의 단일 기준으로 사용합니다.",
-                                              "CancelAll 실행 전에 ISDU Worker의 우선순위 로컬 버퍼로 이동한 요청까지 세대 번호로 무효화하여 취소된 시작 작업이 살아남아 잘못된 handoff를 만드는 문제를 차단합니다.",
-                                              "폴링 콜백이나 20초 UI pending 회수에 의존하지 않는 1초 독립 감시기로 연결 상태이면서 미식별인 포트의 누락 작업을 즉시 재구성합니다.",
-                                              "다음 요청이 실제 등록된 이후에만 handoff 로그를 남기며 취소 또는 시간 제한된 요청의 finally에서는 handoff를 실행하지 않습니다.",
-                                              "VPN 지연 구간의 Modbus 잠금 대기 중 상태 잠금을 점유하지 않고, 실제로 획득한 세마포어만 해제하도록 수정했습니다.",
-                                              "VDM28의 스칼라 ProcessDataIn 거리 채널이 단위 없이 표시되던 문제를 수정하고 기존의 보수적인 Distance→mm IODD 단위 해석 경로를 동일하게 적용합니다.",
-                                              "IODD 카탈로그 스키마를 19로 올려 기존 캐시의 ProcessData 요약을 재생성하고, 마이그레이션 후 연결된 자동 카드 매핑만 다시 적용하며 수동 매핑은 유지합니다.",
-                                              "기간별 누적 사용량 표의 열 헤더 글자색과 배경색을 현재 테마에 연동하여 보이지 않던 문제를 수정했습니다.",
-                                              "시작 및 재연결 시 Port 1 이후 장치 식별 매핑이 정지하던 문제를 수정하고 다음 연결 포트로 ISDU 직렬 큐를 명시적으로 전달합니다.",
-                                              "취소되거나 유실된 큐 작업의 식별 대기 플래그를 자동 회수하여 포트가 장치 식별 중 상태에 영구 정지하지 않도록 보강했습니다.",
-                                              "Pepperl+Fuchs, SMC 및 표준 IODD의 deviceSymbol·deviceIcon·VendorLogo 이미지를 자동 추출합니다.",
-                                              "폴링 중 ZIP을 열지 않고 캐시된 제품 사진을 Home 카드의 제조사 로고 옆, IODD Manager 및 태블릿 웹에 함께 표시합니다.",
-                                              "기존 등록 IODD도 시작 시 한 번 자동 보강하며 새 장치 식별 중에는 이전 제품 사진을 노출하지 않습니다.",
-                                              "실시간 카드, Trend History 값·툴팁 및 누적 사용량 집계의 양수 공학값에 3자리 구분 기호를 적용했습니다.",
-                                              "Raw 값, 공학값 계산, DB 저장, 알람, MQTT/API 숫자 필드 및 CSV 숫자 원본은 변경하지 않습니다.",
-                                              "Trend History에 오늘·어제·최근 7일·이번 주·이번 달·사용자 지정 기간을 지원하는 누적 사용량 창을 추가했습니다.",
-                                              "선택한 장치 Accumulator PDI를 라이브 카드와 동일한 IODD 디코드·Scale·Offset·단위로 일·주·월별 집계합니다.",
-                                              "처음값과 마지막값만 빼지 않고 양의 증분을 합산하여 장치 리셋과 확인 가능한 unsigned 카운터 롤오버를 보정합니다.",
-                                              "총 사용량, 시작·종료 누적값, 리셋·롤오버 횟수, 상대 사용량 막대 및 UTF-8 CSV 내보내기를 제공합니다.",
-                                              "v685 최초 연결 신원 차단과 v684 재연결 매핑 안정화 동작을 유지합니다."
+                                              "런타임 제품명 갱신 어댑터의 빌드 오류 CS8209를 수정했습니다.",
+                                              "void 반환 EnqueueAuto_ProductName 호출 결과를 discard에 대입하던 코드를 제거하고 검증된 v684 방식의 메서드 그룹 연결로 복원했습니다.",
+                                              "v695 시작 식별 큐 롤백과 v693 VDM/IODD 변경은 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "PC再起動後のコールドスタートまたは再接続で識別マッピングが停止する問題を修正し、ISDU Managerの登録済み作業集合を自動識別キューの単一基準として使用します。",
-                                              "CancelAll時にWorkerのローカル優先バッファへ移動済みの要求も無効化し、キャンセル済み作業による古いhandoffを防止します。",
-                                              "ポーリングや20秒のUI pending回収に依存しない1秒周期の独立監視で、接続済み未解決ポートの不足作業を再構築します。",
-                                              "VDM28のスカラーProcessDataIn距離チャネルに単位が表示されない問題を修正し、既存の保守的なDistance→mm IODD単位解決を適用します。",
-                                              "IODDカタログスキーマ19で既存キャッシュを再インデックスし、手動マッピングを保持したまま接続中の自動カードマッピングを再適用します。",
-                                              "Port 1後に停止することがあった起動・再接続時の識別キューを修正し、次の未解決接続ポートへ自動継続します。",
-                                              "Pepperl+Fuchs、SMCおよび標準IODDの製品画像を自動抽出し、Homeカード、IODD Manager、タブレット画面に配置します。",
-                                              "正の工学値をライブカード、Trend History、積算使用量画面で3桁区切り表示し、DB・計算・CSVの数値は変更しません。",
-                                              "Trend Historyに日・週・月別の積算使用量集計、リセット／ロールオーバー補正、CSV出力を追加しました。"
+                                              "ランタイム製品名更新アダプターのビルドエラーCS8209を修正しました。",
+                                              "void戻り値をdiscardへ代入せず、検証済みv684のメソッドグループ接続へ復元しました。"
                                           ],
                                    "zh":  [
-                                              "修复电脑重启后的冷启动或重连过程中设备识别映射卡住的问题，并将ISDU Manager的已注册任务集合用作自动识别队列的唯一状态源。",
-                                              "CancelAll时同时使Worker本地优先级缓冲区中的请求失效，防止已取消的启动任务继续产生陈旧handoff。",
-                                              "使用独立的一秒队列监视器重建已连接但未识别端口的缺失任务，不再依赖轮询回调或20秒UI pending回收。",
-                                              "修复VDM28标量ProcessDataIn距离通道单位为空的问题，并复用现有的保守型Distance→mm IODD单位解析。",
-                                              "将IODD目录架构升级到19以重建旧缓存摘要，并在不覆盖手动映射的情况下重新应用已连接端口的自动卡片映射。",
-                                              "修复启动或重连时身份映射停在端口1的问题，并自动继续处理下一个已连接且未识别的端口。",
-                                              "自动提取Pepperl+Fuchs、SMC及标准IODD的产品图片，并显示在Home卡片、IODD Manager和网页平板界面。",
-                                              "实时卡片、Trend History和累计用量界面的正工程值按三位分隔显示，数据库、计算和CSV数值保持不变。",
-                                              "在Trend History中新增按日、周、月的累计用量汇总、复位/回卷补偿和CSV导出。"
+                                              "修复运行时产品名称刷新适配器中的构建错误CS8209。",
+                                              "移除对void返回值的discard赋值，并恢复已验证的v684方法组绑定。"
                                           ],
                                    "de":  [
-                                              "Behebt ein festhängendes Identitäts-Mapping nach PC-Neustart oder Wiederverbindung, indem die registrierten ISDU-Arbeiten als alleinige Queue-Quelle verwendet werden.",
-                                              "Invalidiert bei CancelAll auch bereits im lokalen Prioritätspuffer des Workers befindliche Anforderungen und verhindert dadurch veraltete Handoffs.",
-                                              "Ein unabhängiger Ein-Sekunden-Wächter rekonstruiert fehlende Aufgaben für verbundene, noch nicht identifizierte Ports ohne Abhängigkeit vom Polling oder einem 20-Sekunden-UI-Timeout.",
-                                              "Behebt die leere Einheit beim skalaren VDM28-ProcessDataIn-Distanzkanal, indem der bestehende konservative Distance-zu-mm-IODD-Resolver verwendet wird.",
-                                              "Indiziert vorhandene IODD-ProcessData-Zusammenfassungen mit Katalogschema 19 neu und wendet verbundene automatische Kartenabbildungen erneut an, ohne manuelle Abbildungen zu überschreiben.",
-                                              "Die beim Start oder Wiederverbinden gelegentlich nach Port 1 stoppende Identitätswarteschlange wird nun automatisch mit dem nächsten verbundenen, nicht aufgelösten Port fortgesetzt.",
-                                              "Produktbilder aus Pepperl+Fuchs-, SMC- und standardkonformen IODDs werden automatisch extrahiert und in Home-Karten, IODD Manager und Tablet-Dashboard angezeigt.",
-                                              "Positive Engineering-Werte erhalten in Live-Karten, Trend History und Zählerauswertung Dreiergruppierung; DB-, Rechen- und CSV-Werte bleiben unverändert.",
-                                              "Trend History erhält tägliche, wöchentliche und monatliche Zählerauswertungen mit Reset-/Überlaufkorrektur und CSV-Export."
+                                              "Behebt den Buildfehler CS8209 im Runtime-Adapter für die Produktnamen-Aktualisierung.",
+                                              "Stellt die verifizierte v684-Methodengruppenbindung für den void-Callback wieder her."
                                           ],
                                    "es":  [
-                                              "Corrige el bloqueo del mapeo de identidad durante el arranque en frío o la reconexión después de reiniciar el PC, usando los trabajos registrados del ISDU Manager como única fuente de estado de la cola.",
-                                              "CancelAll invalida también las solicitudes que ya estaban en el búfer local de prioridad del worker, evitando handoffs obsoletos.",
-                                              "Un supervisor independiente de un segundo reconstruye los trabajos faltantes de puertos conectados sin identificar, sin depender del polling ni del timeout de 20 segundos de la interfaz.",
-                                              "Corrige la unidad vacía del canal de distancia ProcessDataIn escalar del VDM28 reutilizando el resolvedor IODD conservador Distance→mm existente.",
-                                              "Reindexa los resúmenes ProcessData almacenados con el esquema de catálogo 19 y reaplica los mapeos automáticos conectados sin sobrescribir los mapeos manuales.",
-                                              "Corrige la cola de identificación que podía detenerse después del puerto 1 al iniciar o reconectar y continúa automáticamente con el siguiente puerto conectado sin resolver.",
-                                              "Las imágenes de producto de IODD de Pepperl+Fuchs, SMC y otros IODD estándar se extraen automáticamente y se muestran en Home, IODD Manager y el panel web.",
-                                              "Los valores de ingeniería positivos se muestran con separadores de miles en tarjetas, Trend History y acumuladores sin cambiar DB, cálculos ni valores CSV.",
-                                              "Trend History incorpora agregación diaria, semanal y mensual del acumulador, compensación de reinicios/desbordamientos y exportación CSV."
+                                              "Corrige el error de compilación CS8209 en el adaptador de actualización del nombre de producto.",
+                                              "Restaura la vinculación de grupo de método verificada de v684 para el callback void."
                                           ]
                                }
 }
