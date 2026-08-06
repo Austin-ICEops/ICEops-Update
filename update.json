@@ -1,17 +1,19 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.689",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.689/ICEops_Setup_1.0.0.689.exe",
-    "sha256":  "374f212305eacfc8dc0b526f969d8f6bdf1617bacf69353ea016e8c780af12a7",
-    "fileName":  "ICEops_Setup_1.0.0.689.exe",
+    "version":  "1.0.0.690",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.690/ICEops_Setup_1.0.0.690.exe",
+    "sha256":  "13e9857d3aa7a9d34821e9529ebb36f14aef49ed89d8af82b7e9d9fd0b79aee8",
+    "fileName":  "ICEops_Setup_1.0.0.690.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T11:47:07.8593174+00:00",
+    "publishedAtUtc":  "2026-08-06T11:55:49.6297313+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
+                                              "Fixes startup/reconnect identity mapping stopping after Port 1 by explicitly handing the serial ISDU queue to the next connected unresolved port.",
+                                              "Recovers orphaned identity-pending latches after canceled or lost queue work so ports cannot remain indefinitely in Identifying device state.",
                                               "Automatically extracts IODD deviceSymbol, deviceIcon, and VendorLogo graphics for Pepperl+Fuchs, SMC, and other standards-compliant IODDs.",
                                               "Shows the cached product image beside the manufacturer logo on Home cards, in IODD Manager, and on the tablet dashboard without opening ZIP files during polling.",
                                               "Backfills images for already-registered IODDs once at startup and clears the image while a fresh device identity is pending.",
@@ -24,6 +26,8 @@
                                               "Retains the v685 first-connect identity gate and the v684 reconnect mapping stability fixes."
                                           ],
                                    "ko":  [
+                                              "시작 및 재연결 시 Port 1 이후 장치 식별 매핑이 정지하던 문제를 수정하고 다음 연결 포트로 ISDU 직렬 큐를 명시적으로 전달합니다.",
+                                              "취소되거나 유실된 큐 작업의 식별 대기 플래그를 자동 회수하여 포트가 장치 식별 중 상태에 영구 정지하지 않도록 보강했습니다.",
                                               "Pepperl+Fuchs, SMC 및 표준 IODD의 deviceSymbol·deviceIcon·VendorLogo 이미지를 자동 추출합니다.",
                                               "폴링 중 ZIP을 열지 않고 캐시된 제품 사진을 Home 카드의 제조사 로고 옆, IODD Manager 및 태블릿 웹에 함께 표시합니다.",
                                               "기존 등록 IODD도 시작 시 한 번 자동 보강하며 새 장치 식별 중에는 이전 제품 사진을 노출하지 않습니다.",
@@ -36,21 +40,25 @@
                                               "v685 최초 연결 신원 차단과 v684 재연결 매핑 안정화 동작을 유지합니다."
                                           ],
                                    "ja":  [
+                                              "Port 1後に停止することがあった起動・再接続時の識別キューを修正し、次の未解決接続ポートへ自動継続します。",
                                               "Pepperl+Fuchs、SMCおよび標準IODDの製品画像を自動抽出し、Homeカード、IODD Manager、タブレット画面に配置します。",
                                               "正の工学値をライブカード、Trend History、積算使用量画面で3桁区切り表示し、DB・計算・CSVの数値は変更しません。",
                                               "Trend Historyに日・週・月別の積算使用量集計、リセット／ロールオーバー補正、CSV出力を追加しました。"
                                           ],
                                    "zh":  [
+                                              "修复启动或重连时身份映射停在端口1的问题，并自动继续处理下一个已连接且未识别的端口。",
                                               "自动提取Pepperl+Fuchs、SMC及标准IODD的产品图片，并显示在Home卡片、IODD Manager和网页平板界面。",
                                               "实时卡片、Trend History和累计用量界面的正工程值按三位分隔显示，数据库、计算和CSV数值保持不变。",
                                               "在Trend History中新增按日、周、月的累计用量汇总、复位/回卷补偿和CSV导出。"
                                           ],
                                    "de":  [
+                                              "Die beim Start oder Wiederverbinden gelegentlich nach Port 1 stoppende Identitätswarteschlange wird nun automatisch mit dem nächsten verbundenen, nicht aufgelösten Port fortgesetzt.",
                                               "Produktbilder aus Pepperl+Fuchs-, SMC- und standardkonformen IODDs werden automatisch extrahiert und in Home-Karten, IODD Manager und Tablet-Dashboard angezeigt.",
                                               "Positive Engineering-Werte erhalten in Live-Karten, Trend History und Zählerauswertung Dreiergruppierung; DB-, Rechen- und CSV-Werte bleiben unverändert.",
                                               "Trend History erhält tägliche, wöchentliche und monatliche Zählerauswertungen mit Reset-/Überlaufkorrektur und CSV-Export."
                                           ],
                                    "es":  [
+                                              "Corrige la cola de identificación que podía detenerse después del puerto 1 al iniciar o reconectar y continúa automáticamente con el siguiente puerto conectado sin resolver.",
                                               "Las imágenes de producto de IODD de Pepperl+Fuchs, SMC y otros IODD estándar se extraen automáticamente y se muestran en Home, IODD Manager y el panel web.",
                                               "Los valores de ingeniería positivos se muestran con separadores de miles en tarjetas, Trend History y acumuladores sin cambiar DB, cálculos ni valores CSV.",
                                               "Trend History incorpora agregación diaria, semanal y mensual del acumulador, compensación de reinicios/desbordamientos y exportación CSV."
