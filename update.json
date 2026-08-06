@@ -1,39 +1,59 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.684",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.684/ICEops_Setup_1.0.0.684.exe",
-    "sha256":  "e06fc8d18f996af16cff53806d759628f6237119291f5b33dcaaba44f2e1cc12",
-    "fileName":  "ICEops_Setup_1.0.0.684.exe",
+    "version":  "1.0.0.688",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.688/ICEops_Setup_1.0.0.688.exe",
+    "sha256":  "f83b2814ce0536178fa9a76d65e7cb68b62e9766df0aa5bfb232af90e1f336bb",
+    "fileName":  "ICEops_Setup_1.0.0.688.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-05T17:22:45.4018779+00:00",
+    "publishedAtUtc":  "2026-08-06T11:34:06.6459304+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Restores automatic IODD mapping that was unintentionally disabled by the v671 emergency freeze rollback.",
-                                              "Cold-start catalog preparation runs on one shared background task, and connected ports are applied one at a time through a single gate.",
-                                              "Each port/product identity is applied only once per session after a successful mapping, preventing runtime remapping loops and UI freezing.",
-                                              "Restores SMC PDI mapping and OBE/OMD PDO output capability detection while preserving manual mappings."
+                                              "Automatically extracts IODD deviceSymbol, deviceIcon, and VendorLogo graphics for Pepperl+Fuchs, SMC, and other standards-compliant IODDs.",
+                                              "Shows the cached product image beside the manufacturer logo on Home cards, in IODD Manager, and on the tablet dashboard without opening ZIP files during polling.",
+                                              "Backfills images for already-registered IODDs once at startup and clears the image while a fresh device identity is pending.",
+                                              "Formats positive engineering values with invariant three-digit separators across live cards, Trend History values and tooltips, and Accumulator Usage summaries.",
+                                              "Keeps raw values, engineering calculations, database storage, alarms, MQTT/API numeric fields, and CSV numeric exports unchanged.",
+                                              "Adds an Accumulator Usage window to Trend History with today, yesterday, last 7 days, current week, current month, and custom ranges.",
+                                              "Aggregates the selected device accumulator PDI by day, week, or month using the same IODD decode, scale, offset, and unit as the live card.",
+                                              "Compensates verified unsigned counter rollovers and device resets by summing positive increments instead of subtracting only the first and last values.",
+                                              "Shows total, start/end accumulator values, reset/rollover counts, relative usage bars, and exports the aggregated table to UTF-8 CSV.",
+                                              "Retains the v685 first-connect identity gate and the v684 reconnect mapping stability fixes."
                                           ],
                                    "ko":  [
-                                              "v671 긴급 프리징 롤백에서 함께 차단된 IODD 자동매핑 실행 경로를 복구했습니다.",
-                                              "콜드 스타트 카탈로그 준비는 하나의 공유 백그라운드 작업으로 실행하고, 연결 포트는 단일 게이트에서 한 포트씩 순차 적용합니다.",
-                                              "성공한 포트와 제품 조합은 세션 중 한 번만 적용하여 운전 중 반복 재매핑과 UI 프리징을 방지합니다.",
-                                              "수동 매핑을 보호하면서 SMC PDI 자동매핑과 OBE/OMD PDO 출력 기능 인식을 복구했습니다."
+                                              "Pepperl+Fuchs, SMC 및 표준 IODD의 deviceSymbol·deviceIcon·VendorLogo 이미지를 자동 추출합니다.",
+                                              "폴링 중 ZIP을 열지 않고 캐시된 제품 사진을 Home 카드의 제조사 로고 옆, IODD Manager 및 태블릿 웹에 함께 표시합니다.",
+                                              "기존 등록 IODD도 시작 시 한 번 자동 보강하며 새 장치 식별 중에는 이전 제품 사진을 노출하지 않습니다.",
+                                              "실시간 카드, Trend History 값·툴팁 및 누적 사용량 집계의 양수 공학값에 3자리 구분 기호를 적용했습니다.",
+                                              "Raw 값, 공학값 계산, DB 저장, 알람, MQTT/API 숫자 필드 및 CSV 숫자 원본은 변경하지 않습니다.",
+                                              "Trend History에 오늘·어제·최근 7일·이번 주·이번 달·사용자 지정 기간을 지원하는 누적 사용량 창을 추가했습니다.",
+                                              "선택한 장치 Accumulator PDI를 라이브 카드와 동일한 IODD 디코드·Scale·Offset·단위로 일·주·월별 집계합니다.",
+                                              "처음값과 마지막값만 빼지 않고 양의 증분을 합산하여 장치 리셋과 확인 가능한 unsigned 카운터 롤오버를 보정합니다.",
+                                              "총 사용량, 시작·종료 누적값, 리셋·롤오버 횟수, 상대 사용량 막대 및 UTF-8 CSV 내보내기를 제공합니다.",
+                                              "v685 최초 연결 신원 차단과 v684 재연결 매핑 안정화 동작을 유지합니다."
                                           ],
                                    "ja":  [
-                                              "v671で無効化されたIODD自動マッピングを、ポート単位の順次バックグラウンド処理で復元しました。"
+                                              "Pepperl+Fuchs、SMCおよび標準IODDの製品画像を自動抽出し、Homeカード、IODD Manager、タブレット画面に配置します。",
+                                              "正の工学値をライブカード、Trend History、積算使用量画面で3桁区切り表示し、DB・計算・CSVの数値は変更しません。",
+                                              "Trend Historyに日・週・月別の積算使用量集計、リセット／ロールオーバー補正、CSV出力を追加しました。"
                                           ],
                                    "zh":  [
-                                              "恢复了v671中被禁用的IODD自动映射，并通过逐端口后台串行处理防止界面冻结。"
+                                              "自动提取Pepperl+Fuchs、SMC及标准IODD的产品图片，并显示在Home卡片、IODD Manager和网页平板界面。",
+                                              "实时卡片、Trend History和累计用量界面的正工程值按三位分隔显示，数据库、计算和CSV数值保持不变。",
+                                              "在Trend History中新增按日、周、月的累计用量汇总、复位/回卷补偿和CSV导出。"
                                           ],
                                    "de":  [
-                                              "Stellt die in v671 deaktivierte automatische IODD-Zuordnung mit serieller Hintergrundverarbeitung pro Port wieder her."
+                                              "Produktbilder aus Pepperl+Fuchs-, SMC- und standardkonformen IODDs werden automatisch extrahiert und in Home-Karten, IODD Manager und Tablet-Dashboard angezeigt.",
+                                              "Positive Engineering-Werte erhalten in Live-Karten, Trend History und Zählerauswertung Dreiergruppierung; DB-, Rechen- und CSV-Werte bleiben unverändert.",
+                                              "Trend History erhält tägliche, wöchentliche und monatliche Zählerauswertungen mit Reset-/Überlaufkorrektur und CSV-Export."
                                           ],
                                    "es":  [
-                                              "Restaura el mapeo IODD automático deshabilitado en v671 mediante procesamiento secuencial en segundo plano por puerto."
+                                              "Las imágenes de producto de IODD de Pepperl+Fuchs, SMC y otros IODD estándar se extraen automáticamente y se muestran en Home, IODD Manager y el panel web.",
+                                              "Los valores de ingeniería positivos se muestran con separadores de miles en tarjetas, Trend History y acumuladores sin cambiar DB, cálculos ni valores CSV.",
+                                              "Trend History incorpora agregación diaria, semanal y mensual del acumulador, compensación de reinicios/desbordamientos y exportación CSV."
                                           ]
                                }
 }
