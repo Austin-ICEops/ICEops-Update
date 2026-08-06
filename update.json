@@ -1,49 +1,49 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.698",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.698/ICEops_Setup_1.0.0.698.exe",
-    "sha256":  "6ebf2bc687fc6289377c995a5d67174873aafa6df46556fe4a160274c547db0d",
-    "fileName":  "ICEops_Setup_1.0.0.698.exe",
+    "version":  "1.0.0.699",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.699/ICEops_Setup_1.0.0.699.exe",
+    "sha256":  "bcec2fa589bb2d0215893fd625fc2a94cd540c9440d755499522587082d6c0ee",
+    "fileName":  "ICEops_Setup_1.0.0.699.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T14:52:01.1520193+00:00",
+    "publishedAtUtc":  "2026-08-06T15:21:15.3996497+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixes the reconnect mapping regression where Port 1 was repeatedly re-identified while Ports 2-8 remained in the identity-pending state.",
-                                              "Keeps the last verified ProductName, PDI/PDO mapping, and cached IODD product image across transport reconnects instead of clearing all eight port identities.",
-                                              "Prevents a transient empty ProductName during reconnect from cancelling an in-flight concrete identity request and resetting the per-port deduplication token.",
-                                              "Treats reconnect as a transport event; only a confirmed no-device state or a concrete different ProductName replaces the saved mapping for that port.",
-                                              "Retains all v697 features, including Home/IODD Manager/tablet PNG display, VDM28 Distance-to-mm fallback, positive digit grouping, and catalog startup isolation."
+                                              "Fixes the cold-start regression where Port 1 entered automatic ISDU identification before Ports 2-8 completed their initial status probes, leaving later ports unmapped until reconnect.",
+                                              "Changes startup ProductName discovery to a two-phase sequence: capture all enabled port snapshots first, then enqueue identity reads in Port 1-8 order.",
+                                              "Adds a single-flight guard so overlapping startup/connect warm-up requests cannot enqueue duplicate Port 1 identity work.",
+                                              "Backfills device symbols and product images for existing IODD catalog rows even when their process-data schema is already current, resolving the issue where only the bundled SMC device showed a product image.",
+                                              "Retains v698 reconnect identity-cache preservation, VDM28 Distance-to-mm fallback, positive digit grouping, and startup catalog isolation."
                                           ],
                                    "ko":  [
-                                              "재연결 시 Port 1이 반복 식별되고 Port 2~8이 장치 식별 대기 상태에 남는 자동 매핑 회귀를 수정했습니다.",
-                                              "전송 재연결 시 8개 포트 제품명을 전부 지우지 않고 마지막으로 검증된 ProductName, PDI/PDO 매핑 및 IODD 제품 PNG 캐시를 유지합니다.",
-                                              "재연결 중 일시적으로 ProductName이 비어도 진행 중인 실제 장치 식별 요청을 취소하거나 포트별 중복 방지 토큰을 초기화하지 않습니다.",
-                                              "재연결은 통신 이벤트로만 처리하며, 실제 No-device 또는 다른 ProductName이 확인된 포트만 기존 매핑을 교체합니다.",
-                                              "V697의 Home/IODD Manager/태블릿 PNG 표시, VDM28 Distance→mm 보정, 양수 3자리 구분 및 시작 전 카탈로그 격리 기능은 모두 유지합니다."
+                                              "프로그램 최초 연결 시 Port 1 자동 ISDU 식별이 Port 2~8 초기 상태 읽기보다 먼저 큐를 선점하여, 재연결 전까지 후속 포트가 매핑되지 않던 문제를 수정했습니다.",
+                                              "시작 시 ProductName 식별을 2단계로 변경하여 8개 포트 상태 스냅샷을 먼저 모두 확보한 뒤 Port 1→8 순서로 장치 식별을 등록합니다.",
+                                              "시작·연결 warm-up이 중복 실행되어 Port 1 식별 요청이 겹치지 않도록 단일 실행 가드를 추가했습니다.",
+                                              "프로세스 데이터 스키마가 이미 최신인 기존 IODD 항목도 제품 이미지 캐시를 별도로 백필하여 SMC만 사진이 나오던 문제를 수정했습니다.",
+                                              "V698의 재연결 ProductName·PDI/PDO 매핑 유지, VDM28 Distance→mm 보정, 양수 3자리 구분 및 연결 전 카탈로그 격리는 유지합니다."
                                           ],
                                    "ja":  [
-                                              "再接続時にPort 1が繰り返し識別され、Port 2～8が識別待ちに残る回帰を修正しました。",
-                                              "再接続では検証済みのProductName、PDI/PDOマッピング、IODD製品画像キャッシュを維持します。",
-                                              "一時的な空ProductNameで進行中の識別要求をキャンセルせず、実際の未接続または別製品確認時のみ該当ポートを更新します。"
+                                              "初回接続時にPort 1のISDU識別がPort 2～8の初期プローブを先取りし、再接続まで後続ポートがマッピングされない問題を修正しました。",
+                                              "全ポートの状態スナップショットを先に取得し、その後Port 1～8の順で識別要求を登録する二段階ウォームアップに変更しました。",
+                                              "既存IODDの製品画像キャッシュも個別にバックフィルし、SMCだけ画像が表示される問題を修正しました。"
                                           ],
                                    "zh":  [
-                                              "修复重连时端口1被重复识别、端口2至8一直停留在等待识别状态的问题。",
-                                              "重连时保留已验证的ProductName、PDI/PDO映射和IODD产品图片缓存，不再清空全部端口身份。",
-                                              "临时空ProductName不会取消正在进行的身份请求；仅在确认无设备或产品不同后替换对应端口映射。"
+                                              "修复首次连接时端口1的ISDU识别抢占端口2至8初始探测，导致后续端口必须重连后才能映射的问题。",
+                                              "启动流程改为两阶段：先读取全部端口状态，再按端口1至8顺序加入身份识别队列。",
+                                              "为现有IODD目录补齐产品图片缓存，修复只有SMC设备显示图片的问题。"
                                           ],
                                    "de":  [
-                                              "Behebt die Reconnect-Regression, bei der Port 1 wiederholt identifiziert wurde und Ports 2-8 im Identitätsstatus hängen blieben.",
-                                              "Behält den verifizierten ProductName, die PDI/PDO-Zuordnung und das IODD-Produktbild über Transport-Reconnects bei.",
-                                              "Ein kurzzeitig leerer ProductName bricht keine laufende Identitätsprüfung mehr ab; nur ein bestätigtes No-Device oder ein anderes Produkt ersetzt die Port-Zuordnung."
+                                              "Behebt den Kaltstartfehler, bei dem die ISDU-Identifikation von Port 1 die Erstabfrage der Ports 2-8 verdrängte und diese erst nach einem Reconnect zugeordnet wurden.",
+                                              "Die Startaufwärmung arbeitet jetzt zweiphasig: zuerst alle Port-Snapshots, danach Identitätsabfragen in der Reihenfolge Port 1 bis 8.",
+                                              "Bestehende IODD-Katalogeinträge erhalten einen separaten Bild-Backfill, sodass nicht mehr nur das SMC-Gerät ein Produktbild zeigt."
                                           ],
                                    "es":  [
-                                              "Corrige la regresión de reconexión que repetía la identificación del puerto 1 y dejaba los puertos 2-8 pendientes.",
-                                              "Conserva ProductName, el mapeo PDI/PDO y la imagen IODD verificados durante una reconexión de transporte.",
-                                              "Un ProductName vacío transitorio ya no cancela la identificación en curso; solo un estado sin dispositivo o un producto diferente reemplaza el mapeo del puerto."
+                                              "Corrige el fallo de arranque en frío donde la identificación ISDU del puerto 1 bloqueaba el sondeo inicial de los puertos 2-8 y obligaba a reconectar.",
+                                              "El calentamiento inicial ahora tiene dos fases: primero captura todos los puertos y después encola la identidad del puerto 1 al 8.",
+                                              "Completa la caché de imágenes de los IODD existentes para que las fotos no aparezcan únicamente en el dispositivo SMC."
                                           ]
                                }
 }
