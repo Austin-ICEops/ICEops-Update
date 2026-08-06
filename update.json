@@ -1,17 +1,18 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.690",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.690/ICEops_Setup_1.0.0.690.exe",
-    "sha256":  "13e9857d3aa7a9d34821e9529ebb36f14aef49ed89d8af82b7e9d9fd0b79aee8",
-    "fileName":  "ICEops_Setup_1.0.0.690.exe",
+    "version":  "1.0.0.691",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.691/ICEops_Setup_1.0.0.691.exe",
+    "sha256":  "a525f825ccf78fb239f28a8e7520d68dbc5a5d696ca753b30e2f76a5f214c4a6",
+    "fileName":  "ICEops_Setup_1.0.0.691.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T11:55:49.6297313+00:00",
+    "publishedAtUtc":  "2026-08-06T12:05:07.0959594+00:00",
     "releaseNotes":  [
                          "ICEops stability and maintenance update"
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
+                                              "Fixes unreadable Accumulator Usage table column-header text by binding its foreground and background to the active theme.",
                                               "Fixes startup/reconnect identity mapping stopping after Port 1 by explicitly handing the serial ISDU queue to the next connected unresolved port.",
                                               "Recovers orphaned identity-pending latches after canceled or lost queue work so ports cannot remain indefinitely in Identifying device state.",
                                               "Automatically extracts IODD deviceSymbol, deviceIcon, and VendorLogo graphics for Pepperl+Fuchs, SMC, and other standards-compliant IODDs.",
@@ -26,6 +27,7 @@
                                               "Retains the v685 first-connect identity gate and the v684 reconnect mapping stability fixes."
                                           ],
                                    "ko":  [
+                                              "기간별 누적 사용량 표의 열 헤더 글자색과 배경색을 현재 테마에 연동하여 보이지 않던 문제를 수정했습니다.",
                                               "시작 및 재연결 시 Port 1 이후 장치 식별 매핑이 정지하던 문제를 수정하고 다음 연결 포트로 ISDU 직렬 큐를 명시적으로 전달합니다.",
                                               "취소되거나 유실된 큐 작업의 식별 대기 플래그를 자동 회수하여 포트가 장치 식별 중 상태에 영구 정지하지 않도록 보강했습니다.",
                                               "Pepperl+Fuchs, SMC 및 표준 IODD의 deviceSymbol·deviceIcon·VendorLogo 이미지를 자동 추출합니다.",
