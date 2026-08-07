@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.717",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.717/ICEops_Setup_1.0.0.717.exe",
-    "sha256":  "f4bb9e8319cb1100aa30bea96842cff57e2557ac1aab22c3716a208d0dbdf856",
-    "fileName":  "ICEops_Setup_1.0.0.717.exe",
+    "version":  "1.0.0.719",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.719/ICEops_Setup_1.0.0.719.exe",
+    "sha256":  "04326b0d1fcbfd07e6301dda99352717e642c3efbfb94a112cfae3ee7a0f49c9",
+    "fileName":  "ICEops_Setup_1.0.0.719.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T05:37:46.5360469+00:00",
+    "publishedAtUtc":  "2026-08-07T06:20:55.6779846+00:00",
     "releaseNotes":  [
                          "Promotes the final V713 REST identity and Automation recovery test build to V714.",
                          "No communication, mapping, polling, scenario-engine, or UI behavior changes were added in this version bump."
