@@ -1,25 +1,27 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.708",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.708/ICEops_Setup_1.0.0.708.exe",
-    "sha256":  "b9a381f19bb7f6ecfb7c7fba5d34adae00ed4e09a8f036c2ab6744b79a8a8eca",
-    "fileName":  "ICEops_Setup_1.0.0.708.exe",
+    "version":  "1.0.0.709",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.709/ICEops_Setup_1.0.0.709.exe",
+    "sha256":  "fdba9dbab9865871c796dd7e549185a0740033cb6bf777ece5c9aa3bee5237c5",
+    "fileName":  "ICEops_Setup_1.0.0.709.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T00:10:51.9425122+00:00",
+    "publishedAtUtc":  "2026-08-07T00:18:50.1650237+00:00",
     "releaseNotes":  [
-                         "Fix hot-swap empty identity retry and preserve sequential IODD mapping."
+                         "Prevents a non-responsive device identity read from delaying later ports.",
+                         "An empty-identity port is deferred after the first bounded attempt during the primary P1-to-P8 pass.",
+                         "The deferred port is retried afterward through the existing SerialCommandQueue only."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "A hot-swapped device is no longer treated as identified when ProductName resolves empty.",
-                                              "Only the affected port is force-retried inside the existing sequential SerialCommandQueue pipeline.",
-                                              "ICA-SB-MCST-55MM IODD matching and all V706 features are preserved."
+                                              "Prevents a non-responsive device identity read from delaying later ports.",
+                                              "An empty-identity port is deferred after the first bounded attempt during the primary P1-to-P8 pass.",
+                                              "The deferred port is retried afterward through the existing SerialCommandQueue only."
                                           ],
                                    "ko":  [
-                                              "핫스왑 장치의 ProductName이 빈 값으로 끝난 경우 성공 처리하지 않고 해당 포트만 재식별합니다.",
-                                              "빈 Identity 재시도는 기존 SerialCommandQueue 순차 파이프라인 안에서 수행됩니다.",
-                                              "ICA-SB-MCST-55MM IODD 자동 매칭과 기존 V706 기능을 유지합니다."
+                                              "ProductName을 반환하지 않는 장치가 있어도 후속 포트 식별이 장시간 지연되지 않도록 개선했습니다.",
+                                              "초기 P1→P8 순차 패스에서는 빈 Identity 포트를 첫 제한시간 후 보류하고 다음 포트를 계속 처리합니다.",
+                                              "보류 포트는 시작 게이트 해제 후 기존 SerialCommandQueue를 통해 해당 포트만 백그라운드 재시도합니다."
                                           ],
                                    "ja":  [
                                               "ホットスワップ後にProductNameが空の場合は識別成功として扱わず、そのポートだけを再試行します。",
