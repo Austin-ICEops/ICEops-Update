@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.712",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.712/ICEops_Setup_1.0.0.712.exe",
-    "sha256":  "9263c01d523a31fc2b702f659b9203777d12485110cd654b2dfcccdad053b469",
-    "fileName":  "ICEops_Setup_1.0.0.712.exe",
+    "version":  "1.0.0.713",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.713/ICEops_Setup_1.0.0.713.exe",
+    "sha256":  "65cbc90190bec4b3767ccf504c932106f325ab49f05f0fe94173a29d28223cec",
+    "fileName":  "ICEops_Setup_1.0.0.713.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T01:23:50.1489124+00:00",
+    "publishedAtUtc":  "2026-08-07T01:52:21.8039297+00:00",
     "releaseNotes":  [
                          "Prevents a non-responsive device identity read from delaying later ports.",
                          "An empty-identity port is deferred after the first bounded attempt during the primary P1-to-P8 pass.",
