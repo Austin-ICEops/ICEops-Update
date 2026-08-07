@@ -1,25 +1,29 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.723",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.723/ICEops_Setup_1.0.0.723.exe",
-    "sha256":  "a934bb5f591d4587707fda8dd84f9a160df64f6e27bc762351b3b720d1a48dc8",
-    "fileName":  "ICEops_Setup_1.0.0.723.exe",
+    "version":  "1.0.0.724",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.724/ICEops_Setup_1.0.0.724.exe",
+    "sha256":  "53fdcc44294087b9e6bb0e1a07cc112309ef6f3bcc73fdb0747053a74ad2f682",
+    "fileName":  "ICEops_Setup_1.0.0.724.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T08:05:41.0577425+00:00",
+    "publishedAtUtc":  "2026-08-07T08:34:20.8418505+00:00",
     "releaseNotes":  [
-                         "Adds a one-shot, SMC-only presentation replay when V720\u0027s offline artwork gate blocks the initial REST/catalog presentation before the port becomes connected.",
-                         "Warms the IODD presentation catalog off the WPF Dispatcher, then refreshes only manufacturer/logo and product-image bindings; PDO identity/capability is not changed by the replay.",
-                         "No V721 Signal Light classification, ICA writer, output-border, or generic connected-edge presentation changes are reintroduced."
+                         "Adds a per-port fresh-identity requirement at physical down/up and explicit connection-session boundaries so stale REST identity cannot immediately re-latch a previous device.",
+                         "Invalidates only the affected Master REST identity cache on a physical port-down and coalesces reconnect/hot-swap REST refresh requests into one serialized management-plane worker.",
+                         "When a fresh serial ProductName disagrees with cached REST identity, the stale REST entry is discarded and refreshed before VendorID/DeviceID/PDO capability continue.",
+                         "Keeps last-known card presentation visible during transition; mapping changes only after fresh identity is verified/published.",
+                         "Preserves V723 SMC startup presentation replay and does not add periodic identity polling or a second Modbus/ISDU transport path."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed the first-start SMC vendor logo and IODD product-image presentation without requiring Disconnect/Connect.",
-                                              "The V720/V722 communication, polling, reconnect, IODD mapping, ISDU, PDO, ICA Tier, and other runtime behavior remain unchanged."
+                                              "Fixed live IO-Link device hot-swap/port-cross-swap identity refresh so a replacement device is re-identified without restarting ICEops.",
+                                              "Disconnect/Connect now invalidates only the management-plane identity session cache and requires one fresh serial identity verification before the REST session latch can be reused.",
+                                              "Retains the V723 SMC first-start logo/product-image presentation fix. Polling cadence, SerialCommandQueue, PDO write safety, and IODD download rules are unchanged."
                                           ],
                                    "ko":  [
-                                              "프로그램 최초 시작 시 SMC 벤더 로고와 IODD 제품 PNG가 표시되지 않고 재연결 후에만 나타나던 현상을 수정했습니다.",
-                                              "V720/V722의 통신, 폴링, 재연결, IODD 매핑, ISDU, PDO, ICA Tier 및 기타 런타임 동작은 변경하지 않았습니다."
+                                              "온라인 상태에서 IO-Link 장치를 포트 간 교차 교체했을 때 이전 장치 매핑이 남고 ICEops를 완전히 재시작해야 갱신되던 현상을 수정했습니다.",
+                                              "Disconnect/Connect 시 표시 중인 카드는 유지하면서 management-plane identity 세션 캐시만 무효화하고, REST 세션 latch 재사용 전에 포트별 fresh serial identity를 1회 검증합니다.",
+                                              "V723의 SMC 최초 실행 로고/제품 PNG 수정은 그대로 유지하며, Polling 주기, SerialCommandQueue, PDO write 안전 경로, IODD 다운로드 규칙은 변경하지 않았습니다."
                                           ]
                                }
 }
