@@ -1,29 +1,13 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.756",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.756/ICEops_Setup_1.0.0.756.exe",
-    "sha256":  "6ea52e29f323e3b037be45637efc2b6640a5429ef5711e4d1ec346fecb56d0ee",
-    "fileName":  "ICEops_Setup_1.0.0.756.exe",
+    "version":  "1.0.0.758",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.758/ICEops_Setup_1.0.0.758.exe",
+    "sha256":  "17c9db70454835a8e158bb17a19d6dd28e9f96bfb70e860c9adbd38d2f9f2ade",
+    "fileName":  "ICEops_Setup_1.0.0.758.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T09:06:05.5508971+00:00",
+    "publishedAtUtc":  "2026-08-07T09:50:25.4012935+00:00",
     "releaseNotes":  [
-                         "V756 is a clean V723 rebase; V724/V725 startup/session invalidation changes are not carried forward.",
-                         "Only stableEdgeDown with PortStateLocal.NoDevice marks the affected port as requiring fresh identity verification.",
-                         "While that physical-edge flag is active, IDENTITY_REST_SESSION_LATCH is bypassed so stale REST identity cannot immediately re-latch the previous device.",
-                         "The existing serial identity read publishes the replacement ProductName and clears the physical-edge flag after success.",
-                         "No new REST refresh worker, generic connection-session invalidation, PortStatus hook, periodic identity polling, or timer-based retry is added."
-                     ],
-    "releaseNotesByLanguage":  {
-                                   "en":  [
-                                              "Rebased cleanly on the verified V723 SMC startup-presentation build and added only physical cross-port hot-swap re-identification.",
-                                              "A confirmed physical NoDevice transition now blocks reuse of the previous REST ProductName latch for that port, forcing one fresh identity read through the existing SerialCommandQueue when the port reconnects.",
-                                              "The V723 SMC first-start logo/product-image replay path and IoddAutoDownloadService startup behavior are unchanged."
-                                          ],
-                                   "ko":  [
-                                              "검증된 V723 SMC 최초 표시 기준본에서 다시 시작하여 물리 포트 교차교체 재식별 기능만 추가했습니다.",
-                                              "실제 NoDevice 전이가 확인된 포트만 이전 REST ProductName 세션 latch 재사용을 차단하고, 포트가 다시 연결되면 기존 SerialCommandQueue를 통해 identity를 1회 새로 읽도록 했습니다.",
-                                              "V723의 SMC 최초 시작 로고/제품 PNG replay 및 IoddAutoDownloadService 초기 동작은 변경하지 않았습니다."
-                                          ]
-                               }
+                         "ICEops stability and maintenance update"
+                     ]
 }
