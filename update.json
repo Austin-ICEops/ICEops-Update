@@ -1,73 +1,52 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.701",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.701/ICEops_Setup_1.0.0.701.exe",
-    "sha256":  "b1b09d5c50053a4c95ab0af0aaf19671861921267c4388ba939ff79d5e373982",
-    "fileName":  "ICEops_Setup_1.0.0.701.exe",
+    "version":  "1.0.0.706",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.706/ICEops_Setup_1.0.0.706.exe",
+    "sha256":  "acf3af1db5402aef36319b4bb66a5fcab3b882458c05cd102566705192d879fc",
+    "fileName":  "ICEops_Setup_1.0.0.706.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T16:33:56.8636025+00:00",
+    "publishedAtUtc":  "2026-08-06T23:59:23.6941147+00:00",
     "releaseNotes":  [
-                         "ICEops stability and maintenance update"
+                         "Added read-only scenario monitoring to the tablet web dashboard.",
+                         "Displays scenario name, current value, state, Simulation/Live mode, active status, last execution time, and run count.",
+                         "Automation editing remains on the Windows application; the web dashboard does not bypass the existing SerialCommandQueue.",
+                         "Fixed CS0103 in SystemSnapshotService by explicitly resolving System.IO.Path."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Coalesces rapid Refresh clicks so only one delayed refresh can run, and suppresses refresh while the startup identity sequence owns the ISDU pipeline.",
-                                              "Coalesces rapid Connect/Disconnect input so only the latest request is executed after a short debounce window.",
-                                              "Retains the verified v700 cold-start sequential P1-to-P8 mapping pipeline unchanged and promotes this build as the release baseline.",
-                                              "Fixes the confirmed cold-start failure where Port 1 completed identity and IODD mapping but Ports 2-8 remained unmapped indefinitely until a manual disconnect/reconnect.",
-                                              "Removes the queue-loss race between automatic ProductName discovery and the engineering-selector manual ISDU batch: startup now queues only one port at a time and waits for its identity, IODD mapping, and selector refresh to become fully idle before advancing.",
-                                              "Arms the startup identity gate before the polling task starts, preventing poll-driven edge detection from pre-enqueuing later ports during the coordinator handover window.",
-                                              "Starts polling before automatic identity work so the existing enqueue guard no longer rejects cold-start requests as polling-off.",
-                                              "Adds STARTUP_ID_SEQUENCE and per-port BEGIN/END/TIMEOUT diagnostics for deterministic cold-start verification.",
-                                              "Retains all v699 functionality, including full IODD product-image backfill, reconnect mapping preservation, VDM28 Distance-to-mm fallback, and positive-value digit grouping."
+                                              "Added read-only scenario monitoring to the tablet web dashboard.",
+                                              "Displays scenario name, current value, state, Simulation/Live mode, active status, last execution time, and run count.",
+                                              "Automation editing remains on the Windows application; the web dashboard does not bypass the existing SerialCommandQueue.",
+                                              "Added desktop/web scenario-active status badges and fixed the previous web scenario monitoring build integration.",
+                                              "Fixed CS0103 in SystemSnapshotService by explicitly resolving System.IO.Path for the web product image filename."
                                           ],
                                    "ko":  [
-                                              "Refresh 연타를 하나의 지연 실행으로 합치고, 시작 식별 시퀀스가 ISDU 파이프라인을 점유하는 동안의 Refresh 요청은 안전하게 무시합니다.",
-                                              "Connect/Disconnect 연타는 짧은 디바운스 후 마지막 요청 하나만 실행하도록 정리했습니다.",
-                                              "검증된 V700 콜드 스타트 P1→P8 순차 매핑 로직은 변경하지 않고 V701을 기준본으로 마감합니다.",
-                                              "콜드 스타트에서 Port 1의 장치 식별과 IODD 매핑만 완료되고 Port 2~8은 수동 Disconnect/Connect 전까지 무기한 매핑되지 않던 현상을 수정했습니다.",
-                                              "자동 ProductName 식별과 엔지니어링 selector 수동 ISDU 배치 사이의 큐 삭제 경쟁을 제거했습니다. 시작 시 한 포트만 등록하고 해당 포트의 장치 식별·IODD 매핑·selector 갱신이 모두 종료된 뒤 다음 포트로 진행합니다.",
-                                              "폴링 작업을 시작하기 전에 시작 식별 게이트를 먼저 활성화하여, 폴링 edge 감지가 coordinator 전환 구간에서 후속 포트를 미리 등록하지 못하도록 했습니다.",
-                                              "기존 enqueue guard가 cold-start 식별 요청을 polling-off로 폐기하지 않도록 폴링을 먼저 활성화한 뒤 순차 식별을 실행합니다.",
-                                              "STARTUP_ID_SEQUENCE 및 포트별 BEGIN/END/TIMEOUT 진단 로그를 추가하여 콜드 스타트 진행을 정확히 검증할 수 있습니다.",
-                                              "V699의 전체 IODD 제품 이미지 백필, 재연결 매핑 유지, VDM28 Distance→mm 보정 및 양수 3자리 구분 기능은 모두 유지합니다."
+                                              "태블릿 웹 대시보드에 읽기 전용 시나리오 모니터링을 추가했습니다.",
+                                              "시나리오 이름, 현재값, 상태, Simulation/Live 모드, 활성 여부, 마지막 실행시간과 실행 횟수를 표시합니다.",
+                                              "시나리오 편집은 Windows 앱에 유지하며 웹은 기존 SerialCommandQueue를 우회하지 않습니다.",
+                                              "데스크톱·웹에 시나리오 모드 작동 상태 배지를 추가하고 이전 웹 시나리오 모니터링 빌드 통합 오류를 수정했습니다.",
+                                              "웹 제품 이미지 파일명 처리에서 System.IO.Path를 명시하여 SystemSnapshotService의 CS0103 빌드 오류를 수정했습니다."
                                           ],
                                    "ja":  [
-                                              "Refresh連打を1回に集約し、起動識別シーケンス中のRefresh要求を安全に抑止します。",
-                                              "Connect/Disconnect連打は短いデバウンス後の最新要求だけを実行します。",
-                                              "検証済みのv700順次マッピングは変更せず、v701を基準版とします。",
-                                              "コールドスタートでPort 1だけ識別・IODDマッピングされ、手動再接続までPort 2～8が停止する問題を修正しました。",
-                                              "起動時は1ポートずつ登録し、識別・IODDマッピング・selector ISDU更新が完全に終了してから次のポートへ進みます。",
-                                              "ポーリング開始前に起動識別ゲートを有効化し、後続ポートの先行登録と手動ISDUバッチによるキュー削除競合を防止します。",
-                                              "V699のIODD画像バックフィル、再接続マッピング保持、VDM28 mm補正を維持します。"
+                                              "v701コアを変更せず、ユーザー設定型のシナリオ自動化タブを追加しました。",
+                                              "ホームカードの代表値、しきい値、保持時間、ヒステリシスからルールを作成できます。",
+                                              "既定はSimulationで、アラームと既存直列キュー経由のPDO出力を提供します。"
                                           ],
                                    "zh":  [
-                                              "合并连续Refresh操作，并在启动识别序列占用ISDU管线时安全忽略刷新请求。",
-                                              "连续Connect/Disconnect操作仅在短暂防抖后执行最后一个请求。",
-                                              "保持已验证的v700端口1至8顺序映射逻辑不变，并将v701作为基准版本。",
-                                              "修复冷启动时仅端口1完成识别和IODD映射，而端口2至8在手动断开重连前一直停滞的问题。",
-                                              "启动时每次只加入一个端口，并等待该端口的身份识别、IODD映射和selector ISDU刷新全部结束后再处理下一个端口。",
-                                              "在启动轮询任务之前先启用身份门控，避免后续端口提前入队并被手动ISDU批处理清空。",
-                                              "保留V699的IODD产品图片回填、重连映射保持和VDM28毫米修正。"
+                                              "在不修改v701通信与串行队列核心的情况下增加用户可配置的场景自动化页面。",
+                                              "可使用主页卡片代表值、阈值、持续时间和迟滞创建规则。",
+                                              "默认使用Simulation，并支持报警及通过现有串行队列执行PDO输出。"
                                           ],
                                    "de":  [
-                                              "Mehrfache Refresh-Klicks werden zusammengefasst; während der Start-Identitätssequenz wird Refresh sicher unterdrückt.",
-                                              "Bei schnellen Connect/Disconnect-Folgen wird nach kurzem Debounce nur die letzte Anforderung ausgeführt.",
-                                              "Die verifizierte sequentielle v700-Zuordnung bleibt unverändert; v701 wird als Basisversion abgeschlossen.",
-                                              "Behebt den Kaltstartfehler, bei dem nur Port 1 identifiziert und zugeordnet wurde, während Ports 2-8 bis zu einem manuellen Reconnect dauerhaft stehen blieben.",
-                                              "Beim Start wird jetzt jeweils nur ein Port eingereiht; erst nach vollständigem Abschluss von Identität, IODD-Zuordnung und Selector-ISDU-Aktualisierung folgt der nächste Port.",
-                                              "Das Start-Gate wird vor dem Polling-Task aktiviert, damit spätere Ports nicht vorzeitig eingereiht und durch einen manuellen ISDU-Batch gelöscht werden.",
-                                              "Die Bildmigration und alle stabilen Funktionen aus v699 bleiben erhalten."
+                                              "Fügt eine konfigurierbare Szenario-Automatisierung hinzu, ohne den verifizierten v701-Kommunikationskern zu ändern.",
+                                              "Regeln verwenden den repräsentativen Home-Kartenwert mit Grenzwert, Haltezeit und Hysterese.",
+                                              "Simulation ist Standard; PDO-Ausgaben laufen ausschließlich über die vorhandene serielle Befehlswarteschlange."
                                           ],
                                    "es":  [
-                                              "Agrupa pulsaciones rápidas de Refresh y bloquea de forma segura el refresco mientras la secuencia de identidad de inicio controla ISDU.",
-                                              "Las pulsaciones rápidas de Connect/Disconnect ejecutan solo la última solicitud tras un breve debounce.",
-                                              "Mantiene sin cambios la secuencia verificada de mapeo v700 y establece v701 como versión base.",
-                                              "Corrige el fallo de arranque en frío donde solo el puerto 1 completaba la identificación y el mapeo IODD, mientras los puertos 2-8 quedaban detenidos hasta una reconexión manual.",
-                                              "Durante el arranque se encola un solo puerto y se espera a que terminen su identidad, mapeo IODD y actualización selector ISDU antes de avanzar.",
-                                              "La compuerta de identidad se activa antes de iniciar el sondeo para impedir que los puertos posteriores se encolen antes de tiempo y sean eliminados por un lote ISDU manual.",
-                                              "Se conservan el backfill de imágenes IODD y las funciones estables de v699."
+                                              "Añade una pestaña de automatización de escenarios sin modificar el núcleo de comunicación validado de v701.",
+                                              "Las reglas usan el valor representativo de la tarjeta principal, umbral, tiempo de permanencia e histéresis.",
+                                              "Simulation es el modo predeterminado y las salidas PDO pasan únicamente por la cola serie existente."
                                           ]
                                }
 }
