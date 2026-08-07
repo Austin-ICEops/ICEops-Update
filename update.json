@@ -1,52 +1,45 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.706",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.706/ICEops_Setup_1.0.0.706.exe",
-    "sha256":  "acf3af1db5402aef36319b4bb66a5fcab3b882458c05cd102566705192d879fc",
-    "fileName":  "ICEops_Setup_1.0.0.706.exe",
+    "version":  "1.0.0.708",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.708/ICEops_Setup_1.0.0.708.exe",
+    "sha256":  "b9a381f19bb7f6ecfb7c7fba5d34adae00ed4e09a8f036c2ab6744b79a8a8eca",
+    "fileName":  "ICEops_Setup_1.0.0.708.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-06T23:59:23.6941147+00:00",
+    "publishedAtUtc":  "2026-08-07T00:10:51.9425122+00:00",
     "releaseNotes":  [
-                         "Added read-only scenario monitoring to the tablet web dashboard.",
-                         "Displays scenario name, current value, state, Simulation/Live mode, active status, last execution time, and run count.",
-                         "Automation editing remains on the Windows application; the web dashboard does not bypass the existing SerialCommandQueue.",
-                         "Fixed CS0103 in SystemSnapshotService by explicitly resolving System.IO.Path."
+                         "Fix hot-swap empty identity retry and preserve sequential IODD mapping."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added read-only scenario monitoring to the tablet web dashboard.",
-                                              "Displays scenario name, current value, state, Simulation/Live mode, active status, last execution time, and run count.",
-                                              "Automation editing remains on the Windows application; the web dashboard does not bypass the existing SerialCommandQueue.",
-                                              "Added desktop/web scenario-active status badges and fixed the previous web scenario monitoring build integration.",
-                                              "Fixed CS0103 in SystemSnapshotService by explicitly resolving System.IO.Path for the web product image filename."
+                                              "A hot-swapped device is no longer treated as identified when ProductName resolves empty.",
+                                              "Only the affected port is force-retried inside the existing sequential SerialCommandQueue pipeline.",
+                                              "ICA-SB-MCST-55MM IODD matching and all V706 features are preserved."
                                           ],
                                    "ko":  [
-                                              "태블릿 웹 대시보드에 읽기 전용 시나리오 모니터링을 추가했습니다.",
-                                              "시나리오 이름, 현재값, 상태, Simulation/Live 모드, 활성 여부, 마지막 실행시간과 실행 횟수를 표시합니다.",
-                                              "시나리오 편집은 Windows 앱에 유지하며 웹은 기존 SerialCommandQueue를 우회하지 않습니다.",
-                                              "데스크톱·웹에 시나리오 모드 작동 상태 배지를 추가하고 이전 웹 시나리오 모니터링 빌드 통합 오류를 수정했습니다.",
-                                              "웹 제품 이미지 파일명 처리에서 System.IO.Path를 명시하여 SystemSnapshotService의 CS0103 빌드 오류를 수정했습니다."
+                                              "핫스왑 장치의 ProductName이 빈 값으로 끝난 경우 성공 처리하지 않고 해당 포트만 재식별합니다.",
+                                              "빈 Identity 재시도는 기존 SerialCommandQueue 순차 파이프라인 안에서 수행됩니다.",
+                                              "ICA-SB-MCST-55MM IODD 자동 매칭과 기존 V706 기능을 유지합니다."
                                           ],
                                    "ja":  [
-                                              "v701コアを変更せず、ユーザー設定型のシナリオ自動化タブを追加しました。",
-                                              "ホームカードの代表値、しきい値、保持時間、ヒステリシスからルールを作成できます。",
-                                              "既定はSimulationで、アラームと既存直列キュー経由のPDO出力を提供します。"
+                                              "ホットスワップ後にProductNameが空の場合は識別成功として扱わず、そのポートだけを再試行します。",
+                                              "再試行は既存の順次SerialCommandQueueパイプライン内で実行されます。",
+                                              "ICA-SB-MCST-55MMのIODD自動マッピングとv706機能を維持します。"
                                           ],
                                    "zh":  [
-                                              "在不修改v701通信与串行队列核心的情况下增加用户可配置的场景自动化页面。",
-                                              "可使用主页卡片代表值、阈值、持续时间和迟滞创建规则。",
-                                              "默认使用Simulation，并支持报警及通过现有串行队列执行PDO输出。"
+                                              "热插拔后若ProductName为空，不再判定为识别成功，而仅重试该端口。",
+                                              "重试继续在现有顺序SerialCommandQueue管线中执行。",
+                                              "保留ICA-SB-MCST-55MM IODD自动匹配及v706全部功能。"
                                           ],
                                    "de":  [
-                                              "Fügt eine konfigurierbare Szenario-Automatisierung hinzu, ohne den verifizierten v701-Kommunikationskern zu ändern.",
-                                              "Regeln verwenden den repräsentativen Home-Kartenwert mit Grenzwert, Haltezeit und Hysterese.",
-                                              "Simulation ist Standard; PDO-Ausgaben laufen ausschließlich über die vorhandene serielle Befehlswarteschlange."
+                                              "Ein leerer ProductName nach einem Hot-Swap gilt nicht mehr als erfolgreiche Identifikation; nur der betroffene Port wird erneut geprüft.",
+                                              "Der Retry bleibt innerhalb der bestehenden sequenziellen SerialCommandQueue-Pipeline.",
+                                              "IODD-Matching für ICA-SB-MCST-55MM und alle v706-Funktionen bleiben erhalten."
                                           ],
                                    "es":  [
-                                              "Añade una pestaña de automatización de escenarios sin modificar el núcleo de comunicación validado de v701.",
-                                              "Las reglas usan el valor representativo de la tarjeta principal, umbral, tiempo de permanencia e histéresis.",
-                                              "Simulation es el modo predeterminado y las salidas PDO pasan únicamente por la cola serie existente."
+                                              "Si ProductName queda vacío tras un cambio en caliente, ya no se considera una identificación correcta y solo se reintenta ese puerto.",
+                                              "El reintento permanece dentro de la canalización secuencial existente de SerialCommandQueue.",
+                                              "Se mantienen el mapeo IODD de ICA-SB-MCST-55MM y todas las funciones de v706."
                                           ]
                                }
 }
