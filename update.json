@@ -1,29 +1,30 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.724",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.724/ICEops_Setup_1.0.0.724.exe",
-    "sha256":  "53fdcc44294087b9e6bb0e1a07cc112309ef6f3bcc73fdb0747053a74ad2f682",
-    "fileName":  "ICEops_Setup_1.0.0.724.exe",
+    "version":  "1.0.0.725",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.725/ICEops_Setup_1.0.0.725.exe",
+    "sha256":  "2d390332ee720207d173ca1f0df29fcea54f2667dd5d7bc9c850a22e8f8c84f0",
+    "fileName":  "ICEops_Setup_1.0.0.725.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T08:34:20.8418505+00:00",
+    "publishedAtUtc":  "2026-08-07T08:48:27.0638762+00:00",
     "releaseNotes":  [
-                         "Adds a per-port fresh-identity requirement at physical down/up and explicit connection-session boundaries so stale REST identity cannot immediately re-latch a previous device.",
-                         "Invalidates only the affected Master REST identity cache on a physical port-down and coalesces reconnect/hot-swap REST refresh requests into one serialized management-plane worker.",
-                         "When a fresh serial ProductName disagrees with cached REST identity, the stale REST entry is discarded and refreshed before VendorID/DeviceID/PDO capability continue.",
-                         "Keeps last-known card presentation visible during transition; mapping changes only after fresh identity is verified/published.",
-                         "Preserves V723 SMC startup presentation replay and does not add periodic identity polling or a second Modbus/ISDU transport path."
+                         "V725 fixes the V724 regression where the SMC vendor logo and IODD product PNG could disappear on first connection.",
+                         "Generic startup/session IsConnected=false transitions no longer invalidate the Master REST presentation token; only confirmed stable physical down edges invalidate a port identity.",
+                         "Explicit Disconnect/Connect still requires fresh serial identity verification but preserves the last REST presentation snapshot until a real hot-swap or serial-vs-REST conflict is confirmed.",
+                         "V724 hot-swap identity refresh logic is otherwise retained."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed live IO-Link device hot-swap/port-cross-swap identity refresh so a replacement device is re-identified without restarting ICEops.",
-                                              "Disconnect/Connect now invalidates only the management-plane identity session cache and requires one fresh serial identity verification before the REST session latch can be reused.",
-                                              "Retains the V723 SMC first-start logo/product-image presentation fix. Polling cadence, SerialCommandQueue, PDO write safety, and IODD download rules are unchanged."
+                                              "V725 fixes the V724 regression where the SMC vendor logo and IODD product PNG could disappear on first connection.",
+                                              "Generic startup/session IsConnected=false transitions no longer invalidate the Master REST presentation token; only confirmed stable physical down edges invalidate a port identity.",
+                                              "Explicit Disconnect/Connect still requires fresh serial identity verification but preserves the last REST presentation snapshot until a real hot-swap or serial-vs-REST conflict is confirmed.",
+                                              "V724 hot-swap identity refresh logic is otherwise retained."
                                           ],
                                    "ko":  [
-                                              "온라인 상태에서 IO-Link 장치를 포트 간 교차 교체했을 때 이전 장치 매핑이 남고 ICEops를 완전히 재시작해야 갱신되던 현상을 수정했습니다.",
-                                              "Disconnect/Connect 시 표시 중인 카드는 유지하면서 management-plane identity 세션 캐시만 무효화하고, REST 세션 latch 재사용 전에 포트별 fresh serial identity를 1회 검증합니다.",
-                                              "V723의 SMC 최초 실행 로고/제품 PNG 수정은 그대로 유지하며, Polling 주기, SerialCommandQueue, PDO write 안전 경로, IODD 다운로드 규칙은 변경하지 않았습니다."
+                                              "V724에서 재발한 최초 연결 시 SMC 제조사 로고 및 IODD 제품 PNG 누락을 수정했습니다.",
+                                              "초기화/세션 재구성 중 발생하는 일반 IsConnected=false 상태에서는 Master REST Presentation 토큰을 삭제하지 않으며, 확정된 stable physical down edge에서만 해당 포트 identity를 무효화합니다.",
+                                              "Disconnect/Connect 시 fresh serial identity 1회 검증은 유지하되, 실제 hot-swap 또는 serial/REST 충돌이 확인되기 전까지 기존 REST Presentation snapshot을 보존합니다.",
+                                              "V724의 온라인 포트 교차교체 재식별 로직은 그대로 유지합니다."
                                           ]
                                }
 }
