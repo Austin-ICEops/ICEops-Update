@@ -1,24 +1,24 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.721",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.721/ICEops_Setup_1.0.0.721.exe",
-    "sha256":  "455ac9124efd37d42f1cb0920bdd51e1bbf0b77f4e08abc145819234ede80318",
-    "fileName":  "ICEops_Setup_1.0.0.721.exe",
+    "version":  "1.0.0.722",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.722/ICEops_Setup_1.0.0.722.exe",
+    "sha256":  "e380a7a0e084188e46aa33a4df1400309835f45ed9a09354c3dc089eeb112914",
+    "fileName":  "ICEops_Setup_1.0.0.722.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T07:21:52.6729651+00:00",
+    "publishedAtUtc":  "2026-08-07T07:31:34.0145582+00:00",
     "releaseNotes":  [
-                         "Promotes the final V713 REST identity and Automation recovery test build to V714.",
-                         "No communication, mapping, polling, scenario-engine, or UI behavior changes were added in this version bump."
+                         "Re-releases the validated V720 runtime baseline as V722 after full rollback of V721.",
+                         "No functional runtime changes were introduced relative to V720; only release/version metadata was promoted to 1.0.0.722."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Released the validated REST identity recursive discovery and Automation persisted-state recovery patch as V714.",
-                                              "No additional functional changes were introduced beyond the final V713 test patch."
+                                              "Re-released the validated V720 runtime baseline as V722 after discarding the V721 changes.",
+                                              "Retains the V720 startup No-device artwork reset and ICA Tier toggle UI exactly as the rollback baseline; no V721 runtime changes are included."
                                           ],
                                    "ko":  [
-                                              "검증 중이던 REST Identity 재귀 탐색 및 시나리오 저장상태 복구 패치를 V714 정식 버전으로 올렸습니다.",
-                                              "최종 V713 테스트 패치 대비 기능 변경 없이 버전만 V714로 승격했습니다."
+                                              "V721 변경사항을 전부 폐기하고 검증된 V720 런타임 기준본을 V722로 재릴리즈합니다.",
+                                              "V720의 시작 시 No device 이미지 잔존 제거 및 ICA Tier 토글 UI를 그대로 유지하며, V721 런타임 변경은 포함하지 않습니다."
                                           ]
                                }
 }
