@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.709",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.709/ICEops_Setup_1.0.0.709.exe",
-    "sha256":  "fdba9dbab9865871c796dd7e549185a0740033cb6bf777ece5c9aa3bee5237c5",
-    "fileName":  "ICEops_Setup_1.0.0.709.exe",
+    "version":  "1.0.0.711",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.711/ICEops_Setup_1.0.0.711.exe",
+    "sha256":  "9994d57c0b6311b0bc3df6816c4d745ef49fadd073f29cc88e84b62f2b07140a",
+    "fileName":  "ICEops_Setup_1.0.0.711.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T00:18:50.1650237+00:00",
+    "publishedAtUtc":  "2026-08-07T00:42:19.0242582+00:00",
     "releaseNotes":  [
                          "Prevents a non-responsive device identity read from delaying later ports.",
                          "An empty-identity port is deferred after the first bounded attempt during the primary P1-to-P8 pass.",
@@ -14,14 +14,10 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Prevents a non-responsive device identity read from delaying later ports.",
-                                              "An empty-identity port is deferred after the first bounded attempt during the primary P1-to-P8 pass.",
-                                              "The deferred port is retried afterward through the existing SerialCommandQueue only."
+                                              "ICA devices can now fall back to exact Vendor ID / Device ID IODD matching when ProductName is empty. Scenario inputs use the same compact multi-row layout as period aggregation."
                                           ],
                                    "ko":  [
-                                              "ProductName을 반환하지 않는 장치가 있어도 후속 포트 식별이 장시간 지연되지 않도록 개선했습니다.",
-                                              "초기 P1→P8 순차 패스에서는 빈 Identity 포트를 첫 제한시간 후 보류하고 다음 포트를 계속 처리합니다.",
-                                              "보류 포트는 시작 게이트 해제 후 기존 SerialCommandQueue를 통해 해당 포트만 백그라운드 재시도합니다."
+                                              "ProductName이 비어 있는 ICA 장치를 Vendor ID / Device ID 정확 일치로 IODD 매칭하며, 시나리오 입력창을 기간별 집계와 같은 다단 정렬형 UI로 개선했습니다."
                                           ],
                                    "ja":  [
                                               "ホットスワップ後にProductNameが空の場合は識別成功として扱わず、そのポートだけを再試行します。",
