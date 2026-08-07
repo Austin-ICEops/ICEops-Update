@@ -1,25 +1,24 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "1.0.0.713",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.713/ICEops_Setup_1.0.0.713.exe",
-    "sha256":  "65cbc90190bec4b3767ccf504c932106f325ab49f05f0fe94173a29d28223cec",
-    "fileName":  "ICEops_Setup_1.0.0.713.exe",
+    "version":  "1.0.0.715",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v1.0.0.715/ICEops_Setup_1.0.0.715.exe",
+    "sha256":  "937d7247df26f44b283b3b885620e2722b8e2f758a582001a2f38a5f88f4932f",
+    "fileName":  "ICEops_Setup_1.0.0.715.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-07T01:52:21.8039297+00:00",
+    "publishedAtUtc":  "2026-08-07T04:28:29.2647270+00:00",
     "releaseNotes":  [
-                         "Prevents a non-responsive device identity read from delaying later ports.",
-                         "An empty-identity port is deferred after the first bounded attempt during the primary P1-to-P8 pass.",
-                         "The deferred port is retried afterward through the existing SerialCommandQueue only."
+                         "Promotes the final V713 REST identity and Automation recovery test build to V714.",
+                         "No communication, mapping, polling, scenario-engine, or UI behavior changes were added in this version bump."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added serial ISDU identity fallback probes for indexes 0x12, 0x13, and 0x10 with per-index diagnostics.",
-                                              "Improved Automation scenario selectors with black readable text and symbolic comparison operators."
+                                              "Released the validated REST identity recursive discovery and Automation persisted-state recovery patch as V714.",
+                                              "No additional functional changes were introduced beyond the final V713 test patch."
                                           ],
                                    "ko":  [
-                                              "ICA 식별 분석을 위해 기존 직렬 ISDU 경로에서 0x12, 0x13, 0x10 인덱스 폴백 및 인덱스별 진단 로그를 추가했습니다.",
-                                              "시나리오 선택창의 기본 텍스트를 검정색으로 개선하고 비교 조건을 ≥, ≤, \u003e, \u003c 기호로 표시합니다."
+                                              "검증 중이던 REST Identity 재귀 탐색 및 시나리오 저장상태 복구 패치를 V714 정식 버전으로 올렸습니다.",
+                                              "최종 V713 테스트 패치 대비 기능 변경 없이 버전만 V714로 승격했습니다."
                                           ]
                                }
 }
