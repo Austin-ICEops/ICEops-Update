@@ -1,13 +1,54 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.69.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.69.0/ICEops_Setup_8.0.69.0.exe",
-    "sha256":  "cd301420e0a38063c2ba3726e197947401df62b690cfe67f08d8df79e2e78a2a",
-    "fileName":  "ICEops_Setup_8.0.69.0.exe",
+    "version":  "8.0.72.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.72.0/ICEops_Setup_8.0.72.0.exe",
+    "sha256":  "463475d4e934943323ac5a2fc6cc0fedcaed494f352dd63cbad120e2fdec709f",
+    "fileName":  "ICEops_Setup_8.0.72.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-11T02:45:59.0006475+00:00",
+    "publishedAtUtc":  "2026-08-11T03:59:10.5815768+00:00",
     "releaseNotes":  [
-                         "ICEops stability and maintenance update"
-                     ]
+                         "Unified the active ICEops release/version pipeline around one canonical release version SSOT.",
+                         "Aligned application metadata, protected installer naming, GitHub Release tag/title, and update manifest versioning.",
+                         "Removed stale legacy release metadata from the active release body/notes pipeline.",
+                         "Added resilient update-manifest retry handling and explicit diagnostic markers for transient network or GitHub timing failures."
+                     ],
+    "releaseNotesByLanguage":  {
+                                   "en":  [
+                                              "Unified the active ICEops release/version pipeline around one canonical release version SSOT.",
+                                              "Aligned application metadata, protected installer naming, GitHub Release tag/title, and update manifest versioning.",
+                                              "Removed legacy release metadata from the active release body and notes pipeline.",
+                                              "Added retry handling and diagnostic markers for transient update-check network failures."
+                                          ],
+                                   "ko":  [
+                                              "ICEops 활성 릴리즈/버전 파이프라인을 하나의 canonical release version SSOT로 통일했습니다.",
+                                              "애플리케이션 메타데이터, 보호 인스톨러 파일명, GitHub Release 태그/제목, update manifest 버전을 동일 기준으로 정렬했습니다.",
+                                              "활성 릴리즈 본문/노트 경로에 남아 있던 과거 버전 메타데이터를 제거했습니다.",
+                                              "일시적인 네트워크 또는 GitHub 응답 지연에 대한 업데이트 확인 retry와 진단 로그를 추가했습니다."
+                                          ],
+                                   "ja":  [
+                                              "ICEops の有効なリリース／バージョン経路を単一の canonical release version SSOT に統一しました。",
+                                              "アプリ情報、保護インストーラー名、GitHub Release タグ／タイトル、update manifest のバージョンを同一基準に揃えました。",
+                                              "有効なリリース本文／ノート経路に残っていた旧バージョン情報を削除しました。",
+                                              "一時的なネットワーク／GitHub 応答遅延に対する更新確認リトライと診断ログを追加しました。"
+                                          ],
+                                   "zh-cn":  [
+                                                 "将 ICEops 当前发布/版本流程统一到一个 canonical release version SSOT。",
+                                                 "统一应用元数据、受保护安装程序文件名、GitHub Release 标签/标题和 update manifest 版本。",
+                                                 "移除当前发布正文/说明流程中残留的旧版本元数据。",
+                                                 "为临时网络或 GitHub 响应延迟增加更新检查重试与诊断日志。"
+                                             ],
+                                   "de":  [
+                                              "Die aktive ICEops Release-/Versionspipeline wurde auf eine einzige kanonische Release-Version als SSOT vereinheitlicht.",
+                                              "Anwendungsmetadaten, geschützter Installername, GitHub-Release-Tag/Titel und Update-Manifest-Version wurden auf denselben Stand gebracht.",
+                                              "Veraltete Versionsmetadaten wurden aus dem aktiven Release-Body-/Notes-Pfad entfernt.",
+                                              "Für vorübergehende Netzwerk- oder GitHub-Verzögerungen wurden Wiederholungen und Diagnoseprotokolle ergänzt."
+                                          ],
+                                   "es":  [
+                                              "Se unificó la canalización activa de versión/publicación de ICEops alrededor de una única versión canónica SSOT.",
+                                              "Se alinearon los metadatos de la aplicación, el nombre del instalador protegido, la etiqueta/título de GitHub Release y la versión del manifest de actualización.",
+                                              "Se eliminaron metadatos de versiones antiguas de la ruta activa del cuerpo/notas de publicación.",
+                                              "Se añadieron reintentos y registros de diagnóstico para fallos temporales de red o retrasos de GitHub."
+                                          ]
+                               }
 }
