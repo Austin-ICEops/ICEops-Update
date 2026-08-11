@@ -1,30 +1,30 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.73.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.73.0/ICEops_Setup_8.0.73.0.exe",
-    "sha256":  "a07cf6a0e037a18a8b49723139a46802191b948ba8693f4de8755305a78bc6b7",
-    "fileName":  "ICEops_Setup_8.0.73.0.exe",
+    "version":  "8.0.74.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.74.0/ICEops_Setup_8.0.74.0.exe",
+    "sha256":  "ddbeeefc432f198c95486a003618a07954e765ec2a70d3b28e63ec3557ea1d21",
+    "fileName":  "ICEops_Setup_8.0.74.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-11T04:19:02.7000807+00:00",
+    "publishedAtUtc":  "2026-08-11T04:40:50.1447234+00:00",
     "releaseNotes":  [
-                         "Fixed the V872 Welcome-to-Running handoff regression in Signal Tower runtime arbitration.",
-                         "Made a successfully committed dual-state Autoscale bank the runtime hardware-verification SSOT instead of gating it on transient engineering catalog projection state.",
-                         "Stopped repeated 7-9 second Autoscale bank preparation loops after Welcome DONE, allowing the sealed-in PRI10 Running state to take control on the next scan.",
-                         "Added explicit invalidation of the fast bank before any ordinary Signal Tower preset/configuration hardware apply, preserving fail-closed safety when the recipe truly changes."
+                         "Removed the residual neutral/OFF gap when a preloaded Signal Tower Alarm bank returns from PRI100 Alarm to sealed-in PRI10 Running.",
+                         "Made Welcome DONE terminal for the current SYSTEM READY cycle so later Alarm activity cannot re-preempt a completed Welcome or emit another Welcome 0% PDO frame.",
+                         "Added a guarded PDO-only winner handoff that suppresses only the one-scan ENO graph-order gap during a confirmed active Fast-Bank transition; intentional steady-state OFF remains fail-safe.",
+                         "Preserved the existing dual-state Autoscale bank, PdoOutputCoordinator hardware-write SSOT, communication, ISDU, polling and protected runtime architecture."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed the V872 Welcome-to-Running handoff regression in Signal Tower runtime arbitration.",
-                                              "A committed dual-state Autoscale bank is now the runtime hardware-verification SSOT and is no longer disabled by transient engineering catalog refresh state.",
-                                              "Removed the repeated Autoscale bank preparation loop after Welcome DONE so PRI10 Running takes control on the next scan.",
-                                              "Ordinary Signal Tower preset/configuration hardware applies explicitly invalidate the bank before changing the recipe."
+                                              "Removed the residual neutral/OFF gap on PRI100 Alarm release back to sealed-in PRI10 Running.",
+                                              "Welcome DONE is now terminal for the current SYSTEM READY cycle and cannot be re-preempted by later Alarm activity.",
+                                              "A guarded PDO-only winner handoff bridges only the transient one-scan ENO gap while the previous hardware output is confirmed active.",
+                                              "Intentional OFF and fail-safe boundaries remain unchanged."
                                           ],
                                    "ko":  [
-                                              "V872에서 발생한 Signal Tower Welcome 완료 후 Running 전환 회귀를 수정했습니다.",
-                                              "성공적으로 COMMIT된 dual-state Autoscale bank를 runtime hardware verification SSOT로 사용하여 일시적인 engineering catalog 갱신이 bank를 무효화하지 않도록 했습니다.",
-                                              "Welcome DONE 이후 반복되던 Autoscale bank 재준비 루프를 제거하여 다음 scan에서 PRI10 Running이 즉시 제어권을 가져오도록 했습니다.",
-                                              "실제 Signal Tower preset/configuration 하드웨어 변경 시에는 bank를 먼저 명시적으로 무효화하여 fail-closed 안전성을 유지합니다."
+                                              "PRI100 Alarm 해제 후 seal-in PRI10 Running으로 복귀할 때 남아 있던 Neutral/OFF 구간을 제거했습니다.",
+                                              "Welcome DONE을 현재 SYSTEM READY 주기의 종결 상태로 고정하여 이후 Alarm이 완료된 Welcome을 다시 PREEMPTED로 만들거나 Welcome 0% PDO를 재출력하지 않도록 했습니다.",
+                                              "이전 하드웨어 출력이 실제 ACTIVE로 확인되고 Fast Bank winner가 변경되는 경우에만 한 scan ENO 공백을 PDO-only direct handoff로 보정합니다.",
+                                              "사용자 의도 OFF와 fail-safe 경계의 Neutral 동작은 그대로 유지합니다."
                                           ]
                                }
 }
