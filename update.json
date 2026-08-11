@@ -1,30 +1,54 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.74.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.74.0/ICEops_Setup_8.0.74.0.exe",
-    "sha256":  "ddbeeefc432f198c95486a003618a07954e765ec2a70d3b28e63ec3557ea1d21",
-    "fileName":  "ICEops_Setup_8.0.74.0.exe",
+    "version":  "8.0.75.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.75.0/ICEops_Setup_8.0.75.0.exe",
+    "sha256":  "44c81609c440838382de3cde58f3ba4cf64cf50fbd33003b0e64dca8d86d371b",
+    "fileName":  "ICEops_Setup_8.0.75.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-11T04:40:50.1447234+00:00",
+    "publishedAtUtc":  "2026-08-11T05:56:05.6031156+00:00",
     "releaseNotes":  [
-                         "Removed the residual neutral/OFF gap when a preloaded Signal Tower Alarm bank returns from PRI100 Alarm to sealed-in PRI10 Running.",
-                         "Made Welcome DONE terminal for the current SYSTEM READY cycle so later Alarm activity cannot re-preempt a completed Welcome or emit another Welcome 0% PDO frame.",
-                         "Added a guarded PDO-only winner handoff that suppresses only the one-scan ENO graph-order gap during a confirmed active Fast-Bank transition; intentional steady-state OFF remains fail-safe.",
-                         "Preserved the existing dual-state Autoscale bank, PdoOutputCoordinator hardware-write SSOT, communication, ISDU, polling and protected runtime architecture."
+                         "Added topology-driven canonical LAD columns/pitch with branch-aware automatic downstream reflow and an explicit Reflow Rung command.",
+                         "LAD edit commits now snap to logical columns while FBD/free-placement networks retain their existing coordinates; downstream reflow is one Undo/Redo transaction.",
+                         "Classified 15-minute Master REST identity refreshes for the same physical device and verified runtime-owned Fast Autoscale bank as a no-op, preventing unnecessary selector ISDU/remap work and preserving MAX polling.",
+                         "Preserved committed Product/Vendor presentation, IODD/Configured Device UI and logo/PNG state on all same-physical-device verified background refreshes, including non-Fast-Bank devices such as P1 SMC; only real identity changes, stale committed Fast Banks or incompatible PDO geometry retain fail-safe remap."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Removed the residual neutral/OFF gap on PRI100 Alarm release back to sealed-in PRI10 Running.",
-                                              "Welcome DONE is now terminal for the current SYSTEM READY cycle and cannot be re-preempted by later Alarm activity.",
-                                              "A guarded PDO-only winner handoff bridges only the transient one-scan ENO gap while the previous hardware output is confirmed active.",
-                                              "Intentional OFF and fail-safe boundaries remain unchanged."
+                                              "Added canonical LAD logical columns and engineering pitch with branch-aware downstream reflow and Reflow Rung.",
+                                              "LAD topology edits reflow only on commit; FBD free placement is unchanged and Undo/Redo restores the complete edit transaction.",
+                                              "Same-device verified Fast Autoscale runtime changes now end as MASTER_REST_IDENTITY_RUNTIME_OWNED_NOOP, skipping selector ISDU/remap and preserving MAX polling.",
+                                              "All same-physical-device verified background refreshes now preserve Product/Vendor presentation, IODD/Configured Device UI and logo/PNG, including non-Fast-Bank devices such as P1 SMC; real identity changes, stale Fast Banks or incompatible PDO geometry still use fail-safe recovery."
                                           ],
                                    "ko":  [
-                                              "PRI100 Alarm 해제 후 seal-in PRI10 Running으로 복귀할 때 남아 있던 Neutral/OFF 구간을 제거했습니다.",
-                                              "Welcome DONE을 현재 SYSTEM READY 주기의 종결 상태로 고정하여 이후 Alarm이 완료된 Welcome을 다시 PREEMPTED로 만들거나 Welcome 0% PDO를 재출력하지 않도록 했습니다.",
-                                              "이전 하드웨어 출력이 실제 ACTIVE로 확인되고 Fast Bank winner가 변경되는 경우에만 한 scan ENO 공백을 PDO-only direct handoff로 보정합니다.",
-                                              "사용자 의도 OFF와 fail-safe 경계의 Neutral 동작은 그대로 유지합니다."
+                                              "브런치를 인식하는 LAD 표준 논리 컬럼/엔지니어링 피치와 후행 자동 재배치, Reflow Rung 기능을 추가했습니다.",
+                                              "LAD 토폴로지 편집은 Commit 시에만 재배치하며 FBD 자유배치는 유지하고 Undo/Redo가 전체 편집 트랜잭션을 복원합니다.",
+                                              "동일 장치의 검증된 Fast Autoscale Runtime 변경은 MASTER_REST_IDENTITY_RUNTIME_OWNED_NOOP로 종료하여 Selector ISDU/Remap을 건너뛰고 MAX Polling을 유지합니다.",
+                                              "동일 물리 장치의 검증된 Background Refresh는 P1 SMC처럼 Fast Bank가 없는 장치도 Product/Vendor 표시, IODD/Configured Device UI, Logo/PNG를 보존하며 실제 장치 교체, stale Fast Bank 또는 호환되지 않는 PDO geometry만 기존 Fail-safe 복구 경로를 사용합니다."
+                                          ],
+                                   "ja":  [
+                                              "ブランチ対応の LAD 標準論理列/エンジニアリングピッチ、下流自動リフロー、Reflow Rung を追加しました。",
+                                              "LAD トポロジ編集は Commit 時のみリフローし、FBD の自由配置は維持され、Undo/Redo は編集トランザクション全体を復元します。",
+                                              "同一デバイスの検証済み Fast Autoscale Runtime 変更は MASTER_REST_IDENTITY_RUNTIME_OWNED_NOOP として終了し、Selector ISDU/Remap を省略して MAX Polling を維持します。",
+                                              "同一物理デバイスの検証済み Background Refresh は、P1 SMC のように Fast Bank を持たないデバイスでも Product/Vendor 表示、IODD/Configured Device UI、Logo/PNG を保持し、実デバイス交換、stale Fast Bank、または互換性のない PDO geometry のみ既存の Fail-safe 回復経路を使用します。"
+                                          ],
+                                   "zh-CN":  [
+                                                 "新增支持分支的 LAD 标准逻辑列/工程间距、下游自动重排以及 Reflow Rung。",
+                                                 "LAD 拓扑编辑仅在提交时重排；FBD 自由布局保持不变，Undo/Redo 可恢复完整编辑事务。",
+                                                 "同一设备且已验证的 Fast Autoscale Runtime 变化现在以 MASTER_REST_IDENTITY_RUNTIME_OWNED_NOOP 结束，跳过 Selector ISDU/Remap 并保持 MAX Polling。",
+                                                 "同一物理设备且已验证的 Background Refresh（包括 P1 SMC 这类没有 Fast Bank 的设备）会保留 Product/Vendor 显示、IODD/Configured Device UI 和 Logo/PNG；只有真实设备更换、过期 Fast Bank 或不兼容的 PDO geometry 才走原有 Fail-safe 恢复路径。"
+                                             ],
+                                   "de":  [
+                                              "Kanonische LAD-Logikspalten und Engineering-Pitch mit branch-bewusstem Downstream-Reflow sowie Reflow Rung wurden ergänzt.",
+                                              "LAD-Topologieänderungen werden nur beim Commit neu angeordnet; freie FBD-Platzierung bleibt unverändert und Undo/Redo stellt die gesamte Edit-Transaktion wieder her.",
+                                              "Verifizierte Fast-Autoscale-Runtime-Änderungen desselben Geräts enden als MASTER_REST_IDENTITY_RUNTIME_OWNED_NOOP, wodurch Selector-ISDU/Remap übersprungen und MAX Polling erhalten wird.",
+                                              "Verifizierte Background-Refreshes desselben physischen Geräts erhalten Product/Vendor-Darstellung, IODD/Configured Device UI und Logo/PNG auch bei Geräten ohne Fast Bank wie P1 SMC; nur echte Gerätewechsel, stale Fast Banks oder inkompatible PDO-Geometrie verwenden den Fail-safe-Recovery-Pfad."
+                                          ],
+                                   "es":  [
+                                              "Se añadieron columnas lógicas y pitch de ingeniería canónicos para LAD, reflow descendente consciente de ramas y Reflow Rung.",
+                                              "Las ediciones de topología LAD se redistribuyen solo al confirmar; la colocación libre FBD no cambia y Undo/Redo restaura toda la transacción de edición.",
+                                              "Los cambios Runtime Fast Autoscale verificados del mismo dispositivo terminan como MASTER_REST_IDENTITY_RUNTIME_OWNED_NOOP, omitiendo Selector ISDU/Remap y conservando MAX Polling.",
+                                              "Los Background Refresh verificados del mismo dispositivo físico conservan Product/Vendor, IODD/Configured Device UI y Logo/PNG incluso en dispositivos sin Fast Bank como P1 SMC; solo un cambio real de dispositivo, un Fast Bank obsoleto o una geometría PDO incompatible usa la recuperación Fail-safe."
                                           ]
                                }
 }
