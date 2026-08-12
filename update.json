@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.95.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.95.0/ICEops_Setup_8.0.95.0.exe",
-    "sha256":  "c952ccc8cbc490a259df460781c6dd139ed9be38bc4d692aae2a8c9c2ef5cbfc",
-    "fileName":  "ICEops_Setup_8.0.95.0.exe",
+    "version":  "8.0.96.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.96.0/ICEops_Setup_8.0.96.0.exe",
+    "sha256":  "4c5d73a9634d62a5d7e9e49d06212f402463aabc6f97ed190dcc869568d3598f",
+    "fileName":  "ICEops_Setup_8.0.96.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-12T05:54:56.4830783+00:00",
+    "publishedAtUtc":  "2026-08-12T06:09:51.7429217+00:00",
     "releaseNotes":  [
                          "V894 addresses the exact 14:25:17 multi-client reproduction: the local V893 instance logged no transport, Refresh, PD-source, identity, latch, or PDO event at the moment the lamp went dark while the diagnostic 17 seconds later still reported TCP connected, 8 ports connected, and Watchdog Ok. This indicates the master\u0027s PDO TX image was changed externally without a local recovery edge.",
                          "LIVE Runtime now performs a bounded read-only PDO continuity audit for ACTIVE Studio output ports. One active port is checked every 200 ms in round-robin order by reading the master\u0027s current last-TX PDO image and comparing it with the existing locally confirmed coordinator shadow.",
