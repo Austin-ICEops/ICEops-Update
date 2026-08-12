@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.89.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.89.0/ICEops_Setup_8.0.89.0.exe",
-    "sha256":  "aabdd96f15fafcd919c285833917fd3f9cbb8cd4536a68daf517f96af77e22c5",
-    "fileName":  "ICEops_Setup_8.0.89.0.exe",
+    "version":  "8.0.90.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.90.0/ICEops_Setup_8.0.90.0.exe",
+    "sha256":  "42156f44394b7d38e8396d3343c9edaa8bb0e21f1777177773bdc2dd56157e91",
+    "fileName":  "ICEops_Setup_8.0.90.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-12T00:30:38.0109721+00:00",
+    "publishedAtUtc":  "2026-08-12T02:16:22.4154820+00:00",
     "releaseNotes":  [
                          "Welcome Light now consumes the hardware-current preset verified by its upstream Signal Tower Config instead of overwriting it with builtin.welcomeLevel. User-defined Welcome colours/segments therefore remain authoritative across cold start and reconnect.",
                          "Signal Tower Config nodes feeding Welcome Light require current hardware projection verification before ENO. Historical trusted verification alone cannot start the Welcome cycle when a different recipe is physically active.",
