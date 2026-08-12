@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.97.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.97.0/ICEops_Setup_8.0.97.0.exe",
-    "sha256":  "cc7d8b863580acbe1bed01b3030754e2f9804a5c65da9a8fdde03eada46a4b16",
-    "fileName":  "ICEops_Setup_8.0.97.0.exe",
+    "version":  "8.0.99.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.99.0/ICEops_Setup_8.0.99.0.exe",
+    "sha256":  "87b3178b355d8967546df34b3e6e67cc014774f4bcbf3e09287bd9665aea3e1a",
+    "fileName":  "ICEops_Setup_8.0.99.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-12T06:58:57.8584354+00:00",
+    "publishedAtUtc":  "2026-08-12T08:43:03.8582803+00:00",
     "releaseNotes":  [
-                         "V897 fixes the multi-client Connect reproduction where the VPN instance completed an 8-port master REST identity scan and logged no-engineering-remap-required, but WarmupOnceAsync still launched the full P1→P8 serial identity/selector sequence seconds later.",
-                         "A connection-generation-scoped REST trust latch now allows WarmupOnceAsync to skip the serial startup identity sweep only when every REST-reported device is independently reusable and no persisted mapping/configuration evidence contradicts the authoritative REST VID/DID.",
-                         "Unknown, partial, stale or changed identity evidence remains fail-closed and uses the unchanged sequential startup identification path. No new PDO writer, transport path or polling scheduler was introduced."
+                         "V898 fixes the reproduced multi-client AUTO LIVE startup interruption where the VPN instance observed an already-active P8=010001, then directly wrote 000000 and replayed Signal Tower Welcome/configuration ISDU before restoring the Running PDO.",
+                         "The V897 REST startup trust handoff is repaired: first-connection generation zero is eliminated, the first process connection can retain a fresh pre-Connect REST decision, and the bounded trust age now covers the existing startup pipeline wait.",
+                         "When the current connection is REST-verified same-device/no-remap and a required PDO is already non-zero, persisted AUTO LIVE warm-adopts startup continuity, holds first-scan PDO writes read-only, and skips Welcome/config neutralization. PdoOutputCoordinator remains the only PDO hardware writer."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Skip redundant P1→P8 serial startup identity/selector work when the current connection\u0027s master REST identity is fully trusted and requires no engineering remap.",
-                                              "REST trust is connection-generation scoped and fails closed on stale, partial, contradictory or changed identity evidence.",
-                                              "Existing transport, polling, ISDU exchange and PdoOutputCoordinator write ownership remain unchanged."
+                                              "Prevent a second AUTO LIVE client from neutralizing an already-running Signal Tower during trusted same-device startup.",
+                                              "Repair the connection-scoped REST startup trust handoff and keep its fail-closed identity behavior.",
+                                              "Warm-adopt retained active PDO continuity with a read-only first-scan output hold, without adding another PDO writer or heartbeat."
                                           ],
                                    "ko":  [
-                                              "현재 연결의 Master REST identity가 완전히 신뢰 가능하고 engineering remap이 불필요한 경우 중복 P1→P8 serial startup identity/selector 작업을 건너뜁니다.",
-                                              "REST trust는 connection generation 단위로 제한되며 stale/partial/contradictory/device-changed 근거가 있으면 기존 fail-safe startup sequence를 그대로 실행합니다.",
-                                              "기존 transport, polling, ISDU exchange 및 PdoOutputCoordinator write ownership 구조는 변경하지 않았습니다."
+                                              "신뢰된 동일 장치 startup에서 두 번째 AUTO LIVE client가 이미 동작 중인 Signal Tower를 neutralize하지 않도록 수정했습니다.",
+                                              "connection-scoped REST startup trust 전달을 수정하고 기존 fail-closed identity 정책을 유지합니다.",
+                                              "별도 PDO writer/heartbeat 없이 기존 active PDO continuity를 warm adoption하고 첫 LIVE scan 동안 출력 write를 read-only hold합니다."
                                           ],
                                    "ja":  [
-                                              "現在の接続で Master REST identity が完全に信頼でき engineering remap が不要な場合、重複する P1→P8 serial startup identity/selector をスキップします。",
-                                              "REST trust は connection generation 単位で、stale/partial/矛盾/デバイス変更時は既存 fail-safe startup sequence を維持します。",
-                                              "既存 transport、polling、ISDU exchange、PdoOutputCoordinator の write ownership は変更していません。"
+                                              "信頼済みの同一デバイス startup で、2つ目の AUTO LIVE client が稼働中の Signal Tower を neutralize しないよう修正しました。",
+                                              "connection-scoped REST startup trust の引き継ぎを修正し、既存の fail-closed identity 方針を維持します。",
+                                              "追加 PDO writer/heartbeat なしで既存 active PDO continuity を warm adoption します。"
                                           ],
                                    "zh-CN":  [
-                                                 "当当前连接的 Master REST identity 完全可信且无需 engineering remap 时，跳过重复的 P1→P8 serial startup identity/selector 流程。",
-                                                 "REST trust 仅在当前 connection generation 内有效；遇到 stale、partial、冲突或设备变化时继续执行原有 fail-safe startup sequence。",
-                                                 "现有 transport、polling、ISDU exchange 与 PdoOutputCoordinator 写入所有权保持不变。"
+                                                 "修复可信同一设备启动时第二个 AUTO LIVE 客户端将正在运行的 Signal Tower 置零的问题。",
+                                                 "修复 connection-scoped REST startup trust 传递，同时保留现有 fail-closed identity 策略。",
+                                                 "无需新增 PDO writer/heartbeat，通过 warm adoption 保持已有 active PDO continuity。"
                                              ],
                                    "de":  [
-                                              "Der redundante serielle P1→P8 Startup-Identity/Selector-Lauf wird übersprungen, wenn die Master-REST-Identity der aktuellen Verbindung vollständig vertrauenswürdig ist und kein Engineering-Remap benötigt wird.",
-                                              "REST-Trust ist auf die Connection-Generation begrenzt und fällt bei veralteten, partiellen, widersprüchlichen oder geänderten Identitäten sicher auf den bestehenden Startup-Pfad zurück.",
-                                              "Transport, Polling, ISDU-Exchange und die Write-Ownership des PdoOutputCoordinator bleiben unverändert."
+                                              "Verhindert, dass ein zweiter AUTO-LIVE-Client beim vertrauenswürdigen Same-Device-Startup einen bereits laufenden Signal Tower neutralisiert.",
+                                              "Repariert die connection-scoped REST-Startup-Trust-Übergabe bei unverändertem Fail-Closed-Identity-Verhalten.",
+                                              "Übernimmt bestehende aktive PDO-Kontinuität per Warm Adoption ohne zusätzlichen PDO-Writer oder Heartbeat."
                                           ],
                                    "es":  [
-                                              "Se omite el barrido serial P1→P8 de identity/selector de arranque cuando la identidad Master REST de la conexión actual es totalmente confiable y no requiere engineering remap.",
-                                              "La confianza REST está limitada a la generation de conexión y ante evidencia stale, parcial, contradictoria o de cambio de dispositivo se conserva la secuencia fail-safe existente.",
-                                              "No se modifican transport, polling, ISDU exchange ni la propiedad de escritura de PdoOutputCoordinator."
+                                              "Evita que un segundo cliente AUTO LIVE neutralice una Signal Tower que ya está funcionando durante un arranque confiable del mismo dispositivo.",
+                                              "Corrige la transferencia connection-scoped de REST startup trust conservando el comportamiento identity fail-closed existente.",
+                                              "Adopta en caliente la continuidad PDO activa existente sin añadir otro writer PDO ni heartbeat."
                                           ]
                                }
 }
