@@ -1,48 +1,48 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.91.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.91.0/ICEops_Setup_8.0.91.0.exe",
-    "sha256":  "876d584f5ad4386dc3089c8339a6b57870daacf89ef504575efb53317bad2299",
-    "fileName":  "ICEops_Setup_8.0.91.0.exe",
+    "version":  "8.0.92.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.92.0/ICEops_Setup_8.0.92.0.exe",
+    "sha256":  "df9ec2b3beacdddad423bee7b5fb911b2ce15f89acc74fbe05b72b2a758baafd",
+    "fileName":  "ICEops_Setup_8.0.92.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-12T04:17:23.1122390+00:00",
+    "publishedAtUtc":  "2026-08-12T04:49:28.1075897+00:00",
     "releaseNotes":  [
-                         "Welcome Light now consumes the hardware-current preset verified by its upstream Signal Tower Config instead of overwriting it with builtin.welcomeLevel. User-defined Welcome colours/segments therefore remain authoritative across cold start and reconnect.",
-                         "Signal Tower Config nodes feeding Welcome Light require current hardware projection verification before ENO. Historical trusted verification alone cannot start the Welcome cycle when a different recipe is physically active.",
-                         "The six-second Welcome timer controls only the PDO level wave. Reconnect/restart rearms the startup cycle through SYSTEM READY and R_TRIG; Alarm preemption restores the same selected Welcome recipe before resuming.",
-                         "Legacy projects that connect Welcome Light without an upstream Signal Tower Config retain builtin.welcomeLevel as a compatibility fallback. V880 live-wire polish and all V879/V878/V877 protections remain intact."
+                         "V892 hardens LIVE Refresh output continuity for VPN/NIC route conditions. While Studio Runtime is LIVE, repeated Refresh clicks no longer cancel an in-flight runtime-safe REST identity request; extra clicks are coalesced.",
+                         "Each completed or non-fatal failed LIVE runtime-safe Refresh publishes an output-continuity edge. The PLC Runtime observes that edge and reasserts only the currently ACTIVE Signal Tower PDO image through the existing PdoOutputCoordinator after the existing connected-state, VID/DID, configuration-transition and ISDU-idle guards pass.",
+                         "V891 Required Output Transport Hold, V890 reconnect-edge recovery, Background Identity NOOP, LIVE Refresh engineering isolation, SerialCommandQueue ownership and PdoOutputCoordinator single-writer semantics remain unchanged.",
+                         "No changes were made to Runtime/Connectivity, Runtime/Isdu, Runtime/Polling, Runtime/LowLevel, Services/IoLink/Pdi, PdoOutputCoordinator, IoddAutoDownloadService or SignalTowerPresetRuntimeService."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Welcome Light uses the hardware-current preset verified by the upstream Signal Tower Config; it no longer overwrites a user Welcome preset with builtin.welcomeLevel.",
-                                              "A Welcome-source Signal Tower Config must match the current hardware projection before ENO can start the six-second PDO level wave.",
-                                              "Reconnect/restart rearms the same startup sequence, while legacy direct Welcome Light projects keep builtin.welcomeLevel as fallback."
+                                              "LIVE Refresh no longer cancels an in-flight runtime-safe REST identity request; repeated clicks are coalesced.",
+                                              "After a LIVE Refresh completes or fails non-fatally, the current ACTIVE Signal Tower PDO is reasserted through the existing PdoOutputCoordinator with the existing physical-identity and safety guards.",
+                                              "V891 transport hold and all protected low-level runtime paths remain unchanged."
                                           ],
                                    "ko":  [
-                                              "Welcome Light는 상위 Signal Tower Config가 실제 하드웨어에 검증한 사용자 Welcome 프리셋을 그대로 사용하며 builtin.welcomeLevel로 다시 덮어쓰지 않습니다.",
-                                              "Welcome을 공급하는 Signal Tower Config는 과거 trusted 상태가 아니라 현재 하드웨어 projection까지 일치해야 ENO를 출력하고 6초 PDO level wave를 시작합니다.",
-                                              "재연결/재시작 시 동일 startup sequence가 다시 rearm되며, 상위 Config가 없는 구형 Welcome Light만 builtin.welcomeLevel을 fallback으로 사용합니다."
+                                              "Studio Runtime이 LIVE일 때 진행 중인 runtime-safe REST identity Refresh를 새 Refresh 클릭이 취소하지 않으며, 연속 클릭은 coalesce됩니다.",
+                                              "LIVE Refresh가 완료되거나 비치명적으로 실패하면 현재 ACTIVE Signal Tower PDO만 기존 PdoOutputCoordinator를 통해 물리 identity/안전 가드 확인 후 재확정합니다.",
+                                              "V891 transport hold와 보호된 저수준 Runtime 경로는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Welcome Light は上流 Signal Tower Config が実ハードウェアで検証したユーザー Welcome preset をそのまま使用し、builtin.welcomeLevel で上書きしません。",
-                                              "Welcome source の Signal Tower Config は過去の trust だけでなく current hardware projection が一致してから ENO を出し、6 秒 PDO level wave を開始します。",
-                                              "再接続/再起動では同じ startup sequence が再 arm され、上流 Config のない legacy Welcome Light のみ builtin.welcomeLevel を fallback 使用します。"
+                                              "Studio Runtime が LIVE の間、進行中の runtime-safe REST identity Refresh を新しい Refresh クリックでキャンセルせず、連続クリックは coalesce します。",
+                                              "LIVE Refresh の完了または非致命的失敗後、現在 ACTIVE の Signal Tower PDO のみを既存 PdoOutputCoordinator 経由で物理 identity / safety guard 確認後に再 assert します。",
+                                              "V891 transport hold と保護済み low-level Runtime 経路は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "Welcome Light 直接使用上游 Signal Tower Config 已在真实硬件验证的用户 Welcome preset，不再用 builtin.welcomeLevel 覆盖。",
-                                                 "作为 Welcome 来源的 Signal Tower Config 必须与当前硬件 projection 一致后才能输出 ENO 并启动 6 秒 PDO level wave。",
-                                                 "重新连接/重启会重新使能同一 startup sequence；只有没有上游 Config 的旧版 Welcome Light 才回退到 builtin.welcomeLevel。"
+                                                 "Studio Runtime 为 LIVE 时，新的 Refresh 点击不再取消正在进行的 runtime-safe REST identity Refresh，连续点击会被合并。",
+                                                 "LIVE Refresh 完成或非致命失败后，仅通过现有 PdoOutputCoordinator 在物理 identity / safety guard 通过后重新确认当前 ACTIVE Signal Tower PDO。",
+                                                 "V891 transport hold 与受保护的底层 Runtime 路径保持不变。"
                                              ],
                                    "de":  [
-                                              "Welcome Light verwendet das vom vorgelagerten Signal Tower Config auf der aktuellen Hardware verifizierte Benutzer-Welcome-Preset und überschreibt es nicht mehr mit builtin.welcomeLevel.",
-                                              "Ein Welcome-Quellblock Signal Tower Config muss zur aktuellen Hardware-Projektion passen, bevor ENO die sechssekündige PDO-Level-Welle startet.",
-                                              "Reconnect/Restart armiert dieselbe Startup-Sequenz erneut; nur Legacy-Welcome-Light ohne vorgelagerten Config-Block verwendet builtin.welcomeLevel als Fallback."
+                                              "Während Studio Runtime LIVE ist, bricht ein weiterer Refresh-Klick einen laufenden runtime-safe REST-Identity-Refresh nicht mehr ab; Mehrfachklicks werden zusammengefasst.",
+                                              "Nach Abschluss oder nichtfatalem Fehler eines LIVE Refresh wird nur das aktuell ACTIVE Signal-Tower-PDO über den bestehenden PdoOutputCoordinator und die vorhandenen Physical-Identity-/Safety-Guards erneut geschrieben.",
+                                              "V891 Transport Hold und alle geschützten Low-Level-Runtime-Pfade bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Welcome Light usa el preset Welcome de usuario verificado en el hardware actual por el Signal Tower Config anterior y ya no lo sobrescribe con builtin.welcomeLevel.",
-                                              "El Signal Tower Config que alimenta Welcome debe coincidir con la proyección actual del hardware antes de emitir ENO e iniciar la onda PDO de nivel de seis segundos.",
-                                              "Reconnect/restart vuelve a armar la misma secuencia de arranque; solo los proyectos legacy sin Config anterior usan builtin.welcomeLevel como fallback."
+                                              "Con Studio Runtime en LIVE, un nuevo clic en Refresh ya no cancela una solicitud runtime-safe REST identity en curso; los clics repetidos se agrupan.",
+                                              "Tras completar o fallar de forma no fatal un LIVE Refresh, solo se reafirma el PDO ACTIVE actual de Signal Tower mediante el PdoOutputCoordinator existente y sus guards de identidad física y seguridad.",
+                                              "El transport hold de V891 y todas las rutas Runtime de bajo nivel protegidas permanecen sin cambios."
                                           ]
                                }
 }
