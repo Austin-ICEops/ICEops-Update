@@ -1,48 +1,48 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.93.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.93.0/ICEops_Setup_8.0.93.0.exe",
-    "sha256":  "6ff84d8ed131c3cd2edd91a5eb10b15c5d18afb931c77463cb4f84fb4681173c",
-    "fileName":  "ICEops_Setup_8.0.93.0.exe",
+    "version":  "8.0.94.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.94.0/ICEops_Setup_8.0.94.0.exe",
+    "sha256":  "3e8fb8723f21ff8993c2f29203521530fb545aaff2a8eec5cbc6da58606cff4e",
+    "fileName":  "ICEops_Setup_8.0.94.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-12T05:19:22.2959459+00:00",
+    "publishedAtUtc":  "2026-08-12T05:35:34.2380871+00:00",
     "releaseNotes":  [
-                         "V893 closes the reproduced VPN + rapid-Refresh PDO continuity gap: the diagnostic shows P8 last committed ACTIVE 010001 with no later Studio OFF write, while MAX/parallel PD subsequently resumed. Recovery is therefore driven by transport-delivery edges without resetting the PLC desired state.",
-                         "LIVE Refresh now arms continuity as soon as the first single-flight request starts, keeps rapid extra clicks coalesced, and stays in the runtime-safe path while Auto Live still owns ACTIVE PDO ports.",
-                         "Continuity recovery is generic for every currently ACTIVE Studio sequence PDO port. Refresh request/completion, TCP reconnect, V891 transport-hold recovery, same-device identity refresh, and MAX/parallel-PD resume all reassert through the existing Runtime path and PdoOutputCoordinator after the existing safety guards pass.",
-                         "No protected low-level transport/ISDU/PDI/PDO coordinator area or Signal Tower arbitration semantics were redesigned."
+                         "V894 addresses the exact 14:25:17 multi-client reproduction: the local V893 instance logged no transport, Refresh, PD-source, identity, latch, or PDO event at the moment the lamp went dark while the diagnostic 17 seconds later still reported TCP connected, 8 ports connected, and Watchdog Ok. This indicates the master\u0027s PDO TX image was changed externally without a local recovery edge.",
+                         "LIVE Runtime now performs a bounded read-only PDO continuity audit for ACTIVE Studio output ports. One active port is checked every 200 ms in round-robin order by reading the master\u0027s current last-TX PDO image and comparing it with the existing locally confirmed coordinator shadow.",
+                         "A mismatch never replaces the Runtime desired image. It only arms the existing generic PDO recovery path with reason master-tx-readback-mismatch; the next normal Runtime scan reasserts through PdoOutputCoordinator after the same SYSTEM READY, VID/DID, connected-port, ISDU-idle and config-transition guards pass.",
+                         "No low-level transport/ISDU/PDI/PDO coordinator implementation was modified. The watchdog is read-only until a verified mismatch is observed, and read errors are rate-limited in diagnostics."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed the VPN + rapid Refresh PDO continuity gap by arming recovery at Refresh request start and on MAX/parallel-PD source resume.",
-                                              "Continuity recovery now covers every currently ACTIVE Studio sequence PDO port while keeping rapid Refresh clicks single-flight/coalesced.",
-                                              "All recovery writes remain serialized through the existing Runtime path and PdoOutputCoordinator with same-device and safety guards."
+                                              "Added bounded ACTIVE-PDO hardware readback continuity auditing for external/multi-client TX-image changes that do not create a local reconnect edge.",
+                                              "A detected master TX mismatch arms the existing generic Runtime reassert path; no additional PDO writer is introduced.",
+                                              "The audit checks one ACTIVE port every 200 ms in round-robin order and skips ISDU/config-transition windows."
                                           ],
                                    "ko":  [
-                                              "VPN 연결 상태에서 Refresh 연타 시 발생한 PDO continuity gap을 Refresh 요청 시작 edge와 MAX/parallel-PD source resume edge로 보완했습니다.",
-                                              "continuity recovery를 현재 ACTIVE인 모든 Studio 시퀀스 PDO 포트로 범용화했으며 Refresh 연타는 single-flight/coalesce를 유지합니다.",
-                                              "모든 복구 write는 기존 Runtime 경로와 PdoOutputCoordinator를 사용하며 same-device/safety guard를 그대로 유지합니다."
+                                              "로컬 reconnect edge 없이 외부/다중 클라이언트가 master PDO TX image를 변경하는 경우를 감지하도록 ACTIVE PDO hardware readback continuity audit를 추가했습니다.",
+                                              "master TX 불일치가 확인될 때만 기존 generic Runtime reassert를 arm하며 별도 PDO writer는 추가하지 않았습니다.",
+                                              "audit는 200ms마다 ACTIVE 포트 1개를 round-robin으로 확인하고 ISDU/config-transition 구간은 건너뜁니다."
                                           ],
                                    "ja":  [
-                                              "VPN 接続中の連続 Refresh で発生する PDO continuity gap を、Refresh request 開始 edge と MAX/parallel-PD source resume edge で補強しました。",
-                                              "continuity recovery は現在 ACTIVE のすべての Studio sequence PDO port を対象とし、連続 Refresh は single-flight/coalesce を維持します。",
-                                              "すべての recovery write は既存 Runtime 経路と PdoOutputCoordinator を使用し、same-device/safety guard を維持します。"
+                                              "ローカル reconnect edge を伴わない外部/複数クライアントによる master PDO TX image 変更を検出する ACTIVE PDO readback continuity audit を追加しました。",
+                                              "master TX mismatch を確認した場合のみ既存 generic Runtime reassert を arm し、新しい PDO writer は追加しません。",
+                                              "audit は 200ms ごとに ACTIVE port を1つ round-robin で確認し、ISDU/config-transition 中はスキップします。"
                                           ],
                                    "zh-CN":  [
-                                                 "通过 Refresh 请求开始边沿和 MAX/parallel-PD source 恢复边沿，修复了 VPN 状态下连续点击 Refresh 的 PDO continuity 缺口。",
-                                                 "continuity recovery 现覆盖当前所有 ACTIVE 的 Studio sequence PDO 端口，同时保持 Refresh single-flight/coalesce。",
-                                                 "所有 recovery write 仍通过现有 Runtime 路径和 PdoOutputCoordinator，并保留 same-device/safety guard。"
+                                                 "增加 ACTIVE PDO 硬件回读连续性检查，用于检测不会触发本地 reconnect edge 的外部/多客户端 master PDO TX image 变化。",
+                                                 "仅在确认 master TX 不匹配时启用现有 generic Runtime reassert，不增加新的 PDO writer。",
+                                                 "检查每 200ms 轮询一个 ACTIVE 端口，并跳过 ISDU/config-transition 窗口。"
                                              ],
                                    "de":  [
-                                              "Die PDO-Continuity-Lücke bei VPN + schnellem Refresh wurde durch einen Recovery-Trigger beim Start des Refresh-Requests und beim MAX/Parallel-PD-Resume geschlossen.",
-                                              "Die Continuity-Recovery gilt jetzt für alle aktuell ACTIVE Studio-Sequence-PDO-Ports; schnelle Refresh-Klicks bleiben Single-Flight/Coalesced.",
-                                              "Alle Recovery-Writes laufen weiterhin serialisiert über den bestehenden Runtime-Pfad und PdoOutputCoordinator mit unveränderten Same-Device/Safety-Guards."
+                                              "Ein begrenztes ACTIVE-PDO-Readback-Audit erkennt externe/mehrfache Client-Änderungen am Master-TX-Image ohne lokalen Reconnect-Edge.",
+                                              "Nur bei bestätigtem Master-TX-Mismatch wird der bestehende generische Runtime-Reassert-Pfad aktiviert; kein zusätzlicher PDO-Writer.",
+                                              "Alle 200 ms wird genau ein ACTIVE-Port im Round-Robin geprüft; ISDU-/Config-Transition-Fenster werden übersprungen."
                                           ],
                                    "es":  [
-                                              "Se cerró la brecha de continuidad PDO con VPN + Refresh rápido armando la recuperación al iniciar el Refresh y al reanudarse MAX/parallel-PD.",
-                                              "La recuperación de continuidad ahora cubre todos los puertos PDO ACTIVE de las secuencias de Studio y mantiene Refresh en single-flight/coalesce.",
-                                              "Todas las escrituras de recuperación siguen serializadas por la ruta Runtime existente y PdoOutputCoordinator con los mismos guards de identidad y seguridad."
+                                              "Se añadió una auditoría de readback de PDO ACTIVE para detectar cambios externos/multicliente del TX image del master sin un reconnect edge local.",
+                                              "Solo un mismatch confirmado del master TX activa el reassert genérico existente; no se añade otro writer PDO.",
+                                              "La auditoría revisa un puerto ACTIVE cada 200 ms en round-robin y omite ventanas ISDU/config-transition."
                                           ]
                                }
 }
