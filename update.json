@@ -1,47 +1,48 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.99.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.99.0/ICEops_Setup_8.0.99.0.exe",
-    "sha256":  "87b3178b355d8967546df34b3e6e67cc014774f4bcbf3e09287bd9665aea3e1a",
-    "fileName":  "ICEops_Setup_8.0.99.0.exe",
+    "version":  "8.0.101.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.101.0/ICEops_Setup_8.0.101.0.exe",
+    "sha256":  "0ca0654fcfa680434c598b2dbc0ea326af08bcbb333d0288bd5339b534b02114",
+    "fileName":  "ICEops_Setup_8.0.101.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-12T08:43:03.8582803+00:00",
+    "publishedAtUtc":  "2026-08-12T09:28:15.1194967+00:00",
     "releaseNotes":  [
-                         "V898 fixes the reproduced multi-client AUTO LIVE startup interruption where the VPN instance observed an already-active P8=010001, then directly wrote 000000 and replayed Signal Tower Welcome/configuration ISDU before restoring the Running PDO.",
-                         "The V897 REST startup trust handoff is repaired: first-connection generation zero is eliminated, the first process connection can retain a fresh pre-Connect REST decision, and the bounded trust age now covers the existing startup pipeline wait.",
-                         "When the current connection is REST-verified same-device/no-remap and a required PDO is already non-zero, persisted AUTO LIVE warm-adopts startup continuity, holds first-scan PDO writes read-only, and skips Welcome/config neutralization. PdoOutputCoordinator remains the only PDO hardware writer."
+                         "Welcome Light now consumes the hardware-current preset verified by its upstream Signal Tower Config instead of overwriting it with builtin.welcomeLevel. User-defined Welcome colours/segments therefore remain authoritative across cold start and reconnect.",
+                         "Signal Tower Config nodes feeding Welcome Light require current hardware projection verification before ENO. Historical trusted verification alone cannot start the Welcome cycle when a different recipe is physically active.",
+                         "The six-second Welcome timer controls only the PDO level wave. Reconnect/restart rearms the startup cycle through SYSTEM READY and R_TRIG; Alarm preemption restores the same selected Welcome recipe before resuming.",
+                         "Legacy projects that connect Welcome Light without an upstream Signal Tower Config retain builtin.welcomeLevel as a compatibility fallback. V880 live-wire polish and all V879/V878/V877 protections remain intact."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Prevent a second AUTO LIVE client from neutralizing an already-running Signal Tower during trusted same-device startup.",
-                                              "Repair the connection-scoped REST startup trust handoff and keep its fail-closed identity behavior.",
-                                              "Warm-adopt retained active PDO continuity with a read-only first-scan output hold, without adding another PDO writer or heartbeat."
+                                              "Welcome Light uses the hardware-current preset verified by the upstream Signal Tower Config; it no longer overwrites a user Welcome preset with builtin.welcomeLevel.",
+                                              "A Welcome-source Signal Tower Config must match the current hardware projection before ENO can start the six-second PDO level wave.",
+                                              "Reconnect/restart rearms the same startup sequence, while legacy direct Welcome Light projects keep builtin.welcomeLevel as fallback."
                                           ],
                                    "ko":  [
-                                              "신뢰된 동일 장치 startup에서 두 번째 AUTO LIVE client가 이미 동작 중인 Signal Tower를 neutralize하지 않도록 수정했습니다.",
-                                              "connection-scoped REST startup trust 전달을 수정하고 기존 fail-closed identity 정책을 유지합니다.",
-                                              "별도 PDO writer/heartbeat 없이 기존 active PDO continuity를 warm adoption하고 첫 LIVE scan 동안 출력 write를 read-only hold합니다."
+                                              "Welcome Light는 상위 Signal Tower Config가 실제 하드웨어에 검증한 사용자 Welcome 프리셋을 그대로 사용하며 builtin.welcomeLevel로 다시 덮어쓰지 않습니다.",
+                                              "Welcome을 공급하는 Signal Tower Config는 과거 trusted 상태가 아니라 현재 하드웨어 projection까지 일치해야 ENO를 출력하고 6초 PDO level wave를 시작합니다.",
+                                              "재연결/재시작 시 동일 startup sequence가 다시 rearm되며, 상위 Config가 없는 구형 Welcome Light만 builtin.welcomeLevel을 fallback으로 사용합니다."
                                           ],
                                    "ja":  [
-                                              "信頼済みの同一デバイス startup で、2つ目の AUTO LIVE client が稼働中の Signal Tower を neutralize しないよう修正しました。",
-                                              "connection-scoped REST startup trust の引き継ぎを修正し、既存の fail-closed identity 方針を維持します。",
-                                              "追加 PDO writer/heartbeat なしで既存 active PDO continuity を warm adoption します。"
+                                              "Welcome Light は上流 Signal Tower Config が実ハードウェアで検証したユーザー Welcome preset をそのまま使用し、builtin.welcomeLevel で上書きしません。",
+                                              "Welcome source の Signal Tower Config は過去の trust だけでなく current hardware projection が一致してから ENO を出し、6 秒 PDO level wave を開始します。",
+                                              "再接続/再起動では同じ startup sequence が再 arm され、上流 Config のない legacy Welcome Light のみ builtin.welcomeLevel を fallback 使用します。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复可信同一设备启动时第二个 AUTO LIVE 客户端将正在运行的 Signal Tower 置零的问题。",
-                                                 "修复 connection-scoped REST startup trust 传递，同时保留现有 fail-closed identity 策略。",
-                                                 "无需新增 PDO writer/heartbeat，通过 warm adoption 保持已有 active PDO continuity。"
+                                                 "Welcome Light 直接使用上游 Signal Tower Config 已在真实硬件验证的用户 Welcome preset，不再用 builtin.welcomeLevel 覆盖。",
+                                                 "作为 Welcome 来源的 Signal Tower Config 必须与当前硬件 projection 一致后才能输出 ENO 并启动 6 秒 PDO level wave。",
+                                                 "重新连接/重启会重新使能同一 startup sequence；只有没有上游 Config 的旧版 Welcome Light 才回退到 builtin.welcomeLevel。"
                                              ],
                                    "de":  [
-                                              "Verhindert, dass ein zweiter AUTO-LIVE-Client beim vertrauenswürdigen Same-Device-Startup einen bereits laufenden Signal Tower neutralisiert.",
-                                              "Repariert die connection-scoped REST-Startup-Trust-Übergabe bei unverändertem Fail-Closed-Identity-Verhalten.",
-                                              "Übernimmt bestehende aktive PDO-Kontinuität per Warm Adoption ohne zusätzlichen PDO-Writer oder Heartbeat."
+                                              "Welcome Light verwendet das vom vorgelagerten Signal Tower Config auf der aktuellen Hardware verifizierte Benutzer-Welcome-Preset und überschreibt es nicht mehr mit builtin.welcomeLevel.",
+                                              "Ein Welcome-Quellblock Signal Tower Config muss zur aktuellen Hardware-Projektion passen, bevor ENO die sechssekündige PDO-Level-Welle startet.",
+                                              "Reconnect/Restart armiert dieselbe Startup-Sequenz erneut; nur Legacy-Welcome-Light ohne vorgelagerten Config-Block verwendet builtin.welcomeLevel als Fallback."
                                           ],
                                    "es":  [
-                                              "Evita que un segundo cliente AUTO LIVE neutralice una Signal Tower que ya está funcionando durante un arranque confiable del mismo dispositivo.",
-                                              "Corrige la transferencia connection-scoped de REST startup trust conservando el comportamiento identity fail-closed existente.",
-                                              "Adopta en caliente la continuidad PDO activa existente sin añadir otro writer PDO ni heartbeat."
+                                              "Welcome Light usa el preset Welcome de usuario verificado en el hardware actual por el Signal Tower Config anterior y ya no lo sobrescribe con builtin.welcomeLevel.",
+                                              "El Signal Tower Config que alimenta Welcome debe coincidir con la proyección actual del hardware antes de emitir ENO e iniciar la onda PDO de nivel de seis segundos.",
+                                              "Reconnect/restart vuelve a armar la misma secuencia de arranque; solo los proyectos legacy sin Config anterior usan builtin.welcomeLevel como fallback."
                                           ]
                                }
 }
