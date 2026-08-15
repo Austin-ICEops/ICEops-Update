@@ -1,54 +1,54 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.168.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.168.0/ICEops_Setup_8.0.168.0.exe",
-    "sha256":  "417002d295018e556af1607f4e8f3c6307a00361c24a187c97ba177a533c0c79",
-    "fileName":  "ICEops_Setup_8.0.168.0.exe",
+    "version":  "8.0.169.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.169.0/ICEops_Setup_8.0.169.0.exe",
+    "sha256":  "6c4d37c85322e0fe4a0670eccfc8837f72c82392fee1f659a8533797f1b4360e",
+    "fileName":  "ICEops_Setup_8.0.169.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-15T15:34:34.1368512+00:00",
+    "publishedAtUtc":  "2026-08-15T15:53:34.4261222+00:00",
     "releaseNotes":  [
-                         "Device Scene/HMI engineering is promoted with stable EDIT/RUN separation, read-only SSOT visualization, protected property-save behavior, reliable marquee multi-selection, dual-side workspace focus, and 9-segment Signal Tower rendering driven by the active Runtime preset.",
-                         "ICEops AI Fast and Expert modes now share the same evidence pipeline. Specialist agents use bounded read-only historical evidence where applicable, while selected-Port analysis recursively removes cross-Port evidence before the existing scope guard validates the request.",
-                         "The reported Oscilloscope case where a Port 1 request could include Port 8 evidence is corrected at the evidence-source filtering layer; the scope guard remains strict so future cross-Port leakage is still blocked rather than hidden.",
-                         "Communication, polling, MAX governor, network recovery, PDO/ISDU transport, PdoOutputCoordinator, Studio Runtime execution, Signal Tower output arbitration, device identification, IODD auto-mapping, and safe-disconnect paths are unchanged."
+                         "Automatic update manifest discovery now uses the GitHub Contents API as the authoritative primary source, with raw.githubusercontent.com retained as a transport fallback.",
+                         "This prevents a newly published stable release from being missed when the raw GitHub CDN temporarily serves an older update.json after the repository manifest has already advanced.",
+                         "Update diagnostics now record the manifest source, GitHub blob SHA, API rate-limit remainder, retries, and fallback activation so stale-source or network failures can be distinguished directly from the diagnostic package.",
+                         "Installer URL allow-list validation, release tag/version/file-name consistency checks, SHA-256 package verification, privilege elevation, and fail-open monitoring behavior are unchanged. Communication, polling/MAX, PDO/ISDU, Runtime, HMI, AI, identification, and Signal Tower control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Device Scene/HMI is promoted with stable EDIT/RUN separation, read-only SSOT visualization, reliable marquee selection, dual-side workspace focus, and active-preset-driven 9-segment Signal Tower rendering.",
-                                              "AI Fast and Expert modes now share one evidence pipeline, and specialist agents use bounded read-only historical evidence where applicable.",
-                                              "Selected-Port analysis now removes cross-Port specialist evidence before the existing strict scope guard validates the request; the reported Port 1 / Port 8 Oscilloscope mismatch is corrected at its source.",
-                                              "Communication, Runtime, PDO/ISDU transport, polling/MAX, recovery, identification, IODD mapping, and Signal Tower output-control paths are unchanged."
+                                              "Automatic update manifest discovery now uses the GitHub Contents API as the authoritative primary source, with raw.githubusercontent.com retained as a fallback.",
+                                              "This removes the false \u0027up to date\u0027 case caused by temporary stale update.json responses from the raw GitHub CDN immediately after a new Release is published.",
+                                              "Update diagnostics now record manifest source, GitHub blob SHA, rate-limit remainder, retries, and fallback activation.",
+                                              "Installer URL validation, SHA-256 verification, download/install flow, and all communication/Runtime/HMI/AI control paths remain unchanged."
                                           ],
                                    "ko":  [
-                                              "Device Scene/HMI는 안정화된 EDIT/RUN 분리, Read-Only SSOT 시각화, 영역 다중선택, 양쪽 패널 확장, 실제 활성 프리셋 기반 9-Segment Signal Tower 표시를 포함해 정식 승격됩니다.",
-                                              "AI Fast와 Expert 모드는 동일한 Evidence Pipeline을 사용하며, 전문 Agent는 필요한 경우 기존 Read-Only 이력 DB Evidence를 제한된 범위로 사용합니다.",
-                                              "선택 Port 분석은 기존 Scope Guard 검증 전에 전문 Evidence 내부의 타 Port 데이터를 재귀적으로 제거합니다. 보고된 Port 1 요청에 Port 8 Oscilloscope Evidence가 섞이던 문제를 발생 지점에서 수정했습니다.",
-                                              "통신, Runtime, PDO/ISDU Transport, Polling/MAX, Network Recovery, Device Identification, IODD Mapping, Signal Tower 실제 Output Control 경로는 변경하지 않았습니다."
+                                              "자동 업데이트 Manifest 조회는 GitHub Contents API를 권위 있는 Primary Source로 사용하고 raw.githubusercontent.com은 Fallback으로 유지합니다.",
+                                              "새 Release와 update.json이 이미 게시된 직후 raw GitHub CDN이 이전 Manifest를 반환해 \u0027최신 버전\u0027으로 잘못 판단하던 문제를 제거했습니다.",
+                                              "진단 로그에 Manifest Source, GitHub Blob SHA, API Rate Limit 잔여량, Retry 및 Fallback 동작을 기록해 업데이트 조회 문제를 즉시 구분할 수 있습니다.",
+                                              "Installer URL 검증, Release Tag/Version/File Name 일치 검증, SHA-256 검증, 다운로드/설치 흐름과 통신/Runtime/HMI/AI 제어 경로는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Device Scene/HMI は、安定した EDIT/RUN 分離、Read-Only SSOT 可視化、マーキー複数選択、左右パネル拡張、実際のアクティブ preset に基づく 9-Segment Signal Tower 表示を含めて正式昇格します。",
-                                              "AI Fast と Expert は同一の Evidence Pipeline を使用し、専門 Agent は必要な場合に既存の Read-Only 履歴 DB Evidence を限定範囲で使用します。",
-                                              "選択 Port 分析では、既存 Scope Guard の検証前に専門 Evidence 内の他 Port データを再帰的に除外します。Port 1 の要求に Port 8 Oscilloscope Evidence が混在する問題を発生源で修正しました。",
-                                              "通信、Runtime、PDO/ISDU Transport、Polling/MAX、Network Recovery、Device Identification、IODD Mapping、Signal Tower の実 Output Control 経路は変更していません。"
+                                              "自動更新 Manifest の取得は GitHub Contents API を権威ある Primary Source とし、raw.githubusercontent.com は Fallback として維持します。",
+                                              "新しい Release と update.json の公開直後に raw GitHub CDN が古い Manifest を返し、『最新バージョン』と誤判定する問題を解消しました。",
+                                              "診断ログには Manifest Source、GitHub Blob SHA、API Rate Limit 残量、Retry、Fallback 動作を記録します。",
+                                              "Installer URL、Release Tag/Version/File Name、SHA-256 の検証、ダウンロード/インストール処理、および通信/Runtime/HMI/AI の制御経路は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "Device Scene/HMI 正式升级，包含稳定的 EDIT/RUN 分离、只读 SSOT 可视化、框选多选、左右面板扩展，以及由实际活动 preset 驱动的 9-Segment Signal Tower 显示。",
-                                                 "AI Fast 与 Expert 模式现在共用同一 Evidence Pipeline；专业 Agent 在需要时通过现有只读路径使用受范围限制的历史 DB Evidence。",
-                                                 "选定 Port 的分析会在现有严格 Scope Guard 校验前递归移除专业 Evidence 中其他 Port 的数据，从源头修复 Port 1 请求混入 Port 8 Oscilloscope Evidence 的问题。",
-                                                 "通信、Runtime、PDO/ISDU Transport、Polling/MAX、Network Recovery、Device Identification、IODD Mapping 与 Signal Tower 实际输出控制路径均未修改。"
+                                                 "自动更新 Manifest 现在以 GitHub Contents API 作为权威 Primary Source，并保留 raw.githubusercontent.com 作为 Fallback。",
+                                                 "修复了新 Release 与 update.json 已发布后，raw GitHub CDN 暂时返回旧 Manifest 而误判为“已是最新版本”的问题。",
+                                                 "诊断日志现在会记录 Manifest Source、GitHub Blob SHA、API Rate Limit 剩余量、Retry 与 Fallback 状态。",
+                                                 "Installer URL、Release Tag/Version/File Name、SHA-256 校验、下载/安装流程以及通信/Runtime/HMI/AI 控制路径均未修改。"
                                              ],
                                    "de":  [
-                                              "Device Scene/HMI wird mit stabiler EDIT/RUN-Trennung, schreibgeschützter SSOT-Visualisierung, zuverlässiger Mehrfachauswahl, beidseitiger Workspace-Erweiterung und einer vom aktiven Preset gesteuerten 9-Segment-Signalturm-Darstellung freigegeben.",
-                                              "AI Fast und Expert verwenden dieselbe Evidence-Pipeline; spezialisierte Agents nutzen bei Bedarf begrenzte historische DB-Evidence über den vorhandenen Read-Only-Pfad.",
-                                              "Bei einer Analyse eines ausgewählten Ports werden fremde Port-Daten rekursiv aus Specialist-Evidence entfernt, bevor der bestehende strikte Scope Guard validiert. Damit ist der gemeldete Port-1/Port-8-Oszilloskop-Konflikt an der Quelle behoben.",
-                                              "Kommunikation, Runtime, PDO/ISDU-Transport, Polling/MAX, Network Recovery, Device Identification, IODD Mapping und die reale Signal-Tower-Ausgabesteuerung bleiben unverändert."
+                                              "Die automatische Update-Manifest-Abfrage verwendet nun die GitHub Contents API als maßgebliche Primary Source; raw.githubusercontent.com bleibt als Fallback erhalten.",
+                                              "Damit wird die falsche Meldung \u0027aktuelle Version\u0027 verhindert, wenn das Raw-GitHub-CDN unmittelbar nach einem neuen Release vorübergehend noch ein älteres update.json liefert.",
+                                              "Die Update-Diagnose protokolliert nun Manifest Source, GitHub Blob SHA, verbleibendes API Rate Limit, Retries und die Aktivierung des Fallbacks.",
+                                              "Installer-URL-, Release-Tag/Version/Dateiname- und SHA-256-Prüfungen, Download/Installation sowie Kommunikations-, Runtime-, HMI- und AI-Steuerpfade bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Device Scene/HMI se promociona con separación EDIT/RUN estable, visualización SSOT de solo lectura, selección múltiple por marco, expansión bilateral del workspace y Signal Tower de 9 segmentos gobernado por el preset activo real.",
-                                              "AI Fast y Expert comparten ahora el mismo Evidence Pipeline; los agentes especializados usan evidencia histórica de base de datos, limitada y de solo lectura, cuando corresponde.",
-                                              "El análisis de un Port seleccionado elimina recursivamente datos de otros Ports dentro de la evidencia especializada antes de la validación del Scope Guard existente. Así se corrige en el origen la mezcla Port 1 / Port 8 observada en Oscilloscope.",
-                                              "Las rutas de comunicación, Runtime, transporte PDO/ISDU, Polling/MAX, Network Recovery, Device Identification, IODD Mapping y control real de salida del Signal Tower no se modificaron."
+                                              "La búsqueda del Manifest de actualización usa ahora GitHub Contents API como Primary Source autoritativa y conserva raw.githubusercontent.com como Fallback.",
+                                              "Se elimina el falso estado de \u0027versión más reciente\u0027 cuando el CDN raw de GitHub entrega temporalmente un update.json anterior justo después de publicar una nueva Release.",
+                                              "El diagnóstico de actualización registra ahora Manifest Source, GitHub Blob SHA, límite API restante, reintentos y activación del Fallback.",
+                                              "La validación de URL del instalador, Release Tag/Version/File Name, SHA-256, descarga/instalación y las rutas de comunicación/Runtime/HMI/AI permanecen sin cambios."
                                           ]
                                }
 }
