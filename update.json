@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.167.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.167.0/ICEops_Setup_8.0.167.0.exe",
-    "sha256":  "6069aa4667bafc5890c56452a4ca78e724a3e0f9aa251106ed97ba07b4c37fc7",
-    "fileName":  "ICEops_Setup_8.0.167.0.exe",
+    "version":  "8.0.168.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.168.0/ICEops_Setup_8.0.168.0.exe",
+    "sha256":  "417002d295018e556af1607f4e8f3c6307a00361c24a187c97ba177a533c0c79",
+    "fileName":  "ICEops_Setup_8.0.168.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-15T14:58:10.0270968+00:00",
+    "publishedAtUtc":  "2026-08-15T15:34:34.1368512+00:00",
     "releaseNotes":  [
                          "Device Scene/HMI engineering is promoted with stable EDIT/RUN separation, read-only SSOT visualization, protected property-save behavior, reliable marquee multi-selection, dual-side workspace focus, and 9-segment Signal Tower rendering driven by the active Runtime preset.",
                          "ICEops AI Fast and Expert modes now share the same evidence pipeline. Specialist agents use bounded read-only historical evidence where applicable, while selected-Port analysis recursively removes cross-Port evidence before the existing scope guard validates the request.",
