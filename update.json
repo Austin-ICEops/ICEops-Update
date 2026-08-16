@@ -1,48 +1,48 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.181.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.181.0/ICEops_Setup_8.0.181.0.exe",
-    "sha256":  "6e57febe315c740177c0de725c5bb6209a844ecd12cbef6ce7a518bfb18eed5a",
-    "fileName":  "ICEops_Setup_8.0.181.0.exe",
+    "version":  "8.0.182.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.182.0/ICEops_Setup_8.0.182.0.exe",
+    "sha256":  "d35aef50dadf017542336cbea147cfb21627b56b12b698b72d93827ab7294baa",
+    "fileName":  "ICEops_Setup_8.0.182.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T02:30:16.6879233+00:00",
+    "publishedAtUtc":  "2026-08-16T02:46:26.8202885+00:00",
     "releaseNotes":  [
-                         "V981 adds validation-only canonicalization for localized and bilingual AI response section headings that previously caused safe but unnecessary format BLOCKED results.",
-                         "Recognized KR/EN/JP/CN/DE/ES aliases such as \u0027[결론 / Conclusion]\u0027 and \u0027[확인된 사실 / Confirmed facts]\u0027 are mapped only in a temporary validation copy to the existing canonical Grounding section tokens; the user-visible localized answer is not rewritten.",
-                         "No section is invented. If Conclusion or Confirmed facts is genuinely absent, the unchanged AiGroundingValidator still returns format BLOCKED. Semantic, citation, criteria, trend, and evidence gates remain unchanged.",
-                         "V980 deterministic VERDICT repair, V979 No-Criteria semantic neutralization, deterministic evaluation, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, AI Data Library, and Signal Tower hardware-control paths are unchanged."
+                         "V982 adds a deterministic structural repair for genuinely missing mandatory AI response sections after V981 confirmed that the local model can omit Conclusion or Confirmed facts entirely.",
+                         "Only the mandatory Conclusion and Confirmed facts sections are eligible for repair. Their content is generated exclusively from the already-completed ICEops Deterministic Evaluation and cited to the deterministic Evidence packet; Analysis, causes, thresholds, baselines, trends, and health classifications are never synthesized.",
+                         "A repaired response is immediately revalidated by the unchanged AiGroundingValidator. Up to two mandatory-section repairs are allowed so an answer missing both Conclusion and Confirmed facts can be repaired sequentially; any remaining semantic, citation, evidence, trend, criteria, or format failure keeps the AI explanation BLOCKED.",
+                         "V980 VERDICT repair, V979 No-Criteria semantic neutralization, V981 localized heading canonicalization, deterministic evaluation, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, AI Data Library, and Signal Tower hardware-control paths remain unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added validation-only canonicalization for localized/bilingual AI response section headings.",
-                                              "Recognized KR/EN/JP/CN/DE/ES aliases are mapped only for Grounding validation; the displayed localized answer is preserved.",
-                                              "Missing mandatory sections are never synthesized and continue to be BLOCKED by the unchanged Grounding validator."
+                                              "Added deterministic repair for genuinely missing mandatory Conclusion and Confirmed facts sections.",
+                                              "Trusted repair text is derived only from ICEops Deterministic Evaluation and is fully revalidated by the unchanged Grounding validator.",
+                                              "No Analysis, cause, threshold, baseline, trend, or health judgment is synthesized; unresolved failures remain BLOCKED."
                                           ],
                                    "ko":  [
-                                              "다국어/이중 언어 AI 응답 섹션 헤더를 Grounding 검증용으로만 canonicalize하는 처리를 추가했습니다.",
-                                              "KR/EN/JP/CN/DE/ES 헤더 alias는 내부 검증 복사본에서만 매핑하며 사용자에게 표시되는 한국어 응답은 그대로 유지합니다.",
-                                              "실제로 필수 섹션이 누락된 경우에는 생성하지 않으며 기존 Grounding Validator가 계속 BLOCKED 처리합니다."
+                                              "실제로 누락된 필수 [결론] 및 [확인된 사실] 섹션을 결정론적으로 복구하는 처리를 추가했습니다.",
+                                              "복구 문장은 ICEops Deterministic Evaluation에서만 생성하고 기존 Grounding Validator로 전체 재검증합니다.",
+                                              "분석/원인/Threshold/Baseline/Trend/Health 판정은 생성하지 않으며 남은 검증 실패는 계속 BLOCKED 처리합니다."
                                           ],
                                    "ja":  [
-                                              "多言語/二言語の AI 応答セクション見出しを Grounding 検証時のみ canonicalize する処理を追加しました。",
-                                              "KR/EN/JP/CN/DE/ES の見出し alias は内部検証コピーでのみ変換され、ユーザー表示のローカライズ済み回答は保持されます。",
-                                              "必須セクションが実際に欠落している場合は生成せず、既存 Grounding Validator が引き続き BLOCKED にします。"
+                                              "実際に欠落した必須の Conclusion / Confirmed facts セクションを決定論的に補修する処理を追加しました。",
+                                              "補修文は ICEops Deterministic Evaluation のみから生成し、既存 Grounding Validator で全体を再検証します。",
+                                              "Analysis、原因、Threshold、Baseline、Trend、Health 判定は生成せず、残る検証失敗は引き続き BLOCKED です。"
                                           ],
                                    "zh-CN":  [
-                                                 "增加了仅用于 Grounding 验证的多语言/双语 AI 响应章节标题 canonicalization。",
-                                                 "KR/EN/JP/CN/DE/ES 标题别名只在内部验证副本中映射，用户看到的本地化回答保持不变。",
-                                                 "如果必需章节确实缺失，则不会自动生成，现有 Grounding Validator 仍会将其 BLOCKED。"
+                                                 "增加了对真正缺失的必需 Conclusion / Confirmed facts 章节进行确定性修复的处理。",
+                                                 "修复文本只从 ICEops Deterministic Evaluation 生成，并由现有 Grounding Validator 对完整响应重新验证。",
+                                                 "不会生成 Analysis、原因、Threshold、Baseline、Trend 或 Health 判断；剩余验证失败仍保持 BLOCKED。"
                                              ],
                                    "de":  [
-                                              "Eine ausschließlich für die Grounding-Prüfung verwendete Kanonisierung lokalisierter/zweisprachiger Abschnittsüberschriften wurde ergänzt.",
-                                              "KR/EN/JP/CN/DE/ES-Aliase werden nur in einer internen Prüfkopie abgebildet; die lokalisierte Benutzeranzeige bleibt unverändert.",
-                                              "Tatsächlich fehlende Pflichtabschnitte werden nicht erzeugt und weiterhin vom unveränderten Grounding Validator als BLOCKED behandelt."
+                                              "Eine deterministische Reparatur für tatsächlich fehlende Pflichtabschnitte Conclusion und Confirmed facts wurde ergänzt.",
+                                              "Der Reparaturtext wird ausschließlich aus der ICEops Deterministic Evaluation erzeugt und anschließend vollständig durch den unveränderten Grounding Validator geprüft.",
+                                              "Analyse, Ursachen, Thresholds, Baselines, Trends oder Health-Bewertungen werden nicht synthetisiert; verbleibende Fehler bleiben BLOCKED."
                                           ],
                                    "es":  [
-                                              "Se añadió una canonicalización de encabezados de secciones localizados/bilingües únicamente para la validación de Grounding.",
-                                              "Los alias KR/EN/JP/CN/DE/ES se mapean solo en una copia interna de validación; la respuesta localizada visible para el usuario se conserva.",
-                                              "Las secciones obligatorias realmente ausentes no se generan y el Grounding Validator sin cambios continúa bloqueándolas."
+                                              "Se añadió una reparación determinista para las secciones obligatorias Conclusion y Confirmed facts cuando faltan realmente.",
+                                              "El texto reparado se genera únicamente desde ICEops Deterministic Evaluation y se vuelve a validar por completo con el Grounding Validator sin cambios.",
+                                              "No se sintetizan análisis, causas, thresholds, baselines, tendencias ni juicios de salud; cualquier fallo restante continúa BLOCKED."
                                           ]
                                }
 }
