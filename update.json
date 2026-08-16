@@ -1,48 +1,48 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.180.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.180.0/ICEops_Setup_8.0.180.0.exe",
-    "sha256":  "6b25f2f8c43c0ead0786f3c46c98fcecc6b1a0220c24a72fb54f6a33f4f58a85",
-    "fileName":  "ICEops_Setup_8.0.180.0.exe",
+    "version":  "8.0.181.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.181.0/ICEops_Setup_8.0.181.0.exe",
+    "sha256":  "6e57febe315c740177c0de725c5bb6209a844ecd12cbef6ce7a518bfb18eed5a",
+    "fileName":  "ICEops_Setup_8.0.181.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T02:18:11.7018775+00:00",
+    "publishedAtUtc":  "2026-08-16T02:30:16.6879233+00:00",
     "releaseNotes":  [
-                         "V980 adds a deterministic response-format normalizer for the narrowly observed \u0027format · VERDICT line\u0027 grounding failure.",
-                         "If the LLM omits the required legacy VERDICT first line, ICEops derives NORMAL/CAUTION/CRITICAL/INCONCLUSIVE only from the already completed deterministic Condition Assessment, prepends the missing line, and revalidates the entire answer with the unchanged AiGroundingValidator.",
-                         "The repair cannot create or alter Operational Status, Condition Assessment, Criteria, thresholds, baselines, or health semantics. Any remaining format, semantic, citation, or evidence failure continues through the existing retry/BLOCKED path.",
-                         "V979 No-Criteria semantic neutralization, AiGroundingValidator, deterministic evaluation, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, AI Data Library, and Signal Tower hardware-control paths are unchanged."
+                         "V981 adds validation-only canonicalization for localized and bilingual AI response section headings that previously caused safe but unnecessary format BLOCKED results.",
+                         "Recognized KR/EN/JP/CN/DE/ES aliases such as \u0027[결론 / Conclusion]\u0027 and \u0027[확인된 사실 / Confirmed facts]\u0027 are mapped only in a temporary validation copy to the existing canonical Grounding section tokens; the user-visible localized answer is not rewritten.",
+                         "No section is invented. If Conclusion or Confirmed facts is genuinely absent, the unchanged AiGroundingValidator still returns format BLOCKED. Semantic, citation, criteria, trend, and evidence gates remain unchanged.",
+                         "V980 deterministic VERDICT repair, V979 No-Criteria semantic neutralization, deterministic evaluation, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, AI Data Library, and Signal Tower hardware-control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added deterministic repair for a missing legacy VERDICT first line.",
-                                              "The inserted VERDICT is derived only from deterministic Condition Assessment and the whole answer is revalidated with the unchanged Grounding validator.",
-                                              "All other format or grounding failures retain the existing retry/BLOCKED behavior."
+                                              "Added validation-only canonicalization for localized/bilingual AI response section headings.",
+                                              "Recognized KR/EN/JP/CN/DE/ES aliases are mapped only for Grounding validation; the displayed localized answer is preserved.",
+                                              "Missing mandatory sections are never synthesized and continue to be BLOCKED by the unchanged Grounding validator."
                                           ],
                                    "ko":  [
-                                              "누락된 legacy VERDICT 첫 줄을 결정론적으로 보완하는 Format Normalizer를 추가했습니다.",
-                                              "삽입되는 VERDICT는 이미 완료된 Deterministic Condition Assessment에서만 계산하며, 보완 후 전체 AI 답변을 기존 Grounding Validator로 다시 검증합니다.",
-                                              "다른 format 또는 grounding 실패는 기존 Retry/BLOCKED 동작을 그대로 유지합니다."
+                                              "다국어/이중 언어 AI 응답 섹션 헤더를 Grounding 검증용으로만 canonicalize하는 처리를 추가했습니다.",
+                                              "KR/EN/JP/CN/DE/ES 헤더 alias는 내부 검증 복사본에서만 매핑하며 사용자에게 표시되는 한국어 응답은 그대로 유지합니다.",
+                                              "실제로 필수 섹션이 누락된 경우에는 생성하지 않으며 기존 Grounding Validator가 계속 BLOCKED 처리합니다."
                                           ],
                                    "ja":  [
-                                              "欠落した legacy VERDICT の先頭行を決定論的に補完する Format Normalizer を追加しました。",
-                                              "挿入される VERDICT は完了済みの Deterministic Condition Assessment からのみ算出し、補完後に回答全体を既存 Grounding Validator で再検証します。",
-                                              "その他の format / grounding 失敗は既存の Retry/BLOCKED 動作を維持します。"
+                                              "多言語/二言語の AI 応答セクション見出しを Grounding 検証時のみ canonicalize する処理を追加しました。",
+                                              "KR/EN/JP/CN/DE/ES の見出し alias は内部検証コピーでのみ変換され、ユーザー表示のローカライズ済み回答は保持されます。",
+                                              "必須セクションが実際に欠落している場合は生成せず、既存 Grounding Validator が引き続き BLOCKED にします。"
                                           ],
                                    "zh-CN":  [
-                                                 "增加了用于补全缺失 legacy VERDICT 首行的确定性 Format Normalizer。",
-                                                 "插入的 VERDICT 只从已完成的 Deterministic Condition Assessment 计算，补全后使用现有 Grounding Validator 重新验证整个回答。",
-                                                 "其他 format 或 grounding 失败继续保持现有 Retry/BLOCKED 行为。"
+                                                 "增加了仅用于 Grounding 验证的多语言/双语 AI 响应章节标题 canonicalization。",
+                                                 "KR/EN/JP/CN/DE/ES 标题别名只在内部验证副本中映射，用户看到的本地化回答保持不变。",
+                                                 "如果必需章节确实缺失，则不会自动生成，现有 Grounding Validator 仍会将其 BLOCKED。"
                                              ],
                                    "de":  [
-                                              "Ein deterministischer Format Normalizer ergänzt eine fehlende legacy-VERDICT-Erstzeile.",
-                                              "Der eingefügte VERDICT wird ausschließlich aus dem bereits abgeschlossenen Deterministic Condition Assessment abgeleitet; danach wird die gesamte Antwort mit dem unveränderten Grounding Validator erneut geprüft.",
-                                              "Alle anderen Format- oder Grounding-Fehler behalten das bestehende Retry/BLOCKED-Verhalten."
+                                              "Eine ausschließlich für die Grounding-Prüfung verwendete Kanonisierung lokalisierter/zweisprachiger Abschnittsüberschriften wurde ergänzt.",
+                                              "KR/EN/JP/CN/DE/ES-Aliase werden nur in einer internen Prüfkopie abgebildet; die lokalisierte Benutzeranzeige bleibt unverändert.",
+                                              "Tatsächlich fehlende Pflichtabschnitte werden nicht erzeugt und weiterhin vom unveränderten Grounding Validator als BLOCKED behandelt."
                                           ],
                                    "es":  [
-                                              "Se añadió un Format Normalizer determinista para completar una primera línea legacy VERDICT ausente.",
-                                              "El VERDICT insertado se deriva únicamente del Deterministic Condition Assessment ya completado y luego se vuelve a validar toda la respuesta con el Grounding Validator sin cambios.",
-                                              "Los demás fallos de formato o grounding conservan el comportamiento Retry/BLOCKED existente."
+                                              "Se añadió una canonicalización de encabezados de secciones localizados/bilingües únicamente para la validación de Grounding.",
+                                              "Los alias KR/EN/JP/CN/DE/ES se mapean solo en una copia interna de validación; la respuesta localizada visible para el usuario se conserva.",
+                                              "Las secciones obligatorias realmente ausentes no se generan y el Grounding Validator sin cambios continúa bloqueándolas."
                                           ]
                                }
 }
