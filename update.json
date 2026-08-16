@@ -1,54 +1,54 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.177.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.177.0/ICEops_Setup_8.0.177.0.exe",
-    "sha256":  "16040c7bdbaf5d7cb54f5f7778e2f1b2624d850d85a8939dc2ec6a42f0b738f3",
-    "fileName":  "ICEops_Setup_8.0.177.0.exe",
+    "version":  "8.0.178.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.178.0/ICEops_Setup_8.0.178.0.exe",
+    "sha256":  "25a63d41a33ac82359fbf58050adf6548e6348eda7bcb22c8140ad43fe807c76",
+    "fileName":  "ICEops_Setup_8.0.178.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T01:27:43.3826115+00:00",
+    "publishedAtUtc":  "2026-08-16T01:40:47.8861631+00:00",
     "releaseNotes":  [
-                         "V977 improves AI Grounding recovery for no-criteria explanations without weakening the semantic evidence gate.",
-                         "Explicit non-evaluation wording is recognized structurally across EN/KR/JP/CN/DE/ES, while mixed positive claims such as \u0027appears normal\u0027 remain blocked when no condition criteria exist.",
-                         "Semantic Grounding failures such as condition_criteria, trend_criteria, baseline_criteria, and unsupported missing-data inference now receive one corrective AI retry and are fully revalidated; a second failure remains BLOCKED.",
-                         "Deterministic Operational/Condition evaluation, V975 status-card UI, AI Data Library, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, and Signal Tower hardware-control paths are unchanged."
+                         "V978 strengthens the No-Criteria AI output contract so local models do not expand Operational readiness or connection facts into unsupported process-health claims.",
+                         "When deterministic Condition is NOT EVALUATED with No Criteria, the prompt now requires a bounded semantic frame: report operational facts as observations and state that Process Condition cannot be classified without explicit health/normality criteria.",
+                         "A final output gate is appended after Evidence to prevent phrases such as \u0027connected and healthy\u0027, \u0027value is high\u0027, or \u0027appears normal\u0027; the same contract is present during the existing one-time corrective retry because retry uses the same analysis-content builder.",
+                         "AiGroundingValidator, deterministic evaluation, V975 status-card UI, AI Data Library, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, and Signal Tower hardware-control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Improved Grounding recovery for explicit no-criteria / NOT_EVALUATED explanations.",
-                                              "Non-evaluation wording is recognized structurally across supported UI languages; mixed positive condition claims remain blocked.",
-                                              "Semantic Grounding failures receive one corrective retry and are fully revalidated; repeated failures remain BLOCKED.",
-                                              "No change to deterministic evaluation or protected runtime/control paths."
+                                              "Strengthened the No-Criteria AI output contract without weakening Grounding validation.",
+                                              "Operational READY/connection facts may no longer be paraphrased as process health or normality.",
+                                              "A final post-Evidence output gate reinforces NOT_EVALUATED wording for both the first response and the existing corrective retry.",
+                                              "No change to Grounding Validator, deterministic evaluation, or protected runtime/control paths."
                                           ],
                                    "ko":  [
-                                              "No Criteria / NOT_EVALUATED 설명의 Grounding 회복 경로를 보강했습니다.",
-                                              "지원 언어에서 비판정 문맥을 구조적으로 인식하며, Criteria가 없는데 \u0027정상으로 보임\u0027 같은 실제 Condition 주장은 계속 차단합니다.",
-                                              "condition_criteria 등 Semantic Grounding 실패는 1회 교정 재요청 후 전체 재검증하며, 재실패 시 그대로 BLOCKED 처리합니다.",
-                                              "결정론적 평가 및 보호된 Runtime/제어 경로는 변경하지 않았습니다."
+                                              "Grounding 검증 강도는 그대로 유지하고 No Criteria AI 출력 계약만 강화했습니다.",
+                                              "Operational READY/연결 사실을 Process 정상·건강 판정으로 바꾸지 못하도록 명시적으로 분리했습니다.",
+                                              "Evidence 뒤 최종 출력 게이트를 추가해 첫 응답과 기존 1회 교정 Retry 모두 NOT_EVALUATED 의미를 유지하도록 했습니다.",
+                                              "Grounding Validator, 결정론적 평가 및 보호된 Runtime/제어 경로는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "No Criteria / NOT_EVALUATED 説明の Grounding 回復経路を強化しました。",
-                                              "対応言語で非評価の文脈を構造的に認識し、基準がない状態での肯定的な状態判定は引き続き遮断します。",
-                                              "Semantic Grounding エラーは1回だけ修正再要求して再検証し、再度失敗した場合は BLOCKED のままです。",
-                                              "決定論的評価および保護された Runtime/制御経路は変更していません。"
+                                              "Grounding 検証を緩和せず、No Criteria の AI 出力契約のみを強化しました。",
+                                              "Operational READY／接続の事実をプロセスの正常・健全判定へ拡張しないよう明確に分離しました。",
+                                              "Evidence 後の最終出力ゲートにより、初回応答と既存の1回の修正 Retry の両方で NOT_EVALUATED の意味を維持します。",
+                                              "Grounding Validator、決定論的評価、保護された Runtime／制御経路は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "增强了 No Criteria / NOT_EVALUATED 说明的 Grounding 恢复路径。",
-                                                 "在支持语言中结构化识别未评估语境；没有标准时的肯定性状态判断仍会被拦截。",
-                                                 "Semantic Grounding 失败仅进行一次纠正重试并重新完整验证；再次失败仍保持 BLOCKED。",
-                                                 "未修改确定性评估及受保护的 Runtime/控制路径。"
+                                                 "在不放宽 Grounding 验证的前提下，仅强化了 No Criteria 的 AI 输出契约。",
+                                                 "明确禁止把 Operational READY／连接事实扩展为流程健康或正常判断。",
+                                                 "在 Evidence 后增加最终输出门控，使首次回答和现有的一次纠正 Retry 都保持 NOT_EVALUATED 语义。",
+                                                 "未修改 Grounding Validator、确定性评估及受保护的 Runtime／控制路径。"
                                              ],
                                    "de":  [
-                                              "Der Grounding-Wiederherstellungspfad für No-Criteria-/NOT_EVALUATED-Erklärungen wurde verbessert.",
-                                              "Nichtbewertungs-Kontext wird in den unterstützten Sprachen strukturell erkannt; positive Zustandsaussagen ohne Kriterien bleiben blockiert.",
-                                              "Semantische Grounding-Fehler erhalten genau einen Korrekturversuch und werden vollständig neu validiert; erneutes Scheitern bleibt BLOCKED.",
-                                              "Deterministische Bewertung und geschützte Runtime-/Steuerpfade wurden nicht geändert."
+                                              "Der No-Criteria-Ausgabevertrag wurde verstärkt, ohne die Grounding-Prüfung abzuschwächen.",
+                                              "Operational-READY-/Verbindungsfakten dürfen nicht mehr als Prozessgesundheit oder Normalität umformuliert werden.",
+                                              "Ein abschließendes Ausgabegate nach den Evidence-Daten erzwingt die NOT_EVALUATED-Semantik sowohl bei der ersten Antwort als auch beim vorhandenen Korrektur-Retry.",
+                                              "Grounding Validator, deterministische Bewertung und geschützte Runtime-/Steuerpfade bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Se mejoró la recuperación de Grounding para explicaciones No Criteria / NOT_EVALUATED.",
-                                              "El contexto de no evaluación se reconoce de forma estructural en los idiomas compatibles; las afirmaciones positivas sin criterios siguen bloqueadas.",
-                                              "Los fallos semánticos de Grounding reciben un único reintento correctivo y se vuelven a validar por completo; si falla de nuevo, permanece BLOCKED.",
-                                              "No se modificaron la evaluación determinista ni las rutas protegidas de Runtime/control."
+                                              "Se reforzó el contrato de salida No Criteria sin relajar la validación de Grounding.",
+                                              "Los hechos de Operational READY/conexión ya no pueden reformularse como salud o normalidad del proceso.",
+                                              "Una compuerta final de salida después de Evidence refuerza la semántica NOT_EVALUATED tanto en la primera respuesta como en el reintento correctivo existente.",
+                                              "No se modificaron Grounding Validator, la evaluación determinista ni las rutas protegidas de Runtime/control."
                                           ]
                                }
 }
