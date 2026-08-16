@@ -1,54 +1,55 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.178.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.178.0/ICEops_Setup_8.0.178.0.exe",
-    "sha256":  "25a63d41a33ac82359fbf58050adf6548e6348eda7bcb22c8140ad43fe807c76",
-    "fileName":  "ICEops_Setup_8.0.178.0.exe",
+    "version":  "8.0.179.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.179.0/ICEops_Setup_8.0.179.0.exe",
+    "sha256":  "4f8455dbf43f51f50ed122c7f3484a34970eb455125902900231b580ddbb61fd",
+    "fileName":  "ICEops_Setup_8.0.179.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T01:40:47.8861631+00:00",
+    "publishedAtUtc":  "2026-08-16T01:58:29.1670620+00:00",
     "releaseNotes":  [
-                         "V978 strengthens the No-Criteria AI output contract so local models do not expand Operational readiness or connection facts into unsupported process-health claims.",
-                         "When deterministic Condition is NOT EVALUATED with No Criteria, the prompt now requires a bounded semantic frame: report operational facts as observations and state that Process Condition cannot be classified without explicit health/normality criteria.",
-                         "A final output gate is appended after Evidence to prevent phrases such as \u0027connected and healthy\u0027, \u0027value is high\u0027, or \u0027appears normal\u0027; the same contract is present during the existing one-time corrective retry because retry uses the same analysis-content builder.",
-                         "AiGroundingValidator, deterministic evaluation, V975 status-card UI, AI Data Library, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, and Signal Tower hardware-control paths are unchanged."
+                         "V979 adds a deterministic No-Criteria semantic neutralizer after LLM inference and before the unchanged Grounding validator.",
+                         "When Grounding rejects a condition_criteria sentence while deterministic Condition is NOT_EVALUATED with No Criteria, ICEops reduces only the rejected sentence, then validates the entire answer again with the same AiGroundingValidator.",
+                         "Known operational coupling such as \u00278/8 ports are connected and in a healthy state\u0027 is reduced to the supported connection fact; other rejected condition-evaluation lines are replaced with the deterministic NOT_EVALUATED/no-criteria statement and its deterministic Evidence ID.",
+                         "Neutralization is bounded to four rejected condition_criteria lines per response and runs both before the existing one-time corrective retry and after a retry response. Any remaining Grounding failure is still BLOCKED.",
+                         "AiGroundingValidator, deterministic evaluation, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, AI Data Library, and Signal Tower hardware-control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Strengthened the No-Criteria AI output contract without weakening Grounding validation.",
-                                              "Operational READY/connection facts may no longer be paraphrased as process health or normality.",
-                                              "A final post-Evidence output gate reinforces NOT_EVALUATED wording for both the first response and the existing corrective retry.",
-                                              "No change to Grounding Validator, deterministic evaluation, or protected runtime/control paths."
+                                              "Added deterministic No-Criteria semantic neutralization before the unchanged Grounding validator.",
+                                              "Only a sentence already rejected as condition_criteria can be reduced; the entire answer is revalidated afterward.",
+                                              "Operational facts such as \u0027connected\u0027 are preserved while unsupported health/normality meaning is removed; unreducible condition claims fall back to the deterministic NOT_EVALUATED statement.",
+                                              "The existing one-time AI corrective retry remains available only if deterministic neutralization does not produce a fully grounded answer."
                                           ],
                                    "ko":  [
-                                              "Grounding 검증 강도는 그대로 유지하고 No Criteria AI 출력 계약만 강화했습니다.",
-                                              "Operational READY/연결 사실을 Process 정상·건강 판정으로 바꾸지 못하도록 명시적으로 분리했습니다.",
-                                              "Evidence 뒤 최종 출력 게이트를 추가해 첫 응답과 기존 1회 교정 Retry 모두 NOT_EVALUATED 의미를 유지하도록 했습니다.",
-                                              "Grounding Validator, 결정론적 평가 및 보호된 Runtime/제어 경로는 변경하지 않았습니다."
+                                              "기존 Grounding Validator 앞에 No Criteria 전용 결정론적 Semantic Neutralizer를 추가했습니다.",
+                                              "Validator가 condition_criteria로 이미 거부한 문장만 축소하며, 수정 후 전체 AI 답변을 동일한 Validator로 다시 검증합니다.",
+                                              "\u0027connected\u0027 같은 운영 사실은 유지하고 근거 없는 정상/건강 의미만 제거하며, 안전하게 축소할 수 없는 Condition 평가는 결정론적 NOT_EVALUATED 문장으로 치환합니다.",
+                                              "결정론적 중화 후에도 Grounding이 실패할 때만 기존 1회 AI 교정 Retry를 사용하며, 최종 실패는 계속 BLOCKED 처리합니다."
                                           ],
                                    "ja":  [
-                                              "Grounding 検証を緩和せず、No Criteria の AI 出力契約のみを強化しました。",
-                                              "Operational READY／接続の事実をプロセスの正常・健全判定へ拡張しないよう明確に分離しました。",
-                                              "Evidence 後の最終出力ゲートにより、初回応答と既存の1回の修正 Retry の両方で NOT_EVALUATED の意味を維持します。",
-                                              "Grounding Validator、決定論的評価、保護された Runtime／制御経路は変更していません。"
+                                              "既存の Grounding Validator の前に No Criteria 専用の決定論的 Semantic Neutralizer を追加しました。",
+                                              "Validator が condition_criteria として拒否した文だけを縮約し、その後に回答全体を同じ Validator で再検証します。",
+                                              "接続などの運用事実は保持し、根拠のない正常・健全の意味だけを除去します。安全に縮約できない Condition 評価は決定論的 NOT_EVALUATED 文へ置換します。",
+                                              "決定論的中和後も失敗する場合のみ既存の1回の AI 修正 Retry を使用し、最終失敗は引き続き BLOCKED です。"
                                           ],
                                    "zh-CN":  [
-                                                 "在不放宽 Grounding 验证的前提下，仅强化了 No Criteria 的 AI 输出契约。",
-                                                 "明确禁止把 Operational READY／连接事实扩展为流程健康或正常判断。",
-                                                 "在 Evidence 后增加最终输出门控，使首次回答和现有的一次纠正 Retry 都保持 NOT_EVALUATED 语义。",
-                                                 "未修改 Grounding Validator、确定性评估及受保护的 Runtime／控制路径。"
+                                                 "在现有 Grounding Validator 之前增加了仅用于 No Criteria 的确定性 Semantic Neutralizer。",
+                                                 "只缩减已经被 Validator 判定为 condition_criteria 的句子，随后用同一个 Validator 重新验证整段回答。",
+                                                 "保留连接等运行事实，只移除无依据的健康/正常含义；无法安全缩减的 Condition 判断会替换为确定性的 NOT_EVALUATED 说明。",
+                                                 "只有确定性中和后仍未通过时才使用现有的一次 AI 纠正 Retry，最终失败仍保持 BLOCKED。"
                                              ],
                                    "de":  [
-                                              "Der No-Criteria-Ausgabevertrag wurde verstärkt, ohne die Grounding-Prüfung abzuschwächen.",
-                                              "Operational-READY-/Verbindungsfakten dürfen nicht mehr als Prozessgesundheit oder Normalität umformuliert werden.",
-                                              "Ein abschließendes Ausgabegate nach den Evidence-Daten erzwingt die NOT_EVALUATED-Semantik sowohl bei der ersten Antwort als auch beim vorhandenen Korrektur-Retry.",
-                                              "Grounding Validator, deterministische Bewertung und geschützte Runtime-/Steuerpfade bleiben unverändert."
+                                              "Vor dem unveränderten Grounding Validator wurde ein deterministischer No-Criteria Semantic Neutralizer ergänzt.",
+                                              "Nur Sätze, die bereits als condition_criteria abgelehnt wurden, werden reduziert; anschließend wird die gesamte Antwort erneut mit demselben Validator geprüft.",
+                                              "Betriebsfakten wie die Verbindung bleiben erhalten, während unbelegte Gesundheits-/Normalitätsaussagen entfernt werden; nicht sicher reduzierbare Condition-Aussagen werden durch die deterministische NOT_EVALUATED-Aussage ersetzt.",
+                                              "Der bestehende einmalige AI-Korrektur-Retry wird nur verwendet, wenn die deterministische Neutralisierung nicht vollständig grounded ist; endgültige Fehler bleiben BLOCKED."
                                           ],
                                    "es":  [
-                                              "Se reforzó el contrato de salida No Criteria sin relajar la validación de Grounding.",
-                                              "Los hechos de Operational READY/conexión ya no pueden reformularse como salud o normalidad del proceso.",
-                                              "Una compuerta final de salida después de Evidence refuerza la semántica NOT_EVALUATED tanto en la primera respuesta como en el reintento correctivo existente.",
-                                              "No se modificaron Grounding Validator, la evaluación determinista ni las rutas protegidas de Runtime/control."
+                                              "Se añadió un Semantic Neutralizer determinista para No Criteria antes del Grounding Validator sin modificarlo.",
+                                              "Solo se reduce una frase que el Validator ya rechazó como condition_criteria; después se vuelve a validar la respuesta completa con el mismo Validator.",
+                                              "Se conservan hechos operativos como la conexión y se elimina únicamente el significado no sustentado de salud/normalidad; una evaluación de Condition que no pueda reducirse con seguridad se sustituye por la declaración determinista NOT_EVALUATED.",
+                                              "El reintento correctivo de AI existente se usa solo si la neutralización determinista aún no logra una respuesta completamente grounded; el fallo final continúa como BLOCKED."
                                           ]
                                }
 }
