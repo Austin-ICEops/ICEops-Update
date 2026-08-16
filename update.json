@@ -1,55 +1,54 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.175.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.175.0/ICEops_Setup_8.0.175.0.exe",
-    "sha256":  "44de3cc88eedb1b3f6be0c29d518f6729e5b907720810c232db6669a3fc90ef6",
-    "fileName":  "ICEops_Setup_8.0.175.0.exe",
+    "version":  "8.0.176.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.176.0/ICEops_Setup_8.0.176.0.exe",
+    "sha256":  "e77467822a8e13cacc5cf7ac66710c8df8cf17949a724c604c1681f4d896dd58",
+    "fileName":  "ICEops_Setup_8.0.176.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T00:57:25.8533295+00:00",
+    "publishedAtUtc":  "2026-08-16T01:13:41.9809051+00:00",
     "releaseNotes":  [
-                         "V975 adds operator-facing explanations to the deterministic status cards without changing any deterministic evaluation, AI Grounding validation, runtime, communication, or control behavior.",
-                         "The AI Grounding card now explains GROUNDED, PARTIAL, and BLOCKED in plain operator language; BLOCKED continues to withhold unsupported AI interpretation while deterministic facts remain visible.",
-                         "The System Operation card now shows a concise deterministic reason derived only from evaluation fields such as polling, connected ports, faults, alarms, freshness, and explicit signal-quality issues.",
-                         "All new status-card help text is localized for English, Korean, Japanese, Simplified Chinese, German, and Spanish.",
-                         "V974 multilingual semantic Grounding guard, V972 AI Data Library, V970 Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, permissions, HMI read-only, and Signal Tower hardware-control paths are unchanged."
+                         "V976 fixes one AI Grounding false positive observed in the V975 video test without weakening the V974 semantic guard.",
+                         "An explicit NOT_EVALUATED explanation tied to absent explicit condition criteria is now treated as an epistemic limitation when normal/abnormal terms are used only to explain that classification was not performed.",
+                         "Unsupported positive condition claims such as healthy/normal state, high/low value, safe/risky state, baseline deviation without a valid learned baseline, and unsupported missing-data inference remain blocked.",
+                         "V975 operator-clarity UI, deterministic Operational/Condition evaluation, AI Data Library, Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, HMI read-only, and Signal Tower hardware-control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added plain-language help text for GROUNDED, PARTIAL, and BLOCKED.",
-                                              "Added a concise deterministic reason under System Operation.",
-                                              "Operational reason text is derived only from deterministic evaluation fields, never from LLM output.",
-                                              "No change to Grounding validation or protected runtime/control paths."
+                                              "Fixed a Grounding false positive for explicit NOT_EVALUATED / no-criteria explanations.",
+                                              "Normal/abnormal wording is allowed only when used to state that classification was not performed.",
+                                              "Positive health, magnitude, risk, baseline-deviation, and unsupported missing-data claims remain blocked.",
+                                              "No change to deterministic evaluation or protected runtime/control paths."
                                           ],
                                    "ko":  [
-                                              "GROUNDED, PARTIAL, BLOCKED 상태에 사용자가 바로 이해할 수 있는 설명 문구를 추가했습니다.",
-                                              "System Operation 카드 아래에 결정론적 판정 근거를 한 줄로 표시합니다.",
-                                              "Operational Reason은 LLM 출력이 아니라 Polling, Port 연결, Fault, Alarm, Freshness 등 결정론적 필드만 사용합니다.",
-                                              "Grounding 검증 로직과 보호된 Runtime/제어 경로는 변경하지 않았습니다."
+                                              "명시적인 NOT_EVALUATED / No Criteria 설명이 Grounding에서 잘못 차단되던 false positive를 수정했습니다.",
+                                              "정상/비정상 표현은 판정을 수행하지 않았다는 비판정 설명에 한해 허용됩니다.",
+                                              "Health, 높음/낮음, 위험/안전, Baseline deviation, 근거 없는 데이터 누락 추론에 대한 차단은 그대로 유지됩니다.",
+                                              "결정론적 평가와 보호된 Runtime/제어 경로는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "GROUNDED、PARTIAL、BLOCKED にオペレーター向けの説明を追加しました。",
-                                              "System Operation カードに決定論的な判定理由を1行で表示します。",
-                                              "Operational Reason は LLM 出力ではなく、Polling、Port 接続、Fault、Alarm、Freshness などの決定論的フィールドのみを使用します。",
-                                              "Grounding 検証ロジックおよび保護された Runtime/制御経路は変更していません。"
+                                              "明示的な NOT_EVALUATED / No Criteria 説明が Grounding で誤って遮断される false positive を修正しました。",
+                                              "Normal/Abnormal の表現は、判定を実施していないことを説明する場合に限って許可されます。",
+                                              "Health、高低、Risk、Baseline deviation、根拠のない欠損データ推論の遮断は維持されます。",
+                                              "決定論的評価および保護された Runtime/制御経路は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "为 GROUNDED、PARTIAL 和 BLOCKED 增加了便于操作人员理解的说明。",
-                                                 "在 System Operation 卡片下增加一行确定性判定原因。",
-                                                 "Operational Reason 仅来自 Polling、Port 连接、Fault、Alarm、Freshness 等确定性字段，不使用 LLM 输出。",
-                                                 "未修改 Grounding 验证逻辑及受保护的 Runtime/控制路径。"
+                                                 "修复了明确 NOT_EVALUATED / No Criteria 说明被 Grounding 错误拦截的 false positive。",
+                                                 "Normal/Abnormal 表述仅在说明未执行状态分类时允许。",
+                                                 "Health、高低、Risk、Baseline deviation 以及无依据的数据缺失推断仍会被拦截。",
+                                                 "未修改确定性评估及受保护的 Runtime/控制路径。"
                                              ],
                                    "de":  [
-                                              "Für GROUNDED, PARTIAL und BLOCKED wurden verständliche Bedienerhinweise ergänzt.",
-                                              "Die Karte System Operation zeigt nun eine kompakte deterministische Begründung.",
-                                              "Der Operational Reason wird ausschließlich aus deterministischen Feldern wie Polling, Port-Verbindung, Faults, Alarmen und Freshness abgeleitet, niemals aus LLM-Ausgaben.",
-                                              "Grounding-Validierung und geschützte Runtime-/Steuerpfade wurden nicht geändert."
+                                              "Ein Grounding-False-Positive bei expliziten NOT_EVALUATED-/No-Criteria-Erklärungen wurde behoben.",
+                                              "Normal/Abnormal-Formulierungen sind nur zulässig, wenn ausdrücklich erklärt wird, dass keine Klassifikation durchgeführt wurde.",
+                                              "Positive Health-, High/Low-, Risk-, Baseline-Deviation- und unbelegte Missing-Data-Aussagen bleiben blockiert.",
+                                              "Deterministische Bewertung und geschützte Runtime-/Steuerpfade wurden nicht geändert."
                                           ],
                                    "es":  [
-                                              "Se añadieron explicaciones claras para GROUNDED, PARTIAL y BLOCKED.",
-                                              "La tarjeta System Operation muestra ahora una razón determinista resumida.",
-                                              "Operational Reason se deriva únicamente de campos deterministas como Polling, Ports conectados, Faults, Alarmas y Freshness, nunca de la salida del LLM.",
-                                              "No se modificaron la validación Grounding ni las rutas protegidas de Runtime/control."
+                                              "Se corrigió un falso positivo de Grounding para explicaciones explícitas NOT_EVALUATED / No Criteria.",
+                                              "Las expresiones Normal/Abnormal solo se permiten cuando explican que no se realizó una clasificación.",
+                                              "Las afirmaciones positivas de Health, High/Low, Risk, Baseline deviation y Missing Data sin evidencia siguen bloqueadas.",
+                                              "No se modificaron la evaluación determinista ni las rutas protegidas de Runtime/control."
                                           ]
                                }
 }
