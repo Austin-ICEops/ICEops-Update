@@ -1,54 +1,56 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.170.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.170.0/ICEops_Setup_8.0.170.0.exe",
-    "sha256":  "16e91136f8d7b6335a313ef2d692a0941aa9ff6b7fd40f242d17498b1516bd7b",
-    "fileName":  "ICEops_Setup_8.0.170.0.exe",
+    "version":  "8.0.172.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.172.0/ICEops_Setup_8.0.172.0.exe",
+    "sha256":  "15a8863c2816f42b54953a93143f1141d20d9434221eb0110f7a7bdfd9125566",
+    "fileName":  "ICEops_Setup_8.0.172.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-15T16:24:14.3784797+00:00",
+    "publishedAtUtc":  "2026-08-16T00:17:38.0121098+00:00",
     "releaseNotes":  [
-                         "Safe Disconnect presentation now keeps the last live dashboard snapshot visually frozen while the existing protected disconnect lifecycle runs, then confirms transport release before fading into the offline state.",
-                         "The disconnect overlay now presents three operator-facing stages—live presentation freeze, protected teardown in progress, and transport-release confirmation—followed by a short \u0027Disconnected safely\u0027 confirmation instead of disappearing at the same instant the cards switch offline.",
-                         "All new timing is presentation-only and runs beside/after the existing RuntimeStopGuard lifecycle. No delay was added before Disconnect, and Safe Disconnect, RuntimeStopGuard, socket/queue teardown, PDO/ISDU, polling/MAX, network recovery, and disconnect feedback contracts are unchanged.",
-                         "V969 GitHub Contents API primary update-manifest authority, V968 Signal splash, FIX27 AI evidence scope, FIX26 HMI/9-segment visualization, and all existing communication/runtime protection remain preserved."
+                         "Added AI Data Library for reusable external evidence references and ICEops-managed copies used by the existing bounded local evidence pipeline.",
+                         "AI Data Library shows managed storage usage, file count, external-reference count, and keeps automatic cleanup OFF by default. External source files are never deleted by ICEops; managed copies require an explicit confirmed Delete Copy action.",
+                         "SQLite/DB, CSV/TSV, JSON/XML/text/log evidence selected from the library continues through the existing read-only AiAttachment/AiLocalEvidenceSummarizer path; no new AI write authority or Grounding relaxation was introduced.",
+                         "Main-shell co-branding was simplified: the SMC footer logo was removed from the main UI and Pepperl+Fuchs branding was enlarged and emphasized. Device/vendor-specific assets elsewhere remain unchanged.",
+                         "V971 deterministic AI source was compile-hardened, including the CS0165 connected definite-assignment fix in single-port evaluation; the Evidence -\u003e Criteria -\u003e AI Explanation policy and strict Grounding behavior are unchanged.",
+                         "V970 Safe Disconnect, V969 updater authority, communication, Polling/MAX, PDO/ISDU, Output Coordinator, Studio Runtime, permissions, HMI read-only, Signal Tower control and 8-port runtime behavior are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Safe Disconnect now freezes the last live dashboard presentation, shows protected teardown progress, confirms transport release, briefly reports \u0027Disconnected safely\u0027, and then fades into the offline dashboard.",
-                                              "The UI transition is presentation-only and never delays or replaces the existing protected Disconnect/RuntimeStopGuard lifecycle.",
-                                              "No socket, SerialCommandQueue, polling/MAX, PDO/ISDU, recovery, Runtime, Signal Tower control, HMI, or AI behavior was changed.",
-                                              "The V969 update-manifest authority fix and V968 Signal splash remain intact."
+                                              "Added AI Data Library with reusable external references, optional managed copies, storage usage and explicit removal/deletion controls.",
+                                              "External originals are never deleted; only ICEops-managed copies can be physically deleted after confirmation, and automatic cleanup remains OFF.",
+                                              "Main footer branding now emphasizes Pepperl+Fuchs and removes the SMC co-brand logo from the main shell.",
+                                              "V971 deterministic AI/Grounding logic remains strict; only compile-hardening changes were applied to that evaluation source."
                                           ],
                                    "ko":  [
-                                              "Safe Disconnect 시 마지막 라이브 Dashboard 화면을 고정한 상태로 보호 해제 진행 상황을 표시하고, 통신 해제를 확인한 뒤 \u0027안전하게 연결 해제되었습니다\u0027를 잠시 보여준 후 Offline 화면으로 자연스럽게 전환합니다.",
-                                              "이번 변경은 UI Presentation 전용이며 기존 Disconnect/RuntimeStopGuard 보호 절차를 지연하거나 대체하지 않습니다.",
-                                              "Socket, SerialCommandQueue, Polling/MAX, PDO/ISDU, Recovery, Runtime, Signal Tower 실제 제어, HMI, AI 동작은 변경하지 않았습니다.",
-                                              "V969 자동 업데이트 Manifest Authority 패치와 V968 Signal Splash도 그대로 유지됩니다."
+                                              "외부 파일 참조와 선택적 관리 복사본을 재사용할 수 있는 AI Data Library, 저장용량 표시, 제거/삭제 기능을 추가했습니다.",
+                                              "외부 원본 파일은 ICEops가 삭제하지 않으며 ICEops 관리 복사본만 확인 후 실제 삭제할 수 있습니다. 자동 삭제는 기본 OFF입니다.",
+                                              "메인 하단의 SMC 공동 브랜딩 로고를 제거하고 Pepperl+Fuchs 로고를 확대해 메인 제품 브랜딩을 강화했습니다.",
+                                              "V971 결정론적 AI/Grounding 정책은 그대로 유지하며 해당 평가 소스에는 빌드 안정화를 위한 컴파일 하드닝만 적용했습니다."
                                           ],
                                    "ja":  [
-                                              "Safe Disconnect では最後のライブ Dashboard 表示を固定し、保護された切断処理、通信解放確認、『安全に切断されました』の短い確認表示を経て Offline 画面へ滑らかに移行します。",
-                                              "この変更は UI Presentation 専用で、既存の Disconnect/RuntimeStopGuard 保護ライフサイクルを遅延・置換しません。",
-                                              "Socket、SerialCommandQueue、Polling/MAX、PDO/ISDU、Recovery、Runtime、Signal Tower 実制御、HMI、AI の動作は変更していません。",
-                                              "V969 の Update Manifest Authority 修正と V968 Signal Splash も維持されます。"
+                                              "外部ファイル参照と任意の管理コピーを再利用できる AI Data Library、ストレージ使用量表示、削除管理を追加しました。",
+                                              "外部の原本は ICEops が削除せず、ICEops 管理コピーのみ確認後に実ファイルを削除できます。自動削除は既定で OFF です。",
+                                              "メインフッターの SMC 共同ブランドロゴを削除し、Pepperl+Fuchs ロゴを拡大して製品ブランディングを強化しました。",
+                                              "V971 の決定論的 AI / Grounding ポリシーは維持し、評価ソースにはビルド安定化のためのコンパイルハードニングのみ適用しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "Safe Disconnect 现在会冻结最后一帧实时 Dashboard，显示受保护的断开进度，确认通信释放，短暂显示“已安全断开连接”，然后平滑过渡到 Offline 画面。",
-                                                 "本次修改仅属于 UI Presentation，不会延迟或替换现有 Disconnect/RuntimeStopGuard 保护流程。",
-                                                 "Socket、SerialCommandQueue、Polling/MAX、PDO/ISDU、Recovery、Runtime、Signal Tower 实际控制、HMI 与 AI 行为均未修改。",
-                                                 "V969 更新 Manifest Authority 修复与 V968 Signal Splash 均保持不变。"
+                                                 "新增 AI Data Library，可复用外部文件引用或可选的托管副本，并显示存储使用量及删除管理。",
+                                                 "ICEops 永远不会删除外部原始文件；只有 ICEops 托管副本可在确认后从磁盘删除，自动清理默认关闭。",
+                                                 "主界面页脚移除 SMC 联合品牌标识并放大 Pepperl+Fuchs 标识，以强化产品主品牌。",
+                                                 "V971 的确定性 AI / Grounding 策略保持严格不变，仅对评估源代码进行了编译稳定性加固。"
                                              ],
                                    "de":  [
-                                              "Safe Disconnect friert nun die letzte Live-Dashboard-Darstellung ein, zeigt den geschützten Trennfortschritt, bestätigt die Kommunikationsfreigabe, zeigt kurz \u0027Sicher getrennt\u0027 und blendet anschließend weich in den Offline-Zustand über.",
-                                              "Die Änderung betrifft ausschließlich die UI-Darstellung und verzögert oder ersetzt den bestehenden geschützten Disconnect/RuntimeStopGuard-Ablauf nicht.",
-                                              "Socket, SerialCommandQueue, Polling/MAX, PDO/ISDU, Recovery, Runtime, reale Signal-Tower-Steuerung, HMI und AI bleiben unverändert.",
-                                              "Der V969 Update-Manifest-Authority-Fix und der V968 Signal Splash bleiben erhalten."
+                                              "Die AI Data Library verwaltet wiederverwendbare externe Dateiverweise und optionale ICEops-Kopien inklusive Speicheranzeige und Löschsteuerung.",
+                                              "Externe Originaldateien werden von ICEops niemals gelöscht; nur verwaltete Kopien können nach Bestätigung physisch entfernt werden. Automatische Bereinigung bleibt standardmäßig AUS.",
+                                              "Im Haupt-Footer wurde das SMC-Co-Branding entfernt und das Pepperl+Fuchs-Branding vergrößert und hervorgehoben.",
+                                              "Die strikte deterministische AI-/Grounding-Policy aus V971 bleibt unverändert; am Evaluator wurden nur Compile-Hardening-Anpassungen vorgenommen."
                                           ],
                                    "es":  [
-                                              "Safe Disconnect ahora congela la última vista Live del Dashboard, muestra el progreso de desconexión protegida, confirma la liberación de la comunicación, muestra brevemente \u0027Desconectado de forma segura\u0027 y después hace una transición suave al estado Offline.",
-                                              "El cambio es exclusivamente de presentación UI y no retrasa ni sustituye el ciclo protegido Disconnect/RuntimeStopGuard existente.",
-                                              "Socket, SerialCommandQueue, Polling/MAX, PDO/ISDU, Recovery, Runtime, control real de Signal Tower, HMI y AI no cambian.",
-                                              "Se conservan la corrección V969 de Update Manifest Authority y el Signal Splash de V968."
+                                              "Se añadió AI Data Library para referencias externas reutilizables y copias administradas opcionales, con uso de almacenamiento y controles de eliminación.",
+                                              "ICEops nunca elimina los archivos originales externos; solo las copias administradas pueden borrarse físicamente tras confirmación. La limpieza automática queda desactivada por defecto.",
+                                              "El pie principal elimina el co-branding de SMC y amplía la marca Pepperl+Fuchs para reforzar la identidad principal del producto.",
+                                              "La política determinista de AI/Grounding de V971 sigue siendo estricta; el evaluador solo recibió ajustes de compile-hardening."
                                           ]
                                }
 }
