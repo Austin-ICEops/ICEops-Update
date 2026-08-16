@@ -1,55 +1,55 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.174.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.174.0/ICEops_Setup_8.0.174.0.exe",
-    "sha256":  "fe447b06a335fd8bd31f4499d5e50aa92741260e276f436ca56c94c2b0b8593a",
-    "fileName":  "ICEops_Setup_8.0.174.0.exe",
+    "version":  "8.0.175.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.175.0/ICEops_Setup_8.0.175.0.exe",
+    "sha256":  "44de3cc88eedb1b3f6be0c29d518f6729e5b907720810c232db6669a3fc90ef6",
+    "fileName":  "ICEops_Setup_8.0.175.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T00:46:15.9717762+00:00",
+    "publishedAtUtc":  "2026-08-16T00:57:25.8533295+00:00",
     "releaseNotes":  [
-                         "V974 closes a multilingual AI Grounding semantic gap while preserving the V973 deterministic architecture and all protected runtime/control paths.",
-                         "The Grounding validator now treats the deterministic E2 criteria_sources field as authoritative, so an explicit No Criteria result cannot be bypassed by loose criteria-like tokens in raw evidence packets.",
-                         "Without explicit criteria, assertive normal/healthy, high/low magnitude, and safe/risky language is rejected; Korean forms such as 정상으로 보임 and 높은/낮은 수치 are covered without blocking verification instructions.",
-                         "A \u0027-\u0027 displayed value remains an observation only; missing-data or data-loss inference is rejected unless the evidence explicitly declares missing/unavailable/invalid data.",
-                         "V972 AI Data Library, Pepperl+Fuchs branding, V970 Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, permissions, HMI read-only and Signal Tower hardware-control paths are unchanged."
+                         "V975 adds operator-facing explanations to the deterministic status cards without changing any deterministic evaluation, AI Grounding validation, runtime, communication, or control behavior.",
+                         "The AI Grounding card now explains GROUNDED, PARTIAL, and BLOCKED in plain operator language; BLOCKED continues to withhold unsupported AI interpretation while deterministic facts remain visible.",
+                         "The System Operation card now shows a concise deterministic reason derived only from evaluation fields such as polling, connected ports, faults, alarms, freshness, and explicit signal-quality issues.",
+                         "All new status-card help text is localized for English, Korean, Japanese, Simplified Chinese, German, and Spanish.",
+                         "V974 multilingual semantic Grounding guard, V972 AI Data Library, V970 Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, permissions, HMI read-only, and Signal Tower hardware-control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Strengthened multilingual AI Grounding without changing deterministic status evaluation.",
-                                              "Deterministic criteria_sources is now authoritative; No Criteria cannot be overridden by loose raw-packet tokens.",
-                                              "Normal/healthy, high/low magnitude and safe/risky assertions require explicit criteria, while verification instructions remain allowed.",
-                                              "A \u0027-\u0027 value does not prove missing data; missing-data inference requires explicit evidence."
+                                              "Added plain-language help text for GROUNDED, PARTIAL, and BLOCKED.",
+                                              "Added a concise deterministic reason under System Operation.",
+                                              "Operational reason text is derived only from deterministic evaluation fields, never from LLM output.",
+                                              "No change to Grounding validation or protected runtime/control paths."
                                           ],
                                    "ko":  [
-                                              "Deterministic 상태 판정은 유지하면서 다국어 AI Grounding semantic guard를 보강했습니다.",
-                                              "E2의 criteria_sources를 최우선 권위로 사용하므로 No Criteria를 raw Evidence의 느슨한 토큰이 우회할 수 없습니다.",
-                                              "Criteria가 없으면 정상/건강, 높은/낮은 수치, 안전/위험 같은 평가 표현을 차단하되 정상 범위인지 확인 같은 점검 지시문은 허용합니다.",
-                                              "\u0027-\u0027 표시는 관측 사실일 뿐 데이터 누락의 증거가 아니며, 누락/결측 추론은 명시적 Evidence가 있을 때만 허용합니다."
+                                              "GROUNDED, PARTIAL, BLOCKED 상태에 사용자가 바로 이해할 수 있는 설명 문구를 추가했습니다.",
+                                              "System Operation 카드 아래에 결정론적 판정 근거를 한 줄로 표시합니다.",
+                                              "Operational Reason은 LLM 출력이 아니라 Polling, Port 연결, Fault, Alarm, Freshness 등 결정론적 필드만 사용합니다.",
+                                              "Grounding 검증 로직과 보호된 Runtime/제어 경로는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Deterministic 状態判定を変更せず、多言語 AI Grounding の semantic guard を強化しました。",
-                                              "E2 の criteria_sources を最優先の権威として使用し、No Criteria を raw Evidence の曖昧なトークンで回避できないようにしました。",
-                                              "Criteria がない場合、normal/healthy、高い/低い、安全/危険などの評価表現を拒否し、確認指示は許可します。",
-                                              "\u0027-\u0027 表示だけでは missing data と判断せず、欠損推論には明示的 Evidence を要求します。"
+                                              "GROUNDED、PARTIAL、BLOCKED にオペレーター向けの説明を追加しました。",
+                                              "System Operation カードに決定論的な判定理由を1行で表示します。",
+                                              "Operational Reason は LLM 出力ではなく、Polling、Port 接続、Fault、Alarm、Freshness などの決定論的フィールドのみを使用します。",
+                                              "Grounding 検証ロジックおよび保護された Runtime/制御経路は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "在不改变 Deterministic 状态判定的前提下强化了多语言 AI Grounding 语义防护。",
-                                                 "E2 的 criteria_sources 现在具有最高权威，No Criteria 不能被 raw Evidence 中宽松的类似条件词绕过。",
-                                                 "没有 Criteria 时，normal/healthy、高/低、安全/危险等评价性表述会被拒绝，但核查指令仍允许。",
-                                                 "\u0027-\u0027 仅是观测显示，不代表数据缺失；缺失推断必须有明确 Evidence。"
+                                                 "为 GROUNDED、PARTIAL 和 BLOCKED 增加了便于操作人员理解的说明。",
+                                                 "在 System Operation 卡片下增加一行确定性判定原因。",
+                                                 "Operational Reason 仅来自 Polling、Port 连接、Fault、Alarm、Freshness 等确定性字段，不使用 LLM 输出。",
+                                                 "未修改 Grounding 验证逻辑及受保护的 Runtime/控制路径。"
                                              ],
                                    "de":  [
-                                              "Der mehrsprachige AI-Grounding-Schutz wurde verstärkt, ohne die deterministische Statusbewertung zu ändern.",
-                                              "E2 criteria_sources ist jetzt maßgeblich; No Criteria kann nicht durch lose Kriterien-Tokens in Rohdaten umgangen werden.",
-                                              "Ohne Criteria werden Normal-/Healthy-, High-/Low- und Safe-/Risky-Aussagen abgelehnt, Prüfhinweise bleiben zulässig.",
-                                              "Ein \u0027-\u0027 Wert beweist keine fehlenden Daten; Missing-Data-Aussagen erfordern explizite Evidence."
+                                              "Für GROUNDED, PARTIAL und BLOCKED wurden verständliche Bedienerhinweise ergänzt.",
+                                              "Die Karte System Operation zeigt nun eine kompakte deterministische Begründung.",
+                                              "Der Operational Reason wird ausschließlich aus deterministischen Feldern wie Polling, Port-Verbindung, Faults, Alarmen und Freshness abgeleitet, niemals aus LLM-Ausgaben.",
+                                              "Grounding-Validierung und geschützte Runtime-/Steuerpfade wurden nicht geändert."
                                           ],
                                    "es":  [
-                                              "Se reforzó la protección semántica multilingüe de AI Grounding sin cambiar la evaluación determinista de estados.",
-                                              "E2 criteria_sources pasa a ser autoritativo; No Criteria no puede eludirse mediante tokens ambiguos en evidencia bruta.",
-                                              "Sin Criteria se rechazan afirmaciones normal/healthy, high/low y safe/risky, mientras que las instrucciones de verificación siguen permitidas.",
-                                              "Un valor \u0027-\u0027 no demuestra datos faltantes; la inferencia de missing data requiere Evidence explícita."
+                                              "Se añadieron explicaciones claras para GROUNDED, PARTIAL y BLOCKED.",
+                                              "La tarjeta System Operation muestra ahora una razón determinista resumida.",
+                                              "Operational Reason se deriva únicamente de campos deterministas como Polling, Ports conectados, Faults, Alarmas y Freshness, nunca de la salida del LLM.",
+                                              "No se modificaron la validación Grounding ni las rutas protegidas de Runtime/control."
                                           ]
                                }
 }
