@@ -1,54 +1,55 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.173.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.173.0/ICEops_Setup_8.0.173.0.exe",
-    "sha256":  "108e25ad295f2c6d42bd5212eeb53c31221da2c6757ff8eba97b4909ba9475cd",
-    "fileName":  "ICEops_Setup_8.0.173.0.exe",
+    "version":  "8.0.174.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.174.0/ICEops_Setup_8.0.174.0.exe",
+    "sha256":  "fe447b06a335fd8bd31f4499d5e50aa92741260e276f436ca56c94c2b0b8593a",
+    "fileName":  "ICEops_Setup_8.0.174.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-16T00:32:57.9910476+00:00",
+    "publishedAtUtc":  "2026-08-16T00:46:15.9717762+00:00",
     "releaseNotes":  [
-                         "V973 strengthens the post-inference AI Grounding semantic guard without changing deterministic Operational Status or Condition Assessment evaluation.",
-                         "When no explicit condition criteria exist, AI explanations can no longer expand READY/connected/no-fault evidence into healthy/normal/acceptable/expected-range claims, and anomaly/abnormal/deviation language is rejected unless criteria support evaluation.",
-                         "Baseline-deviation language now requires explicit valid learned-baseline evidence; existing TrendStats direction/variation gates remain unchanged.",
+                         "V974 closes a multilingual AI Grounding semantic gap while preserving the V973 deterministic architecture and all protected runtime/control paths.",
+                         "The Grounding validator now treats the deterministic E2 criteria_sources field as authoritative, so an explicit No Criteria result cannot be bypassed by loose criteria-like tokens in raw evidence packets.",
+                         "Without explicit criteria, assertive normal/healthy, high/low magnitude, and safe/risky language is rejected; Korean forms such as 정상으로 보임 and 높은/낮은 수치 are covered without blocking verification instructions.",
+                         "A \u0027-\u0027 displayed value remains an observation only; missing-data or data-loss inference is rejected unless the evidence explicitly declares missing/unavailable/invalid data.",
                          "V972 AI Data Library, Pepperl+Fuchs branding, V970 Safe Disconnect, communication, Polling/MAX, PDO/ISDU, Studio Runtime, permissions, HMI read-only and Signal Tower hardware-control paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Strengthened the AI Grounding semantic guard for criteria-gated health and anomaly language.",
-                                              "READY, connected ports and no-fault evidence can no longer be expanded into healthy/normal/expected-range claims when condition criteria are absent.",
-                                              "Anomaly/abnormal/deviation language requires condition criteria, and baseline-deviation language requires a valid learned baseline.",
-                                              "Deterministic evaluation and protected runtime/control paths are unchanged."
+                                              "Strengthened multilingual AI Grounding without changing deterministic status evaluation.",
+                                              "Deterministic criteria_sources is now authoritative; No Criteria cannot be overridden by loose raw-packet tokens.",
+                                              "Normal/healthy, high/low magnitude and safe/risky assertions require explicit criteria, while verification instructions remain allowed.",
+                                              "A \u0027-\u0027 value does not prove missing data; missing-data inference requires explicit evidence."
                                           ],
                                    "ko":  [
-                                              "Criteria 기반 health/anomaly 표현을 위한 AI Grounding semantic guard를 강화했습니다.",
-                                              "Condition Criteria가 없을 때 READY, 포트 연결, Fault 없음 근거를 healthy/normal/expected-range 의미로 확장할 수 없습니다.",
-                                              "anomaly/abnormal/deviation 표현은 Condition Criteria가 필요하며 baseline deviation은 유효한 Learned Baseline이 필요합니다.",
-                                              "Deterministic Evaluation과 보호된 Runtime/Control 경로는 변경하지 않았습니다."
+                                              "Deterministic 상태 판정은 유지하면서 다국어 AI Grounding semantic guard를 보강했습니다.",
+                                              "E2의 criteria_sources를 최우선 권위로 사용하므로 No Criteria를 raw Evidence의 느슨한 토큰이 우회할 수 없습니다.",
+                                              "Criteria가 없으면 정상/건강, 높은/낮은 수치, 안전/위험 같은 평가 표현을 차단하되 정상 범위인지 확인 같은 점검 지시문은 허용합니다.",
+                                              "\u0027-\u0027 표시는 관측 사실일 뿐 데이터 누락의 증거가 아니며, 누락/결측 추론은 명시적 Evidence가 있을 때만 허용합니다."
                                           ],
                                    "ja":  [
-                                              "Criteria に基づく health/anomaly 表現を対象に AI Grounding の semantic guard を強化しました。",
-                                              "Condition Criteria がない場合、READY・ポート接続・Fault なしの根拠を healthy/normal/expected-range に拡張できません。",
-                                              "anomaly/abnormal/deviation 表現には Condition Criteria が必要で、baseline deviation には有効な Learned Baseline が必要です。",
-                                              "Deterministic Evaluation と保護対象の Runtime/Control 経路は変更していません。"
+                                              "Deterministic 状態判定を変更せず、多言語 AI Grounding の semantic guard を強化しました。",
+                                              "E2 の criteria_sources を最優先の権威として使用し、No Criteria を raw Evidence の曖昧なトークンで回避できないようにしました。",
+                                              "Criteria がない場合、normal/healthy、高い/低い、安全/危険などの評価表現を拒否し、確認指示は許可します。",
+                                              "\u0027-\u0027 表示だけでは missing data と判断せず、欠損推論には明示的 Evidence を要求します。"
                                           ],
                                    "zh-CN":  [
-                                                 "强化了基于 Criteria 的 health/anomaly AI Grounding 语义防护。",
-                                                 "没有 Condition Criteria 时，READY、端口已连接和无故障证据不能被扩展为 healthy/normal/expected-range 结论。",
-                                                 "anomaly/abnormal/deviation 表述需要 Condition Criteria，baseline deviation 需要有效的 Learned Baseline。",
-                                                 "Deterministic Evaluation 及受保护的 Runtime/Control 路径保持不变。"
+                                                 "在不改变 Deterministic 状态判定的前提下强化了多语言 AI Grounding 语义防护。",
+                                                 "E2 的 criteria_sources 现在具有最高权威，No Criteria 不能被 raw Evidence 中宽松的类似条件词绕过。",
+                                                 "没有 Criteria 时，normal/healthy、高/低、安全/危险等评价性表述会被拒绝，但核查指令仍允许。",
+                                                 "\u0027-\u0027 仅是观测显示，不代表数据缺失；缺失推断必须有明确 Evidence。"
                                              ],
                                    "de":  [
-                                              "Der semantische AI-Grounding-Schutz für criteria-gesteuerte Health-/Anomaly-Aussagen wurde verstärkt.",
-                                              "Ohne Condition Criteria dürfen READY, verbundene Ports und fehlerfreie Betriebsdaten nicht zu healthy/normal/expected-range Aussagen erweitert werden.",
-                                              "Anomaly/abnormal/deviation Aussagen erfordern Condition Criteria; baseline deviation erfordert eine gültige Learned Baseline.",
-                                              "Deterministic Evaluation und geschützte Runtime-/Control-Pfade bleiben unverändert."
+                                              "Der mehrsprachige AI-Grounding-Schutz wurde verstärkt, ohne die deterministische Statusbewertung zu ändern.",
+                                              "E2 criteria_sources ist jetzt maßgeblich; No Criteria kann nicht durch lose Kriterien-Tokens in Rohdaten umgangen werden.",
+                                              "Ohne Criteria werden Normal-/Healthy-, High-/Low- und Safe-/Risky-Aussagen abgelehnt, Prüfhinweise bleiben zulässig.",
+                                              "Ein \u0027-\u0027 Wert beweist keine fehlenden Daten; Missing-Data-Aussagen erfordern explizite Evidence."
                                           ],
                                    "es":  [
-                                              "Se reforzó la protección semántica de AI Grounding para expresiones de health/anomaly gobernadas por Criteria.",
-                                              "Sin Condition Criteria, READY, puertos conectados y ausencia de fallos no pueden ampliarse a afirmaciones healthy/normal/expected-range.",
-                                              "Las expresiones anomaly/abnormal/deviation requieren Condition Criteria y baseline deviation requiere un Learned Baseline válido.",
-                                              "Deterministic Evaluation y las rutas Runtime/Control protegidas no cambian."
+                                              "Se reforzó la protección semántica multilingüe de AI Grounding sin cambiar la evaluación determinista de estados.",
+                                              "E2 criteria_sources pasa a ser autoritativo; No Criteria no puede eludirse mediante tokens ambiguos en evidencia bruta.",
+                                              "Sin Criteria se rechazan afirmaciones normal/healthy, high/low y safe/risky, mientras que las instrucciones de verificación siguen permitidas.",
+                                              "Un valor \u0027-\u0027 no demuestra datos faltantes; la inferencia de missing data requiere Evidence explícita."
                                           ]
                                }
 }
