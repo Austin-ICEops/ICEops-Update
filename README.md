@@ -4,18 +4,20 @@
 
 ## ⚠️ REQUIRED: Master Network & IODD Initialization
 
-**This setup is mandatory for initial installation and whenever a new IO-Link device is connected for the first time.**
+**Use the local network for the Master and keep Internet access available for IODD synchronization.**
 
 1. Connect the IO-Link Master to the PC through **local wired Ethernet**.
 2. Configure the PC/Master network so the correct **Master IP address is reachable on the local subnet**.
-3. At the same time, keep the PC connected to a working **Internet connection through Wi-Fi**.
-4. Start ICEops and run **IODD Update** before normal use.
-5. When a **new IO-Link device** is introduced, run **IODD Update again before commissioning or production use**.
-6. Confirm device identification, IODD availability, and process-data mapping before continuing.
+3. At the same time, keep the PC connected to a working **Internet connection, typically through Wi-Fi**.
+4. When Internet access is available, ICEops can **automatically synchronize/update available IODD data**.
+5. When a **new IO-Link device is added separately after initial setup**, press the **IODD Update** button to explicitly refresh the IODD catalog before commissioning or production use.
+6. Confirm device identification, IODD availability, and process-data mapping before continuing with a newly added device.
 
-> **IODD UPDATE IS A REQUIRED INITIALIZATION STEP.** Do not assume that a newly connected device is fully supported until the latest IODD data has been synchronized.
+> **IMPORTANT:** Normal Internet connectivity allows ICEops to keep IODD data synchronized automatically. You do **not** need to press IODD Update for every normal startup.
 >
-> **필수:** Master는 로컬 유선 Ethernet에서 올바른 Master IP로 연결하고, PC는 동시에 Wi-Fi로 정상적인 인터넷에 연결하십시오. ICEops 최초 사용 시와 신규 IO-Link Device를 처음 연결할 때는 반드시 **IODD Update를 먼저 수행한 후** 사용하십시오. IODD 동기화 및 Device Identification/Mapping 확인 전에는 Commissioning 또는 정상 운전을 진행하지 마십시오.
+> **NEW DEVICE:** If you add a new IO-Link device that was not previously available in the local IODD catalog, press **IODD Update** to refresh the catalog, then confirm Device Identification and Mapping before use.
+>
+> **필수:** Master는 로컬 유선 Ethernet에서 올바른 Master IP로 연결하고, PC는 동시에 Wi-Fi 등으로 정상적인 인터넷 연결을 유지하십시오. 인터넷이 연결되어 있으면 ICEops가 사용 가능한 IODD 데이터를 자동으로 동기화/업데이트합니다. **정상 실행 때마다 IODD Update 버튼을 누를 필요는 없습니다.** 단, 기존 환경에 **신규 IO-Link Device를 별도로 추가한 경우에는 IODD Update 버튼을 눌러 최신 IODD Catalog를 갱신한 뒤** Device Identification/Mapping을 확인하고 사용하십시오.
 
 Recommended topology:
 
@@ -24,9 +26,13 @@ Local Ethernet
 PC ───────────── IO-Link Master
      Master IP / Local subnet
 
-Wi-Fi
+Wi-Fi / Internet
 PC ───────────── Internet
-     IODD Update / Device data synchronization
+     Automatic IODD synchronization
+
+New device added later
+ICEops ───────── IODD Update button
+                 Explicit catalog refresh
 ```
 
 ## Recommended System Configuration / 시스템 권장사양
@@ -63,7 +69,7 @@ ICEops can use a separately configured local AI server or run local AI models on
 - 이 저장소에는 배포 파일만 포함되며 소스 코드는 제공되지 않습니다.
 - 권장 시스템은 Windows 11 64-bit, 32 GB RAM, NVMe SSD, 1 GbE 유선 네트워크이며 ASUS NUC 15 Pro급 이상의 시스템을 권장합니다.
 - 로컬 AI Expert 14B를 동일 PC에서 사용할 경우 실용적인 응답속도를 위해 NVIDIA RTX급 GPU를 권장합니다.
-- **필수 초기 절차:** Master는 로컬 유선 Ethernet에서 올바른 Master IP로 연결하고, PC는 Wi-Fi로 인터넷 연결을 유지하십시오. 최초 설치 및 신규 IO-Link Device 연결 시 반드시 **IODD Update 후** Device Identification/Mapping을 확인한 다음 사용하십시오.
+- **네트워크/IODD 필수 안내:** Master는 로컬 유선 Ethernet에서 올바른 Master IP로 연결하고, PC는 Wi-Fi 등으로 인터넷 연결을 유지하십시오. 인터넷이 연결되어 있으면 ICEops가 IODD 데이터를 자동으로 동기화/업데이트하므로 **정상 실행 때마다 IODD Update 버튼을 누를 필요는 없습니다.** 단, 기존 환경에 **신규 IO-Link Device를 별도로 추가한 경우에는 IODD Update 버튼을 눌러 Catalog를 갱신한 뒤** Device Identification과 Mapping을 확인하고 사용하십시오.
 
 ## English
 
@@ -75,7 +81,7 @@ This is the official download and automatic update repository for ICEops.
 - This repository contains deployment files only. Source code is not distributed here.
 - A Windows 11 64-bit system with 32 GB RAM, NVMe SSD, 1 GbE wired networking, and ASUS NUC 15 Pro-class hardware or better is recommended.
 - When running local Expert 14B AI on the same PC, an NVIDIA RTX-class GPU is recommended for practical response speed.
-- **Required initialization:** Connect the Master over local wired Ethernet using the correct Master IP, keep Internet access available through Wi-Fi, and run **IODD Update before first use and whenever a new IO-Link device is introduced**. Confirm device identification and mapping before operation.
+- **Network/IODD requirement:** Connect the Master over local wired Ethernet using the correct Master IP and keep Internet access available through Wi-Fi or another Internet connection. With Internet access available, ICEops automatically synchronizes available IODD data; **manual IODD Update is not required on every normal startup.** If a **new IO-Link device is added later**, press **IODD Update** to explicitly refresh the catalog, then confirm device identification and mapping before use.
 
 ## Deutsch
 
@@ -87,7 +93,7 @@ Dieses Repository ist das offizielle Download- und automatische Update-Repositor
 - Dieses Repository enthält ausschließlich Bereitstellungsdateien. Der Quellcode wird hier nicht veröffentlicht.
 - Empfohlen werden Windows 11 64-Bit, 32 GB RAM, eine NVMe-SSD, kabelgebundenes 1-GbE-Netzwerk und Hardware der Klasse ASUS NUC 15 Pro oder besser.
 - Für den lokalen Expert-14B-KI-Betrieb auf demselben PC wird für praxisgerechte Antwortzeiten eine NVIDIA-RTX-GPU empfohlen.
-- **Erforderliche Initialisierung:** Verbinden Sie den Master über lokales kabelgebundenes Ethernet mit der korrekten Master-IP, halten Sie gleichzeitig eine Internetverbindung über WLAN aufrecht und führen Sie beim ersten Einsatz sowie bei jedem neuen IO-Link-Gerät zuerst ein **IODD Update** aus. Prüfen Sie anschließend Geräteidentifikation und Mapping.
+- **Netzwerk-/IODD-Hinweis:** Verbinden Sie den Master über lokales kabelgebundenes Ethernet mit der korrekten Master-IP und halten Sie gleichzeitig eine Internetverbindung über WLAN oder eine andere Internetverbindung aufrecht. Bei bestehender Internetverbindung synchronisiert ICEops verfügbare IODD-Daten automatisch; **ein manueller IODD Update ist nicht bei jedem normalen Start erforderlich.** Wenn später ein **neues IO-Link-Gerät hinzugefügt** wird, drücken Sie **IODD Update**, um den Katalog gezielt zu aktualisieren, und prüfen Sie anschließend Geräteidentifikation und Mapping.
 
 ## 日本語
 
@@ -99,7 +105,7 @@ Dieses Repository ist das offizielle Download- und automatische Update-Repositor
 - このリポジトリには配布ファイルのみが含まれ、ソースコードは公開されません。
 - Windows 11 64-bit、32 GB RAM、NVMe SSD、1 GbE 有線ネットワーク、および ASUS NUC 15 Pro クラス以上のシステムを推奨します。
 - 同一PCでローカル Expert 14B AI を使用する場合は、実用的な応答速度のため NVIDIA RTX クラスの GPU を推奨します。
-- **必須初期設定:** Master は正しい Master IP を設定したローカル有線 Ethernet で接続し、PC は同時に Wi-Fi でインターネット接続を維持してください。初回使用時および新しい IO-Link Device を接続した際は、必ず先に **IODD Update** を実行し、Device Identification と Mapping を確認してから使用してください。
+- **ネットワーク/IODD 必須事項:** Master は正しい Master IP を設定したローカル有線 Ethernet で接続し、PC は Wi-Fi などでインターネット接続を維持してください。インターネット接続がある場合、ICEops は利用可能な IODD データを自動で同期/更新するため、**通常起動のたびに IODD Update を実行する必要はありません。** 後から **新しい IO-Link Device を追加した場合**は、**IODD Update** ボタンを押して Catalog を明示的に更新し、Device Identification と Mapping を確認してから使用してください。
 
 ## 中文
 
@@ -111,7 +117,7 @@ Dieses Repository ist das offizielle Download- und automatische Update-Repositor
 - 本仓库仅包含发布文件，不提供源代码。
 - 推荐使用 Windows 11 64 位、32 GB RAM、NVMe SSD、1 GbE 有线网络以及 ASUS NUC 15 Pro 级别或更高配置的系统。
 - 如果在同一台电脑上运行本地 Expert 14B AI，为获得实用的响应速度，建议使用 NVIDIA RTX 级 GPU。
-- **必需初始化步骤：** 使用正确的 Master IP 通过本地有线 Ethernet 连接 Master，同时通过 Wi-Fi 保持互联网连接。首次使用以及首次连接新的 IO-Link Device 时，必须先执行 **IODD Update**，确认 Device Identification 和 Mapping 后再投入使用。
+- **网络/IODD 必要说明：** 使用正确的 Master IP 通过本地有线 Ethernet 连接 Master，同时通过 Wi-Fi 或其他方式保持互联网连接。只要互联网连接可用，ICEops 会自动同步/更新可用的 IODD 数据，因此**无需每次正常启动都手动执行 IODD Update。** 如果之后**新增 IO-Link Device**，请按 **IODD Update** 按钮显式刷新 Catalog，并在使用前确认 Device Identification 和 Mapping。
 
 ## Español
 
@@ -123,7 +129,7 @@ Este es el repositorio oficial de descarga y actualización automática de ICEop
 - Este repositorio contiene únicamente archivos de distribución. El código fuente no se publica aquí.
 - Se recomienda Windows 11 de 64 bits, 32 GB de RAM, SSD NVMe, red Ethernet cableada de 1 GbE y hardware de clase ASUS NUC 15 Pro o superior.
 - Para ejecutar AI Expert 14B localmente en el mismo PC, se recomienda una GPU NVIDIA de clase RTX para obtener tiempos de respuesta prácticos.
-- **Inicialización obligatoria:** Conecte el Master por Ethernet cableado local usando la IP correcta del Master, mantenga simultáneamente acceso a Internet por Wi-Fi y ejecute **IODD Update antes del primer uso y cada vez que se incorpore un nuevo dispositivo IO-Link**. Confirme la identificación y el mapping antes de operar.
+- **Requisito de red/IODD:** Conecte el Master por Ethernet cableado local usando la IP correcta del Master y mantenga acceso a Internet mediante Wi-Fi u otra conexión. Cuando hay acceso a Internet, ICEops sincroniza automáticamente los datos IODD disponibles; **no es necesario ejecutar manualmente IODD Update en cada inicio normal.** Si posteriormente se añade un **nuevo dispositivo IO-Link**, pulse **IODD Update** para actualizar explícitamente el catálogo y confirme la identificación y el mapping antes de usarlo.
 
 ## Repository contents
 
