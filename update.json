@@ -1,61 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.186.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.186.0/ICEops_Setup_8.0.186.0.exe",
-    "sha256":  "12e0af433634815ddec73c3b5a977040d443073b75d59b604bb27ae5c7c382b4",
-    "fileName":  "ICEops_Setup_8.0.186.0.exe",
+    "version":  "8.0.188.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.188.0/ICEops_Setup_8.0.188.0.exe",
+    "sha256":  "10be73c9454184e2fe1dec95c1f2f866e5a72b2a70d136ca252f9a77722b5eca",
+    "fileName":  "ICEops_Setup_8.0.188.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-17T12:03:12.1767280+00:00",
+    "publishedAtUtc":  "2026-08-17T13:03:19.2616089+00:00",
     "releaseNotes":  [
-                         "V986 fixes Device Scene mouse-wheel navigation by explicitly routing wheel input to the existing vertical scene ScrollViewer; the V985 scrollbar/1600-DIP workspace remains unchanged.",
-                         "The Animation Library default width is increased from 236 to 280 DIP so library cards and labels are not clipped on 1440p-class layouts while the existing resize splitter remains available.",
-                         "Device Scene now starts in HMI EDIT mode on application startup, including saved scenes. Entering HMI RUN remains explicit and preserves the existing read-only HMI authority boundary.",
-                         "Home port-card hover feedback no longer changes BorderThickness, eliminating the visible card/layout shake when moving the pointer across the main screen.",
-                         "Maintenance-only Device Scene UX patch. Communication, Connect/Disconnect, Polling/MAX, PDO/ISDU, Signal Tower output, Studio Runtime, SSOT mapping and deterministic AI/Grounding are unchanged."
+                         "V988 adds a native 3D Device Scene workspace that shares the existing SceneItem SSOT and read-only binding path with the 2D HMI. Objects can be added from the existing library, placed on the 3D floor, orbited/zoomed, and inspected without creating a second tag or control model.",
+                         "Device Scene layout schema advances to v4 with renderer-independent transform3D data. Existing v3 scenes migrate deterministically from their saved 2D X/Y positions, while 2D/3D workspace switching remains session-only UI state and never dirties the scene SSOT.",
+                         "The optional isolated Unity/URP bridge advances to schema v2 and carries the same transform3D/workspace state. Communication, Connect/Disconnect, Polling/MAX, PDO/ISDU, CTRL/OBS authority, Studio Runtime, Device Identity/IODD and AI Grounding are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Device Scene mouse-wheel input now scrolls the existing vertical scene workspace reliably.",
-                                              "Animation Library default width is increased to 280 DIP to prevent card/label clipping; the resize splitter remains available.",
-                                              "Device Scene starts in HMI EDIT mode after application startup; HMI RUN is still an explicit read-only operator action.",
-                                              "Home port-card hover now changes visual feedback only, not layout geometry, eliminating card shake while moving the pointer across the main screen.",
-                                              "Maintenance-only UX patch; communication, Runtime, control authority, SSOT and AI/Grounding behavior are unchanged."
+                                              "Device Scene now includes a native 3D workspace sharing the same SceneItem SSOT and read-only bindings as the 2D HMI.",
+                                              "Layout schema v4 stores 3D position/rotation/scale and migrates existing scenes from their saved 2D layout; switching 2D/3D itself is not a scene edit.",
+                                              "The isolated Unity/URP presentation bridge also receives the shared 3D transform contract; transport, control authority, Runtime and AI Grounding are unchanged."
                                           ],
                                    "ko":  [
-                                              "Device Scene의 마우스 휠 입력을 기존 세로 Scene ScrollViewer로 명시적으로 전달하여 휠 스크롤이 안정적으로 동작하도록 수정했습니다.",
-                                              "Animation Library 기본 폭을 236 DIP에서 280 DIP로 넓혀 1440p급 레이아웃에서 카드/문구가 잘리지 않도록 했으며 기존 리사이즈 Splitter는 유지됩니다.",
-                                              "프로그램 시작 후 Device Scene은 저장된 Scene이 있어도 HMI EDIT 모드로 시작합니다. HMI RUN 진입은 기존처럼 사용자가 명시적으로 수행하며 Read-Only 원칙은 유지됩니다.",
-                                              "메인 Home 포트 카드의 Hover가 레이아웃 두께를 바꾸지 않고 시각 효과만 변경하도록 수정하여 마우스를 카드 사이로 이동할 때 화면이 흔들리던 현상을 제거했습니다.",
-                                              "Device Scene UX 전용 유지보수 패치이며 통신, Runtime, 제어 권한, SSOT 및 AI/Grounding 동작은 변경하지 않았습니다."
+                                              "Device Scene에 2D HMI와 동일한 SceneItem SSOT/읽기 전용 바인딩을 공유하는 네이티브 3D 작업공간을 추가했습니다.",
+                                              "레이아웃 스키마 v4에서 3D 위치/회전/스케일을 저장하며 기존 씬은 저장된 2D 배치를 기준으로 자동 마이그레이션됩니다. 2D/3D 화면 전환 자체는 씬 변경으로 처리하지 않습니다.",
+                                              "격리된 Unity/URP 표시 브리지에도 동일한 3D Transform 계약을 전달하며 통신, 제어 권한, Runtime 및 AI Grounding은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Device Scene のマウスホイール入力を既存の縦 Scene ScrollViewer に明示的に渡し、ホイールスクロールを確実に動作させました。",
-                                              "Animation Library の既定幅を 236 DIP から 280 DIP に拡張し、1440p クラスでカードやラベルが切れないようにしました。既存のリサイズ Splitter は維持されます。",
-                                              "アプリ起動後、保存済み Scene があっても Device Scene は HMI EDIT モードで開始します。HMI RUN は引き続き明示的な Read-Only 操作です。",
-                                              "Home のポートカード Hover でレイアウト寸法を変更せず視覚効果のみを変更し、マウス移動時のカード揺れを解消しました。",
-                                              "Device Scene UX のみの保守パッチで、通信、Runtime、権限、SSOT、AI/Grounding は変更していません。"
+                                              "Device Scene に、2D HMI と同じ SceneItem SSOT と読み取り専用バインディングを共有するネイティブ 3D ワークスペースを追加しました。",
+                                              "レイアウトスキーマ v4 で 3D の位置・回転・スケールを保存し、既存シーンは保存済み 2D 配置から自動移行します。2D/3D の表示切替自体はシーン編集として扱いません。",
+                                              "分離された Unity/URP 表示ブリッジにも同じ 3D Transform 契約を渡し、通信、制御権限、Runtime、AI Grounding は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "将 Device Scene 鼠标滚轮输入显式路由到现有垂直 Scene ScrollViewer，确保滚轮滚动可靠工作。",
-                                                 "Animation Library 默认宽度由 236 DIP 增加到 280 DIP，避免 1440p 级布局中卡片和文本被裁切，同时保留现有调整宽度的 Splitter。",
-                                                 "应用启动后，即使存在已保存 Scene，Device Scene 也默认进入 HMI EDIT 模式；HMI RUN 仍需显式进入并保持只读。",
-                                                 "Home 端口卡片悬停时不再改变布局尺寸，仅改变视觉反馈，消除了鼠标移动时卡片抖动。",
-                                                 "仅为 Device Scene UX 维护补丁；通信、Runtime、权限、SSOT 和 AI/Grounding 行为均未修改。"
+                                                 "Device Scene 新增原生 3D 工作区，与 2D HMI 共用同一个 SceneItem SSOT 和只读绑定。",
+                                                 "布局架构升级到 v4，可保存 3D 位置、旋转和缩放；现有场景会根据已保存的 2D 布局自动迁移，2D/3D 视图切换本身不会修改场景 SSOT。",
+                                                 "隔离的 Unity/URP 显示桥接也会接收同一套 3D Transform 契约；通信、控制权限、Runtime 和 AI Grounding 均未修改。"
                                              ],
                                    "de":  [
-                                              "Mausrad-Eingaben in Device Scene werden nun explizit an den vorhandenen vertikalen Scene-ScrollViewer weitergeleitet.",
-                                              "Die Standardbreite der Animation Library wurde von 236 auf 280 DIP erhöht, damit Karten und Beschriftungen bei 1440p nicht abgeschnitten werden; der vorhandene Resize-Splitter bleibt erhalten.",
-                                              "Device Scene startet nach dem Programmstart auch bei gespeicherten Scenes im HMI-EDIT-Modus. HMI RUN bleibt eine explizite schreibgeschützte Operator-Aktion.",
-                                              "Der Hover-Zustand der Home-Portkarten ändert nur noch die visuelle Rückmeldung und nicht mehr die Layout-Geometrie; dadurch entfällt das sichtbare Zittern.",
-                                              "Reiner Device-Scene-UX-Wartungspatch; Kommunikation, Runtime, Autorität, SSOT und AI/Grounding bleiben unverändert."
+                                              "Device Scene enthält jetzt einen nativen 3D-Arbeitsbereich, der dasselbe SceneItem-SSOT und dieselben schreibgeschützten Bindings wie das 2D-HMI verwendet.",
+                                              "Layout-Schema v4 speichert 3D-Position, Rotation und Skalierung; bestehende Szenen werden deterministisch aus dem gespeicherten 2D-Layout migriert. Der Wechsel zwischen 2D und 3D ist selbst keine Szenenänderung.",
+                                              "Die isolierte Unity/URP-Darstellungsbrücke erhält denselben 3D-Transform-Vertrag; Kommunikation, Steuerungsautorität, Runtime und AI Grounding bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "La rueda del ratón de Device Scene ahora se dirige explícitamente al ScrollViewer vertical existente para que el desplazamiento funcione de forma fiable.",
-                                              "El ancho predeterminado de Animation Library aumenta de 236 a 280 DIP para evitar recortes de tarjetas y textos en 1440p, manteniendo el divisor de redimensionado.",
-                                              "Device Scene inicia en modo HMI EDIT al arrancar la aplicación incluso con escenas guardadas; HMI RUN sigue siendo una acción explícita y de solo lectura.",
-                                              "El hover de las tarjetas de puerto de Home ahora solo cambia la respuesta visual y no la geometría del layout, eliminando el movimiento visible al pasar el puntero.",
-                                              "Parche de mantenimiento exclusivo de UX de Device Scene; comunicación, Runtime, autoridad, SSOT y AI/Grounding no cambian."
+                                              "Device Scene incorpora un espacio 3D nativo que comparte el mismo SSOT SceneItem y las mismas vinculaciones de solo lectura que el HMI 2D.",
+                                              "El esquema de diseño v4 guarda posición, rotación y escala 3D y migra las escenas existentes desde su diseño 2D guardado; cambiar entre 2D y 3D no modifica por sí mismo el SSOT de la escena.",
+                                              "El puente de presentación Unity/URP aislado también recibe el mismo contrato de transformación 3D; comunicación, autoridad de control, Runtime y AI Grounding permanecen sin cambios."
                                           ]
                                }
 }
