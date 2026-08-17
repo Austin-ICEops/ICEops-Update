@@ -112,7 +112,7 @@ ICEops ───────── Update confirmation popup
 | Memory | 32 GB RAM |
 | Storage | NVMe SSD with at least 20 GB free space |
 | Network | 1 GbE wired Ethernet recommended for commissioning and high-rate polling |
-| Display | 1920×1080 minimum, 2560×1440 recommended |
+| Display | 1920×1080 minimum, 2560×1440,1600 recommended |
 | Reference platform | ASUS NUC 15 Pro class or equivalent |
 
 ### Local AI Assistance
