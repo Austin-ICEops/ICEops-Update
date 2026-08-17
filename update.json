@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.188.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.188.0/ICEops_Setup_8.0.188.0.exe",
-    "sha256":  "10be73c9454184e2fe1dec95c1f2f866e5a72b2a70d136ca252f9a77722b5eca",
-    "fileName":  "ICEops_Setup_8.0.188.0.exe",
+    "version":  "8.0.189.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.189.0/ICEops_Setup_8.0.189.0.exe",
+    "sha256":  "d37c533af2cd2328b0e135d10a6b3701982b7b5e2a5363f18b675bde8dc3609b",
+    "fileName":  "ICEops_Setup_8.0.189.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-17T13:03:19.2616089+00:00",
+    "publishedAtUtc":  "2026-08-17T13:24:38.8655167+00:00",
     "releaseNotes":  [
-                         "V988 adds a native 3D Device Scene workspace that shares the existing SceneItem SSOT and read-only binding path with the 2D HMI. Objects can be added from the existing library, placed on the 3D floor, orbited/zoomed, and inspected without creating a second tag or control model.",
-                         "Device Scene layout schema advances to v4 with renderer-independent transform3D data. Existing v3 scenes migrate deterministically from their saved 2D X/Y positions, while 2D/3D workspace switching remains session-only UI state and never dirties the scene SSOT.",
-                         "The optional isolated Unity/URP bridge advances to schema v2 and carries the same transform3D/workspace state. Communication, Connect/Disconnect, Polling/MAX, PDO/ISDU, CTRL/OBS authority, Studio Runtime, Device Identity/IODD and AI Grounding are unchanged."
+                         "V989 fixes Device Scene 3D camera inspection: middle-button vertical drag now performs smooth camera dolly and wheel zoom can approach to 1.25 scene units.",
+                         "Device Scene is now height-bounded to the shell MainScroller viewport so 1440p layouts keep the Inspector/communication area above the fixed bottom connection status bar and use internal scrolling for overflow.",
+                         "Marquee multi-selection now freezes the visible preview IDs, ends capture first, commits after the MouseUp routed-input tail, and revalidates both canonical selected IDs and IsSelected flags to prevent release-time selection collapse."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Device Scene now includes a native 3D workspace sharing the same SceneItem SSOT and read-only bindings as the 2D HMI.",
-                                              "Layout schema v4 stores 3D position/rotation/scale and migrates existing scenes from their saved 2D layout; switching 2D/3D itself is not a scene edit.",
-                                              "The isolated Unity/URP presentation bridge also receives the shared 3D transform contract; transport, control authority, Runtime and AI Grounding are unchanged."
+                                              "3D camera navigation adds middle-button dolly and allows closer wheel zoom down to 1.25 scene units.",
+                                              "Device Scene height is bounded to the shell viewport at 1440p so overflow stays inside the scene/Inspector instead of extending behind the bottom status bar.",
+                                              "Marquee selection commits only after the MouseUp route drains and revalidates the frozen group, preventing selection from disappearing on release."
                                           ],
                                    "ko":  [
-                                              "Device Scene에 2D HMI와 동일한 SceneItem SSOT/읽기 전용 바인딩을 공유하는 네이티브 3D 작업공간을 추가했습니다.",
-                                              "레이아웃 스키마 v4에서 3D 위치/회전/스케일을 저장하며 기존 씬은 저장된 2D 배치를 기준으로 자동 마이그레이션됩니다. 2D/3D 화면 전환 자체는 씬 변경으로 처리하지 않습니다.",
-                                              "격리된 Unity/URP 표시 브리지에도 동일한 3D Transform 계약을 전달하며 통신, 제어 권한, Runtime 및 AI Grounding은 변경하지 않았습니다."
+                                              "3D 카메라에 가운데 버튼 드래그 전후 이동(Dolly)을 추가하고 휠 줌 최소 거리를 1.25까지 낮춰 설비 가까이 접근할 수 있습니다.",
+                                              "1440p에서 Device Scene 높이를 셸 viewport에 제한하여 Inspector/통신 영역이 하단 연결 상태바 뒤로 내려가지 않고 내부 스크롤을 사용합니다.",
+                                              "Marquee 선택은 MouseUp 라우팅이 끝난 뒤 동결된 선택 집합을 커밋하고 선택 ID/표시 플래그를 재검증하여 마우스를 놓는 순간 선택이 풀리는 문제를 수정했습니다."
                                           ],
                                    "ja":  [
-                                              "Device Scene に、2D HMI と同じ SceneItem SSOT と読み取り専用バインディングを共有するネイティブ 3D ワークスペースを追加しました。",
-                                              "レイアウトスキーマ v4 で 3D の位置・回転・スケールを保存し、既存シーンは保存済み 2D 配置から自動移行します。2D/3D の表示切替自体はシーン編集として扱いません。",
-                                              "分離された Unity/URP 表示ブリッジにも同じ 3D Transform 契約を渡し、通信、制御権限、Runtime、AI Grounding は変更していません。"
+                                              "3D カメラに中央ボタンのドラッグによる前後移動（Dolly）を追加し、ホイールズームの最小距離を 1.25 まで縮めました。",
+                                              "1440p では Device Scene の高さをシェルの viewport に制限し、Inspector/通信情報が下部ステータスバーの背後に回り込まず内部スクロールを使用します。",
+                                              "Marquee 選択は MouseUp のルーティング完了後に凍結済み選択集合をコミットし、選択 ID と表示フラグを再検証して、ボタンを離した瞬間に選択が解除される問題を修正しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "Device Scene 新增原生 3D 工作区，与 2D HMI 共用同一个 SceneItem SSOT 和只读绑定。",
-                                                 "布局架构升级到 v4，可保存 3D 位置、旋转和缩放；现有场景会根据已保存的 2D 布局自动迁移，2D/3D 视图切换本身不会修改场景 SSOT。",
-                                                 "隔离的 Unity/URP 显示桥接也会接收同一套 3D Transform 契约；通信、控制权限、Runtime 和 AI Grounding 均未修改。"
+                                                 "3D 相机新增鼠标中键拖动前后移动（Dolly），并将滚轮缩放的最近距离降低到 1.25 场景单位。",
+                                                 "在 1440p 下，Device Scene 高度限制为 Shell viewport，高度溢出由场景/Inspector 内部滚动处理，不再延伸到下方连接状态栏之后。",
+                                                 "框选会在 MouseUp 路由完成后提交冻结的选择集合，并重新校验选择 ID 与 IsSelected 标记，修复松开鼠标瞬间选择全部消失的问题。"
                                              ],
                                    "de":  [
-                                              "Device Scene enthält jetzt einen nativen 3D-Arbeitsbereich, der dasselbe SceneItem-SSOT und dieselben schreibgeschützten Bindings wie das 2D-HMI verwendet.",
-                                              "Layout-Schema v4 speichert 3D-Position, Rotation und Skalierung; bestehende Szenen werden deterministisch aus dem gespeicherten 2D-Layout migriert. Der Wechsel zwischen 2D und 3D ist selbst keine Szenenänderung.",
-                                              "Die isolierte Unity/URP-Darstellungsbrücke erhält denselben 3D-Transform-Vertrag; Kommunikation, Steuerungsautorität, Runtime und AI Grounding bleiben unverändert."
+                                              "Die 3D-Kamera unterstützt nun Dolly per gedrückter mittlerer Maustaste; der Rad-Zoom kann bis auf 1,25 Szeneneinheiten heranfahren.",
+                                              "Die Höhe der Device Scene wird bei 1440p auf den Shell-Viewport begrenzt, sodass Inspector/Kommunikationsbereich intern scrollen und nicht hinter die untere Statusleiste ragen.",
+                                              "Die Marquee-Auswahl wird erst nach dem MouseUp-Routing aus dem eingefrorenen Auswahlset übernommen und anschließend über IDs und IsSelected-Flags verifiziert, damit die Auswahl beim Loslassen nicht mehr verschwindet."
                                           ],
                                    "es":  [
-                                              "Device Scene incorpora un espacio 3D nativo que comparte el mismo SSOT SceneItem y las mismas vinculaciones de solo lectura que el HMI 2D.",
-                                              "El esquema de diseño v4 guarda posición, rotación y escala 3D y migra las escenas existentes desde su diseño 2D guardado; cambiar entre 2D y 3D no modifica por sí mismo el SSOT de la escena.",
-                                              "El puente de presentación Unity/URP aislado también recibe el mismo contrato de transformación 3D; comunicación, autoridad de control, Runtime y AI Grounding permanecen sin cambios."
+                                              "La cámara 3D añade desplazamiento Dolly con arrastre del botón central y permite acercar la rueda hasta 1,25 unidades de escena.",
+                                              "En 1440p, Device Scene limita su altura al viewport del shell para que Inspector/información de comunicación use desplazamiento interno y no quede detrás de la barra inferior de conexión.",
+                                              "La selección por marco se confirma después de finalizar la ruta MouseUp y vuelve a validar tanto los IDs seleccionados como los indicadores IsSelected, evitando que la selección desaparezca al soltar el ratón."
                                           ]
                                }
 }
