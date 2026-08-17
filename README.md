@@ -2,6 +2,24 @@
 
 > Official ICEops installer, release package, and automatic update repository.
 
+## 🚨 FIRST STEP BEFORE USING ICEops — Enable Modbus TCP on the Master
+
+**This is the highest-priority setup step. Complete it before normal ICEops use.**
+
+1. Start **ICEops**.
+2. Click the **globe icon in the upper-left corner** to open the **Master Web interface**.
+3. Open the **Config** tab.
+4. Open the **Modbus TCP** tab.
+5. At the bottom of the page, select/enable **Modbus Enable**.
+6. Click **Save**.
+7. Return to ICEops and continue with the Master connection and normal setup.
+
+> **IMPORTANT:** On initial setup, verify that **Modbus TCP is enabled and saved on the Master before proceeding with ICEops configuration.**
+>
+> **가장 먼저 해야 할 설정:** ICEops를 실행한 뒤 **왼쪽 상단의 지구 모양 아이콘**을 눌러 **Master Web**에 접속하십시오. **Config → Modbus TCP** 탭으로 이동한 뒤 화면 하단의 **Modbus Enable**을 선택하고 반드시 **Save**하십시오. 이 설정을 완료한 후 ICEops 연결 및 나머지 설정을 진행하십시오.
+>
+> **最優先の設定:** ICEops を起動したら、まず**左上の地球アイコン**をクリックして **Master Web** を開いてください。**Config → Modbus TCP** タブへ移動し、画面下部の **Modbus Enable** を有効にして必ず **Save** してください。この設定を完了してから ICEops の接続とその他の設定を進めてください。
+
 ## ⚠️ REQUIRED: Master Network & IODD Initialization
 
 **Use the local network for the Master and keep Internet access available for IODD synchronization.**
