@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.189.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.189.0/ICEops_Setup_8.0.189.0.exe",
-    "sha256":  "d37c533af2cd2328b0e135d10a6b3701982b7b5e2a5363f18b675bde8dc3609b",
-    "fileName":  "ICEops_Setup_8.0.189.0.exe",
+    "version":  "8.0.190.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.190.0/ICEops_Setup_8.0.190.0.exe",
+    "sha256":  "094d60e1c81699f79b22260f5374306dab4c2b33332b8a050f1e2656e77ae47e",
+    "fileName":  "ICEops_Setup_8.0.190.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-17T13:24:38.8655167+00:00",
+    "publishedAtUtc":  "2026-08-17T13:55:49.5023771+00:00",
     "releaseNotes":  [
-                         "V989 fixes Device Scene 3D camera inspection: middle-button vertical drag now performs smooth camera dolly and wheel zoom can approach to 1.25 scene units.",
-                         "Device Scene is now height-bounded to the shell MainScroller viewport so 1440p layouts keep the Inspector/communication area above the fixed bottom connection status bar and use internal scrolling for overflow.",
-                         "Marquee multi-selection now freezes the visible preview IDs, ends capture first, commits after the MouseUp routed-input tail, and revalidates both canonical selected IDs and IsSelected flags to prevent release-time selection collapse."
+                         "V990 separates 3D selection from placement: plain click selects only, while Ctrl+left drag moves the selected object on the X/Z floor plane with jump-free pointer offset preservation.",
+                         "The native 3D renderer replaces generic cuboid proxies with procedural industrial geometry for tanks, 9-segment signal towers, pipes, gauges, sensors, vibration machinery, displays, indicators and the ICA 16-channel hub.",
+                         "An EDIT-only X/Z arrow pad provides deterministic 0.25-unit placement, while Home is now bounded to the shell viewport so connected-state card expansion stays inside its own scroll area and cannot push into the bottom status bar."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "3D camera navigation adds middle-button dolly and allows closer wheel zoom down to 1.25 scene units.",
-                                              "Device Scene height is bounded to the shell viewport at 1440p so overflow stays inside the scene/Inspector instead of extending behind the bottom status bar.",
-                                              "Marquee selection commits only after the MouseUp route drains and revalidates the frozen group, preventing selection from disappearing on release."
+                                              "3D plain click is selection-only; Ctrl+left drag moves the selected object on X/Z without the initial snap/jump.",
+                                              "Native 3D now uses procedural industrial models instead of generic box proxies for all active Device Scene object types.",
+                                              "An EDIT-only X/Z nudge pad is added, and Home card expansion after Connect is contained inside the port scroll area so the bottom status bar stays fixed."
                                           ],
                                    "ko":  [
-                                              "3D 카메라에 가운데 버튼 드래그 전후 이동(Dolly)을 추가하고 휠 줌 최소 거리를 1.25까지 낮춰 설비 가까이 접근할 수 있습니다.",
-                                              "1440p에서 Device Scene 높이를 셸 viewport에 제한하여 Inspector/통신 영역이 하단 연결 상태바 뒤로 내려가지 않고 내부 스크롤을 사용합니다.",
-                                              "Marquee 선택은 MouseUp 라우팅이 끝난 뒤 동결된 선택 집합을 커밋하고 선택 ID/표시 플래그를 재검증하여 마우스를 놓는 순간 선택이 풀리는 문제를 수정했습니다."
+                                              "3D 일반 좌클릭은 선택만 수행하고 Ctrl+좌클릭 드래그에서만 X/Z 배치가 동작하며, 드래그 시작 시 객체가 튀지 않도록 클릭 오프셋을 유지합니다.",
+                                              "Native 3D의 공통 Box Proxy를 제거하고 탱크, 9세그 신호등, 파이프, 게이지, 센서, 진동 설비, 디스플레이, 인디케이터, ICA 16채널 허브를 프로시저럴 산업형 모델로 렌더링합니다.",
+                                              "EDIT 전용 X/Z 화살표 미세이동을 추가하고, Connect 후 카드 내용이 늘어나도 Home 내부 포트 스크롤 영역에서만 확장되어 하단 상태바를 밀지 않도록 수정했습니다."
                                           ],
                                    "ja":  [
-                                              "3D カメラに中央ボタンのドラッグによる前後移動（Dolly）を追加し、ホイールズームの最小距離を 1.25 まで縮めました。",
-                                              "1440p では Device Scene の高さをシェルの viewport に制限し、Inspector/通信情報が下部ステータスバーの背後に回り込まず内部スクロールを使用します。",
-                                              "Marquee 選択は MouseUp のルーティング完了後に凍結済み選択集合をコミットし、選択 ID と表示フラグを再検証して、ボタンを離した瞬間に選択が解除される問題を修正しました。"
+                                              "3D の通常左クリックは選択のみとし、Ctrl+左ドラッグ時だけ X/Z 配置を行い、開始時のスナップを防ぐためクリックオフセットを保持します。",
+                                              "Native 3D の共通 Box Proxy を廃止し、タンク、9セグ信号灯、配管、ゲージ、センサ、振動設備、表示器、インジケータ、ICA 16ch Hub をプロシージャル形状で描画します。",
+                                              "EDIT 専用 X/Z 矢印移動を追加し、Connect 後にカード内容が増えても Home のポートスクロール領域内に収まり、下部ステータスバーを押し下げないようにしました。"
                                           ],
                                    "zh-CN":  [
-                                                 "3D 相机新增鼠标中键拖动前后移动（Dolly），并将滚轮缩放的最近距离降低到 1.25 场景单位。",
-                                                 "在 1440p 下，Device Scene 高度限制为 Shell viewport，高度溢出由场景/Inspector 内部滚动处理，不再延伸到下方连接状态栏之后。",
-                                                 "框选会在 MouseUp 路由完成后提交冻结的选择集合，并重新校验选择 ID 与 IsSelected 标记，修复松开鼠标瞬间选择全部消失的问题。"
+                                                 "3D 普通左键仅用于选择，只有 Ctrl+左键拖动才会在 X/Z 平面移动对象，并保留点击偏移以避免起始跳动。",
+                                                 "Native 3D 不再使用统一方盒代理，而是为罐体、9段信号塔、管道、仪表、传感器、振动设备、显示器、指示灯和 ICA 16通道 Hub 生成工业化程序模型。",
+                                                 "新增 EDIT 专用 X/Z 方向微调按钮；连接后卡片内容增加时只在 Home 端口滚动区域内部扩展，不再挤压底部状态栏。"
                                              ],
                                    "de":  [
-                                              "Die 3D-Kamera unterstützt nun Dolly per gedrückter mittlerer Maustaste; der Rad-Zoom kann bis auf 1,25 Szeneneinheiten heranfahren.",
-                                              "Die Höhe der Device Scene wird bei 1440p auf den Shell-Viewport begrenzt, sodass Inspector/Kommunikationsbereich intern scrollen und nicht hinter die untere Statusleiste ragen.",
-                                              "Die Marquee-Auswahl wird erst nach dem MouseUp-Routing aus dem eingefrorenen Auswahlset übernommen und anschließend über IDs und IsSelected-Flags verifiziert, damit die Auswahl beim Loslassen nicht mehr verschwindet."
+                                              "Ein normaler Linksklick in 3D wählt nur aus; nur Strg+Linksklick-Ziehen verschiebt auf X/Z und erhält den Klick-Offset gegen Sprünge.",
+                                              "Der native 3D-Renderer ersetzt generische Box-Proxys durch prozedurale Industriemodelle für Tank, 9-Segment-Signalturm, Rohr, Messgerät, Sensor, Vibrationsmaschine, Anzeige, Indikator und ICA-16-Kanal-Hub.",
+                                              "Eine EDIT-X/Z-Pfeilsteuerung wurde ergänzt; nach Connect bleibt wachsender Karteninhalt im Home-Port-Scrollbereich und verschiebt die untere Statusleiste nicht."
                                           ],
                                    "es":  [
-                                              "La cámara 3D añade desplazamiento Dolly con arrastre del botón central y permite acercar la rueda hasta 1,25 unidades de escena.",
-                                              "En 1440p, Device Scene limita su altura al viewport del shell para que Inspector/información de comunicación use desplazamiento interno y no quede detrás de la barra inferior de conexión.",
-                                              "La selección por marco se confirma después de finalizar la ruta MouseUp y vuelve a validar tanto los IDs seleccionados como los indicadores IsSelected, evitando que la selección desaparezca al soltar el ratón."
+                                              "El clic izquierdo normal en 3D solo selecciona; Ctrl+arrastre izquierdo mueve en X/Z conservando el desplazamiento inicial para evitar saltos.",
+                                              "El renderizador 3D nativo sustituye los proxies de caja por modelos industriales procedurales para tanque, torre de 9 segmentos, tubería, indicador, sensor, máquina de vibración, display, piloto y hub ICA de 16 canales.",
+                                              "Se añade un control de flechas X/Z solo en EDIT y el crecimiento de contenido de las tarjetas tras Connect queda contenido en el scroll de puertos de Home sin empujar la barra inferior."
                                           ]
                                }
 }
