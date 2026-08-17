@@ -4,21 +4,27 @@
 
 ## 🚨 FIRST STEP BEFORE USING ICEops — Enable Modbus TCP on the Master
 
-**This is the highest-priority setup step. Complete it before normal ICEops use.**
+**This is the highest-priority setup step. Complete it on the Master before starting ICEops for the first time.**
 
-1. Start **ICEops**.
-2. Click the **globe icon in the upper-left corner** to open the **Master Web interface**.
+1. Before launching **ICEops**, connect the PC to the IO-Link Master network.
+2. Open a web browser and enter the **Master IP address directly** to open the **Master Web interface**.
 3. Open the **Config** tab.
 4. Open the **Modbus TCP** tab.
 5. At the bottom of the page, select/enable **Modbus Enable**.
-6. Click **Save**.
-7. Return to ICEops and continue with the Master connection and normal setup.
+6. Click **Save** and confirm that the setting has been applied.
+7. After this initial Master configuration is complete, start **ICEops** and connect to the Master normally.
 
-> **IMPORTANT:** On initial setup, verify that **Modbus TCP is enabled and saved on the Master before proceeding with ICEops configuration.**
+> **IMPORTANT:** The initial **Modbus TCP Enable** setting must be completed directly through the Master Web interface **before the first ICEops connection**.
 >
-> **가장 먼저 해야 할 설정:** ICEops를 실행한 뒤 **왼쪽 상단의 지구 모양 아이콘**을 눌러 **Master Web**에 접속하십시오. **Config → Modbus TCP** 탭으로 이동한 뒤 화면 하단의 **Modbus Enable**을 선택하고 반드시 **Save**하십시오. 이 설정을 완료한 후 ICEops 연결 및 나머지 설정을 진행하십시오.
+> After ICEops is running, the **globe icon in the upper-left corner** can be used at any time as a convenient shortcut to reopen the Master Web interface and change or review the Master's internal settings.
 >
-> **最優先の設定:** ICEops を起動したら、まず**左上の地球アイコン**をクリックして **Master Web** を開いてください。**Config → Modbus TCP** タブへ移動し、画面下部の **Modbus Enable** を有効にして必ず **Save** してください。この設定を完了してから ICEops の接続とその他の設定を進めてください。
+> **가장 먼저 해야 할 설정:** 처음에는 **ICEops를 실행하기 전에**, PC를 IO-Link Master 네트워크에 연결한 뒤 웹 브라우저 주소창에 **Master IP를 직접 입력하여 Master Web에 접속**하십시오. **Config → Modbus TCP** 탭으로 이동하여 화면 하단의 **Modbus Enable**을 활성화하고 반드시 **Save**하십시오. 이 초기 설정을 완료한 뒤 ICEops를 실행하여 Master에 정상 연결하십시오.
+>
+> ICEops 실행 이후에는 **왼쪽 상단의 지구 모양 아이콘**을 누르면 언제든지 Master Web을 다시 열 수 있으며, 이 기능을 통해 Master 내부 설정을 확인하거나 변경할 수 있습니다.
+>
+> **最優先の設定:** 初回は **ICEops を起動する前に**、PC を IO-Link Master のネットワークへ接続し、Web ブラウザに **Master の IP アドレスを直接入力して Master Web を開いてください**。**Config → Modbus TCP** タブへ移動し、画面下部の **Modbus Enable** を有効にして必ず **Save** してください。この初期設定が完了してから ICEops を起動し、Master に接続してください。
+>
+> ICEops の起動後は、**左上の地球アイコン**からいつでも Master Web を開き、Master の内部設定を確認・変更できます。
 
 ## ⚠️ REQUIRED: Master Network & IODD Initialization
 
@@ -55,6 +61,11 @@ ICEops also supports **automatic software and patch updates through the Internet
 Recommended topology:
 
 ```text
+Before first ICEops start
+PC ───────────── IO-Link Master
+Browser → Master IP → Config → Modbus TCP
+                         Modbus Enable → Save
+
 Local Ethernet
 PC ───────────── IO-Link Master
      Master IP / Local subnet
@@ -64,9 +75,13 @@ PC ───────────── Internet
      IODD synchronization
      Software / patch update check
 
-Initial startup
+Initial ICEops startup
 ICEops ───────── IODD update prompt
                  Update/Yes → synchronize catalog
+
+After ICEops is running
+Globe icon ───── Master Web
+                 Review/change Master internal settings anytime
 
 New device added later
 ICEops ───────── IODD Update button
