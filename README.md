@@ -2,29 +2,32 @@
 
 > Official ICEops installer, release package, and automatic update repository.
 
-## 🚨 FIRST STEP BEFORE USING ICEops — Enable Modbus TCP on the Master
+## 🚨 FIRST STEP BEFORE CONNECTING ICEops — Enable Modbus TCP on the Master
 
-**This is the highest-priority setup step. Complete it on the Master before starting ICEops for the first time.**
+**This is the highest-priority setup step. Complete it before the first ICEops Master connection.**
 
-1. Before launching **ICEops**, connect the PC to the IO-Link Master network.
-2. Open a web browser and enter the **Master IP address directly** to open the **Master Web interface**.
-3. Open the **Config** tab.
-4. Open the **Modbus TCP** tab.
-5. At the bottom of the page, select/enable **Modbus Enable**.
-6. Click **Save** and confirm that the setting has been applied.
-7. After this initial Master configuration is complete, start **ICEops** and connect to the Master normally.
+1. Connect the PC to the IO-Link Master network.
+2. Start **ICEops** and enter the correct **Master IP address** in the target/IP field.
+3. **You do not need to connect ICEops to the Master yet.**
+4. Click the **globe icon in the upper-left corner**. ICEops opens the **Master Web interface** using the entered Master IP even while ICEops is disconnected.
+5. Open **Config → Modbus TCP**.
+6. At the bottom of the page, select/enable **Modbus Enable**.
+7. Click **Save** and confirm that the setting has been applied.
+8. Return to ICEops and connect to the Master normally.
 
-> **IMPORTANT:** The initial **Modbus TCP Enable** setting must be completed directly through the Master Web interface **before the first ICEops connection**.
+> **IMPORTANT:** The first Modbus TCP setup must be completed **before the first ICEops Master connection**, but ICEops itself may already be running. Enter the Master IP first, then use the globe icon to open Master Web without connecting.
 >
-> After ICEops is running, the **globe icon in the upper-left corner** can be used at any time as a convenient shortcut to reopen the Master Web interface and change or review the Master's internal settings.
+> You can also open a normal web browser and enter the **Master IP address directly** to access the same Master Web interface.
 >
-> **가장 먼저 해야 할 설정:** 처음에는 **ICEops를 실행하기 전에**, PC를 IO-Link Master 네트워크에 연결한 뒤 웹 브라우저 주소창에 **Master IP를 직접 입력하여 Master Web에 접속**하십시오. **Config → Modbus TCP** 탭으로 이동하여 화면 하단의 **Modbus Enable**을 활성화하고 반드시 **Save**하십시오. 이 초기 설정을 완료한 뒤 ICEops를 실행하여 Master에 정상 연결하십시오.
+> After initial setup, the **globe icon** remains available at any time to reopen Master Web and review or change the Master's internal settings, whether ICEops is currently connected or not, as long as a reachable Master IP is entered.
 >
-> ICEops 실행 이후에는 **왼쪽 상단의 지구 모양 아이콘**을 누르면 언제든지 Master Web을 다시 열 수 있으며, 이 기능을 통해 Master 내부 설정을 확인하거나 변경할 수 있습니다.
+> **가장 먼저 해야 할 설정:** PC를 IO-Link Master 네트워크에 연결한 뒤 **ICEops를 실행하고 Master IP를 먼저 입력**하십시오. 이 단계에서는 **ICEops를 Master에 Connect할 필요가 없습니다.** 왼쪽 상단의 **지구 모양 아이콘**을 누르면 입력된 Master IP를 사용하여 바로 **Master Web**에 접속할 수 있습니다. **Config → Modbus TCP → Modbus Enable → Save** 순서로 설정을 완료한 뒤 ICEops에서 Master에 정상 연결하십시오.
 >
-> **最優先の設定:** 初回は **ICEops を起動する前に**、PC を IO-Link Master のネットワークへ接続し、Web ブラウザに **Master の IP アドレスを直接入力して Master Web を開いてください**。**Config → Modbus TCP** タブへ移動し、画面下部の **Modbus Enable** を有効にして必ず **Save** してください。この初期設定が完了してから ICEops を起動し、Master に接続してください。
+> 일반 웹 브라우저 주소창에 **Master IP를 직접 입력**해도 동일한 Master Web에 접속할 수 있습니다. 초기 설정 이후에도 ICEops의 지구 모양 아이콘은 연결 여부와 관계없이, 유효한 Master IP가 입력되어 있고 네트워크에서 접근 가능하면 언제든지 Master 내부 설정 확인/변경에 사용할 수 있습니다.
 >
-> ICEops の起動後は、**左上の地球アイコン**からいつでも Master Web を開き、Master の内部設定を確認・変更できます。
+> **最優先の設定:** PC を IO-Link Master のネットワークへ接続し、**ICEops を起動して Master IP を先に入力**してください。この時点では **ICEops を Master に Connect する必要はありません。** 左上の**地球アイコン**をクリックすると、入力した Master IP を使用して **Master Web** を開くことができます。**Config → Modbus TCP → Modbus Enable → Save** の順に設定し、その後 ICEops から Master へ通常接続してください。
+>
+> Web ブラウザに **Master IP を直接入力**して同じ Master Web を開くこともできます。初期設定後も、到達可能な Master IP が入力されていれば、ICEops の接続状態に関係なく地球アイコンから Master Web を開き、内部設定を確認・変更できます。
 
 ## ⚠️ REQUIRED: Master Network & IODD Initialization
 
@@ -61,10 +64,17 @@ ICEops also supports **automatic software and patch updates through the Internet
 Recommended topology:
 
 ```text
-Before first ICEops start
+Before first ICEops Master connection
 PC ───────────── IO-Link Master
-Browser → Master IP → Config → Modbus TCP
+ICEops: Enter Master IP
+        │
+        └─ Globe icon → Master Web
+                         Config → Modbus TCP
                          Modbus Enable → Save
+        (ICEops connection is NOT required yet)
+
+Alternative initial access
+Browser → Master IP → Master Web
 
 Local Ethernet
 PC ───────────── IO-Link Master
@@ -79,9 +89,10 @@ Initial ICEops startup
 ICEops ───────── IODD update prompt
                  Update/Yes → synchronize catalog
 
-After ICEops is running
+Any time after Master IP is entered
 Globe icon ───── Master Web
-                 Review/change Master internal settings anytime
+                 Available even while ICEops is disconnected
+                 Review/change Master internal settings
 
 New device added later
 ICEops ───────── IODD Update button
@@ -126,6 +137,7 @@ ICEops can use a separately configured local AI server or run local AI models on
 - 이 저장소에는 배포 파일만 포함되며 소스 코드는 제공되지 않습니다.
 - 권장 시스템은 Windows 11 64-bit, 32 GB RAM, NVMe SSD, 1 GbE 유선 네트워크이며 ASUS NUC 15 Pro급 이상의 시스템을 권장합니다.
 - 로컬 AI Expert 14B를 동일 PC에서 사용할 경우 실용적인 응답속도를 위해 NVIDIA RTX급 GPU를 권장합니다.
+- **최초 Modbus TCP 설정:** ICEops를 실행하고 Master IP를 입력한 뒤, **아직 Master에 연결하지 않은 상태에서도 왼쪽 상단 지구 모양 아이콘으로 Master Web에 접속할 수 있습니다.** Master Web에서 **Config → Modbus TCP → Modbus Enable → Save**를 완료한 후 ICEops에서 Master에 연결하십시오. 일반 브라우저에서 Master IP를 직접 입력하는 방법도 사용할 수 있습니다.
 - **네트워크/IODD 필수 안내:** Master는 로컬 유선 Ethernet에서 올바른 Master IP로 연결하고, PC는 Wi-Fi 등으로 인터넷 연결을 유지하십시오. **ICEops 최초 실행 시 IODD 업데이트 여부를 묻는 팝업이 표시되며, 인터넷이 연결되어 있다면 Update/Yes를 선택하여 최신 IODD 데이터를 동기화하십시오.** 초기 동기화 후에는 정상 실행 때마다 IODD Update 버튼을 누를 필요가 없습니다. 단, 기존 환경에 **신규 IO-Link Device를 추가한 경우에는 IODD Update 버튼을 눌러 Catalog를 갱신한 뒤** Device Identification과 Mapping을 확인하고 사용하십시오.
 - **소프트웨어/패치 자동 업데이트:** PC가 인터넷에 연결되어 있으면 ICEops가 새로운 소프트웨어 버전 또는 패치 유무를 확인합니다. **업데이트가 있으면 업데이트할지 묻는 팝업이 표시되며, Update/Yes를 선택하면 다운로드, SHA-256 검증 및 업데이트가 자동으로 진행됩니다.**
 
@@ -139,6 +151,7 @@ This is the official download and automatic update repository for ICEops.
 - This repository contains deployment files only. Source code is not distributed here.
 - A Windows 11 64-bit system with 32 GB RAM, NVMe SSD, 1 GbE wired networking, and ASUS NUC 15 Pro-class hardware or better is recommended.
 - When running local Expert 14B AI on the same PC, an NVIDIA RTX-class GPU is recommended for practical response speed.
+- **Initial Modbus TCP setup:** Start ICEops and enter the Master IP. **You can open Master Web from the upper-left globe icon even before ICEops is connected to the Master.** In Master Web, complete **Config → Modbus TCP → Modbus Enable → Save**, then connect ICEops normally. Direct browser access to the Master IP is also supported.
 - **Network/IODD requirement:** Connect the Master over local wired Ethernet using the correct Master IP and keep Internet access available through Wi-Fi or another Internet connection. **On the initial ICEops startup, an IODD update prompt is displayed; with Internet access available, select Update/Yes to synchronize the latest IODD data.** After the initial synchronization, manual IODD Update is not required on every normal startup. If a **new IO-Link device is added later**, press **IODD Update** to explicitly refresh the catalog, then confirm device identification and mapping before use.
 - **Automatic software/patch updates:** When the PC has Internet access, ICEops checks for newer software versions and patches. **If an update is available, ICEops displays a confirmation popup. Select Update/Yes and ICEops automatically downloads, verifies with SHA-256, and applies the update.**
 
@@ -165,6 +178,7 @@ Dieses Repository ist das offizielle Download- und automatische Update-Repositor
 - このリポジトリには配布ファイルのみが含まれ、ソースコードは公開されません。
 - Windows 11 64-bit、32 GB RAM、NVMe SSD、1 GbE 有線ネットワーク、および ASUS NUC 15 Pro クラス以上のシステムを推奨します。
 - 同一PCでローカル Expert 14B AI を使用する場合は、実用的な応答速度のため NVIDIA RTX クラスの GPU を推奨します。
+- **初回 Modbus TCP 設定:** ICEops を起動して Master IP を入力すれば、**まだ Master に接続していない状態でも左上の地球アイコンから Master Web を開くことができます。** Master Web で **Config → Modbus TCP → Modbus Enable → Save** を完了してから ICEops で Master に接続してください。Web ブラウザから Master IP を直接開く方法も使用できます。
 - **ネットワーク/IODD 必須事項:** Master は正しい Master IP を設定したローカル有線 Ethernet で接続し、PC は Wi-Fi などでインターネット接続を維持してください。**ICEops の初回起動時には IODD 更新確認のポップアップが表示されます。インターネット接続がある状態で Update/Yes を選択し、最新の IODD データを同期してください。** 初回同期後は通常起動のたびに IODD Update を実行する必要はありません。後から **新しい IO-Link Device を追加した場合**は、**IODD Update** ボタンを押して Catalog を明示的に更新し、Device Identification と Mapping を確認してから使用してください。
 - **ソフトウェア/パッチ自動更新:** PC がインターネットに接続されている場合、ICEops は新しいソフトウェアバージョンまたはパッチを確認します。**更新がある場合は確認ポップアップが表示され、Update/Yes を選択すると自動的にダウンロード、SHA-256 検証、更新が実行されます。**
 
