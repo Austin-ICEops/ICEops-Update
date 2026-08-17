@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.190.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.190.0/ICEops_Setup_8.0.190.0.exe",
-    "sha256":  "094d60e1c81699f79b22260f5374306dab4c2b33332b8a050f1e2656e77ae47e",
-    "fileName":  "ICEops_Setup_8.0.190.0.exe",
+    "version":  "8.0.191.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.191.0/ICEops_Setup_8.0.191.0.exe",
+    "sha256":  "0be2e3a8710ece78d21ffd3ecb03eaf82efa31aaca36404bbfb2f3fd20e01358",
+    "fileName":  "ICEops_Setup_8.0.191.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-17T13:55:49.5023771+00:00",
+    "publishedAtUtc":  "2026-08-17T14:24:05.2812553+00:00",
     "releaseNotes":  [
-                         "V990 separates 3D selection from placement: plain click selects only, while Ctrl+left drag moves the selected object on the X/Z floor plane with jump-free pointer offset preservation.",
-                         "The native 3D renderer replaces generic cuboid proxies with procedural industrial geometry for tanks, 9-segment signal towers, pipes, gauges, sensors, vibration machinery, displays, indicators and the ICA 16-channel hub.",
-                         "An EDIT-only X/Z arrow pad provides deterministic 0.25-unit placement, while Home is now bounded to the shell viewport so connected-state card expansion stays inside its own scroll area and cannot push into the bottom status bar."
+                         "V991 guarantees the 8-port Home dashboard fits the primary viewport by compacting Recent Events and tightening table-card chrome without changing the fixed shell status bar.",
+                         "3D EDIT adds double-click click/move/place positioning while retaining Ctrl+left drag, with Escape cancel and deterministic pointer ownership so objects no longer remain in a captured placement state.",
+                         "Light-theme ICA 16-channel LIVE and hover visibility is strengthened with higher-contrast active cells, borders and pulse halos; dark-theme behavior is preserved."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "3D plain click is selection-only; Ctrl+left drag moves the selected object on X/Z without the initial snap/jump.",
-                                              "Native 3D now uses procedural industrial models instead of generic box proxies for all active Device Scene object types.",
-                                              "An EDIT-only X/Z nudge pad is added, and Home card expansion after Connect is contained inside the port scroll area so the bottom status bar stays fixed."
+                                              "Home prioritizes all eight port rows in one viewport and keeps Recent Events compact and internally scrollable.",
+                                              "Double-click a 3D object to arm click/move/place; move the pointer and click once to commit. Ctrl+left drag remains available and Escape cancels.",
+                                              "ICA 16-channel LIVE/hover contrast is stronger in Light theme with clearer active cells, borders and pulse halos; Dark theme remains unchanged."
                                           ],
                                    "ko":  [
-                                              "3D 일반 좌클릭은 선택만 수행하고 Ctrl+좌클릭 드래그에서만 X/Z 배치가 동작하며, 드래그 시작 시 객체가 튀지 않도록 클릭 오프셋을 유지합니다.",
-                                              "Native 3D의 공통 Box Proxy를 제거하고 탱크, 9세그 신호등, 파이프, 게이지, 센서, 진동 설비, 디스플레이, 인디케이터, ICA 16채널 허브를 프로시저럴 산업형 모델로 렌더링합니다.",
-                                              "EDIT 전용 X/Z 화살표 미세이동을 추가하고, Connect 후 카드 내용이 늘어나도 Home 내부 포트 스크롤 영역에서만 확장되어 하단 상태바를 밀지 않도록 수정했습니다."
+                                              "Home에서 Recent Events 높이를 축소하고 내부 스크롤로 제한해 1440p에서도 8개 포트 카드가 한 화면에 우선 표시되도록 조정했습니다.",
+                                              "3D 객체를 더블클릭하면 클릭/이동/배치 모드가 활성화되어 마우스를 움직인 뒤 다음 클릭으로 위치를 확정할 수 있으며, Ctrl+좌드래그와 Escape 취소도 유지합니다.",
+                                              "라이트 테마에서 ICA 16채널 LIVE/호버 대비를 강화해 활성 셀, 테두리, 펄스 효과가 더 선명하게 보이도록 했으며 다크 테마 동작은 유지합니다."
                                           ],
                                    "ja":  [
-                                              "3D の通常左クリックは選択のみとし、Ctrl+左ドラッグ時だけ X/Z 配置を行い、開始時のスナップを防ぐためクリックオフセットを保持します。",
-                                              "Native 3D の共通 Box Proxy を廃止し、タンク、9セグ信号灯、配管、ゲージ、センサ、振動設備、表示器、インジケータ、ICA 16ch Hub をプロシージャル形状で描画します。",
-                                              "EDIT 専用 X/Z 矢印移動を追加し、Connect 後にカード内容が増えても Home のポートスクロール領域内に収まり、下部ステータスバーを押し下げないようにしました。"
+                                              "Home の Recent Events をコンパクト化して内部スクロールに限定し、1440p でも 8 ポート行を 1 画面に優先表示します。",
+                                              "3D オブジェクトをダブルクリックすると click/move/place が有効になり、ポインタ移動後の次クリックで確定できます。Ctrl+左ドラッグと Escape キャンセルも維持します。",
+                                              "Light テーマで ICA 16ch LIVE/hover の視認性を強化し、アクティブセル・境界線・パルス効果を明確化しました。Dark テーマは維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "3D 普通左键仅用于选择，只有 Ctrl+左键拖动才会在 X/Z 平面移动对象，并保留点击偏移以避免起始跳动。",
-                                                 "Native 3D 不再使用统一方盒代理，而是为罐体、9段信号塔、管道、仪表、传感器、振动设备、显示器、指示灯和 ICA 16通道 Hub 生成工业化程序模型。",
-                                                 "新增 EDIT 专用 X/Z 方向微调按钮；连接后卡片内容增加时只在 Home 端口滚动区域内部扩展，不再挤压底部状态栏。"
+                                                 "Home 缩小 Recent Events 并限制为内部滚动，使 1440p 下优先在单屏显示 8 个端口行。",
+                                                 "双击 3D 对象即可进入 click/move/place 模式，移动指针后再次单击确认；Ctrl+左键拖动和 Escape 取消仍保留。",
+                                                 "增强浅色主题下 ICA 16 通道 LIVE/悬停可见性，使活动单元、边框和脉冲效果更清晰；深色主题保持不变。"
                                              ],
                                    "de":  [
-                                              "Ein normaler Linksklick in 3D wählt nur aus; nur Strg+Linksklick-Ziehen verschiebt auf X/Z und erhält den Klick-Offset gegen Sprünge.",
-                                              "Der native 3D-Renderer ersetzt generische Box-Proxys durch prozedurale Industriemodelle für Tank, 9-Segment-Signalturm, Rohr, Messgerät, Sensor, Vibrationsmaschine, Anzeige, Indikator und ICA-16-Kanal-Hub.",
-                                              "Eine EDIT-X/Z-Pfeilsteuerung wurde ergänzt; nach Connect bleibt wachsender Karteninhalt im Home-Port-Scrollbereich und verschiebt die untere Statusleiste nicht."
+                                              "Home komprimiert Recent Events und hält es intern scrollbar, damit bei 1440p alle acht Port-Zeilen in einer Ansicht priorisiert sichtbar bleiben.",
+                                              "Ein Doppelklick auf ein 3D-Objekt aktiviert click/move/place; nach dem Bewegen bestätigt der nächste Klick. Strg+Linkszug und Escape-Abbruch bleiben erhalten.",
+                                              "Im Light-Theme ist der LIVE/Hover-Kontrast des ICA-16-Kanal-Hubs durch klarere aktive Zellen, Konturen und Puls-Halos erhöht; das Dark-Theme bleibt unverändert."
                                           ],
                                    "es":  [
-                                              "El clic izquierdo normal en 3D solo selecciona; Ctrl+arrastre izquierdo mueve en X/Z conservando el desplazamiento inicial para evitar saltos.",
-                                              "El renderizador 3D nativo sustituye los proxies de caja por modelos industriales procedurales para tanque, torre de 9 segmentos, tubería, indicador, sensor, máquina de vibración, display, piloto y hub ICA de 16 canales.",
-                                              "Se añade un control de flechas X/Z solo en EDIT y el crecimiento de contenido de las tarjetas tras Connect queda contenido en el scroll de puertos de Home sin empujar la barra inferior."
+                                              "Home compacta Recent Events y lo mantiene con scroll interno para priorizar los ocho puertos en una sola vista a 1440p.",
+                                              "Doble clic en un objeto 3D activa click/move/place; se mueve el puntero y el siguiente clic confirma. Se mantienen Ctrl+arrastre izquierdo y Escape para cancelar.",
+                                              "Se refuerza la visibilidad LIVE/hover del hub ICA de 16 canales en tema claro con celdas activas, bordes y pulsos más claros; el tema oscuro se mantiene sin cambios."
                                           ]
                                }
 }
