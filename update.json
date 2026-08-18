@@ -1,42 +1,41 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.211.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.211.0/ICEops_Setup_8.0.211.0.exe",
-    "sha256":  "77d8577f9a920ebac4e1b11f17b6ffbf8e4638733d64687a15e84c9bd5db4c87",
-    "fileName":  "ICEops_Setup_8.0.211.0.exe",
+    "version":  "8.0.212.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.212.0/ICEops_Setup_8.0.212.0.exe",
+    "sha256":  "9be1c80580469fa81a66845a29959a62ff5b7eaa2d1c478ade79e98207fa5c33",
+    "fileName":  "ICEops_Setup_8.0.212.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T06:49:28.6003213+00:00",
+    "publishedAtUtc":  "2026-08-18T07:17:37.0018522+00:00",
     "releaseNotes":  [
-                         "V1011 synchronizes the Web Commissioning Center CTRL/OBS projection with the live desktop OutputControlAuthorityService even when the read-only commissioning snapshot is degraded.",
-                         "The V1010 fail-open fallback no longer hard-codes controlOwner=false/writeUnlocked=false. Authority, Write Access and operation-busy state are captured first and preserved in every HTTP 200 fallback response; Compare/Apply still re-check the same safety services server-side.",
-                         "When the master communication state becomes OFFLINE, the Web health snapshot now suppresses cached product identity, device kind, manufacturer, product image and alarm presentation instead of carrying the previous connected-device presentation forward.",
-                         "The tablet renderer also removes stale device/vendor image src attributes and vendor styling while offline, so disconnect collapses immediately to a clean DISCONNECTED card and reconnect repopulates from the current snapshot."
+                         "V1012 normalizes Device Scene Line thickness editing by wiring the existing schema-v5 StrokeWidth property to immediate Canvas preview while preserving Save Properties as the permanent Scene SSOT commit boundary.",
+                         "Pipe Flow now reuses the existing FillHex, StrokeHex, StrokeWidth, Opacity and animation path for a more industrial pipe presentation. Existing Fresh/range-valid/non-zero flow renders with the existing process-blue theme resource, while stop/disconnected/bad-quality states remain static and neutral.",
+                         "No new Pipe topology, shader, animation subsystem, write/control API or schema field was introduced. Resize/rotation, Web V1011 synchronization, communication/runtime, authority and AI paths remain outside this patch."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Web Commissioning now preserves the desktop CTRL/OBS and Write Access SSOT even in degraded fail-open snapshots, preventing a false OBS lock.",
-                                              "Web device cards now clear cached identity/vendor/image presentation immediately when master communication is disconnected."
+                                              "Line Stroke Width now previews immediately on the Canvas and is permanently stored only through Save Properties using the existing schema-v5 property.",
+                                              "Pipe Flow reuses the existing animation path: only Fresh, range-valid, non-zero SSOT flow is shown in process Water Blue; stop/disconnected states remain neutral and static."
                                           ],
                                    "ko":  [
-                                              "Web 시운전 센터가 degraded fail-open 상태에서도 데스크톱의 실제 CTRL/OBS 및 Write Access SSOT를 유지하여 잘못된 OBS 잠금을 방지합니다.",
-                                              "Master 통신이 끊기면 Web 장치 카드의 이전 Identity/Vendor/Image 표시를 즉시 제거하고 DISCONNECTED 상태만 표시합니다."
+                                              "Line Stroke Width는 기존 Schema v5 속성을 그대로 사용하며 Canvas에 즉시 Preview되고, Save Properties 실행 시에만 Scene SSOT에 영구 저장됩니다.",
+                                              "Pipe Flow는 기존 애니메이션 경로만 재사용하며 Fresh + 유효 범위 + 0보다 큰 SSOT 흐름일 때만 Water Blue 계열로 표시되고 정지/연결 해제 상태는 중립 정적 표현을 유지합니다."
                                           ],
                                    "ja":  [
-                                              "Web コミッショニングは degraded fail-open 状態でもデスクトップの実際の CTRL/OBS と Write Access SSOT を保持し、誤った OBS ロックを防止します。",
-                                              "Master 通信が切断されると、Web デバイスカードの以前の Identity/Vendor/Image 表示を即時に消去し、DISCONNECTED 状態のみを表示します。"
+                                              "Line の Stroke Width は既存の Schema v5 プロパティをそのまま使用し、Canvas に即時プレビューされ、Save Properties 実行時のみ Scene SSOT に永続保存されます。",
+                                              "Pipe Flow は既存のアニメーション経路のみを再利用し、Fresh・有効レンジ・0 より大きい SSOT フローの場合だけ Water Blue 系で表示し、停止・切断状態ではニュートラルな静止表示を維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "Web 调试中心即使处于 degraded fail-open 状态，也会保持桌面端实际的 CTRL/OBS 与 Write Access SSOT，避免错误的 OBS 锁定。",
-                                                 "Master 通信断开时，Web 设备卡会立即清除之前的 Identity/Vendor/Image 显示，仅保留 DISCONNECTED 状态。"
+                                                 "Line 的 Stroke Width 继续使用现有 Schema v5 属性，可在 Canvas 上即时预览，并且仅在执行 Save Properties 时永久保存到 Scene SSOT。",
+                                                 "Pipe Flow 仅复用现有动画路径；只有 Fresh、量程有效且 SSOT 流量大于 0 时才显示 Water Blue 流动效果，停止或断开连接时保持中性静态显示。"
                                              ],
                                    "de":  [
-                                              "Das Web-Inbetriebnahmezentrum bewahrt auch bei einem degradierten Fail-open-Snapshot den tatsächlichen CTRL/OBS- und Write-Access-SSOT des Desktops und verhindert damit eine falsche OBS-Sperre.",
-                                              "Bei getrennter Master-Kommunikation werden zwischengespeicherte Identity-/Vendor-/Image-Daten der Web-Gerätekarten sofort entfernt und nur DISCONNECTED angezeigt."
+                                              "Die Stroke Width einer Line verwendet weiterhin die vorhandene Schema-v5-Eigenschaft, wird sofort auf dem Canvas vorab angezeigt und erst mit Save Properties dauerhaft im Scene-SSOT gespeichert.",
+                                              "Pipe Flow verwendet ausschließlich den vorhandenen Animationspfad: Nur bei Fresh, gültigem Bereich und einem SSOT-Fluss größer als 0 wird Water Blue dargestellt; Stop/Disconnect bleiben neutral und statisch."
                                           ],
                                    "es":  [
-                                              "El Centro de Puesta en Marcha Web conserva el SSOT real de CTRL/OBS y Write Access del escritorio incluso con un snapshot fail-open degradado, evitando un bloqueo OBS falso.",
-                                              "Al desconectarse la comunicación Master, las tarjetas Web eliminan inmediatamente la identidad, proveedor e imagen almacenados y muestran únicamente DISCONNECTED."
+                                              "Stroke Width de Line reutiliza la propiedad existente de Schema v5, se previsualiza inmediatamente en el Canvas y solo se guarda de forma permanente en el Scene SSOT mediante Save Properties.",
+                                              "Pipe Flow reutiliza únicamente la ruta de animación existente: el flujo SSOT Fresh, con rango válido y mayor que 0 se muestra en Water Blue; los estados Stop/Disconnected permanecen neutros y estáticos."
                                           ]
                                }
 }
