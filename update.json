@@ -1,14 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.212.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.212.0/ICEops_Setup_8.0.212.0.exe",
-    "sha256":  "90f4a821f9df85422b02b25494c9a8150d0d3256307761c4ef7f5de2f74a18f0",
-    "fileName":  "ICEops_Setup_8.0.212.0.exe",
+    "version":  "8.0.213.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.213.0/ICEops_Setup_8.0.213.0.exe",
+    "sha256":  "c8ce483d7d0214690642fcf896c8aa33155dda6607751c81b3e587a5012d3cb0",
+    "fileName":  "ICEops_Setup_8.0.213.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T07:41:55.3148102+00:00",
+    "publishedAtUtc":  "2026-08-18T07:51:15.7999148+00:00",
     "releaseNotes":  [
-                         "V1012 normalizes Device Scene Line thickness editing by wiring the existing schema-v5 StrokeWidth property to immediate Canvas preview while preserving Save Properties as the permanent Scene SSOT commit boundary.",
+                         "V1013 normalizes Device Scene Line thickness editing by wiring the existing schema-v5 StrokeWidth property to immediate Canvas preview while preserving Save Properties as the permanent Scene SSOT commit boundary.",
                          "Pipe Flow now reuses the existing FillHex, StrokeHex, StrokeWidth, Opacity and animation path for a more industrial pipe presentation. Existing Fresh/range-valid/non-zero flow renders with the existing process-blue theme resource, while stop/disconnected/bad-quality states remain static and neutral.",
                          "Commissioning Center now separates Compare from Write Execution on Desktop and Web. Arm batch write is grouped with Apply \u0026 Verify; unknown-ownership override is exposed only for UNKNOWN, while OWNED BY OTHER remains an unconditional block. Web continues to consume Main PC authority/write/ownership snapshot state and the server performs the final Apply safety preflight.",
                          "No new Pipe topology, shader, animation subsystem, write/control API, ownership algorithm, authority service, or schema field was introduced. Existing V1011 fail-open authority capture/disconnect cleanup and V1002/V1005 HMI interaction paths remain protected."
