@@ -1,49 +1,49 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.202.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.202.0/ICEops_Setup_8.0.202.0.exe",
-    "sha256":  "ff9c4d8d292c49b9d1ab3caee1e78d95c3a31060154ab464a197e800586539fe",
-    "fileName":  "ICEops_Setup_8.0.202.0.exe",
+    "version":  "8.0.203.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.203.0/ICEops_Setup_8.0.203.0.exe",
+    "sha256":  "4e0f2ac33fe84f1809b8c6c5f2ee76307ef6edd3605459a9f5daba6e2e206704",
+    "fileName":  "ICEops_Setup_8.0.203.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T03:32:03.3271452+00:00",
+    "publishedAtUtc":  "2026-08-18T04:11:51.2454229+00:00",
     "releaseNotes":  [
-                         "V1002 replaces the resize gesture routing with a dedicated full-canvas interaction overlay after review of the V1001 field recording.",
-                         "All eight primitive resize handles now share one stable scene-space geometry path isolated from renderer, item-layout and ScrollViewer hit testing.",
-                         "Resize supports both press-drag-release and click-move-click placement: a simple handle click arms continuous resize until the next click, while a normal drag commits on release.",
-                         "The V1000 immediate Device Scene theme repaint and Pepperl+Fuchs splash sharpening remain unchanged.",
-                         "No HMI write authority, schema, communication, runtime, polling, AI grounding, Home layout, or protected control behavior is changed."
+                         "V1003 adds direct primitive background and border color selection to the Device Scene Inspector without changing the schema-v5 color contract.",
+                         "Rectangle, Rounded Rectangle, Ellipse, Line and Text continue to use the existing FillHex and StrokeHex properties; V1003 only adds compact preset swatches beside the existing HEX/token editors.",
+                         "AUTO_SURFACE, AUTO_ACCENT, transparent and common engineering palette colors are available, while arbitrary #RRGGBB/#AARRGGBB values remain supported through the existing text fields.",
+                         "Save Properties remains the only commit boundary, so palette clicks never bypass the existing draft/SSOT persistence contract.",
+                         "The V1002 full-canvas resize interaction overlay is unchanged and remains the resize baseline. No HMI write authority, schema, communication, runtime, polling, AI grounding, Home layout, or protected control behavior is changed."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Primitive resize now uses a dedicated full-canvas interaction overlay so all eight directions remain on one uninterrupted scene-space input path.",
-                                              "Both press-drag-release and click-move-click resize interactions are supported; a simple handle click can arm resize without requiring the mouse button to remain held.",
-                                              "V1000 theme repaint and Pepperl+Fuchs splash improvements remain unchanged."
+                                              "Primitive background and border colors can now be selected directly from compact Inspector palettes or entered as HEX values.",
+                                              "The existing schema-v5 FillHex/StrokeHex fields and Save Properties commit boundary are reused unchanged.",
+                                              "The V1002 resize interaction overlay remains unchanged."
                                           ],
                                    "ko":  [
-                                              "Primitive Resize를 전용 Full-Canvas Interaction Overlay로 변경해 8방향 모두 하나의 끊김 없는 Scene 좌표 입력 경로를 사용합니다.",
-                                              "누른 채 드래그 후 놓기와 한 번 클릭 후 크기 조절하고 다시 클릭해 확정하는 두 방식을 모두 지원해 마우스 버튼을 계속 누르고 있을 필요가 없습니다.",
-                                              "V1000의 테마 즉시 재렌더링과 Pepperl+Fuchs 스플래시 개선은 그대로 유지합니다."
+                                              "Primitive 객체의 배경 색상과 테두리 색상을 Inspector의 컴팩트 팔레트에서 직접 선택하거나 HEX 값으로 입력할 수 있습니다.",
+                                              "기존 Schema v5의 FillHex/StrokeHex 필드와 속성 저장 커밋 경계를 그대로 재사용합니다.",
+                                              "V1002 Resize Interaction Overlay는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Primitive Resizeを専用Full-Canvas Interaction Overlay方式に変更し、8方向すべてが同一の途切れないScene座標入力経路を使用します。",
-                                              "押したままドラッグしてリリースする方式と、1回クリックしてサイズ調整後に再クリックで確定する方式の両方をサポートします。",
-                                              "V1000の即時テーマ再描画とPepperl+Fuchs Splash改善はそのまま維持します。"
+                                              "Primitive オブジェクトの背景色と枠線色を Inspector のコンパクトパレットから直接選択するか、HEX 値で入力できるようになりました。",
+                                              "既存の Schema v5 FillHex/StrokeHex とプロパティ保存のコミット境界をそのまま再利用します。",
+                                              "V1002 Resize Interaction Overlay は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "Primitive Resize 改为专用 Full-Canvas Interaction Overlay，使八个方向都使用同一条不中断的 Scene 坐标输入路径。",
-                                                 "同时支持按住拖动后释放，以及单击手柄后移动并再次单击确认两种调整方式，无需始终按住鼠标键。",
-                                                 "V1000 的即时主题重绘与 Pepperl+Fuchs 启动画面改进保持不变。"
+                                                 "现在可在 Inspector 紧凑调色板中直接选择 Primitive 对象的背景颜色和边框颜色，也可继续输入 HEX 值。",
+                                                 "继续复用现有 Schema v5 的 FillHex/StrokeHex 字段和保存属性提交边界。",
+                                                 "V1002 Resize Interaction Overlay 保持不变。"
                                              ],
                                    "de":  [
-                                              "Primitive Resize verwendet jetzt ein dediziertes Full-Canvas-Interaction-Overlay, sodass alle acht Richtungen denselben unterbrechungsfreien Scene-Koordinatenpfad nutzen.",
-                                              "Sowohl Press-Drag-Release als auch Click-Move-Click werden unterstützt; nach einem einfachen Handle-Klick kann die Größe ohne dauerhaft gedrückte Maustaste angepasst werden.",
-                                              "Die Theme-Neudarstellung und die Pepperl+Fuchs-Splash-Verbesserung aus V1000 bleiben unverändert."
+                                              "Hintergrund- und Rahmenfarben von Primitive-Objekten können jetzt direkt über kompakte Inspector-Farbpaletten gewählt oder weiterhin als HEX-Wert eingegeben werden.",
+                                              "Die vorhandenen Schema-v5-Felder FillHex/StrokeHex und die Commit-Grenze Eigenschaften speichern werden unverändert weiterverwendet.",
+                                              "Das V1002 Resize Interaction Overlay bleibt unverändert."
                                           ],
                                    "es":  [
-                                              "Primitive Resize usa ahora una capa de interacción de Canvas completo dedicada, de modo que las ocho direcciones comparten una única ruta continua de coordenadas de Scene.",
-                                              "Se admiten tanto pulsar-arrastrar-soltar como clic-mover-clic; un clic simple en el handle puede dejar activo el resize sin mantener pulsado el botón.",
-                                              "Se conservan sin cambios el repintado inmediato de tema y la mejora del splash Pepperl+Fuchs de V1000."
+                                              "Los colores de fondo y borde de los objetos Primitive ahora pueden seleccionarse directamente desde paletas compactas del Inspector o introducirse como valores HEX.",
+                                              "Se reutilizan sin cambios los campos FillHex/StrokeHex del Schema v5 y el límite de confirmación Guardar propiedades.",
+                                              "El Resize Interaction Overlay de V1002 permanece sin cambios."
                                           ]
                                }
 }
