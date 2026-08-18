@@ -1,13 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.217.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.217.0/ICEops_Setup_8.0.217.0.exe",
-    "sha256":  "1b27121db08fa78e1b21538a99796b0f3ffbbda7623fcfa3637e2fd113c24a1a",
-    "fileName":  "ICEops_Setup_8.0.217.0.exe",
+    "version":  "8.0.218.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.218.0/ICEops_Setup_8.0.218.0.exe",
+    "sha256":  "0b9c4dd74b63043d274a332ffeb841638d44e7f0c00d1eb06bdda7a40a2a15f8",
+    "fileName":  "ICEops_Setup_8.0.218.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T11:00:23.1034190+00:00",
+    "publishedAtUtc":  "2026-08-18T11:39:19.5074707+00:00",
     "releaseNotes":  [
+                         "V1018 adds three read-only HMI process widgets: Valve, a shared Pump/Motor Machine widget with saved Visual Type, and a resizable Bar Indicator that reuses the existing SSOT snapshot and Display Min/Max semantics. No hardware-write path is added.",
                          "V1016 fixes Device Scene/HMI Designer multi-display reparent rendering: DeviceSceneRendererControl now rebinds the same in-memory DeviceSceneItemViewModel on Loaded after Unloaded released its subscription, so existing scene objects remain visible without reloading or rewriting the saved layout.",
                          "V1015 fixes Logic Builder/Sequence multi-display reparenting so the exact in-memory editor state is preserved across pop-out/reattach. The reparent guard now spans the full WPF host transaction and restores active/open documents, selection, zoom, and scroll state without creating a second Studio view/runtime owner.",
                          "V1014 fixes the Commissioning Center bottom status clipping by increasing the window working height without changing commissioning safety logic.",
@@ -17,6 +18,7 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
+                                              "V1018 adds Valve, a shared Pump/Motor Machine widget with saved Visual Type, and a resizable Bar Indicator. All three are read-only HMI presentations over existing SSOT snapshots; no PDO, ISDU or runtime-control path is added.",
                                               "HMI Designer multi-display pop-out now preserves the visible scene immediately. Device Scene renderers rebind to the same in-memory scene item after WPF reparenting, so placed library objects no longer disappear until application restart.",
                                               "Logic Builder and Sequence now preserve the exact in-memory editor state when moved to or from a secondary-display window. Active/open documents, selection, zoom, and scroll position are restored after the WPF reparent transaction, and no second Studio runtime/view owner is created.",
                                               "Commissioning Center now has enough vertical working height to keep the bottom Ready/status line visible. Oscilloscope, Logic Builder, and HMI Designer can also be opened on another display using the existing detachable-workspace framework without creating duplicate Studio runtime or Device Scene scan owners.",
@@ -25,6 +27,7 @@
                                               "Desktop and Web Commissioning now use the same ownership UX: LOCAL requires only normal write safety + Arm batch write; UNKNOWN additionally requires one-shot explicit acknowledgement; OWNED BY OTHER cannot be overridden. Compare remains separate from write execution."
                                           ],
                                    "ko":  [
+                                              "V1018은 Valve, Visual Type을 저장하는 공용 Pump/Motor Machine 위젯, 크기 조절 가능한 Bar Indicator를 추가합니다. 세 위젯 모두 기존 SSOT Snapshot을 읽기만 하는 HMI 표현이며 PDO, ISDU 또는 Runtime 제어 경로를 추가하지 않습니다.",
                                               "HMI 디자이너를 보조 모니터 새 창으로 분리해도 기존 Scene 배치가 즉시 그대로 표시됩니다. WPF reparent 후 Renderer가 동일한 메모리 Scene Item에 다시 연결되므로 배치 객체가 앱 재시작 전까지 사라져 보이던 문제가 수정되었습니다.",
                                               "로직 빌더와 시퀀스를 보조 모니터 새 창으로 이동하거나 다시 메인 창에 붙여도 기존 메모리 편집 상태가 그대로 유지됩니다. 활성/열린 문서, 선택 상태, 줌, 스크롤 위치를 WPF reparent 완료 후 복원하며 Studio Runtime/View 소유자를 추가 생성하지 않습니다.",
                                               "시운전센터 창의 세로 작업 높이를 보강해 하단 Ready/상태 문구가 잘리지 않도록 했습니다. 오실로스코프, 로직 빌더, HMI 디자이너도 기존 분리형 작업창 프레임워크를 사용해 다른 모니터에 열 수 있으며 Studio Runtime 또는 Device Scene Scan 소유자를 중복 생성하지 않습니다.",
@@ -33,6 +36,7 @@
                                               "Desktop/Web 시운전센터의 Ownership UX를 동일하게 맞췄습니다. LOCAL은 기존 쓰기 안전조건 + Arm batch write만 필요하고, UNKNOWN에서만 일회성 예외 승인을 추가로 요구하며, OWNED BY OTHER는 우회할 수 없습니다. Compare는 쓰기 실행과 분리했습니다."
                                           ],
                                    "ja":  [
+                                              "V1018 では Valve、Visual Type を保存する共通 Pump/Motor Machine ウィジェット、サイズ変更可能な Bar Indicator を追加しました。3つとも既存 SSOT Snapshot の読み取り専用 HMI 表示で、PDO・ISDU・Runtime 制御経路は追加しません。",
                                               "HMI Designer を別モニターへポップアウトしても既存の Scene 配置がすぐそのまま表示されます。WPF reparent 後に Renderer が同じインメモリ Scene Item へ再接続するため、再起動するまで配置オブジェクトが消えて見える問題を修正しました。",
                                               "Logic Builder と Sequence を別モニターのウィンドウへ移動したりメイン画面へ戻した場合でも、既存のインメモリ編集状態をそのまま保持します。アクティブ/開いているドキュメント、選択、ズーム、スクロール位置を WPF reparent 完了後に復元し、Studio Runtime/View の所有者を追加生成しません。",
                                               "Commissioning Center の縦方向の作業領域を拡張し、下部の Ready/ステータス表示が切れないようにしました。Oscilloscope、Logic Builder、HMI Designer も既存の分離ワークスペース機構で別モニターに表示でき、Studio Runtime や Device Scene Scan の所有者を重複生成しません。",
@@ -41,6 +45,7 @@
                                               "Desktop/Web の Commissioning Center で Ownership UX を統一しました。LOCAL は通常の書込み安全条件 + Arm batch write のみ、UNKNOWN の場合だけ一時的な明示承認を追加要求し、OWNED BY OTHER は上書きできません。Compare は書込み実行から分離されています。"
                                           ],
                                    "zh-CN":  [
+                                                 "V1018 新增 Valve、可保存 Visual Type 的共用 Pump/Motor Machine 小组件，以及可调整尺寸的 Bar Indicator。三者都只读取现有 SSOT Snapshot，不新增 PDO、ISDU 或 Runtime 控制路径。",
                                                  "HMI Designer 弹出到副显示器后会立即保持现有 Scene 布局可见。WPF 重挂载后 Renderer 会重新绑定到同一个内存 Scene Item，修复了已放置对象在重启应用前看似消失的问题。",
                                                  "Logic Builder 和 Sequence 移动到副显示器窗口或返回主窗口时，会保持现有的内存编辑状态。WPF 重挂载完成后恢复活动/已打开文档、选择、缩放和滚动位置，并且不会创建第二个 Studio Runtime/View 所有者。",
                                                  "已增加 Commissioning Center 的垂直工作空间，避免底部 Ready/状态文字被裁切。Oscilloscope、Logic Builder 和 HMI Designer 也可通过现有的可分离工作区框架打开到其他显示器，并且不会创建重复的 Studio Runtime 或 Device Scene Scan 所有者。",
@@ -49,6 +54,7 @@
                                                  "Desktop/Web Commissioning Center 的 Ownership UX 已统一。LOCAL 仅需要现有写入安全条件 + Arm batch write；仅在 UNKNOWN 时额外要求一次性明确确认；OWNED BY OTHER 不允许绕过。Compare 与写入执行分离。"
                                              ],
                                    "de":  [
+                                              "V1018 ergänzt Valve, ein gemeinsames Pump/Motor-Machine-Widget mit gespeichertem Visual Type sowie einen frei skalierbaren Bar Indicator. Alle drei sind reine Read-only-HMI-Darstellungen vorhandener SSOT-Snapshots; es wird kein PDO-, ISDU- oder Runtime-Steuerpfad hinzugefügt.",
                                               "Beim Auslagern des HMI Designer auf einen zweiten Monitor bleibt die vorhandene Scene-Anordnung sofort sichtbar. Nach dem WPF-Reparenting bindet sich der Renderer erneut an dasselbe In-Memory-Scene-Item, sodass platzierte Objekte nicht mehr bis zum Neustart scheinbar verschwinden.",
                                               "Logic Builder und Sequence behalten beim Verschieben in ein Fenster auf einem zweiten Monitor oder zurück ins Hauptfenster den vorhandenen In-Memory-Editorzustand bei. Aktive/geöffnete Dokumente, Auswahl, Zoom und Scrollposition werden nach dem WPF-Reparenting wiederhergestellt; es wird kein zweiter Studio-Runtime-/View-Owner erzeugt.",
                                               "Der vertikale Arbeitsbereich des Commissioning Center wurde vergrößert, damit die untere Ready-/Statuszeile nicht abgeschnitten wird. Oscilloscope, Logic Builder und HMI Designer können über das vorhandene abtrennbare Workspace-Framework auf einem anderen Monitor geöffnet werden, ohne doppelte Studio-Runtime- oder Device-Scene-Scan-Owner zu erzeugen.",
@@ -57,6 +63,7 @@
                                               "Desktop und Web Commissioning verwenden jetzt dieselbe Ownership-UX: LOCAL benötigt nur die normalen Schreibschutzbedingungen plus Arm batch write; UNKNOWN zusätzlich eine einmalige ausdrückliche Bestätigung; OWNED BY OTHER kann nicht übersteuert werden. Compare ist vom Schreibvorgang getrennt."
                                           ],
                                    "es":  [
+                                              "V1018 añade Valve, un widget Machine compartido Pump/Motor con Visual Type guardado y un Bar Indicator redimensionable. Los tres son presentaciones HMI de solo lectura sobre snapshots SSOT existentes; no se añade ninguna ruta PDO, ISDU ni de control Runtime.",
                                               "Al desacoplar HMI Designer a un segundo monitor, la Scene existente permanece visible de inmediato. Tras el reparent de WPF, el renderer vuelve a enlazarse al mismo Scene Item en memoria, corrigiendo que los objetos colocados parecieran desaparecer hasta reiniciar la aplicación.",
                                               "Logic Builder y Sequence conservan ahora exactamente el estado de edición en memoria al moverse a una ventana de un monitor secundario o volver a la ventana principal. Tras completar el reparent de WPF se restauran los documentos activos/abiertos, la selección, el zoom y el desplazamiento, sin crear un segundo propietario de Studio Runtime/View.",
                                               "Se amplió el área vertical de trabajo del Commissioning Center para que la línea inferior Ready/estado no quede recortada. Oscilloscope, Logic Builder y HMI Designer también pueden abrirse en otro monitor mediante el marco de espacios de trabajo desacoplables existente, sin crear propietarios duplicados de Studio Runtime ni de Device Scene Scan.",
