@@ -1,48 +1,49 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.200.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.200.0/ICEops_Setup_8.0.200.0.exe",
-    "sha256":  "18c54a9e5f5725b9a6c8afbf5f2702568370d25e4eca948c20b98ab78e36d6a8",
-    "fileName":  "ICEops_Setup_8.0.200.0.exe",
+    "version":  "8.0.201.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.201.0/ICEops_Setup_8.0.201.0.exe",
+    "sha256":  "bbc6a08d03457b59baae877e5f3d6f5eabb1848c1657196cad19f0044510f578",
+    "fileName":  "ICEops_Setup_8.0.201.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T02:48:45.3118028+00:00",
+    "publishedAtUtc":  "2026-08-18T03:03:40.7278977+00:00",
     "releaseNotes":  [
-                         "V1000 makes HMI primitive resize track the current scene-relative pointer on every WPF render frame, eliminating visible step-wise resize during slow drags.",
-                         "Device Scene custom vector renderers now invalidate immediately on ThemeChanged so all HMI objects switch Light/Dark presentation together instead of waiting for later data ticks.",
-                         "The Light splash keeps the official Pepperl+Fuchs source asset, with a slightly smaller header and high-quality bitmap downsampling for sharper high-DPI presentation.",
-                         "No HMI write authority, schema, communication, runtime, polling, AI grounding, or protected control behavior is changed."
+                         "V1001 fixes the confirmed HMI primitive resize capture conflict observed in the V1000 screen recording.",
+                         "Primitive resize handles are now neutral Controls instead of WPF Thumb controls, preventing Thumb\u0027s internal drag capture from stealing mouse ownership from SceneSurface and prematurely ending the resize transaction.",
+                         "The existing V1000 scene-relative pointer tracking and render-frame update path remains intact; one press-drag-release now stays in a single resize transaction until mouse release.",
+                         "V1000 immediate Device Scene theme repaint and Pepperl+Fuchs splash sharpening are preserved unchanged.",
+                         "No HMI write authority, schema, communication, runtime, polling, AI grounding, Home layout, or protected control behavior is changed."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "HMI primitive resize now samples the current SceneSurface pointer on every render frame, so a single slow drag follows continuously instead of resizing in visible steps.",
-                                              "Device Scene vector objects refresh immediately when the Light/Dark theme changes.",
-                                              "The Pepperl+Fuchs splash header uses the official high-resolution asset with high-quality downsampling and a slightly smaller display size."
+                                              "HMI primitive resize handles no longer use WPF Thumb, eliminating the internal mouse-capture conflict that prematurely ended each resize gesture.",
+                                              "A single press-drag-release now keeps SceneSurface as the sole capture owner while the existing continuous pointer tracking updates geometry.",
+                                              "The V1000 immediate theme repaint and sharpened Pepperl+Fuchs splash are preserved unchanged."
                                           ],
                                    "ko":  [
-                                              "HMI Primitive Resize가 매 렌더 프레임마다 SceneSurface의 현재 포인터를 읽어 한 번의 느린 드래그도 계단식 없이 연속 추종하도록 수정했습니다.",
-                                              "Light/Dark 테마 변경 시 Device Scene 벡터 객체를 즉시 다시 그려 모든 객체가 같은 시점에 테마를 전환합니다.",
-                                              "스플래시 Pepperl+Fuchs 헤더는 공식 고해상도 원본을 유지하고 HighQuality 다운스케일 및 소폭 축소로 선명도를 개선했습니다."
+                                              "HMI Primitive Resize Handle에서 WPF Thumb을 제거해 내부 Mouse Capture 충돌로 Resize가 즉시 종료되던 원인을 수정했습니다.",
+                                              "한 번 누르고 드래그해서 놓을 때까지 SceneSurface가 Mouse Capture를 단독 유지하며 기존 연속 포인터 추적 경로로 Geometry를 갱신합니다.",
+                                              "V1000의 즉시 테마 재렌더링과 선명해진 Pepperl+Fuchs 스플래시는 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "HMI Primitive Resizeは各レンダーフレームでSceneSurfaceの現在ポインターを取得し、ゆっくり1回ドラッグしても段階的にならず連続追従します。",
-                                              "Light/Darkテーマ変更時にDevice Sceneのベクターオブジェクトを即時再描画し、全オブジェクトが同時にテーマ切替されます。",
-                                              "SplashのPepperl+Fuchsヘッダーは公式高解像度素材を維持し、高品質ダウンサンプリングと小幅な縮小で鮮明度を改善しました。"
+                                              "HMI Primitive Resize HandleからWPF Thumbを除去し、内部Mouse Captureの競合でResizeが早期終了する原因を修正しました。",
+                                              "1回の押下からドラッグ、リリースまでSceneSurfaceがMouse Captureを単独保持し、既存の連続ポインター追従でGeometryを更新します。",
+                                              "V1000の即時テーマ再描画とPepperl+Fuchs Splashの鮮明化はそのまま維持します。"
                                           ],
                                    "zh-CN":  [
-                                                 "HMI Primitive Resize 现在每个渲染帧读取 SceneSurface 当前指针位置，缓慢一次拖动也可连续跟随，不再呈阶梯式变化。",
-                                                 "Light/Dark 主题切换时立即重绘 Device Scene 矢量对象，使所有对象同步完成主题转换。",
-                                                 "启动画面的 Pepperl+Fuchs 标题继续使用官方高分辨率素材，并通过高质量缩放及轻微缩小提升清晰度。"
+                                                 "HMI Primitive Resize Handle 不再使用 WPF Thumb，消除了其内部 Mouse Capture 冲突导致 Resize 过早结束的问题。",
+                                                 "一次按下、拖动到释放的完整过程由 SceneSurface 独占 Mouse Capture，并继续使用现有连续指针跟踪更新 Geometry。",
+                                                 "V1000 的即时主题重绘和更清晰的 Pepperl+Fuchs 启动画面保持不变。"
                                              ],
                                    "de":  [
-                                              "Die Größenänderung von HMI-Primitiven liest nun in jedem Render-Frame die aktuelle SceneSurface-Zeigerposition, sodass auch langsames Ziehen kontinuierlich und ohne sichtbare Stufen folgt.",
-                                              "Device-Scene-Vektorobjekte werden bei einem Light/Dark-Themewechsel sofort neu gezeichnet, sodass alle Objekte gleichzeitig umschalten.",
-                                              "Der Pepperl+Fuchs-Splash-Header verwendet weiterhin das offizielle hochauflösende Asset, mit hochwertigem Downsampling und leicht reduzierter Anzeigegröße für mehr Schärfe."
+                                              "Die HMI-Primitive-Resize-Handles verwenden kein WPF Thumb mehr; damit ist der interne Mouse-Capture-Konflikt beseitigt, der Resize-Gesten vorzeitig beendete.",
+                                              "Von Press über Drag bis Release bleibt SceneSurface alleiniger Capture-Eigentümer und die bestehende kontinuierliche Pointer-Verfolgung aktualisiert die Geometrie.",
+                                              "Die sofortige Theme-Neudarstellung und der geschärfte Pepperl+Fuchs-Splash aus V1000 bleiben unverändert erhalten."
                                           ],
                                    "es":  [
-                                              "El cambio de tamaño de primitivas HMI ahora lee la posición actual del puntero de SceneSurface en cada fotograma de renderizado, por lo que un arrastre lento sigue de forma continua y sin saltos visibles.",
-                                              "Los objetos vectoriales de Device Scene se redibujan inmediatamente al cambiar el tema Light/Dark para que todos cambien a la vez.",
-                                              "El encabezado Pepperl+Fuchs del splash mantiene el recurso oficial de alta resolución y mejora la nitidez con reducción de escala de alta calidad y un tamaño ligeramente menor."
+                                              "Los handles de redimensionado HMI ya no usan WPF Thumb, eliminando el conflicto interno de Mouse Capture que terminaba prematuramente cada gesto de resize.",
+                                              "Desde pulsar y arrastrar hasta soltar, SceneSurface mantiene en exclusiva el Mouse Capture y la ruta de seguimiento continuo existente actualiza la geometría.",
+                                              "Se conservan sin cambios el repintado inmediato de tema y el splash Pepperl+Fuchs más nítido de V1000."
                                           ]
                                }
 }
