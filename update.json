@@ -1,48 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.203.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.203.0/ICEops_Setup_8.0.203.0.exe",
-    "sha256":  "4e0f2ac33fe84f1809b8c6c5f2ee76307ef6edd3605459a9f5daba6e2e206704",
-    "fileName":  "ICEops_Setup_8.0.203.0.exe",
+    "version":  "8.0.204.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.204.0/ICEops_Setup_8.0.204.0.exe",
+    "sha256":  "8499384babe6fbc04f37fdfba2dc12df8a2b141f607e24e0c2470ee3aadca248",
+    "fileName":  "ICEops_Setup_8.0.204.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T04:11:51.2454229+00:00",
+    "publishedAtUtc":  "2026-08-18T04:35:28.6200603+00:00",
     "releaseNotes":  [
-                         "V1003 adds direct primitive background and border color selection to the Device Scene Inspector without changing the schema-v5 color contract.",
-                         "Rectangle, Rounded Rectangle, Ellipse, Line and Text continue to use the existing FillHex and StrokeHex properties; V1003 only adds compact preset swatches beside the existing HEX/token editors.",
-                         "AUTO_SURFACE, AUTO_ACCENT, transparent and common engineering palette colors are available, while arbitrary #RRGGBB/#AARRGGBB values remain supported through the existing text fields.",
-                         "Save Properties remains the only commit boundary, so palette clicks never bypass the existing draft/SSOT persistence contract.",
-                         "The V1002 full-canvas resize interaction overlay is unchanged and remains the resize baseline. No HMI write authority, schema, communication, runtime, polling, AI grounding, Home layout, or protected control behavior is changed."
+                         "V1004 fixes the Device Scene primitive color editor visibility regression found in V1003.",
+                         "Appearance is now nested inside the same primitive-only Geometry panel, so any Rectangle, Rounded Rectangle, Ellipse, Line or Text that exposes Geometry necessarily exposes the color editor directly below it.",
+                         "The existing schema-v5 FillHex/StrokeHex fields, preset swatches, HEX/token editors and Save Properties commit boundary are unchanged.",
+                         "The V1002 resize interaction overlay remains the protected resize baseline and is not modified by this patch."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Primitive background and border colors can now be selected directly from compact Inspector palettes or entered as HEX values.",
-                                              "The existing schema-v5 FillHex/StrokeHex fields and Save Properties commit boundary are reused unchanged.",
+                                              "The primitive Appearance color editor is now guaranteed to appear directly below Geometry in the Inspector.",
+                                              "Existing FillHex/StrokeHex palettes and Save Properties behavior are unchanged.",
                                               "The V1002 resize interaction overlay remains unchanged."
                                           ],
                                    "ko":  [
-                                              "Primitive 객체의 배경 색상과 테두리 색상을 Inspector의 컴팩트 팔레트에서 직접 선택하거나 HEX 값으로 입력할 수 있습니다.",
-                                              "기존 Schema v5의 FillHex/StrokeHex 필드와 속성 저장 커밋 경계를 그대로 재사용합니다.",
+                                              "Primitive Appearance 색상 편집기가 Inspector의 Geometry 바로 아래에 항상 표시되도록 수정했습니다.",
+                                              "기존 FillHex/StrokeHex 팔레트와 속성 저장 동작은 변경하지 않았습니다.",
                                               "V1002 Resize Interaction Overlay는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Primitive オブジェクトの背景色と枠線色を Inspector のコンパクトパレットから直接選択するか、HEX 値で入力できるようになりました。",
-                                              "既存の Schema v5 FillHex/StrokeHex とプロパティ保存のコミット境界をそのまま再利用します。",
+                                              "Primitive の Appearance カラーエディターが Inspector の Geometry 直下に必ず表示されるよう修正しました。",
+                                              "既存の FillHex/StrokeHex パレットとプロパティ保存動作は変更していません。",
                                               "V1002 Resize Interaction Overlay は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "现在可在 Inspector 紧凑调色板中直接选择 Primitive 对象的背景颜色和边框颜色，也可继续输入 HEX 值。",
-                                                 "继续复用现有 Schema v5 的 FillHex/StrokeHex 字段和保存属性提交边界。",
+                                                 "已修复 Primitive Appearance 颜色编辑器，使其始终显示在 Inspector 的 Geometry 正下方。",
+                                                 "现有 FillHex/StrokeHex 调色板和保存属性行为保持不变。",
                                                  "V1002 Resize Interaction Overlay 保持不变。"
                                              ],
                                    "de":  [
-                                              "Hintergrund- und Rahmenfarben von Primitive-Objekten können jetzt direkt über kompakte Inspector-Farbpaletten gewählt oder weiterhin als HEX-Wert eingegeben werden.",
-                                              "Die vorhandenen Schema-v5-Felder FillHex/StrokeHex und die Commit-Grenze Eigenschaften speichern werden unverändert weiterverwendet.",
+                                              "Der Primitive-Appearance-Farbeditor wird jetzt garantiert direkt unter Geometry im Inspector angezeigt.",
+                                              "Die bestehenden FillHex/StrokeHex-Paletten und das Speichern der Eigenschaften bleiben unverändert.",
                                               "Das V1002 Resize Interaction Overlay bleibt unverändert."
                                           ],
                                    "es":  [
-                                              "Los colores de fondo y borde de los objetos Primitive ahora pueden seleccionarse directamente desde paletas compactas del Inspector o introducirse como valores HEX.",
-                                              "Se reutilizan sin cambios los campos FillHex/StrokeHex del Schema v5 y el límite de confirmación Guardar propiedades.",
+                                              "El editor de color Appearance de Primitive ahora se muestra siempre justo debajo de Geometry en el Inspector.",
+                                              "Las paletas FillHex/StrokeHex existentes y el comportamiento de Guardar propiedades no cambian.",
                                               "El Resize Interaction Overlay de V1002 permanece sin cambios."
                                           ]
                                }
