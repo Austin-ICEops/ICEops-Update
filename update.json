@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.216.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.216.0/ICEops_Setup_8.0.216.0.exe",
-    "sha256":  "880ab847764f6cd0a2c484ef87957a58f389ffc191b08030a1d1457371ec7d65",
-    "fileName":  "ICEops_Setup_8.0.216.0.exe",
+    "version":  "8.0.217.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.217.0/ICEops_Setup_8.0.217.0.exe",
+    "sha256":  "1b27121db08fa78e1b21538a99796b0f3ffbbda7623fcfa3637e2fd113c24a1a",
+    "fileName":  "ICEops_Setup_8.0.217.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T08:51:12.9217551+00:00",
+    "publishedAtUtc":  "2026-08-18T11:00:23.1034190+00:00",
     "releaseNotes":  [
                          "V1016 fixes Device Scene/HMI Designer multi-display reparent rendering: DeviceSceneRendererControl now rebinds the same in-memory DeviceSceneItemViewModel on Loaded after Unloaded released its subscription, so existing scene objects remain visible without reloading or rewriting the saved layout.",
                          "V1015 fixes Logic Builder/Sequence multi-display reparenting so the exact in-memory editor state is preserved across pop-out/reattach. The reparent guard now spans the full WPF host transaction and restores active/open documents, selection, zoom, and scroll state without creating a second Studio view/runtime owner.",
