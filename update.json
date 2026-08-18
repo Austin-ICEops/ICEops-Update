@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.198.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.198.0/ICEops_Setup_8.0.198.0.exe",
-    "sha256":  "d1e71efb0cee8b14918fdac09fb1bd1e60db73cde734c3a0542a49baa065acca",
-    "fileName":  "ICEops_Setup_8.0.198.0.exe",
+    "version":  "8.0.199.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.199.0/ICEops_Setup_8.0.199.0.exe",
+    "sha256":  "b88ada467cf682271b1c73ac92b3258a5de5c59a8985c9a83ffe339f6d3bb1ef",
+    "fileName":  "ICEops_Setup_8.0.199.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T02:21:25.7476183+00:00",
+    "publishedAtUtc":  "2026-08-18T02:32:06.1092123+00:00",
     "releaseNotes":  [
-                         "V998 fixes HMI primitive resize responsiveness by tracking the pointer in scene coordinates instead of relying on incremental Thumb deltas.",
-                         "Resize handles keep the same visual style but use a larger transparent hit target for reliable single-grab resizing at 1440p/high-DPI.",
-                         "The Light Theme startup splash now carries the Pepperl+Fuchs wordmark in the approved upper composition while preserving the existing dynamic ICEops progress/status behavior."
+                         "V999 fixes the remaining HMI primitive resize rubber-band behavior by removing Thumb drag-delta ownership from resize transactions.",
+                         "Resize now captures the stable SceneSurface on the first handle press and follows scene-relative PreviewMouseMove continuously until mouse release.",
+                         "No HMI capability, schema, communication, runtime, authority, or write-path behavior is changed."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixes slow/short-drag resize response for Rectangle, Rounded Rectangle, Ellipse, Line and Text.",
-                                              "Resize handles now respond 1:1 to scene-relative pointer movement and have a larger invisible hit target without changing their compact appearance.",
-                                              "Adds the Pepperl+Fuchs wordmark to the Light Theme splash using the same official asset as the main UI; HMI remains read-only and schema v5 is unchanged."
+                                              "Fixes the remaining resize behavior where the operator had to keep pulling a handle in small steps.",
+                                              "A single handle press now captures SceneSurface and resizes continuously 1:1 with pointer movement until release.",
+                                              "HMI remains read-only; existing selection, grouping, symbol, schema v5 and protected runtime behavior are unchanged."
                                           ],
                                    "ko":  [
-                                              "Rectangle, Rounded Rectangle, Ellipse, Line, Text의 짧고 느린 드래그에서 Resize가 잘 반응하지 않던 문제를 수정했습니다.",
-                                              "Resize Handle은 Scene 기준 포인터 이동을 1:1로 추적하고, 외형은 유지하면서 투명 Hit 영역만 확대했습니다.",
-                                              "Light Theme 스플래시 상단에 메인 UI와 동일한 Pepperl+Fuchs 공식 로고를 적용했습니다. HMI Read-Only와 Schema v5는 그대로 유지합니다."
+                                              "Resize Handle을 조금씩 반복해서 당겨야 했던 잔여 고무줄 현상을 수정했습니다.",
+                                              "이제 Handle을 한 번 누르면 SceneSurface가 포인터를 캡처하고 마우스를 놓을 때까지 이동량을 1:1로 연속 반영합니다.",
+                                              "HMI Read-Only, 기존 선택/그룹/Symbol 기능, Schema v5 및 보호 Runtime 동작은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Rectangle、Rounded Rectangle、Ellipse、Line、Textで、短くゆっくりドラッグした際のResize応答を修正しました。",
-                                              "Resize HandleはScene基準のポインター移動を1:1で追従し、見た目を変えずに透明なヒット領域のみ拡大しました。",
-                                              "Light Themeのスプラッシュ上部にMain UIと同じPepperl+Fuchs公式ロゴを追加しました。HMI Read-OnlyとSchema v5は維持されます。"
+                                              "Resize Handleを少しずつ繰り返し引く必要があった残存のラバーバンド挙動を修正しました。",
+                                              "Handleを1回押すとSceneSurfaceがポインターをキャプチャし、離すまで移動量を1:1で連続反映します。",
+                                              "HMI Read-Only、既存の選択/Group/Symbol機能、Schema v5および保護Runtime動作は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复 Rectangle、Rounded Rectangle、Ellipse、Line 和 Text 在短距离、慢速拖拽时 Resize 响应不灵敏的问题。",
-                                                 "Resize Handle 现在按 Scene 坐标 1:1 跟踪指针移动，并在保持紧凑外观的同时扩大透明命中区域。",
-                                                 "Light Theme 启动画面顶部加入与主界面相同的 Pepperl+Fuchs 官方标志；HMI Read-Only 与 Schema v5 保持不变。"
+                                                 "修复 Resize Handle 仍需分段反复拖动的残余橡皮筋现象。",
+                                                 "现在首次按下 Handle 后由 SceneSurface 捕获指针，并在松开鼠标前持续按 1:1 移动量调整大小。",
+                                                 "HMI Read-Only、现有选择/分组/Symbol 功能、Schema v5 及受保护 Runtime 行为均未改变。"
                                              ],
                                    "de":  [
-                                              "Behebt die träge Resize-Reaktion von Rectangle, Rounded Rectangle, Ellipse, Line und Text bei kurzen oder langsamen Ziehbewegungen.",
-                                              "Die Resize-Handles folgen nun 1:1 der Zeigerbewegung in Scene-Koordinaten; nur die unsichtbare Trefferfläche wurde vergrößert.",
-                                              "Der Light-Theme-Splash zeigt oben das gleiche offizielle Pepperl+Fuchs-Logo wie die Main UI; HMI Read-Only und Schema v5 bleiben unverändert."
+                                              "Behebt das verbleibende Gummiband-Verhalten, bei dem ein Resize-Handle wiederholt in kleinen Schritten gezogen werden musste.",
+                                              "Nach einmaligem Drücken des Handles erfasst nun SceneSurface den Zeiger und folgt der Bewegung bis zum Loslassen kontinuierlich 1:1.",
+                                              "HMI Read-Only, bestehende Auswahl-/Gruppen-/Symbolfunktionen, Schema v5 und geschütztes Runtime-Verhalten bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Corrige la respuesta lenta de Resize en Rectangle, Rounded Rectangle, Ellipse, Line y Text durante arrastres cortos o lentos.",
-                                              "Los Resize Handles siguen ahora el movimiento del puntero 1:1 en coordenadas de Scene y amplían solo el área de impacto invisible.",
-                                              "El splash de Light Theme incorpora arriba el mismo logotipo oficial de Pepperl+Fuchs que la Main UI; HMI Read-Only y Schema v5 no cambian."
+                                              "Corrige el efecto elástico restante por el que había que tirar del Resize Handle repetidamente en pequeños pasos.",
+                                              "Con una sola pulsación del Handle, SceneSurface captura el puntero y aplica el movimiento 1:1 de forma continua hasta soltar el ratón.",
+                                              "HMI Read-Only, las funciones existentes de selección/grupo/Symbol, Schema v5 y el Runtime protegido permanecen sin cambios."
                                           ]
                                }
 }
