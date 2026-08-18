@@ -1,42 +1,42 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.207.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.207.0/ICEops_Setup_8.0.207.0.exe",
-    "sha256":  "518b11b53fb2ad73f499fad8893e7fd300c3602112df744290da87af994ed774",
-    "fileName":  "ICEops_Setup_8.0.207.0.exe",
+    "version":  "8.0.208.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.208.0/ICEops_Setup_8.0.208.0.exe",
+    "sha256":  "c030c60dc80533082a68a7ae604a4020578749c24fa90c88864d594c25eee135",
+    "fileName":  "ICEops_Setup_8.0.208.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T05:27:19.3348609+00:00",
+    "publishedAtUtc":  "2026-08-18T05:39:37.9614202+00:00",
     "releaseNotes":  [
-                         "V1007 restores only the startup splash presentation from the user-supplied V969 reference project while keeping the V1006 application/runtime/AI/HMI code baseline intact.",
-                         "Services/Ux/StartupSplashWindow.cs is restored byte-for-byte from V969; the splash artwork assets already match V969 by SHA-256 and therefore required no asset replacement.",
-                         "V1006 English AI intent parity and runtime language-lock behavior remain unchanged.",
-                         "V1002 resize and V1005 primitive color/rotation interaction paths remain unchanged."
+                         "V1008 restores only the startup splash presentation from the user-supplied V873 reference project while keeping the V1007 application/runtime/AI/HMI baseline intact.",
+                         "Services/Ux/StartupSplashWindow.cs is restored byte-for-byte from V873, including its saved Light/Dark theme-aware splash presentation.",
+                         "The splash brand/product assets required by V873 already match the current project by SHA-256, so no image asset replacement was necessary.",
+                         "V1006 English AI intent parity/runtime language lock and V1002/V1005 HMI resize/color/rotation behavior remain unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Restored the startup splash presentation from the supplied V969 project only.",
-                                              "All V1006 AI/language-lock behavior and current HMI interaction behavior remain unchanged."
+                                              "Restored only the startup splash presentation from the supplied V873 project, including its Light/Dark theme-aware design.",
+                                              "All current AI, language-lock, runtime and HMI behavior remains unchanged."
                                           ],
                                    "ko":  [
-                                              "첨부한 V969 프로젝트의 시작 스플래시 표현만 복원했습니다.",
-                                              "V1006 AI/언어 잠금과 현재 HMI 조작 기능은 그대로 유지됩니다."
+                                              "첨부한 V873 프로젝트의 Light/Dark 테마 대응 시작 스플래시 표현만 복원했습니다.",
+                                              "현재 AI, 언어 잠금, Runtime 및 HMI 동작은 모두 그대로 유지됩니다."
                                           ],
                                    "ja":  [
-                                              "添付された V969 プロジェクトの起動スプラッシュ表示のみを復元しました。",
-                                              "V1006 の AI/言語ロックおよび現在の HMI 操作機能はそのまま維持されます。"
+                                              "添付された V873 プロジェクトの Light/Dark テーマ対応の起動スプラッシュ表示のみを復元しました。",
+                                              "現在の AI、言語ロック、Runtime、HMI の動作はすべてそのまま維持されます。"
                                           ],
                                    "zh-CN":  [
-                                                 "仅恢复了所附 V969 项目的启动画面表现。",
-                                                 "V1006 的 AI/语言锁定以及当前 HMI 交互功能保持不变。"
+                                                 "仅恢复了所附 V873 项目中支持 Light/Dark 主题的启动画面表现。",
+                                                 "当前 AI、语言锁定、Runtime 和 HMI 行为均保持不变。"
                                              ],
                                    "de":  [
-                                              "Nur die Start-Splash-Darstellung aus dem beigefügten V969-Projekt wurde wiederhergestellt.",
-                                              "Die AI-/Sprachsperren-Funktionen aus V1006 sowie die aktuellen HMI-Interaktionen bleiben unverändert."
+                                              "Nur die Light/Dark-themefähige Start-Splash-Darstellung aus dem beigefügten V873-Projekt wurde wiederhergestellt.",
+                                              "Das aktuelle AI-, Sprachsperren-, Runtime- und HMI-Verhalten bleibt unverändert."
                                           ],
                                    "es":  [
-                                              "Se restauró únicamente la presentación de inicio del proyecto V969 adjunto.",
-                                              "El comportamiento de AI/bloqueo de idioma de V1006 y las interacciones HMI actuales permanecen sin cambios."
+                                              "Se restauró únicamente la presentación de inicio compatible con temas Light/Dark del proyecto V873 adjunto.",
+                                              "El comportamiento actual de AI, bloqueo de idioma, Runtime y HMI permanece sin cambios."
                                           ]
                                }
 }
