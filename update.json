@@ -1,13 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.214.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.214.0/ICEops_Setup_8.0.214.0.exe",
-    "sha256":  "6d62297a128618d4f8e768db0e2b892191422b9e48c28ce2a3a4ca8d56aa51c9",
-    "fileName":  "ICEops_Setup_8.0.214.0.exe",
+    "version":  "8.0.215.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.215.0/ICEops_Setup_8.0.215.0.exe",
+    "sha256":  "2edf7997f26edba9edb1868ed8352ebdd75be2d30dc2a53519ee8f22e62c551e",
+    "fileName":  "ICEops_Setup_8.0.215.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T08:12:00.1020155+00:00",
+    "publishedAtUtc":  "2026-08-18T08:28:36.1726117+00:00",
     "releaseNotes":  [
+                         "V1015 fixes Logic Builder/Sequence multi-display reparenting so the exact in-memory editor state is preserved across pop-out/reattach. The reparent guard now spans the full WPF host transaction and restores active/open documents, selection, zoom, and scroll state without creating a second Studio view/runtime owner.",
                          "V1014 fixes the Commissioning Center bottom status clipping by increasing the window working height without changing commissioning safety logic.",
                          "Oscilloscope, Logic Builder, and Device Scene/HMI Designer now expose multi-display pop-out access through the existing WorkspaceWindowManager/WorkspaceToolWindow framework. Oscilloscope reuses its existing detached scope path; Logic Builder and Device Scene move their exact persistent view instead of creating duplicate runtime/scan owners.",
                          "V1013 Line/Pipe visual polish and Desktop/Web Commissioning ownership parity remain unchanged: schema-v5 StrokeWidth/Water Blue flow reuse, one-shot unknown-ownership acknowledgement, server-side safety preflight, and Compare-vs-Write separation are preserved.",
@@ -15,36 +16,42 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
+                                              "Logic Builder and Sequence now preserve the exact in-memory editor state when moved to or from a secondary-display window. Active/open documents, selection, zoom, and scroll position are restored after the WPF reparent transaction, and no second Studio runtime/view owner is created.",
                                               "Commissioning Center now has enough vertical working height to keep the bottom Ready/status line visible. Oscilloscope, Logic Builder, and HMI Designer can also be opened on another display using the existing detachable-workspace framework without creating duplicate Studio runtime or Device Scene scan owners.",
                                               "Line Stroke Width now previews immediately on the Canvas and is permanently stored only through Save Properties using the existing schema-v5 property.",
                                               "Pipe Flow reuses the existing animation path: only Fresh, range-valid, non-zero SSOT flow is shown in process Water Blue; stop/disconnected states remain neutral and static.",
                                               "Desktop and Web Commissioning now use the same ownership UX: LOCAL requires only normal write safety + Arm batch write; UNKNOWN additionally requires one-shot explicit acknowledgement; OWNED BY OTHER cannot be overridden. Compare remains separate from write execution."
                                           ],
                                    "ko":  [
+                                              "로직 빌더와 시퀀스를 보조 모니터 새 창으로 이동하거나 다시 메인 창에 붙여도 기존 메모리 편집 상태가 그대로 유지됩니다. 활성/열린 문서, 선택 상태, 줌, 스크롤 위치를 WPF reparent 완료 후 복원하며 Studio Runtime/View 소유자를 추가 생성하지 않습니다.",
                                               "시운전센터 창의 세로 작업 높이를 보강해 하단 Ready/상태 문구가 잘리지 않도록 했습니다. 오실로스코프, 로직 빌더, HMI 디자이너도 기존 분리형 작업창 프레임워크를 사용해 다른 모니터에 열 수 있으며 Studio Runtime 또는 Device Scene Scan 소유자를 중복 생성하지 않습니다.",
                                               "Line Stroke Width는 기존 Schema v5 속성을 그대로 사용하며 Canvas에 즉시 Preview되고, Save Properties 실행 시에만 Scene SSOT에 영구 저장됩니다.",
                                               "Pipe Flow는 기존 애니메이션 경로만 재사용하며 Fresh + 유효 범위 + 0보다 큰 SSOT 흐름일 때만 Water Blue 계열로 표시되고 정지/연결 해제 상태는 중립 정적 표현을 유지합니다.",
                                               "Desktop/Web 시운전센터의 Ownership UX를 동일하게 맞췄습니다. LOCAL은 기존 쓰기 안전조건 + Arm batch write만 필요하고, UNKNOWN에서만 일회성 예외 승인을 추가로 요구하며, OWNED BY OTHER는 우회할 수 없습니다. Compare는 쓰기 실행과 분리했습니다."
                                           ],
                                    "ja":  [
+                                              "Logic Builder と Sequence を別モニターのウィンドウへ移動したりメイン画面へ戻した場合でも、既存のインメモリ編集状態をそのまま保持します。アクティブ/開いているドキュメント、選択、ズーム、スクロール位置を WPF reparent 完了後に復元し、Studio Runtime/View の所有者を追加生成しません。",
                                               "Commissioning Center の縦方向の作業領域を拡張し、下部の Ready/ステータス表示が切れないようにしました。Oscilloscope、Logic Builder、HMI Designer も既存の分離ワークスペース機構で別モニターに表示でき、Studio Runtime や Device Scene Scan の所有者を重複生成しません。",
                                               "Line の Stroke Width は既存の Schema v5 プロパティをそのまま使用し、Canvas に即時プレビューされ、Save Properties 実行時のみ Scene SSOT に永続保存されます。",
                                               "Pipe Flow は既存のアニメーション経路のみを再利用し、Fresh・有効レンジ・0 より大きい SSOT フローの場合だけ Water Blue 系で表示し、停止・切断状態ではニュートラルな静止表示を維持します。",
                                               "Desktop/Web の Commissioning Center で Ownership UX を統一しました。LOCAL は通常の書込み安全条件 + Arm batch write のみ、UNKNOWN の場合だけ一時的な明示承認を追加要求し、OWNED BY OTHER は上書きできません。Compare は書込み実行から分離されています。"
                                           ],
                                    "zh-CN":  [
+                                                 "Logic Builder 和 Sequence 移动到副显示器窗口或返回主窗口时，会保持现有的内存编辑状态。WPF 重挂载完成后恢复活动/已打开文档、选择、缩放和滚动位置，并且不会创建第二个 Studio Runtime/View 所有者。",
                                                  "已增加 Commissioning Center 的垂直工作空间，避免底部 Ready/状态文字被裁切。Oscilloscope、Logic Builder 和 HMI Designer 也可通过现有的可分离工作区框架打开到其他显示器，并且不会创建重复的 Studio Runtime 或 Device Scene Scan 所有者。",
                                                  "Line 的 Stroke Width 继续使用现有 Schema v5 属性，可在 Canvas 上即时预览，并且仅在执行 Save Properties 时永久保存到 Scene SSOT。",
                                                  "Pipe Flow 仅复用现有动画路径；只有 Fresh、量程有效且 SSOT 流量大于 0 时才显示 Water Blue 流动效果，停止或断开连接时保持中性静态显示。",
                                                  "Desktop/Web Commissioning Center 的 Ownership UX 已统一。LOCAL 仅需要现有写入安全条件 + Arm batch write；仅在 UNKNOWN 时额外要求一次性明确确认；OWNED BY OTHER 不允许绕过。Compare 与写入执行分离。"
                                              ],
                                    "de":  [
+                                              "Logic Builder und Sequence behalten beim Verschieben in ein Fenster auf einem zweiten Monitor oder zurück ins Hauptfenster den vorhandenen In-Memory-Editorzustand bei. Aktive/geöffnete Dokumente, Auswahl, Zoom und Scrollposition werden nach dem WPF-Reparenting wiederhergestellt; es wird kein zweiter Studio-Runtime-/View-Owner erzeugt.",
                                               "Der vertikale Arbeitsbereich des Commissioning Center wurde vergrößert, damit die untere Ready-/Statuszeile nicht abgeschnitten wird. Oscilloscope, Logic Builder und HMI Designer können über das vorhandene abtrennbare Workspace-Framework auf einem anderen Monitor geöffnet werden, ohne doppelte Studio-Runtime- oder Device-Scene-Scan-Owner zu erzeugen.",
                                               "Die Stroke Width einer Line verwendet weiterhin die vorhandene Schema-v5-Eigenschaft, wird sofort auf dem Canvas vorab angezeigt und erst mit Save Properties dauerhaft im Scene-SSOT gespeichert.",
                                               "Pipe Flow verwendet ausschließlich den vorhandenen Animationspfad: Nur bei Fresh, gültigem Bereich und einem SSOT-Fluss größer als 0 wird Water Blue dargestellt; Stop/Disconnect bleiben neutral und statisch.",
                                               "Desktop und Web Commissioning verwenden jetzt dieselbe Ownership-UX: LOCAL benötigt nur die normalen Schreibschutzbedingungen plus Arm batch write; UNKNOWN zusätzlich eine einmalige ausdrückliche Bestätigung; OWNED BY OTHER kann nicht übersteuert werden. Compare ist vom Schreibvorgang getrennt."
                                           ],
                                    "es":  [
+                                              "Logic Builder y Sequence conservan ahora exactamente el estado de edición en memoria al moverse a una ventana de un monitor secundario o volver a la ventana principal. Tras completar el reparent de WPF se restauran los documentos activos/abiertos, la selección, el zoom y el desplazamiento, sin crear un segundo propietario de Studio Runtime/View.",
                                               "Se amplió el área vertical de trabajo del Commissioning Center para que la línea inferior Ready/estado no quede recortada. Oscilloscope, Logic Builder y HMI Designer también pueden abrirse en otro monitor mediante el marco de espacios de trabajo desacoplables existente, sin crear propietarios duplicados de Studio Runtime ni de Device Scene Scan.",
                                               "Stroke Width de Line reutiliza la propiedad existente de Schema v5, se previsualiza inmediatamente en el Canvas y solo se guarda de forma permanente en el Scene SSOT mediante Save Properties.",
                                               "Pipe Flow reutiliza únicamente la ruta de animación existente: el flujo SSOT Fresh, con rango válido y mayor que 0 se muestra en Water Blue; los estados Stop/Disconnected permanecen neutros y estáticos.",
