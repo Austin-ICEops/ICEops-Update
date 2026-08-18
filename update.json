@@ -1,47 +1,42 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.205.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.205.0/ICEops_Setup_8.0.205.0.exe",
-    "sha256":  "55f904d882539d201e0dc68f11fe3754b6b8a257b49c6020f5ae8a6746554e7e",
-    "fileName":  "ICEops_Setup_8.0.205.0.exe",
+    "version":  "8.0.207.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.207.0/ICEops_Setup_8.0.207.0.exe",
+    "sha256":  "518b11b53fb2ad73f499fad8893e7fd300c3602112df744290da87af994ed774",
+    "fileName":  "ICEops_Setup_8.0.207.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T04:49:08.1332660+00:00",
+    "publishedAtUtc":  "2026-08-18T05:27:19.3348609+00:00",
     "releaseNotes":  [
-                         "V1005 makes primitive Fill/Border palette selection apply immediately on the canvas and persist only that selected color without committing unrelated Inspector drafts.",
-                         "A direct rotation handle is added above selected HMI primitives; drag it around the object center to rotate continuously, with the same stable full-canvas overlay ownership model used by the V1002 resize fix.",
-                         "The existing Geometry rotation value remains available, schema remains v5, and the V1002 resize interaction path is preserved."
+                         "V1007 restores only the startup splash presentation from the user-supplied V969 reference project while keeping the V1006 application/runtime/AI/HMI code baseline intact.",
+                         "Services/Ux/StartupSplashWindow.cs is restored byte-for-byte from V969; the splash artwork assets already match V969 by SHA-256 and therefore required no asset replacement.",
+                         "V1006 English AI intent parity and runtime language-lock behavior remain unchanged.",
+                         "V1002 resize and V1005 primitive color/rotation interaction paths remain unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Primitive Fill/Border palette clicks now update the canvas immediately and persist only the selected color.",
-                                              "Selected HMI primitives now expose a direct rotation handle above the object for continuous mouse rotation.",
-                                              "Schema v5 and the V1002 stable resize interaction remain unchanged."
+                                              "Restored the startup splash presentation from the supplied V969 project only.",
+                                              "All V1006 AI/language-lock behavior and current HMI interaction behavior remain unchanged."
                                           ],
                                    "ko":  [
-                                              "Primitive 배경/테두리 팔레트를 클릭하면 Canvas 색상이 즉시 변경되며 선택한 색상만 바로 저장됩니다.",
-                                              "선택한 HMI Primitive 위쪽에 회전 핸들을 추가해 마우스로 연속 회전할 수 있습니다.",
-                                              "Schema v5와 V1002의 안정화된 Resize 동작은 그대로 유지됩니다."
+                                              "첨부한 V969 프로젝트의 시작 스플래시 표현만 복원했습니다.",
+                                              "V1006 AI/언어 잠금과 현재 HMI 조작 기능은 그대로 유지됩니다."
                                           ],
                                    "ja":  [
-                                              "Primitive の背景/境界色パレットをクリックすると Canvas に即時反映され、選択した色だけが保存されます。",
-                                              "選択した HMI Primitive の上部に回転ハンドルを追加し、マウスで連続回転できます。",
-                                              "Schema v5 と V1002 の安定した Resize 動作は維持されます。"
+                                              "添付された V969 プロジェクトの起動スプラッシュ表示のみを復元しました。",
+                                              "V1006 の AI/言語ロックおよび現在の HMI 操作機能はそのまま維持されます。"
                                           ],
                                    "zh-CN":  [
-                                                 "点击 Primitive 背景/边框调色板后，Canvas 会立即更新，并且只保存所选颜色。",
-                                                 "在选中的 HMI Primitive 上方新增旋转手柄，可用鼠标连续旋转。",
-                                                 "Schema v5 与 V1002 的稳定 Resize 交互保持不变。"
+                                                 "仅恢复了所附 V969 项目的启动画面表现。",
+                                                 "V1006 的 AI/语言锁定以及当前 HMI 交互功能保持不变。"
                                              ],
                                    "de":  [
-                                              "Klicks auf die Primitive-Füll-/Rahmenfarbpalette aktualisieren die Canvas sofort und speichern nur die gewählte Farbe.",
-                                              "Über ausgewählten HMI-Primitives steht jetzt ein Rotationsgriff für kontinuierliches Drehen mit der Maus zur Verfügung.",
-                                              "Schema v5 und die stabile Resize-Interaktion aus V1002 bleiben unverändert."
+                                              "Nur die Start-Splash-Darstellung aus dem beigefügten V969-Projekt wurde wiederhergestellt.",
+                                              "Die AI-/Sprachsperren-Funktionen aus V1006 sowie die aktuellen HMI-Interaktionen bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Los clics en la paleta de relleno/borde de Primitive actualizan el Canvas inmediatamente y guardan solo el color seleccionado.",
-                                              "Los HMI Primitive seleccionados disponen ahora de un controlador de rotación superior para girarlos continuamente con el ratón.",
-                                              "Schema v5 y la interacción Resize estable de V1002 se mantienen sin cambios."
+                                              "Se restauró únicamente la presentación de inicio del proyecto V969 adjunto.",
+                                              "El comportamiento de AI/bloqueo de idioma de V1006 y las interacciones HMI actuales permanecen sin cambios."
                                           ]
                                }
 }
