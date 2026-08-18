@@ -1,42 +1,42 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.209.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.209.0/ICEops_Setup_8.0.209.0.exe",
-    "sha256":  "9f77f50366fa2c80059702e48ef9c5268cf9742f845875c905207ed70dcf2b31",
-    "fileName":  "ICEops_Setup_8.0.209.0.exe",
+    "version":  "8.0.210.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.210.0/ICEops_Setup_8.0.210.0.exe",
+    "sha256":  "0984057a6d29210a8039820cd4ab3446b6afbbf11917ed48f26f0520f7242060",
+    "fileName":  "ICEops_Setup_8.0.210.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T06:04:07.1623219+00:00",
+    "publishedAtUtc":  "2026-08-18T06:29:17.6903234+00:00",
     "releaseNotes":  [
-                         "V1009 fixes the Web Commissioning Center snapshot HTTP 500 that could leave all preset/device fields empty while live HealthHub ports were updating.",
-                         "CommissioningWebController now captures the WPF HealthHub.Ports ObservableCollection on the application Dispatcher, matching the thread-safe Web snapshot pattern already used by SystemSnapshotService.",
-                         "Provider preset enumeration and per-port device-row construction are isolated so one malformed preset catalog or transient port identity cannot blank the entire Commissioning Center snapshot.",
-                         "No commissioning write path, CTRL/OBS authority, ISDU/PDO transport, Runtime, HMI, AI, or V873 Light/Dark splash behavior is changed."
+                         "V1010 hardens the Web Commissioning Center snapshot endpoint so read-only presentation failures no longer surface as HTTP 500 and blank the page.",
+                         "The snapshot no longer depends on CommissioningPresetRegistry.Instance; ICA-16DIO and ICA-SL preset rows are captured independently so one provider/catalog failure cannot poison all subsequent snapshot requests.",
+                         "CTRL authority, Write Access, operation-busy state, device identity/display metadata, provider resolution and safety state are isolated independently; the endpoint returns a degraded but valid HTTP 200 JSON snapshot if any source is temporarily unavailable.",
+                         "Snapshot JSON is serialized inside the endpoint with a final valid empty/degraded JSON fallback. Compare/Apply, pairing, CTRL/OBS authority, ISDU/PDO transport, Runtime, AI, HMI and V873 Light/Dark splash behavior are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed the Web Commissioning Center API 500 caused by unsafe background-thread access to the live WPF port collection.",
-                                              "The page now returns available presets/devices even if one provider or one transient port snapshot fails."
+                                              "The Web Commissioning Center snapshot is now fail-open for read-only presentation: a transient catalog/runtime exception returns a valid degraded snapshot instead of HTTP 500.",
+                                              "ICA-16DIO and ICA-SL preset/device discovery are isolated independently; Compare/Apply and all write safety gates remain unchanged."
                                           ],
                                    "ko":  [
-                                              "Web 시운전 센터에서 실시간 WPF 포트 컬렉션을 백그라운드 스레드가 직접 읽어 발생할 수 있던 API 500 오류를 수정했습니다.",
-                                              "일부 프리셋 공급자 또는 개별 포트 스냅샷에 일시 오류가 있어도 가능한 프리셋과 장치는 계속 표시됩니다."
+                                              "Web 시운전 센터의 읽기 전용 Snapshot을 fail-open 구조로 변경하여 일시적인 카탈로그/런타임 예외가 발생해도 HTTP 500 대신 유효한 제한 상태 Snapshot을 반환합니다.",
+                                              "ICA-16DIO와 ICA-SL 프리셋/장치 검색을 서로 독립적으로 격리했으며 Compare/Apply 및 모든 쓰기 안전 게이트는 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Web コミッショニングセンターでライブ WPF ポートコレクションをバックグラウンドスレッドから直接参照して発生し得た API 500 エラーを修正しました。",
-                                              "一部のプリセットプロバイダーまたは個別ポートのスナップショットに一時的なエラーがあっても、利用可能なプリセットとデバイスは引き続き表示されます。"
+                                              "Web コミッショニングセンターの読み取り専用 Snapshot を fail-open 化し、一時的なカタログ／ランタイム例外でも HTTP 500 ではなく有効な縮退 Snapshot を返すようにしました。",
+                                              "ICA-16DIO と ICA-SL のプリセット／デバイス検出を独立して分離し、Compare/Apply とすべての書き込み安全ゲートは変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复了 Web 调试中心因后台线程直接访问实时 WPF 端口集合而可能出现的 API 500 错误。",
-                                                 "即使某个预设提供程序或单个端口快照暂时失败，可用的预设和设备仍会继续显示。"
+                                                 "Web 调试中心的只读 Snapshot 改为 fail-open 结构，即使出现临时目录/运行时异常，也会返回有效的降级 Snapshot，而不是 HTTP 500。",
+                                                 "ICA-16DIO 与 ICA-SL 的预设/设备发现已分别隔离；Compare/Apply 以及所有写入安全门控均未更改。"
                                              ],
                                    "de":  [
-                                              "Der API-500-Fehler im Web-Inbetriebnahmezentrum durch direkten Hintergrundthread-Zugriff auf die aktive WPF-Portsammlung wurde behoben.",
-                                              "Auch bei einem temporären Fehler eines Preset-Providers oder eines einzelnen Port-Snapshots bleiben verfügbare Presets und Geräte sichtbar."
+                                              "Der schreibgeschützte Snapshot des Web-Inbetriebnahmezentrums arbeitet jetzt fail-open: temporäre Katalog-/Runtime-Fehler liefern einen gültigen degradierten Snapshot statt HTTP 500.",
+                                              "Die Preset-/Geräteerkennung für ICA-16DIO und ICA-SL ist unabhängig isoliert; Compare/Apply und alle Schreibschutz-Gates bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Se corrigió el error API 500 del Centro de Puesta en Marcha Web causado por el acceso directo desde un hilo en segundo plano a la colección activa de puertos WPF.",
-                                              "Aunque falle temporalmente un proveedor de presets o la instantánea de un puerto individual, los presets y dispositivos disponibles seguirán mostrándose."
+                                              "El Snapshot de solo lectura del Centro de Puesta en Marcha Web ahora es fail-open: una excepción temporal de catálogo/runtime devuelve un Snapshot degradado válido en lugar de HTTP 500.",
+                                              "El descubrimiento de presets/dispositivos ICA-16DIO e ICA-SL queda aislado de forma independiente; Compare/Apply y todas las protecciones de escritura permanecen sin cambios."
                                           ]
                                }
 }
