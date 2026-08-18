@@ -1,13 +1,15 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.221.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.221.0/ICEops_Setup_8.0.221.0.exe",
-    "sha256":  "92c136772c52f5f387b6c23c0fd7248b78d039ee216e9c1921b831dbfd92fe51",
-    "fileName":  "ICEops_Setup_8.0.221.0.exe",
+    "version":  "8.0.223.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.223.0/ICEops_Setup_8.0.223.0.exe",
+    "sha256":  "e3ad1a13d57c7ced1f892bfb4675f654e22c64e95468d1f3ba55ddb2858f9076",
+    "fileName":  "ICEops_Setup_8.0.223.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T13:19:19.6792178+00:00",
+    "publishedAtUtc":  "2026-08-18T14:09:29.5194576+00:00",
     "releaseNotes":  [
+                         "V1023 is a build-only fix for V1022 Line SSOT flow animation. It renames four inner-scope presentation variables in DeviceSceneItemViewModel to avoid C# CS0136 collisions with the existing motion variables later in ApplySnapshot. Flow behavior, SSOT semantics, render clock usage, Runtime, PDO, ISDU, and Schema v5 are unchanged.",
+                         "V1022 adds optional read-only flow animation binding to primitive Line objects. Fresh TRUE/non-zero SSOT sources animate the existing Line with process Water Blue using the existing Device Scene render clock; FALSE/zero stops remain neutral/static and stale/disconnected/invalid quality remains neutral. No timer, polling, PDO, ISDU or runtime-control path is added.",
                          "V1021 adds bounded page-scoped Ctrl+Z Undo to HMI Designer. Move/Nudge, Resize, Rotate, Add/Delete, Paste/Duplicate, Group/Ungroup, Align/Z-order, immediate primitive color changes, symbol insertion, and Save Properties commits restore the exact prior SceneItem geometry/state and editor selection without affecting Runtime, SSOT producers, PDO or ISDU.",
                          "V1020 completes HMI Designer geometry editing: every active library widget is freely resizable/rotatable, Ctrl+Rotate snaps to 90-degree axes, Arrow/Shift+Arrow nudges the current selection by 1/10 DIP, and double-clicking any member of a multi-selection moves the full selection without creating a persistent Group.",
                          "V1019 fixes Valve HMI geometry so the actuator stem/indicator always keeps a safe gap below the shared name bar, including short cards. Valve state semantics and all read-only SSOT behavior are unchanged.",
@@ -21,6 +23,8 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
+                                              "V1023 is a build-only fix for V1022 Line SSOT flow animation. It renames four inner-scope presentation variables in DeviceSceneItemViewModel to avoid C# CS0136 collisions with the existing motion variables later in ApplySnapshot. Flow behavior, SSOT semantics, render clock usage, Runtime, PDO, ISDU, and Schema v5 are unchanged.",
+                                              "V1022 adds optional read-only flow animation binding to primitive Line objects. Fresh TRUE/non-zero SSOT sources animate the existing Line with process Water Blue using the existing Device Scene render clock; FALSE/zero stops remain neutral/static and stale/disconnected/invalid quality remains neutral. No timer, polling, PDO, ISDU or runtime-control path is added.",
                                               "V1021 adds bounded page-scoped Ctrl+Z Undo to HMI Designer. Move/Nudge, Resize, Rotate, Add/Delete, Paste/Duplicate, Group/Ungroup, Align/Z-order, immediate primitive color changes, symbol insertion, and Save Properties commits restore the exact prior SceneItem geometry/state and editor selection without affecting Runtime, SSOT producers, PDO or ISDU.",
                                               "V1020 completes HMI Designer geometry editing: every active library widget can be freely resized and rotated, Ctrl+Rotate snaps to 90-degree axes, Arrow/Shift+Arrow nudges the current selection by 1/10 DIP, and double-clicking a selected member moves the complete multi-selection without creating a persistent Group.",
                                               "V1019 fixes Valve HMI geometry so the actuator stem/indicator always keeps a safe gap below the shared name bar, including short cards. Valve state semantics and all read-only SSOT behavior are unchanged.",
@@ -33,6 +37,8 @@
                                               "Desktop and Web Commissioning now use the same ownership UX: LOCAL requires only normal write safety + Arm batch write; UNKNOWN additionally requires one-shot explicit acknowledgement; OWNED BY OTHER cannot be overridden. Compare remains separate from write execution."
                                           ],
                                    "ko":  [
+                                              "V1023은 V1022 Line SSOT 흐름 애니메이션의 빌드 전용 수정입니다. DeviceSceneItemViewModel의 내부 표현용 변수 4개 이름을 변경해 ApplySnapshot 후반의 기존 motion 변수와 발생하던 C# CS0136 충돌을 제거합니다. Flow 동작, SSOT 의미, 렌더 클록 사용, Runtime, PDO, ISDU, Schema v5는 변경하지 않습니다.",
+                                              "V1022는 일반 Line 객체에 선택형 Read-Only 흐름 애니메이션 바인딩을 추가합니다. Fresh 상태의 TRUE/0이 아닌 SSOT Source에서는 기존 Device Scene 렌더 클록을 재사용해 Line에 Process Water Blue 흐름을 표시하고, FALSE/0은 중립 정지, Stale/Disconnected/Invalid는 중립 상태를 유지합니다. Timer, Polling, PDO, ISDU 또는 Runtime 제어 경로는 추가하지 않습니다.",
                                               "V1021은 HMI Designer에 페이지별 최대 80단계 Ctrl+Z Undo를 추가합니다. Move/Nudge, Resize, Rotate, Add/Delete, Paste/Duplicate, Group/Ungroup, Align/Z-order, 즉시 색상 변경, Symbol 삽입, Save Properties 저장을 직전 SceneItem 형상/상태와 선택 상태로 복원하며 Runtime, SSOT producer, PDO, ISDU에는 영향을 주지 않습니다.",
                                               "V1020은 HMI Designer 형상 편집을 마감합니다. 모든 활성 라이브러리 위젯의 자유 크기조절/회전을 지원하고, Ctrl+회전은 90도 직각 스냅, Arrow/Shift+Arrow는 현재 선택을 1/10 DIP 이동하며, 다중 선택 멤버 더블클릭 시 영구 Group 생성 없이 선택 전체를 함께 이동합니다.",
                                               "V1019는 낮은 카드에서도 Valve 액추에이터 stem/indicator가 공용 네임바 아래 안전 여백을 유지하도록 HMI 형상을 수정했습니다. Valve 상태 의미와 Read-Only SSOT 동작은 변경되지 않습니다.",
@@ -45,6 +51,8 @@
                                               "Desktop/Web 시운전센터의 Ownership UX를 동일하게 맞췄습니다. LOCAL은 기존 쓰기 안전조건 + Arm batch write만 필요하고, UNKNOWN에서만 일회성 예외 승인을 추가로 요구하며, OWNED BY OTHER는 우회할 수 없습니다. Compare는 쓰기 실행과 분리했습니다."
                                           ],
                                    "ja":  [
+                                              "V1023 は V1022 Line SSOT フローアニメーションのビルド専用修正です。DeviceSceneItemViewModel 内の表示用ローカル変数4個を改名し、ApplySnapshot 後半にある既存 motion 変数との C# CS0136 衝突を解消します。Flow 動作、SSOT セマンティクス、レンダークロック、Runtime、PDO、ISDU、Schema v5 は変更しません。",
+                                              "V1022 は通常の Line オブジェクトに任意の Read-Only フローアニメーションバインディングを追加します。Fresh の TRUE/0以外の SSOT ソースでは既存 Device Scene のレンダークロックを再利用して Process Water Blue の流れを表示し、FALSE/0 はニュートラル静止、Stale/Disconnected/Invalid はニュートラル状態を維持します。Timer、Polling、PDO、ISDU、Runtime 制御経路は追加しません。",
                                               "V1021 は HMI Designer にページ単位・最大80段階の Ctrl+Z Undo を追加します。Move/Nudge、Resize、Rotate、Add/Delete、Paste/Duplicate、Group/Ungroup、Align/Z-order、即時カラー変更、Symbol挿入、Save Properties を直前の SceneItem 形状/状態と選択状態へ復元し、Runtime、SSOT producer、PDO、ISDU には影響しません。",
                                               "V1020 は HMI Designer の形状編集を仕上げます。全アクティブライブラリウィジェットを自由にリサイズ/回転でき、Ctrl+回転は90度スナップ、Arrow/Shift+Arrowは現在選択を1/10 DIP移動し、複数選択内の項目をダブルクリックすると永続Groupを作らず選択全体を移動します。",
                                               "V1019では、低いカードでもValveのアクチュエータstem/indicatorが共通ネームバーの下に安全な間隔を保つようHMI形状を修正しました。Valve状態の意味とRead-Only SSOT動作は変更ありません。",
@@ -57,6 +65,8 @@
                                               "Desktop/Web の Commissioning Center で Ownership UX を統一しました。LOCAL は通常の書込み安全条件 + Arm batch write のみ、UNKNOWN の場合だけ一時的な明示承認を追加要求し、OWNED BY OTHER は上書きできません。Compare は書込み実行から分離されています。"
                                           ],
                                    "zh-CN":  [
+                                                 "V1023 是 V1022 Line SSOT 流动动画的纯构建修复。通过重命名 DeviceSceneItemViewModel 中 4 个内部显示变量，消除它们与 ApplySnapshot 后部既有 motion 变量之间的 C# CS0136 名称冲突。Flow 行为、SSOT 语义、渲染时钟、Runtime、PDO、ISDU 和 Schema v5 均不变。",
+                                                 "V1022 为普通 Line 对象增加可选的只读流动动画绑定。Fresh 且 SSOT 源为 TRUE/非零时，复用现有 Device Scene 渲染时钟显示 Process Water Blue 流动；FALSE/0 保持中性静止，Stale/Disconnected/Invalid 保持中性状态。不新增 Timer、Polling、PDO、ISDU 或 Runtime 控制路径。",
                                                  "V1021 为 HMI Designer 增加按页面保存、最多 80 步的 Ctrl+Z Undo。Move/Nudge、Resize、Rotate、Add/Delete、Paste/Duplicate、Group/Ungroup、Align/Z-order、即时颜色修改、Symbol 插入以及 Save Properties 均可恢复到上一版 SceneItem 几何/状态和选择状态，不影响 Runtime、SSOT producer、PDO 或 ISDU。",
                                                  "V1020 完成 HMI Designer 几何编辑：所有活动库小组件均可自由缩放和旋转，Ctrl+旋转按 90 度直角吸附，Arrow/Shift+Arrow 将当前选择移动 1/10 DIP，双击多选中的任一对象即可整体移动且不会创建持久 Group。",
                                                  "V1019 修复了 Valve HMI 几何布局，使执行器 stem/indicator 即使在较矮卡片中也始终与共用名称栏保持安全间距。Valve 状态语义和只读 SSOT 行为保持不变。",
@@ -69,6 +79,8 @@
                                                  "Desktop/Web Commissioning Center 的 Ownership UX 已统一。LOCAL 仅需要现有写入安全条件 + Arm batch write；仅在 UNKNOWN 时额外要求一次性明确确认；OWNED BY OTHER 不允许绕过。Compare 与写入执行分离。"
                                              ],
                                    "de":  [
+                                              "V1023 ist ein reiner Build-Fix für die V1022 Line-SSOT-Flussanimation. Vier lokale Präsentationsvariablen in DeviceSceneItemViewModel werden umbenannt, damit keine C#-CS0136-Kollision mit den bereits später in ApplySnapshot vorhandenen motion-Variablen entsteht. Flow-Verhalten, SSOT-Semantik, Render-Clock, Runtime, PDO, ISDU und Schema v5 bleiben unverändert.",
+                                              "V1022 ergänzt für normale Line-Objekte eine optionale Read-only-Flussanimationsbindung. Bei Fresh und TRUE/ungleich 0 der SSOT-Quelle wird mit der vorhandenen Device-Scene-Render-Clock ein Process-Water-Blue-Fluss dargestellt; FALSE/0 bleibt neutral/statisch und Stale/Disconnected/Invalid bleibt neutral. Es werden keine Timer-, Polling-, PDO-, ISDU- oder Runtime-Steuerpfade ergänzt.",
                                               "V1021 ergänzt im HMI Designer ein seitenbezogenes Ctrl+Z-Undo mit maximal 80 Schritten. Move/Nudge, Resize, Rotate, Add/Delete, Paste/Duplicate, Group/Ungroup, Align/Z-order, direkte Farbänderungen, Symbol-Einfügen und Save-Properties-Commits stellen den vorherigen SceneItem-Zustand samt Auswahl wieder her, ohne Runtime, SSOT-Producer, PDO oder ISDU zu beeinflussen.",
                                               "V1020 schließt die Geometriebearbeitung im HMI Designer ab: Alle aktiven Bibliotheks-Widgets sind frei skalier- und drehbar, Ctrl+Drehen rastet auf 90°-Achsen ein, Arrow/Shift+Arrow verschiebt die aktuelle Auswahl um 1/10 DIP und ein Doppelklick auf ein Element einer Mehrfachauswahl bewegt die gesamte Auswahl ohne persistente Group.",
                                               "V1019 korrigiert die Valve-HMI-Geometrie, sodass Aktuator-Stem/Indicator auch bei niedrigen Karten stets einen sicheren Abstand unter der gemeinsamen Namensleiste einhalten. Zustandssemantik und Read-Only-SSOT-Verhalten bleiben unverändert.",
@@ -81,6 +93,8 @@
                                               "Desktop und Web Commissioning verwenden jetzt dieselbe Ownership-UX: LOCAL benötigt nur die normalen Schreibschutzbedingungen plus Arm batch write; UNKNOWN zusätzlich eine einmalige ausdrückliche Bestätigung; OWNED BY OTHER kann nicht übersteuert werden. Compare ist vom Schreibvorgang getrennt."
                                           ],
                                    "es":  [
+                                              "V1023 es una corrección exclusiva de compilación para la animación de flujo SSOT de Line de V1022. Renombra cuatro variables locales de presentación en DeviceSceneItemViewModel para eliminar la colisión C# CS0136 con las variables motion ya existentes más adelante en ApplySnapshot. El comportamiento de Flow, la semántica SSOT, el reloj de renderizado, Runtime, PDO, ISDU y Schema v5 no cambian.",
+                                              "V1022 añade a los objetos Line una vinculación opcional de animación de flujo de solo lectura. Con una fuente SSOT Fresh y TRUE/distinta de cero, reutiliza el reloj de renderizado existente de Device Scene para mostrar flujo Process Water Blue; FALSE/0 permanece neutro y estático, y Stale/Disconnected/Invalid permanece neutro. No se añaden rutas de Timer, Polling, PDO, ISDU ni control Runtime.",
                                               "V1021 añade Undo con Ctrl+Z por página y hasta 80 pasos en HMI Designer. Move/Nudge, Resize, Rotate, Add/Delete, Paste/Duplicate, Group/Ungroup, Align/Z-order, cambios de color inmediatos, inserción de Symbol y commits de Save Properties restauran el estado/geometría anterior de SceneItem y la selección sin afectar Runtime, productores SSOT, PDO ni ISDU.",
                                               "V1020 completa la edición geométrica del HMI Designer: todos los widgets activos de la biblioteca se pueden redimensionar y rotar libremente, Ctrl+rotación ajusta a ejes de 90°, Arrow/Shift+Arrow desplaza la selección actual 1/10 DIP y al hacer doble clic en un elemento de una selección múltiple se mueve toda la selección sin crear un Group persistente.",
                                               "V1019 corrige la geometría HMI de Valve para que el stem/indicator del actuador mantenga siempre una separación segura bajo la barra de nombre compartida, incluso en tarjetas bajas. La semántica de estado y el comportamiento SSOT de solo lectura no cambian.",
