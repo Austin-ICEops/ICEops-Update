@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.192.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.192.0/ICEops_Setup_8.0.192.0.exe",
-    "sha256":  "779efd5101971d98fb3eba9d5b31d1fa3b9f95ab377cd186066f175a680da330",
-    "fileName":  "ICEops_Setup_8.0.192.0.exe",
+    "version":  "8.0.196.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.196.0/ICEops_Setup_8.0.196.0.exe",
+    "sha256":  "e0f1ff540b5f8c9d4f83db5604eb9282b7cff9ddcf09a9d24ee4a76196bd4646",
+    "fileName":  "ICEops_Setup_8.0.196.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-17T14:50:59.4774482+00:00",
+    "publishedAtUtc":  "2026-08-18T01:02:13.1021970+00:00",
     "releaseNotes":  [
-                         "V992 makes Device Scene memo/title labels theme-aware: Light uses a low-saturation teal paper label with dark teal text, while Dark keeps a restrained inverse label.",
-                         "The native WPF 3D renderer adds model-aware procedural profiles resolved from the existing read-only Device SSOT for the PF2M, UC2000, ICA-16DIO, VIM32, OBE12, RL31, OMD10 and ICA-SL/9MCS families.",
-                         "Process semantics and safety boundaries are unchanged: Tank/Pipe/Machine remain visualization objects, all 3D bindings remain read-only, and no transport/PDO/ISDU/CTRL/Runtime path is modified."
+                         "V996 advances the 2D HMI Designer editor with standard multi-selection, resize, clipboard, grouping and reusable user symbols while preserving read-only runtime authority.",
+                         "Shift/Ctrl+Click now toggles object/group membership; single free-size primitives expose eight resize handles; Ctrl+C/V/D/G and Ctrl+Shift+G provide standard engineering shortcuts.",
+                         "Layout schema v5 persists GroupId and reusable user Symbol templates. Symbol insertion clones fresh SceneItem/Group IDs and never introduces PDO/ISDU/control writes."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Device Scene memo/title labels now follow the active theme: Light uses a quiet teal-tinted label with dark teal text; Dark uses a restrained deep-teal inverse label.",
-                                              "Native 3D rendering recognizes PF2M, UC2000, ICA-16DIO, VIM32, OBE12, RL31, OMD10 and ICA-SL/9MCS device families and renders more recognizable lightweight procedural silhouettes.",
-                                              "Tank/Pipe/Machine visualization semantics and all read-only safety boundaries remain unchanged."
+                                              "Adds Shift/Ctrl multi-selection, eight resize handles, Copy/Paste/Duplicate and Group/Ungroup to the HMI Designer.",
+                                              "Reusable user Symbol templates are stored in schema v5 and can be inserted on any HMI page as fresh grouped instances.",
+                                              "HMI RUN remains read-only. Communication, polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime and AI Grounding are unchanged."
                                           ],
                                    "ko":  [
-                                              "Device Scene 메모/제목 라벨을 테마 연동형으로 조정했습니다. 라이트는 저채도 민트/청록 배경과 진한 청록 텍스트, 다크는 절제된 딥 청록 반전 라벨을 사용합니다.",
-                                              "네이티브 3D 렌더러가 기존 Read-Only Device SSOT의 모델명을 기준으로 PF2M, UC2000, ICA-16DIO, VIM32, OBE12, RL31, OMD10, ICA-SL/9MCS 계열을 구분해 더 실제 장비에 가까운 경량 프로시저럴 형상을 표시합니다.",
-                                              "Tank/Pipe/Machine의 시각화 의미와 Read-Only 안전 경계는 그대로 유지하며 통신/PDO/ISDU/CTRL/Runtime 경로는 변경하지 않았습니다."
+                                              "HMI Designer에 Shift/Ctrl 다중선택, 8방향 Resize Handle, 복사/붙여넣기/복제, 그룹/그룹 해제를 추가했습니다.",
+                                              "재사용 사용자 Symbol Template을 Schema v5에 저장하고 모든 HMI 페이지에 새로운 그룹 인스턴스로 삽입할 수 있습니다.",
+                                              "HMI RUN은 계속 Read-Only입니다. 통신, Polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime, AI Grounding은 변경하지 않았습니다."
                                           ],
                                    "ja":  [
-                                              "Device Scene のメモ/タイトルラベルをテーマ連動に変更しました。Light は低彩度のティール系背景と濃いティール文字、Dark は抑えたディープティールの反転ラベルを使用します。",
-                                              "ネイティブ 3D レンダラーは既存の Read-Only Device SSOT のモデル名から PF2M、UC2000、ICA-16DIO、VIM32、OBE12、RL31、OMD10、ICA-SL/9MCS 系列を判別し、より実機に近い軽量プロシージャル形状を表示します。",
-                                              "Tank/Pipe/Machine の可視化セマンティクスと Read-Only の安全境界は変更していません。"
+                                              "HMI Designer に Shift/Ctrl 複数選択、8方向リサイズハンドル、コピー/貼り付け/複製、グループ化/解除を追加しました。",
+                                              "再利用可能なユーザー Symbol Template を Schema v5 に保存し、任意の HMI ページへ新しいグループインスタンスとして挿入できます。",
+                                              "HMI RUN は引き続き Read-Only です。通信、Polling、PDO/PDI/ISDU、CTRL/OBS、Safe Disconnect、Studio Runtime、AI Grounding は変更していません。"
                                           ],
                                    "zh-CN":  [
-                                                 "Device Scene 的备注/标题标签现已跟随主题：浅色主题采用低饱和青绿色背景与深青绿色文字，深色主题采用克制的深青绿色反色标签。",
-                                                 "原生 3D 渲染器根据现有只读 Device SSOT 的型号名称识别 PF2M、UC2000、ICA-16DIO、VIM32、OBE12、RL31、OMD10 与 ICA-SL/9MCS 系列，并显示更接近实际设备的轻量级程序化模型。",
-                                                 "Tank/Pipe/Machine 的可视化语义与只读安全边界保持不变。"
+                                                 "HMI Designer 新增 Shift/Ctrl 多选、八方向缩放手柄、复制/粘贴/副本以及组合/取消组合。",
+                                                 "可复用用户 Symbol Template 保存于 Schema v5，并可作为新的分组实例插入任意 HMI 页面。",
+                                                 "HMI RUN 继续保持只读。通信、Polling、PDO/PDI/ISDU、CTRL/OBS、Safe Disconnect、Studio Runtime 与 AI Grounding 均未修改。"
                                              ],
                                    "de":  [
-                                              "Die Memo-/Titellabels der Device Scene folgen nun dem aktiven Theme: Light verwendet eine dezent getönte Teal-Fläche mit dunkler Teal-Schrift, Dark ein zurückhaltendes inverses Deep-Teal-Label.",
-                                              "Der native 3D-Renderer erkennt anhand des bestehenden Read-Only Device SSOT die Familien PF2M, UC2000, ICA-16DIO, VIM32, OBE12, RL31, OMD10 und ICA-SL/9MCS und zeigt deutlich gerätenähere, leichte prozedurale Modelle.",
-                                              "Die Visualisierungssemantik von Tank/Pipe/Machine sowie alle Read-Only-Sicherheitsgrenzen bleiben unverändert."
+                                              "Der HMI Designer erhält Shift/Ctrl-Mehrfachauswahl, acht Resize-Handles, Kopieren/Einfügen/Duplizieren sowie Gruppieren/Gruppierung aufheben.",
+                                              "Wiederverwendbare Benutzer-Symbolvorlagen werden in Schema v5 gespeichert und als neue gruppierte Instanzen auf jeder HMI-Seite eingefügt.",
+                                              "HMI RUN bleibt schreibgeschützt. Kommunikation, Polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime und AI Grounding bleiben unverändert."
                                           ],
                                    "es":  [
-                                              "Las etiquetas de memo/título de Device Scene ahora siguen el tema activo: Light usa un fondo verde azulado de baja saturación con texto verde azulado oscuro; Dark mantiene una etiqueta inversa profunda y contenida.",
-                                              "El renderizador 3D nativo reconoce desde el Device SSOT de solo lectura las familias PF2M, UC2000, ICA-16DIO, VIM32, OBE12, RL31, OMD10 e ICA-SL/9MCS y muestra siluetas procedurales ligeras más próximas al equipo real.",
-                                              "Se conservan la semántica visual de Tank/Pipe/Machine y todos los límites de seguridad de solo lectura."
+                                              "El Diseñador HMI incorpora selección múltiple con Shift/Ctrl, ocho tiradores de tamaño, copiar/pegar/duplicar y agrupar/desagrupar.",
+                                              "Las plantillas de símbolo reutilizables se guardan en Schema v5 y pueden insertarse como nuevas instancias agrupadas en cualquier página HMI.",
+                                              "HMI RUN sigue siendo de solo lectura. Comunicación, Polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime y AI Grounding no cambian."
                                           ]
                                }
 }
