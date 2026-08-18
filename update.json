@@ -1,42 +1,42 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.210.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.210.0/ICEops_Setup_8.0.210.0.exe",
-    "sha256":  "0984057a6d29210a8039820cd4ab3446b6afbbf11917ed48f26f0520f7242060",
-    "fileName":  "ICEops_Setup_8.0.210.0.exe",
+    "version":  "8.0.211.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.211.0/ICEops_Setup_8.0.211.0.exe",
+    "sha256":  "77d8577f9a920ebac4e1b11f17b6ffbf8e4638733d64687a15e84c9bd5db4c87",
+    "fileName":  "ICEops_Setup_8.0.211.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T06:29:17.6903234+00:00",
+    "publishedAtUtc":  "2026-08-18T06:49:28.6003213+00:00",
     "releaseNotes":  [
-                         "V1010 hardens the Web Commissioning Center snapshot endpoint so read-only presentation failures no longer surface as HTTP 500 and blank the page.",
-                         "The snapshot no longer depends on CommissioningPresetRegistry.Instance; ICA-16DIO and ICA-SL preset rows are captured independently so one provider/catalog failure cannot poison all subsequent snapshot requests.",
-                         "CTRL authority, Write Access, operation-busy state, device identity/display metadata, provider resolution and safety state are isolated independently; the endpoint returns a degraded but valid HTTP 200 JSON snapshot if any source is temporarily unavailable.",
-                         "Snapshot JSON is serialized inside the endpoint with a final valid empty/degraded JSON fallback. Compare/Apply, pairing, CTRL/OBS authority, ISDU/PDO transport, Runtime, AI, HMI and V873 Light/Dark splash behavior are unchanged."
+                         "V1011 synchronizes the Web Commissioning Center CTRL/OBS projection with the live desktop OutputControlAuthorityService even when the read-only commissioning snapshot is degraded.",
+                         "The V1010 fail-open fallback no longer hard-codes controlOwner=false/writeUnlocked=false. Authority, Write Access and operation-busy state are captured first and preserved in every HTTP 200 fallback response; Compare/Apply still re-check the same safety services server-side.",
+                         "When the master communication state becomes OFFLINE, the Web health snapshot now suppresses cached product identity, device kind, manufacturer, product image and alarm presentation instead of carrying the previous connected-device presentation forward.",
+                         "The tablet renderer also removes stale device/vendor image src attributes and vendor styling while offline, so disconnect collapses immediately to a clean DISCONNECTED card and reconnect repopulates from the current snapshot."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "The Web Commissioning Center snapshot is now fail-open for read-only presentation: a transient catalog/runtime exception returns a valid degraded snapshot instead of HTTP 500.",
-                                              "ICA-16DIO and ICA-SL preset/device discovery are isolated independently; Compare/Apply and all write safety gates remain unchanged."
+                                              "Web Commissioning now preserves the desktop CTRL/OBS and Write Access SSOT even in degraded fail-open snapshots, preventing a false OBS lock.",
+                                              "Web device cards now clear cached identity/vendor/image presentation immediately when master communication is disconnected."
                                           ],
                                    "ko":  [
-                                              "Web 시운전 센터의 읽기 전용 Snapshot을 fail-open 구조로 변경하여 일시적인 카탈로그/런타임 예외가 발생해도 HTTP 500 대신 유효한 제한 상태 Snapshot을 반환합니다.",
-                                              "ICA-16DIO와 ICA-SL 프리셋/장치 검색을 서로 독립적으로 격리했으며 Compare/Apply 및 모든 쓰기 안전 게이트는 변경하지 않았습니다."
+                                              "Web 시운전 센터가 degraded fail-open 상태에서도 데스크톱의 실제 CTRL/OBS 및 Write Access SSOT를 유지하여 잘못된 OBS 잠금을 방지합니다.",
+                                              "Master 통신이 끊기면 Web 장치 카드의 이전 Identity/Vendor/Image 표시를 즉시 제거하고 DISCONNECTED 상태만 표시합니다."
                                           ],
                                    "ja":  [
-                                              "Web コミッショニングセンターの読み取り専用 Snapshot を fail-open 化し、一時的なカタログ／ランタイム例外でも HTTP 500 ではなく有効な縮退 Snapshot を返すようにしました。",
-                                              "ICA-16DIO と ICA-SL のプリセット／デバイス検出を独立して分離し、Compare/Apply とすべての書き込み安全ゲートは変更していません。"
+                                              "Web コミッショニングは degraded fail-open 状態でもデスクトップの実際の CTRL/OBS と Write Access SSOT を保持し、誤った OBS ロックを防止します。",
+                                              "Master 通信が切断されると、Web デバイスカードの以前の Identity/Vendor/Image 表示を即時に消去し、DISCONNECTED 状態のみを表示します。"
                                           ],
                                    "zh-CN":  [
-                                                 "Web 调试中心的只读 Snapshot 改为 fail-open 结构，即使出现临时目录/运行时异常，也会返回有效的降级 Snapshot，而不是 HTTP 500。",
-                                                 "ICA-16DIO 与 ICA-SL 的预设/设备发现已分别隔离；Compare/Apply 以及所有写入安全门控均未更改。"
+                                                 "Web 调试中心即使处于 degraded fail-open 状态，也会保持桌面端实际的 CTRL/OBS 与 Write Access SSOT，避免错误的 OBS 锁定。",
+                                                 "Master 通信断开时，Web 设备卡会立即清除之前的 Identity/Vendor/Image 显示，仅保留 DISCONNECTED 状态。"
                                              ],
                                    "de":  [
-                                              "Der schreibgeschützte Snapshot des Web-Inbetriebnahmezentrums arbeitet jetzt fail-open: temporäre Katalog-/Runtime-Fehler liefern einen gültigen degradierten Snapshot statt HTTP 500.",
-                                              "Die Preset-/Geräteerkennung für ICA-16DIO und ICA-SL ist unabhängig isoliert; Compare/Apply und alle Schreibschutz-Gates bleiben unverändert."
+                                              "Das Web-Inbetriebnahmezentrum bewahrt auch bei einem degradierten Fail-open-Snapshot den tatsächlichen CTRL/OBS- und Write-Access-SSOT des Desktops und verhindert damit eine falsche OBS-Sperre.",
+                                              "Bei getrennter Master-Kommunikation werden zwischengespeicherte Identity-/Vendor-/Image-Daten der Web-Gerätekarten sofort entfernt und nur DISCONNECTED angezeigt."
                                           ],
                                    "es":  [
-                                              "El Snapshot de solo lectura del Centro de Puesta en Marcha Web ahora es fail-open: una excepción temporal de catálogo/runtime devuelve un Snapshot degradado válido en lugar de HTTP 500.",
-                                              "El descubrimiento de presets/dispositivos ICA-16DIO e ICA-SL queda aislado de forma independiente; Compare/Apply y todas las protecciones de escritura permanecen sin cambios."
+                                              "El Centro de Puesta en Marcha Web conserva el SSOT real de CTRL/OBS y Write Access del escritorio incluso con un snapshot fail-open degradado, evitando un bloqueo OBS falso.",
+                                              "Al desconectarse la comunicación Master, las tarjetas Web eliminan inmediatamente la identidad, proveedor e imagen almacenados y muestran únicamente DISCONNECTED."
                                           ]
                                }
 }
