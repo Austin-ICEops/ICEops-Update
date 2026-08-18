@@ -1,47 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.196.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.196.0/ICEops_Setup_8.0.196.0.exe",
-    "sha256":  "e0f1ff540b5f8c9d4f83db5604eb9282b7cff9ddcf09a9d24ee4a76196bd4646",
-    "fileName":  "ICEops_Setup_8.0.196.0.exe",
+    "version":  "8.0.197.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.197.0/ICEops_Setup_8.0.197.0.exe",
+    "sha256":  "b0ecc51fdceb85498d26c073859c796db16c11bb132719d0f7191c02fac04962",
+    "fileName":  "ICEops_Setup_8.0.197.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T01:02:13.1021970+00:00",
+    "publishedAtUtc":  "2026-08-18T01:58:10.6962602+00:00",
     "releaseNotes":  [
-                         "V996 advances the 2D HMI Designer editor with standard multi-selection, resize, clipboard, grouping and reusable user symbols while preserving read-only runtime authority.",
-                         "Shift/Ctrl+Click now toggles object/group membership; single free-size primitives expose eight resize handles; Ctrl+C/V/D/G and Ctrl+Shift+G provide standard engineering shortcuts.",
-                         "Layout schema v5 persists GroupId and reusable user Symbol templates. Symbol insertion clones fresh SceneItem/Group IDs and never introduces PDO/ISDU/control writes."
+                         "V997 reorganizes the Device Scene / HMI Designer Library into HMI Tools, Process, Devices / Widgets and User Symbols without changing HMI behavior.",
+                         "Rectangle, Rounded Rectangle, Ellipse, Line and Text are now grouped at the top; Pipe Flow, Tank, Gauge and Signal Tower are grouped under Process.",
+                         "HMI RUN remains read-only. V996 selection, resize, clipboard, grouping, user symbols, schema v5 and all protected communication/control/runtime paths are unchanged."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Adds Shift/Ctrl multi-selection, eight resize handles, Copy/Paste/Duplicate and Group/Ungroup to the HMI Designer.",
-                                              "Reusable user Symbol templates are stored in schema v5 and can be inserted on any HMI page as fresh grouped instances.",
-                                              "HMI RUN remains read-only. Communication, polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime and AI Grounding are unchanged."
+                                              "Reorganizes the HMI Library into HMI Tools, Process, Devices / Widgets and User Symbols.",
+                                              "HMI Tools stay at the top for fast engineering access; Pipe Flow moves to Process with Tank, Gauge and Signal Tower.",
+                                              "No HMI capability or write path was added; schema v5 and V996 editor behavior are preserved."
                                           ],
                                    "ko":  [
-                                              "HMI Designer에 Shift/Ctrl 다중선택, 8방향 Resize Handle, 복사/붙여넣기/복제, 그룹/그룹 해제를 추가했습니다.",
-                                              "재사용 사용자 Symbol Template을 Schema v5에 저장하고 모든 HMI 페이지에 새로운 그룹 인스턴스로 삽입할 수 있습니다.",
-                                              "HMI RUN은 계속 Read-Only입니다. 통신, Polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime, AI Grounding은 변경하지 않았습니다."
+                                              "HMI Library를 HMI 도구, 프로세스, 디바이스 / 위젯, 사용자 심볼 구조로 정리했습니다.",
+                                              "HMI 도구를 최상단에 배치하고 Pipe Flow를 Tank, Gauge, Signal Tower와 함께 프로세스 영역으로 이동했습니다.",
+                                              "HMI 기능이나 Write 경로는 추가하지 않았으며 Schema v5와 V996 편집 동작을 그대로 유지합니다."
                                           ],
                                    "ja":  [
-                                              "HMI Designer に Shift/Ctrl 複数選択、8方向リサイズハンドル、コピー/貼り付け/複製、グループ化/解除を追加しました。",
-                                              "再利用可能なユーザー Symbol Template を Schema v5 に保存し、任意の HMI ページへ新しいグループインスタンスとして挿入できます。",
-                                              "HMI RUN は引き続き Read-Only です。通信、Polling、PDO/PDI/ISDU、CTRL/OBS、Safe Disconnect、Studio Runtime、AI Grounding は変更していません。"
+                                              "HMI Library を HMI ツール、プロセス、デバイス / ウィジェット、ユーザーシンボルに整理しました。",
+                                              "HMI ツールを最上部に配置し、Pipe Flow を Tank、Gauge、Signal Tower と同じプロセス領域へ移動しました。",
+                                              "HMI 機能や書き込み経路は追加せず、Schema v5 と V996 の編集動作を維持しています。"
                                           ],
                                    "zh-CN":  [
-                                                 "HMI Designer 新增 Shift/Ctrl 多选、八方向缩放手柄、复制/粘贴/副本以及组合/取消组合。",
-                                                 "可复用用户 Symbol Template 保存于 Schema v5，并可作为新的分组实例插入任意 HMI 页面。",
-                                                 "HMI RUN 继续保持只读。通信、Polling、PDO/PDI/ISDU、CTRL/OBS、Safe Disconnect、Studio Runtime 与 AI Grounding 均未修改。"
+                                                 "将 HMI Library 整理为 HMI 工具、工艺、设备 / 小组件和用户符号四个区域。",
+                                                 "HMI 工具置于顶部，Pipe Flow 与 Tank、Gauge、Signal Tower 一并归入工艺区域。",
+                                                 "未新增 HMI 功能或写入路径，并继续保持 Schema v5 与 V996 编辑行为。"
                                              ],
                                    "de":  [
-                                              "Der HMI Designer erhält Shift/Ctrl-Mehrfachauswahl, acht Resize-Handles, Kopieren/Einfügen/Duplizieren sowie Gruppieren/Gruppierung aufheben.",
-                                              "Wiederverwendbare Benutzer-Symbolvorlagen werden in Schema v5 gespeichert und als neue gruppierte Instanzen auf jeder HMI-Seite eingefügt.",
-                                              "HMI RUN bleibt schreibgeschützt. Kommunikation, Polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime und AI Grounding bleiben unverändert."
+                                              "Die HMI Library ist jetzt in HMI-Werkzeuge, Prozess, Geräte / Widgets und Benutzersymbole gegliedert.",
+                                              "HMI-Werkzeuge stehen oben; Pipe Flow befindet sich jetzt zusammen mit Tank, Gauge und Signal Tower im Prozessbereich.",
+                                              "Es wurden keine HMI-Funktionen oder Schreibpfade ergänzt; Schema v5 und das V996-Editorverhalten bleiben erhalten."
                                           ],
                                    "es":  [
-                                              "El Diseñador HMI incorpora selección múltiple con Shift/Ctrl, ocho tiradores de tamaño, copiar/pegar/duplicar y agrupar/desagrupar.",
-                                              "Las plantillas de símbolo reutilizables se guardan en Schema v5 y pueden insertarse como nuevas instancias agrupadas en cualquier página HMI.",
-                                              "HMI RUN sigue siendo de solo lectura. Comunicación, Polling, PDO/PDI/ISDU, CTRL/OBS, Safe Disconnect, Studio Runtime y AI Grounding no cambian."
+                                              "La HMI Library queda organizada en Herramientas HMI, Proceso, Dispositivos / Widgets y Símbolos de usuario.",
+                                              "Las herramientas HMI quedan arriba y Pipe Flow pasa a Proceso junto con Tank, Gauge y Signal Tower.",
+                                              "No se añaden funciones HMI ni rutas de escritura; se conservan Schema v5 y el comportamiento de edición de V996."
                                           ]
                                }
 }
