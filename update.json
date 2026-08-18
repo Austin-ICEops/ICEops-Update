@@ -1,47 +1,48 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.199.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.199.0/ICEops_Setup_8.0.199.0.exe",
-    "sha256":  "b88ada467cf682271b1c73ac92b3258a5de5c59a8985c9a83ffe339f6d3bb1ef",
-    "fileName":  "ICEops_Setup_8.0.199.0.exe",
+    "version":  "8.0.200.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.200.0/ICEops_Setup_8.0.200.0.exe",
+    "sha256":  "18c54a9e5f5725b9a6c8afbf5f2702568370d25e4eca948c20b98ab78e36d6a8",
+    "fileName":  "ICEops_Setup_8.0.200.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T02:32:06.1092123+00:00",
+    "publishedAtUtc":  "2026-08-18T02:48:45.3118028+00:00",
     "releaseNotes":  [
-                         "V999 fixes the remaining HMI primitive resize rubber-band behavior by removing Thumb drag-delta ownership from resize transactions.",
-                         "Resize now captures the stable SceneSurface on the first handle press and follows scene-relative PreviewMouseMove continuously until mouse release.",
-                         "No HMI capability, schema, communication, runtime, authority, or write-path behavior is changed."
+                         "V1000 makes HMI primitive resize track the current scene-relative pointer on every WPF render frame, eliminating visible step-wise resize during slow drags.",
+                         "Device Scene custom vector renderers now invalidate immediately on ThemeChanged so all HMI objects switch Light/Dark presentation together instead of waiting for later data ticks.",
+                         "The Light splash keeps the official Pepperl+Fuchs source asset, with a slightly smaller header and high-quality bitmap downsampling for sharper high-DPI presentation.",
+                         "No HMI write authority, schema, communication, runtime, polling, AI grounding, or protected control behavior is changed."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixes the remaining resize behavior where the operator had to keep pulling a handle in small steps.",
-                                              "A single handle press now captures SceneSurface and resizes continuously 1:1 with pointer movement until release.",
-                                              "HMI remains read-only; existing selection, grouping, symbol, schema v5 and protected runtime behavior are unchanged."
+                                              "HMI primitive resize now samples the current SceneSurface pointer on every render frame, so a single slow drag follows continuously instead of resizing in visible steps.",
+                                              "Device Scene vector objects refresh immediately when the Light/Dark theme changes.",
+                                              "The Pepperl+Fuchs splash header uses the official high-resolution asset with high-quality downsampling and a slightly smaller display size."
                                           ],
                                    "ko":  [
-                                              "Resize Handle을 조금씩 반복해서 당겨야 했던 잔여 고무줄 현상을 수정했습니다.",
-                                              "이제 Handle을 한 번 누르면 SceneSurface가 포인터를 캡처하고 마우스를 놓을 때까지 이동량을 1:1로 연속 반영합니다.",
-                                              "HMI Read-Only, 기존 선택/그룹/Symbol 기능, Schema v5 및 보호 Runtime 동작은 변경하지 않았습니다."
+                                              "HMI Primitive Resize가 매 렌더 프레임마다 SceneSurface의 현재 포인터를 읽어 한 번의 느린 드래그도 계단식 없이 연속 추종하도록 수정했습니다.",
+                                              "Light/Dark 테마 변경 시 Device Scene 벡터 객체를 즉시 다시 그려 모든 객체가 같은 시점에 테마를 전환합니다.",
+                                              "스플래시 Pepperl+Fuchs 헤더는 공식 고해상도 원본을 유지하고 HighQuality 다운스케일 및 소폭 축소로 선명도를 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "Resize Handleを少しずつ繰り返し引く必要があった残存のラバーバンド挙動を修正しました。",
-                                              "Handleを1回押すとSceneSurfaceがポインターをキャプチャし、離すまで移動量を1:1で連続反映します。",
-                                              "HMI Read-Only、既存の選択/Group/Symbol機能、Schema v5および保護Runtime動作は変更していません。"
+                                              "HMI Primitive Resizeは各レンダーフレームでSceneSurfaceの現在ポインターを取得し、ゆっくり1回ドラッグしても段階的にならず連続追従します。",
+                                              "Light/Darkテーマ変更時にDevice Sceneのベクターオブジェクトを即時再描画し、全オブジェクトが同時にテーマ切替されます。",
+                                              "SplashのPepperl+Fuchsヘッダーは公式高解像度素材を維持し、高品質ダウンサンプリングと小幅な縮小で鮮明度を改善しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复 Resize Handle 仍需分段反复拖动的残余橡皮筋现象。",
-                                                 "现在首次按下 Handle 后由 SceneSurface 捕获指针，并在松开鼠标前持续按 1:1 移动量调整大小。",
-                                                 "HMI Read-Only、现有选择/分组/Symbol 功能、Schema v5 及受保护 Runtime 行为均未改变。"
+                                                 "HMI Primitive Resize 现在每个渲染帧读取 SceneSurface 当前指针位置，缓慢一次拖动也可连续跟随，不再呈阶梯式变化。",
+                                                 "Light/Dark 主题切换时立即重绘 Device Scene 矢量对象，使所有对象同步完成主题转换。",
+                                                 "启动画面的 Pepperl+Fuchs 标题继续使用官方高分辨率素材，并通过高质量缩放及轻微缩小提升清晰度。"
                                              ],
                                    "de":  [
-                                              "Behebt das verbleibende Gummiband-Verhalten, bei dem ein Resize-Handle wiederholt in kleinen Schritten gezogen werden musste.",
-                                              "Nach einmaligem Drücken des Handles erfasst nun SceneSurface den Zeiger und folgt der Bewegung bis zum Loslassen kontinuierlich 1:1.",
-                                              "HMI Read-Only, bestehende Auswahl-/Gruppen-/Symbolfunktionen, Schema v5 und geschütztes Runtime-Verhalten bleiben unverändert."
+                                              "Die Größenänderung von HMI-Primitiven liest nun in jedem Render-Frame die aktuelle SceneSurface-Zeigerposition, sodass auch langsames Ziehen kontinuierlich und ohne sichtbare Stufen folgt.",
+                                              "Device-Scene-Vektorobjekte werden bei einem Light/Dark-Themewechsel sofort neu gezeichnet, sodass alle Objekte gleichzeitig umschalten.",
+                                              "Der Pepperl+Fuchs-Splash-Header verwendet weiterhin das offizielle hochauflösende Asset, mit hochwertigem Downsampling und leicht reduzierter Anzeigegröße für mehr Schärfe."
                                           ],
                                    "es":  [
-                                              "Corrige el efecto elástico restante por el que había que tirar del Resize Handle repetidamente en pequeños pasos.",
-                                              "Con una sola pulsación del Handle, SceneSurface captura el puntero y aplica el movimiento 1:1 de forma continua hasta soltar el ratón.",
-                                              "HMI Read-Only, las funciones existentes de selección/grupo/Symbol, Schema v5 y el Runtime protegido permanecen sin cambios."
+                                              "El cambio de tamaño de primitivas HMI ahora lee la posición actual del puntero de SceneSurface en cada fotograma de renderizado, por lo que un arrastre lento sigue de forma continua y sin saltos visibles.",
+                                              "Los objetos vectoriales de Device Scene se redibujan inmediatamente al cambiar el tema Light/Dark para que todos cambien a la vez.",
+                                              "El encabezado Pepperl+Fuchs del splash mantiene el recurso oficial de alta resolución y mejora la nitidez con reducción de escala de alta calidad y un tamaño ligeramente menor."
                                           ]
                                }
 }
