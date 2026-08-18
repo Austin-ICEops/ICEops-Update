@@ -3,39 +3,46 @@
     "channel":  "stable",
     "version":  "8.0.212.0",
     "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.212.0/ICEops_Setup_8.0.212.0.exe",
-    "sha256":  "9be1c80580469fa81a66845a29959a62ff5b7eaa2d1c478ade79e98207fa5c33",
+    "sha256":  "90f4a821f9df85422b02b25494c9a8150d0d3256307761c4ef7f5de2f74a18f0",
     "fileName":  "ICEops_Setup_8.0.212.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-18T07:17:37.0018522+00:00",
+    "publishedAtUtc":  "2026-08-18T07:41:55.3148102+00:00",
     "releaseNotes":  [
                          "V1012 normalizes Device Scene Line thickness editing by wiring the existing schema-v5 StrokeWidth property to immediate Canvas preview while preserving Save Properties as the permanent Scene SSOT commit boundary.",
                          "Pipe Flow now reuses the existing FillHex, StrokeHex, StrokeWidth, Opacity and animation path for a more industrial pipe presentation. Existing Fresh/range-valid/non-zero flow renders with the existing process-blue theme resource, while stop/disconnected/bad-quality states remain static and neutral.",
-                         "No new Pipe topology, shader, animation subsystem, write/control API or schema field was introduced. Resize/rotation, Web V1011 synchronization, communication/runtime, authority and AI paths remain outside this patch."
+                         "Commissioning Center now separates Compare from Write Execution on Desktop and Web. Arm batch write is grouped with Apply \u0026 Verify; unknown-ownership override is exposed only for UNKNOWN, while OWNED BY OTHER remains an unconditional block. Web continues to consume Main PC authority/write/ownership snapshot state and the server performs the final Apply safety preflight.",
+                         "No new Pipe topology, shader, animation subsystem, write/control API, ownership algorithm, authority service, or schema field was introduced. Existing V1011 fail-open authority capture/disconnect cleanup and V1002/V1005 HMI interaction paths remain protected."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
                                               "Line Stroke Width now previews immediately on the Canvas and is permanently stored only through Save Properties using the existing schema-v5 property.",
-                                              "Pipe Flow reuses the existing animation path: only Fresh, range-valid, non-zero SSOT flow is shown in process Water Blue; stop/disconnected states remain neutral and static."
+                                              "Pipe Flow reuses the existing animation path: only Fresh, range-valid, non-zero SSOT flow is shown in process Water Blue; stop/disconnected states remain neutral and static.",
+                                              "Desktop and Web Commissioning now use the same ownership UX: LOCAL requires only normal write safety + Arm batch write; UNKNOWN additionally requires one-shot explicit acknowledgement; OWNED BY OTHER cannot be overridden. Compare remains separate from write execution."
                                           ],
                                    "ko":  [
                                               "Line Stroke Width는 기존 Schema v5 속성을 그대로 사용하며 Canvas에 즉시 Preview되고, Save Properties 실행 시에만 Scene SSOT에 영구 저장됩니다.",
-                                              "Pipe Flow는 기존 애니메이션 경로만 재사용하며 Fresh + 유효 범위 + 0보다 큰 SSOT 흐름일 때만 Water Blue 계열로 표시되고 정지/연결 해제 상태는 중립 정적 표현을 유지합니다."
+                                              "Pipe Flow는 기존 애니메이션 경로만 재사용하며 Fresh + 유효 범위 + 0보다 큰 SSOT 흐름일 때만 Water Blue 계열로 표시되고 정지/연결 해제 상태는 중립 정적 표현을 유지합니다.",
+                                              "Desktop/Web 시운전센터의 Ownership UX를 동일하게 맞췄습니다. LOCAL은 기존 쓰기 안전조건 + Arm batch write만 필요하고, UNKNOWN에서만 일회성 예외 승인을 추가로 요구하며, OWNED BY OTHER는 우회할 수 없습니다. Compare는 쓰기 실행과 분리했습니다."
                                           ],
                                    "ja":  [
                                               "Line の Stroke Width は既存の Schema v5 プロパティをそのまま使用し、Canvas に即時プレビューされ、Save Properties 実行時のみ Scene SSOT に永続保存されます。",
-                                              "Pipe Flow は既存のアニメーション経路のみを再利用し、Fresh・有効レンジ・0 より大きい SSOT フローの場合だけ Water Blue 系で表示し、停止・切断状態ではニュートラルな静止表示を維持します。"
+                                              "Pipe Flow は既存のアニメーション経路のみを再利用し、Fresh・有効レンジ・0 より大きい SSOT フローの場合だけ Water Blue 系で表示し、停止・切断状態ではニュートラルな静止表示を維持します。",
+                                              "Desktop/Web の Commissioning Center で Ownership UX を統一しました。LOCAL は通常の書込み安全条件 + Arm batch write のみ、UNKNOWN の場合だけ一時的な明示承認を追加要求し、OWNED BY OTHER は上書きできません。Compare は書込み実行から分離されています。"
                                           ],
                                    "zh-CN":  [
                                                  "Line 的 Stroke Width 继续使用现有 Schema v5 属性，可在 Canvas 上即时预览，并且仅在执行 Save Properties 时永久保存到 Scene SSOT。",
-                                                 "Pipe Flow 仅复用现有动画路径；只有 Fresh、量程有效且 SSOT 流量大于 0 时才显示 Water Blue 流动效果，停止或断开连接时保持中性静态显示。"
+                                                 "Pipe Flow 仅复用现有动画路径；只有 Fresh、量程有效且 SSOT 流量大于 0 时才显示 Water Blue 流动效果，停止或断开连接时保持中性静态显示。",
+                                                 "Desktop/Web Commissioning Center 的 Ownership UX 已统一。LOCAL 仅需要现有写入安全条件 + Arm batch write；仅在 UNKNOWN 时额外要求一次性明确确认；OWNED BY OTHER 不允许绕过。Compare 与写入执行分离。"
                                              ],
                                    "de":  [
                                               "Die Stroke Width einer Line verwendet weiterhin die vorhandene Schema-v5-Eigenschaft, wird sofort auf dem Canvas vorab angezeigt und erst mit Save Properties dauerhaft im Scene-SSOT gespeichert.",
-                                              "Pipe Flow verwendet ausschließlich den vorhandenen Animationspfad: Nur bei Fresh, gültigem Bereich und einem SSOT-Fluss größer als 0 wird Water Blue dargestellt; Stop/Disconnect bleiben neutral und statisch."
+                                              "Pipe Flow verwendet ausschließlich den vorhandenen Animationspfad: Nur bei Fresh, gültigem Bereich und einem SSOT-Fluss größer als 0 wird Water Blue dargestellt; Stop/Disconnect bleiben neutral und statisch.",
+                                              "Desktop und Web Commissioning verwenden jetzt dieselbe Ownership-UX: LOCAL benötigt nur die normalen Schreibschutzbedingungen plus Arm batch write; UNKNOWN zusätzlich eine einmalige ausdrückliche Bestätigung; OWNED BY OTHER kann nicht übersteuert werden. Compare ist vom Schreibvorgang getrennt."
                                           ],
                                    "es":  [
                                               "Stroke Width de Line reutiliza la propiedad existente de Schema v5, se previsualiza inmediatamente en el Canvas y solo se guarda de forma permanente en el Scene SSOT mediante Save Properties.",
-                                              "Pipe Flow reutiliza únicamente la ruta de animación existente: el flujo SSOT Fresh, con rango válido y mayor que 0 se muestra en Water Blue; los estados Stop/Disconnected permanecen neutros y estáticos."
+                                              "Pipe Flow reutiliza únicamente la ruta de animación existente: el flujo SSOT Fresh, con rango válido y mayor que 0 se muestra en Water Blue; los estados Stop/Disconnected permanecen neutros y estáticos.",
+                                              "Desktop y Web Commissioning ahora usan la misma UX de propiedad: LOCAL solo requiere las condiciones normales de escritura + Arm batch write; UNKNOWN exige además una confirmación explícita de un solo uso; OWNED BY OTHER no se puede omitir. Compare queda separado de la ejecución de escritura."
                                           ]
                                }
 }
