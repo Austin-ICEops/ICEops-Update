@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.292.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.292.0/ICEops_Setup_8.0.292.0.exe",
-    "sha256":  "d280ad43b3b354742157fed3299aa434bb4a9e814fc1036a681d52fcf89e8dd4",
-    "fileName":  "ICEops_Setup_8.0.292.0.exe",
+    "version":  "8.0.294.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.294.0/ICEops_Setup_8.0.294.0.exe",
+    "sha256":  "6d2ba97a2ab37cad6c35cfca0a80b7744d6703a719b50e459fe2a5a292364a3d",
+    "fileName":  "ICEops_Setup_8.0.294.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-21T09:26:24.0259347+00:00",
+    "publishedAtUtc":  "2026-08-21T10:01:59.8241991+00:00",
     "releaseNotes":  [
                          "V1023 is a build-only fix for V1022 Line SSOT flow animation. It renames four inner-scope presentation variables in DeviceSceneItemViewModel to avoid C# CS0136 collisions with the existing motion variables later in ApplySnapshot. Flow behavior, SSOT semantics, render clock usage, Runtime, PDO, ISDU, and Schema v5 are unchanged.",
                          "V1022 adds optional read-only flow animation binding to primitive Line objects. Fresh TRUE/non-zero SSOT sources animate the existing Line with process Water Blue using the existing Device Scene render clock; FALSE/zero stops remain neutral/static and stale/disconnected/invalid quality remains neutral. No timer, polling, PDO, ISDU or runtime-control path is added.",
