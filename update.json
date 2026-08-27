@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.436.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.436.0/ICEops_Setup_8.0.436.0.exe",
-    "sha256":  "33b0d9f02c8b04329473bafb0a671c4386576c3e762c28b78642c12f2a3adda9",
-    "fileName":  "ICEops_Setup_8.0.436.0.exe",
+    "version":  "8.0.437.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.437.0/ICEops_Setup_8.0.437.0.exe",
+    "sha256":  "94bbaabc7f429eb7563db5849c12ed78dcc56e261b83636c140cf1cf752a256b",
+    "fileName":  "ICEops_Setup_8.0.437.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-27T00:56:56.6590560+00:00",
+    "publishedAtUtc":  "2026-08-27T02:54:39.4197399+00:00",
     "releaseNotes":  [
                          "Removed the MAX polling activity animation for a cleaner status bar."
                      ],
