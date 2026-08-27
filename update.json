@@ -1,33 +1,33 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.435.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.435.0/ICEops_Setup_8.0.435.0.exe",
-    "sha256":  "b4ecca1d0942428c728e78891a118230251c6ac2a6335780d5fcd65e3901f1e8",
-    "fileName":  "ICEops_Setup_8.0.435.0.exe",
+    "version":  "8.0.436.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.436.0/ICEops_Setup_8.0.436.0.exe",
+    "sha256":  "33b0d9f02c8b04329473bafb0a671c4386576c3e762c28b78642c12f2a3adda9",
+    "fileName":  "ICEops_Setup_8.0.436.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-27T00:23:37.2846758+00:00",
+    "publishedAtUtc":  "2026-08-27T00:56:56.6590560+00:00",
     "releaseNotes":  [
-                         "Improved VMA-2 product image identity matching reliability."
+                         "Removed the MAX polling activity animation for a cleaner status bar."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Improved VMA-2 product image identity matching reliability."
+                                              "Removed the MAX polling activity animation for a cleaner status bar."
                                           ],
                                    "ko":  [
-                                              "VMA-2 제품 이미지 식별 안정성을 개선했습니다."
+                                              "하단 상태 바의 MAX 폴링 애니메이션을 제거해 화면 표시를 더 깔끔하게 정리했습니다."
                                           ],
                                    "ja":  [
-                                              "VMA-2 製品画像の識別安定性を改善しました。"
+                                              "下部ステータスバーの MAX ポーリングアニメーションを削除し、表示をすっきり整理しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "改进了 VMA-2 产品图像识别的稳定性。"
+                                                 "移除了底部状态栏的 MAX 轮询动画，使界面显示更加简洁。"
                                              ],
                                    "de":  [
-                                              "Die Zuverlässigkeit der VMA-2-Produktbilderkennung wurde verbessert."
+                                              "Die MAX-Polling-Animation in der unteren Statusleiste wurde für eine übersichtlichere Anzeige entfernt."
                                           ],
                                    "es":  [
-                                              "Se mejoró la fiabilidad de la identificación de imágenes de producto VMA-2."
+                                              "Se eliminó la animación de sondeo MAX de la barra de estado inferior para una visualización más limpia."
                                           ]
                                }
 }
