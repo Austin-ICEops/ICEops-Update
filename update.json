@@ -1,33 +1,40 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.449.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.449.0/ICEops_Setup_8.0.449.0.exe",
-    "sha256":  "e3f95b9c786faa4cd189b6719752b85d68175d1e6893dbc117478e04a945a242",
-    "fileName":  "ICEops_Setup_8.0.449.0.exe",
+    "version":  "8.0.456.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.456.0/ICEops_Setup_8.0.456.0.exe",
+    "sha256":  "b81c4d044eb909593f156dd7a665614468bbf058968f20aedf7e27753da913ea",
+    "fileName":  "ICEops_Setup_8.0.456.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-27T07:25:06.5818549+00:00",
+    "publishedAtUtc":  "2026-08-27T14:21:41.2897414+00:00",
     "releaseNotes":  [
-                         "HMI RUN device cards now keep a fixed size while the pointer moves over them."
+                         "Master 연결 초기 상태를 장치 식별·IODD 매핑 중으로 명확히 표시합니다.",
+                         "System Overview에서 연결된 Master를 한 번에 안전하게 해제할 수 있습니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "HMI RUN device cards now keep a fixed size while the pointer moves over them."
+                                              "Shows device identification and IODD mapping progress during initial Master connection.",
+                                              "System Overview can safely disconnect all connected Masters at once."
                                           ],
                                    "ko":  [
-                                              "HMI RUN 디바이스 카드가 마우스 이동 중에도 고정 크기를 유지하도록 수정했습니다."
+                                              "Master 연결 초기 상태를 장치 식별·IODD 매핑 중으로 명확히 표시합니다.",
+                                              "System Overview에서 연결된 Master를 한 번에 안전하게 해제할 수 있습니다."
                                           ],
                                    "ja":  [
-                                              "HMI RUN デバイスカードがポインター移動中も固定サイズを維持するように修正しました。"
+                                              "Master 接続直後のデバイス識別・IODD マッピング中を明確に表示します。",
+                                              "System Overview から接続中のすべての Master を安全に一括切断できます。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复了 HMI RUN 设备卡在鼠标移动时保持固定尺寸的问题。"
+                                                 "在 Master 初始连接期间清晰显示设备识别和 IODD 映射进度。",
+                                                 "可从 System Overview 安全地一次断开所有已连接的 Master。"
                                              ],
                                    "de":  [
-                                              "HMI-RUN-Gerätekarten behalten beim Bewegen des Zeigers jetzt ihre feste Größe."
+                                              "Zeigt während der anfänglichen Master-Verbindung eindeutig die Geräteerkennung und IODD-Zuordnung an.",
+                                              "In der Systemübersicht können alle verbundenen Master sicher auf einmal getrennt werden."
                                           ],
                                    "es":  [
-                                              "Las tarjetas de dispositivo de HMI RUN ahora mantienen un tamaño fijo al mover el puntero sobre ellas."
+                                              "Muestra claramente la identificación del dispositivo y el mapeo IODD durante la conexión inicial del Master.",
+                                              "La vista general del sistema permite desconectar de forma segura todos los Masters conectados a la vez."
                                           ]
                                }
 }
