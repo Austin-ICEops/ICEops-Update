@@ -1,40 +1,33 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.432.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.432.0/ICEops_Setup_8.0.432.0.exe",
-    "sha256":  "85279edbfe8d3856d08ebb088ae430b7fd2cbcb88c6e1f21c80168e9b9328e10",
-    "fileName":  "ICEops_Setup_8.0.432.0.exe",
+    "version":  "8.0.435.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.435.0/ICEops_Setup_8.0.435.0.exe",
+    "sha256":  "b4ecca1d0942428c728e78891a118230251c6ac2a6335780d5fcd65e3901f1e8",
+    "fileName":  "ICEops_Setup_8.0.435.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-26T05:22:02.0556234+00:00",
+    "publishedAtUtc":  "2026-08-27T00:23:37.2846758+00:00",
     "releaseNotes":  [
-                         "Added the standard close sound to the period-usage window.",
-                         "Minor usability and display consistency improvements."
+                         "Improved VMA-2 product image identity matching reliability."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Added the standard close sound to the period-usage window.",
-                                              "Minor usability and display consistency improvements."
+                                              "Improved VMA-2 product image identity matching reliability."
                                           ],
                                    "ko":  [
-                                              "기간별 집계 창에 다른 창과 동일한 닫기 효과음을 적용했습니다.",
-                                              "일부 화면의 사용성과 표시 일관성을 소폭 개선했습니다."
+                                              "VMA-2 제품 이미지 식별 안정성을 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "期間別集計ウィンドウに他のウィンドウと同じ終了効果音を適用しました。",
-                                              "一部画面の操作性と表示の一貫性を軽微に改善しました。"
+                                              "VMA-2 製品画像の識別安定性を改善しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "期间汇总窗口现已使用与其他窗口一致的关闭提示音。",
-                                                 "小幅改进了部分界面的易用性和显示一致性。"
+                                                 "改进了 VMA-2 产品图像识别的稳定性。"
                                              ],
                                    "de":  [
-                                              "Das Fenster für die Zeitraum-Auswertung verwendet nun denselben Schließton wie andere Fenster.",
-                                              "Kleine Verbesserungen bei Bedienbarkeit und Darstellungskonsistenz."
+                                              "Die Zuverlässigkeit der VMA-2-Produktbilderkennung wurde verbessert."
                                           ],
                                    "es":  [
-                                              "La ventana de acumulación por período ahora usa el mismo sonido de cierre que las demás ventanas.",
-                                              "Pequeñas mejoras de usabilidad y consistencia visual."
+                                              "Se mejoró la fiabilidad de la identificación de imágenes de producto VMA-2."
                                           ]
                                }
 }
