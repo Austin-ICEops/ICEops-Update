@@ -1,40 +1,47 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.458.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.458.0/ICEops_Setup_8.0.458.0.exe",
-    "sha256":  "ff9e063067ee65c45505918c5b55908c056ff3c5e74eaa4d2d1f4ebc750401ae",
-    "fileName":  "ICEops_Setup_8.0.458.0.exe",
+    "version":  "8.0.461.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.461.0/ICEops_Setup_8.0.461.0.exe",
+    "sha256":  "bd6e34e860a3eab867f682a76a7c38381a25d8e3de5cfcb2ee9baed8b0724103",
+    "fileName":  "ICEops_Setup_8.0.461.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-27T15:38:20.6299888+00:00",
+    "publishedAtUtc":  "2026-08-28T00:06:20.0836587+00:00",
     "releaseNotes":  [
-                         "Master 연결 초기 상태를 장치 식별·IODD 매핑 중으로 명확히 표시합니다.",
-                         "System Overview에서 연결된 Master를 한 번에 안전하게 해제할 수 있습니다."
+                         "Web 기본 화면에서 MASTER 01~05의 연결 상태와 제어 권한을 한눈에 확인할 수 있습니다.",
+                         "Web에서 Master 카드를 선택하면 해당 Master의 Port 상태, 최근 알람 및 Trend를 독립적으로 확인할 수 있습니다.",
+                         "Master 권한 연동을 선택하면 체크한 Master들의 OBS/CTRL 상태를 사용자 조작 시 함께 변경할 수 있습니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Shows device identification and IODD mapping progress during initial Master connection.",
-                                              "System Overview can safely disconnect all connected Masters at once."
+                                              "The Web home screen now shows connection and control-authority status for MASTER 01-05 at a glance.",
+                                              "Selecting a Master card on the Web now opens that Master\u0027s independent Port status, recent alarms, and trend data.",
+                                              "Authority Link can synchronize OBS/CTRL across operator-selected Masters when the operator changes authority."
                                           ],
                                    "ko":  [
-                                              "Master 연결 초기 상태를 장치 식별·IODD 매핑 중으로 명확히 표시합니다.",
-                                              "System Overview에서 연결된 Master를 한 번에 안전하게 해제할 수 있습니다."
+                                              "Web 기본 화면에서 MASTER 01~05의 연결 상태와 제어 권한을 한눈에 확인할 수 있습니다.",
+                                              "Web에서 Master 카드를 선택하면 해당 Master의 Port 상태, 최근 알람 및 Trend를 독립적으로 확인할 수 있습니다.",
+                                              "Master 권한 연동을 선택하면 체크한 Master들의 OBS/CTRL 상태를 사용자 조작 시 함께 변경할 수 있습니다."
                                           ],
                                    "ja":  [
-                                              "Master 接続直後のデバイス識別・IODD マッピング中を明確に表示します。",
-                                              "System Overview から接続中のすべての Master を安全に一括切断できます。"
+                                              "Web の基本画面で MASTER 01～05 の接続状態と制御権限を一覧確認できます。",
+                                              "Web で Master カードを選択すると、その Master の Port 状態、最近のアラーム、Trend を個別に確認できます。",
+                                              "Master 権限連動を選択すると、ユーザー操作時にチェックした Master の OBS/CTRL をまとめて切り替えられます。"
                                           ],
                                    "zh-CN":  [
-                                                 "在 Master 初始连接期间清晰显示设备识别和 IODD 映射进度。",
-                                                 "可从 System Overview 安全地一次断开所有已连接的 Master。"
+                                                 "Web 首页现在可同时查看 MASTER 01～05 的连接状态和控制权限。",
+                                                 "在 Web 中选择 Master 卡片后，可独立查看该 Master 的 Port 状态、最近报警和 Trend。",
+                                                 "启用 Master 权限联动后，用户操作 OBS/CTRL 时可同步切换已勾选的 Master。"
                                              ],
                                    "de":  [
-                                              "Zeigt während der anfänglichen Master-Verbindung eindeutig die Geräteerkennung und IODD-Zuordnung an.",
-                                              "In der Systemübersicht können alle verbundenen Master sicher auf einmal getrennt werden."
+                                              "Die Web-Startseite zeigt jetzt Verbindungsstatus und Steuerungsberechtigung für MASTER 01–05 auf einen Blick.",
+                                              "Nach Auswahl einer Master-Karte zeigt Web Port-Status, aktuelle Alarme und Trend-Daten dieses Masters getrennt an.",
+                                              "Mit der Master-Berechtigungsverknüpfung kann OBS/CTRL bei Bedieneraktionen für ausgewählte Master gemeinsam umgeschaltet werden."
                                           ],
                                    "es":  [
-                                              "Muestra claramente la identificación del dispositivo y el mapeo IODD durante la conexión inicial del Master.",
-                                              "La vista general del sistema permite desconectar de forma segura todos los Masters conectados a la vez."
+                                              "La pantalla principal Web muestra ahora el estado de conexión y la autoridad de control de MASTER 01-05 de un vistazo.",
+                                              "Al seleccionar una tarjeta Master en Web se muestran de forma independiente los puertos, alarmas recientes y tendencias de ese Master.",
+                                              "El enlace de autoridad Master permite cambiar OBS/CTRL conjuntamente en los Masters seleccionados cuando lo solicita el operador."
                                           ]
                                }
 }
