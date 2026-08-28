@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.461.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.461.0/ICEops_Setup_8.0.461.0.exe",
-    "sha256":  "df6e8324555fb387dad44a31331a67f706668eeda9011614164aafb4be2ff186",
-    "fileName":  "ICEops_Setup_8.0.461.0.exe",
+    "version":  "8.0.462.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.462.0/ICEops_Setup_8.0.462.0.exe",
+    "sha256":  "4afd747425011bcbfdb828df89a07af3af8e1997b7dac0856628bab44bd21960",
+    "fileName":  "ICEops_Setup_8.0.462.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-28T00:30:41.6018962+00:00",
+    "publishedAtUtc":  "2026-08-28T02:07:06.4324139+00:00",
     "releaseNotes":  [
                          "Web 기본 화면에서 MASTER 01~05의 연결 상태와 제어 권한을 한눈에 확인할 수 있습니다.",
                          "Web에서 Master 카드를 선택하면 해당 Master의 Port 상태, 최근 알람 및 Trend를 독립적으로 확인할 수 있습니다.",
