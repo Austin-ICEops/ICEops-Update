@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.486.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.486.0/ICEops_Setup_8.0.486.0.exe",
-    "sha256":  "db5f5e44008e1d80b797ebce2243bb1808c014907f41e0df34f3cadd24a78f6e",
-    "fileName":  "ICEops_Setup_8.0.486.0.exe",
+    "version":  "8.0.487.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.487.0/ICEops_Setup_8.0.487.0.exe",
+    "sha256":  "be34dd40886c9ea1063773206acabc5f1020db7374890ee872a08ae779f8859e",
+    "fileName":  "ICEops_Setup_8.0.487.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-29T07:28:43.7819427+00:00",
+    "publishedAtUtc":  "2026-08-29T08:00:00.0426864+00:00",
     "releaseNotes":  [
                          "VMA-2 제품 이미지를 투명 배경 자산으로 교체하여 Home 및 Web 장치 카드의 표시 일관성을 개선했습니다."
                      ],
