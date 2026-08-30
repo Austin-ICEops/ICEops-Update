@@ -1,33 +1,33 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.503.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.503.0/ICEops_Setup_8.0.503.0.exe",
-    "sha256":  "110afc72f8964ced5fa4149e80834b4a43db2009c3a760c2d453b39606deb3ed",
-    "fileName":  "ICEops_Setup_8.0.503.0.exe",
+    "version":  "8.0.504.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.504.0/ICEops_Setup_8.0.504.0.exe",
+    "sha256":  "e4795c258bb476b6d2d130a33ca320e63a41dd4287f1ebb0d7e0220b38148ebf",
+    "fileName":  "ICEops_Setup_8.0.504.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-30T13:47:19.1172541+00:00",
+    "publishedAtUtc":  "2026-08-30T14:29:03.3872653+00:00",
     "releaseNotes":  [
-                         "VMA-2 제품 이미지를 투명 배경 자산으로 교체하여 Home 및 Web 장치 카드의 표시 일관성을 개선했습니다."
+                         "HMI Device Card의 대표값 강조를 통일하고 VMA-2 컨디션 SSOT가 최초 화면 진입부터 즉시 표시되도록 개선했습니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Updated the VMA-2 product image with transparent-background assets for a cleaner, consistent device-card appearance on Home and Web."
+                                              "Unified primary-value emphasis across HMI Device Cards and made the VMA-2 condition SSOT appear immediately on the first HMI entry."
                                           ],
                                    "ko":  [
-                                              "VMA-2 제품 이미지를 투명 배경 자산으로 교체하여 Home 및 Web 장치 카드의 표시 일관성을 개선했습니다."
+                                              "HMI Device Card의 대표값 강조를 통일하고 VMA-2 컨디션 SSOT가 최초 화면 진입부터 즉시 표시되도록 개선했습니다."
                                           ],
                                    "ja":  [
-                                              "VMA-2 製品画像を透過背景の画像に更新し、Home と Web のデバイスカード表示を統一しました。"
+                                              "HMI デバイスカードの代表値の強調表示を統一し、VMA-2 のコンディション SSOT が HMI の初回表示時から即時に表示されるよう改善しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "将 VMA-2 产品图片更新为透明背景资源，使 Home 和 Web 设备卡片显示更加统一。"
+                                                 "统一了 HMI 设备卡片的主要值强调显示，并使 VMA-2 状态 SSOT 在首次进入 HMI 时立即显示。"
                                              ],
                                    "de":  [
-                                              "Das VMA-2-Produktbild wurde durch Grafiken mit transparentem Hintergrund ersetzt, damit die Gerätekarten in Home und Web einheitlicher dargestellt werden."
+                                              "Die Hervorhebung der Hauptwerte in HMI-Gerätekarten wurde vereinheitlicht; der VMA-2-Zustands-SSOT wird nun bereits beim ersten Öffnen der HMI sofort angezeigt."
                                           ],
                                    "es":  [
-                                              "Se actualizó la imagen del VMA-2 con recursos de fondo transparente para mejorar la uniformidad de las tarjetas de dispositivo en Home y Web."
+                                              "Se unificó el resaltado de los valores principales en las tarjetas HMI y el SSOT de condición de VMA-2 ahora aparece inmediatamente al entrar por primera vez en la HMI."
                                           ]
                                }
 }
