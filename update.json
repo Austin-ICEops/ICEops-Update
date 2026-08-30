@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.511.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.511.0/ICEops_Setup_8.0.511.0.exe",
-    "sha256":  "2291c48f9c58429bb7956ca4c4695c9f4bd1ee72a7cdf1f32555ed324acdc90c",
-    "fileName":  "ICEops_Setup_8.0.511.0.exe",
+    "version":  "8.0.512.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.512.0/ICEops_Setup_8.0.512.0.exe",
+    "sha256":  "5202a6ab9ca6aba175a0ffb48d833c02cbadb86afc53e6eae424e9316f39fa87",
+    "fileName":  "ICEops_Setup_8.0.512.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-30T21:10:03.3988645+00:00",
+    "publishedAtUtc":  "2026-08-30T21:33:43.0739196+00:00",
     "releaseNotes":  [
                          "HMI Device Card의 대표값 강조를 통일하고 VMA-2 컨디션 SSOT가 최초 화면 진입부터 즉시 표시되도록 개선했습니다."
                      ],
