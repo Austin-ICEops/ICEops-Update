@@ -1,33 +1,33 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.519.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.519.0/ICEops_Setup_8.0.519.0.exe",
-    "sha256":  "80d5373b414c4ce2930cc01b70a6daa7df3f37633607fdef5ff2021a79825e41",
-    "fileName":  "ICEops_Setup_8.0.519.0.exe",
+    "version":  "8.0.520.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.520.0/ICEops_Setup_8.0.520.0.exe",
+    "sha256":  "b1611af79478c858adc4a2af9d90e8a2fba1d3037c991d2a119e3391545c1780",
+    "fileName":  "ICEops_Setup_8.0.520.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-31T05:31:45.0235097+00:00",
+    "publishedAtUtc":  "2026-08-31T06:11:44.5477185+00:00",
     "releaseNotes":  [
-                         "멀티 디스플레이 성능 개선 패키지의 빌드 호환성을 수정했습니다."
+                         "HMI 화면이 마지막으로 사용한 보기 배율을 다음 실행에서도 유지합니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "Fixed build compatibility in the multi-display performance improvement package."
+                                              "The HMI screen now retains the last-used view zoom for the next session."
                                           ],
                                    "ko":  [
-                                              "멀티 디스플레이 성능 개선 패키지의 빌드 호환성을 수정했습니다."
+                                              "HMI 화면이 마지막으로 사용한 보기 배율을 다음 실행에서도 유지합니다."
                                           ],
                                    "ja":  [
-                                              "マルチディスプレイ性能改善パッケージのビルド互換性を修正しました。"
+                                              "HMI 画面で最後に使用した表示倍率が次回起動時にも維持されるようになりました。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复了多显示器性能改进包的构建兼容性。"
+                                                 "HMI 画面现在会在下次启动时保留上次使用的显示缩放比例。"
                                              ],
                                    "de":  [
-                                              "Die Build-Kompatibilität des Pakets zur Leistungsverbesserung für mehrere Bildschirme wurde korrigiert."
+                                              "Der HMI-Bildschirm behält nun den zuletzt verwendeten Ansichtszoom für den nächsten Start bei."
                                           ],
                                    "es":  [
-                                              "Se corrigió la compatibilidad de compilación del paquete de mejoras de rendimiento para varias pantallas."
+                                              "La pantalla HMI conserva ahora el último nivel de zoom utilizado para la siguiente sesión."
                                           ]
                                }
 }
