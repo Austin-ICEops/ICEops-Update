@@ -1,33 +1,33 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.520.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.520.0/ICEops_Setup_8.0.520.0.exe",
-    "sha256":  "b1611af79478c858adc4a2af9d90e8a2fba1d3037c991d2a119e3391545c1780",
-    "fileName":  "ICEops_Setup_8.0.520.0.exe",
+    "version":  "8.0.522.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.522.0/ICEops_Setup_8.0.522.0.exe",
+    "sha256":  "9b8662baadf5542c69cb2d29c04e24f27e6f7df88a06aa01bdfa9cb254806a6f",
+    "fileName":  "ICEops_Setup_8.0.522.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-08-31T06:11:44.5477185+00:00",
+    "publishedAtUtc":  "2026-08-31T07:42:49.6700965+00:00",
     "releaseNotes":  [
-                         "HMI 화면이 마지막으로 사용한 보기 배율을 다음 실행에서도 유지합니다."
+                         "기존 시퀀스 로직 파일을 직접 선택하여 현재 프로젝트로 가져올 수 있습니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "en":  [
-                                              "The HMI screen now retains the last-used view zoom for the next session."
+                                              "Legacy sequence logic files can now be selected and imported into the current project."
                                           ],
                                    "ko":  [
-                                              "HMI 화면이 마지막으로 사용한 보기 배율을 다음 실행에서도 유지합니다."
+                                              "기존 시퀀스 로직 파일을 직접 선택하여 현재 프로젝트로 가져올 수 있습니다."
                                           ],
                                    "ja":  [
-                                              "HMI 画面で最後に使用した表示倍率が次回起動時にも維持されるようになりました。"
+                                              "既存のシーケンスロジックファイルを選択し、現在のプロジェクトにインポートできるようになりました。"
                                           ],
                                    "zh-CN":  [
-                                                 "HMI 画面现在会在下次启动时保留上次使用的显示缩放比例。"
+                                                 "现在可以选择旧版顺序逻辑文件并将其导入当前项目。"
                                              ],
                                    "de":  [
-                                              "Der HMI-Bildschirm behält nun den zuletzt verwendeten Ansichtszoom für den nächsten Start bei."
+                                              "Ältere Sequenzlogikdateien können jetzt ausgewählt und in das aktuelle Projekt importiert werden."
                                           ],
                                    "es":  [
-                                              "La pantalla HMI conserva ahora el último nivel de zoom utilizado para la siguiente sesión."
+                                              "Ahora se pueden seleccionar archivos de lógica de secuencia heredados e importarlos en el proyecto actual."
                                           ]
                                }
 }
