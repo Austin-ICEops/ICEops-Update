@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.602.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.602.0/ICEops_Setup_8.0.602.0.exe",
-    "sha256":  "35d46fd1ca8094d8d4f971a768c81c0190adfa1055e4880d6a83474872d4c431",
-    "fileName":  "ICEops_Setup_8.0.602.0.exe",
+    "version":  "8.0.603.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.603.0/ICEops_Setup_8.0.603.0.exe",
+    "sha256":  "06a81a8ceaaf03799bdcc5f5f2019cbdfaa4869a32566b595c228d79b75cfc20",
+    "fileName":  "ICEops_Setup_8.0.603.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-09-07T15:25:05.7369656+00:00",
+    "publishedAtUtc":  "2026-09-07T20:19:27.8987631+00:00",
     "releaseNotes":  [
                          "NR 센서 진단 결과와 현재 설정을 이해하기 쉬운 문구로 표시합니다.",
                          "V1396 종료 출력 현장 검증 기록을 프로젝트에 포함했습니다."
