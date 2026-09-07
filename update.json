@@ -1,40 +1,40 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.595.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.595.0/ICEops_Setup_8.0.595.0.exe",
-    "sha256":  "188426f12a2d8f9155752ea250d0bd5631cbaf432644b4be25bf355f0b1079bb",
-    "fileName":  "ICEops_Setup_8.0.595.0.exe",
+    "version":  "8.0.596.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.596.0/ICEops_Setup_8.0.596.0.exe",
+    "sha256":  "f1cbeb489714c8f82fc0a86aa17f9d4efc9e619f33aa0c74c3d755807705fc48",
+    "fileName":  "ICEops_Setup_8.0.596.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-09-07T08:34:52.9825653+00:00",
+    "publishedAtUtc":  "2026-09-07T08:56:03.0170946+00:00",
     "releaseNotes":  [
-                         "ICA-AI-I/U 및 ICA-AI-RTD 컨버터 전용 HMI 프레임과 평균 필터 프리셋을 추가했습니다.",
-                         "메인카드 로고와 표시 제품명을 마스터·포트별로 저장할 수 있습니다. 기존 글꼴을 유지합니다."
+                         "소프트웨어 종료 및 전체 연결 해제 시 실행 중 스캔이 마스터 정보를 먼저 지워 밸브·ICA 등의 종료 출력이 누락될 수 있던 경합을 수정했습니다.",
+                         "리테인 값과 운전 중 출력 유지 정책은 보존하고, 종료 출력 완료 후 마스터·포트 정보를 정리합니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
-                                              "ICA-AI-I/U 및 ICA-AI-RTD 컨버터 전용 HMI 프레임과 평균 필터 프리셋을 추가했습니다.",
-                                              "메인카드 로고와 표시 제품명을 마스터·포트별로 저장할 수 있습니다. 기존 글꼴을 유지합니다."
+                                              "소프트웨어 종료 및 전체 연결 해제 시 실행 중 스캔이 마스터 정보를 먼저 지워 밸브·ICA 등의 종료 출력이 누락될 수 있던 경합을 수정했습니다.",
+                                              "리테인 값과 운전 중 출력 유지 정책은 보존하고, 종료 출력 완료 후 마스터·포트 정보를 정리합니다."
                                           ],
                                    "en":  [
-                                              "Added dedicated ICA-AI-I/U and ICA-AI-RTD converter HMI frames and averaging presets.",
-                                              "Main-card logos and display names can be saved per master and port, retaining the existing fonts."
+                                              "Fixed a shutdown race where a cancelled scan cleared master bindings before final valve, ICA and other output frames could be sent.",
+                                              "Retained values and running output behavior are preserved; runtime bindings are released after shutdown output completion."
                                           ],
                                    "ja":  [
-                                              "ICA-AI-I/U・ICA-AI-RTDコンバーター専用HMIフレームと平均化プリセットを追加しました。",
-                                              "既存フォントを維持したまま、メインカードのロゴと表示製品名をマスター・ポート別に保存できます。"
+                                              "ソフトウェア終了・全接続解除時にスキャン処理がマスター情報を先に消去し、バルブやICAなどの終了出力が送信されない競合を修正しました。",
+                                              "保持値と運転中の出力動作は維持し、終了出力の完了後にマスター・ポート情報を解放します。"
                                           ],
                                    "zh-CN":  [
-                                                 "新增ICA-AI-I/U和ICA-AI-RTD转换器专用HMI框架及平均滤波预设。",
-                                                 "主卡片的标志和显示产品名称可按主站和端口保存，并保留现有字体。"
+                                                 "修复软件退出或断开全部连接时，扫描提前清除主站绑定，导致阀门、ICA等设备的结束输出未发送的问题。",
+                                                 "保留保持值及运行中的输出行为，在结束输出完成后清理主站和端口信息。"
                                              ],
                                    "de":  [
-                                              "Dedizierte HMI-Rahmen und Mittelwert-Presets für ICA-AI-I/U- und ICA-AI-RTD-Konverter wurden hinzugefügt.",
-                                              "Logos und Anzeigenamen der Hauptkarte können pro Master und Port gespeichert werden. Bestehende Schriftarten bleiben erhalten."
+                                              "Ein Wettlauf beim Beenden wurde behoben: Ein abgebrochener Scan konnte Master-Zuordnungen vor dem Senden der abschließenden Ventil-, ICA- und weiteren Ausgangsrahmen löschen.",
+                                              "Retain-Werte und das Ausgangsverhalten im Betrieb bleiben erhalten. Zuordnungen werden nach Abschluss der Ausgangsbehandlung freigegeben."
                                           ],
                                    "es":  [
-                                              "Se añadieron marcos HMI y preajustes de promedio para los convertidores ICA-AI-I/U e ICA-AI-RTD.",
-                                              "El logotipo y el nombre mostrado en la tarjeta principal se guardan por maestro y puerto, conservando las fuentes existentes."
+                                              "Se corrigió una condición de carrera al cerrar o desconectar todo: el ciclo cancelado podía borrar la asignación del maestro antes de enviar las salidas finales de válvulas, ICA y otros equipos.",
+                                              "Se conservan los valores retenidos y el comportamiento de las salidas durante la operación; las asignaciones se liberan después de completar las salidas de cierre."
                                           ]
                                }
 }
