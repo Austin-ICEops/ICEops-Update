@@ -1,40 +1,40 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.596.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.596.0/ICEops_Setup_8.0.596.0.exe",
-    "sha256":  "f1cbeb489714c8f82fc0a86aa17f9d4efc9e619f33aa0c74c3d755807705fc48",
-    "fileName":  "ICEops_Setup_8.0.596.0.exe",
+    "version":  "8.0.597.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.597.0/ICEops_Setup_8.0.597.0.exe",
+    "sha256":  "4ce3b5985f203beb08956b136aa0aab4501eec05920f828a7cbe24b24f81bd74",
+    "fileName":  "ICEops_Setup_8.0.597.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-09-07T08:56:03.0170946+00:00",
+    "publishedAtUtc":  "2026-09-07T09:19:38.6850391+00:00",
     "releaseNotes":  [
-                         "소프트웨어 종료 및 전체 연결 해제 시 실행 중 스캔이 마스터 정보를 먼저 지워 밸브·ICA 등의 종료 출력이 누락될 수 있던 경합을 수정했습니다.",
-                         "리테인 값과 운전 중 출력 유지 정책은 보존하고, 종료 출력 완료 후 마스터·포트 정보를 정리합니다."
+                         "NR 센서 진단 결과와 현재 설정을 이해하기 쉬운 문구로 표시합니다.",
+                         "V1396 종료 출력 현장 검증 기록을 프로젝트에 포함했습니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
-                                              "소프트웨어 종료 및 전체 연결 해제 시 실행 중 스캔이 마스터 정보를 먼저 지워 밸브·ICA 등의 종료 출력이 누락될 수 있던 경합을 수정했습니다.",
-                                              "리테인 값과 운전 중 출력 유지 정책은 보존하고, 종료 출력 완료 후 마스터·포트 정보를 정리합니다."
+                                              "NR 센서 진단 결과와 현재 설정을 이해하기 쉬운 문구로 표시합니다.",
+                                              "V1396 종료 출력 현장 검증 기록을 프로젝트에 포함했습니다."
                                           ],
                                    "en":  [
-                                              "Fixed a shutdown race where a cancelled scan cleared master bindings before final valve, ICA and other output frames could be sent.",
-                                              "Retained values and running output behavior are preserved; runtime bindings are released after shutdown output completion."
+                                              "NR sensor diagnostics and current settings now use clearer operator-facing descriptions.",
+                                              "The V1396 shutdown output field verification record is included in the project."
                                           ],
                                    "ja":  [
-                                              "ソフトウェア終了・全接続解除時にスキャン処理がマスター情報を先に消去し、バルブやICAなどの終了出力が送信されない競合を修正しました。",
-                                              "保持値と運転中の出力動作は維持し、終了出力の完了後にマスター・ポート情報を解放します。"
+                                              "NRセンサーの診断結果と現在の設定を分かりやすい表現で表示します。",
+                                              "V1396終了出力の現場検証記録をプロジェクトに同梱しました。"
                                           ],
                                    "zh-CN":  [
-                                                 "修复软件退出或断开全部连接时，扫描提前清除主站绑定，导致阀门、ICA等设备的结束输出未发送的问题。",
-                                                 "保留保持值及运行中的输出行为，在结束输出完成后清理主站和端口信息。"
+                                                 "NR传感器诊断结果和当前设置采用更易懂的说明。",
+                                                 "项目包含V1396结束输出现场验证记录。"
                                              ],
                                    "de":  [
-                                              "Ein Wettlauf beim Beenden wurde behoben: Ein abgebrochener Scan konnte Master-Zuordnungen vor dem Senden der abschließenden Ventil-, ICA- und weiteren Ausgangsrahmen löschen.",
-                                              "Retain-Werte und das Ausgangsverhalten im Betrieb bleiben erhalten. Zuordnungen werden nach Abschluss der Ausgangsbehandlung freigegeben."
+                                              "NR-Sensordiagnosen und aktuelle Einstellungen werden verständlicher beschrieben.",
+                                              "Das Feldprüfprotokoll der V1396-Abschaltausgänge ist im Projekt enthalten."
                                           ],
                                    "es":  [
-                                              "Se corrigió una condición de carrera al cerrar o desconectar todo: el ciclo cancelado podía borrar la asignación del maestro antes de enviar las salidas finales de válvulas, ICA y otros equipos.",
-                                              "Se conservan los valores retenidos y el comportamiento de las salidas durante la operación; las asignaciones se liberan después de completar las salidas de cierre."
+                                              "Los diagnósticos y ajustes actuales del sensor NR se muestran con descripciones más claras.",
+                                              "Se incluye en el proyecto el registro de verificación en campo de las salidas de cierre V1396."
                                           ]
                                }
 }
