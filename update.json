@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.593.0",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.593.0/ICEops_Setup_8.0.593.0.exe",
-    "sha256":  "96e6bc5f5704c7d5eb83dc8833f00c589924e6657ebbc9606d621f31f5230882",
-    "fileName":  "ICEops_Setup_8.0.593.0.exe",
+    "version":  "8.0.594.0",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.594.0/ICEops_Setup_8.0.594.0.exe",
+    "sha256":  "531912aff29727847a7f93e3799e5b77c8ac44a60157b2f334cba32e4a0fbf36",
+    "fileName":  "ICEops_Setup_8.0.594.0.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-09-07T04:05:06.2596326+00:00",
+    "publishedAtUtc":  "2026-09-07T04:22:56.6352656+00:00",
     "releaseNotes":  [
                          "기존 시퀀스 로직 파일을 직접 선택하여 현재 프로젝트로 가져올 수 있습니다."
                      ],
