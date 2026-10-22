@@ -1,12 +1,12 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.34",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.34/ICEops_Setup_8.0.761.34.exe",
-    "sha256":  "92c54e38d21b31c71ba5fd16f2146e4eabb16b912c18f415449973a945d77fe9",
-    "fileName":  "ICEops_Setup_8.0.761.34.exe",
+    "version":  "8.0.761.36",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.36/ICEops_Setup_8.0.761.36.exe",
+    "sha256":  "4300a28ce674b0d42954cca4730fa87e48549f0e9c0f3868ecf7e81b7eef9887",
+    "fileName":  "ICEops_Setup_8.0.761.36.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-10-22T04:55:34.1901156+00:00",
+    "publishedAtUtc":  "2026-10-22T05:59:13.1349157+00:00",
     "releaseNotes":  [
                          "진단 자료 준비 상태를 즉시 표시하고, 5초 이상 걸리면 대기 안내를 표시합니다.",
                          "자료 준비 후 저장 위치를 선택하며, 취소·실패 시 임시 파일을 정리합니다."
