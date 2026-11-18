@@ -1,40 +1,40 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.110",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.110/ICEops_Setup_8.0.761.110.exe",
-    "sha256":  "a9358b0ac31c1a5aebe907c3aadd072904c3b6c9dd8650272371c1724059e4c1",
-    "fileName":  "ICEops_Setup_8.0.761.110.exe",
+    "version":  "8.0.761.111",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.111/ICEops_Setup_8.0.761.111.exe",
+    "sha256":  "1c1b81aee05a1dbb92f45c3ac23d44bd454ebcea271dc2c3bae323059c0d17ea",
+    "fileName":  "ICEops_Setup_8.0.761.111.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-11-18T07:57:27.5402874+00:00",
+    "publishedAtUtc":  "2026-11-18T10:00:59.9270668+00:00",
     "releaseNotes":  [
-                         "도움말은 AI가 선택한 원문 구절 ID를 검증해 인용하며, 본문·원문·문서 소유권을 독립적으로 확인합니다.",
-                         "프로그램 기능 비교 질문을 도움말로 분류하고, 질문 대상 스냅샷의 시각을 조회 후 비교해 정상 데이터를 미래 시각으로 오인하지 않도록 수정했습니다. 메인과 서버 V110을 함께 적용합니다."
+                         "AI 분석이 연결됨·현재 값 또는 장치 없음처럼 확인된 상태를 \u0027현재 상태 확인 불가\u0027로 설명하지 않도록 지시와 검증을 보완했습니다. 정상/비정상 판정 미수행(NOT EVALUATED)과 관측 상태를 구분합니다.",
+                         "용도·해석 질문(예: 알람 0건의 의미, 기준 없음의 의미, 일부 평가 범위)을 도움말로 처리합니다. 메인과 서버 V111을 함께 적용합니다."
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
-                                              "도움말은 AI가 선택한 원문 구절 ID를 검증해 인용하며, 본문·원문·문서 소유권을 독립적으로 확인합니다.",
-                                              "프로그램 기능 비교 질문을 도움말로 분류하고, 질문 대상 스냅샷의 시각을 조회 후 비교해 정상 데이터를 미래 시각으로 오인하지 않도록 수정했습니다. 메인과 서버 V110을 함께 적용합니다."
+                                              "AI 분석이 연결됨·현재 값 또는 장치 없음처럼 확인된 상태를 \u0027현재 상태 확인 불가\u0027로 설명하지 않도록 지시와 검증을 보완했습니다. 정상/비정상 판정 미수행(NOT EVALUATED)과 관측 상태를 구분합니다.",
+                                              "용도·해석 질문(예: 알람 0건의 의미, 기준 없음의 의미, 일부 평가 범위)을 도움말로 처리합니다. 메인과 서버 V111을 함께 적용합니다."
                                           ],
                                    "en":  [
-                                              "Help citations resolve explicitly selected authored passage IDs with independent client provenance verification.",
-                                              "Program comparisons route to documentation; question-target freshness uses a post-read clock. Apply main and server V110 together."
+                                              "AI analysis no longer describes an observed state (connected with a value, or no device) as \u0027current state unknown\u0027; the withheld normal/abnormal verdict is reported separately.",
+                                              "Purpose and interpretation questions (zero alarms, missing criteria, partial coverage) route to help. Apply main and server V111 together."
                                           ],
                                    "ja":  [
-                                              "ヘルプはAIが選択した原文の識別子を検証し、クライアントでも出典を独立して確認します。",
-                                              "機能比較をヘルプに分類し、取得後の時刻で対象スナップショットの鮮度を確認します。メインとサーバーV110を一緒に適用してください。"
+                                              "AI分析は、接続済み・現在値やデバイスなしなど確認済みの状態を「現在の状態は確認できません」と説明しないよう指示と検証を補強しました。正常/異常の判定保留と観測状態を区別します。",
+                                              "用途・解釈の質問（アラーム0件、基準なし、一部評価）をヘルプとして処理します。メインとサーバーV111を一緒に適用します。"
                                           ],
                                    "zh-CN":  [
-                                                 "帮助引用使用AI明确选择的原文片段标识，并由客户端独立验证来源。",
-                                                 "功能比较归入帮助；读取快照后检查时间，避免把新数据误认为未来数据。请同时更新主程序和V110服务器。"
+                                                 "AI分析不再将已确认的状态（已连接及当前值、无设备）描述为“当前状态无法确认”；正常/异常判定未执行与观测状态分开说明。",
+                                                 "用途和解读类问题（报警0条、无判定标准、部分评估）按帮助处理。请同时应用主程序和服务器V111。"
                                              ],
                                    "de":  [
-                                              "Hilfezitate verwenden ausdrücklich gewählte Originaltext-IDs und eine unabhängige Quellenprüfung im Client.",
-                                              "Funktionsvergleiche werden als Hilfe erkannt; Snapshot-Zeitstempel werden erst nach dem Lesen geprüft. Hauptprogramm und Server V110 gemeinsam aktualisieren."
+                                              "Die KI-Analyse beschreibt einen beobachteten Zustand (verbunden mit Wert oder kein Gerät) nicht mehr als „aktueller Zustand unbekannt“; das ausstehende Normal/Abnormal-Urteil wird getrennt genannt.",
+                                              "Fragen zu Zweck und Bedeutung (null Alarme, fehlende Kriterien, Teilbewertung) werden als Hilfe beantwortet. Haupt- und Serverversion V111 zusammen anwenden."
                                           ],
                                    "es":  [
-                                              "Las citas resuelven identificadores de pasajes originales elegidos por la IA y el cliente verifica su procedencia.",
-                                              "Las comparaciones de funciones se reconocen como ayuda; la vigencia se comprueba después de leer la instantánea. Actualice el programa y el servidor V110 juntos."
+                                              "El análisis de IA ya no describe un estado observado (conectado con valor o sin dispositivo) como «estado actual desconocido»; el veredicto normal/anormal pendiente se indica por separado.",
+                                              "Las preguntas de uso e interpretación (cero alarmas, sin criterios, cobertura parcial) se responden como ayuda. Aplique juntos el programa principal y el servidor V111."
                                           ]
                                }
 }
