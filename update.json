@@ -1,13 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.115",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.115/ICEops_Setup_8.0.761.115.exe",
-    "sha256":  "251ceabece0bc6a33b9f2ac6cd9673c1f1c3aba481e7a3ca8b9fa96e69455402",
-    "fileName":  "ICEops_Setup_8.0.761.115.exe",
+    "version":  "8.0.761.116",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.116/ICEops_Setup_8.0.761.116.exe",
+    "sha256":  "17899b28ce636cf8804727174f3b511747f84ea97239a45a765561fef2d19c31",
+    "fileName":  "ICEops_Setup_8.0.761.116.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-11-19T02:19:16.0326083+00:00",
+    "publishedAtUtc":  "2026-11-19T04:12:00.0876200+00:00",
     "releaseNotes":  [
+                         "사용자 학습은 창을 닫아도 끝까지 진행됩니다. 진행 중에 창을 다시 열면 진행률이 이어서 보이고, 끝나면 알림과 함께 Home 카드에 바로 반영됩니다. 학습은 한 번에 하나씩 진행됩니다. 진단 화면의 시스템 진단 탭은 정리했고, 진단 화면은 DB 모니터부터 열립니다.",
                          "사용자 학습 창을 점검해 고쳤습니다. 마스터·학습 데이터·기간이 이름으로 보이고, 장치/Signal 후보가 큰 DB에서도 바로 나오며, 학습 시작·Signal 새로고침·다시 학습·활성화 버튼이 상태에 맞게 켜집니다. 창을 다시 열 때 프로그램이 종료되던 문제도 고쳤습니다. [사용자 학습] 칩은 숫자 신호가 있는 장치에만 나오고, 모든 마스터 카드에서 IODD 해석이 끝나면 바로 반영됩니다. 시작 로그와 진단 ZIP에 실행 중인 빌드 정보가 기록됩니다.",
                          "알람 로그에서 행을 더블클릭하면 그 포트의 트렌드가 알람 시점으로 열립니다. Home 마스터 개요에 학습 기준이 적용된 포트 수(학습 n)를 표시하고, 장치나 신호가 바뀌어 학습 기준이 맞지 않는 포트에는 [다시 학습] 안내가 나옵니다.",
                          "Home 포트 카드에 맥락 안내를 추가했습니다. 기준이 없어 정상/비정상 판정을 하지 않는 포트에는 [사용자 학습] 칩이 보이고, 누르면 그 마스터·포트가 선택된 상태로 사용자 학습 창이 열립니다. 학습한 기준선이 적용되면 칩 대신 \u0027학습 기준\u0027 표시가 나옵니다. 오른쪽 클릭으로 7일 동안 숨길 수 있습니다.",
@@ -17,6 +18,7 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
+                                              "사용자 학습은 창을 닫아도 끝까지 진행됩니다. 진행 중에 창을 다시 열면 진행률이 이어서 보이고, 끝나면 알림과 함께 Home 카드에 바로 반영됩니다. 학습은 한 번에 하나씩 진행됩니다. 진단 화면의 시스템 진단 탭은 정리했고, 진단 화면은 DB 모니터부터 열립니다.",
                                               "사용자 학습 창을 점검해 고쳤습니다. 마스터·학습 데이터·기간이 이름으로 보이고, 장치/Signal 후보가 큰 DB에서도 바로 나오며, 학습 시작·Signal 새로고침·다시 학습·활성화 버튼이 상태에 맞게 켜집니다. 창을 다시 열 때 프로그램이 종료되던 문제도 고쳤습니다. [사용자 학습] 칩은 숫자 신호가 있는 장치에만 나오고, 모든 마스터 카드에서 IODD 해석이 끝나면 바로 반영됩니다. 시작 로그와 진단 ZIP에 실행 중인 빌드 정보가 기록됩니다.",
                                               "알람 로그에서 행을 더블클릭하면 그 포트의 트렌드가 알람 시점으로 열립니다. Home 마스터 개요에 학습 기준이 적용된 포트 수(학습 n)를 표시하고, 장치나 신호가 바뀌어 학습 기준이 맞지 않는 포트에는 [다시 학습] 안내가 나옵니다.",
                                               "Home 포트 카드에 맥락 안내를 추가했습니다. 기준이 없어 정상/비정상 판정을 하지 않는 포트에는 [사용자 학습] 칩이 보이고, 누르면 그 마스터·포트가 선택된 상태로 사용자 학습 창이 열립니다. 학습한 기준선이 적용되면 칩 대신 \u0027학습 기준\u0027 표시가 나옵니다. 오른쪽 클릭으로 7일 동안 숨길 수 있습니다.",
@@ -25,6 +27,7 @@
                                               "AI 분석 사례(질문·측정값·장치명·마스터/포트 구성)는 개선을 위해 이 PC의 %LOCALAPPDATA%\\ICEops\\ai_cases에만 저장되며, 연락처 형식의 개인정보는 가려집니다. 자동 전송은 없고, 진단 ZIP을 저장할 때 포함 여부를 직접 고릅니다. 저장을 끄려면 ai_server.json에 \"aiCaseCapture\": false를 넣습니다."
                                           ],
                                    "en":  [
+                                              "Learned Baseline training now runs to completion even after the window is closed. Reopening the window shows the running progress; when it finishes, a notification appears and the Home cards update at once. One training runs at a time. The System diagnosis tab was removed from Diagnostics, which now opens on the DB monitor.",
                                               "The Learned Baseline window was reviewed and fixed: master, data source and period show their names, device/signal candidates load quickly even on a large DB, and Start, Refresh signals, Retrain and Enable follow the current state. Reopening the window no longer closes ICEops. The [Learned Baseline] chip appears only for devices with a numeric signal and updates on every master card as soon as IODD interpretation completes. The running build is recorded in the startup log and the diagnostic ZIP.",
                                               "Double-click a row in the alarm log to open that port\u0027s trend at the alarm moment. The Home master overview shows how many ports have learned criteria (Learned n), and ports whose learned baseline no longer matches the device or signal show a [Relearn] hint.",
                                               "Home port cards now show context hints. A port without criteria (no normal/abnormal verdict) shows a [Learned Baseline] chip; clicking it opens Learned Baseline already set to that master and port. Once a learned baseline is applied, the chip becomes a \u0027Learned criteria\u0027 marker. Right-click to hide a hint for 7 days.",
@@ -33,6 +36,7 @@
                                               "AI analysis cases (questions, measured values, device names, master/port configuration) are kept only on this PC under %LOCALAPPDATA%\\ICEops\\ai_cases to improve the AI; contact details are masked. Nothing is sent automatically; you choose whether to include them when saving a diagnostic ZIP. To turn recording off, set \"aiCaseCapture\": false in ai_server.json."
                                           ],
                                    "ja":  [
+                                              "ユーザー学習はウィンドウを閉じても最後まで続きます。実行中にウィンドウを開き直すと進捗が表示され、完了すると通知とともにHomeカードにすぐ反映されます。学習は一度に一つずつ実行されます。診断画面のシステム診断タブを整理し、診断画面はDBモニターから開きます。",
                                               "ユーザー学習ウィンドウを点検して修正しました。マスター・学習データ・期間が名前で表示され、大きなDBでもデバイス/Signal候補がすぐに表示されます。学習開始・Signal更新・再学習・有効化ボタンが状態に合わせて有効になります。ウィンドウを再度開くとICEopsが終了する問題も修正しました。[ユーザー学習]チップは数値信号のあるデバイスにのみ表示され、各マスターカードでIODD解釈が完了するとすぐに反映されます。起動ログと診断ZIPに実行中のビルド情報を記録します。",
                                               "アラームログの行をダブルクリックすると、そのポートのトレンドがアラーム時点で開きます。Home のマスター概要に学習基準が適用されたポート数(学習 n)を表示し、デバイスや信号が変わって学習基準が合わないポートには[再学習]の案内が表示されます。",
                                               "Home のポートカードに状況に応じた案内を追加しました。基準がなく正常/異常判定を行っていないポートには[ユーザー学習]チップが表示され、クリックするとそのマスター・ポートが選択された状態でユーザー学習画面が開きます。学習した基準線が適用されるとチップの代わりに「学習基準」が表示されます。右クリックで 7 日間非表示にできます。",
@@ -41,6 +45,7 @@
                                               "AI 分析事例(質問・測定値・デバイス名・マスター/ポート構成)は改善のためこの PC の %LOCALAPPDATA%\\ICEops\\ai_cases にのみ保存され、連絡先形式の個人情報は伏せられます。自動送信はなく、診断 ZIP の保存時に含めるかを選択します。記録を止めるには ai_server.json に \"aiCaseCapture\": false を設定します。"
                                           ],
                                    "zh-CN":  [
+                                                 "关闭窗口后用户学习仍会继续直至完成。学习进行中重新打开窗口可看到进度，完成后会弹出通知并立即更新 Home 卡片。一次只运行一个学习。已移除诊断画面中的系统诊断选项卡，诊断画面现在从数据库监视器打开。",
                                                  "检查并修复了用户学习窗口：主站、学习数据和期间显示为名称，即使数据库很大也能立即列出设备/信号候选，开始学习、刷新信号、重新学习和启用按钮会随状态正确启用。修复了再次打开窗口时 ICEops 退出的问题。[用户学习] 标签仅对有数值信号的设备显示，并在各主站卡片完成 IODD 解析后立即更新。启动日志和诊断 ZIP 会记录正在运行的版本信息。",
                                                  "在报警日志中双击某行，将在报警时刻打开该端口的趋势。Home 主站概览显示已应用学习标准的端口数(学习 n)；设备或信号变化导致学习基线不再匹配的端口会显示[重新学习]提示。",
                                                  "Home 端口卡片新增情境提示。没有标准(不进行正常/异常判定)的端口会显示[用户学习]标签，点击后将以该主站和端口为选中状态打开用户学习窗口。应用已学习的基线后，标签变为“学习标准”标识。右键可隐藏 7 天。",
@@ -49,6 +54,7 @@
                                                  "AI 分析案例(问题、测量值、设备名称、主站/端口配置)仅为改进 AI 保存在此电脑的 %LOCALAPPDATA%\\ICEops\\ai_cases 中，联系方式类个人信息会被遮盖。不会自动发送；保存诊断 ZIP 时由您选择是否包含。如需关闭记录，请在 ai_server.json 中设置 \"aiCaseCapture\": false。"
                                              ],
                                    "de":  [
+                                              "Das Lernen der Learned Baseline läuft auch nach dem Schließen des Fensters bis zum Ende weiter. Beim erneuten Öffnen wird der laufende Fortschritt angezeigt; nach Abschluss erscheint eine Meldung und die Home-Karten werden sofort aktualisiert. Es läuft jeweils nur ein Lernvorgang. Der Reiter „Systemdiagnose“ wurde aus der Diagnose entfernt; sie öffnet jetzt mit dem DB-Monitor.",
                                               "Das Fenster „Learned Baseline“ wurde geprüft und korrigiert: Master, Datenquelle und Zeitraum werden mit Namen angezeigt, Geräte-/Signalkandidaten erscheinen auch bei großer DB sofort, und Lernen starten, Signale aktualisieren, Neu lernen und Aktivieren folgen dem aktuellen Zustand. Erneutes Öffnen des Fensters beendet ICEops nicht mehr. Der Chip [Learned Baseline] erscheint nur bei Geräten mit numerischem Signal und wird auf allen Master-Karten aktualisiert, sobald die IODD-Auswertung abgeschlossen ist. Der laufende Build wird im Startprotokoll und im Diagnose-ZIP festgehalten.",
                                               "Ein Doppelklick auf eine Zeile im Alarmprotokoll öffnet den Trend dieses Ports zum Alarmzeitpunkt. Die Home-Masterübersicht zeigt die Anzahl der Ports mit gelernten Kriterien (Gelernt n); Ports, deren gelernte Baseline nicht mehr zu Gerät oder Signal passt, zeigen den Hinweis [Neu lernen].",
                                               "Die Home-Portkarten zeigen jetzt Kontexthinweise. Ein Port ohne Kriterien (keine Normal/abnormal-Bewertung) zeigt einen [Benutzerlernen]-Chip; ein Klick öffnet Benutzerlernen bereits für diesen Master und Port. Sobald eine gelernte Baseline angewendet ist, erscheint stattdessen die Markierung „Gelernte Kriterien“. Per Rechtsklick 7 Tage ausblenden.",
@@ -57,6 +63,7 @@
                                               "KI-Analysefälle (Fragen, Messwerte, Gerätenamen, Master-/Port-Konfiguration) werden zur Verbesserung der KI nur auf diesem PC unter %LOCALAPPDATA%\\ICEops\\ai_cases gespeichert; Kontaktdaten werden maskiert. Es wird nichts automatisch gesendet; beim Speichern eines Diagnose-ZIP entscheiden Sie, ob sie enthalten sind. Zum Abschalten \"aiCaseCapture\": false in ai_server.json setzen."
                                           ],
                                    "es":  [
+                                              "El entrenamiento de Learned Baseline continúa hasta el final aunque se cierre la ventana. Al volver a abrirla se ve el progreso en curso; al terminar aparece una notificación y las tarjetas de Home se actualizan de inmediato. Se ejecuta un entrenamiento a la vez. Se quitó la pestaña Diagnóstico del sistema de Diagnóstico, que ahora se abre en el monitor de BD.",
                                               "Se revisó y corrigió la ventana de Learned Baseline: el maestro, la fuente de datos y el periodo se muestran con su nombre, los candidatos de dispositivo/señal aparecen enseguida incluso con una base de datos grande, y los botones Iniciar, Actualizar señales, Reentrenar y Activar siguen el estado actual. Volver a abrir la ventana ya no cierra ICEops. El chip [Learned Baseline] aparece solo en dispositivos con una señal numérica y se actualiza en todas las tarjetas de maestro en cuanto termina la interpretación IODD. La compilación en ejecución se registra en el registro de inicio y en el ZIP de diagnóstico.",
                                               "Haga doble clic en una fila del registro de alarmas para abrir la tendencia de ese puerto en el momento de la alarma. La vista general de maestros en Home muestra cuántos puertos tienen criterio aprendido (Aprendido n), y los puertos cuya línea base ya no coincide con el dispositivo o la señal muestran la sugerencia [Volver a aprender].",
                                               "Las tarjetas de puerto de Home muestran ahora sugerencias contextuales. Un puerto sin criterios (sin veredicto normal/anormal) muestra un chip [Aprendizaje de usuario]; al hacer clic se abre Aprendizaje de usuario ya ajustado a ese maestro y puerto. Cuando se aplica una línea base aprendida, el chip pasa a ser la marca «Criterio aprendido». Clic derecho para ocultarla 7 días.",
