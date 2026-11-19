@@ -1,13 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.118",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.118/ICEops_Setup_8.0.761.118.exe",
-    "sha256":  "21164aa15d4b3a74509b0e99aa4aa3efcf5f857010e1c7f869f417441169ddb8",
-    "fileName":  "ICEops_Setup_8.0.761.118.exe",
+    "version":  "8.0.761.119",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.119/ICEops_Setup_8.0.761.119.exe",
+    "sha256":  "d8a928a7fd0e0ca67cbec85d9fa868ab58cacf122d1bf1034f47083e6312c760",
+    "fileName":  "ICEops_Setup_8.0.761.119.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-11-19T05:08:04.1124167+00:00",
+    "publishedAtUtc":  "2026-11-19T05:40:01.6465024+00:00",
     "releaseNotes":  [
+                         "[화면] 포트 값은 이름을 흐리게, 측정값을 굵게 구분해 표시합니다. 연결되지 않은 마스터 카드는 흐리게 표시되고(선택·알람 시 제외), 출력 제어 버튼은 강조 테두리로 표시됩니다. 알람 목록의 간격과 시각 정렬을 다듬었습니다. 사용자 학습에서 종료일을 오늘로 지정하면 현재 시각까지만 계산합니다.",
                          "[사용자 학습] 칩이 모든 마스터에서 같은 기준으로 표시됩니다. 숫자 신호가 있는 장치와, 켜짐/꺼짐 신호만 있는 센서(근접·포토 센서 등)에 나옵니다. 켜짐/꺼짐 신호는 켜짐 비율과 전환 빈도를 학습합니다. IO-Link 허브, 푸시 버튼 박스, 시그널타워는 제외합니다.",
                          "알람 규칙이 켜져 있는 포트에도 [사용자 학습] 칩이 나옵니다. 알람 규칙과 사용자 학습 기준은 서로 별개로 동작합니다. 알람이 발생 중일 때는 비정상 값을 정상으로 학습하지 않도록 칩을 표시하지 않습니다.",
                          "사용자 학습은 창을 닫아도 끝까지 진행됩니다. 진행 중에 창을 다시 열면 진행률이 이어서 보이고, 끝나면 알림과 함께 Home 카드에 바로 반영됩니다. 학습은 한 번에 하나씩 진행됩니다. 진단 화면의 시스템 진단 탭은 정리했고, 진단 화면은 DB 모니터부터 열립니다.",
@@ -20,6 +21,7 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
+                                              "[화면] 포트 값은 이름을 흐리게, 측정값을 굵게 구분해 표시합니다. 연결되지 않은 마스터 카드는 흐리게 표시되고(선택·알람 시 제외), 출력 제어 버튼은 강조 테두리로 표시됩니다. 알람 목록의 간격과 시각 정렬을 다듬었습니다. 사용자 학습에서 종료일을 오늘로 지정하면 현재 시각까지만 계산합니다.",
                                               "[사용자 학습] 칩이 모든 마스터에서 같은 기준으로 표시됩니다. 숫자 신호가 있는 장치와, 켜짐/꺼짐 신호만 있는 센서(근접·포토 센서 등)에 나옵니다. 켜짐/꺼짐 신호는 켜짐 비율과 전환 빈도를 학습합니다. IO-Link 허브, 푸시 버튼 박스, 시그널타워는 제외합니다.",
                                               "알람 규칙이 켜져 있는 포트에도 [사용자 학습] 칩이 나옵니다. 알람 규칙과 사용자 학습 기준은 서로 별개로 동작합니다. 알람이 발생 중일 때는 비정상 값을 정상으로 학습하지 않도록 칩을 표시하지 않습니다.",
                                               "사용자 학습은 창을 닫아도 끝까지 진행됩니다. 진행 중에 창을 다시 열면 진행률이 이어서 보이고, 끝나면 알림과 함께 Home 카드에 바로 반영됩니다. 학습은 한 번에 하나씩 진행됩니다. 진단 화면의 시스템 진단 탭은 정리했고, 진단 화면은 DB 모니터부터 열립니다.",
@@ -31,6 +33,7 @@
                                               "AI 분석 사례(질문·측정값·장치명·마스터/포트 구성)는 개선을 위해 이 PC의 %LOCALAPPDATA%\\ICEops\\ai_cases에만 저장되며, 연락처 형식의 개인정보는 가려집니다. 자동 전송은 없고, 진단 ZIP을 저장할 때 포함 여부를 직접 고릅니다. 저장을 끄려면 ai_server.json에 \"aiCaseCapture\": false를 넣습니다."
                                           ],
                                    "en":  [
+                                              "[Display] Port values now show the label muted and the measurement in bold. Master cards that are not live are dimmed (except when selected or alarmed), and the output control button has an accent outline. Alarm list spacing and timestamp alignment were refined. In Learned Baseline, an end date of today now counts only up to the current time.",
                                               "The [Learned Baseline] chip follows one rule on every master: it appears for devices with a numeric signal and for sensors with on/off signals only (proximity, photoelectric, …), where the ON ratio and switching rate are learned. IO-Link hubs, push-button boxes and signal towers are excluded.",
                                               "The [Learned Baseline] chip now also appears on ports with an alarm rule enabled; alarm rules and learned criteria are independent. While an alarm is active the chip stays hidden so abnormal values are not learned as normal.",
                                               "Learned Baseline training now runs to completion even after the window is closed. Reopening the window shows the running progress; when it finishes, a notification appears and the Home cards update at once. One training runs at a time. The System diagnosis tab was removed from Diagnostics, which now opens on the DB monitor.",
@@ -42,6 +45,7 @@
                                               "AI analysis cases (questions, measured values, device names, master/port configuration) are kept only on this PC under %LOCALAPPDATA%\\ICEops\\ai_cases to improve the AI; contact details are masked. Nothing is sent automatically; you choose whether to include them when saving a diagnostic ZIP. To turn recording off, set \"aiCaseCapture\": false in ai_server.json."
                                           ],
                                    "ja":  [
+                                              "[表示] ポート値は名称を淡く、測定値を太字で区別して表示します。接続されていないマスターカードは淡く表示され（選択中・アラーム時を除く）、出力制御ボタンは強調枠で表示されます。アラーム一覧の間隔と時刻の整列を調整しました。ユーザー学習で終了日を今日にした場合、現在時刻までのみ計算します。",
                                               "[ユーザー学習]チップはすべてのマスターで同じ基準で表示されます。数値信号のあるデバイスと、オン/オフ信号のみのセンサー（近接・光電センサーなど）に表示され、オン/オフ信号はオン比率と切替頻度を学習します。IO-Linkハブ、押しボタンボックス、シグナルタワーは除外します。",
                                               "アラームルールが有効なポートにも[ユーザー学習]チップが表示されます。アラームルールと学習基準は互いに独立しています。アラーム発生中は異常値を正常として学習しないよう、チップを表示しません。",
                                               "ユーザー学習はウィンドウを閉じても最後まで続きます。実行中にウィンドウを開き直すと進捗が表示され、完了すると通知とともにHomeカードにすぐ反映されます。学習は一度に一つずつ実行されます。診断画面のシステム診断タブを整理し、診断画面はDBモニターから開きます。",
@@ -53,6 +57,7 @@
                                               "AI 分析事例(質問・測定値・デバイス名・マスター/ポート構成)は改善のためこの PC の %LOCALAPPDATA%\\ICEops\\ai_cases にのみ保存され、連絡先形式の個人情報は伏せられます。自動送信はなく、診断 ZIP の保存時に含めるかを選択します。記録を止めるには ai_server.json に \"aiCaseCapture\": false を設定します。"
                                           ],
                                    "zh-CN":  [
+                                                 "[显示] 端口值以淡色显示名称、粗体显示测量值。未在线的主站卡片变暗（选中或报警时除外），输出控制按钮带强调边框。优化了报警列表的间距和时间对齐。用户学习中结束日期选今天时，只计算到当前时间。",
                                                  "[用户学习]标签在所有主站上采用同一规则：显示于有数值信号的设备，以及仅有开/关信号的传感器（接近、光电传感器等），开/关信号学习其接通比例和切换频率。IO-Link 集线器、按钮盒和信号塔除外。",
                                                  "启用了报警规则的端口也会显示[用户学习]标签；报警规则与学习基准相互独立。报警发生期间不显示该标签，以免将异常值学习为正常。",
                                                  "关闭窗口后用户学习仍会继续直至完成。学习进行中重新打开窗口可看到进度，完成后会弹出通知并立即更新 Home 卡片。一次只运行一个学习。已移除诊断画面中的系统诊断选项卡，诊断画面现在从数据库监视器打开。",
@@ -64,6 +69,7 @@
                                                  "AI 分析案例(问题、测量值、设备名称、主站/端口配置)仅为改进 AI 保存在此电脑的 %LOCALAPPDATA%\\ICEops\\ai_cases 中，联系方式类个人信息会被遮盖。不会自动发送；保存诊断 ZIP 时由您选择是否包含。如需关闭记录，请在 ai_server.json 中设置 \"aiCaseCapture\": false。"
                                              ],
                                    "de":  [
+                                              "[Anzeige] Portwerte zeigen die Bezeichnung gedämpft und den Messwert fett. Nicht aktive Master-Karten werden abgeblendet (außer wenn ausgewählt oder mit Alarm), die Schaltfläche für die Ausgangssteuerung erhält einen Akzentrahmen. Abstände und Zeitausrichtung der Alarmliste wurden verfeinert. Bei Learned Baseline zählt ein Enddatum „heute“ nur bis zur aktuellen Uhrzeit.",
                                               "Der Chip [Learned Baseline] folgt auf allen Mastern einer Regel: Er erscheint bei Geräten mit numerischem Signal und bei Sensoren nur mit Ein/Aus-Signalen (Näherungs-, Lichtschranken- usw.), bei denen EIN-Anteil und Schalthäufigkeit gelernt werden. IO-Link-Hubs, Tasterboxen und Signalsäulen sind ausgenommen.",
                                               "Der Chip [Learned Baseline] erscheint jetzt auch bei Ports mit aktivierter Alarmregel; Alarmregeln und gelernte Kriterien sind unabhängig. Solange ein Alarm ansteht, bleibt der Chip ausgeblendet, damit keine abnormalen Werte als normal gelernt werden.",
                                               "Das Lernen der Learned Baseline läuft auch nach dem Schließen des Fensters bis zum Ende weiter. Beim erneuten Öffnen wird der laufende Fortschritt angezeigt; nach Abschluss erscheint eine Meldung und die Home-Karten werden sofort aktualisiert. Es läuft jeweils nur ein Lernvorgang. Der Reiter „Systemdiagnose“ wurde aus der Diagnose entfernt; sie öffnet jetzt mit dem DB-Monitor.",
@@ -75,6 +81,7 @@
                                               "KI-Analysefälle (Fragen, Messwerte, Gerätenamen, Master-/Port-Konfiguration) werden zur Verbesserung der KI nur auf diesem PC unter %LOCALAPPDATA%\\ICEops\\ai_cases gespeichert; Kontaktdaten werden maskiert. Es wird nichts automatisch gesendet; beim Speichern eines Diagnose-ZIP entscheiden Sie, ob sie enthalten sind. Zum Abschalten \"aiCaseCapture\": false in ai_server.json setzen."
                                           ],
                                    "es":  [
+                                              "[Pantalla] Los valores de puerto muestran la etiqueta atenuada y la medición en negrita. Las tarjetas de maestro que no están en línea se atenúan (salvo si están seleccionadas o con alarma) y el botón de control de salida tiene un contorno de acento. Se ajustaron el espaciado y la alineación de la hora en la lista de alarmas. En Learned Baseline, una fecha final de hoy cuenta solo hasta la hora actual.",
                                               "El chip [Learned Baseline] sigue una sola regla en todos los maestros: aparece en dispositivos con una señal numérica y en sensores con solo señales de encendido/apagado (proximidad, fotoeléctricos, …), donde se aprende la proporción de encendido y la frecuencia de conmutación. Se excluyen los hubs IO-Link, las cajas de pulsadores y las torres de señalización.",
                                               "El chip [Learned Baseline] ahora también aparece en puertos con una regla de alarma activada; las reglas de alarma y los criterios aprendidos son independientes. Mientras haya una alarma activa, el chip no se muestra para no aprender valores anormales como normales.",
                                               "El entrenamiento de Learned Baseline continúa hasta el final aunque se cierre la ventana. Al volver a abrirla se ve el progreso en curso; al terminar aparece una notificación y las tarjetas de Home se actualizan de inmediato. Se ejecuta un entrenamiento a la vez. Se quitó la pestaña Diagnóstico del sistema de Diagnóstico, que ahora se abre en el monitor de BD.",
