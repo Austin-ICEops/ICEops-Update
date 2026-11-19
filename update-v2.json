@@ -1,13 +1,15 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.130",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.130/ICEops_Setup_8.0.761.130.exe",
-    "sha256":  "75077a2314a0c7c928a200ebf2f56ef220002e333a1cf203557fb4058cf342c4",
-    "fileName":  "ICEops_Setup_8.0.761.130.exe",
+    "version":  "8.0.761.132",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.132/ICEops_Setup_8.0.761.132.exe",
+    "sha256":  "16068070d995404c4b9b4592e57bb85c49bbd80fafde8407164d720d1876de79",
+    "fileName":  "ICEops_Setup_8.0.761.132.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-11-19T23:06:53.6606191+00:00",
+    "publishedAtUtc":  "2026-11-19T23:43:41.6122175+00:00",
     "releaseNotes":  [
+                         "[HMI] PC에 저장된 영상(MP4)이 초당 최대 30프레임으로 재생되어 이전(15프레임)보다 부드럽습니다. 현장 카메라(RTSP)는 기존 설정 그대로입니다.",
+                         "[화면] 왼쪽 사이드바 바깥 테두리가 내용 높이에 맞춰 끝나, 세로가 긴 화면에서 Analysis Center 아래에 빈 테두리가 남지 않습니다. 내용이 화면보다 길면 이전처럼 스크롤됩니다.",
                          "[홈] 마스터가 연결돼 있어도 새 데이터가 일정 시간(최소 3초, 폴링 주기의 5배) 들어오지 않으면 상태 점이 멈추고 주황색으로 바뀝니다. 점에 마우스를 올리면 \"실시간 데이터 수신 중 / 연결됨 · 새 데이터 없음 / 실시간 아님\"이 표시되며, 전환 시점은 이벤트 로그에 남습니다.",
                          "[홈] 마스터 카드의 연결 표시 점이 ONLINE일 때 천천히 숨쉬듯 깜빡이고, 연결이 끊기면 회색으로 멈춥니다. 점이 멈춰 있으면 실시간이 아니라는 뜻입니다. 동작 줄이기 설정이나 UX 안전 모드에서는 움직이지 않습니다.",
                          "[웹 대시보드] 상단의 SMC 공동 로고와 \"IO-Link Integration Collaboration\" 문구를 없애고 Pepperl+Fuchs 로고만 표시합니다. 포트 카드의 제조사(SMC) 배지는 그대로입니다.",
@@ -32,6 +34,8 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
+                                              "[HMI] PC에 저장된 영상(MP4)이 초당 최대 30프레임으로 재생되어 이전(15프레임)보다 부드럽습니다. 현장 카메라(RTSP)는 기존 설정 그대로입니다.",
+                                              "[화면] 왼쪽 사이드바 바깥 테두리가 내용 높이에 맞춰 끝나, 세로가 긴 화면에서 Analysis Center 아래에 빈 테두리가 남지 않습니다. 내용이 화면보다 길면 이전처럼 스크롤됩니다.",
                                               "[홈] 마스터가 연결돼 있어도 새 데이터가 일정 시간(최소 3초, 폴링 주기의 5배) 들어오지 않으면 상태 점이 멈추고 주황색으로 바뀝니다. 점에 마우스를 올리면 \"실시간 데이터 수신 중 / 연결됨 · 새 데이터 없음 / 실시간 아님\"이 표시되며, 전환 시점은 이벤트 로그에 남습니다.",
                                               "[홈] 마스터 카드의 연결 표시 점이 ONLINE일 때 천천히 숨쉬듯 깜빡이고, 연결이 끊기면 회색으로 멈춥니다. 점이 멈춰 있으면 실시간이 아니라는 뜻입니다. 동작 줄이기 설정이나 UX 안전 모드에서는 움직이지 않습니다.",
                                               "[웹 대시보드] 상단의 SMC 공동 로고와 \"IO-Link Integration Collaboration\" 문구를 없애고 Pepperl+Fuchs 로고만 표시합니다. 포트 카드의 제조사(SMC) 배지는 그대로입니다.",
@@ -55,6 +59,8 @@
                                               "AI 분석 사례(질문·측정값·장치명·마스터/포트 구성)는 개선을 위해 이 PC의 %LOCALAPPDATA%\\ICEops\\ai_cases에만 저장되며, 연락처 형식의 개인정보는 가려집니다. 자동 전송은 없고, 진단 ZIP을 저장할 때 포함 여부를 직접 고릅니다. 저장을 끄려면 ai_server.json에 \"aiCaseCapture\": false를 넣습니다."
                                           ],
                                    "en":  [
+                                              "[HMI] Local video files (MP4) now play at up to 30 frames per second instead of 15, so playback is smoother. Field cameras (RTSP) keep their existing settings.",
+                                              "[UI] The left sidebar border now ends with its content, so no empty bordered area remains under Analysis Center on tall screens. It still scrolls as before when the content is taller than the screen.",
                                               "[Home] If a connected master stops delivering new data for a while (at least 3 s, or 5 poll cycles), its status dot stops breathing and turns amber. Hovering the dot shows \"Live data / Connected, but no new data / Not live\", and each transition is written to the event log.",
                                               "[Home] The status dot on each master card now breathes slowly while the master is ONLINE and stops (grey) when the link drops, so a still dot means \"not live\". It stays still when reduced motion or UX safe mode is on.",
                                               "[Web dashboard] The SMC co-brand logo and the \"IO-Link Integration Collaboration\" caption were removed from the header; only the Pepperl+Fuchs logo remains. Per-port manufacturer badges (SMC) are unchanged.",
@@ -78,6 +84,8 @@
                                               "AI analysis cases (questions, measured values, device names, master/port configuration) are kept only on this PC under %LOCALAPPDATA%\\ICEops\\ai_cases to improve the AI; contact details are masked. Nothing is sent automatically; you choose whether to include them when saving a diagnostic ZIP. To turn recording off, set \"aiCaseCapture\": false in ai_server.json."
                                           ],
                                    "ja":  [
+                                              "[HMI] PCに保存した動画（MP4）が最大30フレーム/秒で再生され、従来（15フレーム）より滑らかになりました。現場カメラ（RTSP）は従来の設定のままです。",
+                                              "[画面] 左サイドバーの外枠が内容の高さで終わるようになり、縦長の画面でも Analysis Center の下に空の枠が残りません。内容が画面より長い場合は従来どおりスクロールします。",
                                               "[ホーム] マスターが接続中でも新しいデータが一定時間（最低3秒、ポーリング周期の5倍）届かない場合、状態ドットが止まりオレンジ色になります。ドットにマウスを合わせると「リアルタイムデータ受信中／接続中・新しいデータなし／リアルタイムではありません」が表示され、切り替わりはイベントログに記録されます。",
                                               "[ホーム] マスターカードの接続ドットが ONLINE の間はゆっくり点滅し、接続が切れるとグレーで止まります。ドットが止まっていればリアルタイムではないという意味です。モーション軽減設定や UX セーフモードでは動きません。",
                                               "[Webダッシュボード] ヘッダーのSMC共同ロゴと「IO-Link Integration Collaboration」の文言を削除し、Pepperl+Fuchsロゴのみを表示します。ポートカードのメーカー（SMC）バッジはそのままです。",
@@ -101,6 +109,8 @@
                                               "AI 分析事例(質問・測定値・デバイス名・マスター/ポート構成)は改善のためこの PC の %LOCALAPPDATA%\\ICEops\\ai_cases にのみ保存され、連絡先形式の個人情報は伏せられます。自動送信はなく、診断 ZIP の保存時に含めるかを選択します。記録を止めるには ai_server.json に \"aiCaseCapture\": false を設定します。"
                                           ],
                                    "zh-CN":  [
+                                                 "[HMI] 本地视频文件（MP4）现以最高每秒 30 帧播放（此前为 15 帧），播放更流畅。现场摄像头（RTSP）保持原有设置。",
+                                                 "[界面] 左侧边栏外框现在随内容高度结束，在较高的屏幕上 Analysis Center 下方不再留下空白边框。内容超出屏幕时仍可像以前一样滚动。",
                                                  "[主页] 主站虽已连接但在一段时间内（至少 3 秒或 5 个轮询周期）未收到新数据时，状态圆点停止闪烁并变为橙色。将鼠标悬停在圆点上会显示“正在接收实时数据 / 已连接 · 无新数据 / 非实时”，每次切换都会记录到事件日志。",
                                                  "[主页] 主站卡片上的状态圆点在 ONLINE 时缓慢呼吸闪烁，断开时变灰并停止，圆点静止即表示非实时。开启减少动态效果或 UX 安全模式时保持静止。",
                                                  "[Web 仪表板] 移除页眉中的 SMC 联合标志和“IO-Link Integration Collaboration”文字，仅显示 Pepperl+Fuchs 标志。端口卡片上的制造商（SMC）徽标保持不变。",
@@ -124,6 +134,8 @@
                                                  "AI 分析案例(问题、测量值、设备名称、主站/端口配置)仅为改进 AI 保存在此电脑的 %LOCALAPPDATA%\\ICEops\\ai_cases 中，联系方式类个人信息会被遮盖。不会自动发送；保存诊断 ZIP 时由您选择是否包含。如需关闭记录，请在 ai_server.json 中设置 \"aiCaseCapture\": false。"
                                              ],
                                    "de":  [
+                                              "[HMI] Lokale Videodateien (MP4) werden jetzt mit bis zu 30 statt 15 Bildern pro Sekunde wiedergegeben und laufen dadurch flüssiger. Feldkameras (RTSP) behalten ihre bisherigen Einstellungen.",
+                                              "[Oberfläche] Der Rahmen der linken Seitenleiste endet jetzt mit ihrem Inhalt, sodass auf hohen Bildschirmen unter Analysis Center kein leerer Rahmenbereich mehr bleibt. Ist der Inhalt höher als der Bildschirm, wird wie bisher gescrollt.",
                                               "[Startseite] Liefert ein verbundener Master eine Zeit lang (mindestens 3 s bzw. 5 Abfragezyklen) keine neuen Daten, hört sein Statuspunkt auf zu pulsieren und wird orange. Beim Überfahren zeigt der Punkt „Live-Daten / Verbunden, aber keine neuen Daten / Nicht live“; jeder Wechsel wird im Ereignisprotokoll vermerkt.",
                                               "[Startseite] Der Statuspunkt jeder Master-Karte pulsiert langsam, solange der Master ONLINE ist, und bleibt grau stehen, wenn die Verbindung abbricht – ein stillstehender Punkt bedeutet „nicht live“. Bei reduzierter Bewegung oder im UX-Sicherheitsmodus bleibt er still.",
                                               "[Web-Dashboard] Das SMC-Co-Branding-Logo und der Schriftzug „IO-Link Integration Collaboration“ wurden aus der Kopfzeile entfernt; nur das Pepperl+Fuchs-Logo bleibt. Herstellerabzeichen (SMC) auf den Portkarten bleiben unverändert.",
@@ -147,6 +159,8 @@
                                               "KI-Analysefälle (Fragen, Messwerte, Gerätenamen, Master-/Port-Konfiguration) werden zur Verbesserung der KI nur auf diesem PC unter %LOCALAPPDATA%\\ICEops\\ai_cases gespeichert; Kontaktdaten werden maskiert. Es wird nichts automatisch gesendet; beim Speichern eines Diagnose-ZIP entscheiden Sie, ob sie enthalten sind. Zum Abschalten \"aiCaseCapture\": false in ai_server.json setzen."
                                           ],
                                    "es":  [
+                                              "[HMI] Los vídeos locales (MP4) se reproducen ahora a hasta 30 fotogramas por segundo en lugar de 15, con una reproducción más fluida. Las cámaras de campo (RTSP) mantienen su configuración.",
+                                              "[Interfaz] El borde de la barra lateral izquierda termina ahora con su contenido, por lo que en pantallas altas ya no queda un área vacía enmarcada bajo Analysis Center. Si el contenido es más alto que la pantalla, se desplaza como antes.",
                                               "[Inicio] Si un maestro conectado deja de entregar datos nuevos durante un tiempo (al menos 3 s o 5 ciclos de sondeo), su punto de estado deja de latir y se vuelve ámbar. Al pasar el ratón se muestra \"Datos en vivo / Conectado, sin datos nuevos / Sin datos en vivo\", y cada cambio se registra en el registro de eventos.",
                                               "[Inicio] El punto de estado de cada tarjeta de maestro late lentamente mientras el maestro está ONLINE y se detiene (gris) cuando se pierde el enlace; un punto quieto significa \"sin datos en vivo\". Permanece quieto con movimiento reducido o en modo seguro de UX.",
                                               "[Panel web] Se eliminaron del encabezado el logotipo conjunto de SMC y el texto \"IO-Link Integration Collaboration\"; solo queda el logotipo de Pepperl+Fuchs. Las insignias de fabricante (SMC) en las tarjetas de puerto no cambian.",
