@@ -1,13 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.121",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.121/ICEops_Setup_8.0.761.121.exe",
-    "sha256":  "990789cce3f1ad3c730bc3462e5749315ddd868f74540e1a54e9fe7f4ec9e60b",
-    "fileName":  "ICEops_Setup_8.0.761.121.exe",
+    "version":  "8.0.761.122",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.122/ICEops_Setup_8.0.761.122.exe",
+    "sha256":  "fe03a4818170d3eff3ffa427763df765ca8cedf7fef1d41a6edf4290a928f3a7",
+    "fileName":  "ICEops_Setup_8.0.761.122.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-11-19T06:22:21.7999797+00:00",
+    "publishedAtUtc":  "2026-11-19T08:05:53.2419101+00:00",
     "releaseNotes":  [
+                         "[HMI] 편집 도구에 좌우 반전(⇆)·상하 반전(⇅) 버튼을 추가했습니다. 모든 라이브러리 객체, 도형, 이미지에 적용되며, 지금 보이는 모양 그대로 뒤집습니다(회전한 상태에서도 화면 기준). 객체 안의 글자는 거울 글자나 거꾸로 된 글자가 되지 않도록 자동으로 바로 세워집니다. 180° 회전할 때의 글자도 바로 읽히도록 고쳤습니다. 장치 카드는 회전과 마찬가지로 제외합니다.",
                          "[화면] 포트 값마다 붙던 \"정보\" 글자를 없애고 연필 아이콘만 남겼습니다(설명을 넣은 값은 설명 표시). 장치 종류가 길면 사용자 학습 칩이 다음 줄로 내려가 잘리지 않습니다. 시그널타워 같은 출력 전용 장치에는 \"출력 전용 장치 · 출력 제어에서 조작\"을 표시합니다. 상단의 모두 연결·모두 해제·AI 분석 버튼은 테마에 맞춘 반투명 색 바탕과 테두리로 바꿨습니다.",
                          "[허브 프리셋] ICA-16DI-G60A-IO(입력 전용 허브)에서도 허브 프리셋을 쓸 수 있습니다. 표준, 고속 센서, 짧은 펄스, NC 입력 프리셋과 채널별 필터·펄스 연장·입력 로직 편집을 지원하고, 쓰기 후 다시 읽어 검증합니다. 출력이 없으므로 출력 안전 상태 항목과 Safe Outputs 프리셋은 표시하지 않습니다.",
                          "[화면] 포트 값은 이름을 흐리게, 측정값을 굵게 구분해 표시합니다. 연결되지 않은 마스터 카드는 흐리게 표시되고(선택·알람 시 제외), 출력 제어 버튼은 강조 테두리로 표시됩니다. 알람 목록의 간격과 시각 정렬을 다듬었습니다. 사용자 학습에서 종료일을 오늘로 지정하면 현재 시각까지만 계산합니다.",
@@ -23,6 +24,7 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
+                                              "[HMI] 편집 도구에 좌우 반전(⇆)·상하 반전(⇅) 버튼을 추가했습니다. 모든 라이브러리 객체, 도형, 이미지에 적용되며, 지금 보이는 모양 그대로 뒤집습니다(회전한 상태에서도 화면 기준). 객체 안의 글자는 거울 글자나 거꾸로 된 글자가 되지 않도록 자동으로 바로 세워집니다. 180° 회전할 때의 글자도 바로 읽히도록 고쳤습니다. 장치 카드는 회전과 마찬가지로 제외합니다.",
                                               "[화면] 포트 값마다 붙던 \"정보\" 글자를 없애고 연필 아이콘만 남겼습니다(설명을 넣은 값은 설명 표시). 장치 종류가 길면 사용자 학습 칩이 다음 줄로 내려가 잘리지 않습니다. 시그널타워 같은 출력 전용 장치에는 \"출력 전용 장치 · 출력 제어에서 조작\"을 표시합니다. 상단의 모두 연결·모두 해제·AI 분석 버튼은 테마에 맞춘 반투명 색 바탕과 테두리로 바꿨습니다.",
                                               "[허브 프리셋] ICA-16DI-G60A-IO(입력 전용 허브)에서도 허브 프리셋을 쓸 수 있습니다. 표준, 고속 센서, 짧은 펄스, NC 입력 프리셋과 채널별 필터·펄스 연장·입력 로직 편집을 지원하고, 쓰기 후 다시 읽어 검증합니다. 출력이 없으므로 출력 안전 상태 항목과 Safe Outputs 프리셋은 표시하지 않습니다.",
                                               "[화면] 포트 값은 이름을 흐리게, 측정값을 굵게 구분해 표시합니다. 연결되지 않은 마스터 카드는 흐리게 표시되고(선택·알람 시 제외), 출력 제어 버튼은 강조 테두리로 표시됩니다. 알람 목록의 간격과 시각 정렬을 다듬었습니다. 사용자 학습에서 종료일을 오늘로 지정하면 현재 시각까지만 계산합니다.",
@@ -37,6 +39,7 @@
                                               "AI 분석 사례(질문·측정값·장치명·마스터/포트 구성)는 개선을 위해 이 PC의 %LOCALAPPDATA%\\ICEops\\ai_cases에만 저장되며, 연락처 형식의 개인정보는 가려집니다. 자동 전송은 없고, 진단 ZIP을 저장할 때 포함 여부를 직접 고릅니다. 저장을 끄려면 ai_server.json에 \"aiCaseCapture\": false를 넣습니다."
                                           ],
                                    "en":  [
+                                              "[HMI] The editor adds Flip horizontally (⇆) and Flip vertically (⇅). They work on every library object, shape and image and mirror the object as it looks now (screen-based, even when rotated). Text inside an object is kept upright automatically, never mirrored or upside-down; text in a 180° rotated object now reads normally too. Device Cards are excluded, as with rotation.",
                                               "[Display] The \"Context\" word on every port value is gone; only the pencil icon remains (values with a description still show it). A long device type now moves the Learned Baseline chip to the next line instead of clipping it. Output-only devices such as signal towers show \"Output-only device · operate via Output Control\". The Connect All, Disconnect All and AI Analysis buttons now use a theme-matched tinted outline instead of solid color blocks.",
                                               "[Hub presets] Hub presets now also work on ICA-16DI-G60A-IO (input-only hub): Standard, Fast sensor, Short pulse and NC inputs, plus per-channel filter, pulse extension and input logic editing, each verified by readback. The output fail-safe field and the Safe Outputs preset are hidden because the device has no outputs.",
                                               "[Display] Port values now show the label muted and the measurement in bold. Master cards that are not live are dimmed (except when selected or alarmed), and the output control button has an accent outline. Alarm list spacing and timestamp alignment were refined. In Learned Baseline, an end date of today now counts only up to the current time.",
@@ -51,6 +54,7 @@
                                               "AI analysis cases (questions, measured values, device names, master/port configuration) are kept only on this PC under %LOCALAPPDATA%\\ICEops\\ai_cases to improve the AI; contact details are masked. Nothing is sent automatically; you choose whether to include them when saving a diagnostic ZIP. To turn recording off, set \"aiCaseCapture\": false in ai_server.json."
                                           ],
                                    "ja":  [
+                                              "[HMI] エディターに左右反転（⇆）と上下反転（⇅）を追加しました。すべてのライブラリオブジェクト、図形、画像に使え、今の見た目のまま反転します（回転中も画面基準）。オブジェクト内の文字は鏡文字や逆さまにならないよう自動で正立します。180° 回転時の文字も正しく読めるようになりました。デバイスカードは回転と同様に対象外です。",
                                               "[表示] ポート値ごとの「Context」表記をなくし、鉛筆アイコンのみにしました（説明を入れた値は説明を表示）。デバイス種別が長い場合、ユーザー学習チップは切れずに次の行へ移ります。シグナルタワーなどの出力専用デバイスには「出力専用デバイス · 出力制御で操作」と表示します。 上部の「すべて接続」「すべて切断」「AI分析」ボタンは、テーマに合わせた半透明の色背景と枠線に変更しました。",
                                               "[ハブプリセット] ICA-16DI-G60A-IO（入力専用ハブ）でもハブプリセットを使用できます。標準・高速センサー・短パルス・NC入力プリセットと、チャネルごとのフィルター・パルス延長・入力ロジック編集に対応し、書込後に読み戻して検証します。出力がないため、出力フェールセーフ項目とSafe Outputsプリセットは表示しません。",
                                               "[表示] ポート値は名称を淡く、測定値を太字で区別して表示します。接続されていないマスターカードは淡く表示され（選択中・アラーム時を除く）、出力制御ボタンは強調枠で表示されます。アラーム一覧の間隔と時刻の整列を調整しました。ユーザー学習で終了日を今日にした場合、現在時刻までのみ計算します。",
@@ -65,6 +69,7 @@
                                               "AI 分析事例(質問・測定値・デバイス名・マスター/ポート構成)は改善のためこの PC の %LOCALAPPDATA%\\ICEops\\ai_cases にのみ保存され、連絡先形式の個人情報は伏せられます。自動送信はなく、診断 ZIP の保存時に含めるかを選択します。記録を止めるには ai_server.json に \"aiCaseCapture\": false を設定します。"
                                           ],
                                    "zh-CN":  [
+                                                 "[HMI] 编辑器新增水平翻转（⇆）和垂直翻转（⇅），适用于所有库对象、图形和图片，按当前外观翻转（旋转后也以屏幕为准）。对象内的文字会自动保持正向，不会出现镜像或倒置；旋转 180° 时的文字也能正常阅读。设备卡片与旋转一样不适用。",
                                                  "[显示] 去掉了每个端口值旁的“Context”字样，只保留铅笔图标（已填写说明的值仍显示说明）。设备类型较长时，用户学习标签会换到下一行，不再被截断。信号塔等仅输出设备显示“仅输出设备 · 通过输出控制操作”。 顶部的全部连接、全部断开和 AI 分析按钮改为与主题匹配的半透明色底和描边。",
                                                  "[集线器预设] ICA-16DI-G60A-IO（仅输入集线器）现在也可使用集线器预设：标准、快速传感器、短脉冲和 NC 输入预设，以及按通道编辑滤波、脉冲延长和输入逻辑，写入后回读验证。由于该设备没有输出，不显示输出故障安全项和 Safe Outputs 预设。",
                                                  "[显示] 端口值以淡色显示名称、粗体显示测量值。未在线的主站卡片变暗（选中或报警时除外），输出控制按钮带强调边框。优化了报警列表的间距和时间对齐。用户学习中结束日期选今天时，只计算到当前时间。",
@@ -79,6 +84,7 @@
                                                  "AI 分析案例(问题、测量值、设备名称、主站/端口配置)仅为改进 AI 保存在此电脑的 %LOCALAPPDATA%\\ICEops\\ai_cases 中，联系方式类个人信息会被遮盖。不会自动发送；保存诊断 ZIP 时由您选择是否包含。如需关闭记录，请在 ai_server.json 中设置 \"aiCaseCapture\": false。"
                                              ],
                                    "de":  [
+                                              "[HMI] Der Editor bietet jetzt Horizontal spiegeln (⇆) und Vertikal spiegeln (⇅) für alle Bibliotheksobjekte, Formen und Bilder; gespiegelt wird so, wie das Objekt gerade aussieht (bildschirmbezogen, auch nach Drehung). Text im Objekt bleibt automatisch aufrecht, nie gespiegelt oder kopfüber; auch bei 180° Drehung ist er normal lesbar. Gerätekarten sind wie beim Drehen ausgenommen.",
                                               "[Anzeige] Das Wort „Context“ an jedem Portwert entfällt, nur das Stiftsymbol bleibt (Werte mit Beschreibung zeigen sie weiterhin). Ein langer Gerätetyp schiebt den Learned-Baseline-Chip in die nächste Zeile, statt ihn abzuschneiden. Reine Ausgabegeräte wie Signalsäulen zeigen „Reines Ausgabegerät · Bedienung über Ausgangssteuerung“. Die Schaltflächen „Alle verbinden“, „Alle trennen“ und „KI-Analyse“ verwenden jetzt eine zum Theme passende getönte Kontur statt voller Farbflächen.",
                                               "[Hub-Presets] Hub-Presets funktionieren jetzt auch mit ICA-16DI-G60A-IO (reiner Eingangs-Hub): Standard, schneller Sensor, kurzer Impuls und NC-Eingänge sowie kanalweise Bearbeitung von Filter, Impulsverlängerung und Eingangslogik, jeweils per Rücklesen geprüft. Das Feld für den Ausgangs-Fail-Safe und das Preset Safe Outputs werden ausgeblendet, da das Gerät keine Ausgänge hat.",
                                               "[Anzeige] Portwerte zeigen die Bezeichnung gedämpft und den Messwert fett. Nicht aktive Master-Karten werden abgeblendet (außer wenn ausgewählt oder mit Alarm), die Schaltfläche für die Ausgangssteuerung erhält einen Akzentrahmen. Abstände und Zeitausrichtung der Alarmliste wurden verfeinert. Bei Learned Baseline zählt ein Enddatum „heute“ nur bis zur aktuellen Uhrzeit.",
@@ -93,6 +99,7 @@
                                               "KI-Analysefälle (Fragen, Messwerte, Gerätenamen, Master-/Port-Konfiguration) werden zur Verbesserung der KI nur auf diesem PC unter %LOCALAPPDATA%\\ICEops\\ai_cases gespeichert; Kontaktdaten werden maskiert. Es wird nichts automatisch gesendet; beim Speichern eines Diagnose-ZIP entscheiden Sie, ob sie enthalten sind. Zum Abschalten \"aiCaseCapture\": false in ai_server.json setzen."
                                           ],
                                    "es":  [
+                                              "[HMI] El editor añade Voltear horizontalmente (⇆) y Voltear verticalmente (⇅) para todos los objetos de biblioteca, formas e imágenes; voltea el objeto tal como se ve ahora (según la pantalla, incluso girado). El texto dentro del objeto se mantiene derecho automáticamente, nunca en espejo ni al revés; con un giro de 180° también se lee normalmente. Las tarjetas de dispositivo quedan excluidas, igual que en el giro.",
                                               "[Pantalla] Se quitó la palabra \"Context\" de cada valor de puerto; solo queda el icono de lápiz (los valores con descripción la siguen mostrando). Un tipo de dispositivo largo mueve la etiqueta Learned Baseline a la siguiente línea en lugar de cortarla. Los dispositivos solo de salida, como torres de señalización, muestran \"Dispositivo solo de salida · se opera desde Control de salida\". Los botones Conectar todo, Desconectar todo y Análisis IA usan ahora un contorno tintado acorde al tema en lugar de bloques de color sólido.",
                                               "[Preajustes de hub] Los preajustes de hub ahora también funcionan con ICA-16DI-G60A-IO (hub solo de entradas): Estándar, Sensor rápido, Pulso corto y Entradas NC, además de la edición por canal de filtro, extensión de pulso y lógica de entrada, verificadas por relectura. El campo de estado seguro de salida y el preajuste Safe Outputs se ocultan porque el dispositivo no tiene salidas.",
                                               "[Pantalla] Los valores de puerto muestran la etiqueta atenuada y la medición en negrita. Las tarjetas de maestro que no están en línea se atenúan (salvo si están seleccionadas o con alarma) y el botón de control de salida tiene un contorno de acento. Se ajustaron el espaciado y la alineación de la hora en la lista de alarmas. En Learned Baseline, una fecha final de hoy cuenta solo hasta la hora actual.",
