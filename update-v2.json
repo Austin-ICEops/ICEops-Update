@@ -1,13 +1,14 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "8.0.761.135",
-    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.135/ICEops_Setup_8.0.761.135.exe",
-    "sha256":  "eae9587cb69c698a059b1b0eb45ad30ec4d20bdecbf347b3e832147a6225c4c6",
-    "fileName":  "ICEops_Setup_8.0.761.135.exe",
+    "version":  "8.0.761.136",
+    "downloadUrl":  "https://github.com/Austin-ICEops/ICEops-Update/releases/download/v8.0.761.136/ICEops_Setup_8.0.761.136.exe",
+    "sha256":  "2fbeb771c4eb8be7aefdd14fea774803950e29000c2ca668aa941b933a5cc8d4",
+    "fileName":  "ICEops_Setup_8.0.761.136.exe",
     "mandatory":  false,
-    "publishedAtUtc":  "2026-11-20T07:34:47.0537352+00:00",
+    "publishedAtUtc":  "2026-11-21T05:47:36.6872017+00:00",
     "releaseNotes":  [
+                         "[홈] 포트 표 머리글의 \"포트\" 옆 ‹ 버튼으로 모델 열(제조사 로고·제품 사진·모델명)을 접을 수 있습니다. 접으면 값 영역이 넓어져 1080p 화면에서도 값이 덜 빡빡하고, 포트 번호에 마우스를 올리면 모델 정보가 보입니다. 설정은 다음 실행에도 유지됩니다.",
                          "[HMI] 레일용 트랙 근접센서(Track Proximity Sensor)에도 다른 라이브러리처럼 현장 연결점(핀·점선)을 달 수 있습니다. 영상 확인용 임시 진단 기록은 제거했습니다.",
                          "[HMI] 장치 카드(상세)가 IODD 값을 4줄까지만 보여주던 것을, 카드 높이에 들어가는 만큼(최소 4줄) 보여주도록 바꿨습니다. 진동센서처럼 값이 많은 장치도 스위칭 신호(SSC)까지 카드에서 볼 수 있습니다.",
                          "[홈] 마스터 카드 상태 점에 마우스를 올렸을 때 화면이 끊기던 문제를 고쳤습니다. 점의 툴팁을 없애고, 연결은 됐는데 새 데이터가 없으면 ONLINE 옆에 주황색 \"데이터 없음\"이 바로 표시됩니다. HMI 영상(MP4) 근처에서 마우스를 움직이면 영상이 끊기던 문제도 함께 고쳤습니다.",
@@ -37,6 +38,7 @@
                      ],
     "releaseNotesByLanguage":  {
                                    "ko":  [
+                                              "[홈] 포트 표 머리글의 \"포트\" 옆 ‹ 버튼으로 모델 열(제조사 로고·제품 사진·모델명)을 접을 수 있습니다. 접으면 값 영역이 넓어져 1080p 화면에서도 값이 덜 빡빡하고, 포트 번호에 마우스를 올리면 모델 정보가 보입니다. 설정은 다음 실행에도 유지됩니다.",
                                               "[HMI] 레일용 트랙 근접센서(Track Proximity Sensor)에도 다른 라이브러리처럼 현장 연결점(핀·점선)을 달 수 있습니다. 영상 확인용 임시 진단 기록은 제거했습니다.",
                                               "[HMI] 장치 카드(상세)가 IODD 값을 4줄까지만 보여주던 것을, 카드 높이에 들어가는 만큼(최소 4줄) 보여주도록 바꿨습니다. 진동센서처럼 값이 많은 장치도 스위칭 신호(SSC)까지 카드에서 볼 수 있습니다.",
                                               "[홈] 마스터 카드 상태 점에 마우스를 올렸을 때 화면이 끊기던 문제를 고쳤습니다. 점의 툴팁을 없애고, 연결은 됐는데 새 데이터가 없으면 ONLINE 옆에 주황색 \"데이터 없음\"이 바로 표시됩니다. HMI 영상(MP4) 근처에서 마우스를 움직이면 영상이 끊기던 문제도 함께 고쳤습니다.",
@@ -65,6 +67,7 @@
                                               "AI 분석 사례(질문·측정값·장치명·마스터/포트 구성)는 개선을 위해 이 PC의 %LOCALAPPDATA%\\ICEops\\ai_cases에만 저장되며, 연락처 형식의 개인정보는 가려집니다. 자동 전송은 없고, 진단 ZIP을 저장할 때 포함 여부를 직접 고릅니다. 저장을 끄려면 ai_server.json에 \"aiCaseCapture\": false를 넣습니다."
                                           ],
                                    "en":  [
+                                              "[Home] A ‹ button next to \"Port\" in the port table header folds the model column (manufacturer logo, product picture, model name). The value area gets the width, so 1080p screens are less crowded; hovering the port number shows the model. The choice is remembered.",
                                               "[HMI] The rail Track Proximity Sensor can now carry a site pin with leader line like other library objects. The temporary video diagnostic log was removed.",
                                               "[HMI] Detailed device cards now show as many IODD values as fit the card height (at least 4) instead of stopping at 4 rows, so devices with many values, such as vibration sensors, also show their switching signals (SSC).",
                                               "[Home] Fixed stuttering when hovering the status dot on a master card. The dot no longer has a tooltip; when the master is connected but no new data arrives, an amber \"NO DATA\" label appears next to ONLINE. Also fixed HMI video (MP4) stuttering while the mouse moves near it.",
@@ -93,6 +96,7 @@
                                               "AI analysis cases (questions, measured values, device names, master/port configuration) are kept only on this PC under %LOCALAPPDATA%\\ICEops\\ai_cases to improve the AI; contact details are masked. Nothing is sent automatically; you choose whether to include them when saving a diagnostic ZIP. To turn recording off, set \"aiCaseCapture\": false in ai_server.json."
                                           ],
                                    "ja":  [
+                                              "[ホーム] ポート表ヘッダーの「ポート」横の ‹ ボタンでモデル列（メーカーロゴ・製品写真・モデル名）を折りたためます。値エリアが広がり 1080p 画面でも窮屈になりにくく、ポート番号にマウスを合わせるとモデル情報が表示されます。設定は次回起動時も保持されます。",
                                               "[HMI] レール用トラック近接センサー（Track Proximity Sensor）にも他のライブラリと同様に現場ピン（ピン・点線）を付けられます。動画確認用の一時診断ログは削除しました。",
                                               "[HMI] 詳細デバイスカードの IODD 値表示を4行固定から、カードの高さに収まるだけ（最低4行）表示するよう変更しました。振動センサーのように値の多いデバイスでもスイッチング信号（SSC）までカードで確認できます。",
                                               "[ホーム] マスターカードの状態ドットにマウスを合わせると画面がカクつく問題を修正しました。ドットのツールチップを廃止し、接続中でも新しいデータがない場合は ONLINE の横にオレンジ色の「データなし」を表示します。 HMI 動画（MP4）の近くでマウスを動かすと動画がカクつく問題も併せて修正しました。",
@@ -121,6 +125,7 @@
                                               "AI 分析事例(質問・測定値・デバイス名・マスター/ポート構成)は改善のためこの PC の %LOCALAPPDATA%\\ICEops\\ai_cases にのみ保存され、連絡先形式の個人情報は伏せられます。自動送信はなく、診断 ZIP の保存時に含めるかを選択します。記録を止めるには ai_server.json に \"aiCaseCapture\": false を設定します。"
                                           ],
                                    "zh-CN":  [
+                                                 "[主页] 端口表头“端口”旁的 ‹ 按钮可折叠型号列（制造商标志、产品图片、型号）。折叠后数值区域更宽，1080p 屏幕上不再拥挤；将鼠标悬停在端口号上可查看型号信息。设置会在下次启动时保留。",
                                                  "[HMI] 轨道接近传感器（Track Proximity Sensor）现在也可以像其他库对象一样添加现场标记（标记点与虚线）。已移除视频检查用的临时诊断日志。",
                                                  "[HMI] 详细设备卡片不再只显示 4 行 IODD 值，而是按卡片高度尽量显示（至少 4 行）。振动传感器等数值较多的设备也能在卡片上看到开关信号（SSC）。",
                                                  "[主页] 修复了将鼠标悬停在主站卡片状态圆点上时画面卡顿的问题。圆点不再显示提示；主站已连接但无新数据时，ONLINE 旁会直接显示橙色“无数据”。 同时修复了在 HMI 视频（MP4）附近移动鼠标时视频卡顿的问题。",
@@ -149,6 +154,7 @@
                                                  "AI 分析案例(问题、测量值、设备名称、主站/端口配置)仅为改进 AI 保存在此电脑的 %LOCALAPPDATA%\\ICEops\\ai_cases 中，联系方式类个人信息会被遮盖。不会自动发送；保存诊断 ZIP 时由您选择是否包含。如需关闭记录，请在 ai_server.json 中设置 \"aiCaseCapture\": false。"
                                              ],
                                    "de":  [
+                                              "[Startseite] Mit der ‹-Schaltfläche neben „Port“ im Tabellenkopf lässt sich die Modellspalte (Herstellerlogo, Produktbild, Modellname) einklappen. Der Wertebereich wird breiter, sodass 1080p-Bildschirme weniger gedrängt wirken; beim Überfahren der Portnummer erscheint das Modell. Die Einstellung bleibt erhalten.",
                                               "[HMI] Der Schienen-Näherungssensor (Track Proximity Sensor) kann jetzt wie andere Bibliotheksobjekte einen Standort-Pin mit Führungslinie tragen. Das temporäre Video-Diagnoseprotokoll wurde entfernt.",
                                               "[HMI] Detaillierte Gerätekarten zeigen jetzt so viele IODD-Werte, wie in die Kartenhöhe passen (mindestens 4), statt nach 4 Zeilen abzubrechen. So sind bei Geräten mit vielen Werten, etwa Schwingungssensoren, auch die Schaltsignale (SSC) sichtbar.",
                                               "[Startseite] Ruckeln beim Überfahren des Statuspunkts einer Master-Karte behoben. Der Punkt hat keinen Tooltip mehr; ist der Master verbunden, liefert aber keine neuen Daten, erscheint neben ONLINE ein oranges „KEINE DATEN“. Außerdem behoben: HMI-Video (MP4) ruckelte, wenn die Maus in der Nähe bewegt wurde.",
@@ -177,6 +183,7 @@
                                               "KI-Analysefälle (Fragen, Messwerte, Gerätenamen, Master-/Port-Konfiguration) werden zur Verbesserung der KI nur auf diesem PC unter %LOCALAPPDATA%\\ICEops\\ai_cases gespeichert; Kontaktdaten werden maskiert. Es wird nichts automatisch gesendet; beim Speichern eines Diagnose-ZIP entscheiden Sie, ob sie enthalten sind. Zum Abschalten \"aiCaseCapture\": false in ai_server.json setzen."
                                           ],
                                    "es":  [
+                                              "[Inicio] Un botón ‹ junto a \"Puerto\" en el encabezado de la tabla pliega la columna de modelo (logotipo del fabricante, imagen del producto, nombre del modelo). El área de valores gana anchura, así que en pantallas 1080p queda menos apretada; al pasar el ratón por el número de puerto se ve el modelo. La elección se recuerda.",
                                               "[HMI] El sensor de proximidad de vía (Track Proximity Sensor) ya puede llevar un pin de ubicación con línea guía como los demás objetos de la biblioteca. Se eliminó el registro de diagnóstico temporal de vídeo.",
                                               "[HMI] Las tarjetas de dispositivo detalladas muestran ahora tantos valores IODD como quepan en la altura de la tarjeta (al menos 4) en lugar de detenerse en 4 filas, de modo que en dispositivos con muchos valores, como sensores de vibración, también se ven las señales de conmutación (SSC).",
                                               "[Inicio] Se corrigió el tirón al pasar el ratón sobre el punto de estado de una tarjeta de maestro. El punto ya no tiene información emergente; si el maestro está conectado pero no llegan datos nuevos, aparece \"SIN DATOS\" en ámbar junto a ONLINE. También se corrigió el tirón del vídeo HMI (MP4) al mover el ratón cerca de él.",
